@@ -1,0 +1,21 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data (large files — download separately)
+data/papers.json
+data/corpus.json
+data/test_ids.json
+
+# Results and logs
+results/
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
