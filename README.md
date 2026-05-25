@@ -113,6 +113,16 @@ python evaluation/scripts/run_evaluation.py \
 
 See [evaluation/README.md](evaluation/README.md) for output format and metric definitions.
 
+## Citation
+
+```bibtex
+@article{metasyn2026,
+  title   = {Benchmarking {LLM} Agents on Meta-Analysis Articles from {Nature} Portfolio},
+  author  = {Xie, Anzhe and Su, Weihang and Zhou, Yujia and Liu, Yiqun and Ai, Qingyao},
+  year    = {2026},
+}
+```
+
 ## License
 
 Code: [MIT](LICENSE). Dataset: subject to Nature Portfolio terms of use.
