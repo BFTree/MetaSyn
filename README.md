@@ -118,7 +118,7 @@ See [evaluation/README.md](evaluation/README.md) for output format and metric de
 ```bibtex
 @article{metasyn2026,
   title   = {Benchmarking {LLM} Agents on Meta-Analysis Articles from {Nature} Portfolio},
-  author  = {Xie, Anzhe and Su, Weihang and Zhou, Yujia and Liu, Yiqun and Ai, Qingyao},
+  author  = {Anzhe Xie and Weihang Su and Yujia Zhou and Yiqun Liu and Qingyao Ai},
   year    = {2026},
 }
 ```
