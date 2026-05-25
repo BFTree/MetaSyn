@@ -1,9 +1,10 @@
-**Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio**
+# Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio
+
+
+
 [![Dataset](https://img.shields.io/badge/🤗%20dataset-MetaSyn-blue)](https://huggingface.co/datasets/BFTree/MetaSyn)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](.)
-
----
 
 ## What is a Meta-Analysis?
 
