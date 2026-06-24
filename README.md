@@ -27,8 +27,8 @@ The core challenge is end-to-end: given only a research question and eligibility
 
 | | Meta-analyses | Corpus articles |
 |--|:--:|:--:|
-| Train | 354 | ~112k |
-| Test | 88 | ~28k |
+| Train | 354 | - |
+| Test | 88 | - |
 | **Total** | **442** | **140,585** |
 
 | | Value |
