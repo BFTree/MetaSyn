@@ -27,8 +27,8 @@ The core challenge is end-to-end: given only a research question and eligibility
 
 | | Meta-analyses | Corpus articles |
 |--|:--:|:--:|
-| Train | 354 | - |
-| Test | 88 | - |
+| Train | 354 | ~112k |
+| Test | 88 | ~28k |
 | **Total** | **442** | **140,585** |
 
 | | Value |
@@ -92,13 +92,19 @@ cp .env.example .env
 
 ### 4. Evaluate your system
 
-Place your system outputs under `results/<system_name>/`:
+Place your system outputs under `results/<system_name>/` using the evaluator directory layout:
 
 ```
 results/
 └── my_system/
-    └── paper_63.json   # one file per test paper
+    └── my_model/
+        └── my_retriever/
+            └── paper_63/
+                ├── results.json
+                └── report.md
 ```
+
+`report.md` contains the generated meta-analysis report. `results.json` contains the paper ID, retrieved corpus IDs, and final included corpus IDs; see [evaluation/README.md](evaluation/README.md) for the exact schema.
 
 Then run:
 
