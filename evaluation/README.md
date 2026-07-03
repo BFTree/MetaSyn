@@ -24,32 +24,45 @@ Metrics 1–6 require no LLM calls. Metrics 7–9 use approximately 5 LLM calls 
 
 ## Input Format
 
-Place one JSON file per test paper under your results directory:
+Place one result directory per test paper under your results directory. The evaluator scans for `results.json` and `report.md` pairs:
 
 ```
 results/my_system/
-├── paper_63.json
-├── paper_24.json
-└── ...
+└── my_model/
+    └── my_retriever/
+        ├── paper_63/
+        │   ├── results.json
+        │   └── report.md
+        └── paper_24/
+            ├── results.json
+            └── report.md
 ```
 
-Each file must contain:
+`report.md` contains the full generated report used for criteria and synthesis metrics. `results.json` must contain:
 
 ```json
 {
   "paper_id": 63,
-  "report": "Full text of the generated meta-analysis report...",
-  "retrieved_ids": [1234, 5678, ...],
-  "included_ids": [1234, ...]
+  "included_paper_ids": [1234, 5678],
+  "retrieved_papers": [
+    {
+      "corpus_id": 1234,
+      "title": "Optional article title",
+      "abstract": "Optional article abstract"
+    },
+    {
+      "corpus_id": 5678
+    }
+  ]
 }
 ```
 
 | Field | Description |
 |-------|-------------|
 | `paper_id` | Integer ID matching `papers.json` |
-| `report` | Full text of the generated report (used for metrics 5–9) |
-| `retrieved_ids` | Corpus IDs your system retrieved before screening |
-| `included_ids` | Corpus IDs your system decided to include after screening |
+| `included_paper_ids` | Corpus IDs your system decided to include after screening |
+| `retrieved_papers` | List of retrieved candidate records; each item must include `corpus_id` |
+| `report.md` | Full text of the generated report, stored beside `results.json` |
 
 ---
 
