@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11401,
+    "output_tokens": 1101,
+    "total_tokens": 12502
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7857142857142858,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.35294117647058826,
+    "inclusion_consistency": 0.5911,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.78,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a clear objective, screening/selection description, synthesis of findings, conclusion, and included study list, but it lacks several formal required sections and PRISMA-style elements such as an abstract, full introduction/methods, detailed search strategy, data extraction procedures, quality assessment, and explicit meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women with dense breasts",
+      "mammography + ultrasound",
+      "mammography alone",
+      "additional detection rate, referral rates"
+    ],
+    "exclusion_criteria": [
+      "studies published before 2000",
+      "studies involving symptomatic women",
+      "studies where dense breast data was not reported separately",
+      "systematic reviews/meta-analyses",
+      "studies published after the search end date (July 26, 2017) unless they were the most complete version of an ongoing study within the window",
+      "studies comparing different cohorts of women (e.g., a mammography-only group vs. a separate mammography-plus-ultrasound group)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Adding ultrasound screening to mammography for women with dense breasts significantly increases the detection of mammographically occult, predominantly small invasive cancers.",
+      "The incremental detection rate typically ranges from 2 to 4 per 1,000 women, though results vary by population risk and study design.",
+      "However, this benefit comes with a substantial trade-off: a significant increase in referral rates and false-positive biopsies, with low positive predictive values for ultrasound-prompted assessments.",
+      "The included studies consistently demonstrate that supplemental ultrasound increases the cancer detection rate (CDR) in women with dense breasts and negative mammograms, although the magnitude of the additional yield varies significantly across studies.",
+      "The addition of ultrasound consistently increases referral rates (recall and biopsy recommendations), leading to a higher rate of false-positive results compared to mammography alone."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8297,
+    "output_tokens": 783,
+    "total_tokens": 9080
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.4281,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4896,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized screening and synthesis-related content, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, quality assessment, and a PRISMA-style search/screening process."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with BMI at or above 27.5 kg/m\u00b2",
+      "synchronous real-time remote weight-management interventions",
+      "explicit reporting of barriers and/or facilitators to engagement"
+    ],
+    "exclusion_criteria": [
+      "not a primary study of a synchronous remote **weight management** intervention",
+      "population not clearly adults with BMI \u226527.5 kg/m\u00b2",
+      "intervention is asynchronous, autonomous, hybrid without separable synchronous findings, or not remote",
+      "outcome does not report specific barriers/facilitators to engagement",
+      "article is a review, protocol, editorial/guideline, or other excluded design"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on title and abstract only, **none of the 200 candidates are clearly eligible as final included primary studies**.",
+      "Because no candidate met all inclusion criteria at title/abstract level, there is no eligible primary-study evidence from this fixed pool to synthesize for COM-B or TDF mapping.",
+      "This means the fixed candidate pool, as supplied, does not support answering the review question with includable primary-study evidence.",
+      "None were included.",
+      "Using only the supplied candidate pool and not inferring beyond the abstracts, the review yields **zero included primary studies**.",
+      "The appropriate conclusion is that this candidate set does not contain title/abstract-confirmed evidence matching the full review question."
+    ]
+  }
+}

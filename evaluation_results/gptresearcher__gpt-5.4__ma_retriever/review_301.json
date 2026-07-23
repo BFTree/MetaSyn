@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18247,
+    "output_tokens": 1578,
+    "total_tokens": 19825
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.0547945205479452,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9726027397260274,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.8002,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6148,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, clearly organized structure with abstract, introduction, methods, screening/results, limitations, conclusion, and references, plus meta-analysis-specific elements like eligibility criteria and search/screening details, but it lacks full PRISMA rigor such as formal risk-of-bias/quality assessment and a true pooled synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs with at least one intervention and one control arm",
+      "Population: newborns/young infants aged 0\u201359 days",
+      "LMIC setting",
+      "Intervention: home visits by trained CHWs",
+      "identification of serious illness in young infants, and/or",
+      "improved care-seeking from health facilities"
+    ],
+    "exclusion_criteria": [
+      "Observational/non-randomized studies",
+      "High-income country studies",
+      "Studies lacking relevant illness-identification or care-seeking outcomes",
+      "Awasthi 2008",
+      "Bang 2005",
+      "Escobar 2001"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across included studies, CHW home visits consistently improved care-seeking behavior for sick newborns, with the largest direct evidence from Ghana, where care-seeking rose from 55% to 77%, and from Haryana, where treatment-seeking from an appropriate provider for severe neonatal illness increased markedly.",
+      "The evidence therefore supports an effect on referral-linked care-seeking, but not a validated conclusion on diagnostic accuracy.",
+      "Care-seeking from health facilities improved consistently",
+      "No included RCT reported diagnostic sensitivity or specificity",
+      "Therefore, a meta-analysis on **accuracy of identification** is not supported by the available eligible evidence, while a synthesis on **care-seeking effects** is.",
+      "The eligible local-corpus evidence supports a clear conclusion: **CHW home-visit packages in LMICs improve care-seeking from health facilities for sick newborns and young infants**, especially when home visits include early postnatal contact, danger-sign assessment, referral, and system linkage.",
+      "However, the evidence does **not** establish that CHWs accurately identify serious illness in a diagnostic sense, because **sensitivity and specificity were not reported** in the included RCTs.",
+      "In other words, the literature supports **behavioral effectiveness** more strongly than **diagnostic validity**.",
+      "My concrete judgment is that CHW home visits should be regarded as an effective **access intervention**, not yet a proven **diagnostic accuracy intervention**, based on the eligible evidence available up to October 2014."
+    ]
+  }
+}

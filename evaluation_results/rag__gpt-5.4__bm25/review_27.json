@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19021,
+    "output_tokens": 1192,
+    "total_tokens": 20213
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.7058823529411765,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.8000000000000002,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.462,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4978,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening summary, evidence synthesis, limitations, and bottom-line sections, and it includes meta-analysis-relevant elements like eligibility criteria and study-level conclusions, but it lacks a full PRISMA-style methods structure with a detailed search strategy, screening flow, and formal quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with obesity, specifically BMI \u2265 35",
+      "OSA or OSA-related indicators such as AHI and intermittent/nocturnal hypoxia",
+      "NAFLD presence/severity/resolution using biopsy, NAS, steatosis, fibrosis, inflammation, or liver enzymes/serum markers",
+      "RCTs, cohort, cross-sectional, case-control"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, case reports/series, non-human-only studies, clearly wrong population, wrong direction/question, or articles published after the review search end date (2022-10-08)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "OSA severity and especially hypoxemia/intermittent hypoxia are associated with worse NAFLD histology in adults with severe obesity.",
+      "Evidence is not fully consistent: a few studies found associations with liver enzymes but not clearly with NASH, or found attenuation after accounting for insulin resistance.",
+      "Evidence on bariatric metabolic surgery (BMS) within the candidate pool is limited but suggests that both OSA-related measures and liver steatosis/fibrosis improve after surgery.",
+      "So, within severe-obesity populations, the best predictive OSA-related indicators for NAFLD severity appear to be intermittent hypoxia metrics, not necessarily AHI alone.",
+      "Among adults with severe/morbid obesity, the most consistent signal is that OSA-related nocturnal hypoxia/intermittent hypoxia is associated with more severe NAFLD histology, particularly NASH, inflammation, ballooning, and fibrosis.",
+      "AHI alone is less consistently predictive.",
+      "Bariatric/metabolic surgery appears to improve both OSA and liver outcomes, but in this candidate pool the longitudinal evidence is limited to a small number of observational studies."
+    ]
+  }
+}

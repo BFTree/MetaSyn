@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15062,
+    "output_tokens": 1009,
+    "total_tokens": 16071
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5000000000000001,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.7083,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6744,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes eligibility criteria, results by clinical domain, tolerability, and included studies, but it lacks several required systematic review sections and PRISMA-style elements such as a formal abstract, introduction, detailed search strategy, screening process, data extraction methods, quality assessment, synthesis methods, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "We included randomised controlled trials (RCTs) comparing LTCC antagonists with placebo or any other active pharmacological treatment in patients with a primary diagnosis of bipolar disorder.",
+      "To assess efficacy and acceptability, only double-blind studies were considered; for adverse effects, single-blind or open RCTs were also eligible.",
+      "Crossover RCTs were included using only first-period data."
+    ],
+    "exclusion_criteria": [
+      "Studies of unipolar depression, non-RCTs (e.g., open trials, case reports, observational cohorts), reviews, and animal/in vitro studies were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Evidence for the efficacy of LTCC antagonists in acute mania is mixed and largely confined to verapamil and the LTCC antagonist D600 (methoxyverapamil).",
+      "However, a larger, more rigorous double-blind, random-assignment, parallel-group trial (Candidate 029) found no significant benefit of verapamil over placebo in treating acute mania, creating a discrepancy in the evidence base.",
+      "Three double-blind RCTs (Candidate 005, Candidate 040, Candidate 045) comparing verapamil to lithium in general acute manic populations found equal or comparable efficacy between the two treatments, with no significant overall differences in manic symptom improvement.",
+      "No eligible double-blind RCTs were identified in the candidate pool that evaluated LTCC antagonists for acute bipolar depression.",
+      "Evidence for maintenance therapy is limited.",
+      "Specific tolerability data from double-blind RCTs indicate that verapamil is generally well-tolerated but carries distinct cardiovascular risks compared to lithium."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9956,
+    "output_tokens": 972,
+    "total_tokens": 10928
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.5685,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8047,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening approach, results, evidence synthesis, conclusion, limitations, and included study, but it lacks several full systematic review sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Include only original research, English, published from 2009-01-01 to 2021-06-01.",
+      "Must be prospective comparative Level I/II studies assessing RDN added to PVI in patients with essential hypertension and AF."
+    ],
+    "exclusion_criteria": [
+      "Exclude reviews/meta-analyses, protocols/study designs, non-comparative reports, and studies focused on excluded populations such as heart failure, secondary hypertension, type 1 diabetes, or late-stage kidney disease/failure with mean eGFR <45."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible trial suggests that, in hypertensive patients with paroxysmal AF undergoing catheter ablation, adding renal denervation to PVI improved rhythm outcomes at 12 months compared with PVI alone.",
+      "This supports a beneficial effect on arrhythmia recurrence.",
+      "For blood pressure, the same trial reports a greater reduction in systolic blood pressure at 12 months in the combined-treatment group, with an approximate between-group difference of `-13 mm Hg` favoring RDN plus PVI.",
+      "For safety, procedural complications within 30 days were similar between groups: `4.7%` in PVI alone and `4.5%` in PVI plus RDN, suggesting no obvious excess short-term complication signal in the abstract.",
+      "For eGFR, the eligible abstract does **not** report renal function outcomes.",
+      "That study supports that adding RDN to PVI may improve 12-month rhythm control and systolic blood pressure without an apparent increase in short-term procedural complications in hypertensive patients with paroxysmal AF.",
+      "However, the evidence base identified here is very limited, and title/abstract information alone does not establish effects on eGFR or broader generalizability across all hypertensive AF populations."
+    ]
+  }
+}

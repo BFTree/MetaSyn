@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32286,
+    "output_tokens": 893,
+    "total_tokens": 33179
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03278688524590164,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9672131147540983,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5311,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4656,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes major systematic review sections plus meta-analysis elements such as search strategy, eligibility criteria, screening results, and planned synthesis methods, but it falls short of excellent due to duplicated headings, an empty risk-of-bias section, no references section, and incomplete PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies of breast cancer tissue samples that directly compare triple-negative breast cancer (TNBC) patients with non-TNBC breast cancer patients or controls.",
+      "Studies reporting tissue microbiome data from human breast cancer specimens, including microbial community composition, relative abundance, or taxa-level enrichment.",
+      "Studies that evaluate outcomes related to TNBC-associated microbiome features, such as presence/abundance of specific genera or species and/or functional pathway differences linked to inflammation, proliferation, invasion, or metastasis.",
+      "Observational or comparative cohort/case-control study designs with independent cohorts or sample sets suitable for between-group comparison."
+    ],
+    "exclusion_criteria": [
+      "Studies without a TNBC versus non-TNBC comparison group or without breast tissue microbiome data.",
+      "Studies based on non-human samples, cell lines, in vitro experiments, or other non-clinical models.",
+      "Studies focused only on blood, stool, saliva, or other non-tissue microbiome sources.",
+      "Reviews, editorials, conference abstracts, dissertations, and other non-primary research reports."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified no eligible studies meeting the prespecified PICO criteria for comparing the breast tissue microbiome of TNBC and non-TNBC patients, so quantitative synthesis was not possible.",
+      "Because no studies were included, there was no extractable evidence to assess differences in microbial community composition, enrichment of specific taxa such as Azospirillum, Gemmiger formicilis, or Anaerobutyricum soehngenii, or any functional pathways related to inflammation, proliferation, invasion, or metastasis.",
+      "Overall, the evidence base remains essentially undeveloped, and firm conclusions about TNBC-associated breast tissue microbiome composition cannot yet be drawn."
+    ]
+  }
+}

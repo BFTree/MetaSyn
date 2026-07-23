@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16626,
+    "output_tokens": 1076,
+    "total_tokens": 17702
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.7138,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4923,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes inclusion criteria, screening summary, synthesis outcome, and conclusion, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, References, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The defined population (P) consisted of patients receiving medication prescriptions in a hospital setting.",
+      "The intervention (I) of interest was electronic prescribing, such as CPOE or CDS, compared to a comparator (C) of manual, paper-based prescribing or usual care without electronic intervention.",
+      "The required outcome (O) was the reporting of quantitative data on the incidence of medication errors.",
+      "Studies were required to be RCTs, published in English between 2023-05-01 and 2024-11-03, and available as full-text, peer-reviewed articles."
+    ],
+    "exclusion_criteria": [
+      "Several studies evaluating electronic prescribing or CDS in hospital settings on medication safety used observational, pre-post, interrupted time-series, or qualitative designs rather than randomized controlled trials (e.g., Candidate 004, Candidate 035, Candidate 076, Candidate 140, Candidate 177).",
+      "Some RCTs evaluated CDS interventions in hospital settings but measured prescribing appropriateness, guideline concordance, or clinical endpoints (e.g., time to antibiotics, laboratory test reduction) rather than the explicit incidence of medication errors or adverse drug events (e.g., Candidate 137, Candidate 118).",
+      "Other RCTs in hospital settings targeted medication safety but tested educational, simulation, or pharmacist-led interventions rather than electronic prescribing or CDS systems (e.g., Candidate 104, Candidate 169).",
+      "Several RCTs evaluated electronic prescribing or CDS but were conducted in outpatient, primary care, or community pharmacy settings rather than a hospital inpatient environment (e.g., Candidate 049, Candidate 181).",
+      "Highly relevant older RCTs on CPOE alerts and medication errors (e.g., Candidate 011 from 2010) were excluded as they fell outside the 2023\u20132024 search parameters."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No studies in the pool met all the required criteria for inclusion in the quantitative synthesis.",
+      "Based on the supplied candidate pool, there are no eligible primary studies published between May 2023 and November 2024 that evaluate electronic prescribing or CDS versus usual care via an RCT design in a hospital inpatient setting with quantitative outcome data on the incidence of medication errors.",
+      "Consequently, a quantitative meta-analysis cannot be performed from this dataset, highlighting a current scarcity of recent, rigorously controlled evidence specifically measuring error incidence for these interventions in the inpatient context."
+    ]
+  }
+}

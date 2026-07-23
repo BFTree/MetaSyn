@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10854,
+    "output_tokens": 1184,
+    "total_tokens": 12038
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.3157894736842105,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.8523,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4646,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, screening/selection criteria, narrative evidence synthesis, and included studies, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods, discussion, conclusion, full references, search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies evaluating online, group-based behavior change interventions for weight management in adults with severe obesity (BMI \u2265 35 kg/m\u00b2)"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, conference abstracts, development papers, and studies focusing on non-severe obesity (BMI < 35), children, or non-group-based formats were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies demonstrate that online, group-based behavior change interventions can produce clinically meaningful weight loss for adults with severe obesity, though effectiveness varies by format and comparator.",
+      "User perceptions of online group-based interventions were generally positive regarding feasibility and acceptability.",
+      "The remote classroom DPP (Candidate 171) achieved 100% attendance and adherence to self-monitoring, demonstrating that older adults can successfully engage with fully remote group formats.",
+      "However, minimal group enhancements added to an eHealth app (Candidate 020) did not significantly boost engagement metrics compared to individual or app-only conditions, suggesting that brief group additions may not inherently enhance the user experience or adherence enough to change outcomes."
+    ]
+  }
+}

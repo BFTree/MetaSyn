@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12506,
+    "output_tokens": 1152,
+    "total_tokens": 13658
+  },
+  "metrics": {
+    "retrieval_recall": 0.37777777777777777,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.24444444444444444,
+    "inclusion_precision": 0.7857142857142857,
+    "inclusion_f1": 0.3728813559322034,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.13333333333333333,
+    "inclusion_consistency": 0.5694,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3338,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes eligibility criteria, abstract-level screening decisions, an evidence synthesis, and included/excluded study lists, but it lacks standard systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, Conclusion, References, detailed search strategy, risk-of-bias assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The key requirement was a primary human study in schizophrenia-spectrum disorder, bipolar disorder, or major depressive disorder that measured at least one blood-based immune marker and at least one standardized cognitive outcome, and reported an association between them within the patient sample."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, non-human studies, postmortem-only work, studies without cognition, and studies centered on treatment effects without a clear baseline immune-cognition association were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across disorders, the abstracts support a recurrent pattern: higher peripheral inflammatory activity or a more neurotoxic kynurenine profile tends to associate with worse cognitive performance, especially global cognition, executive function, processing speed, psychomotor speed, working memory, and verbal/visual learning.",
+      "Across diagnoses, the evidence favors an association rather than a consistent biomarker signature.",
+      "Overall, the abstract-level evidence in this candidate pool supports a modest but fairly consistent association between blood-based immune dysregulation and worse cognition in psychotic and mood disorders, with the strongest recurring markers being IL-6, CRP, kynurenine-pathway metabolites, and some broader inflammatory indices.",
+      "The literature is heterogeneous by diagnosis, sex, biomarker class, and cognitive domain, so any pooled quantitative synthesis would need stratification rather than a single undifferentiated estimate."
+    ]
+  }
+}

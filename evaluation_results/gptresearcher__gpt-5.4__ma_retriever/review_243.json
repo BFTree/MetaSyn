@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31850,
+    "output_tokens": 1118,
+    "total_tokens": 32968
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.2413793103448276,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9310344827586207,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.602,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6275,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, included-study list, References, and meta-analysis elements such as search queries, eligibility criteria, screening decisions, and synthesis approach, but it lacks a formal PRISMA flow diagram/counts and explicit risk-of-bias or quality assessment needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language peer-reviewed journal articles",
+      "Human studies involving one or more MDMA doses",
+      "MDMA combined with psychotherapy",
+      "Target psychiatric condition treatment",
+      "Original data",
+      "Comparative phase 2 or phase 3 style evidence relevant to safety outcomes"
+    ],
+    "exclusion_criteria": [
+      "No psychotherapy",
+      "No original data",
+      "Conference abstract or book chapter",
+      "Animal study",
+      "Phase 1/nontherapeutic studies",
+      "For this report\u2019s comparative question, uncontrolled studies were not treated as included comparative efficacy/safety evidence, though they are noted when relevant"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the local MetaSyn PubMed corpus retrieved here, MDMA-assisted psychotherapy has a **credible and generally favorable short-term safety profile in randomized PTSD trials conducted under structured clinical supervision**.",
+      "The best pooled evidence shows **no significant increase in overall TEAEs, severe TEAEs, or suicidal ideation** relative to placebo or inactive-dose controls, while primary trials repeatedly report **no drug-related serious adverse events** and no clear neurocognitive or major cardiovascular harm signals in the observed periods ([Bahji et al., 2024](metasyn://corpus/46290); [Mithoefer et al., 2011](metasyn://corpus/46329); [Mitchell et al., 2023a](metasyn://corpus/3956)).",
+      "My concrete assessment is that the short-term safety case for MDMA-AP in PTSD is **stronger than the current regulatory outcome might superficially suggest**, but it is **not yet broad or mature enough** to support confident safety generalization across psychiatric indications.",
+      "The evidence also does **not** support calling the treatment risk-free: acute side effects occur more often around dosing sessions and within 7 days afterward, and at least one confirmatory phase 3 trial recorded more severe TEAEs numerically in the MDMA group.",
+      "Future trials should therefore be judged less on whether they reconfirm efficacy, which is already robust in PTSD, and more on whether they close the remaining safety and trial-design gaps with rigorous prospective monitoring."
+    ]
+  }
+}

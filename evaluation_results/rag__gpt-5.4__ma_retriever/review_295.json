@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11108,
+    "output_tokens": 1750,
+    "total_tokens": 12858
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.469,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3884,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening outcomes, eligibility rationale, exclusions, evidence synthesis, and limitations, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, quantitative meta-analysis methods, conclusion section, and proper references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials in **preterm infants (<37 weeks or clearly preterm subgroup)** undergoing **heel lance/heel prick**",
+      "compare **oral sucrose/glucose** against **breast milk/expressed breast milk**"
+    ],
+    "exclusion_criteria": [
+      "not an RCT",
+      "systematic review/review/protocol/editorial",
+      "term infants only",
+      "mixed term and preterm populations without separate preterm analysis",
+      "no breast milk/EBM comparator",
+      "wrong procedure (for example vaccination, eye exam, tube insertion)",
+      "intervention arms outside scope of the comparison of interest"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the two clearly eligible sucrose-vs-breast-milk preterm trials, the signal is fairly consistent: **breast milk/expressed breast milk appears to provide analgesia similar to 24% sucrose for heel lance in moderate-to-late preterm infants**, with no clear superiority of sucrose on PIPP/PIPP-R scores.",
+      "The 2022 non-inferiority trial explicitly reports **no significant difference** in PIPP-R during the procedure and concludes that breast milk is **not inferior** to 24% sucrose.",
+      "The 2012 late-preterm RCT likewise found **no significant difference** in mean PIPP scores between breast milk and sucrose.",
+      "The glucose evidence is weaker for this review question.",
+      "That limits confidence in applying this result directly to the target population.",
+      "In **moderate and late preterm infants undergoing heel lance**, **breast milk/expressed breast milk and 24% sucrose appear to provide similar pain relief** on PIPP/PIPP-R.",
+      "Evidence that **glucose is superior to breast milk** is limited and less secure for this review because the one relevant trial does not clearly establish a preterm-only population in the abstract.",
+      "Evidence for **venipuncture** in the target preterm population is not clearly represented among the eligible candidates.",
+      "Overall, the abstract-level evidence favors **no important difference between breast milk/expressed breast milk and sucrose** for heel-lance pain in preterm infants, while the case for **glucose outperforming breast milk** is less certain for the preterm population defined in this review."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17277,
+    "output_tokens": 996,
+    "total_tokens": 18273
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.5625,
+    "inclusion_f1": 0.6923076923076923,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6943,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.551,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, outcome-based synthesis, limitations, applicability, and included/excluded studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion/Conclusion/References sections and does not provide detailed PRISMA-style elements such as search strategy, data extraction methods, quality assessment, or quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "chronic viral hepatitis population (HBV and/or HCV)",
+      "statin-exposed group and non-exposed control/comparator",
+      "cohort study or RCT",
+      "report at least one target outcome"
+    ],
+    "exclusion_criteria": [
+      "reviews, editorials, protocols, mechanistic papers, case reports, meta-analyses",
+      "studies in non-target liver diseases only",
+      "studies of HCC patients after diagnosis/treatment rather than chronic viral hepatitis cohorts at risk",
+      "studies focused on HIV coinfected cohorts, per exclusion criteria",
+      "studies where the eligible viral hepatitis subgroup could not be isolated from the abstract",
+      "studies in highly selected comorbid populations not aligned with the target review question as stated, where chronic viral hepatitis was not the main analytic population (notably dialysis/ESKD cohorts)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, the eligible evidence consistently points toward an association between statin exposure and lower rates of adverse liver outcomes, especially HCC, cirrhosis progression, and cirrhosis decompensation.",
+      "Evidence for all-cause mortality is also generally favorable, though not uniformly strong across all studies.",
+      "The evidence base is entirely observational in the included set."
+    ]
+  }
+}

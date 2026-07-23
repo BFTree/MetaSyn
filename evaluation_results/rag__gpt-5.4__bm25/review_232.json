@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4606,
+    "output_tokens": 1538,
+    "total_tokens": 6144
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6601,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.492,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening summary, eligibility decisions, limited evidence synthesis, and limitations, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, and References, and it does not include PRISMA-style details like a full search strategy, data extraction process, or quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: general adult population",
+      "Exposure: dietary salt/sodium intake level",
+      "Outcomes: patient-important or relevant surrogate outcomes",
+      "Study type for detailed inclusion: original human studies, mainly **prospective cohorts** meeting duration/size criteria",
+      "Sodium assessment: must include at least one **24-h urine collection, food record, or 24-h diet recall**",
+      "a **prospective cohort** in **older adults** from the general population,",
+      "with **\u22651 year** follow-up,",
+      "evaluating **dietary sodium intake** and a relevant health outcome,",
+      "and not obviously relying on FFQ alone for sodium estimation in the abstract wording."
+    ],
+    "exclusion_criteria": [
+      "**cross-sectional studies excluded** from detailed critical appraisal",
+      "**FFQ-only** and **spot urine** studies excluded from detailed critical analysis",
+      "Other exclusions: reviews, modelling studies, animal studies, protocols, intervention studies where dietary salt is not the sole exposure of interest, sodium-to-potassium ratio\u2013only studies, non-adult populations, CKD-only/specific patient populations when not the general adult population.",
+      "reviews, editorials, guidelines, modelling studies, or protocols;",
+      "cross-sectional studies;",
+      "intervention trials rather than observational exposure studies;",
+      "studies in children, disease-specific cohorts, or non-general populations;",
+      "based on **spot urine** or **FFQ-only** sodium assessment;",
+      "focused on sodium-to-potassium ratio rather than sodium intake itself."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The eligible evidence from this fixed pool is very limited, consisting of one prospective observational study.",
+      "The included cohort study suggests that, among older adults, increases in dietary sodium intake over time were associated with worsening physical performance over 5 years.",
+      "This aligns directionally with the review question\u2019s concern that higher sodium exposure may be linked to adverse health outcomes, but the evidence here is limited to physical performance, not mortality, CVD, renal outcomes, or osteoporosis.",
+      "From this supplied candidate set, there is limited prospective evidence suggesting that higher sodium intake may be associated with poorer physical performance over time in older adults."
+    ]
+  }
+}

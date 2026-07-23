@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10226,
+    "output_tokens": 1323,
+    "total_tokens": 11549
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.22222222222222224,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.7856,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4411,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review question, eligibility criteria, screening summary, included studies, and evidence synthesis, but it lacks several standard sections such as abstract, formal introduction, detailed methods, quality assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Must involve racemic ketamine administered at sub-anaesthetic doses (\u2a7d100 mg kg\u22121 i.p. in rodents)",
+      "Must measure dopamine (DA) levels in the brain"
+    ],
+    "exclusion_criteria": [
+      "Studies using anaesthetic doses (>100 mg/kg i.p. in rodents)",
+      "Lack of baseline/control",
+      "Non-English",
+      "Non-original data (reviews, protocols, etc.)",
+      "Lack of s.d./s.e.m. (assumed present in eligible primary research papers unless abstract explicitly indicates otherwise)",
+      "In vitro only studies",
+      "Failure to report DA levels (e.g., reporting only metabolites, receptors, or other neurotransmitters)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Sub-anaesthetic racemic ketamine acutely elevates extracellular dopamine in the medial prefrontal cortex but does not alter electrically evoked dopamine release in the nucleus accumbens.",
+      "Chronic administration induces neuroadaptations in the PFC, characterized by elevated basal DA levels and blunted phasic DA release.",
+      "These region-specific and temporal dynamics of dopaminergic transmission help elucidate ketamine's dual role in modeling neuropsychiatric disorders (via acute cortical DA surge) and its potential adaptive mechanisms under chronic exposure."
+    ]
+  }
+}

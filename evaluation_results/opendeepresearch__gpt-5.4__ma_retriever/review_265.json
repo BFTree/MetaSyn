@@ -1,0 +1,71 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30314,
+    "output_tokens": 1167,
+    "total_tokens": 31481
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.23076923076923078,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4226,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2688,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes core systematic review/meta-analysis elements such as a review question, search strategy, retrieval results, eligibility criteria, screening decisions, study characteristics, and narrative synthesis, but it lacks full PRISMA-level rigor such as formal quality/risk-of-bias assessment, detailed data extraction, complete quantitative synthesis methods, and a clearly developed references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "administered one of the named psychoplastogens:",
+      "LSD",
+      "psilocybin",
+      "psilocin",
+      "DMT",
+      "ayahuasca",
+      "5-MeO-DMT",
+      "subanesthetic ketamine",
+      "esketamine",
+      "MDMA",
+      "scopolamine",
+      "rapastinel",
+      "measured **peripheral blood BDNF** in **serum and/or plasma**",
+      "provided a usable comparison against:",
+      "baseline / pretreatment, and/or",
+      "placebo / control"
+    ],
+    "exclusion_criteria": [
+      "non-human",
+      "reviews or other non-primary reports",
+      "outside the corpus end-date window",
+      "did not administer a listed psychoplastogen",
+      "did not provide evidence of peripheral blood BDNF measurement",
+      "did not provide primary human data"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus contains a small, heterogeneous human evidence base addressing this question.",
+      "LSD: one directly relevant human study reported an acute increase in plasma BDNF.",
+      "Ketamine/esketamine: several human studies measured serum or plasma BDNF, but the direction and interpretability of findings appear mixed and context-dependent, with some studies framed around ketamine-associated plasticity and others focusing on associations rather than a clear, robust BDNF rise at the group level.",
+      "Across psychoplastogens as a class: the corpus evidence does not support a firm conclusion that peripheral BDNF is a consistent, generalizable rapid biomarker of psychoplastogen-induced neuroplasticity in humans.",
+      "A quantitative meta-analysis was not feasible from the available local corpus evidence provided here because the corpus output did not supply extractable numeric effect sizes, variances, sample sizes by comparison, or sufficiently detailed timepoint-specific BDNF values.",
+      "This record provides direct corpus-level support that acute peripheral BDNF elevation can be detected after LSD administration in humans, at least in one healthy-volunteer study."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18487,
+    "output_tokens": 957,
+    "total_tokens": 19444
+  },
+  "metrics": {
+    "retrieval_recall": 0.8095238095238095,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.23809523809523808,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3846153846153846,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.29411764705882354,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5665,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear target, screening summary, synthesis, and included studies, but it lacks standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, quality assessment, and explicit data extraction or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "published after the search end date (Nov 30, 2022)",
+      "did not relate to MPs in natural aquatic environments (excluding engineered water treatment, human/organism toxicity, soil, atmospheric, and oil-spill studies)",
+      "did not focus on the flocculation processes of MPs (excluding ingestion, sorption, or detection studies)",
+      "were reviews or non-original research",
+      "failed to report both the size/shape of MPs and the size of aggregates as per the exclusion criteria"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies consistently demonstrate that smaller MP size fractions readily incorporate into flocs or biological aggregates, fundamentally altering their environmental transport from individual suspension to rapid settling and sedimentary deposition.",
+      "Larger MPs may resist this incorporation depending on buoyancy and ambient sediment conditions.",
+      "The evidence strongly supports that MPs in smaller size fractions (2 \u00b5m, ~85 \u00b5m, 63\u2013125 \u00b5m, and 100 nm) successfully hetero-aggregate with suspended sediment, cyanobacteria, or phytoplankton to form settling flocs.",
+      "This underscores a size-dependent threshold where smaller MPs (aligning with <162 \u00b5m) are preferentially incorporated into settling flocs, while large MPs escape flocculation.",
+      "The shift from individual transport to floc-mediated transport drastically changes the vertical fate of MPs.",
+      "Once incorporated into flocs, MPs settle significantly faster than their individual entities (Candidates 003, 012).",
+      "Floc-mediated sinking is identified as a dominant mechanism for the vertical flux and sedimentary burial of MPs in both marine (Candidates 003, 012, 153) and freshwater (Candidate 039) systems.",
+      "Biological components (biofilms, phytoplankton EPS, and cyanobacteria) significantly accelerate aggregation and the subsequent sinking velocities of the incorporated MPs (Candidates 039, 112, 153)."
+    ]
+  }
+}

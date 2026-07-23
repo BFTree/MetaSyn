@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17379,
+    "output_tokens": 1664,
+    "total_tokens": 19043
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.5713,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.444,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with screening, evidence synthesis, limitations, conclusion, and included-study lists, but it lacks a formal abstract, introduction, methods section with detailed search/data extraction/synthesis procedures, quality assessment, meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult human primary studies, published within 2012-02-29 to 2023-02-07, focused on at least one target neuroinflammatory fluid biomarker (`YKL-40`, `sTREM2`, `GFAP`) in CSF and/or plasma, in people across the AD continuum or relevant at-risk/preclinical stages, with outcomes on clinical stage, progression, or cognitive decline"
+    ],
+    "exclusion_criteria": [
+      "Published after 2023-02-07",
+      "Review/editorial/protocol/non-primary article",
+      "Did not assess `YKL-40`, `sTREM2`, or `GFAP`",
+      "Non-AD population or mixed neurodegeneration without extractable AD-specific evidence",
+      "No relevant stage/prognostic outcome from title/abstract alone",
+      "they do not focus on the target biomarkers `YKL-40`, `sTREM2`, and/or `GFAP` as primary exposures in the required way."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence supports an association between neuroinflammatory biomarkers and AD stage mainly for `YKL-40`, with the best evidence showing elevation from preclinical through dementia stages and predicting later cognitive decline and progression.",
+      "`GFAP` shows early-stage promise, especially in plasma, but the eligible pool contains limited prognostic data.",
+      "`YKL-40` is the most consistently elevated biomarker in symptomatic AD and appears to rise earlier than dementia in biomarker-defined or preclinical/prodromal stages.",
+      "This supports `YKL-40` as a stage-related and prognostic marker across the continuum rather than a marker confined to established dementia.",
+      "For `sTREM2`, no supplied pre-2023 candidate clearly met the review target with direct AD-stage or long-term outcome data centered on `sTREM2`."
+    ]
+  }
+}

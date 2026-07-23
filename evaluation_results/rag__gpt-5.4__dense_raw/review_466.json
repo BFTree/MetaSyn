@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16324,
+    "output_tokens": 1104,
+    "total_tokens": 17428
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.5454545454545454,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.5474,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4964,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, included/excluded study judgments, synthesis, limitations, a bottom-line conclusion, and a study list, but it lacks a formal abstract, introduction, detailed methods/search strategy, data extraction approach, quality assessment, and full reference section needed for higher PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult hospitalized patients with sepsis or at risk for sepsis",
+      "intervention was an automated alerting/surveillance system integrated into the electronic health record",
+      "comparator was usual care without alerts",
+      "outcomes included mortality and/or length of stay",
+      "publication window through 2021"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, pediatric studies, non-sepsis interventions, and studies that were only predictive model development without a care comparison",
+      "Reviews, protocols, qualitative studies, surveys, pediatric studies, non-sepsis deterioration systems, predictive model development only, and studies published after 2021"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across included studies, automated sepsis alerting showed mixed effectiveness.",
+      "Several before-after studies reported reductions in mortality and/or LOS after implementation of hospital-wide or ED-based sepsis surveillance/alert programs, but randomized trials and some stronger quasi-experimental studies generally found no significant mortality benefit.",
+      "LOS improvement was more frequently reported than mortality improvement.",
+      "Because the abstract-level evidence suggests substantial heterogeneity in setting, intervention co-components, and study design, any pooled conclusion should be cautious.",
+      "Ward RCTs and ICU RCTs did not show significant improvements in mortality or LOS.",
+      "This weakens confidence that alerts alone improve hard outcomes.",
+      "Some hospital-wide or ED programs reported lower mortality and shorter LOS.",
+      "However, these interventions often combined alerts with rapid response activation, decision support, order sets, feedback, or broader change management, so attribution to automated alerting alone is limited.",
+      "Using only the supplied candidates, the evidence supports a restrained conclusion: automated sepsis alerting systems may improve care processes and sometimes reduce length of stay, especially in ED or hospital-wide quality-improvement implementations, but consistent mortality benefit is not demonstrated.",
+      "Randomized evidence in ICU and ward settings is largely negative.",
+      "The candidate pool does not provide adequate eligible primary-study evidence to conclude that machine-learning alerts outperform rule-based alerts for mortality or LOS."
+    ]
+  }
+}

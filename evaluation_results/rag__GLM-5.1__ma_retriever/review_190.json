@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19203,
+    "output_tokens": 1165,
+    "total_tokens": 20368
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.5887,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8196,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into an overview, thematic synthesis, and included studies list, but it lacks most formal systematic review sections such as Abstract, Introduction, Methods, Discussion, Conclusion, References, and provides only limited screening criteria without detailed search strategy, data extraction, quality assessment, or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies",
+      "empirical data on sexual harassment, inappropriate sexual behavior, and sexual assault within dental workplaces and educational environments between 2010 and 2024"
+    ],
+    "exclusion_criteria": [
+      "Studies capturing general workplace violence, bullying, or mixed health profession data without explicit dental-specific outcomes for sexual misconduct were excluded, as were reviews, editorials, and out-of-timeframe articles."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "This systematic review explored the prevalence, causes, impacts, and interventions related to sexual misconduct in dental care settings among dental practitioners, staff, patients, and students.",
+      "The included studies consistently indicate that sexual misconduct is a highly prevalent issue across multiple dental roles, though rates vary significantly by population, definition, and geographic context:",
+      "Sexual misconduct carries significant professional and psychological consequences:",
+      "While no included study primarily evaluated the effectiveness of a specific standalone intervention, several studies empirically identified critical gaps and recommended targeted strategies based on their findings:",
+      "There is a widespread call for increased practitioner and student education on recognizing, preventing, and managing sexual misconduct (Candidates 001, 003, 004, 005, 009).",
+      "Studies emphasize the urgent need for improved workplace policies, clear reporting mechanisms, and supportive institutional environments to manage IPSB and harassment (Candidates 001, 003, 006).",
+      "Academic institutions are urged to improve vigilance, enforce zero-tolerance policies, and create more equitable, humanistic environments free of bias and misconduct (Candidates 010, 017, 025)."
+    ]
+  }
+}

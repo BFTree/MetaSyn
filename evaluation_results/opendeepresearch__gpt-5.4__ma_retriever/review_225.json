@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28060,
+    "output_tokens": 1191,
+    "total_tokens": 29251
+  },
+  "metrics": {
+    "retrieval_recall": 0.6875,
+    "retrieval_precision": 0.4583333333333333,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.5416666666666666,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.6875,
+    "inclusion_consistency": 0.3679,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5928,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The review is well organized with clear question, executive summary, methods, eligibility criteria, exact search queries, screening narrative, study characteristics, synthesis, limitations, and conclusion, but it lacks a formal abstract, complete PRISMA flow/counts, explicit quality/risk-of-bias assessment, and complete references, preventing an excellent PRISMA-level structure score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with low-renin hypertension.",
+      "Mixed populations were considered only if the low-renin subgroup was clearly identifiable and aligned with the inclusion criteria.",
+      "Mineralocorticoid receptor antagonist therapy, including spironolactone and eplerenone where studied.",
+      "Placebo or active antihypertensive comparators, including ACE inhibitors, ARBs, diuretics, or other active antihypertensive drugs.",
+      "Randomized controlled trials only.",
+      "Change in blood pressure, including systolic and diastolic blood pressure",
+      "Time to target blood pressure",
+      "Defined daily dose of antihypertensive required to achieve target blood pressure",
+      "End-organ dysfunction",
+      "Adverse effects, safety, and tolerability",
+      "English language only",
+      "Search end date: 2022-12-19 00:00:00",
+      "No lower date limit applied"
+    ],
+    "exclusion_criteria": [
+      "Studies involving known secondary hypertension were excluded, including:",
+      "primary aldosteronism",
+      "monogenic causes of low-renin hypertension",
+      "other clearly secondary causes of hypertension",
+      "No conference abstracts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus identifies a small body of randomized evidence suggesting that mineralocorticoid receptor antagonists are effective for lowering blood pressure in adults with low-renin hypertension.",
+      "The strongest available trial found eplerenone superior to losartan for both BP reduction and need for add-on therapy.",
+      "older trials generally found spironolactone to be similarly effective, but not clearly better, than thiazide or thiazide-like diuretics.",
+      "A formal meta-analysis was not supportable from the available local corpus records because of incomplete reporting, crossover designs, subgroup-only data, and lack of extractable variance estimates."
+    ]
+  }
+}

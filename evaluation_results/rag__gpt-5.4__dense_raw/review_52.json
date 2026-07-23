@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15222,
+    "output_tokens": 2049,
+    "total_tokens": 17271
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.3702,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening decisions, thematic evidence synthesis, limitations, conclusion-like bottom line, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, quality assessment, data extraction process, and proper references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "the stated time window (`2018-01-01` to `2025-04-13`)",
+      "population restricted to male patients with hard-flaccid syndrome"
+    ],
+    "exclusion_criteria": [
+      "excluded items that did not meet the HFS-focused PICO",
+      "were clearly reviews/comments rather than eligible primary studies.",
+      "Not HFS population/topic: the large majority of candidates.",
+      "Review/editorial/comment/protocol: e.g., Candidate 004 comment, priapism reviews, other condition reviews.",
+      "Outside search window: e.g., priapism/other older studies before 2018.",
+      "HFS title but insufficiently classifiable as an eligible primary study from the supplied record: Candidate 005 (`Hard-flaccid syndrome: a report of two cases.`) has no abstract, and with only title metadata I cannot verify enough about population details, design, or whether it contributes usable evidence beyond being a case report title."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The current literature supports a tentative neurovascular-pelvic floor-biopsychosocial model, but not a confirmed mechanism.",
+      "Diagnostic workup is often unrevealing, and no validated criteria are established.",
+      "Management evidence is limited to case-level reports suggesting poor response to PDE5 inhibitors alone and possible benefit from multimodal care, especially pelvic floor/rehabilitative and biopsychosocial approaches, with one recent case also reporting improvement after adding low-intensity shock wave therapy."
+    ]
+  }
+}

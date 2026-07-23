@@ -1,0 +1,68 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16218,
+    "output_tokens": 912,
+    "total_tokens": 17130
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.45454545454545453,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6060606060606061,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.5575,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4287,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The synthesis is logically organized and reports eligibility criteria, exclusions, findings, limitations, and included studies, but it lacks formal abstract, introduction, methods, results, discussion, conclusion, and references sections as well as detailed search, screening, data extraction, quality assessment, and meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "hospitalized patients with sepsis or at risk for sepsis",
+      "intervention was an automated alerting/surveillance system integrated into the electronic health record",
+      "comparator was usual care without alerts",
+      "outcomes included mortality and/or ICU/hospital length of stay",
+      "adult/non-pediatric populations",
+      "primary studies only"
+    ],
+    "exclusion_criteria": [
+      "articles that were reviews",
+      "protocols",
+      "pediatric studies",
+      "prediction-model development without an alert intervention",
+      "non-EHR or non-automated interventions",
+      "sepsis bundles without an automated alert component",
+      "telemedicine-only interventions",
+      "studies outside the date window or otherwise not comparing alerting versus usual care",
+      "explicitly noninterventional",
+      "telemedicine eICU cart exposure rather than an EHR-integrated automated alerting system",
+      "sepsis improvement projects or protocols without a clearly automated EHR alert intervention as required",
+      "Pediatric studies were excluded per criteria.",
+      "Reviews, protocols, conference collections, and prediction-model papers were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across studies, automated sepsis alerting was associated more consistently with process improvements than with mortality benefit.",
+      "From the supplied candidate pool, automated sepsis alerting systems do not show a consistent mortality benefit at abstract level.",
+      "Benefits appear more plausible for process measures and, in some studies, length of stay.",
+      "Randomized ICU and ward studies were mostly neutral for mortality and LOS.",
+      "ED studies showed more frequent improvements in timeliness and some LOS-related or composite outcome gains.",
+      "Evidence within this pool is dominated by rule-based systems; there is not enough eligible interventional ML-alert evidence here to compare rule-based versus machine-learning systems on mortality or LOS."
+    ]
+  }
+}

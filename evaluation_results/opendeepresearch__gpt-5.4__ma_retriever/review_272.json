@@ -1,0 +1,82 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26288,
+    "output_tokens": 1067,
+    "total_tokens": 27355
+  },
+  "metrics": {
+    "retrieval_recall": 0.3333333333333333,
+    "retrieval_precision": 0.3333333333333333,
+    "inclusion_recall": 0.17777777777777778,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.2962962962962963,
+    "screening_accuracy": 0.8222222222222222,
+    "conditional_retention": 0.5333333333333333,
+    "post_retrieval_loss": 0.15555555555555556,
+    "inclusion_consistency": 0.6078,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.784,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, eligibility criteria, search strategy, deduplication, screening decisions, included evidence base, and study characteristics, but it lacks a formal abstract and does not show full PRISMA-level rigor such as quality assessment, detailed data extraction procedures, or a clearly specified synthesis/meta-analysis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "in vivo human primary studies in peer-reviewed journals that measured, at baseline within the patient sample:",
+      "at least one blood-based immune marker, and",
+      "at least one standardized neuropsychological cognitive outcome,",
+      "and that reported an association analysis between the two.",
+      "Eligible populations were human patients with a primary diagnosis clearly mapping to:",
+      "schizophrenia spectrum disorders,",
+      "schizoaffective disorder,",
+      "brief psychotic disorder / other psychotic disorder when explicitly stated,",
+      "major depressive disorder,",
+      "persistent depressive disorder / dysthymia,",
+      "bipolar disorder.",
+      "Eligible exposures were blood-based immune markers, including:",
+      "inflammatory cytokines,",
+      "broader pro-/anti-inflammatory indices,",
+      "kynurenine pathway metabolites,",
+      "markers related to microglial activation measured in blood.",
+      "Eligible outcomes were:",
+      "global cognition, or",
+      "domain-specific cognitive functioning measured with standardized neuropsychological tests.",
+      "Eligible designs were:",
+      "cross-sectional studies,",
+      "longitudinal observational studies,",
+      "provided that baseline immune marker and cognitive measurements were available and linked through an association analysis."
+    ],
+    "exclusion_criteria": [
+      "Studies using only symptom-scale cognitive items such as PANSS cognitive items were excluded.",
+      "Excluded were:",
+      "case reports,",
+      "case series,",
+      "conference abstracts / proceedings,",
+      "reviews,",
+      "meta-analyses,",
+      "opinion papers,",
+      "preprints,",
+      "studies without a patient-only immune marker\u2013cognition association analysis."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "A total of **9 studies** were included.",
+      "Two records strongly implicated kynurenine pathway dysregulation in schizophrenia-related cognition:",
+      "**7452** linked dysregulated kynurenine metabolism with **proinflammatory cytokines** and **attention** in schizophrenia, also connecting these findings to prefrontal cortex volume [1].",
+      "**7446** reported that **quinolinic acid** was associated with cognitive deficits in schizophrenia,",
+      "Included markers fell mainly into:",
+      "No clearly includable blood study focused specifically on a classic **microglial activation marker** was confidently identified in the screened evidence."
+    ]
+  }
+}

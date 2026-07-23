@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15609,
+    "output_tokens": 1254,
+    "total_tokens": 16863
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.6086956521739131,
+    "inclusion_f1": 0.7567567567567568,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7663,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2697,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes the research question, eligibility criteria, screening summary, narrative synthesis of results, age-specific summary, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Women at average risk of breast cancer aged 45\u201374 years.",
+      "Annual, biennial, or triennial mammography screening.",
+      "Biennial mammography screening (as the reference interval).",
+      "Randomized controlled trials (RCTs), observational studies (cohorts, time\u2011trend, or registry\u2011based analyses), and decision analytic models (assuming 100% adherence)."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "guidelines",
+      "protocols",
+      "studies of high\u2011risk populations",
+      "studies not comparing screening intervals",
+      "studies that did not report the specified outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Decision models consistently identify **biennial screening as the most efficient strategy** for average\u2011risk women.",
+      "Biennial strategies provide a favorable balance of QALYs gained relative to the number of mammograms, false positives, and overdiagnosis (Candidates 009, 033, 040, 077, 081, 101).",
+      "**Observational studies** provide consistent evidence that longer intervals are associated with a higher proportion of late\u2011stage or larger tumors, particularly in younger women.",
+      "**Observational studies** show lower interval cancer rates with annual screening.",
+      "**Modeling studies** estimate that overdiagnosis increases with more frequent screening.",
+      "**Cumulative false\u2011positive risks are substantially higher with annual screening.**",
+      "Biennial screening appears to offer most of the mortality benefit of annual screening with fewer false positives and less overdiagnosis.",
+      "No consistent increase in advanced\u2011stage disease with biennial vs annual screening.",
+      "Triennial screening may be less effective."
+    ]
+  }
+}

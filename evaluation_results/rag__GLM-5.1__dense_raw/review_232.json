@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16976,
+    "output_tokens": 982,
+    "total_tokens": 17958
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7323,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5283,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, inclusion/exclusion criteria, screening results, and synthesis findings, but it lacks major required sections such as an abstract, introduction/background, discussion, conclusion, references, detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human research and original investigations.",
+      "Assessed dietary salt/sodium intake as the exposure variable.",
+      "Assessed a health-related or relevant surrogate outcome (blood pressure, CVD, physical performance, renal outcomes, CKD, osteoporosis, or all-cause mortality).",
+      "For cohort studies: duration \u22651 year for morbidity/mortality outcomes (Categories I, II, V) and \u22654 weeks for blood pressure (Category III); \u2265400 participants (continuous) or events (dichotomous).",
+      "Measured sodium intake using at least one 24-hour urine collection, food record, or 24-hour diet recall (Food Frequency Questionnaires [FFQs] and diet histories were excluded per criteria).",
+      "Publication date between September 30, 2019, and December 31, 2020."
+    ],
+    "exclusion_criteria": [
+      "Animal/in-vitro studies; narrative reviews, commentaries, protocols, position papers, case reports, letters, proceedings, or guidelines.",
+      "Modelling or simulation studies.",
+      "Studies where dietary salt is not the only exposure variable (e.g., composite dietary indices, combined interventions like DASH+sodium, or Na/K ratio-only analyses).",
+      "Use of FFQ, spot urine, or diet history for sodium intake estimation.",
+      "Cross-sectional studies.",
+      "Physiological/biomarker surrogate outcomes (Category VI)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Upon full screening, no candidate met all the stringent methodological, temporal, and exposure criteria required for detailed critical appraisal and inclusion.",
+      "As no primary studies from the candidate pool met the inclusion criteria, there is no eligible evidence within this pool to synthesize regarding the association between dietary sodium intake (measured via 24h urine, food record, or 24h recall) and the specified health outcomes in the general adult population for the 2019\u20132020 period.",
+      "None were included."
+    ]
+  }
+}

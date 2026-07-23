@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6558,
+    "output_tokens": 1581,
+    "total_tokens": 8139
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.625,
+    "inclusion_precision": 0.5555555555555556,
+    "inclusion_f1": 0.5882352941176471,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.3739,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3059,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around key findings and included studies, but it lacks most formal systematic review sections and PRISMA-style elements such as Abstract, Introduction, Methods, search strategy, inclusion/exclusion criteria, screening process, quality assessment, data extraction, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "specified publication date range (2012\u20132023)"
+    ],
+    "exclusion_criteria": [
+      "published after the February 7, 2023, endpoint"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "YKL-40 (Chitinase-3-like protein 1) is the most extensively studied neuroinflammatory biomarker among the eligible candidates.",
+      "Evidence consistently demonstrates that YKL-40 levels in cerebrospinal fluid (CSF) are elevated in AD dementia compared to cognitively normal controls and other neurodegenerative dementias (such as Parkinson's disease, dementia with Lewy bodies, and frontotemporal lobar degeneration) (Candidates 001, 027, 053).",
+      "Furthermore, YKL-40 elevations are observed early in the disease process; CSF YKL-40 is increased during the preclinical and prodromal (MCI) stages of AD (Candidate 003) and is elevated in asymptomatic at-risk adults with AD pathology (Candidate 012).",
+      "Several studies indicate that YKL-40 is not merely a stage marker but carries prognostic significance for disease progression and cognitive decline.",
+      "Higher CSF YKL-40 levels are associated with subsequent cognitive deterioration in non-demented patients (measured by MMSE) and increase the risk of developing AD dementia (Candidate 003).",
+      "Glial fibrillary acidic protein (GFAP) in CSF is elevated in AD compared to controls and other neurodegenerative conditions (Candidate 053).",
+      "The synthesized evidence reinforces the conceptual model that neuroinflammation is an early event in AD, present already in preclinical and prodromal stages, and interacts with core AD pathologies (amyloid and tau).",
+      "YKL-40 and GFAP elevations appear to track with disease severity and, in the case of YKL-40, predict future cognitive decline and progression to dementia, suggesting their utility as prognostic fluid biomarkers alongside core AD markers."
+    ]
+  }
+}

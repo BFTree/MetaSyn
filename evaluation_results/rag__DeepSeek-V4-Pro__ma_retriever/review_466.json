@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14214,
+    "output_tokens": 741,
+    "total_tokens": 14955
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.7058823529411765,
+    "post_retrieval_loss": 0.22727272727272727,
+    "inclusion_consistency": 0.6085,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3642,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Objective, Methods, Results, study summary, included studies, and Discussion, and it includes screening criteria and a narrative synthesis approach, but it lacks a formal abstract, introduction, conclusion, references, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "hospitalized patients with or at risk of sepsis",
+      "an automated alerting system integrated into the electronic health record, using rule\u2011based or machine\u2011learning algorithms",
+      "a comparison group receiving usual care without automated alerts",
+      "reporting of hospital mortality, ICU length of stay, or hospital length of stay"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "animal studies",
+      "non\u2011sepsis interventions",
+      "pediatric populations (<16 years)",
+      "case reports"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Mortality: Findings were mixed.",
+      "Several studies reported a statistically significant reduction in sepsis\u2011related mortality after alert implementation, while others found no significant change.",
+      "Length of stay: Several studies observed a significant reduction in hospital and/or ICU length of stay, whereas others reported no difference.",
+      "The overall effect on mortality remains uncertain, with many studies underpowered for this endpoint.",
+      "Heterogeneity in alert design, outcome definitions, and study methodology precluded a formal meta\u2011analysis at this stage."
+    ]
+  }
+}

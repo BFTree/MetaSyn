@@ -1,0 +1,74 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10355,
+    "output_tokens": 1469,
+    "total_tokens": 11824
+  },
+  "metrics": {
+    "retrieval_recall": 0.5853658536585366,
+    "retrieval_precision": 0.12,
+    "inclusion_recall": 0.14634146341463414,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.905,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.43902439024390244,
+    "inclusion_consistency": 0.6255,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6048,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review objective, screening summary, synthesis of findings, and included studies, but it lacks several standard systematic review sections such as an abstract, full introduction, detailed methods, quality assessment, formal discussion/conclusion, references, and a detailed PRISMA-style search and data extraction process."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prevalence studies",
+      "case series",
+      "cross-sectional studies",
+      "cohort studies",
+      "similar observational designs reporting on confirmed mpox patients",
+      "providing explicit data on the proportion of women among confirmed or probable mpox cases"
+    ],
+    "exclusion_criteria": [
+      "qualitative studies",
+      "policy reports",
+      "reviews",
+      "case reports",
+      "studies that only addressed male cases or failed to report the sex distribution",
+      "published after January 4, 2023 (years 2024-2026) and were thus out-of-date for the search parameters",
+      "systematic reviews",
+      "meta-analyses",
+      "narrative reviews",
+      "modeling studies",
+      "case reports (single or very small series)",
+      "protocols",
+      "policy/guidance documents",
+      "editorials",
+      "focused exclusively on men who have sex with men (MSM) networks without reporting the total proportion of women",
+      "reported outcomes (e.g., clinical features, virology, immunology, vaccine efficacy, knowledge/attitudes) that did not include the sex distribution of cases"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Seven primary studies met all inclusion criteria, providing explicit data on the proportion of women among confirmed or probable mpox cases.",
+      "Historical and pre-2022 mpox data from endemic African countries demonstrates a substantial representation of women among cases, though varying by outbreak context:",
+      "In endemic settings prior to 2022, women constituted roughly 19% to 57% of mpox cases.",
+      "The higher proportion in human-to-human transmission chains (often within households) compared to zoonotic spillover highlights the vulnerability of women to secondary transmission in domestic contexts.",
+      "In stark contrast, the 2022 mpox outbreaks in nonendemic countries displayed a dramatically lower proportion of women, consistent with the outbreak's predominant circulation within MSM sexual networks:",
+      "The sex distribution of mpox has shifted profoundly over time and across geographies.",
+      "In pre-2022 endemic outbreaks in Africa, women frequently accounted for a quarter to over half of all cases, particularly where household and non-zoonotic contact transmission drove spread.",
+      "Conversely, during the 2022 global outbreak in nonendemic European settings, the proportion of women plummeted to between 1% and 2.4%.",
+      "This divergence underscores that the 2022 outbreak's epidemiology\u2014characterized by sustained sexual transmission among gay, bisexual, and other MSM\u2014largely bypassed the female population, whereas historical endemic dynamics involved broader community exposure where women were heavily represented."
+    ]
+  }
+}

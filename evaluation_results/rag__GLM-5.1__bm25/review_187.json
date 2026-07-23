@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13639,
+    "output_tokens": 1098,
+    "total_tokens": 14737
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6548,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5042,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes review context, screening summary, synthesized findings, conclusion, and included articles, but it lacks several formal required sections and PRISMA-style details such as a full abstract, introduction, methods, detailed search strategy, data extraction process, quality assessment, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "undergraduate dental students as the population",
+      "TBL as the intervention",
+      "comparison against another teaching pedagogy",
+      "a publication date cutoff of May 2, 2023"
+    ],
+    "exclusion_criteria": [
+      "Publication Date: Over 140 candidates were published after the May 2023 search end date (years 2024, 2025, 2026).",
+      "Population: Many studies focused on medical, nursing, pharmacy, or other health profession students rather than specifically undergraduate dental (dentistry) students.",
+      "Studies on dental hygiene or pre-dental graduate students were also excluded as they did not fit the strict \"undergraduate dental student\" parameter.",
+      "Intervention/Comparison: Several dental education studies evaluated flipped classrooms, problem-based learning (PBL), or virtual reality without including TBL as the intervention or a comparator.",
+      "Conversely, some studies evaluating TBL did not compare it against another teaching pedagogy (e.g., they only validated assessment tools within TBL).",
+      "Study Type: Systematic reviews, scoping reviews, meta-analyses, protocols, and commentaries were excluded as non-eligible secondary or non-primary study types."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence suggests that TBL is an effective alternative to traditional didactic lectures in undergraduate dental education, consistently yielding higher academic performance and greater student satisfaction.",
+      "When compared to other dialectic active learning approaches like the flipped classroom, TBL demonstrates comparable academic effectiveness, suggesting that the shift from passive to active learning\u2014regardless of the specific active framework\u2014is the primary driver of educational benefit.",
+      "However, the current evidence base is limited to a small number of quasi-experimental and cross-sectional studies at specific institutions; robust, multi-center randomized controlled trials are needed to further validate these findings across broader dental curricula."
+    ]
+  }
+}

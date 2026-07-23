@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10981,
+    "output_tokens": 1290,
+    "total_tokens": 12271
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.5882352941176471,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7407407407407407,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.35294117647058826,
+    "inclusion_consistency": 0.2386,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2912,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized thematically with an overview, findings, conclusion, and included studies list, but it lacks major systematic review sections such as a formal abstract, introduction, detailed methods, search strategy, screening process, data extraction, quality assessment, synthesis/meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with obesity (BMI \u2265 35)",
+      "published between 2007 and 2022",
+      "prospective or cross-sectional cohorts of bariatric surgery candidates",
+      "concurrent polysomnography and liver biopsy or serum marker assessment"
+    ],
+    "exclusion_criteria": [
+      "Studies published after the search end date (2022-10-08)",
+      "those involving non-obese or paediatric populations",
+      "animal/cell models",
+      "reviews",
+      "studies not directly assessing OSA indicators against NAFLD outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In adults with severe obesity, OSA\u2014particularly markers of chronic intermittent hypoxia such as AHI, ODI, and lowest oxygen saturation\u2014is frequently associated with and predictive of NAFLD presence, histological NASH severity, and liver fibrosis.",
+      "While a minority of studies found the association with NASH attenuated after adjusting for confounders like insulin resistance or treatment, the dominant evidence supports OSA hypoxia as an independent driver of liver injury.",
+      "Furthermore, BMS effectively improves both OSA and NAFLD, with postoperative improvements in hypoxia and liver pathology being closely correlated.",
+      "Multiple studies confirmed that OSA and its specific hypoxia-related indicators are predictive of NAFLD presence, severity, and histological progression in adults with severe or morbid obesity:",
+      "The study found that BMS effectively improved both sleep apnea and nocturnal hypoxia, as well as liver steatosis and fibrosis."
+    ]
+  }
+}

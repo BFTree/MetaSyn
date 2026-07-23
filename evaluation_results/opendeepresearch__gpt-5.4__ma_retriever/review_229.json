@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27754,
+    "output_tokens": 1016,
+    "total_tokens": 28770
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.2222222222222222,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.8888888888888888,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.4896,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4349,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review/meta-analysis elements such as eligibility criteria, detailed search strategy, candidate records, screening decisions, and study summaries, but it lacks a formal abstract and does not clearly show a complete PRISMA-style quality assessment or full synthesis/results-discussion-conclusion structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original research articles",
+      "published in English",
+      "published after January 1, 2010",
+      "level I or level II prospective studies",
+      "conducted in patients with CKD, defined as:",
+      "eGFR below 60 ml/min/1.73 m\u00b2 for more than 3 months, or",
+      "other evidence of kidney damage such as persistent albuminuria for more than 3 months",
+      "conducted in participants with hypertension",
+      "evaluating catheter-based endovascular radiofrequency RDN"
+    ],
+    "exclusion_criteria": [
+      "assessed secondary causes of hypertension other than CKD",
+      "involved renovascular anomalies",
+      "involved congestive heart failure",
+      "involved left-ventricular ejection fraction below 35%",
+      "were non-English",
+      "were reviews, editorials, guidelines, case reports, or other non-original research",
+      "used non-endovascular/laparoscopic denervation approaches"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence base identified in the local corpus was small and consisted mainly of single-arm prospective observational studies comparing post-RDN outcomes with each cohort\u2019s own baseline.",
+      "No large randomized controlled trial limited specifically to CKD resistant-hypertension patients was retrieved from the local corpus within the date window.",
+      "The study appears to support a blood-pressure-lowering effect after RDN, with no signal from the title/abstract suggesting catastrophic kidney-function decline.",
+      "From the local corpus evidence available, the study was considered eligible and supportive of the hypothesis that RDN may reduce blood pressure without obvious worsening of renal function in CKD.",
+      "Several potentially eligible records were available in the local corpus only at abstract level."
+    ]
+  }
+}

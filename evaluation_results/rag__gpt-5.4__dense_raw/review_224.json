@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15573,
+    "output_tokens": 903,
+    "total_tokens": 16476
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.4653,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4085,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a screening summary with eligibility criteria, synthesis, limitations, and included/excluded examples, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with hypertension",
+      "biofeedback intervention",
+      "randomized controlled trial",
+      "blood pressure outcomes",
+      "English-language primary study"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-randomized studies when randomization was not stated",
+      "studies without hypertensive adults",
+      "studies where the intervention was not biofeedback",
+      "systematic reviews/reviews",
+      "protocols",
+      "studies without clear randomization in the abstract",
+      "studies where biofeedback was not the intervention of interest",
+      "studies outside the target population or design requirements"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the candidate pool, the eligible evidence suggests **mixed and inconsistent effects of biofeedback on blood pressure in adults with hypertension**.",
+      "Some trials reported benefit",
+      "Some more rigorously controlled or placebo/sham-controlled studies did not show a specific biofeedback effect",
+      "Positive findings are common in small trials and in multicomponent interventions",
+      "Sham/placebo-controlled evidence is less convincing",
+      "Heterogeneity is substantial",
+      "Based on title/abstract screening alone, the candidate pool supports a conclusion of **possible short-term BP reduction in some settings, but inconsistent evidence for a specific, reliable antihypertensive effect of biofeedback compared with control conditions**.",
+      "The more internally valid sham/placebo-controlled evidence appears **mixed**, while multicomponent behavioral studies are more often positive but less specific to biofeedback itself."
+    ]
+  }
+}

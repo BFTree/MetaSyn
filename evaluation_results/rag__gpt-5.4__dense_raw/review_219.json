@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21116,
+    "output_tokens": 1123,
+    "total_tokens": 22239
+  },
+  "metrics": {
+    "retrieval_recall": 0.8676470588235294,
+    "retrieval_precision": 0.295,
+    "inclusion_recall": 0.14705882352941177,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.745,
+    "conditional_retention": 0.1694915254237288,
+    "post_retrieval_loss": 0.7205882352941176,
+    "inclusion_consistency": 0.6053,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4139,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear screening rationale, synthesis, outcome subgrouping, limitations, and included/excluded study lists, but it lacks a formal Abstract, Introduction, detailed Methods with search strategy/data extraction/quality assessment, Discussion/Conclusion separation, and proper References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English full papers",
+      "primary studies only",
+      "exposure above 6 GHz",
+      "low-level RF at or below the ICNIRP occupational whole-body limit (`SAR <= 0.4 W/kg`) or, for relevant local in vitro exposure, within the stated local power-density allowance (`~100-200 W/m^2`, depending on frequency)",
+      "epidemiology allowed only for radar studies above 6 GHz"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "comments",
+      "therapeutic studies unless they reported specific bio-effects"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence from this candidate pool is sparse and methodologically mixed.",
+      "A consistent pattern does **not** emerge.",
+      "Because the evidence is heterogeneous in model systems, endpoints, and likely exposure characterization quality, this candidate set does **not** support a firm conclusion that low-level RF above 6 GHz consistently causes adverse biological or health effects.",
+      "At the same time, it also does **not** support a firm conclusion of no effect, because several included studies reported adverse findings across genotoxic, reproductive, cellular, and oxidative endpoints.",
+      "Overall, the candidate-pool evidence is best described as **inconsistent and low certainty** on abstract-only screening.",
+      "Bottom line: from this candidate pool, the evidence is mixed and insufficient for a firm causal conclusion.",
+      "The included studies show both null and adverse findings, with adverse signals most often in reproductive, oxidative stress, chromatin/membrane, and cell-growth endpoints, but the overall certainty is low on abstract-only screening."
+    ]
+  }
+}

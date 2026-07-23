@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15936,
+    "output_tokens": 1398,
+    "total_tokens": 17334
+  },
+  "metrics": {
+    "retrieval_recall": 0.9375,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.875,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.823529411764706,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.9333333333333333,
+    "post_retrieval_loss": 0.0625,
+    "inclusion_consistency": 0.667,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.612,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear research question, screening criteria, evidence synthesis, summary, and included-study list, but it lacks a formal abstract, introduction, detailed methods/search strategy, data extraction procedures, quality assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Report standardized intelligence test scores obtained before age 21.",
+      "Examine the association between early-life IQ and later-life clinical health conditions (including physical parameters or biomarkers linked to clinical diagnoses).",
+      "Be primary research (not reviews, protocols, editorials, conference abstracts, or meta-analyses).",
+      "Include general population samples or case\u2011control designs; studies limited solely to clinical cohorts without healthy controls were excluded."
+    ],
+    "exclusion_criteria": [
+      "studies limited solely to clinical cohorts without healthy controls were excluded.",
+      "Not rely on later\u2011life sociodemographic proxies for IQ.",
+      "Not report only mortality outcomes without morbidity or disease incidence.",
+      "IQ not measured before age 21 or using non\u2011standardized proxies (e.g., self\u2011assessed school performance)",
+      "outcomes limited to mortality alone",
+      "outcomes that were not clinical diagnoses (e.g., health behaviours, cognitive test scores without linkage to a clinical condition)",
+      "study designs such as systematic reviews, meta\u2011analyses, protocols, or cohorts that focused on clinical populations without controls"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence base, derived from 36 high\u2011quality longitudinal studies predominantly conducted in Nordic countries, the United Kingdom, and the United States, demonstrates that lower intelligence measured before age 21 is a consistent risk factor for a wide spectrum of later\u2011life physical and mental health disorders.",
+      "The strongest and most consistent associations are observed for schizophrenia, dementia, cardiovascular disease, and alcohol\u2011related disorders, whereas associations with cancer are weak or absent, and a paradoxical positive association is noted for Parkinson\u2019s disease.",
+      "Adult socioeconomic attainment, particularly education, appears to be a key pathway linking early\u2011life IQ to many physical health outcomes, whereas the neurodevelopmental underpinnings of IQ may play a more direct role in severe mental illness and dementia."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31141,
+    "output_tokens": 802,
+    "total_tokens": 31943
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.1724137931034483,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9310344827586207,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6754,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5764,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with clear methods, eligibility criteria, search queries, screening decisions, study characteristics, synthesis approach, limitations, conclusion, and sources, but it lacks a formal abstract/introduction and does not include a detailed quality or risk-of-bias assessment needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies directly comparing clinicians diagnosing skin cancer with AI assistance versus without AI assistance",
+      "Diagnosis based on images of skin lesions or in-person visits",
+      "Any clinician expertise level",
+      "Any study design, sample size, reference standard, or skin diagnosis, provided at least one skin malignancy was included",
+      "Data from non-physician medical professionals only if physicians were also included"
+    ],
+    "exclusion_criteria": [
+      "Diagnosis based on material other than skin lesion images or in-person visits, such as pathology slides",
+      "Studies comparing clinicians only against AI, without a clinician-with-AI versus clinician-without-AI comparison",
+      "Non\u2013deep learning techniques",
+      "Editorials, reviews, and case reports"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Using only the local MetaSyn PubMed corpus and the specified date range, the evidence indicates that **deep learning\u2013based AI assistance generally improves clinicians\u2019 skin cancer diagnostic performance compared with clinician diagnosis without AI assistance** [1][2][3].",
+      "This favorable direction is supported by improved overall diagnostic accuracy and, in one study, improved agreement among clinicians [2].",
+      "However, the review question specifically targeted **sensitivity and specificity**, and the available local-corpus records did **not** provide sufficient numeric sensitivity/specificity data to support a formal meta-analysis.",
+      "Therefore, the evidence supports a **qualitative conclusion of likely benefit**, but not a pooled quantitative estimate for sensitivity or specificity."
+    ]
+  }
+}

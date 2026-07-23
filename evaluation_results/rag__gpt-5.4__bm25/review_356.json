@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13673,
+    "output_tokens": 1314,
+    "total_tokens": 14987
+  },
+  "metrics": {
+    "retrieval_recall": 0.5909090909090909,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.3076923076923077,
+    "post_retrieval_loss": 0.4090909090909091,
+    "inclusion_consistency": 0.5866,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3854,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, synthesis, judgments, and bottom line sections with some eligibility criteria, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, and full References, and includes limited meta-analysis rigor elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "bipolar disorder population",
+      "LTCC antagonist intervention",
+      "for efficacy/acceptability\u2014randomized controlled double-blind comparisons with placebo or active treatment.",
+      "Eligible efficacy studies are limited to double-blind randomized trials of `verapamil`",
+      "acute mania double-blind randomized trials of verapamil with placebo or lithium."
+    ],
+    "exclusion_criteria": [
+      "reviews, retrospective/open studies, case reports, protocols, non-bipolar studies, or studies where the abstract did not support the required design/comparator.",
+      "not randomized double-blind comparator efficacy trials.",
+      "open trial.",
+      "uncontrolled series.",
+      "mixed design with open lead-in and preliminary adjunctive phase; abstract does not clearly support inclusion as a straightforward eligible double-blind efficacy comparison under the review rules.",
+      "Reviews/systematic reviews (for example `Calcium Channel Antagonists for Mood Disorders.`) are not primary studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The candidate pool suggests the strongest direct evidence is for **acute mania**, not bipolar depression or relapse prevention.",
+      "Multiple small double-blind randomized studies report that **verapamil improved acute manic symptoms**, either versus placebo or with efficacy similar to lithium.",
+      "This supports a possible antimanic effect, but the evidence base appears **small, old, and likely underpowered**.",
+      "Evidence for **bipolar depression** is not eligible from this pool for efficacy because the identified isradipine and diltiazem depression studies are pilot/open/retrospective rather than double-blind randomized comparator trials.",
+      "Evidence for **maintenance/relapse prevention** is also not established from eligible double-blind trials in this pool; maintenance-related verapamil/nimodipine items are case reports, open studies, or reviews rather than eligible blinded RCTs.",
+      "From this candidate pool, LTCC antagonist evidence is **narrow and mostly confined to verapamil for acute mania**.",
+      "The eligible studies suggest **possible antimanic efficacy comparable to placebo superiority and/or lithium equivalence**, but confidence is limited by small samples and sparse replication.",
+      "There is **no convincing eligible evidence here for acute bipolar depression or relapse prevention**."
+    ]
+  }
+}

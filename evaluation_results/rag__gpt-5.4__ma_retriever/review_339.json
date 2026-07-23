@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16348,
+    "output_tokens": 1130,
+    "total_tokens": 17478
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.78125,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.8064516129032259,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.78125,
+    "post_retrieval_loss": 0.21875,
+    "inclusion_consistency": 0.5904,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5143,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, synthesized results by outcome, limitations, and a list of included studies, but it lacks several formal systematic review/meta-analysis sections and PRISMA-style elements such as a full abstract, introduction, detailed search strategy, data extraction methods, quality assessment, quantitative synthesis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "IQ/cognitive ability was measured in childhood, adolescence, or early adulthood under 21",
+      "It was related to later clinical health outcomes (psychiatric diagnoses, hospitalizations, register-based disease diagnoses, dementia, CVD, etc.)",
+      "The population was broadly population-based or otherwise included an appropriate comparison rather than being only a patient cohort."
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses/protocols,",
+      "focused on mortality only,",
+      "focused only on self-reported symptoms/behaviors without clear clinical outcomes,",
+      "based on clinical/high-risk patient samples without healthy/general-population comparison relevant to the question,",
+      "or not clearly using early-life IQ as the exposure of interest.",
+      "Because duplicate publications based on the same data/outcome should be excluded, I took a conservative approach where overlap looked likely."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The candidate pool contains **multiple eligible primary studies**.",
+      "Overall, the abstracts consistently suggest that **lower intelligence measured before age 21 is associated with higher later risk of several mental disorders and some physical disorders**, especially:",
+      "**Lower early-life IQ is generally associated with increased later risk of several clinical mental and physical disorders.**",
+      "The association is **strongest and most consistent for schizophrenia/psychosis**.",
+      "It is also fairly consistent for **broad psychiatric morbidity, depression, dementia, CHD, stroke, and cardiometabolic disease**.",
+      "There are notable **exceptions and variations by condition**, especially:",
+      "The abstracts strongly suggest that **education and adult socioeconomic circumstances** are important in explaining or modifying these associations."
+    ]
+  }
+}

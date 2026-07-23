@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19248,
+    "output_tokens": 1160,
+    "total_tokens": 20408
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.2542,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5643,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear organized structure with review context/screening, evidence synthesis, quality notes, conclusions, and included studies, but it lacks a formal abstract, introduction, detailed methods, full search strategy, explicit inclusion/exclusion criteria, data extraction/synthesis methods, PRISMA flow details, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "publications between November 1, 2004, and November 30, 2014",
+      "prospective studies within the specified date range that quantitatively evaluate TPD (or synonymous terms like TPG/TLPD) in OAG patients versus healthy controls and assess its association with glaucomatous damage"
+    ],
+    "exclusion_criteria": [
+      "Out of date: The vast majority of candidates (e.g., Candidates 002, 005, 007\u2013010, 013, etc.) were published after 2014 and were excluded.",
+      "Review/Narrative format: Candidates such as 012, 023, and 088 were excluded as reviews or narrative summaries rather than primary quantitative studies.",
+      "Experimental models: Candidates 016, 021, and 036 involved animal models (dogs or porcine eyes) and were excluded.",
+      "Lack of TPD evaluation or OAG/Healthy comparison: Many candidates (e.g., 024, 025, 030) focused on vascular risk factors, perfusion, or IOP alone without evaluating TPD.",
+      "Lack of healthy controls: Candidate 004 (published in 2011) evaluated TPD in glaucoma patients but compared them to subjects with ocular hypertension (OHT), not \"healthy subjects without glaucoma\" as specified by the review target, and was therefore excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence demonstrates that the translaminar pressure difference (IOP \u2013 ICP) is significantly elevated in patients with open-angle glaucoma\u2014including both normal-tension and high-tension subtypes\u2014compared to healthy subjects.",
+      "Furthermore, a greater TPD is associated with more severe structural glaucomatous damage, specifically neuroretinal rim area loss and visual field defect progression.",
+      "These findings support the pathogenic role of the translaminar pressure gradient in glaucomatous optic neuropathy."
+    ]
+  }
+}

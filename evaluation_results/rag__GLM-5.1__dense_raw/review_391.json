@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15753,
+    "output_tokens": 1228,
+    "total_tokens": 16981
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.689655172413793,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.6503,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2485,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, thematic results, conclusion, and included studies list, but it lacks a formal abstract, full introduction, detailed methods, search strategy, screening process, data extraction approach, quality assessment, and quantitative meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective clinical analytical treatment interruption (ATI) studies in adults",
+      "reported outcomes for participants receiving no active intervention or placebo",
+      "met the frequent plasma viral load (pVL) monitoring threshold (inferred from \"frequent,\" \"close,\" or \"careful\" monitoring descriptions for modern cure trials, while excluding older studies with explicitly infrequent schedules)"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews",
+      "pooled analyses",
+      "studies failing the monitoring frequency criteria"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included observational ATI studies and placebo arms of interventional trials consistently demonstrate that viral rebound occurs rapidly following ART cessation in the absence of effective therapeutic intervention.",
+      "Rebound typically occurs within 2\u20134 weeks.",
+      "In randomized controlled trials, placebo or no-intervention arms uniformly experienced rapid rebound.",
+      "The timing of ART initiation is a critical determinant of rebound dynamics and PTC likelihood.",
+      "PTC (defined variably as maintaining low viremia without ART) is a rare outcome in the absence of intervention, though rates vary by cohort characteristics.",
+      "In PWH receiving placebo or no active intervention, ATI almost universally leads to rapid viral rebound (median ~3 weeks).",
+      "Early ART initiation significantly delays rebound and slightly increases the chance of PTC compared to late initiation, but sustained ART-free remission remains uncommon in the absence of curative interventions."
+    ]
+  }
+}

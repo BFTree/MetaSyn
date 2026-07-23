@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12465,
+    "output_tokens": 1277,
+    "total_tokens": 13742
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.6459,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6106,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Methods, Results, synthesis, limitations, conclusion, and included references, but it lacks an abstract and introduction and omits key PRISMA/meta-analysis elements such as a detailed search strategy, formal screening flow, data extraction process, quality/risk-of-bias assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies had to include patients with chronic hepatitis B (CHB) or chronic hepatitis C (CHC), compare a statin\u2011exposed group with a non\u2011exposed control group, report at least one of the target outcomes, and be a cohort study or randomised controlled trial (RCT)."
+    ],
+    "exclusion_criteria": [
+      "Studies that focused on populations with HIV co\u2011infection, were not in English, were reviews, meta\u2011analyses, editorials, or case reports, or did not report the outcomes of interest were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All nine included studies consistently reported inverse associations between statin exposure and the prespecified adverse outcomes.",
+      "The magnitude of risk reduction ranged from approximately 40% to 80% for HCC, 40\u201350% for cirrhosis/decompensation, and 20\u201380% for mortality, with several studies demonstrating a dose\u2011response relationship.",
+      "Benefits were observed across different viral hepatitis populations (CHB, CHC, compensated cirrhosis, post\u2011HBsAg seroclearance, and even in end\u2011stage kidney disease with viral hepatitis) and across diverse healthcare settings.",
+      "However, all evidence is observational, and no RCT data are available; thus, residual confounding and confounding by indication cannot be excluded.",
+      "In this systematic review of nine high\u2011quality observational studies restricted to viral hepatitis populations, statin exposure was consistently associated with clinically meaningful reductions in HCC incidence, cirrhosis, hepatic decompensation, and all\u2011cause mortality.",
+      "The dose\u2011dependent and lipophilicity\u2011specific patterns strengthen the biological plausibility of a protective role.",
+      "These findings support the hypothesis that statins may serve as a safe adjunctive therapy to reduce liver\u2011related complications in individuals with chronic viral hepatitis.",
+      "However, definitive causal evidence requires future randomised controlled trials."
+    ]
+  }
+}

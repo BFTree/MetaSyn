@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27878,
+    "output_tokens": 850,
+    "total_tokens": 28728
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9583333333333334,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5229,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4619,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with clear eligibility criteria, search strategy, screening decisions, study characteristics, synthesis approach, limitations, conclusion, and sources, but it lacks a formal abstract/introduction and does not include a full PRISMA-style flow diagram or quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "enrolled preterm infants aged under 37 weeks\u2019 gestation;",
+      "evaluated oral sucrose, glucose, or dextrose at any concentration or dose;",
+      "compared the sweet solution with breast milk and/or expressed breast milk;",
+      "administered the intervention before heel lancing and/or venipuncture."
+    ],
+    "exclusion_criteria": [
+      "involved RSV immunization rather than heel lance/venipuncture;",
+      "were not randomized controlled trials;",
+      "were systematic reviews;",
+      "did not include a breast milk/breastfeeding comparator;",
+      "matched one of the specifically excluded noneligible multi-arm structures listed in the brief;",
+      "included populations with mean gestational age 37 or 39 weeks;",
+      "combined term and preterm infants without separate preterm results."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Neither study showed a meaningful superiority of sucrose over breast milk/expressed breast milk for procedural pain scores measured by PIPP or PIPP-R.",
+      "One study found no significant difference in mean PIPP score between breast milk and sucrose, and the other concluded that expressed breast milk was not inferior to 24% sucrose [1][2].",
+      "No eligible included local-corpus study provided usable comparative evidence on crying duration, heart rate change, or adverse events, and no eligible glucose/dextrose-versus-breast-milk preterm RCT was available for inclusion from the retrieved records.",
+      "Therefore, the eligible local corpus evidence supports equivalence or non-inferiority of breast milk/expressed breast milk relative to sucrose for heel-lance pain in moderate/late preterm infants, but it does not establish whether sucrose or glucose/dextrose is better for crying reduction or other secondary outcomes."
+    ]
+  }
+}

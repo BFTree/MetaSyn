@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13909,
+    "output_tokens": 1099,
+    "total_tokens": 15008
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.5631,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5153,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with screening, evidence synthesis, limitations, and conclusion sections, but it lacks a formal abstract, introduction, detailed methods including search and screening procedures, data extraction and quality assessment, a quantitative synthesis approach, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies",
+      "breast, lung, or prostate cancer",
+      "federated learning in an eligible clinical oncology task",
+      "a qualifying comparison framework against centralized/single-centre baselines"
+    ],
+    "exclusion_criteria": [
+      "outside the date window (after 2023-09-01),",
+      "reviews, platforms, or methods papers without an eligible oncology evaluation,",
+      "not focused on breast, lung, or prostate cancer,",
+      "not clearly using federated learning in an eligible clinical oncology task,",
+      "**did not report a qualifying comparison framework** against centralized/single-centre baselines."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Among the included studies, the evidence points in a **consistent positive direction**: federated learning was associated with better cross-site or multicentre model behavior than non-federated single-site/local alternatives.",
+      "The main apparent benefit was **improved generalizability across sites** rather than simply higher within-site performance.",
+      "**Federated learning is feasible in real multicentre cancer settings** for breast and prostate cancer.",
+      "**Performance gains appear to come mainly from access to broader distributed data**, improving cross-site robustness/generalizability.",
+      "Based on the eligible studies in the supplied pool, **federated learning shows promising evidence of improving multicentre model generalizability and/or performance in breast and prostate cancer applications while preserving data privacy**.",
+      "The clearest reported gain is in **cross-site generalization**, especially in prostate MRI.",
+      "Therefore, the conclusion is **supportive but preliminary**."
+    ]
+  }
+}

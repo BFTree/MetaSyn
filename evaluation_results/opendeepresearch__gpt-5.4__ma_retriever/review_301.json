@@ -1,0 +1,83 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22115,
+    "output_tokens": 1594,
+    "total_tokens": 23709
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.06976744186046512,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9767441860465116,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6347,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7382,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report is highly organized with clear sections for review question, search strategy, screening, study selection, results, interpretation, limitations, conclusion, and references, and it includes PRISMA-style details such as exact queries, eligibility criteria, and exclusion reasons."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "1966-01-01 to 2014-10-21",
+      "local MetaSyn PubMed corpus only",
+      "randomized controlled trials, including cluster-randomized trials, with at least one intervention arm and one control arm",
+      "newborns and young infants aged 59 days or less",
+      "low- and middle-income countries",
+      "home visits by trained CHWs specifically trained to identify serious illness in young infants",
+      "successful identification/referral of seriously ill young infants and/or care seeking from health facilities; sensitivity and specificity where reported",
+      "newborn/young infant population",
+      "CHW- or volunteer-delivered intervention",
+      "home-visit component",
+      "serious illness/danger sign identification and/or care-seeking outcomes",
+      "randomized or cluster-randomized design",
+      "presence of intervention and control arms",
+      "home visits",
+      "by **trained CHWs or equivalent cadres**",
+      "with explicit training to **assess danger signs / identify serious illness in young infants**",
+      "identification/referral of serious neonatal illness",
+      "care seeking from health facilities for sick young infants",
+      "diagnostic performance measures such as sensitivity/specificity",
+      "Only trials meeting all core criteria were retained."
+    ],
+    "exclusion_criteria": [
+      "**Awasthi 2008** \u2014 excluded because prospective observational, not RCT",
+      "**Bang 2005** \u2014 excluded because key outcomes were stillbirth and neonatal mortality, and identification/referral data were not available for the control arm",
+      "**Escobar 2001** \u2014 excluded because conducted in the United States",
+      "Protocol paper only; not a completed primary outcome trial report for the review outcomes.",
+      "Published **after the search end date** (2016; outside the 2014-10-21 limit)",
+      "Also reports a **prospective cohort nested within** the Newhints trial rather than the main eligible RCT report within the date window",
+      "Although randomized and relevant to newborn care in an LMIC, the retrieved local-corpus evidence did **not clearly establish** that this trial met the review\u2019s narrower intervention definition:",
+      "the intervention package emphasized community-based strategies and group sessions",
+      "danger-sign identification and care-seeking promotion were present",
+      "but the evidence available locally did not clearly demonstrate a sufficiently specific **home-visiting CHW illness-identification intervention** focused on young infants as required for inclusion",
+      "The available local-corpus text also did not provide clearly extractable review-specific outcomes on infant illness identification or facility care seeking in the exact form required.",
+      "**Awasthi 2008** \u2014 excluded because it is a prospective observational study, not an RCT",
+      "**Bang 2005** \u2014 excluded because the key outcomes were stillbirth rate and neonatal mortality rate, and identification/referral data for seriously ill children were not available for the control arm",
+      "**Escobar 2001** \u2014 excluded because it was conducted in the United States, a high-income country"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus and the prespecified 1966-01-01 to 2014-10-21 date range, the evidence meeting the review criteria was limited but directionally consistent.",
+      "The included randomized evidence indicates that **home visits by trained community health workers or similar cadres can improve care seeking for neonatal illness in low- and middle-income countries**.",
+      "The strongest evidence concerns **increased use of health facilities or appropriate providers** for sick newborns.",
+      "By contrast, evidence on **successful identification of serious illness as a diagnostic outcome** was limited.",
+      "The included local-corpus records describe CHW danger-sign assessment and referral, but they do **not provide sensitivity/specificity estimates** or equivalent diagnostic performance measures.",
+      "Overall, the local-corpus evidence supports CHW home-visiting programs as a strategy to improve **care-seeking behavior for sick young infants**, while leaving **diagnostic accuracy of CHW identification** insufficiently quantified in the eligible trial literature retrieved here."
+    ]
+  }
+}

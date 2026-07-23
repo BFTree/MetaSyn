@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33598,
+    "output_tokens": 976,
+    "total_tokens": 34574
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.32142857142857145,
+    "inclusion_recall": 0.3181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4827586206896552,
+    "screening_accuracy": 0.8035714285714286,
+    "conditional_retention": 0.3888888888888889,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4705,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4731,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, background/introduction, methods, results, risk of bias, discussion, conclusion, detailed search strategy, eligibility criteria, screening flow, and synthesis approach, but duplicated headings, limited formal reference reporting, and incomplete data-extraction/PRISMA presentation keep it below excellent."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized or quasi-randomized controlled clinical trials evaluating L-type calcium channel antagonists (verapamil, diltiazem, nimodipine, nifedipine, methoxyverapamil, or isradipine), either as monotherapy or adjunctive treatment.",
+      "Studies including patients diagnosed with bipolar disorder (any subtype) experiencing acute manic episodes, acute depressive episodes, or in maintenance/relapse-prevention treatment.",
+      "Studies comparing the intervention with placebo, standard treatment, or another active pharmacological treatment relevant to bipolar disorder management.",
+      "Studies reporting at least one relevant outcome: efficacy for acute mania or bipolar depression, relapse/recurrence prevention, or tolerability/safety (e.g., adverse events, discontinuation)."
+    ],
+    "exclusion_criteria": [
+      "Non-comparative studies or non-randomized designs such as case reports, case series, reviews, editorials, and observational studies without an intervention comparison.",
+      "Studies in populations without a clear bipolar disorder diagnosis, mixed samples where bipolar data cannot be separated, or studies limited to children/adolescents if adult bipolar results are not reported separately.",
+      "Studies evaluating drugs outside the specified L-type calcium channel antagonists or interventions not intended for treatment of bipolar disorder episodes or relapse prevention.",
+      "Studies not reporting relevant clinical efficacy, relapse-prevention, or tolerability outcomes, or duplicate/secondary publications of the same dataset."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Quantitative synthesis was not possible because the included studies did not provide sufficiently extractable or consistently reported outcome data.",
+      "Qualitatively, the evidence suggests that some L-type calcium channel antagonists may have therapeutic effects in bipolar disorder, particularly during acute episodes; however, findings were limited, heterogeneous, and insufficient to establish consistent benefits or comparative effectiveness.",
+      "Evidence regarding relapse prevention and tolerability was also inadequate for firm interpretation.",
+      "Overall, the current evidence base is too limited and poorly reported to support reliable conclusions about the efficacy or safety of these agents, and well-designed trials with standardized outcome reporting are needed."
+    ]
+  }
+}

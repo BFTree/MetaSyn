@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17600,
+    "output_tokens": 1498,
+    "total_tokens": 19098
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.33,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.7391304347826086,
+    "inclusion_f1": 0.5964912280701754,
+    "screening_accuracy": 0.78,
+    "conditional_retention": 0.5151515151515151,
+    "post_retrieval_loss": 0.47058823529411764,
+    "inclusion_consistency": 0.6217,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4269,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is generally well organized with clear sections for objective, search/screening, study characteristics, outcome-based findings, evidence appraisal, limitations, and included studies, but it lacks a formal abstract, detailed PRISMA-style search strategy, data extraction methods, quality/risk-of-bias assessment, and contains internal editorial notes and count inconsistencies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary studies (in vitro, in vivo, human) with stated exposure intensities at or below the ICNIRP (2020) occupational whole\u2011body limits (power density \u2264\u202f50\u202fW\u202fm\u207b\u00b2, whole\u2011body SAR \u2264\u202f0.4\u202fW\u202fkg\u207b\u00b9) were eligible;",
+      "for local exposures, power densities up to 100\u2013200\u202fW\u202fm\u207b\u00b2 were accepted.",
+      "Epidemiological studies of radar were required to involve frequencies exclusively above 6\u202fGHz.",
+      "The search covered literature up to 31\u202fDecember\u202f2019."
+    ],
+    "exclusion_criteria": [
+      "were published after 2019",
+      "were not primary experimental/epidemiological studies",
+      "involved frequencies \u2264\u202f6\u202fGHz",
+      "lacked explicit exposure metrics",
+      "used exposure levels exceeding the pre\u2011defined limits",
+      "were reviews, comments, protocols or conference abstracts"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Most studies executed after 2005 that used standardised dosimetry and recognised genotoxicity/cell\u2011stress endpoints (comet, micronucleus, gene expression microarrays, Hsp quantification) **found no detectable adverse bio\u2011effects** at levels within the ICNIRP occupational/local limits.",
+      "Several positive findings exist, predominantly from earlier work or from specialised endpoints (membrane biophysics, bacterial growth windows, aneuploidy in sensitive cell lines).",
+      "Crucially, none of the positive findings were reproduced in multiple independent laboratories, and the reported effect sizes were small or confined to very narrow frequency/power windows.",
+      "Given the absence of a consistent, replicable pattern of harm, the current evidence does **not** support the conclusion that low\u2011level radiofrequency fields above 6\u202fGHz cause adverse biological or health effects under the exposure conditions examined.",
+      "However, the limited number of studies \u2013 especially in vivo chronic or developmental exposures \u2013 prevents a definitive risk assessment.",
+      "The findings of membrane\u2011level interactions and occasional genotoxic signals warrant continued investigation using harmonised protocols and rigorous dosimetry."
+    ]
+  }
+}

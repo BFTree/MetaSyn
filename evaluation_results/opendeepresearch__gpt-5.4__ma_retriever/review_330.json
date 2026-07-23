@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23578,
+    "output_tokens": 800,
+    "total_tokens": 24378
+  },
+  "metrics": {
+    "retrieval_recall": 0.6451612903225806,
+    "retrieval_precision": 0.7407407407407407,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.25925925925925924,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.6451612903225806,
+    "inclusion_consistency": 0.6621,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5467,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening/synthesis sections, limitations, and a conclusion, but it lacks a formal abstract, introduction, full references, actual search queries/results, record-level screening documentation, and completed meta-analysis methods/results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be **empirical primary studies**",
+      "include **adult** participants aged 18 years or older",
+      "enroll participants diagnosed with **schizophrenia-spectrum disorders**",
+      "include a **healthy control group**",
+      "assess **speech/language comprehension and/or production** with a focus on **grammar and syntax**",
+      "report **quantitative measures** derived comparably in both groups, or provide quantitative data/plots permitting effect-size estimation"
+    ],
+    "exclusion_criteria": [
+      "focused on participants **younger than 18 years**",
+      "were **case reports** or **case series**",
+      "lacked a **healthy control group**",
+      "lacked **quantitative measures** or data/plots permitting effect-size estimation",
+      "used **unconventional criteria for syntactic complexity**",
+      "were the **retracted study** noted in the brief"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "A compliant systematic review and meta-analysis-oriented evidence review on syntactic deficits in schizophrenia requires documented local MetaSyn PubMed corpus retrieval, explicit search queries, screened candidate records, exact Corpus IDs, and study-level eligibility decisions.",
+      "Those elements are not present in the supplied research findings.",
+      "Accordingly, no defensible evidence synthesis can be made here regarding the nature, magnitude, or interindividual variability of syntactic comprehension or syntactic production deficits in schizophrenia versus healthy controls.",
+      "No study was included on the basis of the supplied research record."
+    ]
+  }
+}

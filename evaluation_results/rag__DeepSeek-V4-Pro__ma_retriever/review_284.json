@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18335,
+    "output_tokens": 1242,
+    "total_tokens": 19577
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.5454545454545454,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.7788,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6196,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with background, methods, screening results, evidence synthesis, and summary sections, and it includes inclusion criteria and study selection details, but it lacks a full PRISMA-style search strategy, quality assessment, and explicit quantitative synthesis methods needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "participants \u2265\u202f18 years with clinical diagnosis of MCI due to AD, AD dementia, or AD",
+      "examination of the association between neuroinflammation (specifically YKL-40, sTREM2, GFAP) and AD clinical stage or long-term outcomes (disease progression, cognitive decline)",
+      "English language, published between 29 February 2012 and 7 February 2023",
+      "Studies were required to measure at least one of the three target biomarkers in CSF or plasma."
+    ],
+    "exclusion_criteria": [
+      "non\u2011human studies",
+      "reviews",
+      "editorials",
+      "comments",
+      "case reports",
+      "case series"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "CSF YKL\u201140 is consistently elevated across the AD continuum, from preclinical stages to dementia, and higher levels are associated with greater tau pathology, neurodegeneration, and faster cognitive decline.",
+      "It may serve as a prognostic marker for progression.",
+      "Plasma YKL\u201140 shows some promise in differentiating AD and MCI from controls, but its sensitivity appears lower than CSF YKL\u201140 and may be influenced by the specific AD biomarker profile.",
+      "CSF GFAP is elevated in AD and correlates with cognitive performance, particularly executive function, but lacks disease specificity.",
+      "Plasma GFAP is elevated in preclinical AD and may be an early indicator of amyloid\u2011related astrocytic activation; longitudinal studies are needed to confirm its predictive value for cognitive decline.",
+      "sTREM2 was examined in only one eligible study, which reported increased CSF levels in AD.",
+      "Data on its association with clinical stages and long\u2011term outcomes are insufficient."
+    ]
+  }
+}

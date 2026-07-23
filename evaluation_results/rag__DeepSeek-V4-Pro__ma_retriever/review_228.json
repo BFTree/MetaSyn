@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 15284,
+    "output_tokens": 1439,
+    "total_tokens": 16723
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.4341,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4231,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, included studies, outcome synthesis, and a summary, but it lacks several required formal sections such as an abstract, introduction, distinct discussion/conclusion, references, detailed search strategy, data extraction process, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original, Level\u2011I or Level\u2011II prospective comparative studies",
+      "directly compared pulmonary vein isolation plus renal denervation with pulmonary vein isolation alone",
+      "adults with essential hypertension and atrial fibrillation",
+      "published in English after 1 January 2009"
+    ],
+    "exclusion_criteria": [
+      "patients with secondary hypertension",
+      "type 1 diabetes",
+      "late\u2011stage chronic kidney disease (mean eGFR <45\u202fmL/min/1.73\u202fm\u00b2)",
+      "congestive heart failure",
+      "left ventricular ejection fraction <35 %",
+      "reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "case reports"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available Level\u2011I evidence is limited to three randomized trials with modest sample sizes.",
+      "The largest trial (ERADICATE\u2011AF) demonstrated a clear benefit of adding renal denervation on atrial fibrillation recurrence and systolic blood pressure.",
+      "The two smaller trials (SYMPLICITY\u2011AF and ULTRA\u2011HFIB) failed to show a statistically significant reduction in the primary rhythm endpoint, although one suggested possible advantages in arrhythmia burden and antiarrhythmic drug use.",
+      "No data on renal function were available.",
+      "Overall, the evidence indicates a potential benefit of adjunctive renal denervation, but the effect size varies and is not consistently statistically significant across the three trials.",
+      "Larger, well\u2011powered studies with standardized protocols are needed to confirm efficacy, particularly for hard rhythm outcomes, blood pressure, and renal end\u2011points."
+    ]
+  }
+}

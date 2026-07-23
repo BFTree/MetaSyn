@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28699,
+    "output_tokens": 925,
+    "total_tokens": 29624
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.21428571428571427,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.37499999999999994,
+    "screening_accuracy": 0.7857142857142857,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.7311,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7938,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening rationale, and synthesis approach, but it lacks full PRISMA rigor such as formal quality/risk-of-bias assessment and a detailed reproducible data extraction process."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary cohort studies in full peer-reviewed journals",
+      "Published January 1999 to November 30, 2023",
+      "Adults with morbid obesity undergoing LVSG/LSG/SG",
+      "Pre- and postoperative esophageal physiologic testing using conventional or high-resolution manometry, with or without 24-hour pH monitoring",
+      "Reported relevant outcomes: LESP, LESL, DMS, and/or BMI change"
+    ],
+    "exclusion_criteria": [
+      "Non-human studies",
+      "Duplicates",
+      "Abstracts, conference articles",
+      "Editorials, letters, opinion pieces",
+      "Reviews or meta-analyses",
+      "Case studies",
+      "Studies outside the date window",
+      "Studies without relevant pre/post physiologic comparison for the LSG cohort"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The local MetaSyn corpus supports a clear overall conclusion: **laparoscopic vertical sleeve gastrectomy commonly worsens objective reflux physiology after surgery, despite large and consistent BMI reduction**.",
+      "The most robust evidence concerns **DeMeester score**, which usually increases postoperatively, often substantially.",
+      "**LES pressure** changes are **conflicting**, but the preponderance of directly relevant studies shows decline or loss of competence rather than improvement.",
+      "**LES length** appears to shorten after surgery in at least some cohorts and may be a more reliable mechanistic marker of barrier impairment than pressure alone.",
+      "My concrete view is that the literature does **not** support treating LVSG as physiologically neutral or protective with respect to GERD in the average morbidly obese adult.",
+      "The evidence instead supports regarding LVSG as a procedure with a meaningful tendency to impair the antireflux barrier and increase acid exposure, unless careful candidate selection and possibly technique modifications are used.",
+      "If the goal of a meta-analysis is to estimate direction of effect, increased postoperative DMS is the strongest conclusion; if the goal is mechanistic inference, shortened LESL and frequently reduced LESP likely contribute, but LESP alone is too inconsistent to stand as a universal postoperative marker."
+    ]
+  }
+}

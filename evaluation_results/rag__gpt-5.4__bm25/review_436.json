@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13188,
+    "output_tokens": 775,
+    "total_tokens": 13963
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4813,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5132,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes some systematic review elements such as screening results, exclusion reasons, eligibility criteria, evidence synthesis, and risk-of-bias applicability, but it lacks major required sections including abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction, and formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language full-text peer-reviewed article",
+      "RCT design",
+      "hospital prescribing population",
+      "electronic prescribing/CPOE/CDS intervention",
+      "usual care or paper/manual comparator",
+      "quantitative medication-error outcome",
+      "publication date within `2023-05-01` to `2024-11-03`"
+    ],
+    "exclusion_criteria": [
+      "not RCTs or not clearly randomized from the title/abstract",
+      "reviews, protocols, qualitative studies, surveys, observational studies, or implementation reports",
+      "the intervention/outcome often did not match the review question",
+      "outside the review date window (`2023-05-01` to `2024-11-03`)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Because no candidate met all inclusion criteria, there is no eligible evidence base from this fixed pool to synthesize for the target question within the specified period.",
+      "That means this candidate set does not support an updated meta-analytic conclusion about whether electronic prescribing/CDS/CPOE reduces medication errors versus usual care in hospital patients, under the strict eligibility rules of:",
+      "The absence of eligible studies here should not be interpreted as evidence that electronic interventions are ineffective."
+    ]
+  }
+}

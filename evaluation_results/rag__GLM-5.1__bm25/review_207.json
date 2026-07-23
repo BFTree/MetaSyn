@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6994,
+    "output_tokens": 961,
+    "total_tokens": 7955
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.6250000000000001,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.8588,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8462,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review target, methodology, thematic synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed search strategy, data extraction process, quality assessment, PRISMA-style screening flow, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they focused on healthy adult women exploring structural differences in the retina, choroid, or optic disc across the menstrual cycle or menopausal status."
+    ],
+    "exclusion_criteria": [
+      "We excluded studies involving pregnancy, breastfeeding, hormonal contraception, HRT, treatments/supplementation, systemic/ocular disease (unless a healthy control segment was reported), sex differences, experimental approaches, or functional/haemodynamic studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Hormonal fluctuations across reproductive life stages primarily affect the choroidal structure.",
+      "The choroid consistently thins during the luteal phase of the menstrual cycle and remains thinner in postmenopausal women, even after accounting for age.",
+      "Conversely, the optic disc remains structurally stable during the menstrual cycle in healthy women.",
+      "Macular thickness differences in postmenopause appear to be age-related rather than hormone-driven, though subtle menstrual cycle-related changes may exist in the macular microvasculature."
+    ]
+  }
+}

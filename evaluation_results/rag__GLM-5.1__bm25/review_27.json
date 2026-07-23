@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14617,
+    "output_tokens": 2169,
+    "total_tokens": 16786
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7857142857142858,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.3511,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5928,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear evidence synthesis, summary of findings, basic screening criteria, and included study list, but it lacks major required systematic review sections such as abstract, introduction, full methods, detailed search strategy, quality assessment, discussion, conclusion, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult population with obesity (BMI \u2265 35 or severe/morbid obesity requiring bariatric surgery)",
+      "exposure to OSA or OSA-related indicators (AHI, intermittent hypoxia)",
+      "comparison groups based on OSA severity or pre-surgical status",
+      "outcomes related to NAFLD presence, severity, or resolution"
+    ],
+    "exclusion_criteria": [
+      "Studies published after the search end date (October 8, 2022), those involving non-obese or pediatric populations, animal models, reviews, and case reports were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence consistently indicates that OSA and its specific hypoxic indicators are significant predictors of NAFLD presence and severity in adults with severe or morbid obesity, though the predictive value varies between steatosis, inflammatory injury, and fibrosis.",
+      "Hypoxic indicators, particularly those reflecting the severity of nocturnal oxygen desaturation, appear to be more robust predictors of histological severity than AHI alone.",
+      "Only one study directly assessed the longitudinal impact of BMS on both conditions.",
+      "Candidate 003 evaluated obese patients before and after metabolic and bariatric surgery (MBS), finding that surgery effectively improved both sleep apnea/nocturnal hypoxia and liver steatosis/fibrosis.",
+      "OSA-related indicators\u2014especially markers of intermittent nocturnal hypoxia such as ODI and lowest oxygen saturation\u2014are significant independent predictors of NAFLD severity, particularly NASH and fibrosis, in adults with severe obesity.",
+      "While AHI also predicts liver enzyme elevation and NASH risk, hypoxic stress appears to be a more direct driver of histological progression.",
+      "Bariatric metabolic surgery effectively improves both OSA and NAFLD, and the magnitude of improvement in liver steatosis and fibrosis correlates with the improvement in sleep apnea."
+    ]
+  }
+}

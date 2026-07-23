@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10027,
+    "output_tokens": 1205,
+    "total_tokens": 11232
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.28571428571428575,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.4043,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4377,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, eligibility criteria, synthesized findings by disease, conclusions, and included studies, but it lacks several formal systematic review sections and PRISMA-style elements such as a detailed search strategy, screening flow, data extraction process, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies to be set within the ASEAN region",
+      "involve adult populations (or total populations including adults)",
+      "compare agricultural land-use exposure to an unexposed comparator",
+      "measure infectious disease prevalence or incidence",
+      "be empirical observational studies published within the search timeframe (end date April 30, 2017)"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on non-communicable diseases",
+      "night soil fertiliser impacts",
+      "wildlife/vector ecology without human prevalence outcomes",
+      "those lacking an unexposed comparator group (e.g., studies solely within plantation workers without an external reference group)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The empirical evidence available up to April 2017 indicates that occupational and residential exposure to agricultural land-use in Southeast Asia is generally associated with an increased risk of key infectious diseases, particularly vector-borne and zoonotic diseases such as malaria, scrub typhus, and spotted fever group rickettsioses.",
+      "For parasitic helminths like *O. viverrini*, the risk is heavily conditioned by the specific agricultural practice (water-intensive farming posing a higher risk).",
+      "However, the association is not universal across all pathogens, as demonstrated by the null finding for toxoplasmosis.",
+      "These findings underscore the necessity of targeting agricultural workers and rural residents in ASEAN countries for tailored vector control and disease prevention strategies, while accounting for the specific landscape and crop-type characteristics that drive transmission."
+    ]
+  }
+}

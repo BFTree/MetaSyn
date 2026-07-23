@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16692,
+    "output_tokens": 1031,
+    "total_tokens": 17723
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6275,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8981,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Objective, Methods, Results, synthesis, limitations, conclusion, and included-study list, but it lacks a formal abstract, introduction, discussion, references, detailed search strategy, quality assessment, data extraction procedures, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Cohort studies published in full peer\u2011reviewed journals between January 1999 and November 2023.",
+      "Adult patients (\u226518 years) with morbid obesity undergoing primary LVSG.",
+      "Pre\u2011 and post\u2011operative evaluation with conventional or high\u2011resolution esophageal manometry, with or without 24\u2011hour ambulatory pH monitoring.",
+      "Reporting of at least one of the following outcomes: LESP, LESL, DMS, or BMI change."
+    ],
+    "exclusion_criteria": [
+      "non\u2011human studies",
+      "duplicates",
+      "abstracts",
+      "conference proceedings",
+      "opinion pieces",
+      "editorials",
+      "case reports",
+      "reviews",
+      "meta\u2011analyses"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included studies consistently demonstrate that LVSG alters esophageal physiology.",
+      "Most report a reduction in LESP and shortening of LES length, accompanied by a marked increase in DeMeester score (indicating worsening acid reflux).",
+      "The overall trend suggests that LVSG compromises the anti-reflux barrier, leading to a higher prevalence of de novo or persistent GERD.",
+      "Laparoscopic vertical sleeve gastrectomy is associated with significant alterations in esophageal function, including reduced lower esophageal sphincter pressure, shortened sphincter length, and increased esophageal acid exposure as reflected by the DeMeester score."
+    ]
+  }
+}

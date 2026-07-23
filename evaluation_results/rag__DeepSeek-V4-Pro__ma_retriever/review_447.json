@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12977,
+    "output_tokens": 820,
+    "total_tokens": 13797
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6558,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6799,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct research question, PICO, search strategy, eligibility criteria, screening results, and a conclusion, and it includes key systematic-review elements like screening and inclusion/exclusion criteria, though it lacks explicit abstract/introduction/discussion/references sections and a detailed data synthesis/quality assessment description."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Peer-reviewed articles published between 2020\u201101\u201101 and 2023\u201109\u201101.",
+      "Studies focusing on FL techniques in breast, lung, or prostate cancer.",
+      "Studies that directly compare the FL model against a centralized ML baseline developed on the same data (either through direct evaluation or by referencing reported literature values).",
+      "Clinical applications relevant to oncology (classification, segmentation, detection, regression)."
+    ],
+    "exclusion_criteria": [
+      "Non\u2011English publications.",
+      "Non\u2011empirical articles (reviews, editorials, commentaries, protocols).",
+      "Articles not focused on breast, lung, or prostate cancer.",
+      "Studies not employing FL methods.",
+      "Studies not reporting clinical outcomes or quantitative assessments."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After rigorous screening, no candidate met all inclusion criteria.",
+      "There is no eligible primary study that simultaneously (a) focuses on breast, lung, or prostate cancer, (b) employs a federated learning approach, (c) compares it against a centralized machine learning baseline, and (d) falls within the specified publication window.",
+      "Therefore, the evidence synthesis cannot draw conclusions regarding the comparative performance of FL versus centralized ML in these cancer domains based on the supplied candidate pool."
+    ]
+  }
+}

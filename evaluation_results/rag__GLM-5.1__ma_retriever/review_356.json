@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18902,
+    "output_tokens": 965,
+    "total_tokens": 19867
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.5909090909090909,
+    "inclusion_precision": 0.8125,
+    "inclusion_f1": 0.6842105263157896,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.6842105263157895,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.7311,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.371,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, results, synthesis subsections, and included-study references, but it lacks distinct abstract, introduction, discussion, and conclusion sections and does not provide PRISMA-style details such as a full search strategy, data extraction process, quality assessment, or formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "For efficacy and acceptability, only double-blind randomized controlled trials (RCTs) were included.",
+      "For adverse effects, single-blind or open RCTs and relevant non-randomised evidence were also considered.",
+      "The population was restricted to patients with bipolar disorder, and the intervention had to be an LTCC antagonist."
+    ],
+    "exclusion_criteria": [
+      "The search end date was February 15, 2016; candidates published after this date were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence for LTCC antagonists in acute mania is mixed, deriving primarily from verapamil and methyoxyverapamil (D600):",
+      "Evidence is limited and unfavorable:",
+      "Verapamil was not superior to placebo for depression, whereas amitriptyline was.",
+      "A year-long double-blind crossover study (Candidate 018) suggested verapamil may be effective as a maintenance treatment for manic patients.",
+      "Double-blind RCTs (Candidates 009, 050) suggest verapamil is generally well-tolerated compared to lithium.",
+      "However, a specific ECG comparison (Candidate 050) found verapamil produced more bradycardia and T-wave depression than lithium."
+    ]
+  }
+}

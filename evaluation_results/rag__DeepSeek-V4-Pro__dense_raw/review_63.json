@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14793,
+    "output_tokens": 893,
+    "total_tokens": 15686
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.621,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7278,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has an objective, screening description, included studies, findings, limitations, and conclusion, but lacks a structured abstract, introduction, detailed search strategy, data extraction and quality assessment methods, quantitative synthesis, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "full\u2011text peer\u2011reviewed cohort studies (published January 1999\u2013November 2023)",
+      "performed conventional or high\u2011resolution manometry \u00b1 24\u2011h ambulatory pH monitoring before and after primary LVSG in adults (>18 years) with morbid obesity"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "meta\u2011analyses",
+      "case reports",
+      "conference abstracts",
+      "editorials",
+      "animal studies",
+      "articles that did not report pre\u2011post esophageal function tests"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Most studies reported a significant decrease in LESP after LVSG.",
+      "The weight of evidence suggests that LVSG tends to weaken the LES resting pressure, which may predispose to reflux.",
+      "Multiple studies (004, 007, 013, 015) found that total and/or abdominal LES length was significantly shortened after LVSG.",
+      "This anatomical change likely contributes to an impaired anti\u2011reflux barrier.",
+      "The pooled data indicate that acid exposure time worsens after LVSG, with a substantial proportion of patients developing de novo pathological reflux.",
+      "All studies documented significant weight loss and BMI reduction following LVSG.",
+      "Nevertheless, the direction of effect is remarkably consistent: LVSG is associated with a reduction in LESP, shortening of LESL, and a rise in the DeMeester score, indicating an overall worsening of the gastroesophageal reflux profile.",
+      "The emerging evidence demonstrates that while LVSG effectively reduces BMI, it frequently compromises the lower esophageal sphincter and increases esophageal acid exposure."
+    ]
+  }
+}

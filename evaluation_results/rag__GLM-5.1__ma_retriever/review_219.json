@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24985,
+    "output_tokens": 1180,
+    "total_tokens": 26165
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.33,
+    "inclusion_recall": 0.7352941176470589,
+    "inclusion_precision": 0.7352941176470589,
+    "inclusion_f1": 0.735294117647059,
+    "screening_accuracy": 0.83,
+    "conditional_retention": 0.7575757575757576,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.6474,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with a topic statement, synthesized findings, conclusion, and included study list, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, References, and key systematic review elements such as a detailed search strategy, inclusion/exclusion criteria, screening process, data extraction methods, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Biological and health effects of low-level radiofrequency (RF) fields above 6 GHz (millimetre waves and related frequencies) at exposure levels below ICNIRP occupational limits, compared to non-exposed conditions.",
+      "The exposure frequencies range from 7.7 GHz up to 150 GHz (0.15 THz), with a concentration around 42\u201361 GHz, corresponding to millimetre waves (MMW) used or planned for 5G and radar applications.",
+      "The stated power densities are generally very low (often \u00b5W/cm2 to a few mW/cm2), well below the ICNIRP local exposure reference levels of 100\u2013200 W/m2 (10\u201320 mW/cm2) permitted for in vitro study inclusion."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence indicates that low-level RF exposure above 6 GHz (up to 150 GHz) at or below ICNIRP occupational limits does not consistently cause adverse genotoxic, cytotoxic, or transcriptomic effects in human or animal cell lines, with most null findings occurring at non-thermal levels.",
+      "However, there is a subset of literature reporting frequency-specific or resonance effects on membrane properties and chromatin in isolated models (bacteria, vesicles) at ultra-low intensities, and some in vivo animal studies reporting reproductive toxicity at low SARs.",
+      "The human epidemiological data is extremely sparse but does not indicate adverse effects from low-level radar exposure."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28841,
+    "output_tokens": 1229,
+    "total_tokens": 30070
+  },
+  "metrics": {
+    "retrieval_recall": 0.8823529411764706,
+    "retrieval_precision": 0.36585365853658536,
+    "inclusion_recall": 0.35294117647058826,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.7560975609756098,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.5294117647058824,
+    "inclusion_consistency": 0.6463,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7556,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style screening and synthesis sections, Discussion/Interpretation, Limitations, Conclusion, included studies, references, plus meta-analysis elements such as search query, eligibility criteria, screening logic, and synthesis approach, but it lacks a formal risk-of-bias/quality assessment and full PRISMA-style reporting needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Women with dense breasts undergoing screening",
+      "Mammography plus supplemental ultrasound, at least after negative mammography",
+      "Reported breast cancers detected in dense breasts",
+      "Publication year on or after 2000 and on or before July 26, 2017",
+      "Primary study design with usable screening outcome data"
+    ],
+    "exclusion_criteria": [
+      "Symptomatic populations",
+      "Interval cancers as the study focus",
+      "Different mammography and ultrasound populations",
+      "Dense-breast results not separable from non-dense breasts",
+      "Published before 2000",
+      "Duplicate reports with less complete data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included evidence supports a consistent directional finding: supplemental ultrasound detects additional mammographically occult cancers in dense breasts, typically on the order of about 2 to 4 extra cancers per 1,000 women screened, with some studies reporting roughly 3.2 to 3.3 per 1,000 in mandate-era practice cohorts and 2.391 per 1,000 in a large 2013 comparative study.",
+      "These additional cancers were often small, invasive, and node negative, suggesting earlier-stage detection.",
+      "However, the benefit comes with a real tradeoff: higher recall and biopsy rates, lower biopsy positive predictive value (PPV), and more false-positive workup than mammography alone.",
+      "Within the local MetaSyn corpus and the 2000 to July 26, 2017 eligibility window, the evidence supports the conclusion that adding ultrasound to mammography in women with dense breasts increases detection of otherwise occult breast cancers, typically by about **2 to 4 additional cancers per 1,000 screened**.",
+      "The additional cancers are often **small, invasive, and node negative**, supporting the view that ultrasound contributes to earlier detection of clinically important disease.",
+      "At the same time, supplemental ultrasound clearly increases referral and recall burden and lowers biopsy PPV, generating substantially more benign workup than mammography alone.",
+      "The most defensible interpretation is therefore balanced but firm: **supplemental ultrasound works, but it works inefficiently**.",
+      "It is a reasonable adjunct in dense-breast screening when the goal is to maximize sensitivity and when patients and programs are prepared to absorb a significant false-positive burden.",
+      "It is not a low-cost sensitivity gain, and the evidence does not support treating it as a universally preferable strategy absent attention to downstream harms."
+    ]
+  }
+}

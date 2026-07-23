@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29119,
+    "output_tokens": 1255,
+    "total_tokens": 30374
+  },
+  "metrics": {
+    "retrieval_recall": 0.15555555555555556,
+    "retrieval_precision": 0.21875,
+    "inclusion_recall": 0.05555555555555555,
+    "inclusion_precision": 0.5555555555555556,
+    "inclusion_f1": 0.101010101010101,
+    "screening_accuracy": 0.796875,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.3251,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2246,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included-study list, and References, and it includes meta-review elements such as search strategy, screening criteria, study characteristics, and synthesis approach, but it lacks full PRISMA-style rigor such as formal quality/risk-of-bias assessment and detailed quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population/setting: LMIC studies",
+      "Intervention/exposure: water, sanitation, and/or handwashing with soap",
+      "Study type: primary studies rather than reviews/evidence maps",
+      "Relevance: diarrhoeal disease, acute respiratory infection (ARI), or closely linked hygiene-health pathways",
+      "Language: English or Spanish only, as specified in the seed"
+    ],
+    "exclusion_criteria": [
+      "duplicates, reviews, evidence maps, observational facility-only formative studies without intervention evaluation, and studies not clearly tied to eligible WASH intervention evidence"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "handwashing promotion reduces diarrhoea overall, especially when soap and enabling hardware are provided, but these interventions usually treat women as implementers of household hygiene rather than as beneficiaries with measurable gendered costs and benefits.",
+      "The best-supported intervention models combine behavior change with soap, hardware, and repeated CHW contact, and these approaches can improve uptake and reduce diarrhoeal risk.",
+      "The gender architecture of the evidence is weak.",
+      "Women\u2019s time burdens are largely invisible, compensation is not reported, and women-specific impacts are seldom measured.",
+      "My concrete judgment is that this body of evidence is effective on hygiene outcomes yet underdeveloped on gender equity."
+    ]
+  }
+}

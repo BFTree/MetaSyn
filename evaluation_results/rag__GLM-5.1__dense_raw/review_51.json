@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24780,
+    "output_tokens": 974,
+    "total_tokens": 25754
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.9166666666666666,
+    "inclusion_precision": 0.7857142857142857,
+    "inclusion_f1": 0.8461538461538461,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.9166666666666666,
+    "post_retrieval_loss": 0.08333333333333333,
+    "inclusion_consistency": 0.4826,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.746,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with an introduction, synthesized findings, conclusion, and included-study list, but it lacks core systematic review sections such as abstract, methods, search strategy, eligibility criteria, screening process, quality assessment, data extraction, and formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies evaluating the functional, oncological, and quality of life (QoL) outcomes of glansectomy with or without neoglans reconstruction (typically using split-thickness skin grafts [SSG]) in adult men with localized penile cancer (PeCa) confined to the glans penis",
+      "patient-reported and clinically assessed functional outcomes, including erectile function, sexual activity, urinary voiding ability, glans sensation, meatal stenosis, graft loss, cosmetic satisfaction, and oncological safety"
+    ],
+    "exclusion_criteria": [
+      "lack of functional data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Glansectomy with or without neoglans reconstruction is an oncologically safe and functionally advantageous strategy for men with localized penile cancer confined to the glans.",
+      "It reliably preserves the ability to void standing and maintains erectile function in the majority of patients, leading to high cosmetic satisfaction.",
+      "However, patients should be counseled that quantitative sexual function scores (IIEF) often decline post-operatively, glans sensation is frequently reduced, and there is a risk of meatal stenosis and partial graft loss requiring potential intervention.",
+      "Outcomes are superior to radical amputation but may be inferior to less invasive wide local excision regarding sexual function scores."
+    ]
+  }
+}

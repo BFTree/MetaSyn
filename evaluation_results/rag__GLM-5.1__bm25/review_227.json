@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13351,
+    "output_tokens": 1059,
+    "total_tokens": 14410
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.4068,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.559,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear aim, screening/selection summary, evidence synthesis, conclusions, and included study list, but it lacks a formal abstract, full introduction, detailed methods/search strategy, quality assessment, and complete PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "paediatric patients with Turner syndrome (TS) aged 18 years or younger"
+    ],
+    "exclusion_criteria": [
+      "populations other than paediatric TS (e.g., adult essential hypertension, other syndromes)",
+      "publication dates after the search end date of 2021-05-31",
+      "review articles, guidelines, or protocols",
+      "studies that only provided group comparisons of mean BP values to controls without reporting a calculable prevalence of hypertension within the TS group"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The prevalence of hypertension in paediatric TS ranges from approximately 20% to 42% depending on the measurement method and definitions applied.",
+      "Conventional or screening BP measurements identify a substantial burden of elevated BP, often exceeding awareness of the condition.",
+      "However, evidence suggests that casual measurements significantly underestimate the true prevalence of hypertension compared to ABPM, which detects masked or isolated nocturnal hypertension.",
+      "ABPM alters clinical management by identifying patients requiring therapy who would otherwise be missed by office-based measurements."
+    ]
+  }
+}

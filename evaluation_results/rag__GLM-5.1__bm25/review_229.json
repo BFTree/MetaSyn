@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14559,
+    "output_tokens": 905,
+    "total_tokens": 15464
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.6961,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5858,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes an objective, screening summary, eligibility criteria, findings, and included studies, but lacks a structured abstract, detailed search strategy, data extraction and quality assessment methods, formal results/discussion/conclusion sections, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RDN in patients with CKD (eGFR < 60 mL/min/1.73 m\u00b2 or signs of kidney damage) and resistant/uncontrolled hypertension, published in English between 2010 and 2022."
+    ],
+    "exclusion_criteria": [
+      "Studies focusing exclusively on end-stage renal disease (ESRD) on dialysis were excluded as they do not provide data on the preservation of kidney function (eGFR).",
+      "Studies focusing on atrial fibrillation (where RDN was an adjunct to pulmonary vein isolation) were excluded as the primary intervention and comparison did not align with the review target.",
+      "Reviews, meta-analyses, consensus statements, protocols, case reports, and out-of-date articles were also excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies generally demonstrate that RDN is effective in reducing office and ambulatory systolic blood pressure (SBP) in hypertensive CKD patients compared to baseline, although results for ambulatory BP were mixed in one pilot study.",
+      "The evidence suggests that RDN does not accelerate the decline of renal function in CKD patients and may stabilize or improve eGFR slopes in the medium term.",
+      "RDN appears to have a favorable safety profile in this population, although procedural complications related to renal artery anatomy were noted in one study."
+    ]
+  }
+}

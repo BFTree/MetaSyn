@@ -1,0 +1,47 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8087,
+    "output_tokens": 1587,
+    "total_tokens": 9674
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8695652173913043,
+    "inclusion_f1": 0.8333333333333333,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a narrative evidence synthesis with thematic findings and a list of included studies, but it lacks most required systematic review/meta-analysis sections such as Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, search strategy, screening criteria, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The screened primary studies consistently demonstrate that intracellular calcium ion concentrations ([Ca\u00b2\u207a]i) and calcium signalling parameters are altered in individuals with bipolar disorder compared to healthy controls, with variations observed across mood states, cell types, and psychiatric comparisons.",
+      "A robust body of evidence indicates that both basal and agonist-stimulated intracellular calcium concentrations are elevated in peripheral blood cells of BD patients relative to healthy controls.",
+      "Alterations in [Ca\u00b2\u207a]i appear to be state-dependent to some degree, though trait-like features persist.",
+      "In euthymic states, findings are mixed; some studies report that intracellular calcium levels normalize or do not significantly differ from controls in remitted patients (Candidates 004, 017), whereas others suggest persistent trait abnormalities.",
+      "Evidence suggests that the enhanced 5-HT-induced platelet calcium response may be relatively specific to BD; multiple studies found this response significantly higher in BD than in MDD, schizophrenia, panic disorder, and other conditions, which did not differ from controls (Candidates 022, 029).",
+      "Pharmacologically, mood stabilizers like lithium, carbamazepine, and valproate generally attenuate or normalize the elevated [Ca\u00b2\u207a]i in BD patients (Candidates 001, 020, 016, 028, 099)."
+    ]
+  }
+}

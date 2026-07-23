@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9585,
+    "output_tokens": 1641,
+    "total_tokens": 11226
+  },
+  "metrics": {
+    "retrieval_recall": 0.8823529411764706,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.5882352941176471,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7407407407407407,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.6181,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5894,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and clearly structured, with explicit eligibility criteria, inclusion/exclusion reasoning, study list, and a synthesis of findings, but it lacks full PRISMA-style completeness such as a formal abstract, methods/results/discussion segmentation, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: asymptomatic women with **dense breasts**",
+      "Intervention/comparator: **mammography plus supplemental ultrasound** vs **mammography alone** or sequential within the same screened women",
+      "Outcomes: ultrasound-only cancers, additional cancers per 1000 mammography-negative women, and/or referral/recall for diagnostic assessment",
+      "Date window: **2000-01-01 to 2017-07-26**"
+    ],
+    "exclusion_criteria": [
+      "symptomatic populations",
+      "interval-cancer-focused reports",
+      "reviews/meta-analyses",
+      "protocols",
+      "non-ultrasound modalities",
+      "recall/assessment studies rather than screening",
+      "studies where mammography and ultrasound were applied to different groups of women rather than the same screened women"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the includable abstracts, the direction of effect is fairly consistent: adding ultrasound to mammography in women with dense breasts tends to find additional mammographically occult cancers, often small and invasive, but increases recalls, biopsies, or false positives.",
+      "One included 2017 study found no carcinoma, which shows that yield is not uniform across settings and may be low in lower-risk populations or first local implementations.",
+      "Added ultrasound generally increased abnormal findings, biopsy recommendations, or recall.",
+      "The Connecticut and other hand-held ultrasound studies reported low PPV and substantial false-positive workup.",
+      "The 2017 low-risk dense-breast study found no cancers but still recommended biopsies, reinforcing the harm side of the tradeoff.",
+      "Based on abstracts alone, the evidence supports that supplemental ultrasound can improve cancer detection in women with dense breasts after mammography, but this comes with a clear increase in referral/recall and false-positive assessment.",
+      "The likely magnitude of incremental detection in this pool is roughly **about 2 to 3 additional cancers per 1000 screened women**, though yields vary by study design, ultrasound modality, population risk mix, and implementation setting.",
+      "The tradeoff is consistently less favorable on downstream assessment burden."
+    ]
+  }
+}

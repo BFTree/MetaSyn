@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9467,
+    "output_tokens": 1575,
+    "total_tokens": 11042
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.13333333333333333,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.2318840579710145,
+    "screening_accuracy": 0.785,
+    "conditional_retention": 0.16,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.4854,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3692,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening approach, biomarker-specific results, overall synthesis, and included studies, but it lacks several formal systematic review sections such as an abstract, introduction, detailed methods, quality assessment, PRISMA-style screening flow, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "the 200 supplied candidates",
+      "specified population",
+      "biomarker scope",
+      "tongue-only anatomy",
+      "clinical relevance",
+      "publication window",
+      "study type",
+      "publication from 2010-01-01 through 2017-06-30",
+      "biomarker expression levels",
+      "replication in at least two independent eligible publications from the supplied pool"
+    ],
+    "exclusion_criteria": [
+      "No additional articles were searched for or inferred.",
+      "outside the 2010-01-01 to 2017-06-30 search window",
+      "outside the prespecified window",
+      "mutations, polymorphisms, or broader genomic alterations rather than biomarker expression levels",
+      "do not match the specified exposure of biomarker expression levels"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The strongest eligible evidence concerned tissue biomarkers, particularly SOX2, E-cadherin, and vimentin.",
+      "These biomarkers were examined in at least two independent publications within the candidate pool and showed generally consistent associations with adverse pathological features, metastasis, recurrence, or survival.",
+      "The evidence for liquid biomarkers was substantially thinner:",
+      "The direction of evidence was consistent: increased SOX2 expression was associated with adverse prognosis.",
+      "The evidence is directionally consistent for prognosis and metastatic risk, although the studies used different patient stages, scoring approaches, endpoints, and combinations of EMT markers.",
+      "Overall, Vimentin demonstrated the most consistent adverse prognostic pattern among the evaluated EMT biomarkers.",
+      "HIF-1\u03b1, MALAT1, and salivary IL-6/IL-8 remain promising but insufficiently replicated within the fixed candidate pool.",
+      "The supplied evidence does not support a replicated diagnostic biomarker panel in saliva, serum, or plasma."
+    ]
+  }
+}

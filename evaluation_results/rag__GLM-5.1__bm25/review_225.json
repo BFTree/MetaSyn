@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6596,
+    "output_tokens": 1166,
+    "total_tokens": 7762
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6046,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4109,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening summary, synthesized results, safety findings, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods, search strategy, inclusion/exclusion criteria, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "adults with low-renin hypertension (or low-renin resistant hypertension)",
+      "compared MRAs (spironolactone or eplerenone) against placebo, angiotensin receptor blockers (ARBs), diuretics, or epithelial sodium channel (ENaC) inhibitors"
+    ],
+    "exclusion_criteria": [
+      "evaluating essential or resistant hypertension without a specific low-renin population restriction",
+      "evaluating non-MRA interventions",
+      "being review articles or meta-analyses",
+      "involving animal models"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "MRAs (spironolactone and eplerenone) are effective antihypertensive agents for adults with low-renin hypertension.",
+      "They significantly lower blood pressure compared to placebo, demonstrate superior efficacy compared to ARBs (losartan), and exhibit comparable efficacy to thiazide/thiazide-like diuretics.",
+      "MRAs offer a favorable metabolic safety profile compared to thiazides, avoiding hypokalemia and hyperuricemia, though monitoring for orthostatic symptoms and hyperkalemia remains relevant.",
+      "Evidence from two crossover or factorial RCTs demonstrates that MRAs significantly reduce blood pressure compared to placebo in low-renin populations.",
+      "MRAs appear superior to ARBs in lowering blood pressure in low-renin hypertension.",
+      "MRAs are generally as effective as thiazide or thiazide-like diuretics in LRH, though dosing nuances exist."
+    ]
+  }
+}

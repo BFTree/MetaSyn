@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25833,
+    "output_tokens": 661,
+    "total_tokens": 26494
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07894736842105263,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9473684210526315,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6001,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8443,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear methods, eligibility criteria, screening results, included studies, results, synthesis, limitations, conclusion, and references, but it lacks a formal abstract and full PRISMA-style rigor such as detailed quality/risk-of-bias assessment and comprehensive data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "undergraduate dental students",
+      "TBL",
+      "other teaching pedagogy (e.g., lecture, flipped classroom)",
+      "student satisfaction and/or academic performance",
+      "English",
+      "search end date **2023-05-02**"
+    ],
+    "exclusion_criteria": [
+      "postgraduate courses",
+      "studies without a comparison pedagogy",
+      "non-English articles"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the eligible pre-2023 corpus, **TBL appears effective and well accepted in undergraduate dental education**, with evidence supporting **higher student satisfaction** and **better or comparable academic performance** versus alternative teaching methods.",
+      "The best-supported comparison is against **traditional lectures**, while comparison with **flipped classroom** suggests similar performance.",
+      "My conclusion is that TBL is a strong pedagogic option for undergraduate dental curricula, but the current evidence base is still too limited to claim broad superiority across all settings.",
+      "Across the eligible literature, the direction of effect is **consistently favorable to TBL** when the comparator is traditional lecture.",
+      "The strongest and most consistent pattern is:\n1. **Better student satisfaction/perception**, and  \n2. **Equal or better academic performance**.",
+      "Based on the retrieved corpus, **TBL should be considered a credible alternative to traditional lectures in undergraduate dental education, especially for content that benefits from discussion, peer explanation, and applied reasoning**."
+    ]
+  }
+}

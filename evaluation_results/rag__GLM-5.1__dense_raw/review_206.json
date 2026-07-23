@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9598,
+    "output_tokens": 933,
+    "total_tokens": 10531
+  },
+  "metrics": {
+    "retrieval_recall": 0.45454545454545453,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.28571428571428575,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.74,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3896,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, screening criteria, evidence synthesis, and included studies, but it lacks several formal required sections such as a structured abstract, full introduction, detailed methods, conclusion, references, detailed search strategy, data extraction procedures, and formal quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "dated January 2020 to May 25, 2023",
+      "includes glaucoma patients",
+      "includes use of AI/ML/DL for diagnosis or progression prediction"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "letters",
+      "protocols",
+      "conference abstracts",
+      "non-human studies",
+      "out-of-date articles"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Three studies met all eligibility criteria, representing early clinical evaluations of AI decision support systems or classifiers for glaucoma diagnosis in patient cohorts.",
+      "The three included studies represent diagnostic accuracy or clinical deployment evaluations of AI systems for glaucoma detection/diagnosis:",
+      "Based on the available abstracts, the studies partially address key DECIDE-AI domains:",
+      "However, abstracts typically lack the granular details required for many DECIDE-AI items, such as specifics on human-AI interaction, error analysis, data preprocessing, or the exact versioning of the AI software.",
+      "Thus, while the studies fall within the scope of early clinical evaluation for glaucoma AI DSS, their full adherence to the 27-item DECIDE-AI checklist cannot be definitively scored from the abstracts alone."
+    ]
+  }
+}

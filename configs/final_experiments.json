@@ -1,0 +1,68 @@
+{
+  "data": {"reviews": 422, "train": 336, "test": 86, "corpus": 140585},
+  "retrieval": {
+    "query": "Research_Question + Population + Intervention/Exposure + Comparison + Outcome",
+    "document": "Title + Abstract",
+    "depths": [5, 10, 20, 50, 100, 200],
+    "source_review_exclusion": "before top-k truncation",
+    "publication_date_filter": false,
+    "retrievers": {
+      "bm25": "rank_bm25.BM25Okapi",
+      "dense_raw": "BAAI/bge-large-en-v1.5@d4aa6901d3a41ba39fb536a557fa166f842b0e09",
+      "ma_retriever": "BFTree/MA-Retriever"
+    }
+  },
+  "one_pass_rag": {
+    "top_k": 200,
+    "candidate_text": "title + publication year + abstract",
+    "models": ["DeepSeek-V4-Pro", "GLM-5.1", "gpt-5.4"]
+  },
+  "protoma": {
+    "model": "gpt-5.4",
+    "retriever": "ma_retriever",
+    "generated_queries": "3-5",
+    "top_k_after_merge": 200,
+    "screening_batch_size": 25,
+    "max_screening_chars": 500,
+    "max_article_chars": 3000,
+    "max_include": 100,
+    "few_shot_k": 3
+  },
+  "gpt_researcher": {
+    "version": "0.14.7",
+    "model": "gpt-5.4",
+    "retriever": "ma_retriever",
+    "k_per_search": 20,
+    "max_distinct_articles": 200,
+    "max_iterations": 2,
+    "total_words": 1200,
+    "search_abstract_chars": 4000,
+    "fetch_chars": 6000,
+    "deep_context_chars": 120000,
+    "report_context_chars": 120000
+  },
+  "open_deep_research": {
+    "version": "0.0.16",
+    "model": "gpt-5.4",
+    "retriever": "ma_retriever",
+    "k_per_search": 20,
+    "max_distinct_articles": 200,
+    "concurrent_research_units": 2,
+    "researcher_iterations": 2,
+    "max_react_tool_calls": 10,
+    "max_search_calls": 10,
+    "max_fetch_calls": 100,
+    "search_abstract_chars": 2500,
+    "fetch_chars": 3000,
+    "summarization_max_tokens": 3000,
+    "research_max_tokens": 4000,
+    "compression_max_tokens": 3000,
+    "final_report_max_tokens": 5000,
+    "structured_output_retries": 1
+  },
+  "evaluation": {
+    "llm_model": "gpt-5.5",
+    "temperature": 0,
+    "criteria_encoder": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+  }
+}

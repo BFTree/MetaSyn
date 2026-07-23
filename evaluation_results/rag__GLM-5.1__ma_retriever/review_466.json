@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22949,
+    "output_tokens": 1241,
+    "total_tokens": 24190
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.6857142857142856,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7058823529411765,
+    "post_retrieval_loss": 0.22727272727272727,
+    "inclusion_consistency": 0.3194,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3746,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a review question, evidence synthesis, conclusion, and included-study list, but it lacks a formal abstract, introduction, detailed methods, quality assessment, explicit data extraction and synthesis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "13 primary studies were identified for inclusion in this evidence synthesis"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "letters",
+      "studies published after 2021-12-31",
+      "studies on pediatric populations",
+      "studies evaluating model performance without comparative effectiveness outcomes",
+      "studies where the intervention was not an automated sepsis alerting system or did not report mortality/length of stay (LOS)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence from 13 included studies reveals mixed results regarding the effectiveness of automated sepsis alerting systems on clinical outcomes.",
+      "Automated rule-based sepsis alerting systems integrated into EHRs do not consistently improve mortality, particularly in the ED and ICU where standalone alerts often fail to change clinical outcomes.",
+      "Mortality benefits appear more likely when alerts are bundled with multidisciplinary rapid response teams or standardized care protocols in ward or hospital-wide settings.",
+      "Some alert systems have successfully reduced LOS.",
+      "There is a lack of prospective, comparative effectiveness data for ML-based sepsis alerting systems within the reviewed literature up to 2021."
+    ]
+  }
+}

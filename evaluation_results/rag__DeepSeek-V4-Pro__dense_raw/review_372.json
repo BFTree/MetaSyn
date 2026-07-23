@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15956,
+    "output_tokens": 1243,
+    "total_tokens": 17199
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.3181818181818182,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.45161290322580644,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.3684210526315789,
+    "post_retrieval_loss": 0.5454545454545454,
+    "inclusion_consistency": 0.4204,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4488,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes objective, methods, screening results, included studies, synthesis, limitations, and conclusion, but it lacks several full systematic-review sections such as abstract, introduction, references, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer\u2011reviewed empirical observational studies",
+      "conducted in ASEAN countries (Vietnam, Cambodia, Laos, Thailand, Myanmar, Malaysia, Indonesia, Singapore, Philippines, East Timor, Brunei)",
+      "compared infectious disease outcomes (prevalence, incidence) between individuals with occupational or residential agricultural land\u2011use exposure and those without such exposure"
+    ],
+    "exclusion_criteria": [
+      "Studies exclusively on children",
+      "reviews",
+      "non\u2011English articles",
+      "those not comparing agricultural vs. unexposed groups",
+      "they lacked a comparator group unexposed to agricultural land\u2011use",
+      "were conducted outside Southeast Asia",
+      "did not address infectious diseases",
+      "were not original observational studies",
+      "focused solely on children"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All nine studies report a positive association between agricultural land\u2011use exposure and infection risk.",
+      "Across diverse settings, agricultural land\u2011use \u2013 whether defined by occupation (rubber tapping, farming, forest work) or residential proximity to agricultural areas \u2013 consistently emerged as a risk factor for vector\u2011borne, zoonotic, and soil\u2011transmitted infections.",
+      "The available evidence from this systematic screening indicates that occupational and residential exposure to agricultural land\u2011use is associated with increased risk of malaria, helminthiases, rickettsial infections, and toxoplasmosis.",
+      "The findings support the need for targeted disease surveillance, preventive interventions (e.g., insecticide\u2011treated nets, health education, improved sanitation), and further longitudinal research to quantify the attributable burden and test intervention effectiveness in these high\u2011risk agricultural populations."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9242,
+    "output_tokens": 1074,
+    "total_tokens": 10316
+  },
+  "metrics": {
+    "retrieval_recall": 0.6808510638297872,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.6808510638297872,
+    "inclusion_consistency": 0.4853,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5463,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a screening summary with eligibility reasons and a brief evidence synthesis, but it lacks most full systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Rotterdam-diagnosed PCOS",
+      "publication within 2017-01-01 to 2022-06-13",
+      "English language",
+      "observational comparison of offspring of women with PCOS vs non-PCOS"
+    ],
+    "exclusion_criteria": [
+      "exclusion of studies using self-reported or ICD-based PCOS diagnosis",
+      "Wrong study type",
+      "Outside the search date window",
+      "PCOS diagnosis not compatible with the amendment",
+      "No PCOS vs non-PCOS comparison for offspring birth outcomes",
+      "Outcome mismatch"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied candidate pool, I could not identify any article that clearly meets the full eligibility criteria for this review after the protocol amendment requiring **Rotterdam-diagnosed PCOS**, publication within **2017-01-01 to 2022-06-13**, English language, **observational comparison of offspring of women with PCOS vs non-PCOS**, and exclusion of studies using **self-reported or ICD-based PCOS diagnosis**.",
+      "Because no study from the fixed pool met all criteria, there is no eligible primary-study evidence here to synthesize for the review question.",
+      "On the basis of this candidate set alone, no conclusion can be drawn about whether maternal PCOS, diagnosed by Rotterdam criteria, is an independent risk factor for adverse birth outcomes in offspring during the specified search period.",
+      "This absence is driven more by **eligibility mismatch in the supplied pool** than by proof of no association.",
+      "None were included."
+    ]
+  }
+}

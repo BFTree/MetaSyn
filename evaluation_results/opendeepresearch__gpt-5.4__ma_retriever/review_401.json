@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27154,
+    "output_tokens": 1133,
+    "total_tokens": 28287
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07692307692307693,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6523,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6694,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, explicit search queries, screening results, exclusion reasons, PRISMA-style summary, synthesis feasibility, limitations, conclusion, and sources, but it lacks a formal abstract/introduction structure and does not include a completed quality assessment or full PRISMA rigor elements needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary **case-control** or **cohort** design",
+      "any geographic setting",
+      "samples originating specifically from a **tissue microbiome**",
+      "used **16S rRNA sequencing**",
+      "used **Illumina sequencers**",
+      "covered the **V4** or **V3-V4** hypervariable region",
+      "specifically analyzed **breast cancer subtypes**, including TNBC versus non-TNBC comparisons or subtype-stratified findings relevant to the review question",
+      "had sufficiently available and homogeneous data",
+      "had publicly accessible data or metadata"
+    ],
+    "exclusion_criteria": [
+      "did not address breast cancer subtypes",
+      "lacked usable data",
+      "did not use Illumina sequencing",
+      "did not cover **V4** or **V3-V4**",
+      "mentioned antibiotic administration within 3 months before sampling",
+      "lacked publicly accessible data or metadata",
+      "were reviews, commentaries, protocols, or other non-primary literature"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No study met all eligibility criteria.",
+      "A meta-analysis was **not feasible**.",
+      "Under the required criteria, the local MetaSyn PubMed corpus search produced **no includable primary study** published or indexed between **2023-01-01 and 2023-07-01** that provided an eligible TNBC versus non-TNBC tissue microbiome comparison using **16S rRNA**, **Illumina**, and **V4 or V3-V4**.",
+      "This does **not** prove absence of such associations in the broader literature.",
+      "No included study was available to support synthesis of functional pathway findings.",
+      "The local MetaSyn PubMed corpus does not support a positive systematic-review conclusion that any tissue microbiome taxon or pathway is distinctly associated with TNBC versus non-TNBC within the specified 2023-01-01 to 2023-07-01 search window and under the required technical criteria.",
+      "As a result, the most defensible conclusion is that **no eligible study was included**, and therefore no evidence-based synthesis of TNBC-associated taxa or pathways can be made from this local corpus review.",
+      "A systematic search of the local MetaSyn PubMed corpus using four explicit, reproducible queries identified a small set of breast microbiome candidate records, but **no primary study met all protocol-defined eligibility criteria** for inclusion."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16520,
+    "output_tokens": 1244,
+    "total_tokens": 17764
+  },
+  "metrics": {
+    "retrieval_recall": 0.7941176470588235,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.6176470588235294,
+    "inclusion_precision": 0.84,
+    "inclusion_f1": 0.711864406779661,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.7284,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5969,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes most core sections such as background/objective, methods, results-style study overview, synthesis, limitations, conclusions, and included references, but it lacks an abstract, detailed search strategy, data extraction procedures, PRISMA flow details, and formal quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults (\u226518 years) with PSPS\u2011T2 / FBSS.",
+      "any of the listed modalities (SCS, epidural injections, adhesiolysis, physiotherapy, medication, reoperation, sham/placebo, etc.).",
+      "pain intensity (any validated scale).",
+      "parallel or crossover RCTs; languages English, Dutch, French.",
+      "Only randomized controlled trials (RCTs) reporting pain outcomes were eligible."
+    ],
+    "exclusion_criteria": [
+      "children",
+      "acute/subacute pain",
+      "no previous spine surgery",
+      "non\u2011RCT designs",
+      "reviews",
+      "protocols",
+      "case reports",
+      "studies without pain reporting"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In adults with PSPS\u2011T2, spinal cord stimulation\u2014alone or combined with peripheral field stimulation\u2014provides substantial pain reduction compared with conservative medical management or reoperation.",
+      "Percutaneous adhesiolysis is a valuable minimally invasive option for refractory post\u2011surgery pain.",
+      "Conservative interventions such as MBSR and auricular acupressure, as well as selected pharmacotherapies (pregabalin, intrathecal analgesia), offer additional avenues, although evidence is less robust.",
+      "Future high\u2011quality, sham\u2011controlled RCTs with clearly defined PSPS\u2011T2 populations are needed to strengthen the evidence base."
+    ]
+  }
+}

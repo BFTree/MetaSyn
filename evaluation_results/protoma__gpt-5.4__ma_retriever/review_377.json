@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 38575,
+    "output_tokens": 988,
+    "total_tokens": 39563
+  },
+  "metrics": {
+    "retrieval_recall": 0.8095238095238095,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.47619047619047616,
+    "inclusion_precision": 0.7692307692307693,
+    "inclusion_f1": 0.588235294117647,
+    "screening_accuracy": 0.8529411764705882,
+    "conditional_retention": 0.5882352941176471,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5454,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3908,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, search strategy, eligibility criteria, screening flow, and synthesis approach, but it falls short of excellent due to duplicated headings, limited explicit data-extraction detail, some internal inconsistencies, and absence of full reference details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies conducted in aquatic environments, including freshwater, marine, or estuarine systems, that examine microplastics in relation to transport or aggregation processes.",
+      "Studies that compare or explicitly evaluate microplastics transported as individual particles versus microplastics incorporated into flocs, aggregates, or particulate matter.",
+      "Studies reporting empirical or modeled evidence on flocculation behavior, including size-dependent incorporation into flocs, transport mode prediction, or thresholds related to microplastic incorporation (including particles smaller than approximately 162 \u00b5m).",
+      "Studies that characterize relevant microplastic properties such as size fraction, shape, density, polymer type, or surface properties in relation to flocculation or transport outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies outside aquatic systems or focused solely on terrestrial, atmospheric, wastewater treatment, or laboratory contexts without clear relevance to freshwater, marine, or estuarine transport processes.",
+      "Studies that do not assess flocculation, aggregation, or transport mode of microplastics, or that do not distinguish free microplastic particles from floc-incorporated microplastics.",
+      "Studies lacking relevant outcome data on size-dependent floc incorporation, flocculation behavior, or prediction of transport behavior in aquatic environments.",
+      "Non-primary research or insufficiently detailed reports, such as reviews, editorials, commentaries, conference abstracts, or studies without enough information on microplastic characteristics or outcomes of interest."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently consistent or extractable numerical data on floc incorporation, size thresholds, or transport outcomes to support meta-analysis.",
+      "The qualitative evidence suggests a recurring pattern that smaller microplastics, particularly particles below approximately 162 \u00b5m, are more likely to become incorporated into flocs, whereas larger particles are more often transported as individual entities; this tendency also appears to vary with particle shape, density, polymer type, and surface properties.",
+      "Nevertheless, these findings remain tentative because of substantial heterogeneity in study design, environmental settings, and outcome reporting.",
+      "Overall, the current evidence base is limited and insufficient to support firm, generalizable conclusions about microplastic transport modes across aquatic systems."
+    ]
+  }
+}

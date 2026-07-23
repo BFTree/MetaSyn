@@ -1,0 +1,102 @@
+{
+  "review_id": 324,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    8176,
+    8177,
+    8172,
+    8173,
+    8174,
+    8178
+  ],
+  "retrieved_article_ids": [
+    97961,
+    55699,
+    8176,
+    8177,
+    55731,
+    55710,
+    97689,
+    55705,
+    55717,
+    55719,
+    55733,
+    8172,
+    55732,
+    8175,
+    55701,
+    26811,
+    8173,
+    55718,
+    25952,
+    26812,
+    8180,
+    8179,
+    8181,
+    8178,
+    55675,
+    8174,
+    97703,
+    55720,
+    97959,
+    55735
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 15,
+    "input_tokens": 346269,
+    "output_tokens": 11068,
+    "total_tokens": 357337,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 52106,
+        "output_tokens": 3000,
+        "total_tokens": 55106
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 4598,
+        "output_tokens": 5000,
+        "total_tokens": 9598
+      },
+      "researcher": {
+        "calls": 9,
+        "input_tokens": 279864,
+        "output_tokens": 1494,
+        "total_tokens": 281358
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 8493,
+        "output_tokens": 942,
+        "total_tokens": 9435
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1208,
+        "output_tokens": 632,
+        "total_tokens": 1840
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 30,
+    "retrieved_unique": 30,
+    "included_count": 6,
+    "included_unique": 6,
+    "search_calls": 2,
+    "unique_search_queries": 2,
+    "retrieved_instances": 40,
+    "duplicate_exposures": 10,
+    "fetch_calls": 13,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 7,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

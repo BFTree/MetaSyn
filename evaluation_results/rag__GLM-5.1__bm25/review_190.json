@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10761,
+    "output_tokens": 1081,
+    "total_tokens": 11842
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.6428571428571429,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.2777777777777778,
+    "inclusion_consistency": 0.572,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, thematic findings, conclusion, and included studies list, but it lacks major required systematic review sections such as formal methods, search strategy, inclusion/exclusion criteria, screening process, quality assessment, data extraction, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "eligible empirical studies published between 2010 and 2024",
+      "quantitative, qualitative, and mixed-methods designs across various geographic contexts (including the US, Brazil, Sri Lanka, Australasia, Nigeria, Korea, and an international four-country sample)",
+      "The populations studied include dental students, dental hygienists, oral and maxillofacial surgery (OMS) residents/practitioners, and broader dental professionals."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Sexual misconduct is a widespread and impactful problem across dental care and educational settings, affecting students, hygienists, and practitioners alike.",
+      "Female dental professionals and students are disproportionately vulnerable, particularly to harassment from patients, senior colleagues, and faculty.",
+      "The evidence highlights a critical need for systemic reforms, including the implementation of robust prevention policies, targeted education on responding to and reporting misconduct, and the fostering of institutional climates that are vigilant, supportive, and genuinely humanistic."
+    ]
+  }
+}

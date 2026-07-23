@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18767,
+    "output_tokens": 1104,
+    "total_tokens": 19871
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.9444444444444444,
+    "inclusion_precision": 0.7727272727272727,
+    "inclusion_f1": 0.85,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9444444444444444,
+    "post_retrieval_loss": 0.05555555555555555,
+    "inclusion_consistency": 0.4132,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with scope, evidence synthesis, certainty grading, conclusion, and an included-study list, but it lacks standard Abstract/Introduction/Methods/Discussion sections and provides only minimal eligibility details without a detailed search strategy, screening process, data extraction method, or synthesis/quality assessment methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published between January 2021 and July 2024",
+      "Only epidemiological SR+MAs reporting pooled effect estimates (OR, RR, HR) in human populations were eligible for inclusion."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "There is robust meta-analytic evidence supporting a bidirectional association between periodontitis and numerous NCDs.",
+      "Periodontitis acts as a significant risk factor for cardiovascular, metabolic, malignant, and neurological diseases, largely mediated by systemic inflammation and pathogen translocation.",
+      "Conversely, metabolic conditions (obesity, hyperglycemia), autoimmune diseases (SLE, Sj\u00f6gren's, IBD), and respiratory conditions (SDB) significantly increase the risk and severity of periodontitis.",
+      "This interplay underscores the necessity of integrated medical-dental care strategies.",
+      "The eligible reviews consistently demonstrate that periodontitis is associated with an increased risk of a wide spectrum of NCDs, supporting the concept of periodontitis as a systemic inflammatory driver.",
+      "The evidence confirms that several NCDs predispose individuals to the development or progression of periodontitis, establishing the bidirectional nature of these relationships."
+    ]
+  }
+}

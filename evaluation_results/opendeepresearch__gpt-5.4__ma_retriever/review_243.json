@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23830,
+    "output_tokens": 978,
+    "total_tokens": 24808
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.28,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6093,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6361,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with explicit review question, search strategy, inclusion/exclusion criteria, screening results, study characteristics, safety synthesis, and meta-analysis feasibility, but it lacks a formal abstract/introduction/methods-results-discussion-conclusion structure and full PRISMA-style completeness."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Population:** humans with psychiatric illness or psychiatric/mental health indications",
+      "**Intervention:** one or more MDMA doses combined with psychotherapy",
+      "**Comparators:** placebo-assisted psychotherapy or other control conditions; comparator structure treated flexibly where needed",
+      "**Outcomes:** any adverse event, side effect, tolerability signal, or safety outcome during sessions, within 7 days after sessions, or across the treatment period",
+      "**Inclusion:** English-language, peer-reviewed primary studies with original human data"
+    ],
+    "exclusion_criteria": [
+      "**Exclusion:** no psychotherapy, non-original reports, conference abstracts, book chapters, animal studies, and Phase 1 MDMA-only studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the locally retrieved eligible studies, the safety profile of MDMA-AP was broadly characterized by:",
+      "generally favorable tolerability under controlled clinical monitoring conditions",
+      "The most important overall finding from the locally retrieved evidence is that the included MDMA-AP studies did not show a recurring treatment-related serious adverse event pattern that clearly outweighed the monitored therapeutic setting.",
+      "The available records did not identify treatment-related deaths.",
+      "The safety profile therefore appears acceptable within medically screened populations under close supervision, but this should not be generalized to unsupervised or broader medical-risk populations [1][2][7].",
+      "The pilot study 3958 extended MDMA-AP safety evidence beyond PTSD.",
+      "A formal quantitative meta-analysis of safety outcomes was not feasible from the locally retrieved evidence.",
+      "Because safety outcomes were reported heterogeneously and often descriptively, a systematic qualitative synthesis is more defensible than a numeric pooled estimate."
+    ]
+  }
+}

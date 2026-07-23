@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9411,
+    "output_tokens": 997,
+    "total_tokens": 10408
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.7023,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7409,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear question, eligibility rationale, screening results, and implications, but lacks a formal abstract, detailed search strategy, screening and data-extraction methods, quality assessment, synthesis approach, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational or RCT design,",
+      "gut/tissue microbiome samples,",
+      "case-control or cohort studies,",
+      "`16S rRNA` using **Illumina** and targeting **V4 or V3-V4**."
+    ],
+    "exclusion_criteria": [
+      "The review excludes studies mentioning antibiotic administration within 3 months before stool collection.",
+      "Reviews, protocols, umbrella reviews, and meta-analyses were excluded by design."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "I found that no candidate is eligible for inclusion in the final review set.",
+      "There is **no includable primary-study evidence** in the supplied candidate pool that satisfies all of:",
+      "This means the review, as operationalized with this candidate pool and title/abstract-only screening, yields an **empty evidence set**.",
+      "The practical implication is that no synthesis of diversity differences, taxa differences, or pathway differences can be made without relaxing at least one constraint, most likely:",
+      "None were included."
+    ]
+  }
+}

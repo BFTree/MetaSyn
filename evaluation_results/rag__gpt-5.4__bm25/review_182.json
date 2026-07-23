@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21070,
+    "output_tokens": 881,
+    "total_tokens": 21951
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.35,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.4999999999999999,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.35,
+    "post_retrieval_loss": 0.65,
+    "inclusion_consistency": 0.696,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6825,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes eligibility criteria, screening, findings, interpretation, conclusions, limitations, and included studies, but it lacks a formal abstract, detailed search strategy, data-extraction and quality-assessment methods, quantitative synthesis, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human **randomized** trials",
+      "Mixed-dentition children with displaced maxillary canines",
+      "Trials of **primary canine extraction** versus no treatment/control, or trials of **double extraction** (primary canine + primary first molar) versus **single extraction**",
+      "Trials could include palatal, central, or labial/central displacement where stated in the criteria"
+    ],
+    "exclusion_criteria": [
+      "Reviews/meta-analyses, case reports, editorials, theses",
+      "Non-randomized studies",
+      "Trials not centered on the relevant intervention contrast",
+      "Studies focused on other outcomes only (e.g., pain, root resorption) without the eruption/position question as the treatment comparison of interest"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included randomized evidence, **primary canine extraction alone usually improved eruption outcomes compared with no treatment**, though results were not perfectly consistent.",
+      "Abstract-level evidence supports a likely benefit of interceptive extraction of the primary canine for many children with palatally displaced canines, but the effect is not uniform across all trials.",
+      "Extraction alone appears helpful, but some adjunctive approaches may improve outcomes further in selected patients.",
+      "Evidence was **mixed** on whether adding extraction of the **primary first molar** to primary canine extraction improves results.",
+      "The abstract-level evidence does **not clearly establish** that double extraction is consistently superior to single extraction.",
+      "**Interceptive extraction of the primary canine generally appears to improve spontaneous eruption and/or normalize eruptive position of palatally displaced maxillary canines compared with no treatment**, although not every trial showed a clear significant benefit.",
+      "**The evidence for adding primary first molar extraction is inconsistent.**"
+    ]
+  }
+}

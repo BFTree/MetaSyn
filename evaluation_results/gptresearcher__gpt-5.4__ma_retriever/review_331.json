@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30725,
+    "output_tokens": 933,
+    "total_tokens": 31658
+  },
+  "metrics": {
+    "retrieval_recall": 0.4411764705882353,
+    "retrieval_precision": 0.3125,
+    "inclusion_recall": 0.20588235294117646,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.8125,
+    "conditional_retention": 0.4666666666666667,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.6154,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.702,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, well-organized structure with abstract, introduction, methods, screening results, study characteristics, synthesis by treatment branch, limitations, conclusion, included studies, and references, plus meta-analysis elements such as search query, eligibility criteria, screening decisions, and synthesis approach, but it lacks a formal PRISMA flow diagram and structured quality/risk-of-bias assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults (\u226518 years)",
+      "PSPS-T2 / FBSS / post-surgery spinal pain after prior spine surgery",
+      "Randomized controlled trials (parallel or crossover)",
+      "Interventions including neuromodulation, minimally invasive pain procedures, conservative care, or reoperation",
+      "Pain outcome reported",
+      "English, Dutch, or French"
+    ],
+    "exclusion_criteria": [
+      "Non-randomized designs",
+      "Case reports, observational studies, systematic reviews as included primary evidence",
+      "No prior spine surgery",
+      "No pain outcome",
+      "Acute/subacute pain (\u22643 months)",
+      "Non-eligible language"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a differentiated conclusion rather than a single global ranking of treatments.",
+      "SCS is the most convincingly supported modality for carefully selected PSPS-T2/FBSS patients with predominant neuropathic radicular leg pain.",
+      "For predominant axial low back pain, SCS works, but only modestly on average.",
+      "Percutaneous adhesiolysis may produce very large benefits compared with caudal epidural injection controls,",
+      "Repeat surgery should not be assumed superior in persistent radicular pain after prior lumbar surgery; the available randomized evidence points in the opposite direction unless there is a clear surgical target.",
+      "SCS for neuropathic leg-dominant PSPS-T2",
+      "Consider adhesiolysis after failure of conservative care and epidural injections, with awareness of repeat-procedure burden",
+      "Use caution when offering SCS for back-pain\u2013dominant PSPS-T2 because average benefits are limited",
+      "Avoid default reoperation in the absence of a strong structural indication"
+    ]
+  }
+}

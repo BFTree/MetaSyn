@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6916,
+    "output_tokens": 1311,
+    "total_tokens": 8227
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.1849,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5027,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening, eligibility, evidence synthesis, and conclusion sections, and it includes key meta-analysis elements like inclusion/exclusion criteria and study-level findings, but it lacks a formal abstract/introduction-methods-results-discussion structure and fuller PRISMA details such as explicit search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "patients with open-angle glaucoma and healthy controls",
+      "translaminar pressure difference (TPD; IOP \u2212 ICP/CSF pressure), with quantitative TPD values in OAG patients; structural glaucomatous changes of the optic disc relevant",
+      "2004-11-01 to 2014-11-30"
+    ],
+    "exclusion_criteria": [
+      "reviews, comments, case reports, animal/experimental studies, studies without glaucoma patients, without TPD evaluation, or without quantitative TPD values in OAG patients"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both support the hypothesis that pressure across the lamina cribrosa, operationalized as **IOP minus CSF/ICP pressure**, is higher in open-angle glaucoma than in controls or nonglaucomatous eyes, and that a higher pressure difference is associated with worse glaucomatous damage.",
+      "TPD appears elevated in open-angle glaucoma compared with healthy/nonglaucomatous subjects.",
+      "The strongest direct comparative evidence is from **Corpus ID: 3159**, where both normal-IOP and high-IOP glaucoma groups had clearly higher TPD than controls.",
+      "Higher TPD is associated with glaucomatous damage.",
+      "Evidence from **Corpus ID: 3158** indicates that higher TPD correlates with **smaller neuroretinal rim area**, a structural indicator of optic disc damage, and with greater visual field defect.",
+      "The available evidence base in this pool is small and likely heterogeneous."
+    ]
+  }
+}

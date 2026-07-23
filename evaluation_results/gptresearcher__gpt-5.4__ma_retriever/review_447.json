@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26870,
+    "output_tokens": 867,
+    "total_tokens": 27737
+  },
+  "metrics": {
+    "retrieval_recall": 0.6428571428571429,
+    "retrieval_precision": 0.21951219512195122,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.8048780487804879,
+    "conditional_retention": 0.1111111111111111,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.4884,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3855,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style screening/included study sections, Synthesis, Limitations, Conclusion, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening logic, and synthesis rationale, but it lacks a formal quality/risk-of-bias assessment and fuller PRISMA flow details needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Peer-reviewed articles",
+      "Published between **2020-01-01** and **2023-09-01**",
+      "English language",
+      "Breast, lung, or prostate cancer",
+      "Federated learning intervention",
+      "Comparative framework versus centralized aggregated ML or single-center/local baseline",
+      "Quantitative clinical oncology ML outcome(s): classification, detection, segmentation, regression, etc."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, commentaries",
+      "Non-oncology or non-target cancers",
+      "No FL method",
+      "No quantitative oncology outcome",
+      "No qualifying comparator",
+      "Outside date range",
+      "Insufficient retrieved metadata to verify eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Federated learning is already convincing as a privacy-preserving strategy for improving cross-site generalization in prostate cancer MRI, but the current eligible evidence in this review is too thin to justify a generalized superiority claim across breast, lung, and prostate cancer.",
+      "Using the local MetaSyn corpus alone and applying the stated eligibility criteria, the review identified **one clearly eligible study**: a 2023 multicenter prostate MRI investigation showing that federated learning substantially improved cross-site lesion segmentation and classification with negligible intra-site loss.",
+      "This supports FL as a practical privacy-preserving route to better generalization in prostate cancer imaging.",
+      "However, the broader claim that FL improves model generalizability and performance across **breast, lung, and prostate cancer** compared with traditional centralized approaches is **not yet established by the eligible local-corpus evidence retrieved here**.",
+      "The breast literature is encouraging but either out of window, comparator-incomplete, or insufficiently verifiable in the provided excerpt.",
+      "Lung cancer evidence was not retrieved in eligible form.",
+      "Accordingly, the evidence is **strong but narrow**, not broad."
+    ]
+  }
+}

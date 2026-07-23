@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20717,
+    "output_tokens": 986,
+    "total_tokens": 21703
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.7272727272727273,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.7272727272727273,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.4366,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4716,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes review context, eligibility screening, synthesis of findings, and included studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion/Conclusion/References sections and omits key PRISMA-style elements such as detailed search strategy, data extraction, quality assessment, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy adults and patients with psychiatric disorders (aged 18\u201365)",
+      "randomized controlled trials (RCTs) with placebo or control conditions",
+      "phase-shifting effects relative to dosing time and dosage"
+    ],
+    "exclusion_criteria": [
+      "publication outside the 1980\u20132020 timeframe (many 2021\u20132026 articles)",
+      "non-RCT designs (observational, reviews, protocols, animal/cell models)",
+      "populations outside the 18\u201365 age range or with excluded medical/neurological conditions (e.g., dementia, Parkinson\u2019s, glaucoma, children)",
+      "interventions not involving melatoninergic agents (e.g., light therapy, other drug classes)",
+      "Studies solely measuring acute neuroendocrine changes without sleep/circadian outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Multiple RCTs confirm that exogenous melatonin exerts acute hypnotic and chronobiotic effects in healthy adults, largely mediated by hypothermic actions and phase-shifting capacity.",
+      "Daytime or early evening administration reliably reduces sleep onset latency (SOL) and increases total sleep time (TST) and sleep efficiency, even when sleep is attempted during the biological day (e.g., shift work simulations).",
+      "Melatonin\u2019s phase-shifting effect is highly dependent on the timing of administration.",
+      "Early evening administration (e.g., 1700 h, 1800 h) consistently produces phase advances of circadian markers, including dim-light melatonin onset (DLMO), core body temperature (CBT) minimum, and endogenous melatonin rhythms.",
+      "Two multicentre RCTs demonstrated that tasimelteon (10\u2013100 mg) dose-dependently advanced the plasma melatonin rhythm and improved sleep maintenance and initiation (reduced latency, increased efficiency, reduced wake after sleep onset [WASO]) following a 5-hour advance of the sleep-wake schedule.",
+      "The evidence strongly supports a time- and dose-dependent relationship for phase-shifting:"
+    ]
+  }
+}

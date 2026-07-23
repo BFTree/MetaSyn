@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13572,
+    "output_tokens": 970,
+    "total_tokens": 14542
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.4659,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, screening/selection summary, organized synthesized findings, conclusions, and included studies, but it lacks a formal abstract, introduction, detailed methods, search strategy, data extraction process, quality assessment, and full references needed for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: male patients with HFS",
+      "Exposure: HFS/penile trauma",
+      "Outcomes: aetiopathogenesis, clinical symptoms, diagnostics, and treatment effectiveness",
+      "all case reports or small case series published between 2020 and 2025",
+      "directly addressed HFS"
+    ],
+    "exclusion_criteria": [
+      "Articles not meeting the PICO criteria",
+      "those lacking abstracts preventing verification of outcomes",
+      "commentaries",
+      "out-of-scope literature (e.g., priapism, general erectile dysfunction, other pelvic pain syndromes, penile cancer)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "HFS is a distinct, trauma-induced clinical entity affecting young men, characterized by a semi-rigid flaccid penis and pervasive neurovascular, pelvic, and psychological symptoms.",
+      "Standard imaging rarely aids diagnosis, and isolated PDE5 inhibitor therapy appears ineffective.",
+      "Emerging evidence supports biopsychosocial and multimodal interventions\u2014particularly those incorporating pelvic floor physical therapy and low-intensity shockwave therapy\u2014as more viable management avenues.",
+      "Further rigorous, evidence-based studies are critically needed to formalize diagnostic criteria, elucidate pathophysiological mechanisms, and validate treatment protocols."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9407,
+    "output_tokens": 1113,
+    "total_tokens": 10520
+  },
+  "metrics": {
+    "retrieval_recall": 0.1111111111111111,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 0.37037037037037035,
+    "inclusion_f1": 0.17094017094017092,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.1483,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2074,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening process, summary of included studies, thematic findings, implications, and a study list, but it lacks a full PRISMA-style structure including a detailed search strategy, formal methods, data extraction procedures, quality assessment, synthesis/meta-analysis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies of water, sanitation and/or handwashing\u2011with\u2011soap interventions in LMICs that reported on diarrhoeal disease or acute respiratory infections"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "protocols",
+      "editorials",
+      "commentaries",
+      "evidence gap maps",
+      "qualitative studies without an intervention",
+      "studies not evaluating WASH interventions"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The abstracts of the 26 eligible primary studies reveal a substantial evidence gap in the WASH intervention literature.",
+      "Although women are almost certainly the main implementers of household\u2011level WASH behaviours, the included studies do not systematically report the gender of those engaged, the time costs borne by women, or the differential impacts of the interventions on women.",
+      "Consequently, it is impossible to classify these interventions on the WHO Gender Responsiveness Assessment Scale without full\u2011text review.",
+      "Future WASH trials should incorporate gender\u2011sensitive data collection and reporting to enable evaluations of gender equity in intervention design, implementation and outcomes.",
+      "No study describes its design as gender\u2011responsive.",
+      "The interventions appear to be gender\u2011unaware or, at best, gender\u2011unequal: they target women as recipients of health\u2011promotion messages (e.g., handwashing, water treatment) without challenging underlying gender norms or reporting on women\u2019s empowerment."
+    ]
+  }
+}

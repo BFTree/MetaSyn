@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17838,
+    "output_tokens": 966,
+    "total_tokens": 18804
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7564,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6174,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening summary, evidence synthesis, conclusion, and included studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion/References sections and omits key PRISMA-style elements such as a detailed search strategy, data extraction methods, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult males (age \u2265 18) with a documented clinical diagnosis of anxiety disorders\u2014including post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), social phobia/social anxiety disorder (SAD), and panic disorder\u2014where erectile function was measured using the International Index of Erectile Function (specifically the IIEF-5 or IIEF erectile function domain)."
+    ],
+    "exclusion_criteria": [
+      "Studies focused on females, children/adolescents, or mixed populations without distinct male anxiety subgroup analysis.",
+      "Studies did not measure erectile function, measured sexual dysfunction broadly without ED-specific data, or used screening questionnaires (e.g., PHQ, GAD-7) rather than clinical diagnosis by a psychiatrist for anxiety.",
+      "Studies measuring ED via administrative/registry diagnostic codes rather than the specified IIEF/IIEF-5 instrument (which provides severity scores) were excluded.",
+      "Studies measuring anxiety via self-report screening tools rather than clinical diagnosis were also excluded.",
+      "Reviews, meta-analyses, protocols, and animal studies were excluded as non-original research.",
+      "Articles published after the search end date (2019-11-28) were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding ED in adult males with clinically diagnosed anxiety disorders is limited and heterogeneous.",
+      "PTSD is strongly associated with high prevalence (85%) and severity (45% moderate-to-severe) of ED in combat veterans, though this association may not hold in populations with severe comorbid alcohol dependence.",
+      "OCD is associated with reduced effective erections compared to SAD.",
+      "There is a notable gap in IIEF-5-based evidence for panic disorder and generalized anxiety disorder within the reviewed pool."
+    ]
+  }
+}

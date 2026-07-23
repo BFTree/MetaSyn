@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26282,
+    "output_tokens": 881,
+    "total_tokens": 27163
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04918032786885246,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9672131147540983,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6813,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6518,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Review Question, Methods, Results, Risk of Bias, Discussion, and Conclusion, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening flow, synthesis approach, and quality assessment, but it lacks a formal References section and has some duplicated headings and incomplete reporting details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies including adults with obesity in the specified BMI range (approximately 35.5-42.6 kg/m\u00b2), with participants with type 2 diabetes mellitus and/or without type 2 diabetes mellitus.",
+      "Studies evaluating total diet replacement interventions consisting of very low calorie diets (<800 kcal/day) or low-energy liquid-formula diets (>800 kcal/day).",
+      "Studies that include a comparison between obese participants with type 2 diabetes mellitus and obese participants without type 2 diabetes mellitus receiving the same formula diet intervention, or that report results separately for these groups.",
+      "Studies reporting weight-loss outcomes, including final weight loss in kilograms and/or rate of weight loss in kilograms per week."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving the target population, including non-obese participants, pediatric populations, or patients with diabetes types other than type 2 diabetes mellitus.",
+      "Studies evaluating interventions other than total diet replacement formula diets, or combining the diet intervention with bariatric surgery, pharmacologic weight-loss therapy, or other co-interventions that prevent isolation of the diet effect.",
+      "Studies without an appropriate comparator group of obese participants without type 2 diabetes mellitus receiving the same formula diet, or without separate data for diabetic and non-diabetic groups.",
+      "Studies not reporting relevant weight-loss outcomes in kilograms or kilograms per week, as well as non-original research such as reviews, editorials, letters, protocols, and case reports."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Quantitative synthesis was not possible because the single included study did not provide sufficiently extractable outcome data on final weight loss or rate of weight loss for the relevant comparison groups.",
+      "On qualitative review, the study suggests that formula-based energy restriction may produce weight loss in both patients with and without type 2 diabetes, but it does not allow a reliable assessment of whether weight loss outcomes differ between these groups.",
+      "Overall, the current evidence is too limited to support firm conclusions."
+    ]
+  }
+}

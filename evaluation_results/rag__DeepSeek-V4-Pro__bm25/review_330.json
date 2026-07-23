@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23416,
+    "output_tokens": 1037,
+    "total_tokens": 24453
+  },
+  "metrics": {
+    "retrieval_recall": 0.8064516129032258,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.6451612903225806,
+    "inclusion_precision": 0.7692307692307693,
+    "inclusion_f1": 0.7017543859649122,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.16129032258064516,
+    "inclusion_consistency": 0.7604,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5102,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with objective, methods, screening results, synthesis, included studies, and conclusion, but it lacks several formal systematic review sections and PRISMA-style elements such as a full abstract, introduction, discussion, references, detailed search strategy, data extraction procedures, quality assessment, and statistical synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "enrolled adults (\u226518 years) with schizophrenia, schizoaffective, or schizophreniform psychosis",
+      "included a healthy control group",
+      "assessed speech production or comprehension with an explicit focus on grammar/syntax",
+      "reported quantitative syntactic measures derived in the same manner from both groups"
+    ],
+    "exclusion_criteria": [
+      "involved participants <18 years",
+      "were case reports or case series",
+      "lacked a healthy control group",
+      "had a retraction notice",
+      "used unconventional syntactic complexity criteria",
+      "provided no quantitative measures or plots for effect size estimation",
+      "Reviews, protocols, editorials, conference abstracts, and non\u2011empirical works were also excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across the included abstracts, a consistent pattern emerges: individuals with schizophrenia exhibit significant impairments in both syntactic comprehension and production relative to healthy controls.",
+      "Comprehension deficits are evident for syntactically complex sentences, including object\u2011relative clauses, embedded clauses, and non\u2011canonical word orders.",
+      "Production deficits manifest as reduced syntactic complexity (shorter sentences, fewer embedded clauses, lower clausal density) and anomalous use of referential devices (e.g., pronouns, definite noun phrases).",
+      "A subset of studies also highlight that syntactic deficits are present early in psychosis, may be influenced by cognitive functions (working memory, executive functions), and show associations with structural and functional brain abnormalities.",
+      "The heterogeneity of tasks and syntactic measures across studies underscores the multidimensional nature of grammatical impairment in schizophrenia, providing a rich basis for a quantitative meta\u2011analysis.",
+      "A substantial body of empirical work addresses syntactic deficits in schizophrenia."
+    ]
+  }
+}

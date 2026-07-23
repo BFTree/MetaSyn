@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 36393,
+    "output_tokens": 1397,
+    "total_tokens": 37790
+  },
+  "metrics": {
+    "retrieval_recall": 0.5777777777777777,
+    "retrieval_precision": 0.3023255813953488,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.6451612903225806,
+    "inclusion_f1": 0.5263157894736842,
+    "screening_accuracy": 0.8023255813953488,
+    "conditional_retention": 0.7692307692307693,
+    "post_retrieval_loss": 0.13333333333333333,
+    "inclusion_consistency": 0.5545,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4212,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes key meta-analysis elements such as search strategy, screening criteria, study selection, and synthesis methods, but it lacks full formal references and has some structural redundancies and incomplete PRISMA-style details such as explicit data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational or interventional human studies (including cross-sectional, case-control, cohort, or clinical trials with relevant baseline or within-sample data) that report within-patient correlational analyses rather than requiring a separate healthy control group.",
+      "Participants are patients with schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder, diagnosed using established clinical diagnostic criteria or clinician diagnosis.",
+      "Studies measure blood-based immune markers, including pro-inflammatory or anti-inflammatory indices, inflammatory cytokines, kynurenine metabolites, or markers of microglial activation.",
+      "Studies report associations between immune markers and cognitive outcomes, including global cognitive performance and/or domain-specific cognitive functioning across recognized cognitive domains."
+    ],
+    "exclusion_criteria": [
+      "Studies that include non-psychiatric or other psychiatric populations only, or do not report data separately for schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder.",
+      "Studies that do not examine within-patient associations between blood-based immune markers and cognition (for example, studies limited to between-group comparisons only).",
+      "Studies that do not assess relevant cognitive outcomes or do not report global cognition or domain-specific cognitive performance data.",
+      "Animal, preclinical, in vitro, case report, review, editorial, conference abstract-only, or other non-original research articles."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 31 studies, blood-based immune markers were not meaningfully associated with cognitive performance within patients with schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder; the pooled standardized mean difference from the 2 studies contributing to the quantitative synthesis was 0.196 (95% CI, -0.116 to 0.509; p=0.22).",
+      "Although the point estimate trends toward a small positive association, the confidence interval spans no effect and does not support a clinically important relationship between peripheral immune activity and either global or domain-specific cognition at a level that would justify using these markers alone to guide cognitive assessment or treatment decisions.",
+      "Clinically, immune biomarkers may still have value as part of broader multimodal profiling, but they should be interpreted cautiously and not as reliable standalone indicators of cognitive dysfunction.",
+      "The main caveat is that only two studies were meta-analyzed despite 31 eligible studies overall, limiting precision and the strength of any practical inference.",
+      "The pooled analysis demonstrated no statistically significant association between blood-based immune markers and cognitive performance across patient samples with schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder.",
+      "Overall, the available evidence does not support a clear cross-diagnostic within-patient association between blood-based immune markers and global or domain-specific cognitive functioning, although the possibility of a small effect cannot be excluded.",
+      "Taken together, these findings do not provide convincing evidence for a robust cross-diagnostic association between peripheral immune markers and cognition, but they also do not exclude a modest relationship.",
+      "Current evidence does not support using blood-based immune markers as standalone indicators of cognitive impairment across schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder."
+    ]
+  }
+}

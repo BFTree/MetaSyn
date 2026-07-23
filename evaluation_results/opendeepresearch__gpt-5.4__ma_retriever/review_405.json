@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29834,
+    "output_tokens": 1072,
+    "total_tokens": 30906
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5496,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2826,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is very well organized with clear eligibility criteria, search strategy, retrieval results, screening decisions, synthesis, limitations, conclusion, and sources, but it lacks some full PRISMA-level rigor such as a formal abstract, detailed data extraction process, risk-of-bias/quality assessment, and a screening flow diagram."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Patients with Alzheimer\u2019s disease, restricted to studies using reliable AD-specific diagnostic criteria, such as NINCDS-ADRDA.",
+      "Alzheimer\u2019s disease pathology as it affects time-perception mechanisms.",
+      "Healthy controls and/or normative standards for time perception.",
+      "Eligible outcomes included:",
+      "time perception",
+      "time estimation",
+      "prospective timing",
+      "retrospective timing",
+      "perception of shorter and longer time intervals",
+      "other clearly relevant time-perception measures",
+      "Peer-reviewed journal publications only.",
+      "Only studies published from **2015-01-01 through 2015-12-31** were eligible.",
+      "Only the **local MetaSyn PubMed corpus** was used for retrieval.",
+      "the AD-specific diagnostic requirement",
+      "the time-perception outcome requirement",
+      "the peer-reviewed journal requirement",
+      "the 2015 date restriction"
+    ],
+    "exclusion_criteria": [
+      "Studies defining dementia only by general cognitive impairment, without reliable AD-specific diagnostic criteria, were not eligible.",
+      "Outside the eligible date window",
+      "the **local MetaSyn PubMed corpus** as the only retrieval source, and",
+      "the **2015 calendar year** as the only eligible publication window."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the required local MetaSyn PubMed corpus and the publication window of **2015-01-01 to 2015-12-31**, no peer-reviewed primary study met the eligibility criteria for inclusion in this systematic review.",
+      "As a result, no formal synthesis of eligible 2015 evidence and no meta-analysis could be performed.",
+      "The broader, non-eligible corpus records retrieved outside the date window consistently suggest that Alzheimer\u2019s disease is associated with impaired time perception relative to controls, particularly through increased error, increased variability, reduced precision, and inconsistent temporal judgments [1][2][3][4].",
+      "On the theoretical question, the available corpus evidence does not support a simple claim that episodic memory impairment alone explains these distortions.",
+      "Instead, the evidence points toward a broader disturbance involving internal timing processes, memory systems, and decisional mechanisms [1][2][4].",
+      "Because the final eligible set was empty, the most accurate review conclusion is that **the local 2015 corpus provides no includable primary-study evidence to answer the question under the stated constraints**."
+    ]
+  }
+}

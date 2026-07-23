@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15345,
+    "output_tokens": 1018,
+    "total_tokens": 16363
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6142,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6558,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with clear Background, Methods, screening results, study characteristics, synthesis, conclusion, and included studies, but it lacks a formal abstract, detailed database/search strategy, data extraction procedures, quality assessment, and full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "patients with mCRC whose tumours were assessed for BRAF mutation status as a subset of the RAS wild\u2011type (minimally KRAS exon 2 and 3) subgroup",
+      "intervention consisting of an anti\u2011EGFR antibody (alone or added to standard therapy) compared with the same standard therapy",
+      "available OS or PFS data",
+      "Only articles published before the search end date were eligible."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, protocols, case reports, non\u2011randomised studies, and studies not reporting BRAF\u2011specific outcomes were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The three included studies consistently indicate that the benefit of anti\u2011EGFR therapy in RAS wild\u2011type mCRC is largely restricted to patients whose tumours are also BRAF wild\u2011type.",
+      "In the two studies that reported hazard ratios (PRIME and the panitumumab monotherapy trial), the PFS and OS benefit of panitumumab was observed in the BRAF wild\u2011type subgroup, whereas patients with BRAF V600E mutations derived no significant improvement.",
+      "The PICCOLO trial similarly found that the effect of panitumumab on PFS was influenced by BRAF mutation status, with no benefit in the BRAF mutant subgroup.",
+      "These findings support the notion that BRAF V600E mutation is a negative predictive biomarker for anti\u2011EGFR efficacy in RAS wild\u2011type mCRC, a conclusion that has been incorporated into current clinical guidelines.",
+      "The accumulated evidence suggests that anti\u2011EGFR monoclonal antibodies confer little or no survival benefit in patients harbouring BRAF V600E mutations, supporting the use of extended RAS/BRAF testing to refine patient selection for anti\u2011EGFR therapy."
+    ]
+  }
+}

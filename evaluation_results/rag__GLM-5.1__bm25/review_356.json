@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10164,
+    "output_tokens": 1515,
+    "total_tokens": 11679
+  },
+  "metrics": {
+    "retrieval_recall": 0.5909090909090909,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.22727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.37037037037037035,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.38461538461538464,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.4997,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4095,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening overview, evidence synthesis, conclusions, and included studies, but it lacks key systematic review sections such as an abstract, introduction, full methods, detailed search strategy, quality assessment, formal synthesis/meta-analysis methods, discussion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "all eligible primary studies focused on acute mania and evaluated verapamil",
+      "Five double-blind RCTs evaluated the efficacy of the LTCC antagonist verapamil for acute manic episodes."
+    ],
+    "exclusion_criteria": [
+      "the study did not investigate an L-type calcium channel (LTCC) antagonist as the intervention",
+      "the study population did not have bipolar disorder",
+      "the study design was not a randomised controlled trial (RCT) or, for efficacy outcomes, was not double-blind",
+      "the article was a review, meta-analysis, protocol, case report, or editorial",
+      "the article was published after the search end date of 2016-02-15",
+      "open-label trials, retrospective studies, or case series",
+      "they tested an augmentation strategy where the LTCC antagonist was the baseline treatment in both arms rather than the experimental intervention",
+      "non-randomised or non-double-blind designs"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available double-blind RCT evidence suggests that the LTCC antagonist verapamil may possess antimanic properties comparable to placebo and potentially equal efficacy to lithium in acute mania.",
+      "However, this conclusion is primarily supported by small, often early studies.",
+      "There is no double-blind RCT evidence in the screened pool supporting the efficacy of LTCC antagonists for acute bipolar depression or relapse prevention, nor for other specific LTCC antagonists like nimodipine, diltiazem, nifedipine, or isradipine.",
+      "Clinicians should exercise caution if combining verapamil with lithium due to reported adverse cardiovascular interactions."
+    ]
+  }
+}

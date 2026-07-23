@@ -1,0 +1,46 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23901,
+    "output_tokens": 713,
+    "total_tokens": 24614
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7586206896551724,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized as an evidence synthesis with results summaries and an included-study list, but it lacks most required systematic review sections such as Abstract, Introduction, Methods, Discussion, Conclusion, formal References, search strategy, screening criteria, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, while AHI frequently correlates with NAFLD features, intermittent hypoxia markers (ODI, lowest oxygen saturation, nocturnal desaturation severity) appear to be the most robust independent OSA-related predictors of NAFLD histological severity (NASH, fibrosis, NAS) in severely obese patients, suggesting a direct pathogenic role of hypoxic stress.",
+      "AHI's independent predictive value is more inconsistent, often attenuating when metabolic confounders like insulin resistance are accounted for.",
+      "The limited longitudinal evidence indicates that BMS effectively improves both OSA (including AHI and hypoxia) and NAFLD (steatosis and fibrosis) over time, with the degree of improvement in liver disease often paralleling the degree of improvement in sleep apnea and nocturnal hypoxia.",
+      "At 6 months post-MBS, the surgery effectively improved sleep apnea, nocturnal hypoxia, liver steatosis, and fibrosis.",
+      "It reported high comorbidity remission rates, with 100% remission of obstructive sleep apnea and 73% remission of non-alcoholic fatty liver disease within the first year, demonstrating substantial concurrent efficacy of this specific BMS procedure on both conditions."
+    ]
+  }
+}

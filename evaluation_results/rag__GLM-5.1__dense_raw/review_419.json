@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14221,
+    "output_tokens": 1336,
+    "total_tokens": 15557
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5533,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6749,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a research question, PICO criteria, screening process, exclusions, and synthesis statement, but lacks a formal abstract, introduction, detailed methods, results presentation, discussion, conclusion, references, comprehensive search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults (aged \u226518 years) with overweight (BMI \u226525) or obesity (BMI \u226530) experiencing comorbid depressive symptoms.",
+      "Internet- and mobile-based interventions (IMI) delivered via web browser or smartphone app aimed at improving mental health, specifically targeting depressive symptoms based on psychological principles (e.g., CBT, behavioral activation, mindfulness).",
+      "Control conditions in randomized controlled trials (RCTs) that are *not* treatment as usual (TAU, referring to psychotherapy, pharmacotherapy or both), waiting list, low level support, psychosocial support, attention placebo, or psychological placebo.",
+      "Depressive symptom severity (primary) and weight reduction (secondary).",
+      "Search start date 2023-07-01; Search end date 2024-03-31."
+    ],
+    "exclusion_criteria": [
+      "Studies published outside the search window (July 1, 2023, to March 31, 2024) were excluded as out-of-date.",
+      "Additionally, study protocols, systematic reviews, meta-analyses, scoping reviews, retrospective observational studies, qualitative studies, and single-arm trials were excluded as they did not meet the criteria for eligible primary RCTs.",
+      "Studies were excluded if they did not explicitly target adults with both overweight/obesity (BMI \u226525) and comorbid depressive symptoms.",
+      "Candidates focusing on specific somatic diseases (e.g., Type 2 Diabetes, chronic pain), postpartum women, adolescents, or populations merely \"at risk\" for obesity or depression were excluded.",
+      "Studies were excluded if the intervention did not explicitly target depressive symptoms via an internet- or mobile-based modality (IMI) based on psychological principles.",
+      "Interventions focusing primarily on weight loss, physical activity, or diet without a direct mental health therapeutic target for depression were excluded.",
+      "Studies utilizing excluded control conditions\u2014such as waitlist, TAU (defined as psychotherapy/pharmacotherapy), or psychological placebo\u2014were excluded, as specified by the review protocol."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "no eligible primary-study articles were identified",
+      "no data were available to synthesize the effectiveness of internet- and mobile-based interventions (IMI) for reducing depressive symptom severity in adults with overweight or obesity experiencing comorbid depressive symptoms within the specified search timeframe and comparison constraints.",
+      "The evidence base for this specific PICO configuration appears to be currently vacant or unpublished within the searched corpus, highlighting a significant gap in the literature for active digital psychological interventions targeting depression in this population compared to standard non-psychological care."
+    ]
+  }
+}

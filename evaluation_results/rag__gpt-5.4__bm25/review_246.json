@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12404,
+    "output_tokens": 1097,
+    "total_tokens": 13501
+  },
+  "metrics": {
+    "retrieval_recall": 0.9545454545454546,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.5238095238095238,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.5498,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4557,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening rationale, eligibility criteria, narrative synthesis, limitations, conclusions, and included studies, but it lacks most formal systematic review sections and PRISMA-style elements such as a structured abstract, introduction, full methods, detailed search strategy, data extraction procedures, risk-of-bias assessment, quantitative synthesis, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults aged 18-65",
+      "healthy participants or patients with psychiatric disorders",
+      "randomized controlled trials",
+      "melatonin or melatonin receptor agonists",
+      "placebo/control comparators",
+      "outcomes on sleep-wake timing/architecture and/or circadian rhythm markers"
+    ],
+    "exclusion_criteria": [
+      "not an RCT or not clearly interventional",
+      "review/article/protocol/editorial rather than a primary trial",
+      "animal/cell/modeling study",
+      "population outside scope (children/adolescents, neurological/dementia/medical populations, postoperative/surgical, Parkinson\u2019s disease, glaucoma, etc.)",
+      "circadian/sleep disorder populations without being healthy or psychiatric populations",
+      "publication after the search end date (2020-05-31)",
+      "no relevant melatoninergic intervention"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Yes\u2014melatoninergic agents can modulate sleep-wake and circadian rhythms, especially in healthy adults under experimentally shifted schedules.",
+      "Timing matters greatly:",
+      "Dose matters, but not linearly:",
+      "Psychiatric-disorder evidence is promising but thinner and less standardized, with fewer abstract-reported endogenous phase markers and more mixed sleep effects.",
+      "Across these healthy-volunteer studies, the abstract-level evidence supports the review hypothesis that timing is central and dose-response may be nonmonotonic.",
+      "Overall, psychiatric-trial abstracts suggest possible benefit on sleep/circadian organization, but the evidence is less direct for endogenous phase markers than in healthy forced-shift studies."
+    ]
+  }
+}

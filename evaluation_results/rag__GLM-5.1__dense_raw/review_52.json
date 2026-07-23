@@ -1,0 +1,45 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13812,
+    "output_tokens": 853,
+    "total_tokens": 14665
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized into topical narrative sections with an introduction, conclusions, and included articles, but it lacks key systematic review structure such as an abstract, explicit methods, search strategy, screening criteria, data extraction, quality assessment, synthesis approach, and formal results/discussion sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Current evidence on HFS is confined to a few case reports and series, suggesting it is a post-traumatic neurovascular and pelvic floor dysfunction syndrome.",
+      "It manifests with a unique phenotype of flaccid semi-rigidity combined with erectile, sensory, urinary, and psychological impairments, while standard diagnostics remain largely negative.",
+      "Monotherapy with PDE5 inhibitors appears ineffective, whereas multimodal strategies\u2014particularly those incorporating pelvic floor physical therapy, biopsychosocial rehabilitation, and low-intensity shockwave therapy\u2014show promise in alleviating symptoms and improving erectile function.",
+      "There is a critical need for more robust, evidence-based studies to establish formal diagnostic criteria, elucidate pathophysiological mechanisms, and validate effective treatment protocols."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29134,
+    "output_tokens": 1105,
+    "total_tokens": 30239
+  },
+  "metrics": {
+    "retrieval_recall": 0.8205128205128205,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.5897435897435898,
+    "inclusion_precision": 0.6388888888888888,
+    "inclusion_f1": 0.6133333333333332,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.71875,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.7068,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5744,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening outcomes, exclusion reasons, synthesis themes, gaps, a conclusion, and an included-study list, but it lacks several full systematic-review sections such as a formal abstract, detailed methods/search strategy, data extraction process, quality assessment, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that evaluate synthetic health\u2011related data and explicitly assess the output in terms of utility and/or privacy"
+    ],
+    "exclusion_criteria": [
+      "Publication year >2024 (many 2025\u20132026 candidates, outside the search end date of 2024\u201107\u201131).",
+      "Document type\u2013 reviews, systematic/scoping reviews, and narrative reviews (e.g., Candidate\u202f005, 007, 027, 032, 049, 059, 092, 097, 108, 125, 149, 152, 155, 157, 163, 169, 173, 174, 179, 180, 181, 184, 193, 194, 195, 196).",
+      "Use of unstructured data (images or text) without a focus on tabular/structured synthetic data (e.g., face data, clinical notes, neuroimaging, ultrasound images, dental images, AS\u2011OCT, brain MRI, skin images, text\u2011based suicide risk notes).",
+      "Lack of any assessment of the generated output; studies that only describe generation methods without evaluating utility or privacy, or that focus on other topics (e.g., federated learning without synthetic data generation, privacy policies, education, energy data, sport sciences).",
+      "Posters, conference abstracts, or articles not in English (none identified among candidates)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the candidate set, the evidence shows a strong emphasis on demonstrating the statistical or predictive utility of synthetic health data, while privacy assessment remains fragmented and often subordinate.",
+      "No consensus has yet emerged on how to holistically evaluate synthetic data; the field lacks a broadly adopted, replicable framework that equally weights privacy and utility.",
+      "This imbalance highlights a critical need for community-driven standardisation of evaluation protocols that include minimum privacy-risk reporting, consistent metrics, and explicit trade-off analyses, especially for the sensitive, high-dimensional health data that these methods aim to unlock."
+    ]
+  }
+}

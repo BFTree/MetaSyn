@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29978,
+    "output_tokens": 636,
+    "total_tokens": 30614
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.05555555555555555,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9444444444444444,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4661,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5084,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive PRISMA-style structure with abstract, introduction, methods, retrieval/screening results, exclusions, narrative synthesis, interpretation, limitations, conclusion, included-study list, and references, plus detailed search queries, eligibility criteria, screening table, data synthesis rationale, and explanation for why meta-analysis was not possible."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Hospital patients receiving medication prescriptions",
+      "Intervention: electronic prescribing, including CPOE or CDS",
+      "Comparator: manual/paper-based prescribing or usual care without the electronic intervention",
+      "Outcome: quantitative incidence of medication errors",
+      "Study design: RCT",
+      "English language",
+      "Full-text, peer-reviewed article",
+      "Search window: **2023-05-01 to 2024-11-03**"
+    ],
+    "exclusion_criteria": [
+      "Non-human studies",
+      "Non-RCT designs",
+      "Reviews, editorials, letters, conference abstracts",
+      "No full text available in the local corpus",
+      "Incomplete outcome data for quantitative synthesis"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn corpus and the specified eligibility criteria, **no study was eligible for inclusion**, so **no meta-analysis could be performed**.",
+      "This null inclusion result is itself informative: high-quality, full-text, English-language RCTs in hospital patients assessing electronic prescribing/CPOE/CDS versus usual care on quantitative medication-error incidence were not identified in the corpus within the specified search window.",
+      "The broader excluded evidence indicates that hospital CPOE/CDS often improves prescribing process measures and guideline adherence, but the safety case is mixed.",
+      "Strong interruptive alerts can sharply alter prescribing behavior, yet may introduce new harms such as treatment delay.",
+      "Non-tailored alerts may reduce potential prescribing problems without reducing clinically relevant interactions or harm.",
+      "The most defensible conclusion is not that electronic prescribing \u201cworks\u201d or \u201cfails\u201d in general, but that **its effectiveness is highly contingent on sociotechnical fit, alert design, contextual tailoring, and ongoing governance**."
+    ]
+  }
+}

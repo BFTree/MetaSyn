@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23155,
+    "output_tokens": 868,
+    "total_tokens": 24023
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.7096774193548387,
+    "inclusion_precision": 0.7586206896551724,
+    "inclusion_f1": 0.7333333333333333,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.7096774193548387,
+    "post_retrieval_loss": 0.2903225806451613,
+    "inclusion_consistency": 0.6459,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6181,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening summary, evidence synthesis, and included-study list, but it lacks a formal abstract, introduction, methods, results, discussion, conclusion, references, detailed search strategy, explicit inclusion/exclusion criteria, data extraction procedures, quality assessment, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults (\u226518 years) with a diagnosed schizophrenia spectrum disorder compared to healthy controls",
+      "an empirical primary study",
+      "syntactic comprehension or production focusing on grammar and syntax",
+      "quantitative measures or healthy control comparisons necessary for effect size estimation"
+    ],
+    "exclusion_criteria": [
+      "the population did not consist of adults (\u226518 years) with a diagnosed schizophrenia spectrum disorder compared to healthy controls (e.g., studies on children, adolescents, ultra-high risk populations, or other disorders like aphasia or Parkinson\u2019s)",
+      "the study was a review, meta-analysis, protocol, commentary, or case report rather than an empirical primary study",
+      "the outcome did not specifically assess syntactic comprehension or production focusing on grammar and syntax (e.g., studies focusing solely on verbal fluency, prosody, semantics, pragmatics, phonology, or neural correlates without behavioral syntactic performance measures)",
+      "the study lacked quantitative measures or healthy control comparisons necessary for effect size estimation"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included empirical studies consistently demonstrate significant syntactic deficits in individuals with schizophrenia spectrum disorders (SSD) compared to healthy controls, affecting both comprehension and production domains.",
+      "Syntactic comprehension impairments are robust across various paradigms.",
+      "Syntactic production is consistently characterized by reduced complexity and diversity.",
+      "The degree of syntactic impairment varies significantly across patients."
+    ]
+  }
+}

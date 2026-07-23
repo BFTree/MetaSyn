@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7470,
+    "output_tokens": 1129,
+    "total_tokens": 8599
+  },
+  "metrics": {
+    "retrieval_recall": 0.5853658536585366,
+    "retrieval_precision": 0.12,
+    "inclusion_recall": 0.14634146341463414,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.905,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.43902439024390244,
+    "inclusion_consistency": 0.5312,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4681,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, eligibility criteria, included studies, synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references section, detailed search strategy, PRISMA screening flow, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary studies (case series, cross\u2011sectional, cohort, surveillance reports) that reported the sex distribution of confirmed mpox cases and included both male and female patients were considered.",
+      "Because the search end date was 4\u202fJanuary\u202f2023, only articles published up to 2022 were eligible."
+    ],
+    "exclusion_criteria": [
+      "Studies that exclusively enrolled male patients (e.g., those restricted to men who have sex with men) or that did not report the proportion of women were excluded.",
+      "Reviews, systematic reviews, protocols, editorials, case reports, and opinion pieces were excluded irrespective of year."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the candidate pool, the proportion of women among confirmed mpox cases is markedly higher in endemic African countries (ranging from ~19% to 46%) than in the 2022 non\u2011endemic outbreaks (1\u20132.4%).",
+      "The pre\u20112022 endemic data show a substantial female burden, driven by zoonotic and household transmission, whereas the 2022 clade IIb outbreak in Europe and the Americas was overwhelmingly concentrated in men.",
+      "The limited number of eligible studies and the early cutoff date temper the generalizability of these findings, but the pattern is clear and consistent with the known epidemiology of mpox.",
+      "Future systematic reviews with a broader search window would be needed to capture more recent data, especially from the 2023\u20132024 resurgence in Africa."
+    ]
+  }
+}

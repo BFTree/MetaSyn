@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14027,
+    "output_tokens": 1441,
+    "total_tokens": 15468
+  },
+  "metrics": {
+    "retrieval_recall": 0.5476190476190477,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.36363636363636365,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.5217391304347826,
+    "post_retrieval_loss": 0.2619047619047619,
+    "inclusion_consistency": 0.5957,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5806,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, synthesis, and included-study sections, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion, conclusion, references, search strategy, quality assessment, and actual meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "in adults (\u226518 years)",
+      "with major depressive disorder (MDD) defined as treatment-resistant (failure to respond to \u22652 adequate antidepressant trials)",
+      "with a minimum of 10 participants per arm",
+      "reporting response rates (or data allowing calculation of response) as the primary outcome"
+    ],
+    "exclusion_criteria": [
+      "excluding bipolar or psychotic depression",
+      "Reviews, meta-analyses, and narrative summaries",
+      "Study protocols",
+      "Non-randomized or observational studies (retrospective cohorts, case series, case reports, naturalistic studies)",
+      "Secondary analyses or sub-studies of RCTs",
+      "Studies including bipolar depression",
+      "Studies with inadequate treatment resistance definition (failing <2 antidepressants, e.g., \"at least one\" or \"medication-resistant\" without \u22652 specification)",
+      "Maintenance/relapse prevention trials rather than acute treatment",
+      "Studies with arm sizes <10",
+      "Studies where the primary outcome was not response rate/depression severity"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The screening process identified **24 primary RCTs** that met the eligibility criteria.",
+      "These trials evaluate a range of pharmacological and neuromodulatory interventions for treatment-resistant unipolar depression (TRD).",
+      "Multiple large-scale phase 2/3 RCTs (Candidates 089, 103, 133) demonstrate that intranasal esketamine (flexibly dosed or fixed dose) adjunctive to oral antidepressants or as monotherapy significantly improves response and remission rates compared to placebo or active comparators (new antidepressant, quetiapine) in TRD populations explicitly defined as failing \u22652 trials.",
+      "RCTs support the efficacy of intravenous ketamine (Candidates 157, 173) and oral ketamine (Candidate 062) in reducing depressive symptoms and suicidal ideation in TRD.",
+      "One large RCT in late-life TRD (Candidate 199) found aripiprazole augmentation effective in achieving remission compared to placebo following venlafaxine failure.",
+      "A pilot RCT (Candidate 188) found adjunctive minocycline significantly improved Hamilton Depression Rating Scale scores compared to placebo in TRD.",
+      "A small RCT (Candidate 195) found high-dose D-cycloserine augmentation effective in TRD.",
+      "A phase 2 RCT (Candidate 119) reported significant reductions in depression scores with a single 25mg dose of psilocybin compared to 1mg in TRD.",
+      "Several RCTs confirm the efficacy of various rTMS protocols against sham stimulation in TRD.",
+      "While direct head-to-head comparisons between all 25 treatments are limited in the primary literature provided, the RCTs consistently demonstrate that active treatments (esketamine, ketamine, rTMS/TBS, aripiprazole, psilocybin) are superior to placebo/sham in achieving response in TRD patients.",
+      "Network meta-analysis of these primary studies would allow ranking of these interventions by odds ratio of response."
+    ]
+  }
+}

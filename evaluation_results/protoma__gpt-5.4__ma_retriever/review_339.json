@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26191,
+    "output_tokens": 1301,
+    "total_tokens": 27492
+  },
+  "metrics": {
+    "retrieval_recall": 0.8125,
+    "retrieval_precision": 0.3291139240506329,
+    "inclusion_recall": 0.59375,
+    "inclusion_precision": 0.7307692307692307,
+    "inclusion_f1": 0.6551724137931033,
+    "screening_accuracy": 0.8227848101265823,
+    "conditional_retention": 0.7307692307692307,
+    "post_retrieval_loss": 0.21875,
+    "inclusion_consistency": 0.7147,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6032,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes major systematic review/meta-analysis sections plus detailed search strategy, eligibility criteria, screening process, statistical synthesis, and risk-of-bias assessment, but it falls short of excellent because the references are incomplete, some headings are duplicated, the search window is partly unclear, and PRISMA-style reporting is not fully comprehensive."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human observational studies (e.g., cohort, longitudinal, case-control, or population-based record-linkage studies) that examine the association between intelligence measured in early life and later health outcomes.",
+      "Studies including general-population participants with intelligence or IQ assessed using a standardized intelligence test in childhood, adolescence, or early adulthood before age 21.",
+      "Studies that compare risk across levels of intelligence within the study population, or report an effect estimate for intelligence score in relation to later-life physical illness or mental illness.",
+      "Studies reporting later-life diagnosed or clinically defined physical illnesses (e.g., diabetes, arthritis, stroke) and/or mental illnesses (e.g., schizophrenia, depression, dementia, bipolar disorder)."
+    ],
+    "exclusion_criteria": [
+      "Studies restricted to clinical, institutionalized, or otherwise selected high-risk populations without a healthy/general-population comparison group.",
+      "Studies in which intelligence was not measured before age 21, was not assessed with a standardized intelligence test, or where the exposure is not early-life cognitive ability/IQ.",
+      "Studies not reporting relevant later-life physical or mental illness outcomes, including studies limited to educational, social, behavioral, or nonclinical psychological outcomes.",
+      "Non-original research and non-human studies, including reviews, meta-analyses, editorials, commentaries, conference abstracts, case reports, and qualitative studies."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 26 studies, including 18 contributing hazard ratios, lower intelligence measured before age 21 was associated with a higher risk of later-life physical or mental illness compared with higher intelligence levels (random-effects HR 1.39, 95% CI 1.01\u20131.92).",
+      "Clinically, this suggests that lower early-life cognitive performance may mark a meaningful increase in long-term vulnerability to a broad range of adverse health outcomes, with potential value for early prevention and risk stratification rather than for diagnosis in isolation.",
+      "A qualified implication is that children and adolescents with lower IQ scores may benefit from closer attention to modifiable social, educational, and health risk factors across the life course.",
+      "However, this conclusion should be interpreted cautiously because between-study heterogeneity was extreme (I\u00b2=99.7%), indicating substantial inconsistency in the size of the association across populations and outcomes.",
+      "The pooled analysis demonstrated that lower intelligence measured before age 21 was associated with a higher subsequent hazard of later-life physical and mental illness.",
+      "Overall, the evidence supports an association between **lower intelligence in childhood, adolescence, or early adulthood and increased later-life risk of illness**, but the **strength of that association varied markedly across studies**, limiting confidence in the exact pooled magnitude."
+    ]
+  }
+}

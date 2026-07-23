@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8472,
+    "output_tokens": 713,
+    "total_tokens": 9185
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6344,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6558,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes background, screening criteria, screening results, and conclusion, but it lacks several standard sections such as an abstract, full methods/data extraction/synthesis plan, discussion, references, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "information on plastics/MPs",
+      "relates to flocculation processes of MPs in aquatic environments",
+      "peer-reviewed original research"
+    ],
+    "exclusion_criteria": [
+      "does not report (1) the size and shape of MPs and (2) the size of aggregates/flocs",
+      "any article published after that date was automatically excluded regardless of content"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary\u2011study articles could be included in this systematic review.",
+      "The literature within the search period consistently lacked quantitative reporting of both MP size and aggregate size in a single study, making it impossible to extract data for a meta\u2011analysis or to verify a size threshold.",
+      "The finding highlights a critical gap: studies on MP flocculation must routinely measure and report the dimensions of the resulting flocs to enable evidence\u2011based predictions of MP transport modes."
+    ]
+  }
+}

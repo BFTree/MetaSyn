@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12515,
+    "output_tokens": 781,
+    "total_tokens": 13296
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.7272727272727272,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6164,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4925,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear title, objective, search and screening description, results, evidence summary, and conclusion, but it lacks a standalone abstract, detailed search strategy, data extraction procedures, formal quality or risk-of-bias assessment, explicit synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies where clinicians performed skin cancer diagnosis from images or in\u2011person examination",
+      "with versus without a deep\u2011learning AI intervention",
+      "reporting diagnostic accuracy outcomes"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "editorials",
+      "case reports",
+      "studies that only compared clinicians against an AI algorithm",
+      "non\u2011deep\u2011learning methods",
+      "conditions other than skin malignancy"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Five primary studies met all eligibility criteria.",
+      "The five included studies all evaluate deep learning-based AI as a diagnostic aid for clinicians (ranging from trainee doctors to dermatologists) assessing skin lesions for malignancy.",
+      "Each study reports that AI assistance improved some aspect of diagnostic accuracy (e.g., top\u20111 accuracy, sensitivity, specificity, or inter\u2011reader agreement) compared with unaided interpretation.",
+      "Overall, this set provides a foundation for a quantitative meta\u2011analysis, though study heterogeneity (design, AI algorithms, outcome metrics) will need careful assessment.",
+      "These studies will form the basis for the subsequent evidence synthesis and meta\u2011analysis on the impact of deep learning-based AI assistance on clinicians\u2019 skin cancer diagnostic accuracy."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 23238,
+    "output_tokens": 1375,
+    "total_tokens": 24613
+  },
+  "metrics": {
+    "retrieval_recall": 0.3548387096774194,
+    "retrieval_precision": 0.2972972972972973,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.7027027027027027,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3548387096774194,
+    "inclusion_consistency": 0.7417,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5448,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized and includes major systematic review sections plus meta-analysis-specific elements such as search queries, eligibility criteria, screening outcomes, and synthesis feasibility, but it lacks full PRISMA-level rigor like formal quality assessment/risk-of-bias procedures and detailed data extraction methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "virtual reality exergaming using balance platforms,",
+      "exergaming using motion-capture technologies,",
+      "other serious gaming interventions,",
+      "wearable-based interventions,",
+      "telerehabilitation.",
+      "participants were restricted to **healthy older adults aged 60 years or older**;",
+      "**balance, gait, or functional mobility** was specified as a **primary outcome**;",
+      "intervention was one of the eligible technology-assisted rehabilitation modalities;",
+      "at least one eligible control group was present;",
+      "study design was randomized."
+    ],
+    "exclusion_criteria": [
+      "focused on specialized or clinical populations, including neurodegenerative disease, neurological disorders, orthopedic disorders, pulmonary disorders, cancer, frailty, prefrailty, or fall-selected groups where healthy-only eligibility was not met;",
+      "involved **robotic** or **exoskeleton** devices;",
+      "were not randomized trials;",
+      "were outside the date window;",
+      "or were reviews rather than primary studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn PubMed corpus, no randomized study published or indexed between **2023-01-01 and 2023-06-10** could be confirmed as eligible for inclusion in this systematic review of technology-assisted rehabilitation interventions for **healthy older adults aged 60 years and over**.",
+      "Because **no study was included**, a quantitative meta-analysis could not be performed.",
+      "A meta-analysis was **not feasible** because the review identified **zero included studies**.",
+      "The absence of included studies does **not** prove that these interventions are ineffective.",
+      "It means only that **no eligible randomized trial could be confirmed in the local corpus within the specified 2023-01-01 to 2023-06-10 window**.",
+      "The corpus search results indicate that relevant literature exists broadly in this topic area, but within this narrow date window and strict healthy-older-adult eligibility definition, the local corpus did not yield an includable randomized evidence base."
+    ]
+  }
+}

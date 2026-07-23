@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16894,
+    "output_tokens": 695,
+    "total_tokens": 17589
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.6673,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.713,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, eligibility criteria, screening results, and conclusion, but it lacks several standard sections such as Abstract, Introduction, Discussion, References, quality assessment, and a detailed synthesis/data extraction approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized clinical trials or observational studies",
+      "fecal (gut) samples",
+      "case\u2013control or cohort designs",
+      "explicit comparison of stunted (height\u2011for\u2011age Z\u2011score < \u20132) versus non\u2011stunted children under 5 years in LMICs",
+      "use of 16S rRNA gene sequencing with Illumina instruments targeting the V4 or V3\u2011V4 regions",
+      "only studies published between 1 January 2023 and 29 February 2023 (the review\u2019s search window) were considered eligible"
+    ],
+    "exclusion_criteria": [
+      "studies lacking publicly available data/metadata",
+      "any study mentioning antibiotic administration within three months prior to sample collection"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None of these 2023 publications met all inclusion criteria\u2014principally because they did not compare stunted and non\u2011stunted children under 5 years in an LMIC using targeted 16S rRNA sequencing of V4 or V3\u2011V4 regions.",
+      "No primary study in the supplied candidate pool fulfilled the complete eligibility criteria for this systematic review.",
+      "The search identified no eligible articles.",
+      "None."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9314,
+    "output_tokens": 1398,
+    "total_tokens": 10712
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.4881,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes eligibility criteria, screening summary, evidence synthesis, limitations, and conclusions, but it lacks core formal sections such as Abstract, Introduction, detailed Methods, Results, Discussion, References, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective design",
+      "adult cancer patients with an indwelling CVC/port or external catheter",
+      "prophylaxis with clearly specified minidose warfarin or low-dose LMWH",
+      "comparator of no prophylaxis/standard care",
+      "English-language publication between 1980 and 2005"
+    ],
+    "exclusion_criteria": [
+      "retrospective",
+      "not comparative",
+      "not prospective",
+      "not in the target population",
+      "not about primary prophylaxis for CVC-related thrombosis",
+      "outside the year/language window",
+      "reviews/guidelines rather than primary studies"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The eligible evidence base from this candidate set is very limited.",
+      "Only one prospective randomized study directly addressed whether minidose warfarin prevents CVC-related thrombosis in adult cancer patients.",
+      "That trial reported no significant benefit of routine minidose warfarin prophylaxis.",
+      "This argues against a meaningful prophylactic effect of minidose warfarin in that study population.",
+      "Therefore, from the included study alone, effectiveness appears unproven and bleeding risk remains insufficiently quantified.",
+      "No eligible LMWH primary study was identified in the supplied candidate pool.",
+      "As a result, this fixed-pool review cannot support any conclusion about low-dose LMWH efficacy or bleeding risk for this indication.",
+      "Using only the eligible evidence available in this candidate pool, there is no convincing evidence that routine minidose warfarin prophylaxis reduces CVC-related venous thrombosis in adult cancer patients.",
+      "Evidence on bleeding from eligible comparative data is inadequate, and there is no eligible LMWH study in the pool.",
+      "The review question is therefore answered only partially: minidose warfarin does not show clear benefit in the one eligible trial, while LMWH remains unaddressed by eligible studies here."
+    ]
+  }
+}

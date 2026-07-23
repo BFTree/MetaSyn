@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31042,
+    "output_tokens": 991,
+    "total_tokens": 32033
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.4444444444444444,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.8518518518518519,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.6438,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4335,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive and well-organized PRISMA-style structure with abstract, introduction, methods, screening results, included-study characteristics, synthesis by exposure, subgroup discussion, limitations, conclusion, and references, plus detailed search strategy, eligibility criteria, screening decisions, and synthesis limitations."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: women",
+      "Exposures: vitamin B6 or PLP, vitamin B12, or methionine",
+      "Outcome: breast cancer risk",
+      "Effect measure: RR or OR with 95% CI",
+      "Search end date: June 18, 2013",
+      "Date eligibility: published on or before 2013-06-18",
+      "Study type: primary human study",
+      "Exposure match: B6/PLP, B12, or methionine",
+      "Outcome match: breast cancer incidence/risk",
+      "Effect estimate: abstract or available full text had to provide OR/RR with CI or enough information to confirm extractable risk results"
+    ],
+    "exclusion_criteria": [
+      "Exclusions: duplicate populations where applicable, polymorphism-focused studies excluded by protocol, studies without risk estimates, non-primary studies",
+      "Protocol exclusions: duplicate or polymorphism-centered reports excluded where specified",
+      "excluded genetic polymorphism reports, duplicate populations where identifiable, non-primary studies, and records lacking an extractable breast cancer risk estimate for the nutrient exposure of interest"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible local MetaSyn corpus evidence through June 18, 2013 does **not** support a broad protective association of one-carbon metabolism nutrients with breast cancer risk.",
+      "**Most credible inverse association:** **circulating PLP** and **postmenopausal breast cancer**",
+      "**Not convincingly associated overall:** **dietary vitamin B6**",
+      "**No dependable independent association:** **vitamin B12**",
+      "**Insufficient and inconsistent evidence:** **methionine**",
+      "If I were forced to state a bottom-line meta-analytic opinion from this corpus, it would be: **the literature before mid-2013 justifies cautious interest in vitamin B6 status as a biomarker in postmenopausal breast cancer, but it does not justify recommending vitamin B6, vitamin B12, or methionine intake as general breast cancer preventive exposures.**"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5610,
+    "output_tokens": 1344,
+    "total_tokens": 6954
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.625,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7692307692307693,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.4801,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4207,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a research question, methods, results, synthesis, and included studies, but it lacks several formal required sections such as a full abstract, introduction, discussion, conclusion, references, detailed search strategy, data extraction process, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult women with PCOS",
+      "neck circumference measured",
+      "eligible outcomes including metabolic syndrome, insulin resistance, and metabolic risk factors"
+    ],
+    "exclusion_criteria": [
+      "not primary research",
+      "did not measure neck circumference",
+      "did not include a PCOS group",
+      "did not report eligible metabolic outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included studies consistently show that neck circumference is a useful, simple anthropometric marker that is positively associated with metabolic syndrome, insulin resistance, and adverse metabolic profiles in women with PCOS.",
+      "Cutoff values around 33\u201334\u202fcm appear to identify individuals at elevated metabolic risk.",
+      "However, comparative data on neck circumference between PCOS and non\u2011PCOS women are sparse in this candidate pool, and the existing studies do not unequivocally answer whether PCOS itself confers a larger neck circumference independently of obesity.",
+      "Therefore, the available data are insufficient to draw firm conclusions about whether PCOS women have a larger neck circumference than non\u2011PCOS women after accounting for overall adiposity."
+    ]
+  }
+}

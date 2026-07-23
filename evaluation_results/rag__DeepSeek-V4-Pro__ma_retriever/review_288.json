@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 11464,
+    "output_tokens": 1089,
+    "total_tokens": 12553
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.888888888888889,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.5512,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.48,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present and the flow is clear, with eligibility criteria, screening results, narrative synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract/introduction, detailed search strategy, PRISMA-style screening flow, quality assessment, explicit data extraction methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary studies that directly compared a healthy dietary pattern with a control or unhealthy diet",
+      "measured periodontal parameters (bleeding on probing, clinical attachment loss, probing pocket depth, gingival index) by a qualified examiner",
+      "included a follow\u2011up of \u22654 weeks"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "animal studies",
+      "cross\u2011sectional or single\u2011time\u2011point surveys",
+      "studies on individual foods/supplements",
+      "those with self\u2011reported periodontal outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All studies reported a beneficial effect of the healthy diet on periodontal parameters, although the magnitude and statistical significance varied.",
+      "The evidence consistently points toward a favourable influence of healthy dietary patterns on gingival inflammation and, in the longer term, on periodontal disease progression.",
+      "The RCTs demonstrate that short\u2011term (4\u20136 weeks) dietary changes can reduce gingival bleeding and inflammation independently of plaque levels, suggesting a direct anti\u2011inflammatory effect.",
+      "The cohort study extends this observation by showing that sustained adherence to a healthy diet reduces the risk of developing periodontal pockets over 11 years.",
+      "No study reported adverse effects of the healthy diets.",
+      "Adopting a healthy diet (anti\u2011inflammatory, Mediterranean, or high in fruits/vegetables/whole grains) appears to improve gingival inflammation and may reduce the risk of periodontal disease progression.",
+      "Current evidence is limited but consistent, supporting the integration of dietary counselling into periodontal care.",
+      "Further large, long\u2011term RCTs in periodontitis populations are warranted."
+    ]
+  }
+}

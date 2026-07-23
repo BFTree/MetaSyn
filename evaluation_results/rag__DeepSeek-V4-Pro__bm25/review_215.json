@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5386,
+    "output_tokens": 884,
+    "total_tokens": 6270
+  },
+  "metrics": {
+    "retrieval_recall": 0.7435897435897436,
+    "retrieval_precision": 0.145,
+    "inclusion_recall": 0.23076923076923078,
+    "inclusion_precision": 0.6923076923076923,
+    "inclusion_f1": 0.34615384615384615,
+    "screening_accuracy": 0.88,
+    "conditional_retention": 0.3103448275862069,
+    "post_retrieval_loss": 0.5128205128205128,
+    "inclusion_consistency": 0.7708,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4407,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening process, inclusion/exclusion criteria, and included studies, but it lacks major required sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, References, quality assessment, and actual synthesis methods/results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Reported regression coefficients (\u03b2) for the association between birth weight (in grams) and PFOS exposure.",
+      "Provided 95% confidence intervals (CIs) or other variance measures (standard errors, p\u2011values) allowing CI estimation.",
+      "Measured PFOS in maternal blood (before, during, or after pregnancy) or in infant umbilical cord or heel\u2011stick samples.",
+      "Only those that explicitly reported a regression coefficient (\u03b2) with a 95% CI or equivalent for the continuous association between PFOS and birth weight (or birth\u2011weight\u2011for\u2011gestational\u2011age z\u2011score) were retained."
+    ],
+    "exclusion_criteria": [
+      "Did not examine birth weight as an outcome in relation to PFOS.",
+      "Were animal or in vitro investigations, reviews, conference abstracts, or editorials.",
+      "Reported only categorical (e.g., quartile) comparisons without a continuous regression coefficient.",
+      "Did not provide the necessary statistical information (\u03b2 and variance) for PFOS and birth weight."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "These studies provide the required regression estimates and variance information, enabling quantitative synthesis of the PFOS\u2013birth weight association.",
+      "Only those that explicitly reported a regression coefficient (\u03b2) with a 95% CI or equivalent for the continuous association between PFOS and birth weight (or birth\u2011weight\u2011for\u2011gestational\u2011age z\u2011score) were retained."
+    ]
+  }
+}

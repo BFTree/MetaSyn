@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10583,
+    "output_tokens": 909,
+    "total_tokens": 11492
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6327,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes clear screening criteria, study selection, synthesis, limitations, and interpretation sections, but it is not fully PRISMA-complete and lacks formal reference and full methods/reporting detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be a primary study in 2015-2022",
+      "include children with LGBTQ parents",
+      "include a comparison group of children with different-sex parents",
+      "report a child mental health outcome"
+    ],
+    "exclusion_criteria": [
+      "did not study children of LGBTQ parents at all",
+      "focused on LGBTQ children/youth rather than children of LGBTQ parents",
+      "lacked a different-sex parent comparison group",
+      "focused on non-mental-health outcomes",
+      "were reviews, comments, protocols, or otherwise not eligible primary studies",
+      "were outside the 2015-2022 date range"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the three included studies, the abstract-level evidence is broadly consistent in finding no clear mental health disadvantage for children with LGBTQ parents compared with children with different-sex parents.",
+      "Taken together, the included evidence does not support the claim that children with LGBTQ parents have more mental health problems than children with different-sex parents.",
+      "The included studies do not indicate elevated mental health problems among children with LGBTQ parents.",
+      "The available 2015-2022 primary-study evidence in this candidate pool does not show that children with LGBTQ parents have more mental health problems than children with different-sex parents, but the comparative evidence base is limited and often based on small or selective samples."
+    ]
+  }
+}

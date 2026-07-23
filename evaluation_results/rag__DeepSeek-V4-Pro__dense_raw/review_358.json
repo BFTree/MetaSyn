@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6205,
+    "output_tokens": 1087,
+    "total_tokens": 7292
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6875,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7134,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening results, study characteristics, key findings, synthesis, and included articles, but it lacks several formal systematic review sections such as an abstract, introduction, detailed methods, search strategy, data extraction process, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "administered racemic ketamine at sub\u2011anaesthetic doses (\u2264100\u202fmg\u202fkg\u207b\u00b9 i.p. in rodents)",
+      "included a baseline or control condition",
+      "directly measured dopamine concentrations in the brain"
+    ],
+    "exclusion_criteria": [
+      "did not report dopamine levels (e.g., they measured metabolites, glutamate, GABA, brain connectivity, clinical symptoms, or were reviews, protocols, or used non\u2011racemic ketamine)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Acute ketamine consistently increases prefrontal dopamine.",
+      "Sub\u2011anaesthetic ketamine does not alter tissue dopamine content in several subcortical regions.",
+      "Repeated ketamine may alter basal dopamine tone and attenuate the acute response.",
+      "The limited evidence from these four studies suggests a regionally specific effect of sub\u2011anaesthetic ketamine: it robustly increases extracellular dopamine in the prefrontal cortex, an effect that may be mediated by enhanced glutamatergic transmission at non\u2011NMDA receptors (Candidate\u202f003).",
+      "In contrast, dopamine levels in the nucleus accumbens and striatum appear largely unchanged by acute ketamine, although presynaptic dopaminergic markers (metabolites) can be altered.",
+      "The only study examining repeated dosing (Candidate\u202f002) indicates that neuroadaptive changes occur\u2014basal dopamine is elevated while the phasic response to a ketamine challenge is blunted.",
+      "No eligible studies were identified in primates or humans, nor were any studies found that assessed dopamine neuron population activity.",
+      "The absence of human in vivo dopamine data (e.g., PET) limits direct translational conclusions."
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27011,
+    "output_tokens": 3059,
+    "total_tokens": 30070
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04878048780487805,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9512195121951219,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6066,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4798,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, included study list, and References, and it includes meta-analysis elements such as search queries, screening criteria, eligibility assessment, and synthesis rationale, but it lacks full PRISMA-style rigor such as a formal quality/risk-of-bias assessment and detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The eligibility criteria were narrow and methodologically restrictive: tissue microbiome studies, case-control or cohort design, breast cancer subtype inclusion, Illumina 16S rRNA sequencing covering V4 or V3-V4, homogeneous available data, and no recent antibiotic exposure.",
+      "Date window: 2023-01-01 to 2023-07-01",
+      "Primary case-control or cohort study",
+      "Tissue microbiome samples",
+      "16S rRNA with Illumina platform covering V4 or V3-V4",
+      "Included breast cancer subtypes",
+      "Data available and reasonably homogeneous",
+      "No recent antibiotic administration within three months before sampling",
+      "Publicly accessible data or metadata"
+    ],
+    "exclusion_criteria": [
+      "It is outside the date window.",
+      "It compares ancestry groups within TNBC, not TNBC versus non-TNBC.",
+      "It uses meta-transcriptomics rather than 16S Illumina V4/V3-V4.",
+      "It is not a TNBC-vs-non-TNBC comparison in the abstracted results.",
+      "It used five variable regions, not specifically V4 or V3-V4 as required.",
+      "It compares malignant versus benign/control tissue, not TNBC versus non-TNBC.",
+      "The abstract does not establish the required subtype-comparative design.",
+      "It is tumor-vs-adjacent, not TNBC-vs-non-TNBC.",
+      "Sequencing and variable-region details required by the protocol are not demonstrated in the prompt.",
+      "It is not a primary cohort or case-control study."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "After applying the stated criteria, **no study from the retrieved local MetaSyn corpus was eligible for inclusion**.",
+      "No included breast tissue study comparing **TNBC vs non-TNBC** was found in the specified search window.",
+      "No included study supported the named taxa **Azospirillum**, **Gemmiger formicilis**, or **Anaerobutyricum soehngenii** as TNBC-associated tissue microbes.",
+      "No quantitative meta-analysis could be performed from the retrieved corpus because the set of included studies is empty.",
+      "The local MetaSyn corpus, searched only through the provided retrieval results, does **not** support inclusion of any primary study for a meta-analysis comparing TNBC versus non-TNBC breast tissue microbiomes under the stated eligibility criteria.",
+      "The specific taxa named in the research question, *Azospirillum*, *Gemmiger formicilis*, and *Anaerobutyricum soehngenii*, are not substantiated in the returned TNBC tissue literature.",
+      "My concrete judgment is that the proposed meta-analytic claim is currently not evidentially supportable from the retrieved local corpus.",
+      "But the narrower proposition that TNBC tissue is specifically characterized by *Azospirillum*, *Gemmiger formicilis*, and *Anaerobutyricum soehngenii* relative to non-TNBC is not demonstrated here."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16431,
+    "output_tokens": 842,
+    "total_tokens": 17273
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.7563,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Introduction, Methods, Included Studies, Synthesis, Methodological Rigor, Discussion, Conclusion, and a reference-like included-study list, and it includes screening criteria and quality considerations, but it lacks an abstract, detailed search strategy, PRISMA flow details, formal data extraction procedures, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer-reviewed English-language primary studies published between 1 January 2015 and 31 December 2022 that directly compare a mental health outcome in children of LGBTQ parents with that of children of different-sex parents"
+    ],
+    "exclusion_criteria": [
+      "were not peer-reviewed journal articles in English",
+      "did not report a child mental health outcome",
+      "focused solely on parental outcomes",
+      "lacked a comparison group of children with different-sex parents",
+      "fell outside the 2015\u20132022 publication window",
+      "were protocols, commentaries, reviews, editorials, or conference abstracts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All five studies converge on the same broad conclusion: children raised by LGBTQ parents do not exhibit systematically worse mental health outcomes than children raised by different-sex parents.",
+      "Where differences are observed, they are typically small, inconsistent, or favour the LGBTQ-parent families (e.g., higher attachment security in gay father families in Candidate 009).",
+      "The remaining studies, using smaller but more richly assessed samples, show either null results or advantages for children in LGBTQ-parent homes.",
+      "The evidence from 2015\u20132022 is consistent with earlier reviews: growing up with LGBTQ parents does not place children at greater risk of mental health problems.",
+      "In fact, several studies suggest that children in these families function as well as, or occasionally better than, their peers in different-sex parent households.",
+      "No evidence from the included 2015\u20132022 primary studies indicates that children with LGBTQ parents have poorer mental health outcomes than children with different-sex parents.",
+      "The findings underscore the importance of family processes (e.g., parenting quality, parental mental health) over family structure."
+    ]
+  }
+}

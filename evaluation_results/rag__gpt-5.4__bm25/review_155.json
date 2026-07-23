@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11694,
+    "output_tokens": 1144,
+    "total_tokens": 12838
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6086956521739131,
+    "inclusion_precision": 0.9333333333333333,
+    "inclusion_f1": 0.7368421052631579,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.6086956521739131,
+    "post_retrieval_loss": 0.391304347826087,
+    "inclusion_consistency": 0.5225,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3206,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes scope, screening judgments, synthesized results, interpretation, limitations, and included studies, but it lacks a formal abstract, detailed search and eligibility methods, data extraction and quantitative synthesis procedures, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies of women with breast cancer evaluating statin use vs non-use and reporting breast cancer-specific death (BCD/BCSM) and/or breast cancer recurrence (BCR) with an effect estimate that included a 95% CI or SE"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews/meta-analyses, reviews, protocols",
+      "studies outside breast cancer",
+      "studies on incidence/risk rather than prognosis after breast cancer",
+      "studies reporting only all-cause mortality or non-target outcomes",
+      "studies without a clear BCR/BCD outcome and/or without a CI/SE for the relevant association from the abstract"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The recurrence evidence is **mixed but leans protective**, especially for **lipophilic statins** and in some hormone-receptor-defined groups.",
+      "Mortality findings are also **mixed but often favorable** for statin users.",
+      "Based on title/abstract screening alone, the evidence base supports a **possible association** between statin use and **lower breast cancer-specific mortality**, with **less consistent evidence for recurrence**.",
+      "That pattern means the overall literature is **compatible with benefit**, but also strongly vulnerable to **confounding and time-related bias**.",
+      "Taken together, the abstracts suggest that **more bias-conscious designs often show smaller benefits** than simpler observational comparisons."
+    ]
+  }
+}

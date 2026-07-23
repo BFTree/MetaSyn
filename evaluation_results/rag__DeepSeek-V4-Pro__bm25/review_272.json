@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9532,
+    "output_tokens": 1014,
+    "total_tokens": 10546
+  },
+  "metrics": {
+    "retrieval_recall": 0.37777777777777777,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.28888888888888886,
+    "inclusion_precision": 0.52,
+    "inclusion_f1": 0.3714285714285714,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.08888888888888889,
+    "inclusion_consistency": 0.6177,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4598,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening criteria, included studies, and narrative synthesis, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods, discussion, conclusion, references, search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer\u2011reviewed cross\u2011sectional or longitudinal investigations",
+      "enrolled patients with a primary diagnosis of schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder",
+      "measured at least one standardized neuropsychological outcome and at least one blood\u2011based immune marker",
+      "reported an association analysis between the two"
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta\u2011analyses, protocols, conference abstracts, case reports, and studies without cognitive testing or immune markers were excluded.",
+      "Where abstracts contained sufficient information to determine eligibility, a decision was made; otherwise, the study was excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included studies consistently demonstrate that peripheral immune and inflammatory markers are associated with cognitive performance across psychotic and mood disorders.",
+      "Overall, the included studies consistently indicate that peripheral immune activation\u2014indexed by pro\u2011inflammatory cytokines (especially IL\u20116, TNF\u2011\u03b1), CRP, kynurenine pathway metabolites (quinolinic acid, kynurenine/tryptophan ratio), and cellular immune ratios\u2014is associated with worse cognitive performance, particularly in the domains of executive function, processing speed, working memory, and verbal learning.",
+      "These associations were observed across schizophrenia, bipolar disorder, and major depressive disorder, supporting a transdiagnostic role of immune\u2011cognitive interactions.",
+      "The evidence also points to gender\u2011specific effects and the potential utility of these markers for patient stratification and as targets for pro\u2011cognitive interventions."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30629,
+    "output_tokens": 1046,
+    "total_tokens": 31675
+  },
+  "metrics": {
+    "retrieval_recall": 0.6428571428571429,
+    "retrieval_precision": 0.2571428571428571,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.8,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5408,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5892,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear review question, methods, search strategy, eligibility criteria, screening process, study table, narrative synthesis, and meta-analysis feasibility assessment, but it falls short of excellent PRISMA-style structure because quality assessment/risk-of-bias methods and detailed data extraction procedures are not clearly included."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Peer-reviewed articles",
+      "English-language",
+      "Publication date from 2020-01-01 through 2023-09-01",
+      "Focus on federated learning in breast, lung, or prostate cancer",
+      "Multi-centre/distributed clinical oncology relevance",
+      "Comparative framework evaluating FL against:",
+      "centralized ML on the same data, or",
+      "local/single-centre models, or",
+      "literature-based comparator values if clearly used as comparison",
+      "Quantitative oncology-relevant outcomes such as classification, segmentation, detection, regression, prognosis, or treatment-response prediction"
+    ],
+    "exclusion_criteria": [
+      "Non-English publications",
+      "Reviews, editorials, commentaries, or other non-empirical papers",
+      "Not focused on breast, lung, or prostate cancer",
+      "Not using FL methods",
+      "No clinical/quantitative oncology-relevant outcomes",
+      "No sufficiently relevant comparative framework to address the review question"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, the local corpus supports the conclusion that **FL can improve cross-institution generalizability and can preserve privacy while enabling collaborative oncology model development**, but the evidence is **limited, uneven across cancer types, and not yet sufficient for pooled quantitative inference**.",
+      "Evidence supports a **positive effect of FL on out-of-site generalization**, particularly where institutional heterogeneity is large and local-only models degrade substantially on external data.",
+      "The local corpus evidence supports the proposition that FL can improve **generalizability across institutions**, especially where site-specific data distributions differ.",
+      "FL appears capable of improving diagnostic/predictive performance in multicentre oncology tasks, but only one study provided sufficiently detailed numerical evidence.",
+      "FL\u2019s strongest clinical value in this corpus is **not merely higher average performance**, but better **practical cross-site deployability**.",
+      "A meta-analysis was **not feasible**."
+    ]
+  }
+}

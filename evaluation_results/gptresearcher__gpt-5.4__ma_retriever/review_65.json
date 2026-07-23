@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28467,
+    "output_tokens": 902,
+    "total_tokens": 29369
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.15789473684210525,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9473684210526315,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5197,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6291,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-like findings, Limitations, Conclusion, included studies, and References, and it includes meta-analysis-relevant elements such as search query, eligibility criteria, screening logic, excluded studies, and synthesis narrative, but it lacks full PRISMA-level rigor such as formal risk-of-bias/quality assessment and detailed data extraction or quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adult women with PCOS.",
+      "Neck circumference measurement.",
+      "Healthy non-PCOS controls, women with smaller NC, or no external control if the study assessed metabolic outcomes within PCOS.",
+      "MetS, metabolic risk factors, IR or glucose-related outcomes, and specified anthropometric, blood pressure, lipid, and glycemic measures."
+    ],
+    "exclusion_criteria": [
+      "Incompatible design or population, no reported NC measurement, or outcomes outside PICO scope."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus provides consistent evidence that in adult women with PCOS, larger neck circumference is associated with a worse metabolic profile, especially higher risk of metabolic syndrome and insulin resistance.",
+      "NC also correlates with BMI, waist circumference, blood pressure, triglycerides, VAI, testosterone, and visceral fat.",
+      "My conclusion is that NC is a legitimate and practical screening marker in PCOS, particularly where quick anthropometry is needed, but current corpus evidence does not justify elevating it above BMI or waist circumference as a superior metabolic risk tool.",
+      "The signal is real, but the comparative advantage is not yet demonstrated.",
+      "For a meta-analysis, NC should be treated as a promising adjunct marker rather than a replacement for established anthropometric measures."
+    ]
+  }
+}

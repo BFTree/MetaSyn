@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17963,
+    "output_tokens": 1437,
+    "total_tokens": 19400
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7331,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4512,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review target, screening methodology, screening results, and conclusion, but it lacks several standard systematic review sections such as an abstract, full introduction, discussion, references, detailed search strategy, quality assessment, and data extraction/synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "restriction to original human investigations",
+      "assessment of salt/sodium as the primary exposure",
+      "use of 24-hour urine collection, food record, or 24-hour diet recall for sodium measurement",
+      "minimum sample size of 400 participants for continuous outcomes",
+      "minimum duration of \u22651 year for cohort studies of hard outcomes (Categories I, II, V)",
+      "\u22654 weeks for surrogate outcomes (Category III)",
+      "adherence to the search window publication date (late 2019 to 2020)"
+    ],
+    "exclusion_criteria": [
+      "exclusion of FFQ-only or spot urine studies",
+      "exclusion of physiological/biomarker surrogate outcomes (Category VI)",
+      "exclusion of cross-sectional studies, reviews, commentaries, guidelines, and modelling studies",
+      "sodium-to-potassium ratio as a primary exposure variable",
+      "All other candidates in the pool were published outside the 2019\u20132020 search window (ranging from 1941 to 2026) and were thus excluded as out-of-date."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the strict application of the methodological and temporal eligibility criteria, no primary studies within the supplied candidate pool qualified for inclusion.",
+      "Consequently, no quantitative or qualitative evidence synthesis regarding the association between dietary salt/sodium intake and the specified health outcomes in the general adult population can be conducted from this dataset.",
+      "None were included."
+    ]
+  }
+}

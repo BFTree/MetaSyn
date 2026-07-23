@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18778,
+    "output_tokens": 1178,
+    "total_tokens": 19956
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.424,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5585,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening/selection details plus a structured synthesis of findings, but it lacks several formal required sections such as Abstract, Introduction, Methods, Discussion, Conclusion, full References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary case\u2013control or cohort designs",
+      "studies published before August 31, 2011",
+      "Seven primary studies met all criteria and were included in the final synthesis."
+    ],
+    "exclusion_criteria": [
+      "Meta-analyses and systematic reviews (Candidates 001, 002, 008), Mendelian randomization studies (Candidates 029, 046), ecological studies (Candidate 016), and cross-sectional surveys were excluded as they do not represent primary case\u2013control or cohort designs.",
+      "Studies published after the search end date of 2011-08-31 (e.g., Candidates 006, 024, 035) were excluded.",
+      "Studies that did not report relative risk (RR) or odds ratio (OR) estimates with 95% confidence intervals (CIs) for alcohol consumption categories in relation to RCC (Candidates 013, 015, 019, 020, 022, 023, 026), or those focusing on mortality rather than incidence (as per exclusion principles), were removed.",
+      "Candidate 014 was excluded as it lacked specific RR/CI data for alcohol, and its population overlapped with Candidate 010 which provided the requisite data.",
+      "Candidate 009 (Nurses' Health Study / Health Professionals Follow-up Study) and Candidate 012 (Swedish Mammography Cohort) were excluded in favor of Candidate 003, which is a pooled analysis of 12 prospective studies that combined these independent study populations and provided results with a larger number of cases and longer follow-up, consistent with the overlap exclusion rule."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All included studies consistently reported an inverse association between total alcohol consumption and RCC risk.",
+      "The pooled analysis of 12 prospective studies (Candidate 003) found a significant inverse trend, with a 28% risk reduction for intake \u226515 g/day compared to nondrinking (RR 0.72; 95% CI 0.60\u20130.86).",
+      "The association between alcohol and RCC risk appears largely consistent across sexes, though some isolated deviations exist:",
+      "The evidence does not strongly favor one specific beverage type over another, suggesting the ethanol content itself may be the primary protective factor:",
+      "The inverse association is observable at moderate levels of intake and appears to persist or strengthen with higher consumption in some studies."
+    ]
+  }
+}

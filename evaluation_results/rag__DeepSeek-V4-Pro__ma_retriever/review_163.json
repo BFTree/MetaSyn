@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19164,
+    "output_tokens": 941,
+    "total_tokens": 20105
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.896551724137931,
+    "inclusion_f1": 0.912280701754386,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.6372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6715,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, search/screening criteria, screening results, included studies, and a narrative synthesis, but it lacks standard abstract/introduction/discussion/conclusion/references sections, provides no detailed data extraction or quality assessment, and only proposes rather than reports quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Study design: observational (cohort, case\u2013control, nested case\u2013control, or case\u2011cohort)",
+      "Exposure: at least one bisphosphonate prescription",
+      "Outcome: incident cancer (any or site\u2011specific) with reported effect estimates (OR, RR, HR) and 95% confidence intervals (or sufficient data to calculate them)",
+      "Language: English",
+      "Publication date: on or before 7 December 2019"
+    ],
+    "exclusion_criteria": [
+      "cross\u2011sectional studies",
+      "reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "animal/in\u2011vitro experiments",
+      "studies lacking sufficient data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, the evidence suggests that bisphosphonate use is not associated with an increased risk of total cancer; rather, it may be associated with reduced risks of certain cancers (especially colorectal, breast, endometrial).",
+      "Several studies report statistically significant reductions in risk with bisphosphonate use, particularly with longer duration or higher cumulative dose (e.g., candidates 001, 013, 022, 025).",
+      "A reduced risk is observed in some cohorts (candidate 001, 010), but one large French cohort (candidate 037) found no association after adjusting for confounding.",
+      "Three studies (candidates 014, 015, 023) suggest a protective effect of bisphosphonates, with risk reductions ranging from 20% to 50%.",
+      "Findings are mixed.",
+      "However, confounding by indication (e.g., low bone density), healthy\u2011user bias, and variability in bisphosphonate type and duration remain important limitations."
+    ]
+  }
+}

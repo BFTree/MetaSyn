@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32476,
+    "output_tokens": 1107,
+    "total_tokens": 33583
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.08928571428571429,
+    "inclusion_recall": 0.375,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9464285714285714,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6738,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5876,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, screening results, Results, synthesis, limitations, Conclusion, included-study list, and References, and it includes key meta-analysis elements such as search source/query, eligibility criteria, screening decisions, and synthesis feasibility, but it lacks full PRISMA-level rigor such as a detailed reproducible multi-database search strategy, formal data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years or older.",
+      "Clinical diagnosis of preclinical AD, MCI due to AD, AD dementia, or equivalent AD-continuum at-risk populations.",
+      "Primary studies examining YKL-40, sTREM2, or GFAP in CSF or plasma.",
+      "Outcomes involving AD stage, progression, conversion risk, or longitudinal cognition.",
+      "English-language publications between February 1, 2012, and February 7, 2023."
+    ],
+    "exclusion_criteria": [
+      "Non-human studies.",
+      "Reviews, editorials, comments.",
+      "Case reports and case series.",
+      "Records outside the date window.",
+      "Records lacking enough bibliographic detail in the provided local corpus excerpt to verify eligibility."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the prespecified 2012\u20132023 local MetaSyn review window, the best-supported neuroinflammatory biomarker is **CSF YKL-40**.",
+      "The evidence indicates that YKL-40 rises early across the AD continuum, is more tightly linked to tau-related neurodegeneration and neural injury than to amyloid alone, and has meaningful prognostic value for later cognitive deterioration and risk of AD dementia, especially when interpreted together with core AD biomarkers ([Corpus IDs 7670, 7671, 46348](metasyn://corpus/7670)).",
+      "**Plasma GFAP** is clearly an early-stage biomarker within the window, with preclinical elevation already detectable, but the strongest prognostic evidence in the provided corpus comes from post-2023 studies and therefore cannot be counted as formal included evidence ([Corpus ID 7674](metasyn://corpus/7674); [Corpus ID 16417](metasyn://corpus/16417)).",
+      "**sTREM2** remains biologically compelling but insufficiently documented in the eligible local corpus excerpts to support firm formal conclusions.",
+      "My concrete overall opinion is this: **if forced to prioritize one neuroinflammatory biomarker today for biologically informed prognosis within the eligible evidence base, I would choose CSF YKL-40 over GFAP and sTREM2.**"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19351,
+    "output_tokens": 974,
+    "total_tokens": 20325
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.6529,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6305,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with an objective, screening summary, outcome-based synthesis, conclusion, and included study list, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, data extraction process, quality assessment, and PRISMA-style synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "participants with CHB or CHC",
+      "statin exposure vs. non-statin control",
+      "reporting relevant outcomes",
+      "cohort/RCT design"
+    ],
+    "exclusion_criteria": [
+      "non-English",
+      "reviews/meta-analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "HIV co-morbid cohorts",
+      "studies not reporting outcomes of interest",
+      "populations not restricted to viral hepatitis",
+      "Studies focusing on mixed chronic liver disease etiologies (e.g., MASLD, general cirrhosis) or post-transplant/surgical HCC populations were excluded as they do not isolate the effects of viral hepatitis.",
+      "Studies involving HIV coinfection were explicitly excluded per protocol."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies consistently report a significant inverse association between statin use and HCC incidence in both CHB and CHC populations.",
+      "Statin use is consistently associated with a reduced risk of cirrhosis progression and decompensation.",
+      "The evidence supports a survival benefit associated with statin use in chronic viral hepatitis, though the magnitude and significance vary slightly by population.",
+      "Current observational evidence strongly suggests that statin exposure, particularly lipophilic statins and higher cumulative doses, is associated with a reduced incidence of HCC, cirrhosis, decompensation, and all-cause mortality in individuals with chronic viral hepatitis (CHB and CHC) compared to non-statin users.",
+      "The benefits appear consistent across different populations, including those with ESKD or failed antiviral therapy, and demonstrate a dose-response relationship."
+    ]
+  }
+}

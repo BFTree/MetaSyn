@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35656,
+    "output_tokens": 1364,
+    "total_tokens": 37020
+  },
+  "metrics": {
+    "retrieval_recall": 0.6153846153846154,
+    "retrieval_precision": 0.3157894736842105,
+    "inclusion_recall": 0.46153846153846156,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.537313432835821,
+    "screening_accuracy": 0.7894736842105263,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.15384615384615385,
+    "inclusion_consistency": 0.6589,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3962,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening results, statistical synthesis, risk-of-bias assessment, results, discussion, conclusion, and included studies, but repeated headings and the absence of a formal references section or fully PRISMA-style presentation prevent an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies of pregnant women and/or mother-newborn pairs with PFOS biomarker concentrations measured during pregnancy or at delivery in a biological matrix such as maternal blood, serum, plasma, cord blood, or other validated biospecimens.",
+      "Observational human studies, including cohort, case-control, or cross-sectional designs, that evaluate the association between higher PFOS exposure levels and birth weight in newborns.",
+      "Studies that include a comparison across PFOS exposure levels, such as lower versus higher exposure categories or continuous PFOS concentration analyses.",
+      "Studies reporting birth weight in grams as an outcome, with sufficient quantitative data to assess the relationship with PFOS biomarker concentrations."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, toxicological, mechanistic, review, editorial, commentary, case report, or conference abstract-only publications without original human data.",
+      "Studies not conducted in pregnant populations or not reporting neonatal birth weight outcomes.",
+      "Studies assessing PFOS exposure only through environmental proxies, questionnaires, or non-biomarker methods without measured PFOS concentrations in biospecimens.",
+      "Studies that do not report PFOS-specific results, do not include a lower-exposure comparator or exposure gradient, or report birth outcomes other than birth weight in grams without usable birth weight data."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no clear overall association between higher maternal PFOS biomarker concentrations and lower birth weight in the primary random-effects meta-analysis.",
+      "Taken together, these findings suggest that, on average, **higher PFOS exposure was not associated with a statistically significant reduction in birth weight when between-study variation was taken into account**.",
+      "There was, however, evidence of substantial heterogeneity across studies (**I\u00b2 = 68.8%**, **Q = 51.25**, **p < 0.001**, **\u03c4\u00b2 = 0.0562**), indicating that the observed effects were not consistent across all included populations and study settings.",
+      "Overall, the evidence points to **a possible small inverse association between PFOS exposure and birth weight**, but the pooled random-effects result was **not statistically significant**, and the **substantial between-study heterogeneity limits confidence in a single common effect size**.",
+      "Taken together, these results suggest that higher prenatal PFOS exposure may be associated with lower birth weight, but the overall evidence is not fully consistent once between-study variation is taken into account.",
+      "In this meta-analysis of 28 studies, including 17 in the quantitative synthesis, higher maternal PFOS biomarker concentrations were associated with a small, non-statistically significant reduction in birth weight compared with lower PFOS exposure levels (random-effects beta -0.144, 95% CI -0.369 to 0.081; p=0.21).",
+      "PFOS exposure reduction during pregnancy remains a prudent precaution, but conclusions should be tempered by the inconsistency across studies and the moderate-to-high heterogeneity in effect estimates."
+    ]
+  }
+}

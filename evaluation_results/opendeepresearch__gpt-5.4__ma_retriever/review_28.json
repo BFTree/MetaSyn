@@ -1,0 +1,73 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33049,
+    "output_tokens": 964,
+    "total_tokens": 34013
+  },
+  "metrics": {
+    "retrieval_recall": 0.17857142857142858,
+    "retrieval_precision": 0.16666666666666666,
+    "inclusion_recall": 0.03571428571428571,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.06666666666666667,
+    "screening_accuracy": 0.8333333333333334,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4571,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3975,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.25,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, exact search queries, screening results, included studies, narrative synthesis, COM-B/TDF mapping, and meta-analysis feasibility, but it lacks a formal abstract, complete references section, and explicit quality/risk-of-bias assessment needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years or older",
+      "People living with excess weight or obesity, defined inclusively as BMI \u226527.5 kg/m\u00b2",
+      "Studies could also include providers caring for this population",
+      "Synchronous, real-time, interactive, remotely delivered health interventions",
+      "Weight management focus required",
+      "Barriers and/or facilitators to engagement with remote weight management interventions",
+      "Findings suitable for COM-B and, where possible, TDF mapping",
+      "Primary qualitative, quantitative, and mixed-methods studies"
+    ],
+    "exclusion_criteria": [
+      "Participants younger than 18 years",
+      "Populations with BMI <27.5 kg/m\u00b2",
+      "Non-health interventions",
+      "Interventions without a weight management focus",
+      "Solely autonomous, asynchronous, or face-to-face-only interventions",
+      "Studies reporting only predictors of engagement without specific barriers/facilitators",
+      "Studies not specifically reporting barriers/facilitators to engagement",
+      "Systematic reviews",
+      "Conference papers",
+      "Protocols",
+      "Case studies",
+      "Opinion pieces/editorials",
+      "Unpublished works",
+      "Non-English-language studies"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Because the evidence base retrieved from the local corpus was small and methodologically heterogeneous, a quantitative meta-analysis was not feasible.",
+      "Because only two eligible studies were identified, and because their designs, modalities, and reporting formats differed, synthesis was necessarily narrative and cautious.",
+      "The strongest evidence in the included studies sits within physical opportunity.",
+      "Remote synchronous delivery appears to facilitate engagement when it reduces environmental barriers that would exist in face-to-face care.",
+      "The most defensible conclusion from the eligible local-corpus evidence is that engagement in synchronous remote weight-management interventions appears to be shaped by a balance between:",
+      "In addition, the interactive nature of synchronous delivery may support engagement through social support and accountability, but the current evidence base is too small to determine how strong or consistent that effect is.",
+      "A formal meta-analysis was not feasible.",
+      "A structured qualitative synthesis was therefore the appropriate approach."
+    ]
+  }
+}

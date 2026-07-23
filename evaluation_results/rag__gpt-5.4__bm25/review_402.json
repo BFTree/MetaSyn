@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 3930,
+    "output_tokens": 1893,
+    "total_tokens": 5823
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.3644,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6182,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report gives a clear screening rationale and brief synthesis note, but it lacks the standard systematic review structure (abstract, introduction, methods, results, discussion, conclusion, references) and is therefore only fairly organized."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The review search window is `2023-01-01` to `2023-2.29`",
+      "studies using `16S rRNA` on `Illumina` platforms covering `V4` or `V3-V4`"
+    ],
+    "exclusion_criteria": [
+      "studies mentioning antibiotic administration within 3 months before sampling",
+      "lacking publicly accessible data/metadata"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On that basis, no candidate can be confidently included in this review.",
+      "No eligible primary study articles were included from the supplied pool under the full criteria.",
+      "As a result, this review cannot synthesize evidence on alpha diversity, beta diversity, taxonomic abundance, or metabolic pathways between stunted and non-stunted children under 5 in LMICs within the specified search dates.",
+      "None were included."
+    ]
+  }
+}

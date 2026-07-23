@@ -1,0 +1,68 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26351,
+    "output_tokens": 1062,
+    "total_tokens": 27413
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4698,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4942,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes detailed eligibility criteria, exact search queries, screening process, study selection outcome, narrative synthesis, meta-analysis feasibility, limitations, conclusion, and sources, but it lacks a formal abstract/introduction structure and does not include a full PRISMA flow diagram or quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: patients receiving medication prescriptions in hospital settings",
+      "Intervention: electronic prescribing or medication-management systems consistent with the seed interventions, especially:",
+      "CPOE",
+      "CDS",
+      "prescribing-relevant EHR components",
+      "eMAR",
+      "BCMA",
+      "Comparator: usual care, manual prescribing, paper-based prescribing, or another non-electronic standard-care control",
+      "Outcome: quantitative data on medication error incidence, including potential medication errors, actual medication errors, and/or adverse drug events",
+      "Design: randomized controlled trial (RCT)",
+      "Language: English",
+      "Publication type: full-text, peer-reviewed primary study"
+    ],
+    "exclusion_criteria": [
+      "non-human studies",
+      "non-RCT designs",
+      "reviews, editorials, letters, or conference abstracts",
+      "not available in full text in the local corpus",
+      "lacking outcome data adequate for quantitative synthesis",
+      "outside the requested date window for retrieval and reporting"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn PubMed corpus and applying the specified eligibility criteria strictly, **no study was eligible for inclusion** in this systematic review.",
+      "there is **no includable RCT evidence** from this corpus and search window to determine whether electronic prescribing interventions\u2014especially CPOE, CDS, eMAR, BCMA, or related prescribing-relevant EHR tools\u2014reduce medication errors in hospital prescribing settings compared with usual care or paper-based/manual systems;",
+      "**no meta-analysis could be conducted**;",
+      "Because **no study was eligible for inclusion**, there is **no admissible evidence set** from this restricted local-corpus review on which to determine whether electronic prescribing interventions reduce medication errors in hospital prescribing settings under the specified criteria.",
+      "It cannot be concluded from this review that:",
+      "Under a strict RCT-only framework and using only the local MetaSyn PubMed corpus within the specified retrieval period, the evidence base was effectively empty for the target question.",
+      "This does **not** mean electronic interventions are ineffective."
+    ]
+  }
+}

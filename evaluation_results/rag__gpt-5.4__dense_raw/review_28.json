@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7529,
+    "output_tokens": 1005,
+    "total_tokens": 8534
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.4223,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5063,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, eligibility logic, screening results, included studies, and cross-study synthesis, but it lacks several standard systematic review sections and PRISMA-style elements such as an abstract, introduction, detailed search strategy, formal data extraction methods, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Adults** with BMI **\u226527.5 kg/m\u00b2** / overweight-obesity population",
+      "**Weight-management-focused** intervention",
+      "**Synchronous, interactive, remote** delivery",
+      "Reported **barriers and/or facilitators to engagement**",
+      "Primary study design; not a review, protocol, editorial, etc."
+    ],
+    "exclusion_criteria": [
+      "Review/protocol rather than primary study",
+      "Remote intervention was **asynchronous/self-guided only**",
+      "Weight-management outcomes reported, but **no barriers/facilitators to engagement**",
+      "Focused on general predictors of engagement rather than participant-reported barriers/facilitators",
+      "Population not clearly eligible or not adult obesity-focused"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base identified here is **small and limited**.",
+      "Very few abstracts clearly reported barriers/facilitators for **synchronous remote** obesity interventions.",
+      "One included study emphasized **facilitators** more than barriers.",
+      "One included study was more of a **practical lessons/challenges** report than a conventional barriers/facilitators study.",
+      "Abstracts often lacked enough detail to confirm exact BMI thresholds, intervention structure, or analytic methods for engagement factors.",
+      "Overall, from the supplied pool, the evidence suggests that engagement in synchronous remote weight-management care is influenced less by weight-loss content alone and more by:"
+    ]
+  }
+}

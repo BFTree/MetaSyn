@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20370,
+    "output_tokens": 1230,
+    "total_tokens": 21600
+  },
+  "metrics": {
+    "retrieval_recall": 0.39215686274509803,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.2549019607843137,
+    "inclusion_precision": 0.9285714285714286,
+    "inclusion_f1": 0.39999999999999997,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.65,
+    "post_retrieval_loss": 0.13725490196078433,
+    "inclusion_consistency": 0.701,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7596,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and logically organized with methods, screening results, included studies, domain-specific synthesis, limitations, conclusion, and explicit search and eligibility criteria, but it lacks full PRISMA-style details such as a structured abstract, references, comprehensive search strategy, formal quality assessment, data extraction procedures, and quantitative meta-analytic synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary, longitudinal studies that measured a biological biomarker before the outcome (first onset, relapse, or recurrence of MDD) in an at\u2011risk population (never\u2011depressed individuals or remitted individuals with a history of MDD) and that ascertained MDD through a clinical interview or a clinician\u2011assigned diagnosis were retained."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, cross\u2011sectional studies, studies predicting treatment response (rather than onset/relapse/recurrence), and studies of mixed mood\u2011disorder populations (<75% MDD) were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the screened pool, 14 primary prospective studies demonstrate that hormonal (HPA\u2011axis) and neuroimaging biomarkers can predict first onset, relapse, or recurrence of MDD.",
+      "Findings are not uniform; they underscore the importance of distinguishing first episodes from recurrence, and the potential moderating role of illness stage, age, and prior trauma.",
+      "Future prospective studies with pre\u2011registered designs and multi\u2011domain biomarker panels are needed to validate these signals and extend them to gut\u2011brain, neurotransmitter, and oxidative\u2011stress domains.",
+      "HPA\u2011axis measures appear across multiple independent samples, but the direction of effect is mixed: higher CAR predicted first onset, whereas lower morning cortisol predicted recurrence, and elevated DEX/CRH\u2011stimulated cortisol predicted relapse.",
+      "No eligible study prospectively assessed gut\u2011microbiota, neurotransmitter metabolites, or gastrointestinal permeability in at\u2011risk individuals with clear MDD outcomes."
+    ]
+  }
+}

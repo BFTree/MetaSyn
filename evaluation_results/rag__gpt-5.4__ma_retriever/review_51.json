@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12373,
+    "output_tokens": 1153,
+    "total_tokens": 13526
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4964,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2834,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a review question, eligibility criteria, screening decisions, evidence synthesis, limitations, and included studies, but it lacks a formal abstract, detailed search strategy, data extraction and quality-assessment methods, quantitative synthesis, discussion/conclusion sections, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Enroll adult men with penile cancer, specifically localized/glans-confined disease or a glansectomy subgroup clearly relevant to that population.",
+      "Evaluate glansectomy with or without neoglans reconstruction.",
+      "Report functional outcomes directly in the abstract (sexual, urinary, sensory, cosmetic, QoL, or closely related patient-reported function), with oncologic outcomes acceptable as secondary.",
+      "Be primary studies, not reviews, comments, technique overviews without outcomes, or studies lacking functional data."
+    ],
+    "exclusion_criteria": [
+      "reviews/systematic reviews/narrative reviews,",
+      "studies not centered on glansectomy,",
+      "studies without functional outcome data in the abstract,",
+      "mixed organ-sparing cohorts where glansectomy-specific functional data could not be isolated,",
+      "non-penile-cancer or non-target populations."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The title/abstract-level evidence suggests that glansectomy for localized penile cancer confined to the glans generally preserves substantial function, especially when combined with reconstruction.",
+      "Voiding outcomes appear generally favorable.",
+      "Cosmetic and satisfaction outcomes are consistently favorable in included abstracts.",
+      "Oncologic control appears acceptable in the included abstracts, though follow-up is often limited.",
+      "The available title/abstract evidence supports glansectomy, with or without neoglans reconstruction, as a function-preserving treatment option for men with glans-confined penile cancer.",
+      "At the same time, the evidence base is limited by small retrospective series, mixed reconstructive techniques, heterogeneous outcome measures, and often short follow-up."
+    ]
+  }
+}

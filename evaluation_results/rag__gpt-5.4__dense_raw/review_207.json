@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8057,
+    "output_tokens": 1141,
+    "total_tokens": 9198
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.7777777777777778,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.4825,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5539,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with review question alignment, screening summary, evidence synthesis, conclusions, limitations, and included studies, but it lacks a formal abstract, introduction, full methods, detailed search strategy, quality assessment, PRISMA-style flow, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy adult non-pregnant women, from reproductive age to post-menopause",
+      "menstrual cycle phases and/or menopausal status",
+      "posterior pole structural parameters of the macula, choroid, and/or optic disc"
+    ],
+    "exclusion_criteria": [
+      "pregnancy, breastfeeding, hormonal contraception/HRT, disease-focused studies unless a healthy-women segment is separable, and functional/hemodynamic-only studies",
+      "reviews, letters, commentaries, protocols, or non-primary studies",
+      "pregnancy/postpartum studies",
+      "contraceptive/HRT studies",
+      "disease-focused without usable healthy-women structural data",
+      "non-ocular or non-posterior-pole studies",
+      "vascular/hemodynamic/functional OCTA studies without relevant structural morphology outcomes",
+      "sex-difference or general age/gender normative studies rather than within-women reproductive-stage comparisons"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Choroidal structure is the most consistently hormone-sensitive posterior pole parameter in the candidate pool.",
+      "Across the menstrual cycle, the most repeated pattern is mid-luteal choroidal thinning.",
+      "In post-menopausal comparisons, choroidal thinning appears plausible, but the effect may be partly entangled with age.",
+      "Macular retinal thickness and optic disc/RNFL/GCC measures show less consistent associations than choroidal measures.",
+      "Evidence for optic disc change across the cycle in healthy women is limited and tends toward no meaningful difference."
+    ]
+  }
+}

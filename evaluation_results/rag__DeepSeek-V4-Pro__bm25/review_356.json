@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10268,
+    "output_tokens": 1068,
+    "total_tokens": 11336
+  },
+  "metrics": {
+    "retrieval_recall": 0.5909090909090909,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.22727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.37037037037037035,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.38461538461538464,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.7587,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6543,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, screening criteria, results, evidence summary, overall assessment, conclusion, and included studies, but it lacks a formal abstract, full methods section, detailed search strategy, data extraction procedures, quality assessment methods, and explicit synthesis/meta-analysis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomised controlled trials (RCTs) were eligible; double-blind design was required for efficacy and acceptability outcomes, while single-blind or open RCTs could contribute adverse effect data.",
+      "Crossover trials were considered only for first-period data."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were not RCTs, did not enrol bipolar disorder patients, did not test an LTCC antagonist, or did not have a placebo/active comparator.",
+      "Reviews, case reports, observational studies, animal experiments, and trials of other drug classes were not eligible."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The randomised evidence base for LTCC antagonists in bipolar disorder is sparse and restricted to small, double-blind trials of verapamil for acute mania.",
+      "Verapamil shows promise as an antimanic agent, but larger, methodologically rigorous trials are needed to confirm its efficacy, establish its role in maintenance treatment, and explore the potential of other LTCC blockers.",
+      "The current data do not support the use of LTCC antagonists for bipolar depression or for relapse prevention outside of a research setting.",
+      "Verapamil appears to have antimanic efficacy comparable to lithium and superior to placebo, but the confidence in these estimates is low due to imprecision.",
+      "No RCT data are available to inform the use of verapamil or other LTCC antagonists for depressive episodes or relapse prevention."
+    ]
+  }
+}

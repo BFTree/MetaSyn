@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18202,
+    "output_tokens": 1070,
+    "total_tokens": 19272
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 0.4,
+    "inclusion_f1": 0.26666666666666666,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.6825,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.591,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around review target, screening summary, evidence synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, formal inclusion/exclusion criteria, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "online, group-based behavior change interventions for adults with severe obesity (BMI \u2265 35 kg/m\u00b2) in achieving weight loss and positive health behavior changes compared to waitlist, standard care, or other conditions",
+      "Five primary studies met all inclusion criteria."
+    ],
+    "exclusion_criteria": [
+      "the article was a review, meta-analysis, protocol, or intervention development paper without efficacy evaluation",
+      "the publication date exceeded the search end date (2024-05-31)",
+      "the study population did not specifically target or consist of adults with severe obesity (BMI \u2265 35 kg/m\u00b2), often focusing on broader overweight/obesity samples (BMI \u2265 25 or \u2265 30)",
+      "the intervention was not explicitly delivered as an online, group-based behavioral program (e.g., self-directed apps, individual counseling, or in-person hybrids)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies suggest that online, group-based behavioral interventions can facilitate weight loss in adults with severe obesity, though the magnitude of loss varies by context and comparator.",
+      "Beyond weight loss, the interventions demonstrated positive impacts on related health behaviors and functional outcomes:",
+      "User perceptions regarding the acceptability and usability of online group-based interventions were generally positive:",
+      "While in-person interventions may yield slightly higher weight loss, internet/online modalities offer distinct advantages in cost-effectiveness (Candidate 056) and accessibility for rural or underserved populations (Candidates 144, 162)."
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25196,
+    "output_tokens": 842,
+    "total_tokens": 26038
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.016666666666666666,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9833333333333333,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7845,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8286,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear methods, search strategy, eligibility criteria, screening results, limitations, and conclusion sections, and it includes PRISMA-style elements, but it lacks a formal abstract/introduction structure and has some incomplete retrieval detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human research",
+      "Original investigations",
+      "Studies assessing **dietary salt/sodium intake**",
+      "Studies assessing a health-related outcome or relevant surrogate outcome",
+      "Duration at least **1 year** for Categories I, II, and V",
+      "Duration at least **4 weeks** for Category III",
+      "At least **400 participants** for continuous outcomes, or **400 events** for dichotomous outcomes",
+      "Sodium intake measured using at least one of:",
+      "**24-hour urine collection**",
+      "**Food record**",
+      "**24-hour diet recall**"
+    ],
+    "exclusion_criteria": [
+      "Animal or in-vitro studies",
+      "Narrative reviews",
+      "Commentaries",
+      "Protocols",
+      "Position papers",
+      "Case reports",
+      "Letters",
+      "Proceedings",
+      "Guidelines",
+      "Studies in which dietary salt was **not the only exposure variable**",
+      "Category VI physiological/biomarker surrogate outcomes",
+      "Studies estimating sodium intake using **food frequency questionnaires**",
+      "Studies using **spot urine** or urine collections shorter than 24 hours",
+      "Studies reporting only **sodium-to-potassium ratio** or related variables",
+      "**Cross-sectional studies** from detailed critical appraisal"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No study met the full eligibility criteria from the retrieved local corpus records within the required publication window.",
+      "Because **no eligible studies were included**, there is **no basis for a quantitative meta-analysis** and no valid pooled estimate can be produced for:",
+      "A systematic review restricted to the **local MetaSyn PubMed corpus** and the date window **2019-09-30 through 2020-12-31** did not yield any study that satisfied the prespecified eligibility criteria for assessing the association between dietary salt/sodium intake and the specified health outcomes in the **general adult population**.",
+      "Accordingly, **no study was included**, and **no meta-analysis could be performed**."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18257,
+    "output_tokens": 865,
+    "total_tokens": 19122
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.9,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6151,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3856,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear basic structure with review target, screening/selection criteria, synthesis of findings, conclusion, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, detailed search strategy, data extraction process, quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials or randomized crossover designs",
+      "involving healthy adults (\u226518 years, without chronic conditions other than overweight/obesity)",
+      "that compared TRE (4\u201312 hour feeding window) plus exercise against an exercise-matched control group with an unrestricted eating window",
+      "Interventions had to be \u22654 weeks",
+      "report pre- and post-intervention body composition outcomes (FM, BF%, FFM)"
+    ],
+    "exclusion_criteria": [
+      "Studies outside the 2016\u20132023 search window",
+      "those lacking an unrestricted eating control",
+      "non-RCT designs (e.g., quasi-experimental, protocols, reviews)",
+      "animal models",
+      "populations with chronic diseases (e.g., NAFLD, cancer survivors, T2DM)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Time-restricted eating combined with regular exercise is an effective strategy for improving body composition in healthy adults.",
+      "It consistently reduces fat mass and body fat percentage while preserving fat-free mass, compared to exercising with an unrestricted eating window.",
+      "The additive benefit of TRE on fat loss is most evident when the control group is not simultaneously subjected to explicit caloric restriction.",
+      "The majority of the included studies demonstrated that TRE combined with exercise significantly reduces FM and BF% compared to exercise with an unrestricted eating window.",
+      "A consistent finding across the synthesized evidence is that TRE combined with exercise effectively preserves or maintains FFM (often reported as lean mass)."
+    ]
+  }
+}

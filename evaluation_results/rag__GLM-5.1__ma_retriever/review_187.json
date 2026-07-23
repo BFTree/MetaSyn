@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17077,
+    "output_tokens": 846,
+    "total_tokens": 17923
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7305,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5814,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, screening/selection criteria, synthesis of findings, conclusion, and included articles, but it lacks a full systematic review structure with formal abstract/introduction/methods/results/discussion/references sections and omits key rigor elements such as detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "undergraduate dental students",
+      "intervention is TBL",
+      "comparison with another teaching pedagogy"
+    ],
+    "exclusion_criteria": [
+      "non-English",
+      "postgraduate focus",
+      "no comparison pedagogy",
+      "reviews/protocols/editorials/conference abstracts",
+      "out-of-date records published after the search end date of 2023-05-02"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available evidence indicates that TBL is an effective alternative to traditional didactic lectures in undergraduate dental education, consistently yielding higher student satisfaction and improved academic performance.",
+      "When compared to another active learning method (the flipped classroom), TBL demonstrates equivalent effectiveness in terms of examination scores, suggesting that both active pedagogies offer significant advantages over traditional lectures.",
+      "However, the evidence base is small, largely concentrated in prosthodontics, and lacks long-term retention data or diverse disciplinary coverage within dentistry."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20898,
+    "output_tokens": 1208,
+    "total_tokens": 22106
+  },
+  "metrics": {
+    "retrieval_recall": 0.5274725274725275,
+    "retrieval_precision": 0.24,
+    "inclusion_recall": 0.34065934065934067,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5081967213114754,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.6458333333333334,
+    "post_retrieval_loss": 0.18681318681318682,
+    "inclusion_consistency": 0.6618,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4713,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening summary, thematic synthesis, exclusion rationale, and included-study list, but it lacks a formal abstract, introduction, detailed methods, search strategy, screening flow, data extraction and quality assessment procedures, quantitative synthesis, references, and distinct discussion and conclusion sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "postmortem brain samples",
+      "schizophrenia patients",
+      "neuroinflammatory markers measured",
+      "compared with healthy/non-psychiatric controls"
+    ],
+    "exclusion_criteria": [
+      "reviews, editorials, protocols",
+      "non-postmortem or peripheral/in vivo-only studies",
+      "non-schizophrenia-only populations",
+      "untargeted-only studies without targeted confirmation",
+      "infection/virus-focused studies",
+      "papers clearly outside the review\u2019s search end date (2016-03-20)",
+      "reviews/systematic reviews",
+      "animal studies",
+      "peripheral blood/CSF/imaging-only studies",
+      "non-schizophrenia postmortem studies",
+      "infection/virus-focused",
+      "clearly after the review search end date",
+      "untargeted omics without clear targeted confirmation"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the candidate pool, the postmortem schizophrenia literature meeting the criteria is heterogeneous but supportive of altered cerebral inflammatory biology in at least a subgroup of schizophrenia cases.",
+      "Neuroinflammatory abnormalities are present in schizophrenia postmortem brain tissue, but inconsistently across studies and brain regions.",
+      "The literature most strongly supports heterogeneity, with an inflamed subgroup showing clearer cytokine/immune-gene and astrocyte changes.",
+      "Microglial findings are mixed: some studies show activation/increase, others no overall difference."
+    ]
+  }
+}

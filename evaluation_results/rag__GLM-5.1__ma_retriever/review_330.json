@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20065,
+    "output_tokens": 1045,
+    "total_tokens": 21110
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.8064516129032258,
+    "inclusion_precision": 0.8064516129032258,
+    "inclusion_f1": 0.8064516129032258,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.8064516129032258,
+    "post_retrieval_loss": 0.1935483870967742,
+    "inclusion_consistency": 0.7808,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4071,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening overview, thematic synthesis, conclusion, and included studies, but it lacks major required sections such as an abstract, introduction, detailed methods, separate results/discussion, full references, search strategy, data extraction process, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "enrolled adults (\u226518 years) with schizophrenia spectrum disorders (SSD) alongside a healthy control group (HC)",
+      "assessed speech production or comprehension with a specific focus on grammar/syntax",
+      "reported empirical quantitative measures"
+    ],
+    "exclusion_criteria": [
+      "Studies on children",
+      "case reports",
+      "reviews",
+      "neuroimaging/electrophysiology studies lacking behavioral syntax outcomes",
+      "purely semantic/pragmatic/fluency assessments",
+      "publications after the search end date (May 1, 2024)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The synthesized evidence consistently demonstrates that individuals with schizophrenia exhibit significant impairments in syntactic production compared to healthy controls.",
+      "The most robust finding is a reduction in syntactic complexity.",
+      "Impairments in syntactic comprehension are equally well-documented, though sometimes more nuanced.",
+      "A prominent pattern is the disproportionate impairment as syntactic complexity increases.",
+      "Variability in syntactic performance is heavily moderated by symptomatology and cognitive functioning.",
+      "The synthesized evidence confirms that syntactic deficits\u2014spanning both production (reduced complexity and diversity) and comprehension (impaired processing of complex and non-canonical structures)\u2014are a core feature of schizophrenia.",
+      "The degree of impairment is highly variable, scaling with syntactic complexity and closely intertwined with formal thought disorder and generalized cognitive dysfunction."
+    ]
+  }
+}

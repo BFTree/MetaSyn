@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14816,
+    "output_tokens": 874,
+    "total_tokens": 15690
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.7333333333333333,
+    "inclusion_f1": 0.7586206896551724,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8461538461538461,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4522,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.316,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening decisions, eligibility criteria, evidence synthesis, limitations, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, data extraction process, risk-of-bias or quality assessment, explicit conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult hypertensive patients",
+      "biofeedback intervention",
+      "randomized controlled trial",
+      "English",
+      "BP outcomes versus a control condition",
+      "adult patients with hypertension/essential hypertension",
+      "biofeedback intervention",
+      "randomized or controlled trial consistent with RCT inclusion",
+      "blood pressure outcome reported",
+      "comparator present"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews, meta-analyses, scientific statements, narrative reviews",
+      "protocols only",
+      "non-hypertension populations",
+      "pregnancy-specific hypertension populations",
+      "non-biofeedback interventions",
+      "non-randomized or retrospective studies",
+      "acute physiology studies without a treatment comparison relevant to hypertension management"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On abstract-level evidence alone, the direction of effect is mixed but leans toward possible short- to intermediate-term BP improvement in some settings, with substantial inconsistency by modality and comparator.",
+      "A key limitation is that this synthesis is restricted to abstracts.",
+      "The body of evidence also appears clinically heterogeneous, making pooled inference uncertain without full-text review.",
+      "Abstract-level evidence supports that some biofeedback interventions may reduce blood pressure in adults with hypertension, but the effect is not consistent across modalities or control types.",
+      "The more rigorous sham/placebo-controlled evidence appears less uniformly positive than no-treatment-controlled studies.",
+      "This pattern raises the possibility of nonspecific effects from relaxation training, attention, self-monitoring, or behavioral engagement."
+    ]
+  }
+}

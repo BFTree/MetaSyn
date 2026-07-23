@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21173,
+    "output_tokens": 936,
+    "total_tokens": 22109
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.8076923076923077,
+    "post_retrieval_loss": 0.17857142857142858,
+    "inclusion_consistency": 0.6212,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5166,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is reasonably organized as a screening synthesis with eligibility criteria, outcome summaries, limitations, and included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion, conclusion, references, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational primary studies in humans",
+      "bisphosphonate exposure defined by prescriptions/use",
+      "incident cancer outcomes",
+      "usable comparative effect estimates"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "in vitro/animal studies",
+      "adverse-event or survival-only studies",
+      "studies centered on cancer recurrence, metastases, mortality, or osteonecrosis rather than cancer incidence"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the pool contains a substantial set of eligible observational studies directly relevant to the review question.",
+      "From titles and abstracts alone, the direction of evidence is mixed but leans away from an increased overall cancer risk.",
+      "Multiple studies report no increase in all-cancer incidence, and some suggest reduced risks for breast, colorectal, and endometrial cancer.",
+      "Evidence for upper gastrointestinal and esophageal cancer is inconsistent: some studies report no association, while a few report increased esophageal cancer risk, especially with longer duration or higher prescription counts.",
+      "Liver and pancreatic findings are sparse and inconsistent, with one Taiwanese cohort reporting increased overall and site-specific cancer risk at higher alendronate dosage, while another large non-gastrointestinal cancer study reported reduced pancreatic cancer risk.",
+      "Overall cancer`: generally null to slightly protective in available cohort studies.",
+      "Colorectal cancer`: several studies suggest reduced incidence, but not all; some prospective cohorts are null.",
+      "Breast cancer`: some cohorts suggest reduced incidence, others are null.",
+      "Endometrial cancer`: several cohort/case-control studies suggest reduced incidence.",
+      "Upper GI/esophageal/gastric cancer`: inconsistent, with both null and positive esophageal findings.",
+      "Liver/pancreatic cancer`: limited and inconsistent evidence.",
+      "Duration/use intensity`: some studies suggest stronger inverse or adverse associations with longer exposure, but this is not consistent across outcomes.",
+      "Bisphosphonate type`: abstract-level evidence is limited; some studies note no difference by type, while a few single-agent findings appear isolated."
+    ]
+  }
+}

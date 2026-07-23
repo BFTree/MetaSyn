@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16667,
+    "output_tokens": 972,
+    "total_tokens": 17639
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.559,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4305,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, screening process, screening results, and brief evidence synthesis, but it lacks standard systematic review sections such as abstract, introduction, full methods, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Patients with Alzheimer's disease diagnosed according to reliable criteria (specifically NINCDS-ADRDA).",
+      "Time perception distortions (including prospective timing, retrospective timing, and perception of shorter/longer time intervals).",
+      "Must fall within the search window of 2015-01-01 to 2015-12-31.",
+      "Peer-reviewed primary research articles (excluding reviews, protocols, editorials, conference abstracts, and other non-primary sources)."
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials, conference abstracts, and other non-primary sources",
+      "published outside the 2015 date range",
+      "studying populations other than AD (e.g., Parkinson's disease, schizophrenia, depression, healthy adults)",
+      "assessing outcomes other than time perception (e.g., biomarkers, neuroimaging, oral health, risk perception)",
+      "being non-eligible publication types (e.g., systematic reviews, commentaries, conference abstracts)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Upon screening the titles and abstracts of all 200 candidates, **no primary study met all the eligibility criteria.**",
+      "As no eligible primary studies were identified from the candidate pool, an evidence synthesis regarding the distortion of time perception in AD patients compared to healthy controls, or the theoretical relationship between time distortions and episodic memory impairment, cannot be conducted for the 2015 search window based on the supplied literature.",
+      "The absence of eligible studies highlights a potential gap in the literature within this specific timeframe, or reflects the limitations of the fixed candidate pool in capturing the relevant research published in 2015.",
+      "None were included."
+    ]
+  }
+}

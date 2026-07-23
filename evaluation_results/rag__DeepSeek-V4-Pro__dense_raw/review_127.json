@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12178,
+    "output_tokens": 1280,
+    "total_tokens": 13458
+  },
+  "metrics": {
+    "retrieval_recall": 0.48936170212765956,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.3191489361702128,
+    "inclusion_precision": 0.9375,
+    "inclusion_f1": 0.4761904761904763,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.6521739130434783,
+    "post_retrieval_loss": 0.1702127659574468,
+    "inclusion_consistency": 0.5959,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5151,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized around a review question, screening results, included studies, and brief synthesis, but it lacks major systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "early-phase (phase I/II) trials of experimental drugs as single agents or with dexamethasone in relapsed/refractory multiple myeloma (RRMM), published between 2010\u201101\u201101 and 2020\u201107\u201101"
+    ],
+    "exclusion_criteria": [
+      "not a primary phase I or II single\u2011arm clinical trial (e.g., reviews, meta\u2011analyses, phase III/randomized studies, subgroup/safety analyses, economic evaluations);",
+      "combination with drugs other than dexamethasone;",
+      "disease setting not RRMM (e.g., newly diagnosed or smouldering myeloma, other malignancies);",
+      "publication date outside 2010\u20132020 (including 2020 articles after the cut\u2011off where ascertainable)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "ORR varied widely, reflecting the early\u2011phase, heavily pre\u2011treated populations.",
+      "Overall, adverse events were manageable with supportive care and dose modifications; discontinuation due to toxicity was low.",
+      "No formal meta\u2011analysis was possible from the limited pool, but the included studies illustrate the incremental development of RRMM therapy.",
+      "Proteasome inhibitors and pomalidomide\u2011based regimens demonstrated the highest single\u2011agent/dexamethasone activity in this early\u2011phase landscape.",
+      "Monoclonal antibodies and targeted agents exhibited modest single\u2011agent activity (except isatuximab), often requiring combination with dexamethasone to achieve meaningful responses.",
+      "This evidence synthesis confirms that early\u2011phase trials of single\u2011agent experimental drugs or dexamethasone combinations in RRMM yield a broad range of ORRs and predictable toxicity profiles, forming the foundation for subsequent phase\u202fIII development of several now\u2011approved agents."
+    ]
+  }
+}

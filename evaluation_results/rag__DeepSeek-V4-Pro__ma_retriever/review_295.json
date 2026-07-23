@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14238,
+    "output_tokens": 918,
+    "total_tokens": 15156
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7605,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3134,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, Evidence Synthesis, Limitations, Conclusion, and included studies, but it lacks a formal abstract, full references, detailed search strategy, PRISMA screening flow, data extraction process, risk-of-bias assessment, and formal meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) that directly compared any concentration/dose of oral sucrose, glucose, or dextrose with BM/EBM in preterm infants (<37 weeks\u2019 gestation) undergoing heel lance or venipuncture, and that reported pain intensity (PIPP/PIPP\u2011R), crying duration, heart rate change, or adverse events"
+    ],
+    "exclusion_criteria": [
+      "Studies that included term infants, used comparators without BM/EBM, or were systematic reviews were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Limited evidence from two RCTs suggests that, in late preterm infants undergoing heel lance, 24% sucrose and breast milk/expressed breast milk provide comparable analgesia as measured by PIPP/PIPP\u2011R scores.",
+      "No studies comparing glucose with BM/EBM were found.",
+      "Further research is needed to evaluate these interventions in extremely preterm infants and to assess additional outcomes such as crying duration and heart rate changes.",
+      "Neither study found a statistically significant difference between the two interventions.",
+      "No eligible study compared glucose with BM/EBM; both included trials compared sucrose with BM/EBM."
+    ]
+  }
+}

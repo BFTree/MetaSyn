@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13288,
+    "output_tokens": 1390,
+    "total_tokens": 14678
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.8116,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3338,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, results, synthesis findings, conclusion, and included-study list, but it lacks a formal abstract, introduction/background, discussion, full references, detailed search strategy, quality assessment, and PRISMA-style screening/data extraction detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies were required to be randomized controlled trials (RCTs) comparing orally administered sucrose, glucose, or dextrose against BM/EBM in preterm infants undergoing heel lancing or venipuncture."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews",
+      "non-RCT designs",
+      "studies involving term infants (or mixed term/preterm populations analyzed together)",
+      "studies lacking a BM/EBM comparison arm"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Of the 200 candidates, two RCTs met all eligibility criteria.",
+      "No eligible studies were found that compared glucose to BM/EBM in a preterm population; the included evidence exclusively compares sucrose to BM/EBM.",
+      "The eligible evidence indicates that **sucrose is not more effective than breast milk** for procedural pain relief in preterm infants undergoing heel lancing.",
+      "The 2022 trial (Candidate 002) demonstrated the **non-inferiority** of expressed breast milk compared to 24% sucrose, meaning BM achieved pain control outcomes similar to sucrose.",
+      "The 2012 trial (Candidate 003) found **no statistically significant difference** in PIPP scores between breast milk and sucrose.",
+      "Based on the included RCTs, sucrose does not demonstrate superior efficacy over breast milk for pain control during heel lance in preterm infants; rather, breast milk appears to be non-inferior or comparable to sucrose.",
+      "There is a gap in the eligible primary literature regarding the comparative efficacy of glucose versus breast milk in this specific population and procedure."
+    ]
+  }
+}

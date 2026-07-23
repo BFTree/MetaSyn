@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24893,
+    "output_tokens": 1144,
+    "total_tokens": 26037
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.4761904761904762,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.6428571428571429,
+    "inclusion_consistency": 0.8512,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7717,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included studies, synthesis of findings, discussion, and a study list, but it lacks several standard systematic review sections such as an abstract, introduction, formal methods, conclusion, references, detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they were prospective clinical analytical treatment interruption (ATI) studies in adults with HIV who received placebo or no active intervention, and where frequent plasma viral load (pVL) monitoring was conducted (minimum 5 planned pVL measurements within the first 84 days post\u2011ATI, with a maximum of 18 days between measurements within the first 42 days)."
+    ],
+    "exclusion_criteria": [
+      "Exclusion criteria removed non\u2011English publications, abstracts, letters, reviews, commentaries, opinion articles, case reports, studies with co\u2011infection, animal studies, in\u2011vitro studies, mother\u2011to\u2011child transmission studies, and infant/children/adolescent studies.",
+      "Additionally, studies published after the search end date (30 September 2024) were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "All included studies reported that viral rebound occurred rapidly after ATI, typically within 2\u20134 weeks.",
+      "Across studies, the median time to rebound clustered around 2\u20133 weeks, with little variation between modern and older ART regimens (Candidate 001, 004).",
+      "PTC, defined as pVL <50 copies/mL at day 84 post\u2011ATI, was rare.",
+      "Overall, PTC was observed in only a small minority (approximately 2\u201310% of participants), even among individuals with very small HIV reservoirs or long\u2011term viral suppression.",
+      "The combined evidence suggests that early ART initiation modestly delays viral rebound and slightly increases the likelihood of transient post\u2011treatment control, but does not prevent rebound in the vast majority.",
+      "This synthesis confirms that after ATI, viral rebound occurs rapidly (median 2\u20133 weeks) regardless of ART regimen era or reservoir size, and PTC is uncommon (~2\u201310%).",
+      "Early ART initiation (within 6 months of acquisition) appears to delay rebound and may marginally increase the chance of temporary off\u2011ART control, but the effect size is small and most early\u2011treated individuals still rebound.",
+      "Nevertheless, the consistent pattern across studies underscores the robustness of the latent reservoir and the need for effective interventions to achieve sustained remission."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8943,
+    "output_tokens": 1025,
+    "total_tokens": 9968
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7111,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.342,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes core systematic review elements such as eligibility criteria, screening outcome, study characteristics, and synthesis, but it lacks formal Abstract, Introduction, Discussion/Conclusion, full References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible designs were randomized controlled trials (RCTs) comparing oral sucrose/glucose (any concentration) with breast milk or expressed breast milk, administered before heel lance or venipuncture in preterm infants."
+    ],
+    "exclusion_criteria": [
+      "Studies that did not include a BM/EBM comparison, enrolled term infants only, were not RCTs, or addressed other procedures or outcomes were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Together, the evidence suggests that in this preterm population, breast milk provides analgesia comparable to sucrose during heel lance.",
+      "No data were available to assess superiority of sucrose over breast milk or to evaluate effects on crying duration or heart rate specifically for this comparison.",
+      "The 2022 non\u2011inferiority trial demonstrated that breast milk was not inferior to 24% sucrose, with a null adjusted difference in PIPP\u2011R scores.",
+      "The earlier 2012 trial also found no significant difference in mean PIPP scores between breast milk and sucrose."
+    ]
+  }
+}

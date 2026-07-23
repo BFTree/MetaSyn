@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19117,
+    "output_tokens": 831,
+    "total_tokens": 19948
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6325,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7275,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Objective, Methods, Results, evidence synthesis, limitations, Conclusion, and included studies list, but it lacks distinct Abstract, Introduction, Discussion, References, detailed search strategy, PRISMA screening flow, and quality assessment elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only original research articles published in English between 1 January 2010 and 15 November 2022 were considered.",
+      "Eligible studies had to be prospective (level\u202fI or\u202fII), include hypertensive patients with CKD (eGFR\u202f<\u202f60\u202fmL/min/1.73\u202fm\u00b2 or albuminuria for >3\u202fmonths) and treatment-resistant hypertension, and use endovascular catheter-based radiofrequency RDN."
+    ],
+    "exclusion_criteria": [
+      "Studies assessing secondary hypertension other than CKD, renovascular anomalies, heart failure, left ventricular ejection fraction\u202f<\u202f35%, or those published in non\u2011English languages were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this systematic synthesis of seven prospective studies, radiofrequency RDN consistently reduced office and ambulatory BP in hypertensive patients with CKD and treatment-resistant hypertension, without evidence of accelerated renal function decline.",
+      "The procedure appeared safe, with a low rate of periprocedural complications.",
+      "However, the evidence is limited by small sample sizes, lack of randomisation, and relatively short follow-up.",
+      "Well-designed randomised controlled trials with adequate power and longer observation periods are needed to confirm the long-term benefits and safety of RDN in this high-risk population."
+    ]
+  }
+}

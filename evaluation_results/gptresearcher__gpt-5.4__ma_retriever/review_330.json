@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32578,
+    "output_tokens": 1114,
+    "total_tokens": 33692
+  },
+  "metrics": {
+    "retrieval_recall": 0.7096774193548387,
+    "retrieval_precision": 0.6875,
+    "inclusion_recall": 0.3548387096774194,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.59375,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3548387096774194,
+    "inclusion_consistency": 0.6794,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5459,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with an abstract, eligibility framework, corpus retrieval/search queries, screening process, findings, synthesis feasibility, limitations, conclusion, included-study list, and references, but it lacks a formal quality/risk-of-bias assessment needed for full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The population consisted of adults aged 18 years or older with schizophrenia, schizoaffective disorder, or schizophreniform psychosis.",
+      "The comparison group was composed of healthy adults without known psychiatric disorders.",
+      "Eligible outcomes were quantitative measures of grammar or syntax in speech production, written production, sentence comprehension, or related syntactic-processing tasks.",
+      "Studies had to apply comparable quantitative procedures to the clinical and control groups.",
+      "A schizophrenia-spectrum clinical group.",
+      "A healthy comparison group.",
+      "Empirical data rather than a review or conceptual article.",
+      "Syntax or grammar as a measured outcome.",
+      "Adult participants or sufficient information to establish adult eligibility.",
+      "Quantitative comparison of the clinical and control groups."
+    ],
+    "exclusion_criteria": [
+      "The 2023 literature review, \u201cLinguistic findings in persons with schizophrenia,\u201d was useful for contextualizing the field but was not treated as an included primary study because it was a review article (Corpus ID 20391).",
+      "Studies involving first-degree relatives without a schizophrenia group were not eligible as standalone evidence, although relatives were sometimes included as additional comparison groups within otherwise eligible studies.",
+      "The corpus record for Corpus ID 1059 clearly reports adults in first-episode psychosis research through the large clinical sample, whereas Corpus ID 1056 explicitly contains teenage participants and was therefore excluded from the adult review."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn evidence supports a clear, substantive conclusion: adults with schizophrenia-spectrum disorders show disproportionate difficulty processing syntactically complex language, especially when comprehension requires non-canonical role assignment, relative-clause interpretation, passive construction processing, embedded-clause integration, or deep-structure analysis.",
+      "Production is also affected, most consistently through reduced syntactic complexity and fewer embedded or subordinate structures.",
+      "These abnormalities can be present at first episode and are particularly pronounced among individuals with formal thought disorder.",
+      "The evidence does not support reducing the phenomenon to generalized cognitive impairment.",
+      "My assessment is that the most accurate model is a language-specific vulnerability interacting with broader cognitive-control limitations.",
+      "A numerical meta-analysis cannot be completed from the retrieved abstract-level information alone."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13835,
+    "output_tokens": 972,
+    "total_tokens": 14807
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.4444444444444444,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7216,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3766,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, screening outcomes, evidence synthesis, conclusions, and included studies, but it lacks several formal required sections such as an abstract, introduction, detailed methods/search strategy, quality assessment, and explicit meta-analysis synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies to evaluate AI/DL algorithms for pathological myopia (PM) detection using colour fundus images",
+      "reporting performance indices (AUROC, sensitivity, specificity)",
+      "providing dataset and reference standard information",
+      "including a validation set of at least 10% the size of the training set",
+      "Studies had to be in English",
+      "published in a peer-reviewed journal",
+      "published before the search end date of 2022-05-05"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "conference abstracts",
+      "studies using non-fundus imaging modalities (e.g., OCT)",
+      "studies focusing on other ocular conditions"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Current AI-based deep learning algorithms demonstrate high diagnostic accuracy for detecting pathological myopia on colour fundus images, frequently achieving AUROC values above 0.98 and sensitivities/specificities exceeding 90%.",
+      "The evidence supports their potential utility as screening and diagnostic tools comparable to expert ophthalmologists, provided they are rigorously validated on large, external datasets.",
+      "Limitations include variable sensitivity for specific \"plus\" lesions like CNV in earlier models, which may require further architectural optimization.",
+      "All included models demonstrated exceptional discriminative ability for detecting PM.",
+      "These values consistently surpassed typical clinical thresholds for excellent diagnostic accuracy and were comparable to or superior to human expert performance."
+    ]
+  }
+}

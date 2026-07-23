@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28892,
+    "output_tokens": 2834,
+    "total_tokens": 31726
+  },
+  "metrics": {
+    "retrieval_recall": 0.11904761904761904,
+    "retrieval_precision": 0.06097560975609756,
+    "inclusion_recall": 0.09523809523809523,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.1702127659574468,
+    "screening_accuracy": 0.975609756097561,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.023809523809523808,
+    "inclusion_consistency": 0.5939,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5877,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive, logically organized structure with an abstract, introduction, detailed methods, retrieval and screening results, intervention-specific findings, limitations, conclusion, included-study list, and references, plus PRISMA-style elements such as search queries, eligibility criteria, screening categories, exclusion reasons, and synthesis judgments."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials",
+      "Adults with MDD / unipolar depression",
+      "TRD defined by failure of at least two antidepressant trials, or close proxy if clearly treatment resistant",
+      "Minimum 10 participants per arm",
+      "Not restricted to a narrow comorbid subgroup",
+      "Interventions with antidepressant intent, including medicines and neuromodulation",
+      "Comparator placebo, sham, or active comparator if useful for contextual interpretation of the treatment network"
+    ],
+    "exclusion_criteria": [
+      "Bipolar depression",
+      "Psychotic depression",
+      "Non-randomized studies",
+      "Studies limited to a specific comorbidity-defined subgroup",
+      "Protocols without outcomes",
+      "Secondary reviews and meta-analyses as included primary studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a clear hierarchy.",
+      "The most policy-relevant conclusion is that **ECT remains the most consistently high-efficacy intervention overall, but ketamine is the strongest acute alternative in strictly nonpsychotic TRD and may be preferable in selected outpatients with less extreme baseline severity**.",
+      "Longer-term durability remains underreported, particularly for ketamine versus ECT.",
+      "My concrete conclusion is this: **if the objective is to rank likely acute response in strict nonpsychotic TRD after at least two failed antidepressants, ECT and ketamine belong at the top, with ECT retaining the strongest overall claim and ketamine emerging as the most important challenger; rTMS/TBS occupy a middle tier; minocycline is investigational but promising; and aripiprazole is effective in broader TRD but under-documented here for the exact target subgroup.**"
+    ]
+  }
+}

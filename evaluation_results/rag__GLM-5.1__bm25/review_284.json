@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15881,
+    "output_tokens": 1375,
+    "total_tokens": 17256
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.125,
+    "inclusion_consistency": 0.6982,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2794,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, synthesized findings, conclusion, and included studies list, but it lacks major required systematic review sections such as formal abstract, introduction, methods, detailed search strategy, inclusion/exclusion criteria, screening process, quality assessment, data extraction, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies published between 2012 and 2023",
+      "adult patients across the AD continuum\u2014from preclinical and prodromal stages to mild cognitive impairment (MCI) and AD dementia\u2014compared to cognitively normal controls",
+      "neuroinflammatory fluid biomarkers\u2014specifically YKL-40, soluble triggering receptor expressed on myeloid cells 2 (sTREM2), and glial fibrillary acidic protein (GFAP)\u2014and clinical stages of Alzheimer's disease (AD), as well as their utility in predicting long-term clinical outcomes such as cognitive decline"
+    ],
+    "exclusion_criteria": [
+      "it focused on differential diagnosis of \u03b1-synuclein-related disorders rather than the AD clinical continuum and progression"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence indicates that YKL-40 and GFAP are elevated in AD compared to cognitively normal controls and are detectable in early (preclinical and MCI) stages.",
+      "YKL-40 is associated with disease progression and conversion from MCI to AD dementia in several cohorts, although its direct association with longitudinal cognitive decline is inconsistent across biofluids (stronger in CSF than serum in some studies) and cohorts.",
+      "GFAP shows early elevation in preclinical stages and correlates with specific cognitive deficits.",
+      "There is a notable gap in the eligible literature regarding sTREM2's association with AD clinical stages and long-term cognitive outcomes within the 2012\u20132023 search window."
+    ]
+  }
+}

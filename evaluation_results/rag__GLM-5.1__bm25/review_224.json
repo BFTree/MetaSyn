@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13948,
+    "output_tokens": 773,
+    "total_tokens": 14721
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6923076923076923,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.3525,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized with a clear overview, synthesis of findings, conclusion, and included study list, but it lacks explicit abstract/introduction/methods sections and detailed meta-analysis elements such as a full search strategy, screening process, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCT design",
+      "adult patients with hypertension",
+      "biofeedback intervention",
+      "BP outcome",
+      "English language",
+      "publication before 2024-01-16"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the effectiveness of biofeedback for lowering blood pressure in hypertensive patients is mixed and appears to vary significantly by modality, intervention duration, and comparator type:",
+      "The current evidence from randomized controlled trials does not consistently demonstrate the superiority of biofeedback interventions over control conditions for reducing blood pressure in patients with hypertension.",
+      "While some modalities (e.g., GSR, heart rate, and thermal biofeedback as part of a multimodal program) show promising significant reductions compared to no-treatment or usual care, the effects are less robust when compared to credible sham or placebo controls.",
+      "Device-guided breathing biofeedback, in particular, lacks consistent evidence of efficacy versus sham controls.",
+      "Heterogeneity in intervention types, control conditions, and outcome measurements limits the strength of conclusive findings."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21110,
+    "output_tokens": 1149,
+    "total_tokens": 22259
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6659,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5759,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized and includes screening criteria, evidence synthesis, limitations, and a study list, but it lacks formal Introduction, detailed search strategy, data extraction and quality assessment methods, quantitative synthesis, conventional Results/Discussion/Conclusion sections, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with morbid/severe obesity undergoing laparoscopic sleeve/vertical sleeve gastrectomy",
+      "pre- and postoperative esophageal physiologic testing with manometry and/or 24-h pH testing",
+      "original peer-reviewed cohort/comparative cohort-type primary data",
+      "publication year within 1999-01-01 to 2023-11-30"
+    ],
+    "exclusion_criteria": [
+      "review/systematic review/editorial/comment/protocol",
+      "non-human study",
+      "case report",
+      "publication after Nov 2023",
+      "no pre/post physiologic testing around LSG/LVSG",
+      "not focused on sleeve/vertical sleeve gastrectomy patients in a usable pre/post way"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the abstract-level evidence suggests:",
+      "BMI consistently decreases after LVSG/LSG.",
+      "GERD burden measured objectively often worsens after LVSG/LSG, with several studies reporting higher DeMeester scores and/or higher postoperative reflux prevalence.",
+      "LESP findings are heterogeneous:",
+      "LESL findings are also inconsistent:",
+      "Taken together, the abstract-level signal is that weight loss is reliable, but postoperative antireflux physiology is variable and often unfavorable, especially regarding acid exposure.",
+      "This was the most consistent finding across studies.",
+      "Thus, LVSG/LSG was consistently effective for weight loss.",
+      "This was mixed.",
+      "At abstract level, LESP does not show a uniform postoperative effect.",
+      "This was also heterogeneous.",
+      "Across abstracts, the dominant signal is worsening objective reflux after LVSG/LSG, including higher DeMeester scores in several studies.",
+      "Reliable postoperative weight loss",
+      "Frequent worsening of reflux physiology",
+      "Inconsistent manometric changes, especially for LESP and LESL",
+      "A stronger overall reflux signal from pH-based outcomes than from manometry alone"
+    ]
+  }
+}

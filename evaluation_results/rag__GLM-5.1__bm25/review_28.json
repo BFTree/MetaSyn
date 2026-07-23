@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4470,
+    "output_tokens": 658,
+    "total_tokens": 5128
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.4547,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4157,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria and screening results, but it lacks most full systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, search strategy, quality assessment, data extraction, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults (>18 years) with BMI \u226527.5 kg/m\u00b2 or providers of care to this population.",
+      "Synchronous (real-time), interactive, remotely delivered weight management intervention.",
+      "With or without a comparison group.",
+      "Studies that explicitly reported on barriers and facilitators to engagement in the remote weight management intervention.",
+      "Mixed-methods, quantitative, or qualitative designs where barriers/facilitators were measured/discussed.",
+      "Search end date 2023-10-31."
+    ],
+    "exclusion_criteria": [
+      "Asynchronous-only or face-to-face-only interventions were excluded",
+      "Systematic reviews, protocols, conference papers, and unpublished works were excluded.",
+      "Studies published after this date were considered out-of-date and excluded per the review parameters."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Following the independent screening of titles and abstracts against the complete eligibility criteria, **no candidates were found to be eligible for inclusion.**",
+      "None.",
+      "No candidate from the supplied pool met all the specified criteria for population, synchronous remote intervention type, outcome (barriers/facilitators to engagement), study design, and publication date."
+    ]
+  }
+}

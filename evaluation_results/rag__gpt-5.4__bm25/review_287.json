@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10773,
+    "output_tokens": 1980,
+    "total_tokens": 12753
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.5279,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2323,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, synthesis, limitations, conclusion, and included studies, but it lacks key systematic review sections such as abstract, introduction, full methods, detailed search strategy, risk-of-bias/quality assessment, formal results, and proper references, with additional inconsistency in the number of included studies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population had to be patients with dental implants.",
+      "Exposure/comparison had to concern **thin vs thick gingival/periodontal/peri-implant soft-tissue phenotype/biotype**.",
+      "Outcomes needed to include at least one of: implant survival, marginal bone loss, peri-implantitis incidence, or related peri-implant clinical parameters.",
+      "Clinical primary studies only",
+      "Publication timing had to fit the review window and the \u201cpublished in the last 13 years\u201d rule."
+    ],
+    "exclusion_criteria": [
+      "I excluded systematic/narrative reviews, case reports/series without a comparative phenotype analysis, animal/preclinical studies, protocols, and clearly irrelevant topics.",
+      "I did not treat future-dated 2025/2026 records as eligible for a search ending 2023-09-30."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "thin gingival/periodontal phenotype is associated with more unfavorable peri-implant outcomes, particularly greater marginal bone loss and higher risk of peri-implant soft-tissue dehiscence, compared with thick phenotype",
+      "thin periodontal biotype represents a risk factor for additional bone loss",
+      "thin peri-implant phenotype to be a major risk indicator for buccal soft-tissue dehiscence in implants without peri-implantitis (OR 8.31)."
+    ]
+  }
+}

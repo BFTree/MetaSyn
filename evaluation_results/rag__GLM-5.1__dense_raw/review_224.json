@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18579,
+    "output_tokens": 1098,
+    "total_tokens": 19677
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.5145,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.369,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, synthesis, and included-study sections with some eligibility criteria, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) published in English",
+      "involving adult patients diagnosed with hypertension (office SBP \u2265 140 and/or DBP \u2265 90 mmHg, or home SBP \u2265 135 and/or DBP \u2265 85 mmHg)",
+      "assessing the effectiveness of biofeedback interventions (all modalities)",
+      "compared to control conditions (standard care, no intervention, or sham/placebo)",
+      "on systolic and/or diastolic blood pressure"
+    ],
+    "exclusion_criteria": [
+      "Articles published after the search end date of January 16, 2024",
+      "systematic reviews",
+      "meta-analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "observational studies",
+      "non-RCTs"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the effectiveness of biofeedback for blood pressure reduction in hypertensive patients is notably mixed and conflicting:",
+      "Several trials reported significant reductions in blood pressure favouring the biofeedback intervention.",
+      "Conversely, other rigorous trials failed to demonstrate a specific biofeedback effect.",
+      "Many effective interventions combined biofeedback with other behavioural techniques (e.g., relaxation, yoga, meditation, anxiety management), making it difficult to isolate the specific contribution of the biofeedback component alone.",
+      "In summary, while certain biofeedback modalities and combinations show promise in reducing blood pressure in hypertensive patients compared to control conditions, the evidence is heterogeneous.",
+      "The efficacy appears variable depending on the biofeedback type, treatment duration, comparison group, and measurement setting (office vs. home vs. continuous).",
+      "These findings align with prior systematic reviews in the pool, which concluded that there is no consistent, convincing evidence demonstrating the effectiveness of any particular biofeedback treatment for essential hypertension control."
+    ]
+  }
+}

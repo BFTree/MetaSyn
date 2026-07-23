@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19172,
+    "output_tokens": 1052,
+    "total_tokens": 20224
+  },
+  "metrics": {
+    "retrieval_recall": 0.8823529411764706,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.7058823529411765,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8275862068965517,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.8031,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6974,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes an objective, screening criteria, results synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, data extraction procedures, and PRISMA-style reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they reported on breast cancers (invasive or DCIS) detected in consecutive or randomly selected asymptomatic women with dense breasts who underwent supplemental ultrasound screening following a mammographic examination (at least when mammography was negative), compared to mammography alone within the same cohort."
+    ],
+    "exclusion_criteria": [
+      "Studies published before 2000",
+      "outside the search date window (ending July 26, 2017)",
+      "involving symptomatic women",
+      "assessing interval cancers exclusively",
+      "comparing different cohorts of women (e.g., different density groups receiving different interventions)",
+      "not reporting dense breast data separately",
+      "representing reviews, protocols, guidelines, or models"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence consistently demonstrates that supplemental ultrasound screening in women with dense breasts and negative or negative/indeterminate mammograms detects additional mammographically occult breast cancers, though it substantially increases recall and false-positive rates.",
+      "The additional yield of cancers detected only by ultrasound varied across the included studies, ranging from 0 to approximately 14 per 1,000 women screened, with most larger cohort studies reporting an incremental yield of roughly 2 to 3 per 1,000.",
+      "The cancers detected exclusively by ultrasound were predominantly invasive and node-negative.",
+      "All studies reporting on recall rates indicated a significant increase in false-positive findings and biopsies due to supplemental ultrasound.",
+      "Supplemental ultrasound screening for women with dense breast tissue significantly increases the detection of mammographically occult, predominantly early-stage invasive cancers, with an incremental yield generally ranging from 2 to 3 additional cancers per 1,000 women screened.",
+      "However, this benefit comes at the cost of a substantial increase in false-positive recalls and benign biopsies.",
+      "The clinical significance of these additional detections in reducing mortality remains uncertain, and the balance of benefits and harms must be carefully considered in screening policy."
+    ]
+  }
+}

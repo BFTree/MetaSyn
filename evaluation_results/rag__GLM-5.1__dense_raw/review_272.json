@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17682,
+    "output_tokens": 1262,
+    "total_tokens": 18944
+  },
+  "metrics": {
+    "retrieval_recall": 0.7555555555555555,
+    "retrieval_precision": 0.17,
+    "inclusion_recall": 0.5777777777777777,
+    "inclusion_precision": 0.8387096774193549,
+    "inclusion_f1": 0.6842105263157895,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.17777777777777778,
+    "inclusion_consistency": 0.6351,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4076,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes key review elements such as screening criteria, exclusion reasons, synthesis of findings, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, References, detailed search strategy, data extraction procedures, and quality assessment, with some internal inconsistency in the included-study count."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating the association between blood-based immune markers (inflammatory cytokines, kynurenine metabolites, and markers of microglial/monocyte activation) and cognitive dysfunction (global or domain-specific) in patients with schizophrenia spectrum disorder (SZ), bipolar disorder (BD), or major depressive disorder (MDD).",
+      "Studies were required to report an association analysis between a standardized neuropsychological outcome measure and an immune marker within the patient group."
+    ],
+    "exclusion_criteria": [
+      "excluding articles published after this date as out-of-scope.",
+      "Publication Year > 2021: Many candidates (approximately 80+) were published between 2022 and 2026, falling outside the search end date of 2021-11-08.",
+      "Study Design: Reviews, meta-analyses, opinion papers, preprints, and postmortem/ex vivo studies were excluded.",
+      "Population: Studies focusing on populations other than SZ, BD, or MDD (e.g., healthy controls only, HIV, stroke, dementia, metabolic syndrome, animals) were excluded.",
+      "Outcome: Studies lacking standardized neuropsychological tests (e.g., relying solely on symptom rating scales like PANSS or HDRS) or measuring brain volumes/connectivity without cognitive test scores were excluded.",
+      "Exposure: Studies not measuring blood-based immune markers or kynurenine metabolites (e.g., focusing solely on neurotrophic factors like BDNF without inflammatory indices, or epigenetic profiles) were excluded.",
+      "Association Reporting: Studies that did not report a specific statistical association (significant or null) between the immune marker and cognitive performance in the patient group were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included studies consistently demonstrate that elevated peripheral inflammatory markers and altered kynurenine pathway (KP) metabolites are associated with poorer cognitive performance across SZ, BD, and MDD, though the specific markers and cognitive domains vary.",
+      "The most robust findings involve pro-inflammatory cytokines.",
+      "Interleukin-6 (IL-6) and Tumor Necrosis Factor-alpha (TNF-\u03b1) are repeatedly inversely associated with global cognition, memory, and processing speed (Candidates 018, 064).",
+      "Similar inflammatory-cognition links are observed.",
+      "IL-6 is inversely correlated with global cognitive performance (030).",
+      "C-Reactive Protein (CRP) is consistently associated with worse executive functioning, processing speed, and global cognition in euthymic BD (071, 165).",
+      "In MDD, IL-6 and TNF-\u03b1 are associated with psychomotor speed and memory deficits (034, 062, 098).",
+      "Inflammatory markers (IL-6, TNF-\u03b1, CRP) emerge as transdiagnostic correlates of cognitive impairment, particularly affecting memory and executive domains.",
+      "Longitudinal data suggests that reduction in IL-6 and IL-1\u03b2 correlates with cognitive improvement following minocycline treatment in SZ (176), and IL-6 reduction correlates with memory changes post-ECT in depression (085)."
+    ]
+  }
+}

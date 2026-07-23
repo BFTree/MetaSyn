@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14033,
+    "output_tokens": 934,
+    "total_tokens": 14967
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.5297,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5623,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, eligibility criteria, screening outcomes, evidence synthesis, conclusion, and included study citation, but it lacks several full systematic review components such as a formal abstract, introduction, detailed search strategy, data extraction methods, quality assessment, PRISMA flow details, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "clinical trial/study",
+      "comparative study",
+      "prospective or retrospective design",
+      "at least 1-year follow-up with assessment of marginal bone loss",
+      "reporting of gingival phenotype (thin or thick)",
+      "published within the last 13 years (from the search end date of September 30, 2023)"
+    ],
+    "exclusion_criteria": [
+      "reviews (narrative, systematic, or other)",
+      "editorials",
+      "commentaries",
+      "conference abstracts",
+      "out of date (published after the search window or older than 13 years)",
+      "did not compare outcomes based on gingival phenotype thickness"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The presence of a **thin periodontal biotype** was identified as a **risk factor for additional marginal bone loss** compared to a thick biotype.",
+      "The findings support the hypothesis that thin gingival phenotype is associated with unfavorable clinical outcomes (specifically greater marginal bone loss) around dental implants, suggesting that thick phenotype provides a protective benefit against crestal bone resorption.",
+      "Based on the eligible evidence from the provided candidate pool, a thin gingival phenotype is associated with an increased risk of marginal bone loss around dental implants compared to a thick phenotype.",
+      "While the data on differential survival and peri-implantitis incidence by phenotype is limited in the included study, the significant association of thin biotype with greater bone loss underscores its role as a risk indicator for unfavorable peri-implant outcomes."
+    ]
+  }
+}

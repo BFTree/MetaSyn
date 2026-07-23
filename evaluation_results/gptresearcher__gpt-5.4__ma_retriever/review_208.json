@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34399,
+    "output_tokens": 997,
+    "total_tokens": 35396
+  },
+  "metrics": {
+    "retrieval_recall": 0.35714285714285715,
+    "retrieval_precision": 0.5,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.7,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.7176,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6154,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Discussion, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis/scoping-review elements such as search queries, eligibility criteria, screening summary, and narrative synthesis, but it lacks full PRISMA-style rigor elements such as a formal quality/risk-of-bias assessment, detailed data extraction procedure, and quantitative synthesis plan."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human participants or peer-reviewed conceptual/theoretical papers concerning human FST methodology.",
+      "Psychophysical testing of retinal sensitivity thresholds using a **full-field** stimulus and adaptive threshold methodology.",
+      "Clinical or research use/reporting of FST in severe retinal disease.",
+      "Sufficient methodological or reporting detail to inform assessment of variability or standardization."
+    ],
+    "exclusion_criteria": [
+      "Published after 2022-09-30.",
+      "Not full-field threshold psychophysics.",
+      "Dark adaptation papers without final scotopic threshold outcome.",
+      "Non-human or nonclinical work.",
+      "Mentions of testing without usable methodological/reporting detail."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local corpus evidence shows that FST had, by September 2022, matured into a clinically valuable method for severe retinal disease but had not matured into a consistently reported method.",
+      "The strongest and most relevant studies demonstrate that FST is often the only practical psychophysical threshold test in advanced IRD, especially where fixation, visual field, or ERG-based endpoints fail.",
+      "At the same time, studies varied materially in device implementation, stimulus color strategy, photoreceptor attribution approach, dark-adaptation handling, and other protocol features, while often under-reporting those same features.",
+      "My concrete judgment is that the main gap is no longer proof-of-concept.",
+      "The main gap is standardization discipline.",
+      "Without that baseline, FST studies remain clinically useful but systematically harder to compare than they need to be."
+    ]
+  }
+}

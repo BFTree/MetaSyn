@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13857,
+    "output_tokens": 1034,
+    "total_tokens": 14891
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.46153846153846156,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.4607,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.392,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic aim, eligibility/screening summary, narrative results, conclusion, and included articles, but it lacks formal Abstract, Introduction, Methods, Discussion, detailed search strategy, data extraction, quality assessment, synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies",
+      "specifically evaluate the impact of complete or optimal cytoreductive surgery (CRS) versus incomplete CRS on overall survival in patients with primary stage IV endometrial cancer",
+      "complete, optimal \u22641 cm, or incomplete >1 cm"
+    ],
+    "exclusion_criteria": [
+      "reviews or meta-analyses",
+      "involved ovarian or other non-endometrial cancers",
+      "included uterine sarcomas/carcinosarcomas",
+      "involved HIPEC",
+      "mixed stage III and IV populations without separate reporting",
+      "used a threshold for optimal cytoreduction (e.g., \u22642 cm) that does not match the review's defined thresholds (complete, optimal \u22641 cm, or incomplete >1 cm)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All four included studies consistently demonstrate a significant survival advantage associated with more extensive cytoreduction in stage IV endometrial cancer:",
+      "In conclusion, the available evidence from the included studies strongly supports that achieving complete or optimal (\u22641 cm) cytoreduction significantly improves overall survival compared to incomplete (>1 cm) cytoreduction in patients with primary stage IV endometrial cancer, regardless of histologic subtype.",
+      "Residual disease burden consistently emerges as an independent prognostic factor for survival in this population."
+    ]
+  }
+}

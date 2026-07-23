@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12715,
+    "output_tokens": 993,
+    "total_tokens": 13708
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.4725,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4745,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Introduction, Methods, Included Studies, Evidence Synthesis, and Conclusion sections, plus screening criteria and narrative synthesis, but it lacks an abstract, formal references, a detailed search strategy, quality assessment, and fuller PRISMA-style methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: Adults \u226518 years with BMI \u226527.5 kg/m\u00b2 (or adjusted thresholds) and/or their care providers.",
+      "Intervention: Synchronous, interactive, remotely delivered weight\u2011management intervention (e.g., videoconferencing, live chat, telephone counselling).",
+      "Comparison: Any or none.",
+      "Outcomes: Studies explicitly reporting barriers and/or facilitators to engagement with the remote intervention.",
+      "Study design: Primary studies (quantitative, qualitative, mixed\u2011methods)."
+    ],
+    "exclusion_criteria": [
+      "Population: <18 years or BMI <27.5 kg/m\u00b2.",
+      "Intervention: Solely asynchronous, autonomous, or face\u2011to\u2011face only; studies reporting only demographic predictors without specific barriers/facilitators.",
+      "Study design: Reviews, protocols, conference abstracts, editorials, opinion pieces, and unpublished works; non\u2011English language."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Engagement in synchronous remote weight\u2011management interventions for adults with excess weight is influenced by an interplay of capability (digital skills), opportunity (accessible, well\u2011supported technology), and motivation (accountability, encouragement).",
+      "Future interventions should proactively address these domains by offering clear technical guidance, tailoring platforms to user needs, and embedding regular, responsive human support.",
+      "Both studies underscore that **capability** (digital literacy, ease of use of technology) and **opportunity** (convenient access, technological support, clear instructions) are critical for initial and continued engagement.",
+      "**Motivational** factors\u2014particularly accountability, encouragement, and responsive support\u2014appear to sustain participation.",
+      "The available evidence is derived from only two studies, both of which reported primarily on facilitators and solutions; detailed barriers were less elaborately described in the abstracts.",
+      "Nevertheless, the consistent themes of digital capability, environmental support, and motivational reinforcement provide actionable direction for practitioners."
+    ]
+  }
+}

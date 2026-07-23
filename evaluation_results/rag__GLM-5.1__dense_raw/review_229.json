@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18915,
+    "output_tokens": 954,
+    "total_tokens": 19869
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.9333333333333333,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4428,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized into overview, efficacy, safety, conclusion, and included studies, but it lacks a formal abstract, introduction, methods, detailed search strategy, inclusion/exclusion criteria, data extraction process, quality assessment, synthesis methods, and full references, leaving major systematic-review structure gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective original research articles published between 2012 and 2022",
+      "evaluated endovascular catheter-based radiofrequency RDN in patients with treatment-resistant hypertension and CKD"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Most studies demonstrated significant and sustained reductions in both office and ambulatory blood pressure (BP) following RDN compared to baseline:",
+      "The evidence suggests RDN does not adversely affect renal function and may potentially slow the decline of eGFR in CKD populations:",
+      "The safety profile of RDN in CKD is generally favorable, though specific anatomical challenges in ESKD and procedural risks in advanced CKD were noted:",
+      "Catheter-based radiofrequency renal denervation appears to be an effective intervention for reducing office and ambulatory blood pressure in hypertensive patients with CKD, including those with ESKD on dialysis, with effects sustained up to 48 months.",
+      "The procedure demonstrates a favorable renal safety profile, stabilizing or improving eGFR in moderate-to-severe CKD and reducing albuminuria trends.",
+      "However, clinicians should be aware of potential renal artery anatomical limitations in ESKD and rare vascular complications such as arterial dissection in advanced CKD."
+    ]
+  }
+}

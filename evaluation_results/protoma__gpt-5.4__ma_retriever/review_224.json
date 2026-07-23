@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34111,
+    "output_tokens": 1099,
+    "total_tokens": 35210
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.28,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.5441,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4521,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and logical systematic review structure with abstract, background, methods, eligibility criteria, screening results, statistical synthesis, risk-of-bias assessment, discussion, conclusion, and included studies, but duplicated headings, an incomplete formal references section, and some reporting gaps prevent an excellent PRISMA-style organization score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adults or general patient populations with diagnosed hypertension or elevated blood pressure.",
+      "Studies evaluating biofeedback interventions, including heart rate variability biofeedback or other biofeedback modalities, as the primary intervention.",
+      "Studies including a control group such as standard care, usual care, sham intervention, waitlist, or no biofeedback intervention.",
+      "Studies reporting changes in systolic and/or diastolic blood pressure as outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies in non-hypertensive populations only, including normotensive participants without separate data for patients with hypertension.",
+      "Studies in which biofeedback is not a primary intervention or is embedded in a multicomponent program without isolating its effect.",
+      "Studies without an appropriate comparator group, or without quantitative blood pressure outcomes.",
+      "Non-comparative designs and non-primary research articles, including case reports, case series, reviews, editorials, and conference abstracts without sufficient data."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated a statistically significant benefit of biofeedback over control conditions for blood pressure change among patients with hypertension.",
+      "This indicates that, on average, patients receiving biofeedback experienced a greater improvement in blood pressure than those receiving standard care or no biofeedback intervention.",
+      "The direction of effect consistently favored biofeedback, with the pooled estimate suggesting an average improvement of approximately **4.6\u20135.2 mmHg** relative to control.",
+      "Overall, the available evidence suggests that **biofeedback improves blood pressure outcomes compared with control**, although the certainty around the precise magnitude of effect is tempered by moderate between-study heterogeneity and the small number of included studies.",
+      "This systematic review suggests that biofeedback may produce a modest improvement in blood pressure among patients with hypertension, but the certainty of that conclusion is limited by the size and consistency of the available evidence.",
+      "Overall, the present review identifies a credible signal of benefit, while also making clear that stronger contemporary evidence is needed before firm conclusions about the role of biofeedback in hypertension care can be drawn.",
+      "In this review of 10 studies, with 4 contributing to the pooled estimate, biofeedback was associated with a greater improvement in blood pressure than standard care or no biofeedback, with a random-effects mean difference of 4.65 mmHg (95% CI 0.13 to 9.16; p=0.0438)."
+    ]
+  }
+}

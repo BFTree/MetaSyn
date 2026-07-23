@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17250,
+    "output_tokens": 822,
+    "total_tokens": 18072
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.7777777777777777,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.7412,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6077,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, eligibility criteria, screening decisions, study-by-study synthesis, limitations, and bottom line, and it includes meta-analysis-style elements like inclusion/exclusion rules and synthesis notes, but it lacks a full PRISMA-style formal section structure and detailed search/screening methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Included study designs: cohort studies or RCTs.",
+      "Required population: chronic hepatitis B and/or chronic hepatitis C.",
+      "Required comparison: statin-exposed vs non-exposed.",
+      "Required outcomes: at least one of HCC, all-cause mortality, cirrhosis, or cirrhosis decompensation."
+    ],
+    "exclusion_criteria": [
+      "Excluded: reviews, editorials, protocols, case reports, non-English items, HIV-coinfected cohorts, liver-transplant/HCC-treatment cohorts, studies not centered on chronic viral hepatitis cohorts, and clearly out-of-scope populations."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included studies, the direction of effect was consistently favorable for statin exposure.",
+      "Reported benefits covered all key review outcomes:",
+      "Using only the supplied abstracts, the evidence base supports an association between statin exposure and reduced adverse liver outcomes in chronic viral hepatitis.",
+      "The most consistent signal is for reduced HCC incidence and reduced progression to cirrhosis.",
+      "Evidence for reduced decompensation and lower mortality is also present, especially in cirrhotic or advanced-disease cohorts.",
+      "From the supplied candidate pool, the eligible primary-study evidence consistently suggests that statin exposure is associated with lower risk of HCC and cirrhosis progression in chronic hepatitis B or C, with additional evidence for lower decompensation and mortality in some cohorts.",
+      "The signal is strongest in observational cohort studies and appears stronger in some analyses for lipophilic statins and higher cumulative exposure."
+    ]
+  }
+}

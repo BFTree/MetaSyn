@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12116,
+    "output_tokens": 1331,
+    "total_tokens": 13447
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.5789,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4713,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, eligibility decisions, evidence synthesis, limitations, and included articles, but it lacks a full systematic review structure with formal Abstract, Introduction, detailed Methods/search strategy, quality assessment, complete Results/Discussion sections, and proper References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "maternal preconception or antenatal lifestyle RCT in women with overweight/obesity",
+      "offspring follow-up",
+      "cardiovascular outcomes relevant to cardiac structure/function, blood pressure, heart rate, or vascular measures",
+      "original human study"
+    ],
+    "exclusion_criteria": [
+      "reviews/protocols",
+      "observational rather than RCT follow-up studies",
+      "maternal-only studies",
+      "fetal-only cardiac outcomes",
+      "neonatal adiposity/metabolic outcomes without relevant cardiovascular endpoints",
+      "interventions in children rather than maternal preconception/antenatal interventions",
+      "Protocols, reviews, commentaries, animal studies, and non-RCT follow-ups were excluded throughout."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these studies, the overall signal is that **maternal lifestyle intervention before or during pregnancy may improve offspring cardiac remodeling and some functional cardiovascular measures**, though the evidence is limited by small follow-up samples, attrition, and heterogeneity in intervention timing, modality, offspring age, and outcome assessment.",
+      "Taken together, the preconception evidence suggests a **consistent direction toward improved offspring cardiac structure and function**, especially septal thickness/remodeling and ventricular performance.",
+      "The antenatal evidence is more mixed.",
+      "So antenatal intervention evidence points in two directions: one trial suggests meaningful prevention of remodeling by a combined diet/physical activity program, whereas another exercise-only trial found no significant benefit, plausibly because intervention dose/adherence was inadequate.",
+      "The evidence is **promising but low certainty** at abstract-screening level.",
+      "Still, a notable pattern emerges: **where an effect is seen, it generally favors less offspring cardiac remodeling and better function after maternal lifestyle intervention**.",
+      "From the supplied pool, the evidence supports a cautious conclusion that **preconception or antenatal lifestyle interventions in women with obesity may reduce adverse offspring cardiac remodeling and improve some cardiac functional markers**, with the most consistent findings seen for:",
+      "Evidence for improvements in blood pressure, arterial stiffness/thickness, or broader vascular outcomes is **limited and less consistent** in the included abstracts.",
+      "Given the small number of eligible studies and attrition concerns, this should be interpreted as **early experimental evidence**, not yet definitive proof."
+    ]
+  }
+}

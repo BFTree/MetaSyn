@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16150,
+    "output_tokens": 1611,
+    "total_tokens": 17761
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.8666666666666667,
+    "inclusion_f1": 0.896551724137931,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.6057,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4273,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "Well-organized with clear screening, eligibility, included/excluded study notes, and synthesis sections, but it lacks a full PRISMA-style structure such as a detailed search strategy and formal methods/quality-assessment sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies had to be primary studies in women, evaluate at least one target exposure relevant to this review question, report breast cancer risk with an RR/OR/HR and 95% CI, and not be excluded as duplicate reports, non-risk studies, reviews, protocols, or off-topic articles.",
+      "women; breast cancer incidence/risk outcome; exposure including vitamin B6/PLP, vitamin B12, and/or methionine; and an OR/RR/HR with 95% CI."
+    ],
+    "exclusion_criteria": [
+      "duplicate reports, non-risk studies, reviews, protocols, or off-topic articles.",
+      "studies of survival rather than risk, studies of polymorphisms rather than nutrient exposure as the main risk factor, studies without breast cancer risk outcome, or studies clearly centered on folate without reporting target-nutrient risk estimates.",
+      "Review/meta-analysis articles such as `Candidate 020`, `029`, `041`, `086`, `118`, `124`, etc.",
+      "Non-risk studies such as survival-only, biomarker-correlation, intervention, and mechanistic studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "For vitamin B6/PLP, the evidence is mixed but leans weakly toward an inverse association in some settings, especially postmenopausal women and for circulating PLP.",
+      "For vitamin B12, findings are inconsistent.",
+      "For methionine, the evidence is also mixed.",
+      "However, the abstract-only evidence is too inconsistent to support a firm directional synthesis.",
+      "Higher circulating PLP may be associated with lower breast cancer risk, particularly in postmenopausal women.",
+      "Dietary vitamin B6 shows inconsistent associations, with some inverse findings but several null studies.",
+      "Circulating and dietary vitamin B12 do not show a consistent relationship with breast cancer risk.",
+      "Dietary methionine also shows inconsistent evidence, with some inverse or subtype-specific findings but not a stable overall pattern.",
+      "Menopausal status may modify associations, especially for PLP, but the abstract-level evidence is not robust enough to define clear premenopausal versus postmenopausal dose-response conclusions on its own."
+    ]
+  }
+}

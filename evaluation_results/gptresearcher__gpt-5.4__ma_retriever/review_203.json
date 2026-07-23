@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24179,
+    "output_tokens": 997,
+    "total_tokens": 25176
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.0967741935483871,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4471,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8761,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, References, eligibility criteria, search queries, screening decisions, and synthesis structure, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary human studies",
+      "Search-date eligibility: November 1, 2004 through November 30, 2014",
+      "Population included OAG, POAG, NTG, or HTG patients, with healthy or nonglaucomatous comparators where relevant",
+      "Evaluated TPD/TLCPD/TPG quantitatively",
+      "Reported quantitative TPD-related values in glaucoma patients",
+      "Provided enough information on study type, sample, population characteristics, inclusion criteria, data handling, and ethics quality to be screenable from available corpus content"
+    ],
+    "exclusion_criteria": [
+      "Duplicates",
+      "Experimental models",
+      "Reviews, chapters, supplements",
+      "Case reports",
+      "Comments/abstracts",
+      "Did not evaluate TPD",
+      "Did not include glaucoma patients",
+      "Did not present quantitative TPD values in OAG patients"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Collectively, these studies support the conclusion that TPD is generally higher in glaucoma than in healthy subjects and that higher TPD is associated with worse structural optic nerve damage, particularly smaller neuroretinal rim area.",
+      "My judgment is that the pressure-gradient hypothesis is credible and biologically coherent, but the 2004-2014 primary evidence is not strong enough to treat elevated TPD as a standalone causal explanation for OAG or NTG progression.",
+      "The best direct evidence within the inclusion window supports **yes**.",
+      "Again, the eligible evidence supports **yes**, though mostly through small physiologic association studies.",
+      "Based on the eligible 2004-2014 local MetaSyn corpus evidence, translaminar pressure difference is generally elevated in open-angle glaucoma relative to healthy subjects, and higher TPD is associated with worse glaucomatous optic nerve damage, especially smaller neuroretinal rim area.",
+      "The most defensible interpretation is that TPD is an important but partial driver, likely interacting with ocular biomechanics, lamina cribrosa susceptibility, and other vascular or neurodegenerative factors."
+    ]
+  }
+}

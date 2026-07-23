@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32516,
+    "output_tokens": 920,
+    "total_tokens": 33436
+  },
+  "metrics": {
+    "retrieval_recall": 0.3870967741935484,
+    "retrieval_precision": 0.24489795918367346,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.7346938775510204,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3870967741935484,
+    "inclusion_consistency": 0.746,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.9488,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/screening, Interpretation, Limitations, Conclusion, Included-Study List, and References, and it includes meta-analysis elements such as search query, eligibility criteria, screening decisions, and rationale for no pooling, but it lacks fuller PRISMA-style rigor such as a formal risk-of-bias/quality assessment and detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Participants were healthy older adults aged 60 years or older.",
+      "Functional mobility, balance, or gait was a specified primary outcome.",
+      "The intervention was a technology-assisted rehabilitation modality of interest: VR exergaming, motion-capture exergaming, serious gaming, wearable-assisted rehabilitation, or telerehabilitation.",
+      "The trial included at least one eligible control group, such as no treatment, usual care, conventional rehabilitation, conventional exercise, or another unrelated intervention.",
+      "The design was randomized.",
+      "Publication date fell between 2023-01-01 and 2023-06-10."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they focused on specialized populations, including neurological, neurodegenerative, orthopedic, pulmonary, or cancer populations, or if robotic or exoskeleton devices were used."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "For the prespecified systematic review question, date range, and eligibility criteria, **no local MetaSyn corpus study could be included**.",
+      "Therefore, no valid meta-analysis can be performed for this exact evidence slice.",
+      "The local corpus instead supports a narrower conclusion: adjacent randomized and synthesized evidence outside the window suggests that technology-assisted rehabilitation, particularly exergaming, telerehabilitation, and wearable feedback systems, tends to improve balance more consistently than strength or broad mobility in older adults.",
+      "Yet that broader pattern should not be mistaken for direct evidence within the requested 2023 window among healthy older adults only.",
+      "The appropriate scientific conclusion is that the evidence base for this exact question, as retrieved from the local corpus under the specified date restriction, is currently empty after screening.",
+      "Any stronger claim would overstate what the data support."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13676,
+    "output_tokens": 1233,
+    "total_tokens": 14909
+  },
+  "metrics": {
+    "retrieval_recall": 0.3,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.6577,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4865,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening results, evidence synthesis, conclusion, and included studies, but it lacks several core systematic review sections such as an abstract, introduction, formal methods, detailed search strategy, data extraction process, risk-of-bias/quality assessment, discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with severe obesity (BMI \u2265 35 kg/m\u00b2)",
+      "online group-based behavior change interventions for weight management",
+      "evaluation of weight loss or behavior change outcomes",
+      "a search end date of 2024-05-31"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews",
+      "protocols",
+      "development/usability studies without outcome evaluation",
+      "pharmacological trials",
+      "in-person interventions",
+      "individual-level digital interventions (e.g., standalone apps or 1-on-1 coaching)",
+      "targeted populations without severe obesity (e.g., BMI \u2265 30 or children)",
+      "Studies published after the search end date (2025, 2026) were also excluded as out-of-date relative to the search window."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Evidence from the two eligible primary studies indicates that online, group-based behavior change interventions are effective in achieving clinically significant weight loss (\u22655%) in adults with severe obesity.",
+      "While online group formats may result in slightly less absolute weight loss compared to in-person group modalities, they offer comparable effectiveness to other remote group formats (like phone conferences) and demonstrate superior cost-effectiveness and scalability.",
+      "Future research should continue to optimize online group engagement strategies to potentially close the efficacy gap with in-person treatments while leveraging the reach and cost benefits of digital delivery."
+    ]
+  }
+}

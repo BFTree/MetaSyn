@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13275,
+    "output_tokens": 698,
+    "total_tokens": 13973
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.6485,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.601,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a clear review question, eligibility criteria, screening results, and conclusion, but it lacks several required systematic review sections such as an abstract, introduction, full methods, discussion, references, detailed search strategy, quality assessment, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs or observational studies",
+      "samples from gut tissue",
+      "case\u2011control or cohort designs",
+      "studies using 16S rRNA sequencing with Illumina sequencers covering the V4 or V3\u2011V4 hypervariable regions",
+      "children under 5 in LMICs",
+      "stunting as the outcome"
+    ],
+    "exclusion_criteria": [
+      "Studies without publicly accessible data/metadata",
+      "antibiotic administration within three months before sample collection",
+      "reviews, protocols, editorials, conference abstracts, non\u2011primary studies"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After rigorous screening of the supplied candidate pool, **no primary studies met the predefined inclusion criteria** for this systematic review.",
+      "The absence of eligible studies highlights the need for future research that explicitly employs 16S rRNA sequencing on Illumina platforms targeting the V4 or V3\u2011V4 regions and directly compares gut microbiome features between stunted and non\u2011stunted children under five in LMICs.",
+      "No study fully met all requirements."
+    ]
+  }
+}

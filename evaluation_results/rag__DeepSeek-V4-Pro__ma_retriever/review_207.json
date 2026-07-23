@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19012,
+    "output_tokens": 1204,
+    "total_tokens": 20216
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.5408,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7086,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with review question, methods, results, study characteristics, key findings, synthesis/gaps, and included references, and it includes meta-analysis-style elements such as eligibility criteria, screening process, exclusions, and synthesis approach, but it lacks full PRISMA rigor such as a detailed database search strategy, formal quality/risk-of-bias assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "examine healthy adult women",
+      "report structural posterior pole parameters (macular morphology, choroidal thickness, optic disc characteristics) using clinical imaging modalities",
+      "compare menstrual cycle phases or pre\u2011 vs. post\u2011menopausal status"
+    ],
+    "exclusion_criteria": [
+      "Studies involving pregnancy, breastfeeding, hormonal contraception, hormone replacement therapy, systemic/ocular disease (unless a separate healthy\u2011women segment was present), or those using functional/haemodynamic approaches (e.g., Doppler ultrasound, OCT\u2011angiography perfusion metrics) were excluded.",
+      "Reviews, protocols, editorials, conference abstracts, and non\u2011ocular studies were also omitted."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, five primary studies met the inclusion criteria.",
+      "No study directly compared pre\u2011 and post\u2011menopausal women without hormone replacement therapy within this pool; the included studies focused exclusively on the menstrual cycle.",
+      "Three studies consistently reported a statistically significant decrease in subfoveal and parafoveal choroidal thickness during the mid\u2011luteal phase compared with the early follicular and/or ovulatory phases (Candidates 001, 002, 008).",
+      "Candidate 008 noted that the observed choroidal thickness change was small (7\u202f\u00b5m) and may have limited clinical impact.",
+      "Thus, the available evidence indicates that the optic nerve head structure remains stable across the menstrual cycle in healthy women.",
+      "Therefore, the present pool offers no evidence on structural posterior pole changes related to the menopausal transition in healthy women.",
+      "The small body of evidence consistently shows that choroidal thickness and the choroidal vascularity index decrease during the luteal phase of the menstrual cycle, while the optic nerve head appears morphologically stable.",
+      "The absence of studies on healthy post\u2011menopausal women without HRT highlights a major gap; future research should explicitly recruit women not using hormone therapy and compare posterior pole structures across the menopausal transition.",
+      "Additionally, all included studies were small and conducted in Asian or Turkish populations, limiting generalizability."
+    ]
+  }
+}

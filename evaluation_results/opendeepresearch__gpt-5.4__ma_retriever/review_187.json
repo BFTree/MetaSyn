@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27956,
+    "output_tokens": 978,
+    "total_tokens": 28934
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9666666666666667,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.8483,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7341,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes core systematic review elements such as eligibility criteria, search strategy, screening approach, study characteristics, narrative synthesis, meta-analysis feasibility, limitations, conclusion, and references, but it lacks a formal abstract/introduction and does not provide fully detailed PRISMA-style screening counts or formal quality assessment for all records."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language articles",
+      "Undergraduate dentistry students",
+      "Primary studies comparing **TBL** with **another teaching pedagogy**",
+      "Outcomes on **student satisfaction** and/or **academic performance**"
+    ],
+    "exclusion_criteria": [
+      "Non-English articles",
+      "Postgraduate-focused studies",
+      "Studies without a comparator teaching pedagogy",
+      "Records unavailable within the corpus timeframe ending **2023-05-02**"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included studies favored TBL over traditional lectures.",
+      "Across the two included studies, the direction of effect was consistent: TBL appeared to be more engaging, more acceptable, and more positively perceived than lecture-based instruction.",
+      "Both included studies also favored TBL on performance-related outcomes.",
+      "The available evidence therefore consistently suggests that TBL may improve academic performance relative to traditional lectures in undergraduate dentistry.",
+      "A quantitative meta-analysis was not feasible from the included corpus evidence.",
+      "Within the local MetaSyn PubMed corpus up to 2023-05-02, the available evidence suggests that team-based learning appears to be an effective alternative to traditional lecture-based teaching in undergraduate dental education, with consistent signals of:",
+      "However, this conclusion is based on only two included studies, both comparing TBL with lectures, not with other active pedagogies such as problem-based learning, enquiry-based learning, or case-based learning.",
+      "The evidence base is therefore promising but limited, and it supports TBL primarily as an alternative to didactic teaching, not as definitively superior to all other interactive educational approaches."
+    ]
+  }
+}

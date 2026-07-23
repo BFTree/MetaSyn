@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16597,
+    "output_tokens": 893,
+    "total_tokens": 17490
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.8095238095238095,
+    "inclusion_precision": 0.8947368421052632,
+    "inclusion_f1": 0.8500000000000001,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9444444444444444,
+    "post_retrieval_loss": 0.047619047619047616,
+    "inclusion_consistency": 0.6967,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3066,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a screening summary, narrative synthesis, conclusions, and included studies, but it lacks several standard systematic review/meta-analysis sections and rigor elements such as a formal abstract, introduction, detailed methods, database search strategy, data extraction process, risk-of-bias assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating the effect of psychoplastogens (ketamine, esketamine, LSD, psilocybin, ayahuasca, DMT, MDMA, scopolamine, and rapastinel) on peripheral blood levels of brain-derived neurotrophic factor (BDNF) in human subjects compared to baseline or control conditions"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "non-human (animal or in vitro) studies",
+      "did not measure peripheral BDNF in serum or plasma",
+      "did not administer an eligible psychoplastogen",
+      "were published after the search end date of June 13, 2023"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence indicates that psychoplastogen-induced elevations in peripheral BDNF are not uniform across substances, doses, or populations.",
+      "Ketamine and esketamine demonstrate the most variable BDNF response in clinical populations, with clear increases in some perioperative and infusion paradigms, but null findings in other TRD cohorts.",
+      "LSD may increase plasma BDNF at microdose or sub-threshold levels, though typical moderate psychedelic doses in healthy volunteers show no acute change.",
+      "Psilocybin, MDMA, ayahuasca, and scopolamine largely showed no significant acute alterations in peripheral BDNF at the doses tested in healthy volunteers.",
+      "These mixed findings highlight the complexity of translating preclinical neuroplasticity markers to peripheral human biomarkers and underscore the necessity of the proposed meta-analysis to quantify overall effect sizes and moderators."
+    ]
+  }
+}

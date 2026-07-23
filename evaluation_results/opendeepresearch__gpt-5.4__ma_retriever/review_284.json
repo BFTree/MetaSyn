@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32113,
+    "output_tokens": 1075,
+    "total_tokens": 33188
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.11428571428571428,
+    "inclusion_recall": 0.375,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9428571428571428,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.125,
+    "inclusion_consistency": 0.5601,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7447,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong meta-analysis structure elements such as explicit search queries, eligibility criteria, screening logic, included-study characteristics, and narrative synthesis, but it falls short of excellent PRISMA-style rigor because it lacks a complete PRISMA flow count, formal quality/risk-of-bias assessment, and fully developed conventional sections such as Introduction, Discussion, Conclusion, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "2012-02-01 through 2023-02-07",
+      "English",
+      "adults (>=18 years), preclinical AD, MCI due to AD/prodromal AD, AD dementia; cognitively normal controls could be included as comparators",
+      "primary human studies",
+      "Primary human study?",
+      "English and in date range?",
+      "Adult participants in AD continuum or appropriate controls?",
+      "Biomarker of interest present? YKL-40, sTREM2, or GFAP in CSF and/or plasma/serum",
+      "Outcome relevant? Stage/diagnosis differences and/or progression/cognitive decline/long-term clinical outcomes",
+      "Sufficiently within the AD continuum?"
+    ],
+    "exclusion_criteria": [
+      "non-human studies, reviews, editorials, comments, case reports, case series",
+      "Studies centered on non-AD dementia without separable AD results were excluded.",
+      "Studies of at-risk but not clearly AD-defined groups were treated conservatively."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the local corpus evidence supports the conclusion that **YKL-40 is the best-supported neuroinflammatory fluid biomarker in this review window for distinguishing AD stages and reflecting disease-related neuroinflammation**, with some evidence for prognostic relevance to later cognitive decline.",
+      "However, evidence is **too sparse, heterogeneous, and incompletely reported** to justify a robust quantitative meta-analysis from the locally retrieved record set alone.",
+      "The most consistent finding in the local corpus is that **YKL-40 rises with AD-related clinical and biomarker-defined disease stage**.",
+      "Together, these studies support a consistent interpretation: **CSF YKL-40 is higher in AD, including early and biomarker-defined stages, and remains elevated into dementia**.",
+      "Overall, the locally retrieved evidence supports **possible prognostic value of CSF YKL-40**, especially for later cognitive decline, but this conclusion currently rests mainly on a single strong longitudinal study.",
+      "The locally retained evidence for **GFAP** was limited and insufficient for a stand-alone synthesis.",
+      "Despite targeted searches, the local corpus review did **not identify a clearly eligible primary human sTREM2 study** within the specified date range that satisfied the full stage/prognosis criteria and was retained as includable in the evidence set.",
+      "A quantitative meta-analysis is **not well supported** by the locally retrieved evidence set as preserved here."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15296,
+    "output_tokens": 1365,
+    "total_tokens": 16661
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.5384615384615384,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.7039,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5337,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes the research question, screening/selection criteria, evidence synthesis, results by subgroup, conclusion, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, quality assessment, and proper references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only case-control or cohort studies examining renal cell cancer (RCC) incidence as the endpoint were included.",
+      "Studies had to report relative risk (RR) or odds ratio (OR) estimates with 95% confidence intervals (CIs) for alcohol consumption.",
+      "When multiple publications arose from the same study population, the study examining alcoholic beverage intake as the main interest or the pooled analysis with the largest number of cases was selected."
+    ],
+    "exclusion_criteria": [
+      "Studies on mortality (e.g., Candidate 008 on pancreatic mortality, Candidate 061 on GI mortality) or other cancer sites were excluded.",
+      "Mendelian randomization studies (Candidate 034), ecological studies (Candidate 041), cross-sectional studies, and reviews/meta-analyses (Candidates 001, 011, 028, 070, etc.) were excluded.",
+      "Several studies on RCC risk factors mentioned alcohol but did not report specific RR/CI values for it in the abstract (Candidates 026, 045, 078, 112, 019) and were excluded.",
+      "Studies published after the search end date of 2011-08-31 were excluded (e.g., Candidates 006, 022, 038, 052, 071, 094, 096, 098, etc.)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All seven included studies reported an inverse association between alcohol consumption and renal cell cancer risk.",
+      "Most studies indicated that the inverse association holds for both men and women.",
+      "Studies examining specific beverage types generally found inverse associations across all types, suggesting the effect is likely due to ethanol rather than specific beverage constituents.",
+      "The inverse association appears to persist across levels of consumption.",
+      "The consistent finding of an inverse association across diverse populations, study designs, and beverage types suggests that alcohol consumption is associated with a reduced risk of renal cell cancer.",
+      "The association appears largely similar in men and women, though a few single-cohort studies observed sex-specific differences, and it persists across various levels of consumption."
+    ]
+  }
+}

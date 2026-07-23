@@ -1,0 +1,111 @@
+{
+  "review_id": 301,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    7814,
+    7815
+  ],
+  "retrieved_article_ids": [
+    46285,
+    46287,
+    7814,
+    46045,
+    7815,
+    31182,
+    46286,
+    7792,
+    84594,
+    46034,
+    46243,
+    31060,
+    46165,
+    30903,
+    72536,
+    46056,
+    32746,
+    46041,
+    46039,
+    46062,
+    46184,
+    46203,
+    46183,
+    46227,
+    7802,
+    68755,
+    7808,
+    46206,
+    7810,
+    46244,
+    46208,
+    34262,
+    2094,
+    46249,
+    7803,
+    46049,
+    46204,
+    7806,
+    84560,
+    82942,
+    33962,
+    46205,
+    46201
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 411512,
+    "output_tokens": 10623,
+    "total_tokens": 422135,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 65696,
+        "output_tokens": 3000,
+        "total_tokens": 68696
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 5050,
+        "output_tokens": 4585,
+        "total_tokens": 9635
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 330549,
+        "output_tokens": 1494,
+        "total_tokens": 332043
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9009,
+        "output_tokens": 853,
+        "total_tokens": 9862
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1208,
+        "output_tokens": 691,
+        "total_tokens": 1899
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 43,
+    "retrieved_unique": 43,
+    "included_count": 2,
+    "included_unique": 2,
+    "search_calls": 4,
+    "unique_search_queries": 4,
+    "retrieved_instances": 80,
+    "duplicate_exposures": 37,
+    "fetch_calls": 6,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 4,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

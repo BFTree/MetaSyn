@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24084,
+    "output_tokens": 1026,
+    "total_tokens": 25110
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.84375,
+    "inclusion_precision": 0.7714285714285715,
+    "inclusion_f1": 0.8059701492537314,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.84375,
+    "post_retrieval_loss": 0.15625,
+    "inclusion_consistency": 0.7806,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6535,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening/selection summary, synthesis overview, and included study list, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies assessing the association between standardized intelligence test scores obtained in early life (under 21 years of age) in general populations and the risk of clinical physical or mental health disorders in later life"
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they focused solely on mortality without reporting health outcomes",
+      "estimated intelligence from later-life sociodemographic information",
+      "examined clinical cohorts without healthy controls",
+      "assessed cognitive aging/decline rather than clinical diagnoses",
+      "evaluated exposures other than early-life IQ (e.g., genetics, stress, SES)",
+      "were reviews, protocols, or meta-analyses",
+      "studies where the intelligence assessment occurred beyond the strict <21 age window for some or all participants (e.g., up to age 23) were excluded to maintain fidelity to the population criteria"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence broadly supports the review's research question: lower intelligence measured in early life is consistently associated with an increased risk of a wide array of later-life clinical health outcomes.",
+      "Numerous studies confirm an inverse relationship between early-life IQ and the risk of schizophrenia and other non-affective psychoses, severe depression, and total psychiatric hospitalizations.",
+      "Lower childhood or adolescent IQ is repeatedly linked to an elevated risk of dementia, including Alzheimer's disease, vascular dementia, and early-onset dementia.",
+      "Lower early-life IQ is associated with increased risk of coronary heart disease, stroke (and its subtypes), hypertension, metabolic syndrome, type 2 diabetes, and subclinical atherosclerosis (measured via imaging and biomarkers like ABI).",
+      "Lower cognitive ability is consistently linked to higher risks of alcohol-related morbidity, alcohol use disorder, and substance misuse events.",
+      "Across these studies, adjustment for socioeconomic position (both in childhood and adulthood) and educational attainment often attenuates the observed associations, suggesting these factors act as mediators or confounders."
+    ]
+  }
+}

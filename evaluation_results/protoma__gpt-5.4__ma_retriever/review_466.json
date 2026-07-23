@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31365,
+    "output_tokens": 1317,
+    "total_tokens": 32682
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.1794871794871795,
+    "inclusion_recall": 0.4090909090909091,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.5625000000000001,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.22727272727272727,
+    "inclusion_consistency": 0.7586,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5276,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes the major systematic review/meta-analysis sections plus detailed search strategy, eligibility criteria, screening process, statistical synthesis, heterogeneity assessment, and risk-of-bias assessment, but it falls short of excellent PRISMA-style structure because references are not fully presented and there are some duplicated headings and minor organizational redundancies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling hospitalized patients with sepsis or suspected sepsis in inpatient or emergency/ICU settings where patients are admitted to hospital.",
+      "Studies evaluating an automated sepsis alerting system for detection or early warning, including rule-based electronic alerts or machine learning-based prediction models implemented in clinical care.",
+      "Studies including a comparator of usual care, standard clinical practice, or a no-alert/control group without an automated sepsis alerting system.",
+      "Studies reporting at least one relevant clinical outcome, specifically mortality and/or hospital length of stay (LOS)."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on hospitalized sepsis patients, including outpatient populations, non-sepsis cohorts, or studies limited to healthy participants, simulations, or clinician-only usability testing.",
+      "Studies that develop or validate prediction models without implementation of an automated clinical alerting system, or that compare only different alert algorithms without a usual-care/no-alert comparator.",
+      "Studies not reporting mortality or length of stay outcomes.",
+      "Non-comparative study designs and non-primary research reports, including case reports, reviews, editorials, protocols, conference abstracts without sufficient data, and duplicate publications."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "automated sepsis alerting systems were associated with lower odds of adverse outcomes than usual care, with a fixed-effects pooled OR of 1.84 (95% CI 1.41\u20132.40; p<0.001).",
+      "However, the random-effects estimate was extremely unstable (OR 2.11\u00d710^8, 95% CI 1.43\u00d710^4 to 3.12\u00d710^12) because between-study heterogeneity was extreme (I\u00b2=99.8%), indicating that effects varied markedly across settings, alert designs, and implementation strategies.",
+      "Accordingly, automated sepsis alerts can be recommended as a potentially beneficial adjunct to usual care, but their impact should be interpreted cautiously and assessed within local workflows and performance monitoring."
+    ]
+  }
+}

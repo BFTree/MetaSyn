@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12868,
+    "output_tokens": 1617,
+    "total_tokens": 14485
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.7308,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, findings, study-level synthesis, methodological appraisal, and conclusion sections, and it includes meta-analysis-specific elements like eligibility criteria and exclusion reasons, but it stops short of full PRISMA-level rigor because detailed search strategy, full data extraction methods, and reference handling are not fully presented."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published between 2015 and 2022.",
+      "Primary empirical study.",
+      "Population included children with LGBTQ parents.",
+      "Comparison included children with different-sex parents.",
+      "Outcome included child mental health, psychological adjustment, behavioral problems, or closely related socio-emotional outcomes."
+    ],
+    "exclusion_criteria": [
+      "non-English/non-peer-reviewed items",
+      "studies without child mental health outcomes",
+      "studies focused only on parents",
+      "studies that did not include children with different-sex parents",
+      "No comparison group with different-sex parents",
+      "No mental health outcome",
+      "Review/protocol/non-primary",
+      "Outside date range"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included studies, the overall pattern is **reassuring rather than deficit-based**.",
+      "Four studies reported **no significant disadvantages** in mental health, socio-emotional adjustment, or behavioral outcomes for children with same-sex or sexual minority parents compared with children of different-sex parents.",
+      "One longitudinal adoption study found **few differences between family types**, with child adjustment problems increasing over time across all family types, while better parenting quality and parental mental health were associated with fewer problems.",
+      "On the basis of the supplied abstracts, there is **no consistent evidence that children with LGBTQ parents experience more mental health problems** than children with different-sex parents.",
+      "Using only the supplied candidate pool and title/abstract information, the evidence from eligible 2015-2022 primary studies does **not support the claim that children with LGBTQ parents have more mental health problems than children with different-sex parents**.",
+      "The small number of eligible studies and frequent use of small or selected samples limit certainty, but the direction of findings is consistent: outcomes are generally similar across family types, and broader family process variables such as parenting quality and parental mental health appear more predictive than parent sexual orientation or gender identity."
+    ]
+  }
+}

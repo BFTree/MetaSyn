@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8277,
+    "output_tokens": 1302,
+    "total_tokens": 9579
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.88,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.637,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3076,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, synthesis, outcome summaries, limitations, included studies, and a bottom line, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality assessment, and full reference section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "average-risk women",
+      "mammography screening interval comparisons (`annual`, `biennial`, or `triennial`)",
+      "relevant age groups within 45-74 or overlapping them",
+      "eligible primary-study designs (observational studies or decision models assuming full adherence)"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "guidelines",
+      "protocols",
+      "non-mammography modality studies",
+      "high-risk/familial populations",
+      "post-cancer surveillance studies",
+      "studies focused only on starting/stopping age without interval comparison against another interval"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The candidate pool supports a fairly consistent pattern: for average-risk women, `biennial` mammography is generally the most efficient reference interval, preserving most benefit of `annual` screening while reducing harms, especially false positives and overdiagnosis.",
+      "For women roughly corresponding to ages `50-69` and extending to `70-74`, the evidence is strongest that biennial screening performs similarly to annual screening on stage-related outcomes while substantially reducing false positives.",
+      "For younger women, the evidence is less uniform.",
+      "Evidence comparing `triennial` with `biennial` intervals is more limited.",
+      "Evidence from modeling strongly favors biennial screening as the efficient benchmark.",
+      "Annual screening can avert somewhat more deaths than biennial screening, but the incremental gain is modest relative to added harms.",
+      "Biennial strategies appear to offer the best benefit-harm efficiency for average-risk women.",
+      "For women 50-74, biennial vs annual screening generally does not worsen stage or tumor size in observational BCSC data.",
+      "Annual screening increases overdiagnosis relative to biennial; triennial tends to reduce it further.",
+      "Annual screening substantially increases cumulative false-positive recalls and biopsies versus biennial screening.",
+      "Biennial screening appears to retain most benefit of annual screening with fewer harms.",
+      "From this candidate pool, the best-supported conclusion is that `biennial mammography` is the preferred reference interval for average-risk women overall, especially ages `50-69`, because it maintains most screening benefit while clearly reducing false positives and likely overdiagnosis compared with `annual` screening."
+    ]
+  }
+}

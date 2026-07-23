@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 21102,
+    "output_tokens": 1075,
+    "total_tokens": 22177
+  },
+  "metrics": {
+    "retrieval_recall": 0.39285714285714285,
+    "retrieval_precision": 0.36666666666666664,
+    "inclusion_recall": 0.03571428571428571,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0689655172413793,
+    "screening_accuracy": 0.6666666666666666,
+    "conditional_retention": 0.09090909090909091,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.514,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.791,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic-review elements such as search queries, eligibility criteria, screening flow, qualitative synthesis, meta-analysis feasibility, limitations, conclusion, and sources, but it lacks a formal abstract/introduction and does not provide a full PRISMA-style quality assessment sufficient for an excellent rating."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Were primary human studies",
+      "Included adults aged 18 years or older",
+      "Enrolled participants with a major depressive episode defined by operationalized criteria such as DSM, ICD, or Research Diagnostic Criteria",
+      "Measured depressive severity using a validated rating scale",
+      "Evaluated ultrabrief pulse ECT (<0.5 ms)",
+      "Reported at least one target outcome:",
+      "remission",
+      "response",
+      "relapse",
+      "switching to another ECT form"
+    ],
+    "exclusion_criteria": [
+      "Reported outcomes only by clinical impression",
+      "Used non-standard ECT schedules such as daily ECT",
+      "Used experimental ECT parameters outside conventional amplitude ranges",
+      "Combined ECT with concurrent somatic antidepressant interventions such as ketamine, tDCS, or TMS",
+      "Were case reports or case series with 10 or fewer participants",
+      "Were nonhuman studies",
+      "Were conference abstracts, unpublished theses, editorials, or reviews"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus retrieval provided, the evidence base for ultrabrief pulse ECT in adult depression was very limited.",
+      "One includable comparative primary study (**Corpus ID 7101**) supports that ultrabrief pulse ECT has **meaningful acute antidepressant efficacy**, including acute response and remission outcomes, but the accessible evidence does not support a definitive pooled comparison against brief-pulse or conventional ECT [1].",
+      "No robust includable long-term evidence on **relapse** was retrievable from the supplied corpus trace, and no usable **switching-rate** data were identified.",
+      "The most defensible conclusion is that ultrabrief pulse ECT appears to be a clinically active acute treatment for depressive episodes, but the local corpus evidence supplied here is too sparse to establish firm comparative or long-term outcome estimates.",
+      "A formal meta-analysis was **not feasible**.",
+      "This review is therefore best interpreted as a **systematic review with qualitative synthesis only**, rather than a completed quantitative meta-analysis."
+    ]
+  }
+}

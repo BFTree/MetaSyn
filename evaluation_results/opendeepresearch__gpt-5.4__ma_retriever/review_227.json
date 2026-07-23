@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24409,
+    "output_tokens": 1351,
+    "total_tokens": 25760
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.2857142857142857,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.8928571428571429,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.5597,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6984,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with clear search strategy, eligibility criteria, screening decisions, included/excluded study summaries, narrative synthesis, limitations, conclusion, and sources, but it lacks a formal abstract/introduction structure and a systematic risk-of-bias or quality assessment sufficient for a top PRISMA-style score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language studies were eligible.",
+      "reported prevalence of hypertension in children/adolescents with Turner syndrome, or",
+      "provided data allowing prevalence calculation, and",
+      "involved participants aged 18 years or younger, or reported paediatric data separately when mixed-age cohorts were used."
+    ],
+    "exclusion_criteria": [
+      "Conference abstracts, case reports, review articles, unpublished manuscripts, and studies that only compared blood pressure values without reporting or permitting calculation of hypertension prevalence were excluded.",
+      "only compared blood pressure means or vascular characteristics with controls,",
+      "did not report hypertension prevalence or data permitting its calculation,",
+      "were case reports, conference abstracts, reviews, or unpublished manuscripts."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus supports the conclusion that hypertension or elevated blood pressure is common in paediatric Turner syndrome.",
+      "The most methodologically informative study showed that 24-hour ABPM identified hypertension that routine manual blood pressure measurement frequently missed, and also revealed a high burden of nocturnal hypertension.",
+      "This indicates that ABPM is likely more sensitive than conventional office-based methods for detecting blood pressure abnormalities in girls with Turner syndrome.",
+      "Taken together, the local-corpus evidence supports careful blood pressure surveillance in paediatric Turner syndrome and suggests that ABPM adds clinically important detection value beyond standard clinic blood pressure measurement."
+    ]
+  }
+}

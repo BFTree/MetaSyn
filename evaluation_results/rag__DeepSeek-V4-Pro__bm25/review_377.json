@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11628,
+    "output_tokens": 773,
+    "total_tokens": 12401
+  },
+  "metrics": {
+    "retrieval_recall": 0.8095238095238095,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8095238095238095,
+    "inclusion_consistency": 0.5747,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5782,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes limited screening results and eligibility criteria, but it lacks most required systematic review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, detailed search strategy, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original, peer\u2011reviewed research that investigated flocculation/aggregation processes of microplastics (MPs) in aquatic environments, with explicit reporting of (1) MP size and shape and (2) the size of formed aggregates",
+      "both the size and shape of microplastics and the size of aggregates/flocs be reported",
+      "simultaneously described the size/shape of microplastics and the size of flocs in aquatic flocculation experiments"
+    ],
+    "exclusion_criteria": [
+      "omitted MP size or shape, omitted aggregate size, or both",
+      "did not provide the required particle\u2011size and floc\u2011size data in the abstract",
+      "not relevant to aquatic flocculation"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After careful appraisal, **no candidate met all criteria**.",
+      "Because the review protocol strictly requires that both the size and shape of microplastics and the size of aggregates/flocs be reported, and none of the supplied abstracts contained this complete information, the final included set of primary\u2011study articles is empty.",
+      "None of the 200 candidates were eligible for inclusion.",
+      "No primary studies could be identified that simultaneously described the size/shape of microplastics and the size of flocs in aquatic flocculation experiments."
+    ]
+  }
+}

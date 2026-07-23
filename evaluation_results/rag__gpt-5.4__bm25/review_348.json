@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6926,
+    "output_tokens": 1501,
+    "total_tokens": 8427
+  },
+  "metrics": {
+    "retrieval_recall": 0.27450980392156865,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.19607843137254902,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.31746031746031744,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.0784313725490196,
+    "inclusion_consistency": 0.5501,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6022,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct eligibility, screening, synthesis, limitations, and included-studies sections, and it includes meta-analysis elements like screening criteria and synthesis approach, but it lacks a full PRISMA-style methods structure and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Longitudinal design",
+      "Biomarker assessed prospectively before onset/relapse/recurrence",
+      "MDD diagnosed by clinical interview or clinician diagnosis",
+      "Biomarker from leading biological models (eg, neuroimaging, hormones/cortisol, immunology, neurotrophic, neurotransmitter, oxidative stress, GI)"
+    ],
+    "exclusion_criteria": [
+      "Excluded reviews, protocols, cross-sectional/case-control-only studies, non-biological predictors, and studies focused on bipolar/mixed mood disorders",
+      "cross-sectional/case-control only",
+      "reviews, meta-analyses, or protocols",
+      "relapse-prevention treatment trials rather than biomarker prognostic studies",
+      "non-biological predictors",
+      "focused on diagnosis/subtyping rather than prospective onset/relapse/recurrence",
+      "mixed mood-disorder samples or outcomes not specific enough to MDD"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The most consistent evidence in the included pool concerns **cortisol/HPA-axis dysregulation**.",
+      "Taken together, the imaging evidence suggests that abnormalities in **salience/limbic circuitry** and related structural markers may carry prognostic information for both **first onset** and **recurrence**.",
+      "This supports the review hypothesis that **oxidative stress, inflammatory activation, and neurotrophic dysregulation** may precede onset, but based on this pool the evidence is much less extensive than for cortisol or neuroimaging.",
+      "The prospective biomarker literature supporting prediction of MDD onset/relapse/recurrence is **real but heterogeneous**.",
+      "Evidence is **not yet convergent enough** to imply a single robust biomarker; risk prediction likely depends on **population**, **developmental stage**, and **illness history**."
+    ]
+  }
+}

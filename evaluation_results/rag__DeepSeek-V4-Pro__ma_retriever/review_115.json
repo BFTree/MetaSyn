@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9984,
+    "output_tokens": 1212,
+    "total_tokens": 11196
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.4755,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7535,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, eligibility criteria, screening results, evidence synthesis, limitations, and conclusion, but it lacks several full systematic review sections such as an abstract, formal introduction, detailed methods/search strategy, quality assessment, references, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Patients with primary stage IV endometrial cancer",
+      "Complete or optimal CRS (no residual disease or residual \u22641 cm)",
+      "Incomplete CRS (gross residual >1 cm)",
+      "Overall survival",
+      "1997\u201101\u201101 to 2022\u201112\u201131"
+    ],
+    "exclusion_criteria": [
+      "Articles were excluded if they were systematic reviews, meta\u2011analyses, conference abstracts, editorials, guidelines, case reports, or studies that did not report OS stratified by extent of cytoreduction (complete, optimal, or incomplete) for a cohort of at least 10 patients with primary stage IV endometrial cancer.",
+      "Studies that mixed stages without separate data for stage IV, examined uterine sarcomas, or involved HIPEC were also excluded.",
+      "Publication dates outside 1997\u20112022 were grounds for exclusion."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All four studies consistently demonstrate a clinically meaningful and statistically significant improvement in overall survival when optimal or complete cytoreduction is achieved compared to incomplete cytoreduction.",
+      "The magnitude of benefit varies across histologic subtypes and study sizes, but the direction of effect is uniform.",
+      "Nevertheless, the evidence strongly supports the association between maximal cytoreductive effort and prolonged survival in stage\u202fIV endometrial cancer.",
+      "Complete or optimal cytoreduction (residual disease \u22641\u202fcm) is associated with significantly improved overall survival compared to incomplete cytoreduction in patients with primary stage\u202fIV endometrial cancer.",
+      "The findings are consistent across multiple cohorts and histologic subtypes."
+    ]
+  }
+}

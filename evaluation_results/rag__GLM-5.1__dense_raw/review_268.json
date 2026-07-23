@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18726,
+    "output_tokens": 935,
+    "total_tokens": 19661
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.8928571428571429,
+    "inclusion_precision": 0.8064516129032258,
+    "inclusion_f1": 0.8474576271186439,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.9615384615384616,
+    "post_retrieval_loss": 0.03571428571428571,
+    "inclusion_consistency": 0.7933,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6198,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around evidence synthesis and included studies, with brief screening/exclusion information, but it lacks core systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, formal References, search strategy, data extraction, quality assessment, and synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind, randomized, placebo-controlled trials (DBRPCTs) with an enrichment design (stabilized patients randomized to continue antidepressant or switch to placebo) for maintaining remission in adults with major depressive disorder"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on children/adolescents, older individuals, dual diagnoses (e.g., bipolar disorder, substance abuse, bulimia nervosa), acute-phase randomization, protocols, reviews, meta-analyses, post-hoc analyses, or publications after the search end date (2022-05-22) were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included primary studies consistently demonstrate that continuing antidepressant medication significantly reduces the risk of relapse or recurrence compared to switching to placebo in adults stabilized on treatment.",
+      "Discontinuation rates were generally higher in the placebo groups, often driven by relapse/lack of efficacy.",
+      "Most antidepressants exhibited tolerability profiles in the maintenance phase consistent with their acute-phase profiles.",
+      "Discontinuation due to adverse events was generally low and often comparable between drug and placebo groups (e.g., duloxetine, levomilnacipran, tianeptine).",
+      "Exceptions included mirtazapine, which had a higher discontinuation rate due to adverse events vs placebo (11.8% vs 2.5%), primarily related to weight gain."
+    ]
+  }
+}

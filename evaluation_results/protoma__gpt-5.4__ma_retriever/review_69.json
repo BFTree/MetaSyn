@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29912,
+    "output_tokens": 824,
+    "total_tokens": 30736
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.07865168539325842,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9213483146067416,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.7412,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6542,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Methods, Results, Discussion, Conclusion, and meta-analysis elements including search strategy, eligibility criteria, screening counts, and planned synthesis methods, but it lacks references and has incomplete PRISMA rigor elements such as a substantive risk-of-bias/quality assessment section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies including adults aged 18 years or older with severe obesity, defined as BMI >= 35 kg/m2 or an equivalent clinical classification reported for the sample.",
+      "Studies evaluating an online or digitally delivered, group-based behavior change intervention aimed at weight management, weight loss, or related lifestyle change.",
+      "Studies using a waitlist, usual care, standard care, or similar minimal-intervention comparator condition.",
+      "Studies reporting at least one relevant outcome: weight loss or body weight change, weight-related behavior change (for example diet or physical activity), or participant perceptions such as acceptability, usability, satisfaction, or overall experience."
+    ],
+    "exclusion_criteria": [
+      "Studies focused on children or adolescents, mixed populations where adults with severe obesity cannot be distinguished, or samples not meeting the severe obesity threshold.",
+      "Studies assessing interventions that are not online and group-based behavioral weight-management programs, including primarily in-person, individual-only, surgical, pharmacological, or non-weight-management interventions.",
+      "Studies without a relevant comparator, or studies not reporting any eligible outcome related to weight, weight-related behaviors, or user perceptions of the intervention.",
+      "Study designs not suitable for evaluating intervention effects or experiences, such as protocols, reviews, editorials, commentaries, conference abstracts without full data, or case reports."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No eligible studies were identified.",
+      "No included studies were identified that met the eligibility criteria for this review; therefore, no studies contributed computable effect sizes for meta-analysis.",
+      "These findings indicate that there is currently no direct evidence from eligible studies to support or refute the effectiveness or acceptability of online, group-based behavior change interventions for weight management in adults with severe obesity compared with waitlist or standard care.",
+      "The absence of eligible studies should be interpreted as an evidence gap rather than evidence of no effect.",
+      "No studies met the inclusion criteria.",
+      "Overall, the current evidence base is insufficient to support any firm conclusions about whether these interventions are beneficial, acceptable, or feasible for adults with severe obesity."
+    ]
+  }
+}

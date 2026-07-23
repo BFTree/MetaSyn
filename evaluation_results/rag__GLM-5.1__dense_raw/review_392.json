@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 2,
+    "input_tokens": 11284,
+    "output_tokens": 603,
+    "total_tokens": 11887
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.3336,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4333,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0.0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening and synthesis and includes some eligibility/filtering detail, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction methods, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "1971\u20132022 date range",
+      "primary empirical studies (observational, MR, RCT)",
+      "focus on salt intake exposure and blood pressure/CVD outcomes",
+      "specific inclusion of studies from the CDSR on salt reduction in hypertensive populations"
+    ],
+    "exclusion_criteria": [
+      "candidates published in 2023, 2024, 2025, or 2026 were immediately excluded as out-of-date relative to the search parameters",
+      "systematic reviews/meta-analyses, not primary studies",
+      "study protocols, lacking primary outcome results",
+      "mathematical modelling studies, not empirical observational, Mendelian randomization (MR), or RCT primary studies",
+      "methodological papers, commentaries, or synthetic data generation studies, not primary empirical studies on the relationship between salt intake and blood pressure/cardiovascular outcomes",
+      "it evaluates a population-level policy in the general population rather than a targeted \"salt reduction intervention in hypertensive populations\" as specified by the Cochrane Database of Systematic Reviews (CDSR) inclusion criterion",
+      "their interventions are multi-factorial lifestyle programs (e-counseling, therapeutic lifestyle change plus motivational interviewing, or multidisciplinary rehabilitation) rather than specific \"salt reduction interventions.\"",
+      "Candidate 132 reports that urinary sodium \"did not significantly differ\" between groups overall, which aligns with the exclusion of relations where significance is not established or marked as \"not found.\"",
+      "not salt intake",
+      "not blood pressure or cardiovascular outcomes",
+      "not a salt intake intervention",
+      "without explicitly reporting a specific causal relation between salt intake and blood pressure/CVD outcomes",
+      "an animal study on rats published prior to the 1971 search start date"
+    ],
+    "conclusion_direction": null,
+    "key_insights": []
+  }
+}

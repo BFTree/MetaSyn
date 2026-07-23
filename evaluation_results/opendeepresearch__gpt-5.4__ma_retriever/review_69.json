@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32665,
+    "output_tokens": 1122,
+    "total_tokens": 33787
+  },
+  "metrics": {
+    "retrieval_recall": 0.4,
+    "retrieval_precision": 0.10526315789473684,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8947368421052632,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5819,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5359,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report is comprehensively organized with review question, executive summary, methods, detailed search strategy, eligibility criteria, screening decisions, PRISMA-style flow, synthesis explanation, limitations, conclusion, and sources, with risk-of-bias/quality assessment appropriately noted as not possible because no studies were included."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged **18 years or older**",
+      "**Severe obesity**, defined as **BMI \u2265 35 kg/m\u00b2**",
+      "**Online**, **group-based** interventions for weight management",
+      "Targeting obesity-related behavior change, especially:",
+      "**dietary behavior**",
+      "**physical activity**",
+      "broader behavioral lifestyle change if these components were present",
+      "Comparator **not required**",
+      "If present, **any comparator type** was eligible",
+      "**Primary:** weight loss and/or behavior change",
+      "**Secondary:** engagement, acceptability, usability, participant experience, overall experience, and intervention/study characteristics",
+      "Primary empirical evaluation studies, including:",
+      "randomized trials",
+      "nonrandomized studies",
+      "single-arm evaluations",
+      "pilots",
+      "feasibility studies"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "Meta-analyses",
+      "Protocols",
+      "Intervention descriptions without evaluation",
+      "Studies not focused on adults with **BMI \u2265 35 kg/m\u00b2**"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No study met all inclusion criteria",
+      "No meta-analysis was possible",
+      "This is therefore an empty review for the exact question as framed.",
+      "No eligible local-corpus primary study was found to answer the review question directly, and no meta-analysis could be conducted."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21000,
+    "output_tokens": 1994,
+    "total_tokens": 22994
+  },
+  "metrics": {
+    "retrieval_recall": 0.3191489361702128,
+    "retrieval_precision": 0.3191489361702128,
+    "inclusion_recall": 0.10638297872340426,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.1923076923076923,
+    "screening_accuracy": 0.7872340425531915,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.2127659574468085,
+    "inclusion_consistency": 0.5704,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5151,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes core systematic review elements such as objective, eligibility criteria, search strategy, retrieval/screening process, included studies, and structured synthesis by year and drug class, but it lacks full PRISMA-level rigor such as a formal abstract, explicit quality/risk-of-bias assessment, and detailed data extraction/meta-analytic methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published between 2010-01-01 and 2020-07-01",
+      "English language",
+      "Adult patients with RRMM",
+      "Single-arm phase I or phase II trial design",
+      "At least 10 RRMM patients in an intention-to-treat population",
+      "Investigated an experimental compound:",
+      "alone, or",
+      "with dexamethasone only",
+      "Reported therapeutic activity and/or safety relevant to ORR and toxicity"
+    ],
+    "exclusion_criteria": [
+      "The experimental compound was combined with drugs other than dexamethasone",
+      "The study was randomized or otherwise not single-arm",
+      "The population was newly diagnosed rather than RRMM",
+      "The study was limited to a special subgroup population, such as renal failure",
+      "The study was conducted primarily for country-specific regulatory approval",
+      "The intervention concerned allogeneic stem cell therapy, bone-directed therapy, supportive care, or only a new route of administration",
+      "The publication date was outside the specified range"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "This timeline suggests a shift from IMiD-centered salvage approaches toward broader class diversification, especially proteasome inhibitors and monoclonal antibodies, while still preserving dexamethasone-only partnering where permitted.",
+      "These studies indicate sustained interest across the decade in pomalidomide-based salvage therapy for RRMM, particularly after prior standard-agent failure.",
+      "These studies represent two different development paths:"
+    ]
+  }
+}

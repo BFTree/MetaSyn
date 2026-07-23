@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31321,
+    "output_tokens": 943,
+    "total_tokens": 32264
+  },
+  "metrics": {
+    "retrieval_recall": 0.7142857142857143,
+    "retrieval_precision": 0.36585365853658536,
+    "inclusion_recall": 0.047619047619047616,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0909090909090909,
+    "screening_accuracy": 0.6585365853658537,
+    "conditional_retention": 0.06666666666666667,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.669,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7423,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/screening, Synthesis, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and synthesis approach, but it lacks fuller PRISMA rigor such as a detailed reproducible search strategy, formal data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Included information relating to plastics and MPs",
+      "Related to flocculation processes of MPs in aquatic environments",
+      "Peer-reviewed, original research articles"
+    ],
+    "exclusion_criteria": [
+      "Did not report the size and shape of MPs",
+      "Did not report the size of aggregates"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus evidence supports a clear mechanistic conclusion: **flocculation is a major vertical transport pathway for MPs in aquatic environments, and small-to-mid-sized MPs are the most readily incorporated into flocs**.",
+      "The strongest directly includable study shows that buoyant polyethylene can be rapidly captured by iron-organic flocs and stably buried in freshwater sediments.",
+      "Contextual estuarine studies extend this picture to `63\u2013125 \u00b5m` PVC fragments/threads and `63\u2013500 \u00b5m` non-spherical buoyant HDPE, both of which rapidly flocculate with fine sediment and settle.",
+      "Chemistry further modulates this process: higher salinity promotes heteroaggregation, while humic substances can suppress it.",
+      "My concrete assessment is that the proposition \u201cMPs smaller than `162 \u00b5m` are preferentially incorporated into flocs\u201d is **reasonable as a working rule for sediment-rich estuarine/coastal systems**, but it should not be treated as a universal threshold across all aquatic environments.",
+      "The retrieved evidence instead supports a **conditional flocculation window** shaped by MP size, non-spherical form, polymer buoyancy, ionic strength, natural organic matter, and the type of ballast available."
+    ]
+  }
+}

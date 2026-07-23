@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19925,
+    "output_tokens": 813,
+    "total_tokens": 20738
+  },
+  "metrics": {
+    "retrieval_recall": 0.9024390243902439,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.3170731707317073,
+    "inclusion_precision": 0.7647058823529411,
+    "inclusion_f1": 0.4482758620689655,
+    "screening_accuracy": 0.86,
+    "conditional_retention": 0.35135135135135137,
+    "post_retrieval_loss": 0.5853658536585366,
+    "inclusion_consistency": 0.3567,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4771,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes synthesis findings, a conclusion, and a list of included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, search strategy, screening process, data extraction, quality assessment, formal results/discussion separation, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published till January 04, 2022"
+    ],
+    "exclusion_criteria": [
+      "Articles published after this date (e.g., 2024, 2025) were excluded.",
+      "Reviews, case reports, and studies lacking explicit sex distribution data were also excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The sex distribution of mpox cases varies profoundly by context.",
+      "Before 2022, women comprised 19\u201357% of cases in endemic regions and 43\u201355% in nonendemic sporadic outbreaks, reflecting broad exposure risks.",
+      "In 2022, nonendemic countries saw the proportion of women drop to 1\u20134%, driven by MSM sexual networks.",
+      "Endemic countries in 2022 maintained a higher female proportion (22\u201329%), indicating persistent non-sexual transmission pathways."
+    ]
+  }
+}

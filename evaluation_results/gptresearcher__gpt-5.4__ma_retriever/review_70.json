@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29360,
+    "output_tokens": 841,
+    "total_tokens": 30201
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.36,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.4897,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7849,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, introduction, methods, screening results, study characteristics, findings, limitations, conclusion, included studies, references, and meta-analysis-relevant elements such as search queries and eligibility criteria, but it lacks full PRISMA-level rigor such as a detailed risk-of-bias/quality assessment and explicit data extraction and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with morbid obesity undergoing bariatric surgery.",
+      "Probiotic supplementation at any dose/duration; synbiotics accepted where they represented probiotics plus prebiotics.",
+      "Placebo, standard care, no intervention, digestive enzymes, or care as usual.",
+      "Randomized controlled trials (RCTs) or controlled clinical trials (CCTs)."
+    ],
+    "exclusion_criteria": [
+      "Other gastrointestinal procedures.",
+      "Probiotic compared against another active noncontrol intervention.",
+      "Non-primary studies for the included-study list."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence supports a narrow, not broad, clinical role for probiotics after bariatric surgery.",
+      "My judgment is that probiotics are **not** justified as routine postoperative therapy for weight-loss enhancement, because the aggregate evidence is negative on that question despite a few early or short-term positive trials.",
+      "In contrast, probiotics do appear to have a real adjunctive effect on triglyceride reduction, with smaller probable benefits for AST and some nutritional or glycemic markers.",
+      "Vitamin B12 findings are inconsistent, and dietary intake outcomes remain under-studied.",
+      "Clinically, the best current use case is selective adjunctive supplementation in patients where modest lipid or metabolic improvement matters, particularly in perioperative or synbiotic regimens and possibly in mini-gastric bypass settings."
+    ]
+  }
+}

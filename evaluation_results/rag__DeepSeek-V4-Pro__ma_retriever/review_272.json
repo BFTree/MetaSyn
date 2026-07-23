@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13856,
+    "output_tokens": 1457,
+    "total_tokens": 15313
+  },
+  "metrics": {
+    "retrieval_recall": 0.9111111111111111,
+    "retrieval_precision": 0.205,
+    "inclusion_recall": 0.7333333333333333,
+    "inclusion_precision": 0.8048780487804879,
+    "inclusion_f1": 0.7674418604651163,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.8048780487804879,
+    "post_retrieval_loss": 0.17777777777777778,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4333,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes key review elements such as research question, screening criteria, included-study characteristics, narrative synthesis, and a study list, but it lacks a standard abstract, introduction, detailed methods, quality assessment, data extraction approach, formal discussion/conclusion, full references, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "meta\u2011analyses, systematic/narrative reviews, protocols, opinion papers, conference abstracts, case reports/series, and any study focusing on non\u2011target diagnoses (e.g. OCD, hepatitis C).",
+      "studies that did not report a standardised neuropsychological outcome, did not measure a blood\u2011based immune marker, or did not report any direct association analysis between an immune marker and cognitive performance.",
+      "all articles with a publication year of 2022 or later were removed."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pattern of results supports a potential role for peripheral inflammation in the neurobiology of cognitive dysfunction across these disorders.",
+      "Immune markers explained variance in cognitive impairment above and beyond clinical confounders.",
+      "Some anti-inflammatory or regulatory markers (e.g. IL\u201110, IL\u201117) showed positive correlations with specific cognitive domains."
+    ]
+  }
+}

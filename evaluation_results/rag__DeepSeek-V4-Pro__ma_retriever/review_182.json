@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20268,
+    "output_tokens": 858,
+    "total_tokens": 21126
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.4444444444444444,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.3,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.6613,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4421,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background, Methods, screening results, study characteristics, evidence synthesis, exclusions, and Conclusion, and it includes key meta-analysis elements such as eligibility criteria, screening process, synthesis approach, and risk-of-bias comments, but it lacks a formal abstract, full PRISMA flow details, detailed database/search strategy, data extraction procedures, and complete references needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "children aged 10\u201313 years with palatally displaced maxillary canines in the mixed dentition.",
+      "extraction of the primary canine as interceptive treatment.",
+      "no interceptive treatment, delayed treatment, or additional extraction of the primary first molar.",
+      "normalization of eruptive position and successful eruption of the permanent canine.",
+      "randomised controlled trials (RCTs) on human patients (parallel or split-mouth)."
+    ],
+    "exclusion_criteria": [
+      "Non-randomised designs, case reports, editorials, systematic reviews, meta-analyses, and studies not reporting the required outcome were excluded.",
+      "Studies published after the search end date (2025) were also excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Extraction of the primary canine appears to increase the likelihood of spontaneous eruption of palatally displaced maxillary canines in children aged 10\u201313 years, compared with no interceptive treatment.",
+      "The evidence is based on several small RCTs, and while the direction of effect is consistent, the certainty of evidence is moderate due to risk of bias and imprecision.",
+      "Double extraction of the primary canine and first molar does not clearly improve eruption rates over single extraction.",
+      "These findings support the use of interceptive primary canine extraction as a first-line approach in appropriately selected patients."
+    ]
+  }
+}

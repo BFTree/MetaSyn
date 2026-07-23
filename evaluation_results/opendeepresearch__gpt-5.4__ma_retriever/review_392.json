@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22448,
+    "output_tokens": 2678,
+    "total_tokens": 25126
+  },
+  "metrics": {
+    "retrieval_recall": 0.14285714285714285,
+    "retrieval_precision": 0.02531645569620253,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.9873417721518988,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.4876,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5009,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is highly organized with clear sections for review question, eligibility criteria, search strategy, screening, included studies, results, limitations, and conclusion, and it includes several meta-analysis-specific elements, though it lacks a formal abstract/PRISMA flow presentation and some included-study documentation is incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were eligible if they were primary studies and met at least one of the following design conditions:",
+      "Observational studies relevant to salt/sodium and blood pressure or cardiovascular outcomes.",
+      "Randomized or intervention studies where salt reduction or sodium modification was meaningfully linked to blood pressure or cardiovascular outcomes.",
+      "Mendelian randomization studies, but only if the exact phrase \u201cMendelian randomization\u201d appeared in the title and/or abstract."
+    ],
+    "exclusion_criteria": [
+      "reviews, guidelines, and non-primary summaries",
+      "records outside the date window",
+      "records not primarily focused on salt/sodium exposure or intervention",
+      "records not reporting blood pressure, hypertension, or cardiovascular outcomes",
+      "Mendelian randomization candidates lacking the exact phrase \u201cMendelian randomization\u201d",
+      "extracted relations where significance was marked \u201cnot found\u201d",
+      "evidence whose causal interpretation appeared materially weakened by inadequate control of confounding",
+      "records with insufficient retrievable result detail for triangulation-ready extraction"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus search and screening process identified **limited but relevant primary-study evidence** on the relationship between salt exposure and blood pressure-related outcomes.",
+      "The clearest reproducibly documented included study was a five-year observational cohort from Japan showing that higher salt-related exposure markers, especially serum sodium and osmolarity, were associated with a higher risk of developing hypertension, with statistically significant findings after multivariable adjustment [1].",
+      "However, the overall evidence package was **not sufficient to support a full systematic triangulation across observational studies, Mendelian randomization studies, and randomized controlled trials**.",
+      "the retrievable evidence is **consistent with an adverse salt\u2013blood pressure relationship**",
+      "but the corpus evidence documented here is **insufficient for robust cross-design causal triangulation or quantitative meta-analysis**"
+    ]
+  }
+}

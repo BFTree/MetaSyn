@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17616,
+    "output_tokens": 1281,
+    "total_tokens": 18897
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.5622,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4442,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, synthesis, limitations, and evidence-strength sections, and it includes key meta-analysis elements like eligibility criteria, exclusion reasons, and synthesis logic; however, it lacks a fully PRISMA-style structure with a detailed search strategy, formal quality assessment, and standard abstract/introduction/methods/results/discussion sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "To be eligible, a study had to be an original peer-reviewed article on microplastics/plastics in aquatic environments that addressed flocculation or hetero-aggregation relevant to transport, and it had to report both microplastic size/shape and aggregate-related size information sufficiently in the abstract.",
+      "microplastic aggregation/flocculation in aquatic environments,",
+      "transport/sinking or settling consequences,",
+      "explicit microplastic size information,",
+      "and some aggregate/floc-related size or size-class information relevant to the review question."
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, non-original articles, wastewater/drinking-water treatment removal studies, oil-dispersant agglomerate studies, and studies that discussed aggregation without giving both required size elements in the abstract.",
+      "water/wastewater treatment rather than natural aquatic flocculation,",
+      "review article,",
+      "toxicity/uptake study without floc transport focus,",
+      "oil-microplastic agglomerates rather than flocs in the target sense,",
+      "abstract did not report enough aggregate-size information to satisfy the exclusion rule."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The candidate pool contains only a small number of studies that clearly match the target question from title/abstract alone.",
+      "The strongest direct evidence comes from laboratory settling/aggregation experiments in estuarine, marine, and freshwater systems showing that microplastics in the tens to low hundreds of micrometers can be incorporated into natural sediment or biogenic flocs and thereby switch from buoyant or slowly settling individual transport to faster-settling aggregate transport.",
+      "So the pool supports the general conclusion that smaller microplastics, especially around `63-125 \u00b5m` and roughly `85 \u00b5m`, are readily incorporated into flocs, and that size interacts with density, shape, and ambient particles.",
+      "It does not let me independently verify a universal cutoff at `162 \u00b5m` from abstracts alone."
+    ]
+  }
+}

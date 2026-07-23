@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21756,
+    "output_tokens": 975,
+    "total_tokens": 22731
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.8095238095238095,
+    "inclusion_precision": 0.6071428571428571,
+    "inclusion_f1": 0.6938775510204083,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.9444444444444444,
+    "post_retrieval_loss": 0.047619047619047616,
+    "inclusion_consistency": 0.5055,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3368,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, Synthesis, Conclusion, and an included-study list, but it lacks a detailed search strategy, PRISMA screening flow, data extraction procedures, quality/risk-of-bias assessment, and full reference details, with an inconsistency in the number of included studies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human subjects",
+      "administration of a psychoplastogen (ketamine, esketamine, LSD, psilocybin, ayahuasca, DMT, MDMA, scopolamine, rapastinel)",
+      "measurement of peripheral BDNF (serum/plasma) compared with baseline or a control condition"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "meta-analyses",
+      "animal studies",
+      "in vitro work",
+      "articles not reporting BDNF"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence is heterogeneous and often inconclusive.",
+      "The available human data do not support a consistent, reliable elevation of peripheral BDNF following administration of psychoplastogens.",
+      "While some ketamine/esketamine studies and a few LSD studies report increases, many well\u2011controlled trials\u2014particularly with psilocybin, MDMA, and scopolamine\u2014show no significant change.",
+      "The current evidence suggests that peripheral BDNF is not a reliable biomarker for psychoplastogen\u2011induced neuroplasticity in humans.",
+      "The overall pattern indicates inconsistent effects, with the majority of studies showing no significant BDNF elevation."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30471,
+    "output_tokens": 867,
+    "total_tokens": 31338
+  },
+  "metrics": {
+    "retrieval_recall": 0.3333333333333333,
+    "retrieval_precision": 0.03260869565217391,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 0.25,
+    "inclusion_f1": 0.15384615384615383,
+    "screening_accuracy": 0.9456521739130435,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6744,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4687,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review structure with abstract, background/introduction, explicit review question, methods, detailed search strategy, eligibility criteria, screening results, synthesis approach, risk-of-bias assessment, discussion, and conclusion, but it falls short of excellent due to duplicated headings, no full references section, some internal inconsistencies about quantitative synthesis, and minor organization artifacts."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies using observational case-control, cross-sectional, or baseline cohort designs that compare medication-free patients with major depressive disorder (MDD) with healthy control participants.",
+      "Participants include individuals with a clinical diagnosis of MDD who are medication-free at the time of MRI assessment, and a healthy control group without depressive disorder.",
+      "Studies measure cortical thickness using structural magnetic resonance imaging (MRI).",
+      "Studies report cortical thickness results for the MDD group versus healthy controls, with sufficient quantitative or clearly extractable comparative data."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on MDD versus healthy controls, including studies without a healthy control group or with mixed psychiatric populations where MDD-specific data cannot be separated.",
+      "Studies in which patients are receiving psychotropic medication at the time of imaging, or medication-free status is not stated or cannot be confirmed.",
+      "Studies not assessing cortical thickness with MRI, or reporting only other neuroimaging outcomes (e.g., volume, functional activation, connectivity) without cortical thickness data.",
+      "Non-original or ineligible reports, including reviews, meta-analyses, case reports, conference abstracts, letters, animal studies, or articles without full text."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified four studies comparing cortical thickness on MRI between medication-free patients with major depressive disorder and healthy controls.",
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently extractable numerical data in a consistent form, precluding meta-analysis.",
+      "Qualitatively, the available evidence suggests there may be cortical thickness abnormalities in medication-free major depressive disorder, but the direction, magnitude, and anatomical distribution of these findings were not consistent across studies.",
+      "Overall, the current evidence base remains limited and insufficient to support firm conclusions about whether medication-free major depressive disorder is reliably associated with altered cortical thickness relative to healthy controls.",
+      "Better-reported, methodologically comparable studies are needed to clarify this question."
+    ]
+  }
+}

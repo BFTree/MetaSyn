@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16940,
+    "output_tokens": 1598,
+    "total_tokens": 18538
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8333333333333333,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.8564,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5176,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening rationale, included/borderline/excluded categories, synthesis, interpretation, and limitations, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, PRISMA-style flow, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original in vivo or brain-tissue studies in rodents, non-human primates, or humans that used racemic ketamine and reported dopamine levels in brain under ketamine versus baseline/control."
+    ],
+    "exclusion_criteria": [
+      "anaesthetic-dose-only studies",
+      "studies lacking a control/baseline condition",
+      "non-original articles",
+      "in vitro work",
+      "studies that did not report dopamine levels themselves"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the likely included studies, the direction of evidence is **not uniform across species, regimen, or brain region**, but the rodent literature in this candidate pool supports the view that **subanaesthetic racemic ketamine can acutely increase dopamine in selected forebrain regions**, especially the **medial/prefrontal cortex**, with evidence of **region specificity** and **adaptation after repeated exposure**.",
+      "Together, these suggest that acute ketamine can elevate cortical dopamine, while repeated exposure may shift the system toward elevated baseline tone with reduced phasic responsiveness.",
+      "The borderline 1997 anesthesia/subanesthesia study (Candidate 003) is important context because it suggests **subanaesthetic ketamine may leave tissue dopamine unchanged while increasing dopamine metabolites in nucleus accumbens**, implying that some ketamine effects may appear more strongly in release/turnover than in bulk tissue content.",
+      "On the basis of title/abstract screening alone, the evidence in this fixed pool supports a **region-dependent dopaminergic effect of subanaesthetic racemic ketamine in rodents**, with the strongest support for **acute increases in prefrontal extracellular dopamine**.",
+      "Evidence for striatal/nucleus accumbens dopamine changes is less consistent in this pool and may depend on whether one looks at extracellular dopamine, tissue dopamine, or metabolites/turnover.",
+      "There is **no clearly includable human or non-human primate primary study in this candidate pool** that directly measures brain dopamine levels after racemic ketamine within the review period and criteria."
+    ]
+  }
+}

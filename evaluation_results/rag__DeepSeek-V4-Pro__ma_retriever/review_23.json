@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14343,
+    "output_tokens": 1204,
+    "total_tokens": 15547
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8750000000000001,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.646,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5953,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes Objective, Methods, screening results, included studies, synthesis summary, and Conclusion, but it lacks several standard sections such as Abstract, Introduction, Discussion, References, detailed data extraction procedures, synthesis methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) or randomized crossover studies",
+      "healthy adults (\u226518\u202fyears; overweight/obesity allowed but no other chronic conditions)",
+      "directly compared TRE plus exercise with an exercise\u2011matched control group following an unrestricted eating window",
+      "Studies had to be \u22654\u202fweeks in duration",
+      "report at least one of the pre\u2011specified body composition outcomes (FM, BF%, FFM)"
+    ],
+    "exclusion_criteria": [
+      "Protocols, reviews, conference abstracts, editorials, and non\u2011primary research were excluded.",
+      "Not a primary study (systematic reviews, meta\u2011analyses, protocols, narrative reviews, and case reports).",
+      "No exercise component or the exercise was not a controlled intervention (e.g., habitual physical activity only).",
+      "Intervention not time\u2011restricted eating (e.g., alternate\u2011day fasting, 5:2 intermittent fasting, caloric restriction without time restriction).",
+      "No appropriate control group (e.g., TRE + exercise was compared to a no\u2011exercise or different\u2011diet control, not to an exercise\u2011matched unrestricted eating group).",
+      "Outcomes not relevant (e.g., only appetite, metabolic markers, or performance, without body composition).",
+      "Ineligible population (chronic disease, post\u2011bariatric surgery, or type 2 diabetes).",
+      "Publication outside the search date window (2016\u201110\u201101 to 2023\u201102\u201128); all studies published in 2023 or later were excluded because the exact month of publication was unavailable and the search end date was February 2023."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The overall pattern of findings indicates that adding TRE to an exercise programme consistently reduces FM and, in many cases, BF%, without compromising FFM.",
+      "In several studies, FFM was maintained or even increased, suggesting that TRE does not impair lean mass accretion when combined with resistance or endurance training.",
+      "The magnitude of fat loss tended to be greater with TRE than with exercise alone, even when dietary intake was ad libitum or mildly restricted.",
+      "The available evidence from randomized trials up to early 2023 supports the addition of time\u2011restricted eating (typically an 8\u2011hour feeding window) to structured exercise training for improving body composition in healthy adults.",
+      "TRE combined with exercise consistently reduces fat mass and, where reported, body fat percentage, while preserving or even augmenting fat\u2011free mass.",
+      "These findings are consistent across resistance\u2011trained, endurance\u2011trained, and overweight/obese populations.",
+      "The results are limited by the short duration of most studies (4\u20138\u202fweeks) and modest sample sizes; longer\u2011term trials are needed to confirm the sustainability of these benefits."
+    ]
+  }
+}

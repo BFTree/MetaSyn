@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17211,
+    "output_tokens": 1005,
+    "total_tokens": 18216
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.823529411764706,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6916,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3737,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background, Methods, Results, Limitations, Conclusion, and included studies/references, and it includes eligibility criteria, screening, extraction, and synthesis approach, but it lacks full PRISMA-level detail such as a complete reproducible search strategy, formal risk-of-bias/quality assessment, and a detailed screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only original studies that enrolled \u2265\u202f10 patients with primary stage\u202fIV endometrial cancer, performed CRS, and reported OS data stratified by residual disease status (complete [no residual], optimal [\u2264\u202f1\u202fcm], or incomplete [>\u202f1\u202fcm]) were considered.",
+      "Studies that included other stages or recurrent disease were eligible only if survival data for primary stage\u202fIV patients were presented separately."
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "meta\u2011analyses",
+      "conference abstracts",
+      "case reports",
+      "studies on uterine sarcomas",
+      "those involving hyperthermic intraperitoneal chemotherapy (HIPEC)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All studies consistently reported that less residual disease after primary CRS \u2013 whether defined as complete, optimal, or no gross residual \u2013 was associated with longer OS.",
+      "The magnitude of the survival difference varied, but the direction of effect was uniform: patients with no gross residual or optimally debulked disease (\u2264\u202f1\u202fcm) experienced substantially better survival than those left with suboptimal (>\u202f1\u202fcm) residual disease.",
+      "Two studies [004, 017] specifically distinguished a \u201ccomplete\u201d (no residual) group and demonstrated a stepwise improvement in OS as the extent of cytoreduction increased.",
+      "Importantly, even within the optimal category, the few studies that compared no residual disease (R0) with macroscopic disease \u2264\u202f1\u202fcm [004, 012, 017] suggested that R0 may confer additional benefit, although the difference was not always statistically significant [012].",
+      "The one study that failed to detect a statistically significant OS advantage with optimal debulking [021] still showed a numerical trend favouring the optimally debulked group.",
+      "In primary stage\u202fIV endometrial cancer, a consistent body of retrospective evidence indicates that complete or optimal cytoreductive surgery (to no residual disease or \u2264\u202f1\u202fcm) is associated with a clinically and statistically significant improvement in overall survival compared with incomplete cytoreduction.",
+      "These findings support maximal surgical effort to achieve no gross residual disease in eligible patients.",
+      "Prospective trials with standardised definitions and adjustment for known prognostic factors are needed to confirm this association and to better define the role of adjuvant therapies in the era of molecular classification."
+    ]
+  }
+}

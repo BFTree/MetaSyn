@@ -1,0 +1,68 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23515,
+    "output_tokens": 1507,
+    "total_tokens": 25022
+  },
+  "metrics": {
+    "retrieval_recall": 0.14893617021276595,
+    "retrieval_precision": 0.25925925925925924,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.7777777777777778,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.1276595744680851,
+    "inclusion_consistency": 0.5809,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4266,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as a structured question, eligibility criteria, search queries, screening decisions, included study summary, limitations, conclusion, and sources, but it lacks a formal abstract, quality assessment, detailed data extraction, and full synthesis/meta-analysis methods needed for an excellent PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary observational study design",
+      "Published in English",
+      "Publication date from 2017-01-01 through 2022-06-13",
+      "Included both a PCOS group and a non-PCOS comparison group",
+      "Maternal PCOS diagnosis based on Rotterdam criteria",
+      "Reported at least one prespecified adverse birth outcome separately for PCOS versus non-PCOS groups"
+    ],
+    "exclusion_criteria": [
+      "Self-reported PCOS diagnosis only",
+      "ICD-based PCOS definition only",
+      "No non-PCOS comparison group",
+      "Did not report relevant offspring birth outcomes separately by exposure group",
+      "Non-primary design, including:",
+      "case report",
+      "case series",
+      "editorial",
+      "narrative review",
+      "scoping review",
+      "systematic review/meta-analysis",
+      "Published outside the date window",
+      "Non-English publication"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The screened evidence base was extremely limited.",
+      "On the basis of the local corpus records retrieved, there is **insufficient eligible evidence** to draw a firm conclusion about whether maternal PCOS is an independent risk factor for adverse birth outcomes in offspring across the general population after controlling for maternal age, BMI, and ART.",
+      "A cautious qualitative conclusion is that the local corpus contains at least one observational ART-based study relevant to this question, but the available evidence identified here is too sparse and too narrow to support a reliable overall causal or pooled inference.",
+      "As a result, the available eligible evidence base was too sparse to conclude confidently, from this corpus search alone, whether maternal PCOS independently increases the risk of the prespecified adverse birth outcomes across the general obstetric population.",
+      "Sparse evidence prevents meaningful meta-analysis from the identified local-corpus records alone",
+      "The independent effect of PCOS beyond age, BMI, and ART cannot be robustly estimated from a single partially characterized study"
+    ]
+  }
+}

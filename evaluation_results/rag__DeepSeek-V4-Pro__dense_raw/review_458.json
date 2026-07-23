@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4667,
+    "output_tokens": 1545,
+    "total_tokens": 6212
+  },
+  "metrics": {
+    "retrieval_recall": 0.7419354838709677,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.03225806451612903,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0625,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.043478260869565216,
+    "post_retrieval_loss": 0.7096774193548387,
+    "inclusion_consistency": 0.512,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5107,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key evidence-synthesis elements such as screening criteria, an included study summary, synthesis, limitations, and conclusion, but it lacks several standard sections such as a formal abstract, detailed methods/search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "identify randomized controlled trials (RCTs) that evaluate technology-assisted rehabilitation interventions\u2014including virtual reality exergaming (with balance platforms or motion capture), serious gaming, wearables, and telerehabilitation\u2014on balance and functional mobility in healthy older adults aged 60 years and over, compared with conventional exercises or no treatment.",
+      "The search was limited to records published between 2023\u201101\u201101 and 2023\u201106\u201110.",
+      "Only primary RCTs that met the population, intervention, comparator, outcome, and design criteria were eligible."
+    ],
+    "exclusion_criteria": [
+      "Publication year outside the 2023\u201101\u201101 to 2023\u201106\u201110 window (most candidates were published before 2023 or after mid\u20112023);",
+      "Study design other than an individual RCT (systematic reviews, meta\u2011analyses, protocols, scoping reviews, and non\u2011randomised designs);",
+      "Population restricted to specialised clinical groups (Parkinson\u2019s disease, stroke, dementia/mild cognitive impairment, multiple sclerosis, knee osteoarthritis, osteoporosis, neurological disorders, etc.);",
+      "Interventions involving robotic or exoskeleton devices; or",
+      "Outcomes not focused on balance or functional mobility."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "This suggests that a remotely\u2011supervised home\u2011based exergame intervention can enhance balance, functional mobility, fall\u2011related confidence, and mental well\u2011being in healthy older adults.",
+      "That study provides preliminary evidence that a home\u2011based exergame programme can improve balance, mobility, and fall efficacy in healthy older adults."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18850,
+    "output_tokens": 947,
+    "total_tokens": 19797
+  },
+  "metrics": {
+    "retrieval_recall": 0.43902439024390244,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.024390243902439025,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.047619047619047616,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.05555555555555555,
+    "post_retrieval_loss": 0.4146341463414634,
+    "inclusion_consistency": 0.737,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8194,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background, Methods, Results, Discussion, Limitations, Conclusion, and included-study sections, and it includes key review elements such as screening criteria and narrative synthesis, but it lacks a true abstract, full references, quality assessment, detailed search strategy, PRISMA flow details, and contains an included-study count inconsistency."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "confirmed mpox cases of any gender and age",
+      "reporting of the proportion (or absolute numbers) of women among cases",
+      "primary study designs (prevalence studies, case series, cross-sectional, cohort, case-control, surveys)",
+      "English language",
+      "human subjects"
+    ],
+    "exclusion_criteria": [
+      "studies addressing only male cases",
+      "sex distribution not reported",
+      "qualitative, policy, opinion, case reports (single patient), reviews, protocols, and editorials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Among confirmed mpox cases, the proportion of women is high (29\u201359%) in endemic African countries but very low (usually <2%) in non\u2011endemic countries affected by the 2022\u20132024 global outbreak.",
+      "Public health responses must be tailored accordingly: in endemic settings, women \u2013 including pregnant women \u2013 require targeted surveillance, prevention, and clinical care; in non\u2011endemic settings, efforts should continue to focus on at\u2011risk sexual networks while maintaining awareness that cases can occur in women.",
+      "This synthesis, based on the provided candidate pool, confirms a stark geographic contrast in the sex distribution of mpox cases.",
+      "In endemic African regions, women constitute a substantial proportion of cases, reflecting transmission patterns that include household, zoonotic, and, more recently, heterosexual contact.",
+      "In the 2022\u20132024 global outbreak, non\u2011endemic countries experienced predominantly sexual transmission among men who have sex with men, resulting in very few female cases.",
+      "The absence of eligible pre\u20112022 studies limits the ability to formally compare time periods, but the available data suggest that the emergence of clade IIb in 2022 did not materially alter the sex distribution in endemic areas, where women remain heavily affected."
+    ]
+  }
+}

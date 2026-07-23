@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18907,
+    "output_tokens": 1495,
+    "total_tokens": 20402
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.5702,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5318,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening summary, evidence synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, explicit inclusion/exclusion criteria, quality assessment, data extraction approach, meta-analysis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human participants with **gingivitis or periodontitis**",
+      "a **whole-diet intervention** consistent with a healthier/anti-inflammatory/Mediterranean/optimized pattern",
+      "a **comparison** with usual diet/control/non-optimized diet",
+      "**periodontal clinical parameters** measured over time",
+      "and at least **4 weeks** of follow-up"
+    ],
+    "exclusion_criteria": [
+      "not about periodontal disease and diet",
+      "reviews/protocols rather than primary studies",
+      "animal studies",
+      "cross-sectional studies without change over time",
+      "studies of self-reported periodontal outcomes",
+      "studies of single nutrients/foods/supplements rather than whole-diet patterns",
+      "or duplicate/secondary analyses of the same intervention dataset",
+      "**Candidate 114** was excluded as a **secondary analysis / same data source** as the Mediterranean diet gingivitis trial.",
+      "**Candidate 041** was excluded as a **methodological secondary analysis** of the same Mediterranean diet trial dataset.",
+      "**Candidate 052** was excluded because participants were periodontally healthy at baseline; it addressed disease development rather than patients with existing periodontal disease.",
+      "**Candidate 003** was excluded because it was cross-sectional with no time-based change.",
+      "**Candidate 035** was excluded because periodontal disease was self-reported."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence for periodontitis is weaker and more mixed than for gingivitis.",
+      "Across the included studies, the direction of effect generally favored the healthier diet for:",
+      "The evidence suggests that healthy whole-diet patterns\u2014especially Mediterranean and anti-inflammatory/optimized diets\u2014may reduce gingival inflammation in patients with periodontal disease, particularly in gingivitis, over short follow-up periods.",
+      "For periodontitis, the available evidence is limited and mixed."
+    ]
+  }
+}

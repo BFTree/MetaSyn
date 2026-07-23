@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15534,
+    "output_tokens": 1283,
+    "total_tokens": 16817
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.521,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5181,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "Well-organized and clearly structured with screening criteria, included/excluded study rationale, and synthesis discussion, but it is not a full PRISMA-style report with explicit abstract, methods, results, discussion, conclusion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Turner syndrome population.",
+      "Pediatric participants aged 18 years or younger, or data for that subgroup separable.",
+      "Reported prevalence of hypertension or enough data to calculate it.",
+      "English-language primary study."
+    ],
+    "exclusion_criteria": [
+      "Not a review, protocol, conference abstract, or a study limited to BP comparison with controls without prevalence data.",
+      "No hypertension prevalence data: many studies only report mean BP differences or \u201chigher BP\u201d versus controls without prevalence/counts, which the review explicitly excludes if they only provide group comparison.",
+      "Adult or mixed-age populations without separable pediatric prevalence data: e.g., Candidates 011, 047, 122.",
+      "Not primary studies relevant to the question: reviews, protocols, scoping reviews, position papers, etc., e.g., Candidates 007, 027, 036, 152.",
+      "Outside search end date: many 2022-2026 papers would not be eligible for a review ending 2021-05-31 even if otherwise relevant.",
+      "No Turner syndrome population: the majority of candidates."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included abstract-level evidence suggests that **hypertension or elevated blood pressure is common in pediatric Turner syndrome**, but the apparent prevalence varies substantially by measurement method and case definition.",
+      "The strongest methodology signal in the included evidence is from Candidate 001:",
+      "**24-hour ABPM identified more hypertension than clinic/manual measures.**",
+      "ABPM findings changed management, including antihypertensive treatment initiation.",
+      "This supports the review hypothesis that **ABPM may detect clinically important BP abnormalities missed by conventional measurements** in pediatric TS.",
+      "Pediatric TS is associated with a nontrivial burden of hypertension/elevated BP.",
+      "Reported prevalence varies markedly by measurement approach.",
+      "ABPM appears more sensitive than office/manual methods in at least one pediatric TS study."
+    ]
+  }
+}

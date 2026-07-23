@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19056,
+    "output_tokens": 846,
+    "total_tokens": 19902
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.8235294117647058,
+    "inclusion_precision": 0.9333333333333333,
+    "inclusion_f1": 0.8749999999999999,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.11764705882352941,
+    "inclusion_consistency": 0.6688,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6075,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as objective, search/screening criteria, included study characteristics, outcome synthesis, limitations, and included articles, but it lacks a full PRISMA-style structure with formal abstract/introduction/methods/discussion/conclusion sections, detailed database search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were eligible if they reported original data on breast cancers (invasive or DCIS) detected in consecutive or randomly selected asymptomatic women with dense breasts who underwent mammography and supplemental ultrasound (at least when mammography was negative).",
+      "Only studies published between January 1, 2000 and July 26, 2017 were considered."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, editorials, qualitative studies, and studies where breast cancers in dense breasts were not reported separately from fatty breasts were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The addition of ultrasound to mammography in women with dense breasts consistently increased the cancer detection rate, with the absolute gain ranging from a few cancers to over 10 per 1000.",
+      "However, this benefit was accompanied by a substantial rise in false\u2011positive recalls and biopsies, and the detection yield varied by study design, population, and whether the ultrasound was the first (prevalent) or subsequent (incident) screen.",
+      "Nevertheless, the consistent direction of effect supports the conclusion that supplemental ultrasound improves detection of early\u2011stage, mammographically occult breast cancers in dense breasts, at the cost of increased recall and biopsy rates."
+    ]
+  }
+}

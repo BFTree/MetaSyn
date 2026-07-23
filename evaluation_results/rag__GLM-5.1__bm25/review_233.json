@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15089,
+    "output_tokens": 1085,
+    "total_tokens": 16174
+  },
+  "metrics": {
+    "retrieval_recall": 0.6153846153846154,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.6153846153846154,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.7272727272727274,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.592,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5177,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear screening summary, synthesis of findings, and included-study list, but it lacks a formal abstract, introduction, methods, discussion, conclusion, references section, detailed search strategy, data extraction process, quality assessment, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "adults (\u226518 years)",
+      "investigating the effect of exercise training (\u22654 weeks) versus a non-exercise control on renin-angiotensin-aldosterone system (RAAS) parameters, catecholamines, urinary electrolytes, blood pressure, or heart rate",
+      "exercise training interventions (ranging from 4 weeks to 9 months) in adults with hypertension, heart failure, post-CABG status, or prehypertension",
+      "reported on at least one of the specified RAAS components (plasma renin activity, angiotensin-II, aldosterone), catecholamines (epinephrine, norepinephrine), urinary sodium excretion, or blood pressure"
+    ],
+    "exclusion_criteria": [
+      "Not an exercise training intervention:",
+      "Many studies evaluated pharmacological interventions (e.g., eplerenone, spironolactone, aliskiren, SGLT2 inhibitors) or dietary modifications (e.g., sodium restriction, vitamin D) rather than exercise.",
+      "Acute exercise protocols:",
+      "Studies assessing single bouts of exercise or interventions shorter than 4 weeks were excluded (e.g., acute HIIT, acute heat exposure, acute resistance exercise).",
+      "Animal studies:",
+      "Numerous studies were conducted in rats, mice, dogs, or hamsters.",
+      "Inappropriate study design:",
+      "Cross-sectional studies, retrospective cohorts, case reports, reviews, meta-analyses, editorials, and trial protocols were excluded.",
+      "Crossover drug trials were also excluded.",
+      "Population:",
+      "Studies involving children or adolescents (<18 years) were excluded.",
+      "No outcomes of interest:",
+      "Several exercise RCTs measured only blood pressure, heart rate variability, or endothelial function without assessing the specified RAAS or catecholamine outcomes."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Exercise training consistently attenuates the overactivation of the classical RAAS axis in adults with cardiovascular conditions.",
+      "Training reduces aldosterone levels, particularly in conditions characterized by neurohumoral hyperactivation.",
+      "Results for PRA were context-dependent.",
+      "A consistent finding across multiple studies is the reduction in sympathetic nervous system activity, evidenced by decreased norepinephrine (NE) levels.",
+      "The renal dopamine and kallikrein-kinin systems appear to mediate early natriuretic and depressor effects of exercise.",
+      "All included studies that measured blood pressure reported significant reductions in systolic and/or diastolic blood pressure in the exercise groups compared to non-exercise controls, supporting the antihypertensive efficacy of training modalities ranging from Tai Chi and moderate-intensity aerobic exercise to heated water-based exercise across various populations."
+    ]
+  }
+}

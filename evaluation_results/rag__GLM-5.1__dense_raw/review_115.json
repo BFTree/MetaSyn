@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18256,
+    "output_tokens": 1113,
+    "total_tokens": 19369
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7435,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6143,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic-review elements such as a research question, screening/selection criteria, synthesis of findings, and included studies, but it lacks a formal Abstract, Introduction, Methods, Discussion, Conclusion, detailed search strategy, data extraction process, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original research enrolling at least 10 patients with primary stage IV endometrial cancer who underwent CRS",
+      "reported progression-free survival (PFS) and/or overall survival (OS) stratified by the extent of cytoreduction (complete [no residual disease], optimal [residual \u22641 cm], or incomplete [residual >1 cm])"
+    ],
+    "exclusion_criteria": [
+      "Studies mixing stage IV with other stages were excluded unless survival for the stage IV subgroup was reported separately.",
+      "Conference abstracts, reviews, meta-analyses, studies involving uterine sarcomas or HIPEC, and studies published outside the 1997\u20132022 search window were excluded.",
+      "Candidate 001 and other reviews/meta-analyses were excluded based on study type.",
+      "Candidates 003, 009 defined optimal cytoreduction as \u22642 cm residual disease rather than the required \u22641 cm threshold.",
+      "Candidate 004 grouped optimal and incomplete residual disease together as \"any residual,\" failing to stratify survival by the required optimal vs. incomplete thresholds.",
+      "Candidates 002, 005, 010, 018 included mixed stages (e.g., stage III and IV) without explicitly reporting survival data for the stage IV cohort separately.",
+      "Candidates 008, 011, 020, 031, 037 and others either lacked the necessary stratified survival data in the abstract, involved HIPEC, or were published after the 2022 search end date.",
+      "Candidate 015 did not define the threshold for optimal cytoreduction or provide specific survival metrics for the stratified groups in the abstract."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Six retrospective cohort studies met all inclusion criteria, collectively demonstrating that achieving complete or optimal cytoreductive surgery (residual disease \u22641 cm or no gross residual) is associated with significantly improved overall survival compared to incomplete cytoreduction (residual disease >1 cm) in primary stage IV endometrial cancer.",
+      "The data consistently show a substantial OS advantage for optimal/complete debulking.",
+      "The survival benefit of maximal cytoreduction is evident across high-risk histologies, including uterine papillary serous carcinoma (UPSC/USC).",
+      "Microscopic or no gross residual disease status generally provides the best outcomes.",
+      "In summary, the included evidence strongly supports that complete or optimal cytoreductive surgery significantly improves overall survival in primary stage IV endometrial cancer patients compared to those left with incomplete (>1 cm) residual disease."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16108,
+    "output_tokens": 1139,
+    "total_tokens": 17247
+  },
+  "metrics": {
+    "retrieval_recall": 0.37777777777777777,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.28888888888888886,
+    "inclusion_precision": 0.48148148148148145,
+    "inclusion_f1": 0.36111111111111105,
+    "screening_accuracy": 0.91,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.08888888888888889,
+    "inclusion_consistency": 0.61,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5931,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening summary, evidence synthesis, and included studies, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction procedures, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that investigate the association between blood-based immune markers and cognitive dysfunction in patients with schizophrenia spectrum disorders, bipolar disorder, or major depressive disorder.",
+      "These studies reported an association analysis between at least one blood-based immunomarker (including inflammatory cytokines, kynurenine pathway metabolites, cellular immune ratios, or neurotrophic/growth factors with immune relevance) and a standardized neuropsychological outcome measure in the specified patient populations."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "postmortem or animal studies",
+      "protocols",
+      "intervention trials without baseline association analysis",
+      "if they only utilized symptom rating scales (e.g., PANSS cognitive subscale, depression scale items) as cognitive outcomes without a standardized neuropsychological battery"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included studies consistently demonstrate that elevated peripheral immune-inflammatory markers are associated with poorer cognitive performance across the specified psychotic and mood disorders.",
+      "Multiple studies across schizophrenia (SCZ), bipolar disorder (BD), and major depressive disorder (MDD) report negative associations between pro-inflammatory cytokines\u2014most prominently Interleukin-6 (IL-6) and Tumor Necrosis Factor-alpha (TNF-\u03b1)\u2014and global cognitive performance or executive functioning.",
+      "CRP is frequently identified as a predictor of cognitive dysfunction.",
+      "Dysregulation of the kynurenine pathway is significantly linked to cognitive deficits.",
+      "Ratios such as the neutrophil-to-lymphocyte ratio (NLR), monocyte-to-lymphocyte ratio (MLR), and platelet-to-lymphocyte ratio (PLR) are associated with cognitive impairments in BD and MDD (e.g., NLR with Stroop interference in BD; MLR with composite cognition in MDD).",
+      "Several studies highlight gender-specific effects, such as IL-6 being negatively associated with cognition primarily in female MDD patients, and CRP predicting cognitive performance only in women with BD."
+    ]
+  }
+}

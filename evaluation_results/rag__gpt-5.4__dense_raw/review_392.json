@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15313,
+    "output_tokens": 1288,
+    "total_tokens": 16601
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.2552,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3738,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized components such as screening rationale, evidence synthesis, interpretation, exclusion patterns, and included studies, but it lacks core systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, and References, and the included-study listing is internally inconsistent."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "the primary studies contributing salt-related evidence within one of those study-design strata",
+      "published between 1971-01-01 and 2022-12-31"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, methods papers, modeling studies, and post-2022 articles were not eligible.",
+      "LLM evaluation, methods, reviews, protocols, and commentary papers.",
+      "Salt studies published after 2022.",
+      "Salt modeling/cost-effectiveness studies without primary human exposure-outcome data.",
+      "Non-salt exposures or non-BP/CVD outcomes.",
+      "Out-of-range pre-1971 publication."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included evidence is sparse and uneven across the triangulation design set.",
+      "Randomized evidence in the pool is stronger for blood pressure than for hard cardiovascular events.",
+      "From the eligible primary studies in this candidate pool, the direction of evidence is broadly convergent for a harmful effect of higher salt/sodium exposure on blood pressure and, to a lesser extent, cardiovascular outcomes.",
+      "Because no in-range MR primary study was eligible here, this pool does not fully support the stated cross-design triangulation objective on its own.",
+      "That means the final conclusion from this pool is partial convergence rather than full three-design triangulation."
+    ]
+  }
+}

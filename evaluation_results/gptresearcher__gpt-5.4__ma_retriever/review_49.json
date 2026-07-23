@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27309,
+    "output_tokens": 948,
+    "total_tokens": 28257
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.3333333333333333,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.46153846153846156,
+    "screening_accuracy": 0.7407407407407407,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.5601,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5722,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/screening decisions, synthesis, limitations, conclusion, included-study list, and references, and it includes key meta-analysis elements such as search queries, eligibility criteria, screening logic, and synthesis approach, but it lacks full PRISMA-style rigor such as a formal quality/risk-of-bias assessment, detailed data extraction procedures, and a clearly specified quantitative meta-analysis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adult males with clinically diagnosed anxiety disorders.",
+      "Anxiety disorders including PTSD, OCD, social anxiety/social phobia, and panic disorder.",
+      "ED prevalence and/or severity, preferably with IIEF/IIEF-5, or sufficiently direct erectile-function outcomes.",
+      "Original research.",
+      "Up to 2019-11-28.",
+      "Included studies had to involve adult males with a documented anxiety-disorder diagnosis."
+    ],
+    "exclusion_criteria": [
+      "Exclusion criteria removed studies that only measured anxiety symptoms without a clinical diagnosis, lacked erectile-function measurement, used ineligible sexual-function tools, or were not original research.",
+      "Studies focused only on general sexual satisfaction without erectile-function relevance were deprioritized or excluded.",
+      "Review articles were excluded from the included-study set."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based on the local MetaSyn corpus, there is sufficient evidence to conclude that PTSD in adult male veterans is associated with a substantial and clinically meaningful increase in erectile dysfunction and broader sexual dysfunction.",
+      "The best evidence indicates that this association is independent of psychiatric medication use, though medication exposure likely worsens risk.",
+      "The most credible prevalence/risk estimate comes from the large VA cohort, while the most direct severity data come from IIEF-based case-control evidence showing very large differences between PTSD cases and controls.",
+      "Symptom-cluster research indicates that negative mood/cognition symptoms, avoidance/numbing, and relationship dysfunction are central correlates, which helps explain both the burden and the underrecognition of the problem in routine records.",
+      "My concrete judgment is that the local evidence supports PTSD as a robust ED risk condition in adult men, with effect sizes large enough to justify routine sexual-function screening in PTSD care.",
+      "However, the local corpus as retrieved does not adequately support parallel conclusions for OCD, panic disorder, or social anxiety disorder."
+    ]
+  }
+}

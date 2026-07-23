@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17137,
+    "output_tokens": 1353,
+    "total_tokens": 18490
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.4845,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5548,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear methods, screening results, included study characteristics, narrative synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references section, detailed search strategy, and quality assessment needed for PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "assessing any biofeedback modality (e.g., blood pressure, EMG, thermal, heart rate, GSR, device-guided breathing with biofeedback)",
+      "adults (\u226518 years) diagnosed with hypertension",
+      "outcomes including systolic and/or diastolic blood pressure changes",
+      "published in English"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews, editorials, conference abstracts, protocols, and non-randomised designs were excluded",
+      "non\u2011randomised or uncontrolled design",
+      "absence of a biofeedback intervention",
+      "study population not meeting the hypertension definition (e.g., normotensive individuals)",
+      "publication type (review, protocol, editorial, letter, consensus statement)",
+      "non\u2011English language",
+      "outcomes unrelated to the review question"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available RCT evidence suggests that biofeedback interventions can reduce blood pressure in hypertensive adults, but the specific effect beyond placebo or sham is inconsistent and often modest.",
+      "High\u2011quality, adequately powered trials with longer follow\u2011up are needed to determine which biofeedback modalities and delivery formats (e.g., home\u2011based, device\u2011guided) yield clinically meaningful and sustained blood pressure improvements.",
+      "Biofeedback generally reduces blood pressure, but the effect size and clinical significance vary.",
+      "Most studies (C002, C006, C008, C014, C019, C027, C033, C040) report statistically significant reductions in systolic and/or diastolic BP following biofeedback interventions.",
+      "Two studies (C012, C024) found no specific advantage of biofeedback over sham or placebo, suggesting that nonspecific factors (e.g., increased attention, relaxation) may account for part of the observed BP lowering.",
+      "Device\u2011guided slow breathing with biofeedback produced mixed results.",
+      "It is unclear whether the null result reflects the specific population, the type of biofeedback, or the high methodological quality of the trial."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 27644,
+    "output_tokens": 1395,
+    "total_tokens": 29039
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.4666666666666667,
+    "inclusion_f1": 0.6363636363636364,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7755,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7216,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background/Objectives, Methods, Included Studies, Evidence Synthesis, Discussion, Conclusion, and study list, and it includes meta-analysis elements such as eligibility criteria, screening approach, and synthesis by outcome, but it lacks a formal abstract, detailed PRISMA-style search strategy/flow diagram, and quality or risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: Women at average risk of breast cancer, aged 45\u201374 (subgroups 45\u201349, 50\u201369, 70\u201374).",
+      "Intervention: Annual, biennial, or triennial mammography screening.",
+      "Comparison: Biennial screening (as the primary reference).",
+      "Outcomes: Breast cancer deaths averted, QALYs, stage at detection, interval cancers, overdiagnosis, false\u2011positive results, radiation\u2011related effects.",
+      "Design: RCTs, observational studies (cohorts, time\u2011trend analyses, registry\u2011based studies), and decision\u2011analytic models (with 100% adherence assumed for modelling studies).",
+      "Language: English."
+    ],
+    "exclusion_criteria": [
+      "Excluded were studies of women at high risk (BRCA1/2 mutations, personal history of breast cancer/lobular neoplasia, chest irradiation, or a first\u2011degree relative with breast cancer), systematic reviews, guidelines, protocols, editorials, and conference abstracts."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "For average\u2011risk women, **biennial mammography offers a favorable balance of benefits and harms across all age groups**, particularly for those aged 50\u201369.",
+      "Annual screening provides additional mortality reductions but at a steep cost in terms of false positives, overdiagnosis, and resource use, and the incremental benefit is most apparent in women aged 40\u201349.",
+      "Triennial screening may be an acceptable strategy in some contexts but requires further evaluation, especially regarding interval cancer rates.",
+      "Decision\u2011making should incorporate individual risk factors (breast density, menopausal status, comorbidity) and patient preferences, aligning with a move toward risk\u2011stratified screening.",
+      "This synthesis, based on 30 studies spanning RCTs, large observational cohorts, and comprehensive microsimulation models, indicates a clear trade\u2011off: shorter screening intervals (annual) maximize mortality reduction and early detection but substantially increase false\u2011positive results, benign biopsies, overdiagnosis, and health\u2011care costs.",
+      "Biennial screening retains most of the mortality benefit while markedly reducing harms, especially for women aged 50\u201369.",
+      "The evidence for triennial screening is limited but suggests it may be a reasonable option where resources are constrained, with only a small loss in effectiveness compared with biennial screening in older age groups."
+    ]
+  }
+}

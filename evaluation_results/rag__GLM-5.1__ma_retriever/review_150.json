@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10462,
+    "output_tokens": 1339,
+    "total_tokens": 11801
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.6428571428571429,
+    "inclusion_consistency": 0.5731,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3952,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with a review target, screening summary, evidence synthesis, and included studies, but it lacks key systematic review sections such as a formal abstract, introduction, detailed methods, discussion, conclusion, references, search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "provided risk estimates",
+      "provide a relative risk (RR) or odds ratio (OR) with a 95% confidence interval (CI) for the target exposures in the abstract"
+    ],
+    "exclusion_criteria": [
+      "publication after the search end date (2013-06-18)",
+      "evaluating outcomes other than breast cancer risk (e.g., cardiovascular disease, mortality/survival, other cancers, or biomarkers)",
+      "focusing on exposures outside the scope of the review (e.g., dietary patterns, soy/phytoestrogens, other micronutrients, or genetic polymorphisms as the primary exposure)",
+      "being reviews, meta-analyses, editorials, or comments",
+      "failing to provide a relative risk (RR) or odds ratio (OR) with a 95% confidence interval (CI) for the target exposures in the abstract",
+      "Studies that only reported null findings verbally (e.g., \"no association found\") without supplying the quantitative risk estimate in the abstract were excluded per the strict inclusion criterion requiring provided risk estimates."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Results for dietary vitamin B6 intake were inconsistent.",
+      "Findings for dietary vitamin B12 were notably heterogeneous.",
+      "Data explicitly quantifying methionine intake and breast cancer risk with provided effect estimates were sparse.",
+      "The data suggest menopausal status modifies the effect of circulating vitamin B6.",
+      "Both prospective studies assessing plasma PLP (Candidates 002 and 010) identified an inverse association specific to postmenopausal breast cancer, with no significant protection observed in premenopausal women or in overall analyses.",
+      "For dietary vitamin B12, the inverse association in the Mexican population (Candidate 016) was notably stronger among postmenopausal women."
+    ]
+  }
+}

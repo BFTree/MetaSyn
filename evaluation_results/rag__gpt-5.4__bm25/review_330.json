@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10961,
+    "output_tokens": 1136,
+    "total_tokens": 12097
+  },
+  "metrics": {
+    "retrieval_recall": 0.8064516129032258,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.5161290322580645,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6274509803921569,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.64,
+    "post_retrieval_loss": 0.2903225806451613,
+    "inclusion_consistency": 0.6483,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4692,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized elements such as synthesis, limitations, inclusion/exclusion principles, and included studies, but it lacks a standard systematic review structure with abstract, introduction, formal methods, results, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary empirical case-control studies",
+      "Schizophrenia-spectrum adult samples with healthy controls",
+      "Quantitative syntax/grammar comprehension and/or production outcomes"
+    ],
+    "exclusion_criteria": [
+      "Reviews/meta-analyses/protocols",
+      "Case reports",
+      "Studies centered on semantics, pragmatics, prosody, discourse, verbal fluency, or neuroimaging without usable syntax behavior",
+      "Pediatric/adolescent samples or clearly mixed nonadult populations",
+      "High-risk/UHR/relatives-only studies",
+      "Non-schizophrenia disorders"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across the eligible studies, the evidence is consistent that schizophrenia is associated with measurable syntactic impairment relative to healthy controls.",
+      "This appears in both receptive and expressive language.",
+      "The safest conclusion is that syntax deficits are real and fairly reproducible, but their degree varies across patients and may interact with thought disorder and cognitive control.",
+      "A second recurring pattern is that complex syntax is especially vulnerable."
+    ]
+  }
+}

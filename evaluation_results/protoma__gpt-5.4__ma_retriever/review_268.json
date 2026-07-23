@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33084,
+    "output_tokens": 1026,
+    "total_tokens": 34110
+  },
+  "metrics": {
+    "retrieval_recall": 0.8214285714285714,
+    "retrieval_precision": 0.3484848484848485,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.7857142857142857,
+    "inclusion_f1": 0.7857142857142857,
+    "screening_accuracy": 0.8939393939393939,
+    "conditional_retention": 0.9565217391304348,
+    "post_retrieval_loss": 0.03571428571428571,
+    "inclusion_consistency": 0.6482,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6755,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening results, statistical synthesis, study characteristics, risk of bias, discussion, conclusion, and included studies, but it falls short of excellent due to duplicated headings, an awkward drafting artifact in the Discussion, limited data extraction detail, no full reference section, and incomplete PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials comparing maintenance treatment with one of the specified antidepressants versus placebo, with follow-up sufficient to assess relapse over about 6 months.",
+      "Studies including adults with major depressive disorder who are in the maintenance phase or stabilized/remitted on antidepressant treatment at randomization.",
+      "Trials evaluating any of the listed antidepressants as continuation or maintenance monotherapy, with a placebo comparator arm.",
+      "Studies reporting at least one relevant outcome: 6-month relapse rate, all-cause discontinuation, discontinuation due to adverse events, or individual adverse events."
+    ],
+    "exclusion_criteria": [
+      "Studies not using a randomized placebo-controlled design, including observational studies, case reports, reviews, and acute-phase treatment trials without maintenance-phase randomization.",
+      "Studies enrolling children/adolescents, patients without major depressive disorder, or mixed psychiatric populations where maintenance-phase MDD data for adults cannot be separated.",
+      "Trials evaluating interventions outside the specified antidepressants, combination regimens without a separable antidepressant-versus-placebo comparison, or non-pharmacologic treatments.",
+      "Studies not reporting maintenance-phase relapse or tolerability/safety outcomes relevant to the review, or with follow-up clearly shorter than the target 6-month relapse assessment period."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated that continuation of antidepressant therapy in adults with major depressive disorder during the maintenance phase significantly reduced the risk of relapse over 6 months compared with placebo.",
+      "Across 14 studies, the random-effects pooled risk ratio (RR) was **0.468** (95% CI **0.379 to 0.580**; **p<0.0001**), indicating a robust benefit in favor of antidepressants.",
+      "This corresponds to an approximately **53% relative reduction** in relapse risk versus placebo.",
+      "Nevertheless, the direction of effect consistently favored antidepressants, and the confidence interval remained well below the null, suggesting that the overall finding is unlikely to be explained by chance alone.",
+      "In this meta-analysis of 28 studies, including 14 contributing to the primary pooled estimate, maintenance antidepressant therapy in adults with major depressive disorder who had stabilized on treatment was associated with a substantially lower 6-month relapse risk than placebo (random-effects RR 0.47, 95% CI 0.38-0.58).",
+      "Clinically, this corresponds to roughly halving the likelihood of relapse over 6 months, supporting continued antidepressant treatment as a meaningful strategy for sustaining remission in the maintenance phase."
+    ]
+  }
+}

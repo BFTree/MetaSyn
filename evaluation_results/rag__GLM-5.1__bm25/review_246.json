@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10294,
+    "output_tokens": 1016,
+    "total_tokens": 11310
+  },
+  "metrics": {
+    "retrieval_recall": 0.9545454545454546,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.4090909090909091,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5294117647058824,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5454545454545454,
+    "inclusion_consistency": 0.739,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear findings summary and list of included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, search strategy, explicit inclusion/exclusion criteria, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) investigating the effects of melatonin supplements and melatonin receptor agonists (ramelteon, tasimelteon, and agomelatine/S-20098) on sleep-wake cycles and circadian rhythms in healthy adults and patients with psychiatric disorders, compared to placebo or control conditions",
+      "phase-shifting effects relative to dosing time and dosage"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, the evidence confirms that melatoninergic agents exert robust phase-advancing effects on circadian biomarkers (DLMO, CBT, endogenous melatonin) when administered in the early evening or before bedtime in healthy individuals.",
+      "In psychiatric populations, these agents (particularly ramelteon and agomelatine) modulate circadian rest-activity rhythms and sleep architecture, though the magnitude of phase shifts varies and requires careful dosing timing relative to the individual's circadian phase.",
+      "Several trials demonstrate that early evening or pre-bedtime administration of melatoninergic agents effectively advances circadian phase markers (dim-light melatonin onset [DLMO], core body temperature [CBT] midrange crossing, and endogenous melatonin rhythms) in healthy subjects.",
+      "Melatonin (0.5 mg) combined with behavioral scheduling advanced objective sleep onset time by 34 minutes in DSWPD patients compared to placebo, although post-treatment DLMO shifts were not statistically significant in the subset assessed."
+    ]
+  }
+}

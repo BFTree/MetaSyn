@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27720,
+    "output_tokens": 1378,
+    "total_tokens": 29098
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.10526315789473684,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.9473684210526315,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.7257,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7204,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Review Question, Methods, Results, Risk of Bias, Discussion, and Conclusion, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening counts, and synthesis methods, but it lacks full references and has some duplicated headings and incomplete PRISMA-style details such as a clearly described data extraction process."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving individuals receiving antipsychotic treatment, including patients with schizophrenia or other psychotic disorders, or mixed psychiatric populations where antipsychotic prescribing is a major component of treatment.",
+      "Studies evaluating pharmacogenetics-guided antipsychotic prescribing based on genetic testing (e.g., CYP450 genotyping/panel testing used to guide drug selection, dosing, or metabolic phenotype-based treatment decisions).",
+      "Studies including a comparator of usual care, standard prescribing, or a non-pharmacogenetically guided antipsychotic treatment approach.",
+      "Randomized trials, non-randomized comparative studies, cohort studies, case-control studies, or economic evaluations that report at least one relevant clinical outcome (e.g., treatment response, adverse drug reactions, symptom severity, treatment resistance, adherence) and/or economic outcome (e.g., healthcare costs, resource use, cost-effectiveness)."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on patients treated with antipsychotics, or studies in which antipsychotic-specific results cannot be separated from other psychotropic medications.",
+      "Studies assessing genetic associations only, pharmacokinetic/pharmacodynamic biomarkers without use in prescribing decisions, or laboratory/genotyping studies that do not evaluate pharmacogenetics-guided prescribing as an intervention.",
+      "Studies without a relevant comparator group or without reporting any eligible clinical or economic outcomes related to antipsychotic treatment.",
+      "Non-original research and non-comparative reports, including reviews, protocols, editorials, letters, commentaries, conference abstracts only, case reports, and case series."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The overall signal was inconclusive.",
+      "the current evidence does not establish that pharmacogenetics-guided prescribing improves response, reduces adverse effects, or changes treatment trajectories in a reliable way across antipsychotic-treated populations.",
+      "the absence of a clear pooled effect should not be interpreted as evidence of no effect; rather, it reflects sparse data, inconsistent study designs, and substantial uncertainty.",
+      "Current evidence does not justify routine, broad implementation of pharmacogenetics-guided antipsychotic prescribing as a standard approach for all patients receiving antipsychotics.",
+      "Until that evidence is available, pharmacogenetics in antipsychotic treatment should be regarded as promising but not yet established.",
+      "In this meta-analysis of 7 studies, pharmacogenetics-guided antipsychotic prescribing did not demonstrate a clear advantage over usual care;",
+      "Clinically, these results do not support a consistent improvement in treatment response, safety, or other patient-relevant outcomes sufficient to justify routine implementation of pharmacogenetic testing for all patients receiving antipsychotics.",
+      "A reasonable recommendation is to reserve pharmacogenetics-guided prescribing for selected cases\u2014such as prior intolerance, unusual response, or suspected metabolic variation\u2014rather than adopting it as standard practice."
+    ]
+  }
+}

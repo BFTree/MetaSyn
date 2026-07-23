@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10782,
+    "output_tokens": 821,
+    "total_tokens": 11603
+  },
+  "metrics": {
+    "retrieval_recall": 0.3225806451612903,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3225806451612903,
+    "inclusion_consistency": 0.5855,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7702,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes review question, eligibility criteria, screening rationale, exclusion details, and synthesis outcome, but it lacks standard sections such as abstract, introduction, discussion, conclusion, references, a detailed search strategy, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies published between January 1, 2023, and June 10, 2023, were eligible.",
+      "Only randomized controlled trials (RCTs) were eligible.",
+      "Studies had to be limited to healthy older adults (\u226560 years).",
+      "Interventions had to be technology-assisted rehabilitation compared to conventional exercises or no treatment."
+    ],
+    "exclusion_criteria": [
+      "Studies restricted to specialized populations with neurodegenerative, neurological, orthopedic, pulmonary disorders, or cancers were excluded.",
+      "Studies published outside this window were excluded as out-of-date.",
+      "Systematic reviews, meta-analyses, scoping reviews, protocols, observational studies, pilot/feasibility studies without RCT design, and non-randomized trials were excluded.",
+      "Studies targeting specialized populations (e.g., Parkinson\u2019s disease, stroke, multiple sclerosis, diabetes on hemodialysis, cerebral palsy, amputation, cancer, osteoarthritis) or including mixed populations of healthy and specialized individuals were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary studies met the eligibility criteria for this review.",
+      "Consequently, no quantitative or qualitative synthesis of the effectiveness of technology-assisted rehabilitation interventions on balance and functional mobility in healthy older adults aged 60+ can be performed based on the supplied candidate pool restricted to the early 2023 search window.",
+      "The available 2023 literature in the pool predominantly focuses on specialized clinical populations (e.g., Parkinson's, stroke, MS) rather than healthy older adults, or utilizes non-RCT designs.",
+      "None were included."
+    ]
+  }
+}

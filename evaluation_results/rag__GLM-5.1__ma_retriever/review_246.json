@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17944,
+    "output_tokens": 850,
+    "total_tokens": 18794
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.9545454545454546,
+    "inclusion_precision": 0.84,
+    "inclusion_f1": 0.8936170212765958,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9545454545454546,
+    "post_retrieval_loss": 0.045454545454545456,
+    "inclusion_consistency": 0.4973,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4203,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a methodology section, thematic results, conclusion, and included-study references, but it lacks a formal abstract, introduction, discussion, detailed search strategy, screening flow, data extraction process, quality assessment, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCT design",
+      "population aged 18\u201365 years (healthy or psychiatric)",
+      "intervention with a melatoninergic agent",
+      "comparison to placebo/control",
+      "outcomes on sleep-wake or circadian rhythms",
+      "publication in English between 1980 and May 2020"
+    ],
+    "exclusion_criteria": [
+      "animal/cell models",
+      "reviews",
+      "protocols",
+      "conditions intrinsically disrupting circadian rhythms (e.g., dementia, blindness, neurological disorders)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Melatonin and melatonin receptor agonists effectively modulate both sleep-wake parameters and circadian rhythms.",
+      "In healthy adults, they facilitate re-entrainment to shifted sleep-wake cycles via phase-shifting (advances with early evening dosing) and acute sleep promotion.",
+      "In psychiatric populations, ramelteon and agomelatine demonstrate targeted benefits: ramelteon restores nocturnal melatonin levels and improves sleep quality in schizophrenia and advances circadian phase in ADHD; agomelatine robustly enhances circadian amplitude and sleep parameters in MDD.",
+      "Optimal dosing requires careful alignment with the desired outcome\u2014lower doses and early evening timing for phase advances, versus broader hypnotic efficacy across doses when acute sleep initiation is the primary goal."
+    ]
+  }
+}

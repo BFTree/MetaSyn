@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5477,
+    "output_tokens": 1555,
+    "total_tokens": 7032
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.696,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.46,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes eligibility criteria, screening exclusions, and a final inclusion result, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, full search strategy, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original human investigations",
+      "assess salt intake using a validated method (24\u2011hour urine collection, food record, or 24\u2011hour dietary recall \u2013 spot urine and food frequency questionnaires were excluded)",
+      "have sodium as the sole exposure (i.e., no co\u2011interventions or dietary patterns that alter other nutrients)",
+      "Cohort studies needed \u22651\u202fyear of follow\u2011up (or \u22654\u202fweeks for certain outcomes) and at least 400 participants or the corresponding number of events.",
+      "The literature search was confined to the period 2019\u201109\u201130 to 2020\u201112\u201131.",
+      "general adult population"
+    ],
+    "exclusion_criteria": [
+      "spot urine and food frequency questionnaires were excluded",
+      "Cross\u2011sectional studies, reviews, commentaries, protocols, and other non\u2011primary designs were ineligible.",
+      "Publication date outside the eligible window (published before 2019\u201109\u201130 or after 2020\u201112\u201131).",
+      "Cross\u2011sectional design (e.g., candidates\u00a0001, 013, 026, 034, 055, 086, 193).",
+      "Non\u2011primary study types such as systematic reviews, meta\u2011analyses, commentaries, modelling studies, or narrative reviews (e.g., candidates\u00a0002, 003, 005, 009, 011, 012, 019, 031, 036, 043, 046, 047, 052, 056, 063, 064, 068, 069, 071, 076, 079, 084, 097, 103, 112, 119, 125, 128, 130, 132, 134, 144, 161, 168, 179, 180, 182, 185, 199).",
+      "Salt/sodium intake not measured by an eligible method (spot urine, FFQ alone, self\u2011report, or no direct sodium measurement) (e.g., candidates\u00a0010, 017, 018, 024, 026, 030, 043, 053, 058, 074, 077, 081, 086, 090, 092, 104, 114, 115, 122, 139, 147, 165, 169, 170, 173, 177, 198).",
+      "Co\u2011intervention or multiple dietary exposures where salt was not the only variable (e.g., DASH diet, Mediterranean diet, low\u2011sodium salt substitutes that also alter potassium, or other dietary patterns) (candidates\u00a0004, 020, 021, 023, 025, 027, 029, 032, 035, 040, 041, 043, 046, 048, 050, 059, 067, 077, 081, 094, 095, 098, 100, 108, 114, 117, 121, 127, 135, 139, 141, 142, 145, 153, 158, 160, 166, 167, 181, 184, 194).",
+      "Sample size below 400 or study duration insufficient (e.g., candidates\u00a0006, 033, 049, 054, 088, 109, 138, 155, 159, 163, 164, 187).",
+      "Outcomes not health\u2011related or not among those of interest (e.g., candidate\u00a0089 \u2013 psoriasis).",
+      "Population restricted to specific disease groups without general\u2011adult representation, or the exposure was not clearly salt intake alone (e.g., candidates\u00a0003, 013, 014, 016, 031, 037, 039, 042, 045, 055, 062, 065, 066, 080, 082, 085, 091, 100, 106, 120, 121, 123, 126, 129, 136, 137, 143, 146, 149, 150, 151, 152, 156, 160, 162, 170, 172, 176, 178, 190, 196, 200)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate study simultaneously satisfied all inclusion criteria.",
+      "None were eligible."
+    ]
+  }
+}

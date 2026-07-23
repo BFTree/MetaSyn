@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19745,
+    "output_tokens": 1210,
+    "total_tokens": 20955
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.6578,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4373,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening criteria, synthesis by exposure and menopausal status, limitations, and an included-study list, but it lacks a full PRISMA-style structure such as a detailed search strategy, formal quality assessment, and standard abstract/introduction/methods/results/discussion sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studied women",
+      "evaluated at least one target exposure: vitamin B6/PLP, vitamin B12, or methionine",
+      "reported breast cancer risk as RR/OR/HR with 95% CI or equivalent",
+      "were primary studies rather than reviews, commentaries, protocols, or mechanistic/non-risk studies"
+    ],
+    "exclusion_criteria": [
+      "I did not claim inclusion where the abstract only discussed gene-nutrient interaction without a direct nutrient-breast cancer risk estimate, or where the study focused on prognosis/survival, biomarkers among patients, methylation only, or non-breast outcomes.",
+      "Reviews/meta-analyses/commentaries: 009, 017, 028, 029, 032, 034, 050, 062, 067, 072, etc.",
+      "Survival/prognosis rather than risk: 014, 035, 092, 114, 115, 151, 158, 159, 191.",
+      "Gene polymorphism studies without primary nutrient-risk estimate as the main exposure of interest: 005, 022, 037, 040, 046, 101, 122, 124, 135.",
+      "Patient-only biomarker or mechanistic studies not estimating breast cancer incidence/risk: 006, 026, 030, 060, 061, 074, 165.",
+      "Wrong exposure focus despite mentioning related pathways: 008, 020, 056."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence is mostly observational and includes prospective cohorts, nested case-control studies, and case-control studies.",
+      "Serum PLP (vitamin B6 biomarker): mixed but somewhat more suggestive of an inverse association, especially in postmenopausal women.",
+      "Dietary vitamin B6: generally null in large prospective cohorts, though some case-control evidence suggests inverse associations.",
+      "Serum vitamin B12: little clear evidence of an inverse association; one nested case-control study was essentially null overall.",
+      "Dietary vitamin B12: inconsistent, with some case-control studies suggesting inverse associations and some prospective evidence suggesting no association or even weak positive association.",
+      "Dietary methionine: mixed; some prospective postmenopausal evidence suggests an inverse association, while other cohort studies report null results and some case-control studies suggest inverse associations in subgroups.",
+      "For vitamin B12, blood-based evidence is weak for protection.",
+      "For methionine, prospective cohort evidence is mixed.",
+      "Vitamin B12 remains inconsistent.",
+      "From this candidate pool, the eligible evidence suggests no strong, uniform association for dietary vitamin B6, vitamin B12, or methionine with breast cancer risk, but there is a more credible inverse signal for higher circulating PLP, particularly among postmenopausal women.",
+      "Dietary vitamin B12 and methionine findings are inconsistent across designs and populations."
+    ]
+  }
+}

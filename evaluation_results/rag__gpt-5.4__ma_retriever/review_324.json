@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13987,
+    "output_tokens": 897,
+    "total_tokens": 14884
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5762,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6062,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, study inclusion, synthesis, limitations, and conclusion sections, and it includes meta-analysis-style elements such as eligibility criteria and evidence synthesis, but it lacks full PRISMA-level rigor like a detailed search strategy and formal quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "people taking antipsychotics, including schizophrenia/psychotic disorders",
+      "pharmacogenetic/pharmacogenomic-guided antipsychotic prescribing",
+      "usual care / standard prescribing without testing",
+      "clinical and/or economic outcomes",
+      "primary studies only"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, guidelines, commentaries, editorials, letters",
+      "studies not evaluating a pharmacogenetic-guided treatment strategy",
+      "studies where antipsychotics were not clearly the primary medication focus",
+      "pure association/genotype studies without a testing-guided prescribing intervention",
+      "decision models without direct evaluation of outcomes after clinical pharmacogenetic-guided treatment, where not clearly tied to an implemented testing-vs-usual-care primary study sample"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across included studies, the evidence is **mixed**:",
+      "Based on title/abstract-only screening of the supplied pool, **pharmacogenetic-guided antipsychotic prescribing has inconsistent evidence of benefit compared with usual care**.",
+      "The most robust routine-testing RCT found **no improvement in antipsychotic persistence**, arguing against broad routine CYP testing for all schizophrenia patients.",
+      "**multigenic PGx-guided prescribing may improve short-term symptom response**, and",
+      "**economic and side-effect benefits may be concentrated in genetically extreme metabolizers or selected subgroups**.",
+      "Thus, the available evidence from the candidate pool supports **possible selective rather than universal utility** of pharmacogenetic testing during antipsychotic treatment."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17529,
+    "output_tokens": 752,
+    "total_tokens": 18281
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.6497,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7747,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening criteria, synthesis of screening results, and conclusion, but it lacks several standard systematic review sections such as Abstract, Introduction, full Methods, Discussion, References, detailed search strategy, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Children under 5 years in LMICs.",
+      "Gut microbiome composition associated with stunting status (stunted vs. non-stunted).",
+      "Randomized clinical trials or observational studies (case-control, cohort).",
+      "Use of 16S rRNA sequencing on Illumina sequencers covering the V4 or V3-V4 hypervariable regions.",
+      "Publications between 2023-01-01 and 2023-02-29."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, and editorials were excluded.",
+      "Studies not explicitly stating this in the abstract were excluded per the instruction not to assume information beyond the supplied text.",
+      "Studies without publicly accessible data/metadata (if stated), or those mentioning antibiotic administration within three months prior to sample collection."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Following the screening of all 200 candidates, **no primary-study articles met all inclusion criteria.**",
+      "Based on the supplied candidate pool and the strict application of the methodological and date criteria, there is no eligible evidence to synthesize regarding the association between gut microbiome composition and stunting in children under 5 in LMICs for the specified search period.",
+      "None were included."
+    ]
+  }
+}

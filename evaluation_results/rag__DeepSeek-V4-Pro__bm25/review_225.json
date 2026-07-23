@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20439,
+    "output_tokens": 999,
+    "total_tokens": 21438
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47619047619047616,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.1875,
+    "inclusion_consistency": 0.651,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5357,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear background, screening summary, included-study descriptions, evidence synthesis, conclusion, and study list, but lacks a formal abstract, detailed methods, search strategy, data extraction and quality-assessment procedures, statistical meta-analysis methods, and a distinct discussion section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomized controlled trials (RCTs) that explicitly enrolled patients with LRH or those where the vast majority had LRH were considered."
+    ],
+    "exclusion_criteria": [
+      "Studies with known secondary causes (e.g., primary aldosteronism) were excluded.",
+      "After removing reviews, animal studies, non\u2011RCTs, and trials not focused on LRH, five RCTs met all inclusion criteria."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available RCT evidence, derived solely from the five included studies, supports the efficacy and short\u2011term safety of MRA therapy (spironolactone, eplerenone) in lowering blood pressure in adults with low\u2011renin hypertension.",
+      "MRAs are at least as effective as thiazide\u2011type diuretics and appear superior to losartan in this population.",
+      "Adverse effects are manageable, though long\u2011term outcome data are lacking.",
+      "These findings form a basis for larger, longer\u2011term trials to confirm the role of MRA as a first\u2011line or targeted strategy in LRH."
+    ]
+  }
+}

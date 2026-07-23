@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7157,
+    "output_tokens": 990,
+    "total_tokens": 8147
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8235294117647058,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.5236,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5525,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, eligibility criteria, screening outcome, narrative synthesis, limitations, conclusion, and included/excluded studies, but it lacks a formal abstract/introduction/methods/results/discussion structure, detailed search strategy, quality assessment, data extraction methods, and full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English cohort studies or RCTs in chronic HBV and/or HCV populations",
+      "comparing statin users vs non-users",
+      "reporting at least one target outcome"
+    ],
+    "exclusion_criteria": [
+      "reviews/editorials/replies/protocols",
+      "non-viral liver disease populations",
+      "post-transplant/HCC-treatment settings",
+      "mixed populations not isolating viral hepatitis appropriately",
+      "HIV coinfection cohorts",
+      "non-English items",
+      "studies outside the question\u2019s population/outcomes/design"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, the included observational evidence is directionally consistent: statin exposure is associated with lower risk of HCC, cirrhosis progression, cirrhosis decompensation, and in some studies all-cause mortality.",
+      "Several studies also suggest dose-response patterns and possible stronger benefit with lipophilic statins.",
+      "Using the supplied candidate pool, the abstract-level evidence supports an association between statin exposure and reduced adverse liver outcomes in chronic viral hepatitis, especially lower HCC risk and lower progression to cirrhosis/decompensation.",
+      "Mortality findings are favorable in several cohorts but not uniformly so.",
+      "The evidence is promising and fairly consistent, but it remains observational rather than causal."
+    ]
+  }
+}

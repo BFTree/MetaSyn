@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13397,
+    "output_tokens": 1287,
+    "total_tokens": 14684
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.7895,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report presents an evidence synthesis, conclusion, and included-article list, but lacks a structured abstract, introduction, detailed methods, search strategy, screening and data-extraction procedures, quality assessment, formal synthesis methods, discussion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The eligible articles specifically investigate the influence of gingival or mucosal phenotype (thin vs. thick) on clinical outcomes around dental implants, including marginal bone loss (MBL), peri-implantitis incidence, and implant survival, with follow-up periods of at least one year."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included evidence consistently indicates that a thin gingival phenotype or mucosal thickness is associated with less favorable peri-implant outcomes compared to a thick phenotype.",
+      "Multiple studies directly link thin phenotype to increased marginal bone loss or reduced bone stability.",
+      "Thin phenotype is identified as a significant risk indicator for soft tissue complications and peri-implant disease.",
+      "While implant survival rates remained high across groups in most studies (e.g., 99.59% in Candidate 036; 96.5% in Candidate 002), the biological complications and bone loss patterns favor the thick phenotype for long-term stability.",
+      "The synthesized evidence supports the research question's premise: a thin gingival phenotype is a risk factor for marginal bone loss, soft tissue dehiscence, and potentially peri-implantitis, whereas a thick phenotype serves as a protective factor for peri-implant health and bone stability."
+    ]
+  }
+}

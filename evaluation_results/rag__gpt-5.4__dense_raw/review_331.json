@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33032,
+    "output_tokens": 1863,
+    "total_tokens": 34895
+  },
+  "metrics": {
+    "retrieval_recall": 0.7941176470588235,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.85,
+    "inclusion_f1": 0.6296296296296295,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.6296296296296297,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.4775,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3852,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included/excluded records, evidence synthesis, interpretation, and limitations, but it lacks several core systematic review sections such as a formal abstract, introduction, full methods, quality assessment, detailed search strategy, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary randomized trials",
+      "adult patients with PSPS-T2 / FBSS / post-lumbar-surgery chronic pain",
+      "interventions within the review scope: neuromodulation, minimally invasive procedures/injections/adhesiolysis, conservative treatments, or reoperation",
+      "reporting pain outcomes in title/abstract"
+    ],
+    "exclusion_criteria": [
+      "not reviews, protocols, case reports, observational studies, guidelines, editorials, or clearly non-PSPS-T2 populations"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Neuromodulation, especially SCS compared with conventional medical management, has the most consistent supportive RCT evidence in PSPS-T2/FBSS.",
+      "SCS may be superior to reoperation in selected patients with persistent radicular pain after surgery, based on one older randomized trial.",
+      "Add-on subcutaneous/peripheral field stimulation may help patients whose back-pain component is insufficiently controlled by SCS alone.",
+      "Minimally invasive epidural/adhesiolysis procedures also show benefit, and adhesiolysis may outperform standard caudal epidural injections in post-surgery syndrome.",
+      "Risk of optimism from open-label neuromodulation trials is substantial, because the sham-controlled burst trial (`1096`) was negative."
+    ]
+  }
+}

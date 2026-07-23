@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7239,
+    "output_tokens": 1854,
+    "total_tokens": 9093
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.7777777777777778,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6614,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4125,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening summary, evidence synthesis, interpretation, limitations, and conclusion sections, and it includes meta-analysis-style elements like inclusion/exclusion rationale and synthesis of findings, though it lacks a detailed search strategy and formal quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Menstrual-cycle studies were mainly prospective repeated-measures OCT-based studies in young healthy women with regular natural cycles.",
+      "Menopause studies were mainly cross-sectional comparisons of reproductive-age vs postmenopausal women."
+    ],
+    "exclusion_criteria": [
+      "Not healthy women / disease-focused without usable healthy-stage structural data",
+      "Pregnancy, postpartum, contraception, or HRT exposure: excluded by protocol.",
+      "Primarily vascular/hemodynamic/functional studies rather than posterior pole structural morphology",
+      "Wrong outcome or not posterior-pole structural morphology.",
+      "Review/editorial/letter.",
+      "Published after the review end date (2024-02-18)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This was the clearest and most consistent signal.",
+      "So, within healthy cycling women, the available abstract-level evidence supports a **small but repeatable luteal-phase choroidal thinning effect**.",
+      "Evidence here was weaker and leaned toward **no meaningful change in healthy women**.",
+      "Thus, unlike the choroid, the limited healthy-subgroup evidence does **not** suggest clear cyclical optic nerve head morphological fluctuation.",
+      "Evidence suggests the **postmenopausal choroid may be thinner**, but not all studies agreed.",
+      "Overall, the stronger signal from the abstracts is that **choroidal thinning after menopause is plausible**, but findings are not fully uniform.",
+      "These findings were more inconsistent than the choroid.",
+      "**Macular structural differences may largely reflect age rather than menopause itself**",
+      "**Peripapillary/optic nerve structural differences are inconsistent across studies**",
+      "Based on the supplied candidate pool, the evidence suggests that in healthy naturally cycling women, **the choroid shows modest but recurring menstrual-phase variation, with thinner measurements in the mid-luteal phase**.",
+      "In contrast, **healthy optic nerve head morphology appears relatively stable across the cycle** in the limited available evidence.",
+      "Across reproductive aging, **postmenopausal status may be associated with thinner choroid**, but evidence for menopause-related changes in **macular thickness or RNFL/GCC** is inconsistent and may be heavily influenced by age."
+    ]
+  }
+}

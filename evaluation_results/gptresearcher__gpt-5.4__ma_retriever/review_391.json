@@ -1,0 +1,73 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25734,
+    "output_tokens": 1546,
+    "total_tokens": 27280
+  },
+  "metrics": {
+    "retrieval_recall": 0.7857142857142857,
+    "retrieval_precision": 0.24444444444444444,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.4210526315789473,
+    "screening_accuracy": 0.8222222222222222,
+    "conditional_retention": 0.36363636363636365,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6517,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4487,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included-study list, and References, and it documents search queries, screening decisions, eligibility criteria, and narrative synthesis, but it lacks a formal quality/risk-of-bias assessment and full PRISMA-style flow or quantitative meta-analysis methods needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective adult ATI studies",
+      "placebo/no intervention",
+      "frequent plasma viral load (pVL) monitoring early after ATI",
+      "prospective adult ATI studies, placebo or no active intervention, with frequent pVL monitoring in the first 84 days",
+      "adults with HIV",
+      "prospective ATI clinical studies",
+      "placebo or no active intervention",
+      "evidence of close/frequent viral load monitoring",
+      "time to rebound and/or PTC-related off-ART control",
+      "English primary study",
+      "at least 5 planned pVL measurements within 84 days and no more than 18 days between measurements in the first 42 days"
+    ],
+    "exclusion_criteria": [
+      "animal studies",
+      "pediatric studies",
+      "co-infection studies",
+      "reviews",
+      "case reports",
+      "non-English works",
+      "reviews/meta-analyses",
+      "obvious intervention studies aimed at delaying rebound",
+      "studies without adult ATI primary data",
+      "studies lacking sufficient alignment with the placebo/no-intervention ATI question",
+      "Animal or review records were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across included studies, viral rebound was usually rapid, typically within 2\u20134 weeks after ART interruption; in ACTG A5345, the median time to rebound to at least 1,000 copies/mL was 22 days, and modern integrase inhibitor-based ART did not materially delay rebound compared with older regimens.",
+      "Early ART initiation was the most consistent factor associated with delayed rebound, but it did not reliably prevent rebound or produce durable remission.",
+      "Importantly, very small peripheral blood reservoirs, even when combined with minimal cell-associated HIV transcription, were not sufficient to predict delayed rebound in chronic-treated adults.",
+      "PTC appears uncommon in these cohorts.",
+      "The local MetaSyn corpus supports a clear and clinically consequential conclusion: in prospective adult placebo/no-intervention ATI studies, **HIV viral rebound usually occurs rapidly, most often within 2\u20134 weeks after ART interruption**, and this remains true in the modern ART era.",
+      "**Early ART initiation** is the most consistent predictor of delayed rebound, but it **does not reliably prevent rebound** and should not be mistaken for a path to durable ART-free remission on its own.",
+      "**Very small peripheral blood reservoir size and minimal cell-associated HIV transcription are not sufficient predictors** of delayed rebound in chronic-treated adults.",
+      "In no-intervention ATI cohorts, **PTC is uncommon and should be treated as an exceptional outcome rather than a likely endpoint**."
+    ]
+  }
+}

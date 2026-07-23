@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13270,
+    "output_tokens": 1268,
+    "total_tokens": 14538
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5826,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5577,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key elements such as background/objective, screening, study summary, limitations, and conclusion, but it lacks several standard review sections and PRISMA-style details like a full methods description, search strategy, data extraction, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) published in English or German",
+      "IMIs, delivered via web browser or smartphone app and based on established psychological principles (e.g., CBT, behavioral therapy)",
+      "control conditions such as treatment as usual, waiting list, or no intervention",
+      "adults (\u226518 years) with a body mass index \u226525 kg/m\u00b2 and clinically relevant depressive symptoms",
+      "depressive symptom severity and weight reduction"
+    ],
+    "exclusion_criteria": [
+      "they addressed only quality of life",
+      "did not directly target mental health",
+      "focused on highly specific somatic or life-stage populations (e.g., pregnancy, bariatric surgery, specific diseases)",
+      "were not clinical psychological interventions",
+      "not primary RCTs (e.g., systematic reviews, meta-analyses, study protocols, qualitative studies, retrospective analyses, or single-arm designs)",
+      "Absence of both overweight/obesity and depressive symptoms in the study population (e.g., weight-loss trials without depression, depression interventions without weight/obesity criteria).",
+      "Intervention not delivered via the internet or a mobile app, or not targeting mental health directly.",
+      "Non-adult populations (e.g., children, adolescents).",
+      "Highly specific populations (e.g., diabetes, chronic pain, postpartum, post-bariatric surgery).",
+      "No appropriate control condition (e.g., two active IMIs without a standard care or waitlist arm)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "That trial provides preliminary support for the efficacy of a self-guided eHealth program in reducing both depressive symptoms and weight in men with overweight/obesity and comorbid depression.",
+      "However, the evidence is insufficient to draw firm conclusions about the overall effectiveness of IMIs for this population.",
+      "The absence of additional studies precludes any meta-analysis and means that the effectiveness of IMIs for this dual-burden population cannot be considered established."
+    ]
+  }
+}

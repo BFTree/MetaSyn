@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10592,
+    "output_tokens": 1449,
+    "total_tokens": 12041
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5334,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4598,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with screening, included studies, synthesis, conclusion, and limitations, but it lacks core systematic review sections such as abstract, introduction, formal methods, detailed search strategy, quality assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials in metastatic colorectal cancer",
+      "anti-EGFR monoclonal antibody therapy compared with the same standard therapy without anti-EGFR",
+      "analysis within the RAS wild-type population with BRAF mutation status assessed",
+      "OS and/or PFS data",
+      "enough quantitative information on treatment effect by BRAF and RAS status",
+      "within the review time window ending 2014-07-31"
+    ],
+    "exclusion_criteria": [
+      "non-randomized biomarker studies",
+      "reviews/meta-analyses",
+      "case reports",
+      "non-mCRC populations",
+      "later publications outside the review window",
+      "RCT biomarker papers that did not clearly report treatment-effect data by BRAF status in the RAS wild-type subgroup"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the eligible abstract-level evidence in the supplied pool, BRAF mutation appears consistently associated with worse prognosis in metastatic colorectal cancer, but evidence that BRAF V600E is a validated predictive biomarker for differential benefit from anti-EGFR monoclonal antibodies in RAS wild-type disease is weak and inconclusive.",
+      "The direction of effect in some analyses suggests that patients with BRAF wild-type tumors derive more evident benefit from anti-EGFR therapy than those with BRAF-mutant tumors.",
+      "the clearest predictive analysis available here, from CO.17, did not confirm BRAF as predictive, and explicitly notes limited power."
+    ]
+  }
+}

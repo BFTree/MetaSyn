@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8675,
+    "output_tokens": 618,
+    "total_tokens": 9293
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6912,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, exclusion reasons, and a synthesis statement, but it lacks standard sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, and detailed PRISMA-style elements like a reproducible search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "focus on PM detection",
+      "use of colour fundus images",
+      "AI/deep learning intervention",
+      "reporting of sensitivity, specificity, and AUROC",
+      "distinct validation set size \u2265 10% of training set",
+      "publication date on or before 2022-05-05"
+    ],
+    "exclusion_criteria": [
+      "Out-of-Date Articles",
+      "Wrong Population/Condition",
+      "Wrong Modality",
+      "Insufficient Outcome Indices (Missing Sensitivity/Specificity for PM)",
+      "Validation Set Size Criterion Failure"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Due to the exclusion of all potentially relevant primary studies based on the strict methodological and reporting criteria, no quantitative synthesis (meta-analysis) or qualitative synthesis could be performed.",
+      "None were included."
+    ]
+  }
+}

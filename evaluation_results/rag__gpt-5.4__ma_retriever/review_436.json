@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9211,
+    "output_tokens": 765,
+    "total_tokens": 9976
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4836,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4519,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening summary, evidence synthesis, risk of bias note, and conclusion, but it lacks standard systematic review sections such as abstract, introduction, formal methods, detailed search strategy, data extraction/synthesis methods, and references, so the overall organization has major structural gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "publication window: `2023-05-01` to `2024-11-03`",
+      "hospital patients receiving medication prescriptions",
+      "electronic prescribing intervention such as `CPOE` or `CDS`",
+      "comparator of usual care / manual prescribing / no electronic intervention",
+      "quantitative medication error outcome",
+      "`RCT` design",
+      "English, peer-reviewed, full text implied by candidate listing"
+    ],
+    "exclusion_criteria": [
+      "not an RCT",
+      "wrong publication date",
+      "not a primary study",
+      "wrong setting or intervention focus",
+      "outcomes not medication errors in the required comparative hospital-prescribing context",
+      "protocol / review / commentary / abstract-only style record"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate was eligible for inclusion.",
+      "Because no study met all inclusion criteria, there is no eligible primary-study evidence from this supplied candidate pool to support a quantitative synthesis for the review question within the specified search period.",
+      "Within the supplied pool and date range, there is an apparent lack of recent English-language full-text RCTs in hospital settings directly comparing electronic prescribing/CDS-type systems against usual care and reporting quantitative medication-error incidence.",
+      "As a result, this review update would be an **empty review** for the specified criteria and source pool.",
+      "This means the correct conclusion is not that electronic interventions are ineffective, but that **no eligible randomized evidence was available in the supplied pool for this update period and question definition**.",
+      "Using only the supplied ranked candidate pool, I found **no eligible RCTs** published between `2023-05-01` and `2024-11-03` that evaluated electronic prescribing/CDS-type interventions versus usual care in hospital patients and reported quantitative medication-error outcomes."
+    ]
+  }
+}

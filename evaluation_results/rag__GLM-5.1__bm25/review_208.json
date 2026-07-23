@@ -1,0 +1,46 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17444,
+    "output_tokens": 921,
+    "total_tokens": 18365
+  },
+  "metrics": {
+    "retrieval_recall": 0.8035714285714286,
+    "retrieval_precision": 0.225,
+    "inclusion_recall": 0.44642857142857145,
+    "inclusion_precision": 0.8928571428571429,
+    "inclusion_f1": 0.5952380952380952,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct sections for scope, methodological and reporting variability, gaps, and conclusion, but it lacks full PRISMA-style methods details such as a search strategy, screening process, data extraction approach, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "FST is a valuable, feasible tool for quantifying retinal sensitivity in severe IRDs, demonstrating robust dynamic range and reproducibility across various devices.",
+      "However, the current literature reveals significant methodological and reporting heterogeneity.",
+      "Standardizing stimulus specifications (wavelength, duration, adaptation state), unit definitions (a universal 0 dB reference), and mediation classification criteria is essential to ensure that FST outcomes are comparable across clinical trials and clinical centers globally.",
+      "The synthesis of the included primary studies reveals substantial heterogeneity in how FST is performed, which can affect the comparability of thresholds across clinical centers:",
+      "The reporting of FST outcomes exhibits significant variability, which complicates cross-study comparisons:"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11889,
+    "output_tokens": 1529,
+    "total_tokens": 13418
+  },
+  "metrics": {
+    "retrieval_recall": 0.8928571428571429,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.2777777777777778,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.6947,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5545,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, exclusion reasons, evidence synthesis, limitations, conclusions, and included studies, but it lacks several formal systematic review sections such as an abstract, full introduction, detailed methods/search strategy, risk-of-bias assessment, quantitative meta-analysis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies needed to be **primary studies** in **adults with depression** receiving ECT, with **ultrabrief pulse ECT (<0.5 ms)** compared against **brief-pulse/conventional ECT (0.5\u20131.5 ms)**, and to report clinically relevant depression outcomes using **validated rating scales**."
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, protocols, editorials, conference-like items, nonhuman studies, case reports/very small series, studies without a brief-pulse/conventional comparator, and studies using excluded treatment schedules or clearly excluded experimental parameters.",
+      "**reviews/systematic reviews/protocols/editorials** rather than primary studies",
+      "**not about depression**",
+      "**not a pulse-width comparison** of ultrabrief vs brief/conventional ECT",
+      "**non-comparative** ultrabrief ECT studies",
+      "**case reports/small series**",
+      "or used **excluded administration schedules/experimental parameters**"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Ultrabrief pulse ECT is effective for adult depression, especially in right unilateral form.",
+      "However, compared with brief-pulse/conventional ECT, ultrabrief ECT may be associated with:",
+      "lower remission rates in some studies,",
+      "slower remission / more treatments needed,",
+      "and more switching to other ECT forms in naturalistic practice.",
+      "The evidence is not fully uniform: some randomized studies report comparable acute antidepressant efficacy, especially when ultrabrief dosing is sufficiently high.",
+      "The strongest comparative signal from the included pool is that brief pulse tends to outperform ultrabrief on remission-related endpoints more often than on response endpoints.",
+      "Taken together, unilateral evidence suggests that ultrabrief RUL ECT is effective, but brief-pulse RUL ECT may have an advantage for achieving remission, particularly more quickly.",
+      "Overall, bilateral ultrabrief evidence appears weaker and less reassuring than unilateral ultrabrief evidence.",
+      "Therefore, from the candidate pool alone, long-term comparative relapse evidence is sparse."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6047,
+    "output_tokens": 1212,
+    "total_tokens": 7259
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.16666666666666669,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.682,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.474,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with screening criteria, synthesis, limitations, and included studies, but it lacks a formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, detailed search strategy, quality assessment, and PRISMA-style reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with **severe obesity** (BMI >=35 kg/m2)",
+      "**online group-based** behavior change interventions for weight management",
+      "with outcomes on weight/behavior and optionally acceptability/usability",
+      "Comparator type was flexible"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, non-adult or non-severe-obesity populations, non-online/non-group formats, and studies without evaluative primary data",
+      "reviews, protocols, and papers describing interventions without evaluation were excluded",
+      "not severe obesity specifically",
+      "not group-based",
+      "not online",
+      "not behavior-change weight management",
+      "not a primary study",
+      "postoperative bariatric populations",
+      "pediatric/postpartum/pregnancy populations",
+      "protocol-only reports"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence base is sparse and weak for the exact target population/intervention.",
+      "The two included studies suggest that **online group-based behavioral weight management can produce clinically meaningful short-term weight loss**:",
+      "Across these studies, a recurring pattern is that **engagement appears important**.",
+      "Evidence on patient experience is limited but favorable:",
+      "Because the included studies are small and abstracts provide limited process data, conclusions about acceptability/usability should remain cautious.",
+      "The evidence has important weaknesses relative to the review target:",
+      "So the best-supported conclusion is narrow: online group-based behavioral interventions for adults with obesity appear feasible and can support modest short-term weight loss, but the candidate pool provides **very limited direct evidence for adults with severe obesity specifically**."
+    ]
+  }
+}

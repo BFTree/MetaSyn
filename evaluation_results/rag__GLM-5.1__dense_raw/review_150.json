@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19270,
+    "output_tokens": 1288,
+    "total_tokens": 20558
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.5377,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4452,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with methodology, exclusion decisions, synthesis of findings, and included studies, but it lacks several standard systematic review sections such as Abstract, Introduction, Discussion, Conclusion, and full References, and it provides only limited PRISMA-style detail on search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women (pre- and post-menopausal)",
+      "investigating the association of vitamin B6 (serum PLP and dietary intake), vitamin B12 (serum levels and dietary intake), and methionine (dietary intake) with breast cancer risk (relative risk)"
+    ],
+    "exclusion_criteria": [
+      "Articles published after the search end date (June 18, 2013) were excluded.",
+      "Studies focusing on survival/mortality (Candidates 011, 050), other cancers (Candidates 019, 049, 063, 080), cardiovascular outcomes (Candidates 033, 034, 035), or exposures other than B6/B12/Methionine (e.g., soy, meat, organochlorines) were excluded.",
+      "Candidate 023 (CPS-II, 2003, 1,303 cases) was excluded as a duplicate of Candidate 007 (CPS-II, 2010, 3,898 cases), per the rule to include the study with the largest number of cases.",
+      "Candidate 016 (Maruti et al., 2009) was excluded as it assesses MTHFR C677T polymorphisms, which the criteria specifically exclude due to duplicate reports.",
+      "Candidates 031 and 098 were excluded because, while they investigated methionine, the abstracts did not provide the required quantitative risk estimates (RR/OR/CI) for methionine, focusing instead on choline or methylation subgroups without overall effect sizes.",
+      "Secondary analyses and reviews (Candidates 020, 028, 030, etc.) were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Dietary Vitamin B6: Results for dietary B6 intake were heterogeneous.",
+      "Vitamin B12 (Serum and Dietary): Candidate 002 found no overall association for serum B12.",
+      "Dietary Methionine: Findings were inconsistent.",
+      "The serum PLP inverse association appears potentially specific to postmenopausal women (Candidates 001, 002).",
+      "Dietary intake associations did not show a consistent differential effect by menopausal status across all nutrients, though null results were common in specific strata (e.g., postmenopausal in Candidate 003)."
+    ]
+  }
+}

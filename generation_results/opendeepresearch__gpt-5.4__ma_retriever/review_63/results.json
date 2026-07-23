@@ -1,0 +1,100 @@
+{
+  "review_id": 63,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    8364,
+    108072,
+    69468,
+    4538
+  ],
+  "retrieved_article_ids": [
+    8364,
+    108072,
+    69468,
+    4538,
+    8366,
+    4539,
+    69533,
+    4541,
+    4543,
+    69514,
+    69466,
+    69461,
+    4540,
+    69486,
+    69467,
+    8365,
+    69508,
+    69510,
+    4544,
+    69506,
+    69495,
+    69483,
+    69500,
+    69501,
+    69523,
+    108084,
+    4542,
+    108086,
+    137957,
+    108070
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 322237,
+    "output_tokens": 14721,
+    "total_tokens": 336958,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 41958,
+        "output_tokens": 3000,
+        "total_tokens": 44958
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 4910,
+        "output_tokens": 5000,
+        "total_tokens": 9910
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 265362,
+        "output_tokens": 5093,
+        "total_tokens": 270455
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 8792,
+        "output_tokens": 1088,
+        "total_tokens": 9880
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1215,
+        "output_tokens": 540,
+        "total_tokens": 1755
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 30,
+    "retrieved_unique": 30,
+    "included_count": 4,
+    "included_unique": 4,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 30,
+    "fetch_calls": 6,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 3,
+    "source_review_ids_removed_count": 1,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22107,
+    "output_tokens": 1184,
+    "total_tokens": 23291
+  },
+  "metrics": {
+    "retrieval_recall": 0.8205128205128205,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.6410256410256411,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.6329113924050633,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.78125,
+    "post_retrieval_loss": 0.1794871794871795,
+    "inclusion_consistency": 0.6764,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6827,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized around findings and includes included studies plus brief screening criteria, but it lacks most formal systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "publications from 2018 to July 2024",
+      "evaluating outputs of synthetic data generation methods for health-related data"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "unstructured image/text data",
+      "non-English documents"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "There is currently **no consensus** within the research community on a single, standardized method or framework for evaluating synthetic health data.",
+      "Privacy considerations are frequently not given equal importance relative to utility.",
+      "When both are evaluated, a trade-off is consistently reported: methods that maximize utility and fidelity (such as complex GANs) often exhibit higher privacy risks (e.g., vulnerability to membership inference), whereas methods with strong privacy guarantees (like differential privacy or heavy suppression) often suffer a loss in utility or fidelity (e.g., Candidates 011, 056)."
+    ]
+  }
+}

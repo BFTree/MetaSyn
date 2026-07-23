@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19011,
+    "output_tokens": 766,
+    "total_tokens": 19777
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.13333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.23529411764705882,
+    "screening_accuracy": 0.79,
+    "conditional_retention": 0.16,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.7665,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5391,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with objective, methods, screening results, evidence synthesis, and conclusions, but it lacks a formal abstract, introduction, discussion, references, detailed search strategy, data extraction process, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating associations between TSCC and the listed biomarkers",
+      "reporting clinical significance (diagnostic accuracy or prognostic value)",
+      "all samples originating from the tongue",
+      "tissue\u2011based studies using immunohistochemistry (IHC) were required to include multivariate analysis",
+      "English full\u2011text available"
+    ],
+    "exclusion_criteria": [
+      "studies on mixed oral cavity/head and neck subsites, base of tongue only, animal models, micro\u2011RNA biomarkers, case reports, letters, systematic reviews, or unclear clinical implications"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "This consistent replication across distinct patient cohorts and statistical methods supports SOX2 as a clinically relevant prognostic biomarker in TSCC.",
+      "Multivariate analysis in both studies confirmed that increased vimentin expression was an independent adverse prognostic factor for disease-specific survival (Candidate\u202f008) and overall survival (Candidate\u202f025).",
+      "The evidence base thus indicates that tissue SOX2 and vimentin are the most consistently replicated prognostic biomarkers for TSCC, while the remaining biomarkers require further independent validation before they can be considered clinically relevant for early diagnosis or prognosis in this disease."
+    ]
+  }
+}

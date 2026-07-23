@@ -1,0 +1,104 @@
+{
+  "review_id": 135,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    358,
+    60730,
+    360
+  ],
+  "retrieved_article_ids": [
+    60730,
+    60742,
+    358,
+    60761,
+    60769,
+    40547,
+    60741,
+    60760,
+    96381,
+    60743,
+    60725,
+    96382,
+    60727,
+    60718,
+    58971,
+    60728,
+    67187,
+    360,
+    65597,
+    60762,
+    60763,
+    60262,
+    96384,
+    61447,
+    115371,
+    60737,
+    16990,
+    96383,
+    60739,
+    60735,
+    60736,
+    65619,
+    85082,
+    96369,
+    51277
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 15,
+    "input_tokens": 404445,
+    "output_tokens": 10702,
+    "total_tokens": 415147,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 63735,
+        "output_tokens": 3000,
+        "total_tokens": 66735
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 4898,
+        "output_tokens": 4413,
+        "total_tokens": 9311
+      },
+      "researcher": {
+        "calls": 9,
+        "input_tokens": 325724,
+        "output_tokens": 1508,
+        "total_tokens": 327232
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 8914,
+        "output_tokens": 1214,
+        "total_tokens": 10128
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1174,
+        "output_tokens": 567,
+        "total_tokens": 1741
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 35,
+    "retrieved_unique": 35,
+    "included_count": 3,
+    "included_unique": 3,
+    "search_calls": 4,
+    "unique_search_queries": 4,
+    "retrieved_instances": 80,
+    "duplicate_exposures": 45,
+    "fetch_calls": 4,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 2,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

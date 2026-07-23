@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33594,
+    "output_tokens": 913,
+    "total_tokens": 34507
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.0625,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.9583333333333334,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.7823,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5317,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and clear structure with abstract, introduction, methods, eligibility criteria, screening table, synthesis, limitations, conclusion, and references, and it includes meta-analysis elements such as search strategy, screening criteria, and synthesis approach, but it falls short of excellent PRISMA-style rigor because quality/risk-of-bias assessment and detailed data extraction methods are limited or absent."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs in mCRC comparing anti-EGFR antibody therapy, alone or with standard therapy, against the same standard therapy/control, with:",
+      "Tumors assessed for *BRAF* mutation status,",
+      "*BRAF* analyzed as a subset within a RAS/KRAS-wild-type population,",
+      "Quantitative OS or PFS treatment-effect data."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they:",
+      "Were not randomized comparative trials,",
+      "Did not provide enough quantitative data by BRAF and RAS status,",
+      "Were reviews or pooled analyses rather than primary RCT reports,",
+      "Fell outside the search end date for formal inclusion."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The resulting evidence base is therefore sparse and does not support a robust meta-analysis within the imposed constraints.",
+      "The most defensible conclusion is that, as of July 2014 and using eligible local-corpus evidence only, *BRAF V600E* functioned more reliably as a negative prognostic marker than as a validated predictive marker for anti-EGFR treatment benefit.",
+      "The available randomized biomarker evidence was insufficient to establish that patients with RAS-wild-type/*BRAF V600E*-mutant tumors derive a quantitatively different anti-EGFR OS/PFS benefit than those without BRAF mutation.",
+      "The formal included evidence is too thin to support a quantitative meta-analysis.",
+      "The single includable randomized biomarker study supports *BRAF V600E* as a negative prognostic factor but does not establish it as a validated predictive biomarker for OS/PFS benefit from anti-EGFR therapy.",
+      "Later pooled analyses substantially reinforce the view that BRAF mutation and tumor sidedness modify expected benefit, but those findings belong to a later evidence era."
+    ]
+  }
+}

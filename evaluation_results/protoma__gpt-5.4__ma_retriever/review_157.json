@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29519,
+    "output_tokens": 1063,
+    "total_tokens": 30582
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.07462686567164178,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8805970149253731,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.6256,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2824,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes major systematic review/meta-analysis sections plus PRISMA-style elements such as search strategy, eligibility criteria, screening flow, synthesis methods, heterogeneity assessment, and risk of bias, but it has some structural issues including duplicated headings, inconsistent search-date reporting, limited data extraction detail, and no full references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies of population breast cancer screening that include women undergoing screening mammography and classify breast density using BI-RADS or an equivalent dense versus non-dense categorization.",
+      "Studies comparing digital breast tomosynthesis (DBT) screening with digital mammography (DM) screening, whether within the same program, period, or study population.",
+      "Studies reporting at least one outcome of interest for screening performance stratified by breast density: cancer detection rate, recall rate, or sufficient data to calculate the incremental difference between DBT and DM within density groups.",
+      "Comparative observational studies or trials conducted in routine screening settings, including prospective or retrospective cohort studies, cross-sectional screening studies, and randomized or non-randomized comparative studies."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on population screening settings, including diagnostic work-up, symptomatic populations, surveillance after breast cancer, or high-risk only cohorts not representative of routine screening populations.",
+      "Studies that do not include both DBT and DM as comparator screening modalities, or that evaluate DBT only in combination with another adjunct test without a separable comparison against DM alone.",
+      "Studies that do not stratify results by breast density or do not report density-specific cancer detection or recall outcomes.",
+      "Non-original reports or non-eligible designs such as reviews, editorials, letters without usable data, conference abstracts with insufficient data, case reports, case series, animal studies, or phantom/technical studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 3 studies (with 2 contributing to the pooled estimate), digital breast tomosynthesis (DBT) was not associated with a clear density-stratified advantage over digital mammography (DM) for screening outcomes, with a pooled absolute risk difference of -0.586 (95% CI -2.273 to 1.100; p=0.50) under the random-effects model.",
+      "Clinically, this suggests that any incremental benefit of DBT over DM in women with dense versus non-dense breasts is uncertain and likely not large enough to support breast density alone as a decisive criterion for selecting DBT in population screening.",
+      "Although the fixed-effect estimate was borderline in favor of DBT (0.161, 95% CI -0.002 to 0.323), the very high heterogeneity (I\u00b2=92.4%) indicates that results were inconsistent across studies.",
+      "DBT may still be considered based on local resources and broader program goals, but these findings should be interpreted cautiously given the limited and highly heterogeneous evidence base."
+    ]
+  }
+}

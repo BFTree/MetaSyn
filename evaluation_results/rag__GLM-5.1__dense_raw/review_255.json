@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18842,
+    "output_tokens": 1029,
+    "total_tokens": 19871
+  },
+  "metrics": {
+    "retrieval_recall": 0.9642857142857143,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.2777777777777778,
+    "screening_accuracy": 0.875,
+    "conditional_retention": 0.18518518518518517,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.4485,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6036,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear evidence synthesis section and lists included studies with some screening criteria, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies comparing ultrabrief pulse (UBP) electroconvulsive therapy (ECT) with brief pulse (BP) or conventional ECT in adult patients with depression, reporting on remission, response, relapse, or switching rates"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "editorials",
+      "case reports",
+      "non-human studies",
+      "studies on non-depression populations",
+      "studies with non-standard schedules (e.g., daily ECT) or experimental amplitudes",
+      "studies comparing UBP ECT to other somatic interventions (e.g., MST, TMS, ketamine)",
+      "comparing only different placements of UBP ECT"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the comparative acute efficacy of UBP ECT versus BP ECT is nuanced and appears to depend on electrode placement and stimulus dosage relative to seizure threshold.",
+      "For **right unilateral (RUL) placement**, findings are mixed but suggest that UBP ECT can achieve comparable response and remission rates to BP ECT when administered at sufficiently high dosage (typically 6\u20138 times seizure threshold), though some rigorous trials found BP ECT superior:",
+      "For **bilateral (bitemporal or bifrontal) placement**, the evidence consistently points to reduced efficacy for UBP ECT compared to BP ECT:",
+      "A consistent finding across the included studies is that UBP ECT requires more treatment sessions or a longer time to achieve response or remission compared to BP ECT:",
+      "Data on switching rates are sparse but indicate a directional trend from UBP to BP:",
+      "None of the included primary studies reported comparative relapse rates between UBP and BP ECT following the acute phase.",
+      "The evidence base is currently silent on whether pulse width affects the durability of remission."
+    ]
+  }
+}

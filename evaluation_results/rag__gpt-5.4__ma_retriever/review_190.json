@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14744,
+    "output_tokens": 1179,
+    "total_tokens": 15923
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6896551724137931,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.5953,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5279,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, eligibility criteria, screening decisions, thematic synthesis, limitations, and included/excluded records, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "A dental population or dental care/training setting.",
+      "Empirical data specific to sexual misconduct/sexual harassment/sexual assault/inappropriate sexual behavior in that dental setting.",
+      "Publication within 2010-01-01 to 2024-10-31."
+    ],
+    "exclusion_criteria": [
+      "Sexual misconduct data were absent or inseparable from broader mistreatment/workplace violence without dental-specific sexual-misconduct results.",
+      "They were reviews, editorials, protocols, methodological papers, media analyses, or non-empirical commentary.",
+      "They were outside the date window."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The candidate pool contains a modest but usable body of directly relevant empirical studies.",
+      "No included abstract reports a controlled intervention trial; intervention evidence is limited to studies recommending or developing policies/protocols, with scant evaluation of effectiveness.",
+      "Taken together, the evidence suggests sexual misconduct is not rare in dentistry and may be especially pronounced in hierarchically structured training environments and in patient-facing roles.",
+      "This indicates that sexual misconduct in dentistry is not confined to one relationship type; it can arise both from patient-to-provider and staff/faculty-to-trainee or colleague pathways.",
+      "The likely conclusion is that women are the main affected group in much of the literature, but men also experience sexual harassment in some dental education contexts.",
+      "Overall, the evidence supports psychological and professional harm, but there is limited abstract-level detail on long-term trauma, absenteeism, or retention attributable specifically to sexual misconduct.",
+      "However, true underreporting rates are rarely quantified directly in the abstracts.",
+      "No included title/abstract provides strong outcome evidence for an evaluated intervention specifically targeting sexual misconduct in dentistry.",
+      "So the literature points to likely intervention components, but not to robust evidence of effectiveness.",
+      "Based on the supplied candidate pool, sexual misconduct in dental settings is a documented and recurrent problem affecting dental hygienists, dental students, oral and maxillofacial surgery trainees/practitioners, and other dental personnel.",
+      "The best-supported outcomes are prevalence estimates, descriptions of perpetrator groups, lack of preparedness to respond, and professional/emotional harms.",
+      "Reporting discomfort and institutional unpreparedness recur across studies.",
+      "Evidence for effective interventions remains underdeveloped; most papers recommend training, reporting systems, and policy reform rather than testing them."
+    ]
+  }
+}

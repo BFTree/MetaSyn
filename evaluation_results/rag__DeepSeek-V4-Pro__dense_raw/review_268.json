@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15088,
+    "output_tokens": 907,
+    "total_tokens": 15995
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.8928571428571429,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.8620689655172413,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9615384615384616,
+    "post_retrieval_loss": 0.03571428571428571,
+    "inclusion_consistency": 0.6818,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.538,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core review components are present, including eligibility criteria, included studies, evidence synthesis, limitations, and conclusion, but the report lacks a formal abstract, introduction, references section, detailed search strategy, PRISMA flow, data extraction procedures, risk-of-bias/quality assessment, and explicit meta-analytic methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double\u2011blind randomized placebo\u2011controlled trials (DBRPCTs) with an enrichment design (stabilisation on the antidepressant of interest during an open\u2011label phase, then randomised to the same antidepressant or placebo) lasting \u226512 weeks",
+      "conducted in adults with major depressive disorder (MDD) in the maintenance phase",
+      "Only primary trial reports were considered"
+    ],
+    "exclusion_criteria": [
+      "Studies targeting children/adolescents, older adults exclusively, dual diagnoses, or acute\u2011phase continuation designs were excluded.",
+      "reviews, protocols, pooled analyses, post\u2011hoc analyses, and studies without a placebo comparison were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the board, continuing the antidepressant significantly prolonged time to relapse and reduced the proportion of patients relapsing compared with placebo.",
+      "The consistent finding of relapse prevention across all studied antidepressants strongly supports the efficacy of maintenance pharmacotherapy in MDD.",
+      "The included evidence demonstrates that continuing an antidepressant, compared with switching to placebo, substantially reduces the risk of relapse over 6\u202fmonths in adults with MDD who have responded to acute treatment.",
+      "The effect is consistent across the 19 antidepressants examined.",
+      "These findings support the practice of maintenance antidepressant therapy to sustain remission."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12106,
+    "output_tokens": 780,
+    "total_tokens": 12886
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5341,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6437,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, screening criteria, screening results, and conclusion, but it lacks several standard systematic review sections such as abstract, introduction, detailed methods, discussion, references, quality assessment, data extraction, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original research (not reviews, protocols, or conference abstracts).",
+      "Adult male participants (\u226518 years).",
+      "A documented diagnosis of an anxiety disorder made by at least one qualified psychiatrist.",
+      "Erectile function measured with the IIEF\u20115 (or an accepted tool listed in the review).",
+      "Outcome data on prevalence and/or severity of ED."
+    ],
+    "exclusion_criteria": [
+      "anxiety was measured only by self\u2011report screening",
+      "the sample was not defined by an anxiety disorder diagnosis",
+      "ED was not assessed with a validated tool specified by the review",
+      "the study design was not original research"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate article met all inclusion criteria simultaneously.",
+      "Specifically, none of the supplied studies provided data on the prevalence and/or severity of erectile dysfunction, measured by the IIEF\u20115, in a sample of adult males whose anxiety disorder diagnosis was documented by a qualified psychiatrist.",
+      "Therefore, the systematic review cannot draw on any primary study from this candidate pool.",
+      "None."
+    ]
+  }
+}

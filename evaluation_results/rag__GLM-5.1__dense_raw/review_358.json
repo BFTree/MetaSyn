@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9009,
+    "output_tokens": 1224,
+    "total_tokens": 10233
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.9058,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.469,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic evidence synthesis summary and lists included studies, but it lacks most required systematic review sections such as abstract, introduction, detailed methods, results, discussion, conclusion, full references, and PRISMA-style elements like a reproducible search strategy, screening process, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "acute or repeated sub-anaesthetic racemic ketamine administration on dopamine (DA) levels or release in specific brain regions of rodents (rats and mice) compared to control or baseline conditions"
+    ],
+    "exclusion_criteria": [
+      "failing to measure dopamine levels (often measuring glutamate, GABA, BOLD signal, or behavior)",
+      "using anaesthetic doses of ketamine (e.g., 100\u2013200 mg/kg)",
+      "using enantiomers (S-ketamine or R-ketamine) rather than racemic ketamine",
+      "being review articles",
+      "falling outside the specified search date window (ending 2016-07-15)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The three included studies investigate the effects of acute or repeated sub-anaesthetic racemic ketamine administration on dopamine (DA) levels or release in specific brain regions of rodents (rats and mice) compared to control or baseline conditions.",
+      "Candidate 002 demonstrated that a single acute sub-anaesthetic dose of ketamine (25 mg/kg i.p.) induces a transient five-fold increase in extracellular DA release in the rat medial prefrontal cortex (mPFC).",
+      "However, with repeated daily administration (7 days), basal DA levels doubled, and the acute ketamine-induced DA release was almost completely attenuated, suggesting a complex neuroadaptation whereby repeated NMDA receptor blockade reduces the dynamics of dopaminergic transmission in the mPFC.",
+      "The study found that ketamine did not alter the magnitude or kinetics of evoked DA release in the nucleus accumbens (NAc).",
+      "This finding suggests that previously observed in vivo changes in dopaminergic neurotransmission following ketamine might be indirect rather than resulting from direct effects on mesolimbic DA terminals or DA receptors/transporters.",
+      "In the ketamine-only groups, acute administration increased striatal DA levels (correlating with motor activity) and prolonged the increase of DA in the motor and somatosensory cortices.",
+      "Collectively, these studies highlight that sub-anaesthetic racemic ketamine affects DA levels regionally: it robustly increases extracellular DA release in the mPFC acutely (though this effect adapts with chronic use), increases tissue DA levels in the striatum and cortex acutely, but does not appear to alter electrically evoked DA release kinetics in the NAc terminals directly."
+    ]
+  }
+}

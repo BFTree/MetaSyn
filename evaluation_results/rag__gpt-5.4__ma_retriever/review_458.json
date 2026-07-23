@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19469,
+    "output_tokens": 1470,
+    "total_tokens": 20939
+  },
+  "metrics": {
+    "retrieval_recall": 0.967741935483871,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.5483870967741935,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7083333333333333,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.5666666666666667,
+    "post_retrieval_loss": 0.41935483870967744,
+    "inclusion_consistency": 0.7491,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5554,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included-study characteristics, qualitative synthesis, risk-of-bias considerations, and a conclusion, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods/data extraction procedures, full search strategy, and proper references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy adults aged 60 years and over",
+      "randomized primary studies",
+      "technology-assisted rehabilitation",
+      "balance, functional mobility, or gait-related"
+    ],
+    "exclusion_criteria": [
+      "review, protocol, feasibility-only or single-arm design, nonrandomized design, specialized clinical population, age below 60, robotic/exoskeleton intervention, or outcomes that were not balance, functional mobility, or gait-related",
+      "Articles published after the stated search end date of 2023-06-10 were treated as outside the review period.",
+      "Systematic, scoping, narrative, umbrella, or network reviews rather than primary trials.",
+      "Study protocols without outcome data.",
+      "Trials involving frailty, prefrailty, cognitive impairment, dementia, Parkinson disease, stroke, diabetes, osteoarthritis, amputation, orthopedic injury, pulmonary disease, or other specialized populations.",
+      "Nonrandomized, quasi-randomized, single-arm, case-report, feasibility-only, usability, or qualitative studies.",
+      "Published after the search end date.",
+      "Focused primarily on cognition, physical activity, quality of life, usability, or psychosocial outcomes without balance, functional mobility, or gait as the relevant primary outcome.",
+      "Interventions involving robotic or wearable-robot/exoskeleton devices."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Among healthy adults aged 60 years and over, randomized primary studies in the supplied pool suggest that technology-assisted rehabilitation, particularly virtual-reality and exergame-based balance or cognitive-motor training, can improve selected measures of balance and functional mobility compared with no treatment or usual activity.",
+      "The evidence is less consistent when technology-assisted interventions are compared directly with conventional exercises.",
+      "Several studies found comparable improvement between technology-based and conventional programs, while others reported technology-associated advantages for particular outcomes.",
+      "Evidence for wearable-sensor feedback and home-based telerehabilitation is promising but based on relatively small trials.",
+      "Consequently, technology-assisted rehabilitation appears to be a potentially useful adjunct or alternative delivery format for balance and mobility training in healthy older adults, but the supplied evidence does not establish a definitive ranking among virtual reality, serious gaming, wearable feedback, and telerehabilitation interventions."
+    ]
+  }
+}

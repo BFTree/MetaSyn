@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16847,
+    "output_tokens": 1441,
+    "total_tokens": 18288
+  },
+  "metrics": {
+    "retrieval_recall": 0.7555555555555555,
+    "retrieval_precision": 0.17,
+    "inclusion_recall": 0.4666666666666667,
+    "inclusion_precision": 0.9545454545454546,
+    "inclusion_f1": 0.6268656716417911,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.6176470588235294,
+    "post_retrieval_loss": 0.28888888888888886,
+    "inclusion_consistency": 0.5794,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4094,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear screening summary, evidence synthesis, limitations, included-study list, and conclusion-like bottom line, but it lacks a formal abstract, introduction, detailed search strategy, explicit screening and data-extraction procedures, quality or risk-of-bias assessment, quantitative meta-analysis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human study in schizophrenia spectrum disorder, bipolar disorder, or major depressive disorder",
+      "blood-based immune marker measured at baseline",
+      "standardized neuropsychological outcome measure",
+      "association analysis between immune marker and cognition within the patient sample",
+      "peer-reviewed cross-sectional or longitudinal design",
+      "within the review search window ending `2021-11-08`"
+    ],
+    "exclusion_criteria": [
+      "reviews, meta-analyses, protocols, preclinical/postmortem-only studies, studies without a patient-only immune-cognition association, studies outside the target diagnoses, and articles clearly published after the search end date",
+      "reviews/meta-analyses/protocols: Candidates 013, 025, 036, 046, 049, 057, 063, 073, 080, 087, 100, 106, 110, 114, 118, 126, 128, 130, 131, 136, 147, 152, 154, 157, 178, 180, 190, 196",
+      "studies after the review end date: many 2022-2026 candidates even if otherwise relevant",
+      "studies without cognition outcomes or without immune-cognition association in patients",
+      "non-primary human psychiatric target populations, animal studies, or postmortem-only designs"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "the overall pattern is that higher inflammatory activity or a more neurotoxic kynurenine profile tends to be associated with worse cognition, although there are exceptions.",
+      "the evidence supports a cautious synthesis that blood-based immune dysregulation is associated with cognitive dysfunction across psychotic and mood disorders, with the strongest and most replicated-looking signals in schizophrenia and euthymic/remitted bipolar disorder.",
+      "The evidence appears strongest in schizophrenia, moderate in bipolar disorder, and more limited in MDD.",
+      "the candidate pool supports an association between peripheral immune markers and cognitive dysfunction across schizophrenia spectrum disorder, bipolar disorder, and major depressive disorder, with the strongest abstract-level support in schizophrenia and the clearest recurring biomarkers being IL-6, CRP, TNF-related markers, MCP-1, and kynurenine-pathway metabolites."
+    ]
+  }
+}

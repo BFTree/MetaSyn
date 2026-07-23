@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13877,
+    "output_tokens": 1597,
+    "total_tokens": 15474
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5556,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6076,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, screening/selection summary, evidence synthesis, conclusion, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, detailed search strategy, quality assessment, and full PRISMA-style reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adopting a healthy diet (low in refined carbohydrates, low in saturated fats, high in fibre, and high in nutritional value)",
+      "patients with periodontal diseases (gingivitis or periodontitis)",
+      "compared to those following an unhealthy or Western diet or standard dietary habits",
+      "RCTs, case-control studies, cross-sectional studies, and population surveys"
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, narrative reviews, expert opinions, protocols, qualitative studies, and in-silico modelling studies were excluded (Criterion 1).",
+      "Prospective non-randomized interventional studies were also excluded as Criterion 1 specifically restricts eligible designs to RCTs, case-control studies, cross-sectional studies, and population surveys.",
+      "Studies involving children, adolescents, or animal models were excluded (Criteria 6, 10).",
+      "Studies where participants were periodontally healthy at baseline (measuring disease development rather than improvement in existing disease) were excluded based on the specified Population criterion.",
+      "Studies lacking clinical periodontal parameter measurements (BOP, CAL, PPD, GI) by a qualified examiner, or relying solely on self-reported periodontal parameters, radiographs, or caries indices (DMFT), were excluded (Criteria 2, 3).",
+      "Studies evaluating vegetarian or vegan diets (Criterion 10), individual foods or supplements rather than whole dietary patterns (Criteria 5, 7), or interventions focused on smoking, oral hygiene, or periodontal therapy rather than diet adoption were excluded.",
+      "Cross-sectional studies were excluded as they do not measure change over a minimum of 4 weeks (Criterion 4).",
+      "Secondary analyses or sub-studies drawing from the same primary RCT data source as an already included study were excluded (Criterion 9)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The current eligible evidence suggests that adopting a healthy diet (such as an anti-inflammatory or Mediterranean diet) significantly improves gingival parameters (reducing bleeding and gingival index) in patients with gingivitis over short-term periods (4\u20136 weeks), seemingly independent of plaque reduction.",
+      "However, the sole eligible RCT involving patients with periodontitis found no significant improvement in periodontal indices following a 6-month dietary intervention focused on increasing fruits, vegetables, and whole grains.",
+      "Further rigorous RCTs are needed to determine the long-term effects of healthy dietary patterns on periodontitis parameters."
+    ]
+  }
+}

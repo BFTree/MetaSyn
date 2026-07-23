@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19174,
+    "output_tokens": 981,
+    "total_tokens": 20155
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.1014,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear screening, included/excluded studies, evidence synthesis, limitations, and conclusion-like summary, but it lacks a formal abstract, introduction, detailed methods, references section, quality assessment, and full PRISMA-style search/data extraction/synthesis detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies on male hard-flaccid syndrome (HFS)",
+      "only studies explicitly describing HFS cases or management were eligible"
+    ],
+    "exclusion_criteria": [
+      "reviews, comments/editorials, non-HFS studies, and articles outside the date window",
+      "it is a comment, not a primary study",
+      "they address priapism, penile trauma, penile cancer, urethral reconstruction, phalloplasty, erectile dysfunction generally, or other unrelated conditions"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base is very limited and consists only of small case series/case reports.",
+      "The included evidence therefore supports a tentative view that HFS may benefit from a multidimensional management model, especially when symptoms span pain, pelvic floor dysfunction, sexual dysfunction, and psychological distress.",
+      "However, there is no robust comparative evidence, no standardized treatment pathway, and no way from these abstracts alone to estimate effectiveness of specific therapies such as anxiolytics, low-intensity shockwave therapy, spinal surgery, or broader biopsychosocial care.",
+      "Current management evidence is limited to case-level reports, with poor response to PDE5 inhibitors in one small series and symptom improvement with biopsychosocial and pelvic floor-oriented therapy in one case report.",
+      "Overall, the current literature in the supplied pool suggests that HFS is a real but poorly characterized syndrome with trauma-associated onset and mixed pelvic, sexual, urinary, pain, and psychological manifestations, but the evidence remains too sparse to define firm diagnostic criteria or treatment standards."
+    ]
+  }
+}

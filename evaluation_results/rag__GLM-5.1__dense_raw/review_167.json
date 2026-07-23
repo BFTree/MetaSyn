@@ -1,0 +1,46 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17052,
+    "output_tokens": 1016,
+    "total_tokens": 18068
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.8750000000000001,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized around the review target and findings by age group, with included studies listed, but it lacks core systematic review sections such as abstract, introduction, methods, formal results/discussion/conclusion, references, search strategy, eligibility criteria, screening process, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "For women aged 45\u201349, the evidence consistently indicates that annual screening detects cancers at more favorable stages and sizes but significantly increases the risk of false-positive results compared to biennial or triennial screening.",
+      "For women aged 50\u201369, biennial screening largely maintains the benefit of annual screening in terms of tumor characteristics and stage, while substantially reducing harms.",
+      "Evidence for women aged 70\u201374 suggests that biennial screening preserves most of the stage-shift benefit of annual screening with fewer harms, and triennial screening may offer similar mortality benefits to biennial screening for average-risk women with lower breast density.",
+      "This risk is small compared to the expected mortality reduction achievable through screening and should not be a deterrent for women over 40 [088].",
+      "Biennial screening strategies are consistently the most efficient for average-risk populations [006, 076]."
+    ]
+  }
+}

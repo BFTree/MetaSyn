@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27083,
+    "output_tokens": 1024,
+    "total_tokens": 28107
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.12903225806451613,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.8709677419354839,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4936,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5682,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized, with abstract, introduction, methods, eligibility criteria, search strategy, screening, study characteristics, results, synthesis, limitations, conclusion, and references, but it lacks a detailed data-extraction process, formal quality or risk-of-bias assessment, PRISMA flow reporting, and quantitative meta-analytic synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective design.",
+      "Adult cancer patients (>14 years).",
+      "Patients had a CVC defined as implantable port or external catheter.",
+      "Catheter site/type defined.",
+      "Some or all patients received heparin or warfarin thromboprophylaxis at clearly specified dose.",
+      "English-language publication between 1980 and 2005.",
+      "Publication date within the search window ending 2005-11-31."
+    ],
+    "exclusion_criteria": [
+      "Non-English papers.",
+      "Published outside 1980-2005.",
+      "Retrospective studies.",
+      "Non-cancer or mixed populations not meeting the population criterion.",
+      "No primary prophylaxis dose specified.",
+      "No relevant CVC-based cancer population."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based strictly on the retrieved local MetaSyn corpus records and prespecified eligibility criteria, the evidence does not support routine primary thromboprophylaxis with minidose warfarin for adult cancer patients with indwelling CVCs.",
+      "The only included randomized comparative study found no significant reduction in catheter thrombosis, venous thrombosis, or catheter survival endpoints versus no warfarin.",
+      "At the same time, prospective and corroborating observational evidence shows that even 1 mg/day warfarin can produce substantial INR elevation and clinically relevant bleeding in patients receiving continuous-infusion fluoropyrimidine regimens, especially FOLFOX.",
+      "No eligible low-dose LMWH study was retrieved from the local corpus within the date limits, so LMWH efficacy remains unanswered in this review.",
+      "My opinion is therefore definite: within this evidence base, routine minidose warfarin should not have been adopted as standard prophylaxis for cancer patients with CVCs, and it should be actively avoided or treated as high risk in patients receiving 5-FU-based chemotherapy unless there is an overriding reason and close INR surveillance is in place.",
+      "The literature branch suggesting low thrombosis rates in treated cohorts is methodologically weaker than the randomized negative trial and does not justify routine use."
+    ]
+  }
+}

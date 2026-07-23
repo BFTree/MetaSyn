@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14794,
+    "output_tokens": 1089,
+    "total_tokens": 15883
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.3599,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5219,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes review context, synthesized results, a conclusion, and included studies, but it lacks a formal abstract, detailed introduction and methods, search strategy, screening and data-extraction procedures, quality assessment, statistical synthesis methods, and conventional references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Phase 2 and 3 randomized controlled trials",
+      "published before the search end date of 2023-10-30",
+      "involving patients with PTSD, anxiety related to life-threatening illness, or social anxiety in autistic adults"
+    ],
+    "exclusion_criteria": [
+      "Secondary analyses, pooled analyses, reviews, protocols, and studies without a control group or psychotherapy component were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence from Phase 2 and 3 RCTs indicates that MDMA-AP possesses a favorable safety profile within controlled clinical settings across varied psychiatric populations.",
+      "While expected acute and sub-acute (7-day post-session) side effects occur more frequently with active doses than with placebo or low-dose controls, the incidence of drug-related serious adverse events remains very low.",
+      "The Phase 3 data highlight a small but notable rate of severe (intense) TEAEs in the MDMA group compared to placebo, though these did not constitute serious medical events.",
+      "Crucially, no signals for increased suicidality, abuse potential, or significant cardiovascular risk (e.g., QT prolongation) were found in the large-scale trials, supporting the relative safety of MDMA-AP when administered with psychotherapeutic support."
+    ]
+  }
+}

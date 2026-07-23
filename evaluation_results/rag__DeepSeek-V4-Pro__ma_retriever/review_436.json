@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8894,
+    "output_tokens": 836,
+    "total_tokens": 9730
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5032,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5138,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, Discussion, Conclusion, and included study listing, but it lacks a formal abstract, full references, detailed search strategy, data extraction procedures, quality/risk-of-bias assessment, and robust synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs published in English",
+      "involving patients in healthcare settings",
+      "comparing an electronic intervention to manual/paper\u2011based usual care",
+      "reporting quantitative medication error outcomes"
+    ],
+    "exclusion_criteria": [
+      "non\u2011RCT designs",
+      "reviews",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "non\u2011human studies",
+      "studies without full\u2011text or complete outcome data"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No difference in dispensing error rates was observed between the experimental and control groups (7.9\u202f% in both arms; p\u202f=\u202f0.927).",
+      "The single eligible RCT provides no evidence that a standalone barcode\u2011assisted dispensing system reduces medication dispensing errors compared with usual care.",
+      "The extreme scarcity of eligible RCTs highlights a critical evidence gap.",
+      "That trial did not demonstrate a benefit of barcode\u2011assisted dispensing on medication error rates.",
+      "The overall evidence base from RCTs is insufficient to draw firm conclusions about the effectiveness of electronic health interventions for reducing medication errors."
+    ]
+  }
+}

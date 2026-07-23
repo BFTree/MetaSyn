@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18697,
+    "output_tokens": 1335,
+    "total_tokens": 20032
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.7777777777777778,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7468,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6708,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Objective, Methods, Screening Results, Synthesis, Limitations, Conclusion, and included studies, and it includes meta-analysis-style elements such as eligibility criteria, exclusions, screening counts, and synthesis approach, but it lacks a formal abstract, references section, detailed reproducible search strategy, data extraction procedures, and quality/risk-of-bias assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original studies enrolling \u226510 patients with primary stage IV EC who underwent CRS",
+      "reporting PFS and/or OS stratified by the extent of cytoreduction (complete, optimal, or incomplete)",
+      "Studies that included patients with other stages or recurrent EC were considered only if survival data for primary stage IV patients were reported separately.",
+      "The search was confined to the candidate list, with publication dates 1997\u20132022."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, conference abstracts, case reports, editorials, guidelines, studies on uterine sarcomas, and those involving HIPEC were excluded.",
+      "study population not primary stage IV endometrial cancer (e.g., ovarian, gastric, other cancers, or non\u2011stage IV EC)",
+      "study design (review, meta\u2011analysis, protocol, or case report)",
+      "intervention not addressing CRS extent (e.g., adjuvant therapy, HIPEC, or surgical approach)",
+      "failure to report survival data separately for stage IV patients when other stages were included"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eight studies uniformly demonstrated a significant survival advantage for patients who achieved complete or optimal cytoreduction compared with those left with gross residual disease.",
+      "Studies consistently reported that complete resection (no residual disease) was associated with the longest median OS.",
+      "Even when complete resection was not achieved, optimal residual disease (\u22641\u202fcm or \u22642\u202fcm) still conferred a significant survival benefit over suboptimal resection.",
+      "The survival benefit of maximal cytoreduction was evident in both endometrioid and non\u2011endometrioid (serous, clear cell, carcinosarcoma) subtypes.",
+      "Within the limitations of the supplied candidate pool, the evidence consistently indicates that complete or optimal cytoreductive surgery is associated with significantly improved overall survival in patients with primary stage IV endometrial cancer.",
+      "The magnitude of benefit is greatest when no gross residual disease is left, but even residual disease \u22641\u202fcm confers a survival advantage over more extensive residual disease.",
+      "These findings support the goal of maximal surgical effort in this poor\u2011prognosis population, though confirmation in prospective studies is warranted."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25558,
+    "output_tokens": 1023,
+    "total_tokens": 26581
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07368421052631578,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.36363636363636365,
+    "screening_accuracy": 0.9263157894736842,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.7713,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6431,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background, methods, detailed search strategy, eligibility criteria, screening process, synthesis plan, results, risk-of-bias assessment, discussion, conclusion, and included studies, but it has some organizational issues, duplicated headings, minor inconsistencies, and lacks a full references section/PRISMA-style presentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original experimental studies in rodents, non-human primates, or humans reporting brain tissue measurements or in vivo assessments of dopamine following ketamine exposure.",
+      "Studies evaluating acute or chronic ketamine administration at sub-anaesthetic or anaesthetic doses, with a drug-free baseline and/or control condition for comparison.",
+      "Studies measuring dopamine-related outcomes in relevant brain regions (e.g., cortex, striatum, nucleus accumbens, hippocampus, ventral pallidum, cerebellum) and/or dopamine neuron population activity.",
+      "Studies reporting quantitative data on dopamine levels, dopamine release/turnover, or dopamine neuron population activity sufficient for comparison between ketamine-exposed and control/baseline conditions."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, conference abstracts without full data, case reports, editorials, and other non-original publications.",
+      "Studies not involving the eligible populations (e.g., non-mammalian models, in vitro or ex vivo studies without brain tissue/in vivo relevance, or human studies without brain-based dopamine assessment).",
+      "Studies in which ketamine is combined with other experimental interventions or drugs such that the independent effect of ketamine cannot be isolated, or lacking an appropriate drug-free baseline/control condition.",
+      "Studies not reporting the prespecified outcomes, including those focused only on non-dopaminergic markers or brain regions/outcomes outside dopamine levels or dopamine neuron population activity."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not report extractable numerical outcome data in a form suitable for meta-analysis.",
+      "On qualitative review, the evidence suggests that ketamine may influence dopaminergic measures, but the direction, magnitude, and regional specificity of these effects were inconsistent across species, brain regions, dosing regimens, and measurement approaches.",
+      "Overall, the current evidence base is too limited and heterogeneous to support firm conclusions about the effect of ketamine on brain dopamine systems.",
+      "The most defensible interpretation is therefore that the available literature points to dopaminergic involvement after ketamine administration, while leaving substantial uncertainty about the size and reproducibility of that involvement."
+    ]
+  }
+}

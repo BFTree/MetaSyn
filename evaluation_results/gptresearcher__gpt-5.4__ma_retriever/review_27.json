@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24797,
+    "output_tokens": 969,
+    "total_tokens": 25766
+  },
+  "metrics": {
+    "retrieval_recall": 0.8823529411764706,
+    "retrieval_precision": 0.4166666666666667,
+    "inclusion_recall": 0.5294117647058824,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6923076923076924,
+    "screening_accuracy": 0.8333333333333334,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.35294117647058826,
+    "inclusion_consistency": 0.567,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4009,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Introduction, Methods, Results, synthesis, limitations, Conclusion, included-study list, and References, and it includes key review elements such as search strategy, eligibility criteria, screening decisions, and synthesis approach, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with obesity, preferably matching the seed population of BMI \u2265 35",
+      "RCTs, cohort studies, cross-sectional studies, or case-control studies",
+      "Directly evaluating OSA or OSA-related indicators versus NAFLD outcomes",
+      "Outcomes including NAFLD presence/severity, steatosis, inflammation, ballooning, fibrosis, NAS, NASH, or liver enzymes",
+      "For the BMS question, studies evaluating pre/post surgery change in OSA and liver outcomes"
+    ],
+    "exclusion_criteria": [
+      "Reviews, narrative articles, descriptive reports, case series, case reports",
+      "Studies published after 2022-10-08",
+      "Records without an eligible adult obesity population or without relevant comparator/outcome structure",
+      "Studies where obesity severity matching the seed population was unclear and could not be confirmed from the available record"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Using only the local MetaSyn corpus and screening against the stated eligibility criteria, the evidence supports a clear conclusion: **among adults with severe obesity, OSA is linked to worse NAFLD\u2014especially NASH activity and fibrosis\u2014and the most informative OSA-related predictors are hypoxemia measures rather than AHI alone**.",
+      "The strongest eligible study before the review cutoff showed that moderate-to-severe OSA independently increased the odds of both NASH and severe NASH.",
+      "Across biopsy-based bariatric cohorts, lower nadir oxygen saturation, lower mean nocturnal oxygen saturation, and higher ODI repeatedly tracked with more severe liver injury.",
+      "My concrete assessment is that **intermittent hypoxic burden should be considered the primary sleep-related liver risk signal in this population**, while AHI alone is an incomplete surrogate.",
+      "BMS appears to improve both OSA and NAFLD over time, but the local corpus before October 2022 does not yet prove that OSA improvement independently drives liver recovery once weight loss and metabolic changes are accounted for."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18025,
+    "output_tokens": 1034,
+    "total_tokens": 19059
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.6923076923076923,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.7500000000000001,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.7631,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4854,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes eligibility criteria, screening exclusions, evidence synthesis, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, References, detailed search strategy, data extraction procedures, quality assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) of exercise training (\u22654 weeks) in adults versus non-exercise controls that assess renin-angiotensin-aldosterone system (RAAS) components, sympathetic hormones, urinary electrolytes, blood pressure, or heart rate"
+    ],
+    "exclusion_criteria": [
+      "publication after the search end date (2022-11-30)",
+      "acute exercise interventions or training durations under 4 weeks",
+      "animal or observational study designs",
+      "lack of a non-exercise control group",
+      "absence of the required RAAS or hormonal outcome measures (e.g., studies focusing solely on endothelial function or oxidative stress)",
+      "non-RCT designs such as reviews, guidelines, or biofeedback/relaxation trials"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Several studies demonstrated that exercise training favorably modifies circulating RAAS components.",
+      "Direct reductions in angiotensin II were observed across diverse modalities.",
+      "Across all included trials, exercise training consistently demonstrated antihypertensive efficacy or favorable hemodynamic shifts in the intervention groups compared to non-exercise controls, frequently correlating with the degree of neurohumoral or RAAS modulation."
+    ]
+  }
+}

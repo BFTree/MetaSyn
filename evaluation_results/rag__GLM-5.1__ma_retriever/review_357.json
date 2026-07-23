@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20190,
+    "output_tokens": 1422,
+    "total_tokens": 21612
+  },
+  "metrics": {
+    "retrieval_recall": 0.5604395604395604,
+    "retrieval_precision": 0.255,
+    "inclusion_recall": 0.4945054945054945,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6617647058823529,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8823529411764706,
+    "post_retrieval_loss": 0.06593406593406594,
+    "inclusion_consistency": 0.6632,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4031,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an objective, thematic evidence synthesis, conclusion, and included studies, but it lacks major required systematic review sections such as an abstract, formal introduction, detailed methods, search strategy, screening process, data extraction procedures, quality assessment, and synthesis/meta-analysis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "postmortem brain samples from individuals with schizophrenia compared to psychiatrically and neurologically healthy controls",
+      "neuroinflammatory markers\u2014including microglia, astrocytes, cytokines, and other inflammatory markers"
+    ],
+    "exclusion_criteria": [
+      "untargeted approaches without targeted confirmation",
+      "studies focusing on viruses/infection as primary exposures",
+      "reviews",
+      "non-English papers",
+      "conference abstracts"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Postmortem evidence does not support widespread, universal neuroinflammation or classical reactive gliosis in schizophrenia.",
+      "Instead, the data indicate that neuroinflammatory alterations are highly heterogeneous.",
+      "A consistent theme across recent studies is the existence of a \"high inflammation\" subgroup comprising approximately 40% of schizophrenia patients, who demonstrate elevated cytokines, SERPINA3, IFITM, and microglial/astrocytic activation.",
+      "Outside this subgroup, findings trend toward region-specific glial reductions (particularly of GFAP-positive astrocytes in the cingulate and prefrontal white matter) or no change.",
+      "Suicide and disease course (paranoid vs. residual) appear to be significant confounds influencing microglial density.",
+      "The evidence confirms that neuroinflammatory markers are altered in schizophrenia, but these alterations are not universal across the patient population or brain regions."
+    ]
+  }
+}

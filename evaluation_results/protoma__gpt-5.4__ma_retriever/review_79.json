@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29042,
+    "output_tokens": 847,
+    "total_tokens": 29889
+  },
+  "metrics": {
+    "retrieval_recall": 0.17777777777777778,
+    "retrieval_precision": 0.1927710843373494,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8072289156626506,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.17777777777777778,
+    "inclusion_consistency": 0.274,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1485,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Review Question, Methods, Search Strategy, Eligibility/Screening, Statistical Analysis, Results, Discussion, and Conclusion, and it includes meta-analysis elements such as search queries, screening criteria, PRISMA-style flow counts, and planned synthesis methods, but it lacks references and does not provide a substantive quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies included within systematic reviews that evaluate water, sanitation, and/or handwashing with soap interventions in low- and middle-income countries.",
+      "Studies assessing populations exposed to WASH interventions with relevance to diarrhoeal disease and/or acute respiratory infections.",
+      "Studies reporting information that allows classification of gender responsiveness using the WHO Gender Responsiveness Assessment Scale, including evidence on women's engagement in research or intervention activities, time burden, or women-specific intervention impacts.",
+      "Experimental, quasi-experimental, or other empirical impact evaluations that report outcomes related to intervention effects and gender-related implementation or participation."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted outside low- and middle-income countries or not focused on WASH interventions (water, sanitation, or handwashing with soap).",
+      "Systematic reviews, narrative reviews, commentaries, editorials, protocols, or other non-primary study designs.",
+      "Studies that do not assess diarrhoeal disease or acute respiratory infections, or do not report intervention impact outcomes relevant to the review.",
+      "Studies with insufficient gender-related information to classify responsiveness or assess women's engagement, time burden, or women-specific impacts."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review did not identify any eligible primary studies from existing systematic reviews that reported extractable data on the gender responsiveness of WASH interventions for diarrhoeal disease or acute respiratory infections in low- and middle-income countries; consequently, quantitative synthesis and meta-analysis were not possible.",
+      "Because no studies met the inclusion criteria, there was also no qualitative evidence available to determine whether interventions were gender unequal or gender unaware, or to assess women\u2019s engagement in research or intervention activities, reporting of women\u2019s time burden, or intervention impacts specific to women.",
+      "Overall, the current evidence base is insufficient to support any conclusions about the gender responsiveness of WASH interventions in these settings.",
+      "Interpretation must therefore remain cautious: the absence of pooled evidence reflects reporting and eligibility limitations, not proof of no effect.",
+      "This review found no eligible studies from existing systematic reviews that assessed WASH interventions for diarrhoeal disease or acute respiratory infections in low- and middle-income countries and also reported the gender-related outcomes prespecified in our review."
+    ]
+  }
+}

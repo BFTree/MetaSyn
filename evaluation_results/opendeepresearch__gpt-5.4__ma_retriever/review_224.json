@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29639,
+    "output_tokens": 1429,
+    "total_tokens": 31068
+  },
+  "metrics": {
+    "retrieval_recall": 0.7857142857142857,
+    "retrieval_precision": 0.4074074074074074,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.6086956521739131,
+    "screening_accuracy": 0.7777777777777778,
+    "conditional_retention": 0.6363636363636364,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.4597,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4401,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and covers core meta-analysis structure elements such as eligibility criteria, search strategy, screening, included studies, and synthesis of findings, but it lacks several formal report sections like a clear abstract, introduction, discussion/conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years or older",
+      "Diagnosed hypertension, consistent with the brief:",
+      "office SBP \u2265140 mmHg and/or DBP \u226590 mmHg, or",
+      "home BP SBP \u2265135 mmHg and/or DBP \u226585 mmHg",
+      "Biofeedback of any modality, including:",
+      "direct blood pressure biofeedback",
+      "heart rate variability or cardiovascular biofeedback",
+      "respiratory/device-guided breathing with feedback",
+      "thermal biofeedback",
+      "electromyographic or other physical/neurological biofeedback",
+      "Control conditions, including standard care, sham, placebo, waitlist, general relaxation, or no biofeedback",
+      "Change in systolic blood pressure and/or diastolic blood pressure",
+      "Randomized controlled trials only"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, protocols, editorials, statements, conference abstracts",
+      "Non-randomized studies",
+      "Non-English studies",
+      "Studies not limited to adults",
+      "Studies not conducted in hypertensive populations",
+      "Studies without blood pressure outcomes relevant to the review question"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local corpus evidence suggests that biofeedback-related interventions **may reduce blood pressure in adults with hypertension**, but the strength of inference is limited by incomplete local reporting and heterogeneity across intervention type, design, and comparator.",
+      "older direct BP biofeedback and thermal biofeedback trials often reported reductions in BP relative to control or placebo;",
+      "device-guided breathing studies generally suggested BP-lowering effects, though these may not be directly comparable with classic biofeedback trials;",
+      "mixed relaxation-plus-biofeedback studies suggest benefit, but attribution specifically to biofeedback is uncertain.",
+      "This supports a positive effect of BP biofeedback, at least in mild hypertension, over an intermediate-term period."
+    ]
+  }
+}

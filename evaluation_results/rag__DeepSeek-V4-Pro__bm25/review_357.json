@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19259,
+    "output_tokens": 1130,
+    "total_tokens": 20389
+  },
+  "metrics": {
+    "retrieval_recall": 0.5274725274725275,
+    "retrieval_precision": 0.24,
+    "inclusion_recall": 0.4835164835164835,
+    "inclusion_precision": 0.8979591836734694,
+    "inclusion_f1": 0.6285714285714287,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.9166666666666666,
+    "post_retrieval_loss": 0.04395604395604396,
+    "inclusion_consistency": 0.6874,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7836,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with objective, methods, screening results, study characteristics, limitations, and conclusion, and it includes several meta-analysis-relevant elements, but it lacks a formal abstract, introduction, discussion section, and references, so it falls short of a complete review structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "use postmortem brain samples",
+      "measure neuroinflammatory markers (microglial markers, GFAP, glial cell densities, cytokines, arachidonic cascade markers, substance P, SERPINA3, IFITM, or other inflammatory molecules)",
+      "compare schizophrenia patients with psychiatrically and neurologically healthy controls"
+    ],
+    "exclusion_criteria": [
+      "Untargeted approaches (e.g., microarray, shotgun proteomics) were excluded unless results were confirmed by targeted methods",
+      "reviews, conference abstracts, non\u2011English papers, and studies focusing on viruses/infection were also excluded",
+      "Articles that did not include a schizophrenia group or that used only peripheral samples, animal models, or *in vivo* imaging were not considered"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Many studies reported **region\u2011 and layer\u2011specific alterations**, with both increases and decreases depending on the marker and location.",
+      "Astrocyte markers showed inconsistent results: some studies reported reduced GFAP or astrocyte density in schizophrenia (Candidates 054, 015, 140), whereas others found no changes or even increases in subsets with high inflammation (Candidates 013, 051).",
+      "The evidence suggests a heterogeneous neuroinflammatory signature in schizophrenia, with some individuals displaying a prominent immune activation profile while others do not.",
+      "A substantial body of postmortem research has evaluated neuroinflammatory markers in schizophrenia.",
+      "The identified 49 primary studies provide a foundation for the intended systematic review.",
+      "Future steps should include full\u2011text retrieval, data extraction, quality appraisal, and quantitative synthesis where possible."
+    ]
+  }
+}

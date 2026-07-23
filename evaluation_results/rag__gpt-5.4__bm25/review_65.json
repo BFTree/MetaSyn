@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9772,
+    "output_tokens": 1908,
+    "total_tokens": 11680
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6231,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.432,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into useful sections such as evidence synthesis, eligibility decisions, included studies, limitations, and bottom line, but it lacks most standard systematic review sections including abstract, introduction, formal methods, detailed search strategy, quality assessment, full results, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The target review is about neck circumference (NC) in adult women with PCOS, specifically whether NC is larger than in non-PCOS controls and whether NC is associated with metabolic abnormalities such as metabolic syndrome and insulin resistance."
+    ],
+    "exclusion_criteria": [
+      "Most candidates were excluded because they did not study NC at all, were reviews/protocols, involved non-adult or mixed populations without clear adult-only eligibility, were animal studies, or focused on unrelated biomarkers/interventions.",
+      "A few NC-related studies were still excluded because the abstract did not clearly report an eligible NC-centered outcome for adult women with PCOS in the way required or were not clearly aligned with the target synthesis question."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these included studies, the evidence consistently supports NC as a marker of adverse metabolic profile in PCOS.",
+      "First, women with PCOS appear to have greater NC than non-PCOS controls in studies with a control group.",
+      "Second, larger NC within PCOS is consistently associated with worse metabolic status.",
+      "There is also some support for NC relating to other anthropometric and metabolic abnormalities in PCOS, including waist circumference, waist-to-hip ratio, blood pressure, fasting glucose, fasting insulin, triglycerides, and visceral adiposity.",
+      "However, the evidence base in this pool is entirely cross-sectional at abstract level, so causality and predictive performance over time cannot be established from these studies alone.",
+      "From the fixed candidate pool, the abstract-level evidence supports that NC is larger in women with PCOS than in non-PCOS controls where directly studied, and that larger NC in women with PCOS is associated with metabolic syndrome, insulin resistance, and adverse adiposity-related/metabolic markers.",
+      "The evidence is consistent but based on cross-sectional primary studies only."
+    ]
+  }
+}

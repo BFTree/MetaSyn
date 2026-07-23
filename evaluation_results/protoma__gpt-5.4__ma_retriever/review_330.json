@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34701,
+    "output_tokens": 833,
+    "total_tokens": 35534
+  },
+  "metrics": {
+    "retrieval_recall": 0.9354838709677419,
+    "retrieval_precision": 0.31868131868131866,
+    "inclusion_recall": 0.45161290322580644,
+    "inclusion_precision": 0.7368421052631579,
+    "inclusion_f1": 0.56,
+    "screening_accuracy": 0.7802197802197802,
+    "conditional_retention": 0.4827586206896552,
+    "post_retrieval_loss": 0.4838709677419355,
+    "inclusion_consistency": 0.7298,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5786,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background/introduction, review question, methods, detailed search strategy, eligibility criteria, screening flow, synthesis plan, results, risk-of-bias assessment, discussion, conclusion, and included studies, but it falls short of excellent due to duplicated headings, some internal inconsistencies, limited data-extraction detail, and lack of a proper references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human research comparing adults (\u226518 years) with a schizophrenia-spectrum diagnosis to a healthy control group.",
+      "Studies including participants with schizophrenia diagnosed using standardized clinical criteria or established diagnostic procedures (e.g., DSM or ICD).",
+      "Studies assessing syntactic language performance in at least one relevant domain of comprehension or production.",
+      "Studies reporting sufficient quantitative data to calculate or extract between-group effect sizes for syntactic performance and/or variability measures (e.g., means and dispersion statistics enabling Cohen's d or log coefficient of variation ratio estimation)."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, conference abstracts, case reports, dissertations, animal studies, and other non-original or non-human research.",
+      "Studies without a healthy control comparison group or not reporting results separately for schizophrenia participants.",
+      "Studies including only children/adolescents or mixed psychiatric/neurological populations when schizophrenia-specific adult data cannot be isolated.",
+      "Studies not evaluating syntactic comprehension or production outcomes, or not providing usable quantitative outcome data for effect size calculation."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently consistent or extractable data to calculate or compare effect sizes across outcomes.",
+      "On qualitative review, the evidence suggests that adults with schizophrenia may show poorer syntactic performance than healthy controls in both comprehension and production, but the pattern was not uniform across domains or studies.",
+      "As a result, the current evidence base remains limited and does not support firm conclusions about the extent or profile of syntactic impairment in schizophrenia.",
+      "The main conclusion from the available literature is therefore directional rather than quantitative: syntactic processing appears disrupted in schizophrenia, but the size, consistency, and domain-specific profile of these disruptions remain insufficiently resolved."
+    ]
+  }
+}

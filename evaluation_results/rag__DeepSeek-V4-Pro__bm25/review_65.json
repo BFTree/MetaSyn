@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 16957,
+    "output_tokens": 1110,
+    "total_tokens": 18067
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5713,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3798,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with distinct methods, results, synthesis, and conclusion sections, but it lacks several standard review components such as a formal abstract, introduction, discussion, references, and detailed PRISMA-style methods like search strategy, study selection flow, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included adult women with PCOS (any diagnostic criteria)",
+      "measured NC as an anthropometric marker",
+      "reported outcomes that comprised MetS, IR, or components of metabolic risk (e.g., HOMA\u2011IR, fasting insulin, lipid profile, blood pressure, waist circumference)"
+    ],
+    "exclusion_criteria": [
+      "Studies without NC measurement, non\u2011PCOS populations, reviews, protocols, animal experiments, and those not reporting relevant metabolic outcomes were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across all included studies, larger NC consistently correlated with higher HOMA\u2011IR, fasting insulin, triglycerides, waist circumference, blood pressure, and MetS prevalence.",
+      "No study contradicted the positive association between NC and adverse metabolic profiles in PCOS.",
+      "The small number of eligible primary studies\u2014all cross\u2011sectional\u2014limits causal inference, but the direction and consistency of findings are robust.",
+      "Available evidence, derived from six cross\u2011sectional studies, indicates that neck circumference is significantly and independently associated with insulin resistance and metabolic syndrome in women with PCOS.",
+      "NC may serve as a simple, non\u2011invasive anthropometric tool to identify metabolic risk in this population.",
+      "Future prospective studies are warranted to validate these findings and establish universal cut\u2011offs."
+    ]
+  }
+}

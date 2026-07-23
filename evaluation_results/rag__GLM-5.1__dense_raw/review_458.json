@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17756,
+    "output_tokens": 923,
+    "total_tokens": 18679
+  },
+  "metrics": {
+    "retrieval_recall": 0.7419354838709677,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.03225806451612903,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0625,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.043478260869565216,
+    "post_retrieval_loss": 0.7096774193548387,
+    "inclusion_consistency": 0.8331,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.525,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, screening criteria, included study findings, synthesis, conclusion, and a reference-like included article list, but it lacks a formal abstract, introduction, detailed search strategy, data extraction procedures, risk-of-bias/quality assessment, and full PRISMA-style methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "targeted participants limited to healthy older adults (aged \u226560)",
+      "functional mobility, balance, or gait specified as a primary outcome",
+      "technology-assisted rehabilitation intervention with at least one eligible control group",
+      "randomized design"
+    ],
+    "exclusion_criteria": [
+      "restricted participants to specialized populations (e.g., neurodegenerative, neurological, orthopedic, or pulmonary disorders)",
+      "fell outside the specified publication window (pre-2023 or post-June 2023)",
+      "Systematic reviews, meta-analyses, protocols, and conference abstracts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The experimental group demonstrated significant improvements across all physical function measures compared to the control group (OLST, BBS, FRT, TUGT, FTSTS; all p < 0.05).",
+      "The study also reported significant improvements in fall efficacy and health-related quality of life in the exergame group.",
+      "This trial provides moderate evidence that a home-based exergame program, supplemented with telerehabilitation monitoring, is effective for improving both static and dynamic balance, as well as functional mobility, in community-dwelling older adults when compared to a no-treatment control.",
+      "Within the constraints of the search period (early 2023), home-based exergaming delivered via telerehabilitation demonstrates effectiveness in improving balance and functional mobility in healthy older adults compared to no intervention.",
+      "To robustly compare various technology-assisted interventions against conventional exercises and to conduct a network meta-analysis, a broader search window encompassing a larger volume of primary RCTs is required."
+    ]
+  }
+}

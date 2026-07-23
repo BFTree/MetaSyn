@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17307,
+    "output_tokens": 1833,
+    "total_tokens": 19140
+  },
+  "metrics": {
+    "retrieval_recall": 0.8205128205128205,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.41025641025641024,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5423728813559321,
+    "screening_accuracy": 0.905,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.41025641025641024,
+    "inclusion_consistency": 0.5141,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5241,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility criteria, synthesis findings, limitations, and an included-studies list, but it lacks the standard full review structure (abstract, introduction, formal methods/results/discussion sections, and references) expected for a higher score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be primary research,",
+      "involve synthetic health-related/medical data,",
+      "evaluate the generated outputs, and",
+      "fall within the date window."
+    ],
+    "exclusion_criteria": [
+      "reviews/scoping reviews, protocols, viewpoint/narrative pieces, conference-style non-primary items, non-English if stated, studies focused on unstructured data such as images/text, and studies without actual privacy/utility evaluation of generated outputs.",
+      "I excluded papers centered on medical images, clinical notes, ECG signals, sensor streams, and other unstructured/time-series signal modalities where the exclusion criterion explicitly ruled out images/text and the review question is framed around synthetic medical data evaluation methods more generally.",
+      "I excluded papers that only asserted privacy preservation without an actual privacy assessment metric.",
+      "I excluded 2025+ papers as out of range."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible literature in this candidate pool is dominated by **structured/tabular and longitudinal health data studies**, mostly evaluating synthetic EHRs, administrative records, claims, cohort data, and trial data.",
+      "Across these included studies, there is **no clear consensus on a standardized evaluation method**.",
+      "First, **utility is evaluated more consistently and more richly than privacy**.",
+      "By contrast, privacy assessment was present but usually **narrower and less standardized**.",
+      "Only a minority of the included abstracts suggest a broad, multi-metric privacy audit comparable in depth to utility assessment.",
+      "Second, there is **clear evidence of methodological fragmentation**.",
+      "Different studies use different combinations of fidelity, utility, and privacy metrics, with little sign of a common minimum set.",
+      "Third, a subset of studies explicitly recognizes this lack of standardization and tries to address it.",
+      "Fourth, the balance between privacy and utility is often treated as a **trade-off**, but not as an equal dual objective in practice.",
+      "This suggests that **privacy is usually considered necessary but not examined with the same depth as utility**.",
+      "There is **some emerging convergence on broad evaluation dimensions**:",
+      "But there is **not a consensus on standardized methods or metric sets within those dimensions**.",
+      "The field appears to agree on *what categories matter*, not *how exactly they should be measured*."
+    ]
+  }
+}

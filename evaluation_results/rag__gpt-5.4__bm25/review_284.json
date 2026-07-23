@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7783,
+    "output_tokens": 1598,
+    "total_tokens": 9381
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.625,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.625,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5816,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6443,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening conclusions, evidence synthesis, interpretation, limitations, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, risk-of-bias assessment, quantitative synthesis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human studies in adults",
+      "in English",
+      "published within 2012-02-29 to 2023-02-07",
+      "include people with preclinical AD, MCI due to AD/prodromal AD, AD, or AD dementia",
+      "evaluate at least one target neuroinflammatory fluid biomarker:",
+      "YKL-40",
+      "sTREM2",
+      "GFAP",
+      "and assess association with AD stage, AD-related pathology, progression, or cognitive/clinical outcomes"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials/comments",
+      "non-human studies",
+      "studies outside the date range",
+      "studies not actually examining the target biomarkers in an AD-relevant population"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "YKL-40 emerges as the best-supported neuroinflammatory fluid biomarker for association with AD stage and progression across preclinical, MCI/prodromal, and dementia phases.",
+      "Neuroinflammatory biomarker changes can be present early in AD",
+      "CSF YKL-40 is consistently associated with AD and often with tau-related abnormalities",
+      "Higher YKL-40 may predict clinical deterioration and conversion to AD dementia"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13513,
+    "output_tokens": 1121,
+    "total_tokens": 14634
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.621,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5279,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an aim, screening approach, eligibility rationale, and synthesis outcome, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods/search strategy, results, discussion, conclusion, references, quality assessment, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "breast tissue microbiome sampling,",
+      "TNBC vs non-TNBC subtype comparison,",
+      "16S rRNA sequencing on Illumina with V4 or V3\u2013V4 coverage,",
+      "publication within the stated search window or otherwise consistent with the review constraints,",
+      "and sufficiently clear subtype-specific, usable data."
+    ],
+    "exclusion_criteria": [
+      "Out of date relative to the review search window (published 2022, before 2023-01-01)",
+      "Did not compare TNBC vs non-TNBC",
+      "Focused on tumor vs adjacent healthy tissue within the same women",
+      "Out of date (published 2022)",
+      "Used breast normal adipose tissue, not clearly the tumor-tissue subtype comparison required",
+      "Compared breast cancer vs benign controls and NAC/non-NAC groups rather than TNBC vs non-TNBC",
+      "Although tumor grade associations were reported, the abstract does not show a TNBC-vs-non-TNBC tissue microbiome comparison",
+      "Publication year 2025, outside the stated search period",
+      "Although it included molecular subtype subgrouping, it does not match the sequencing-region criterion: the abstract states \u201ctargeting five variable regions\u201d, not the required V4 or V3\u2013V4",
+      "Also not clearly framed as a direct TNBC vs non-TNBC comparative cohort",
+      "Systematic review, not an eligible primary study",
+      "Review, not an eligible primary study",
+      "Publication year 2025, outside the search period",
+      "Pan-cancer design, not clearly a breast-cancer-subtype primary study addressing TNBC vs non-TNBC",
+      "Abstract does not provide the required subtype-specific breast comparison or required sequencing-region detail for inclusion",
+      "outside the search dates,",
+      "not subtype-comparative,",
+      "not primary studies,",
+      "or methodologically mismatched to the required sequencing-region criteria."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the supplied candidate pool, no article met all inclusion criteria for this review question.",
+      "As a result, no evidence synthesis of included primary studies can be performed from this candidate set."
+    ]
+  }
+}

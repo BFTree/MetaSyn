@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25029,
+    "output_tokens": 1164,
+    "total_tokens": 26193
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.23809523809523808,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.3508771929824562,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.19047619047619047,
+    "inclusion_consistency": 0.6229,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4062,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized evidence-synthesis content, including network structure, key findings, and included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, search strategy, screening process, quality assessment, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary randomized controlled trials (RCTs)",
+      "various pharmacological and neuromodulatory interventions\u2014specifically ketamine, esketamine, rTMS, theta-burst stimulation (TBS), and electroconvulsive therapy (ECT)\u2014in adults with treatment-resistant depression (TRD) who have not responded to at least two antidepressant trials",
+      "compared against placebo or sham treatment",
+      "with response rate as the primary outcome",
+      "the >=2 antidepressant failure criterion and minimum arm size in the adult TRD population without psychotic features"
+    ],
+    "exclusion_criteria": [
+      "Candidate 135 for aripiprazole and Candidate 107 for minocycline were excluded as they only required failure of one initial antidepressant trial"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "IV ketamine, oral ketamine, and intranasal esketamine (both adjunctive and monotherapy) consistently show significantly higher response and remission rates compared to their respective placebo controls.",
+      "Standard rTMS, various TBS protocols (iTBS, aTBS, SNT, piTBS), and bilateral sequential protocols all demonstrate statistically significant response rates compared to sham.",
+      "Accelerated and intensive protocols (SNT, aTBS) show particularly large effect sizes in acute settings.",
+      "No eligible RCTs were identified for aripiprazole, minocycline, or ECT monotherapy versus placebo/sham that strictly met the >=2 antidepressant failure criterion and minimum arm size in the adult TRD population without psychotic features."
+    ]
+  }
+}

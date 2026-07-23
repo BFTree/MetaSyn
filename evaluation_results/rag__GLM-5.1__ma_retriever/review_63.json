@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24746,
+    "output_tokens": 758,
+    "total_tokens": 25504
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.7692307692307693,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.472,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4139,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening criteria, evidence synthesis by outcome, and included-study list, but it lacks several standard sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, formal References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they were cohort studies published between January 1999 and November 2023, involving adult patients with morbid obesity undergoing LVSG, and reporting pre- versus post-operative data utilizing conventional or high-resolution manometry \u00b1 24-hour ambulatory pH monitoring."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were non-human, reviews, meta-analyses, case reports, editorials, conference abstracts, protocols, or published after November 2023."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The impact of LVSG on LESP is highly heterogeneous across the included studies, with significant conflicting findings:",
+      "Data regarding LESL also show divergent outcomes:",
+      "The consensus among the included studies utilizing 24-hour pH monitoring is that LVSG worsens acid reflux metrics and increases the incidence of GERD:",
+      "All included studies consistently demonstrated significant BMI reduction following LVSG, confirming the intervention's efficacy for weight loss."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22678,
+    "output_tokens": 1090,
+    "total_tokens": 23768
+  },
+  "metrics": {
+    "retrieval_recall": 0.9111111111111111,
+    "retrieval_precision": 0.205,
+    "inclusion_recall": 0.6444444444444445,
+    "inclusion_precision": 0.7837837837837838,
+    "inclusion_f1": 0.7073170731707318,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.7073170731707317,
+    "post_retrieval_loss": 0.26666666666666666,
+    "inclusion_consistency": 0.6354,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an introduction, disease-specific synthesis, transdiagnostic summary, and included articles list, but it lacks key systematic review sections such as abstract, methods, explicit search strategy, screening process, data extraction, quality assessment, synthesis methods, discussion, and conclusion."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating the within-patient association between blood-based immune markers (including inflammatory cytokines, kynurenine metabolites, and microglial/immune activation markers) and cognitive dysfunction in patients with schizophrenia spectrum disorders, bipolar disorder (BD), and major depressive disorder (MDD).",
+      "studies reporting correlational or predictive associations between at least one standardized neuropsychological measure and an immunomarker within the patient group"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence strongly supports a link between pro-inflammatory cytokines and broad cognitive impairment in schizophrenia.",
+      "The association between inflammation and cognition in BD is evident across mood states, particularly involving CRP and TNF family markers.",
+      "Inflammatory markers in MDD are primarily linked to memory, psychomotor speed, and executive function.",
+      "IL-6 and TNF-\u03b1 emerge as transdiagnostic markers associated with cognitive impairment across SZ, BD, and MDD.",
+      "CRP is a robust marker of executive and global deficits in BD and MDD.",
+      "Immune markers often mediate the impact of environmental stressors (e.g., childhood trauma) on cognition."
+    ]
+  }
+}

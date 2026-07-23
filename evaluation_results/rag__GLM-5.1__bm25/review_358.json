@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13603,
+    "output_tokens": 1611,
+    "total_tokens": 15214
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6768,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5803,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, and References, with only limited meta-analysis elements provided."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies administering racemic ketamine at sub-anaesthetic doses (\u2264100 mg/kg i.p. in rodents) were considered.",
+      "Studies must report dopamine levels in the brain.",
+      "The search sought rodents, non-human primates, and humans."
+    ],
+    "exclusion_criteria": [
+      "Studies using anaesthetic doses (e.g., \u2265100 mg/kg i.p.) were excluded under Exclusion Criterion 1.",
+      "Studies using specific enantiomers (S-ketamine or R-ketamine) rather than racemic ketamine were also excluded (Candidates 048, 156).",
+      "Studies using other NMDA antagonists like MK-801 were excluded (Candidate 022).",
+      "Per Exclusion Criterion 7, studies reporting only other dopaminergic measures (e.g., metabolite levels like DOPAC/HVA, receptor binding, or electrophysiological activity without reporting DA levels) were excluded.",
+      "Reviews, meta-analyses, protocols, and non-original data studies were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The four included primary studies investigate the effects of acute and chronic sub-anaesthetic racemic ketamine on dopamine levels in specific brain regions of rodents (mice and rats), compared to baseline or control conditions.",
+      "Candidate 006 reported that acute sub-anaesthetic ketamine (2, 10, and 50 mg/kg i.p.) in anesthetized mice **did not alter** the magnitude or kinetics of electrically evoked dopamine release in the nucleus accumbens (NAc).",
+      "This suggests that ketamine's effects on mesolimbic dopamine may be region-specific or indirect, varying between the NAc and cortical/striatal regions.",
+      "The evidence highlights regional heterogeneity."
+    ]
+  }
+}

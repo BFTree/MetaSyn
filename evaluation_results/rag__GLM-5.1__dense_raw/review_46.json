@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9707,
+    "output_tokens": 1842,
+    "total_tokens": 11549
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6241,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening summary, evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods, search strategy, data extraction process, quality assessment framework, and meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "they focused on LGBTQ youth (rather than children of LGBTQ parents)",
+      "solely on parental outcomes",
+      "lacked a comparison group of different-sex parents",
+      "were reviews/protocols/comments",
+      "fell outside the 2015\u20132022 publication window"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "When methodological rigor is high\u2014specifically when studies precisely define the exposure as stable, planned LGBTQ families and appropriately control for family instability and confounding\u2014children with LGBTQ parents do not experience more mental health problems than their peers with different-sex parents.",
+      "Findings of elevated mental health risks in lower-rigor studies appear driven by the conflation of family structure instability and misclassification of parental sexual orientation rather than by the sexual orientation or gender identity of the parents themselves.",
+      "The eligible studies present a divided set of findings regarding the mental health of children with LGBTQ parents compared to those with different-sex parents.",
+      "The divergence in findings is largely explained by differences in methodological rigor, particularly the measurement and classification of the exposure (having LGBTQ parents)."
+    ]
+  }
+}

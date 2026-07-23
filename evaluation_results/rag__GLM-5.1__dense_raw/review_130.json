@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10263,
+    "output_tokens": 2685,
+    "total_tokens": 12948
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7586206896551724,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6582,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized around key findings and lists included studies, but it lacks most formal systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, search strategy, screening process, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "Studies comparing distinct cohorts of women (where the mammography-only group consisted of different individuals than the ultrasound-supplemented group)",
+      "studies focusing on interval cancers as the primary outcome",
+      "studies involving symptomatic or diagnostic populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence consistently demonstrates that supplemental ultrasound screening in women with dense breasts and negative mammograms detects additional mammographically occult cancers.",
+      "Overall, the data supports that supplemental ultrasound detects additional, predominantly small and node-negative invasive cancers that are missed by mammography alone in dense tissue.",
+      "The addition of ultrasound consistently increased referral rates and biopsy recommendations, often resulting in a high rate of false-positive findings compared to the number of cancers detected.",
+      "Some studies reported lower yields, such as the Italian cost-analysis study (Candidate 011) which found only 0.03% (approx. 0.3 per 1,000) and the downgrade criteria study (Candidate 029) with 2.8 per 1,000.",
+      "One study of average-risk women (Candidate 008) detected **0 cancers** in the supplemental screening round."
+    ]
+  }
+}

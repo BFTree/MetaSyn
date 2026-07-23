@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16832,
+    "output_tokens": 1441,
+    "total_tokens": 18273
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47619047619047616,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.3125,
+    "post_retrieval_loss": 0.6875,
+    "inclusion_consistency": 0.5785,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5332,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized and includes the major sections, study summaries, evidence synthesis, limitations, conclusion, and included-study list, but it lacks detailed search methods, screening flow, data-extraction procedures, risk-of-bias assessment, and formal statistical synthesis methods required for a higher score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "enrolled adults with defined low\u2011renin hypertension",
+      "compared an MRA against a relevant comparator",
+      "reported blood\u2011pressure change, end\u2011organ effects, or adverse events"
+    ],
+    "exclusion_criteria": [
+      "Studies of secondary hypertension (including primary aldosteronism)",
+      "non\u2011English records",
+      "they did not study an LRH population",
+      "were not RCTs",
+      "did not test an MRA"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In adults with low\u2011renin hypertension, MRA therapy (spironolactone or eplerenone) is effective in lowering blood pressure, showing at least equivalence to thiazide diuretics and superiority over losartan in one study.",
+      "Short\u2011term tolerability is acceptable, though dose\u2011dependent side effects (especially with spironolactone) warrant caution.",
+      "These findings support the pathophysiological rationale of targeting mineralocorticoid receptors in LRH."
+    ]
+  }
+}

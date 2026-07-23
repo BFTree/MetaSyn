@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9529,
+    "output_tokens": 1322,
+    "total_tokens": 10851
+  },
+  "metrics": {
+    "retrieval_recall": 0.9743589743589743,
+    "retrieval_precision": 0.19,
+    "inclusion_recall": 0.05128205128205128,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.09756097560975609,
+    "screening_accuracy": 0.82,
+    "conditional_retention": 0.05263157894736842,
+    "post_retrieval_loss": 0.9230769230769231,
+    "inclusion_consistency": 0.6131,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4938,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized review elements such as screening criteria, exclusion reasons, and evidence synthesis, but it lacks standard sections like Abstract, Introduction, formal Methods, Discussion, Conclusion, References, detailed search strategy, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The review targeted primary studies examining the association between maternal or neonatal perfluorooctane sulfonic acid (PFOS) biomarker concentrations and birth weight (in grams), published between January 1, 2013, and April 18, 2024.",
+      "Studies were required to report continuous regression coefficients (betas) with 95% confidence intervals (or equivalent variance measures) for birth weight changes relative to PFOS exposure in either combined or sex-specific analyses, using biomarkers sampled from maternal blood (pre-, during, or post-pregnancy) or infant cord/heel stick blood."
+    ],
+    "exclusion_criteria": [
+      "Several foundational studies reporting continuous betas for PFOS and birth weight in grams (e.g., Candidates 001, 005, 009) were published prior to the 2013 search start date.",
+      "Many recent studies reported outcomes as birth weight z-scores, BMI, odds ratios for small-for-gestational-age (SGA), or other anthropometric measures (length, head circumference) rather than continuous birth weight in grams (e.g., Candidates 036, 064, 072, 108, 119).",
+      "A large number of studies did not report a quantitative regression coefficient (beta) and 95% CI specifically for PFOS and birth weight.",
+      "Some only reported betas for other PFAS (like PFOA or PFNA), provided only p-values or odds ratios, or stated an association qualitatively without numerical effect estimates (e.g., Candidates 014, 031, 061, 070, 081).",
+      "Some studies provided beta estimates only for categorical comparisons (e.g., highest vs. lowest quartile) rather than a continuous per-unit or per-log-unit regression coefficient, making them unsuitable for pooling with continuous exposure metrics without standard deviations (e.g., Candidates 007, 012, 042).",
+      "Reviews, meta-analyses, animal studies, correspondence, and exposure/transfer characterization studies without outcome regression data were excluded (e.g., Candidates 058, 065, 116, 124, 130)."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Both studies confirm that higher PFOS exposure is associated with substantial birth weight deficits, ranging from approximately 217 g to 417 g per log-unit increase, depending on the biomarker matrix and cohort.",
+      "It reported a strong inverse association between cord PFOS concentrations and birth weight, with a regression coefficient of **-417.3 g** (95% CI: -742.1, -92.4) per log10 unit increase in PFOS exposure.",
+      "It also found a significant inverse association, with a logarithmic unit increment in maternal PFOS associated with a **-0.217 kg (-217 g)** reduction in birth weight (95% CI: -0.385, -0.049 kg).",
+      "The larger effect size observed in the cord serum study may reflect direct fetal exposure levels or differences in exposure distributions, whereas the maternal serum study provides effect estimates more consistent with typical prospective cohort designs using maternal sampling."
+    ]
+  }
+}

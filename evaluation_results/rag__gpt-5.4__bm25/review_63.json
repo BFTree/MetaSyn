@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17320,
+    "output_tokens": 1053,
+    "total_tokens": 18373
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.6153846153846154,
+    "inclusion_f1": 0.6956521739130435,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.719,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5934,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct review question, screening approach, synthesis, limitations, and bottom-line sections, and it includes meta-analysis-style elements such as eligibility criteria and outcome-specific synthesis, though it is not a full PRISMA-formatted paper with a complete abstract, methods, results, discussion, and references structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary cohort studies in peer-reviewed journals",
+      "adults with morbid obesity undergoing LVSG/LSG",
+      "pre- and post-operative esophageal physiologic testing by conventional or high-resolution manometry, with or without 24 h pH monitoring",
+      "within 1999-01-01 to 2023-11-30"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses, protocols, editorials/comments",
+      "case reports/case studies",
+      "non-human studies",
+      "studies not giving pre/post LVSG esophageal function data",
+      "studies centered on revisional surgery, adjunctive anti-reflux procedures, or non-sleeve index operations rather than primary LVSG/LSG",
+      "studies outside date window",
+      "Excluded near-misses included the systematic reviews/meta-analyses, editorials/comments, protocols, animal studies, revisional/conversion studies, symptom-only studies without pre/post physiologic testing, and papers published after 2023-11-30."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the included studies, the direction of evidence is more consistent for reflux worsening than for sphincter mechanics:",
+      "This pattern suggests that, based on title/abstract evidence alone, LVSG/LSG commonly achieves marked weight loss but is frequently associated with deterioration in objective reflux measures.",
+      "Manometric effects on the LES are heterogeneous across studies, which may reflect differences in operative technique, patient selection, follow-up timing, and measurement methods.",
+      "Overall, the pH-based evidence points toward **worsened reflux burden after sleeve gastrectomy**.",
+      "BMI decreased substantially in every included study that reported it:",
+      "Sleeve gastrectomy in adults with morbid obesity reliably reduces BMI.",
+      "Objective reflux outcomes, especially DeMeester score and related pH metrics, more often worsen than improve after surgery.",
+      "LES pressure and LES length changes are inconsistent across studies, though several abstracts suggest postoperative weakening/shortening of the LES."
+    ]
+  }
+}

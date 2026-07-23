@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9224,
+    "output_tokens": 840,
+    "total_tokens": 10064
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7005,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7139,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, study characteristics, synthesis, and conclusions, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, References sections and omits key PRISMA-style elements such as a detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with severe obesity",
+      "online, group\u2011based interventions targeting physical activity and diet",
+      "any comparator (including none)",
+      "outcomes of weight loss, behaviour change, or user experience"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, conference abstracts, editorials, and studies that merely described interventions without evaluating them were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one small pilot randomised trial was eligible, severely limiting the ability to draw generalisable conclusions about the effectiveness of online, group\u2011based behaviour change interventions for adults with severe obesity.",
+      "The available data suggest that delivering group education remotely (telehealth) is feasible and acceptable, but the comparison with individual education did not demonstrate superior weight loss.",
+      "Weight reductions were observed in both arms, indicating that structured education can be beneficial regardless of delivery mode.",
+      "Thus, the current evidence base is insufficient to determine whether online group\u2011based interventions confer additional benefits over usual care or alternative delivery formats for individuals with severe obesity.",
+      "Further primary research\u2014including adequately powered randomised controlled trials that explicitly recruit adults with BMI\u202f\u2265\u202f35\u202fkg/m\u00b2 and directly compare online group programmes with standard care or waitlist controls\u2014is urgently needed."
+    ]
+  }
+}

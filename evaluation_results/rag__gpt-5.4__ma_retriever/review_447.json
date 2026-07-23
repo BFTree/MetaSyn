@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17504,
+    "output_tokens": 882,
+    "total_tokens": 18386
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2329,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic included-studies list and brief synthesis, but it lacks standard systematic review sections such as abstract, introduction, methods, results, discussion, conclusion, references, and detailed PRISMA-style elements like search strategy, eligibility criteria, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "excluded as a survey",
+      "it is not FL-only in the strict modern sense and is more infrastructure-oriented"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible primary studies are small in number and concentrated in prostate and breast cancer; I found no eligible lung cancer primary study in the pool.",
+      "Across the included papers, federated learning generally improved cross-site generalization or matched centralized performance while keeping data local.",
+      "The strongest evidence came from multi-institutional imaging studies, especially prostate MRI and breast histopathology, where FL improved cross-site performance or site-level performance consistency.",
+      "One included breast study focused on multicentric TNBC response prediction and reported improved performance with collaborative training versus local models.",
+      "The AUSCAT lung-cancer paper is relevant to distributed oncology modeling, but it is not FL-only in the strict modern sense and is more infrastructure-oriented; I excluded it from the final included set."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18487,
+    "output_tokens": 1108,
+    "total_tokens": 19595
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4703,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.532,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clear and logically organized with explicit eligibility criteria and exclusion reasons, but it lacks major standard review sections like abstract, introduction, methods, discussion, conclusion, and references, so the overall structure is incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "hospital patients receiving medication prescriptions,",
+      "an electronic prescribing intervention such as `CPOE` or `CDS`,",
+      "comparison with usual/manual care,",
+      "quantitative medication error outcomes,",
+      "`RCT` design,",
+      "English full-text peer-reviewed article,",
+      "within the search window `2023-05-01` to `2024-11-03`."
+    ],
+    "exclusion_criteria": [
+      "Not randomized or not clearly RCT:",
+      "Wrong intervention scope for this review:",
+      "Patient-facing apps, remote monitoring, telehealth, adherence tools, and chronic disease management studies do not match the required electronic prescribing/CPOE/CDS intervention in hospital medication ordering.",
+      "Community pharmacy, outpatient-only, diagnostic CDS, imaging CDS, and non-medication workflow studies also fall outside scope.",
+      "Wrong article type:",
+      "Reviews, scoping reviews, umbrella reviews, protocols, editorials, replies, and qualitative studies are excluded by design.",
+      "Outside date window:",
+      "Several older true RCTs on CPOE/CDS and medication safety exist in the pool, but they predate the search window and therefore are not eligible."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied candidate pool and only the information available in titles/abstracts, I did not identify any article that clearly meets the full eligibility set for this review.",
+      "None of the candidates satisfy all of those requirements simultaneously based on title/abstract alone.",
+      "Because no eligible primary-study RCTs were found in the fixed candidate set, there is no includable evidence from this pool for quantitative synthesis on whether hospital electronic prescribing interventions (`CPOE`/`CDS`) reduce medication errors versus usual care during the specified search period.",
+      "That means the available candidate set does not support updating the target meta-analysis with eligible new RCT evidence in the stated period.",
+      "None were included. No candidate in the supplied pool met the full eligibility criteria based on the provided title and abstract information."
+    ]
+  }
+}

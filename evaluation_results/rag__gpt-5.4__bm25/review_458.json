@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16990,
+    "output_tokens": 1231,
+    "total_tokens": 18221
+  },
+  "metrics": {
+    "retrieval_recall": 0.3225806451612903,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3225806451612903,
+    "inclusion_consistency": 0.6967,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.658,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear review question, screening approach, eligibility rationale, and synthesis outcome, but it lacks a formal abstract, introduction, detailed methods, results presentation, discussion, conclusion, references, and key meta-analysis elements such as a reproducible search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy older adults aged 60+",
+      "virtual reality exergaming with balance platforms or motion capture,",
+      "serious gaming,",
+      "wearables,",
+      "telerehabilitation,",
+      "conventional exercise or no treatment,",
+      "balance, functional mobility, or gait,",
+      "using randomized designs.",
+      "population restricted to healthy older adults \u226560,",
+      "randomized trial design,",
+      "eligible technology-assisted rehabilitation intervention,",
+      "comparator present,",
+      "balance / functional mobility / gait as primary outcomes,",
+      "search window 2023-01-01 to 2023-06-10."
+    ],
+    "exclusion_criteria": [
+      "exclusion of specialized populations (eg, Parkinson\u2019s disease, stroke, multiple sclerosis, orthopedic disease, frailty-related clinical populations, diabetes on hemodialysis, etc.),",
+      "exclusion of robotic/exoskeleton interventions,"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Because no eligible primary-study articles were included, there is no review-specific evidence base from this candidate pool to synthesize quantitatively or narratively for the target question within the specified search window.",
+      "Therefore, this pool contributes no additional randomized evidence on technology-assisted rehabilitation for healthy older adults meeting the strict eligibility criteria.",
+      "None were included."
+    ]
+  }
+}

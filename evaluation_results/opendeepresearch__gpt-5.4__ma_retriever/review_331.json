@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20750,
+    "output_tokens": 1095,
+    "total_tokens": 21845
+  },
+  "metrics": {
+    "retrieval_recall": 0.47058823529411764,
+    "retrieval_precision": 0.5,
+    "inclusion_recall": 0.14705882352941177,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.625,
+    "conditional_retention": 0.3125,
+    "post_retrieval_loss": 0.3235294117647059,
+    "inclusion_consistency": 0.6349,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.785,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear sections for the review question, methods, search strategy, screening decisions, and included/excluded studies, but it lacks explicit abstract, discussion, conclusion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Population**: adults (\u226518 years) with PSPS-T2/FBSS/FNSS or equivalent chronic pain after prior spine surgery",
+      "**Pain duration**: chronic/persistent pain after surgery, interpreted as >3 months where described as chronic or persistent in the record",
+      "**Design**: randomized controlled trials, including parallel-group and crossover designs",
+      "**Interventions**: neuromodulation, minimally invasive procedures, conservative treatments, medication, and reoperation",
+      "**Comparators**: sham/placebo, no treatment, conservative/medical management, or another eligible active treatment",
+      "**Outcome**: pain reported, with pain intensity prioritized",
+      "**Language**: English, Dutch, or French"
+    ],
+    "exclusion_criteria": [
+      "Children",
+      "Animal studies",
+      "Acute/subacute postoperative pain populations",
+      "Populations without prior spine surgery",
+      "Studies without a pain outcome",
+      "Non-randomized designs, reviews, cohorts, case series, protocols, retrospective observational studies",
+      "Languages outside English, Dutch, or French",
+      "Records beyond the search end date"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local-corpus evidence supported inclusion of the following randomized primary studies in the final qualitative synthesis:",
+      "A key limitation of the local corpus is that some relevant studies were available **only as abstract records** or without accessible full-text sections.",
+      "Corpus ID 1091 was identified as abstract-only in the corpus, with no official PMC full text available.",
+      "These records were relevant enough to be considered as candidate RCTs, but the preserved local-corpus information available in the research log was insufficient to verify all required study characteristics, preserve reliable study-level bibliographic detail, and extract comparable pain findings with confidence."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14920,
+    "output_tokens": 1179,
+    "total_tokens": 16099
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.375,
+    "inclusion_f1": 0.35294117647058826,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.777,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4928,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, eligibility criteria, screening outcomes, evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality assessment, quantitative synthesis/meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "use a vertex-based method for whole-brain cortical thickness",
+      "compare MDD patients to healthy controls",
+      "examine adults (18\u201365 years)",
+      "be limited to medication-free patients (medication-na\u00efve or drug-free \u22657 days)",
+      "provide effect coordinates in MNI or Talairach space"
+    ],
+    "exclusion_criteria": [
+      "not be a review, ROI-limited study, peri/postmenopausal-focused study, or out of date (published after July 14, 2018)",
+      "being out of date (publication year > 2018)",
+      "using voxel-based morphometry (VBM) rather than vertex-based cortical thickness",
+      "focusing on adolescents or elderly (>65 years)",
+      "involving medicated patients",
+      "analyzing ROI-based metrics rather than whole-brain vertex-wise maps",
+      "being reviews/meta-analyses"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eight included studies reveal a heterogeneous but distinct pattern of cortical thickness alterations in medication-free adult patients with Major Depressive Disorder (MDD) compared to healthy controls (HC).",
+      "Unlike studies of chronic, medicated MDD which frequently report widespread cortical thinning, the literature on medication-free/na\u00efve patients demonstrates a prominent mixture of both cortical thinning and thickening, suggesting different neurobiological processes at illness onset or in the unmedicated state.",
+      "Medication-free patients with MDD exhibit a complex morphometric signature characterized by co-existing cortical thinning in lateral orbitofrontal and dorsal prefrontal regions and cortical thickening in medial orbitofrontal, cingulate, and parietal regions.",
+      "The thickening observed in early, untreated stages may reflect active disease-related cortical changes, neuroinflammation, or compensatory neuroplasticity, which might be obscured or reversed by chronic illness progression or antidepressant use.",
+      "These alterations are associated with clinical characteristics such as symptom severity, illness duration, cortisol levels, and trait vulnerability."
+    ]
+  }
+}

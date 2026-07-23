@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29995,
+    "output_tokens": 1047,
+    "total_tokens": 31042
+  },
+  "metrics": {
+    "retrieval_recall": 0.4642857142857143,
+    "retrieval_precision": 0.22413793103448276,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.5714285714285714,
+    "inclusion_f1": 0.2285714285714286,
+    "screening_accuracy": 0.7931034482758621,
+    "conditional_retention": 0.3076923076923077,
+    "post_retrieval_loss": 0.32142857142857145,
+    "inclusion_consistency": 0.4725,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6643,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, generally well-organized systematic review structure with Abstract, Background, review question, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, plus meta-analysis elements such as search strategy, eligibility criteria, screening flow, and planned synthesis methods, but it falls short of excellent because references are not fully provided, some headings are duplicated, and key pooled results contain placeholders or generic text."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling patients with \u10d3\u10d4\u10deression receiving electroconvulsive therapy, including major depressive disorder or depressive episodes diagnosed by standardized criteria or as defined by study authors.",
+      "Studies comparing ultrabrief pulse ECT (pulse width <0.5 milliseconds) with brief-pulse ECT (0.5-1.5 milliseconds) or other conventional ECT pulse-width approaches.",
+      "Randomized controlled trials, non-randomized comparative trials, or cohort studies that provide a direct comparison between ultrabrief pulse ECT and a brief-pulse/conventional ECT comparator.",
+      "Studies reporting at least one relevant outcome: remission rates, response rates, relapse rates, or switching/crossover to another form of ECT."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving patients treated for depression, or studies in mixed psychiatric populations where depression-specific data for ECT recipients cannot be separated.",
+      "Studies without an eligible comparator, including single-arm ultrabrief ECT studies or comparisons not based on pulse-width/conventional ECT differences.",
+      "Case reports, case series without a comparison group, reviews, editorials, letters, conference abstracts without sufficient data, and preclinical or non-human studies.",
+      "Studies that do not report any of the prespecified outcomes of interest: remission, response, relapse, or switching to another form of ECT."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 7 studies, ultrabrief-pulse ECT was associated with lower odds of remission or clinical response than brief-pulse or conventional ECT (OR [insert key pooled OR, 95% CI]).",
+      "Clinically, this suggests that although ultrabrief stimulation may remain attractive when cognitive tolerability is a priority, it is likely to trade some antidepressant efficacy for that benefit, meaning fewer patients may achieve remission or meaningful symptom improvement with the initial course.",
+      "On balance, brief-pulse or conventional ECT should remain the preferred default when rapid and robust antidepressant effect is the primary goal, while ultrabrief-pulse ECT is a reasonable option for selected patients at higher risk of cognitive adverse effects or who prioritize preserving cognition.",
+      "The main caveat is that the evidence base is limited to 7 studies, with likely heterogeneity in treatment protocols and outcome definitions that reduces precision and confidence in the pooled estimate."
+    ]
+  }
+}

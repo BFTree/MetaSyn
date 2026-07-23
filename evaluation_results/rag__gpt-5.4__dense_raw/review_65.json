@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15113,
+    "output_tokens": 1534,
+    "total_tokens": 16647
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5043,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4112,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as an evidence summary with synthesis, limitations, inclusion decisions, and included studies, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods, PRISMA-style search strategy, quality assessment, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Directly studied women with PCOS",
+      "Measured neck circumference",
+      "Reported outcomes fitting MetS, insulin resistance, or related metabolic/anthropometric outcomes"
+    ],
+    "exclusion_criteria": [
+      "Reviews/systematic reviews/protocols: 032, 033, 034, 051, 060, 061, 072, 078, 085, 093, 096, 099, 105, 106, 121, 129, 130, 151, 152, 154, 160, 175, 183, 190, 200",
+      "PCOS studies without usable NC exposure/outcome focus: 011, 021, 022, 025, 026, 035, 042, 052, 056, 058, 059, 065, 068, 075, 084, 102, 108, 126, 134, 135, 188, 189",
+      "Adolescent/pediatric-only PCOS populations: 016, 031, 053, 091",
+      "Non-PCOS populations: most remaining candidates"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible evidence is entirely **observational and cross-sectional**, so it can support association, discrimination, and between-group differences, but not causality.",
+      "Across the included studies, the evidence supports two consistent conclusions:",
+      "**Neck circumference is higher or metabolically worse within PCOS populations**, and in at least one study PCOS women had substantially higher burden of metabolic syndrome than non-PCOS controls.",
+      "**Larger neck circumference is consistently associated with adverse metabolic features in PCOS**, especially:",
+      "NC appears to be a useful upper-body adiposity marker in adult women with PCOS.",
+      "Larger NC is associated with worse metabolic phenotype in PCOS, especially MetS and IR.",
+      "NC may have practical screening utility, with reported cutoffs roughly in the **33-34.3 cm** range across studies.",
+      "Overall, the abstract-level evidence from the fixed pool supports the review\u2019s premise that **neck circumference is clinically relevant in adult women with PCOS and is associated with metabolic syndrome, insulin resistance, and related metabolic abnormalities**.",
+      "The direct evidence that **PCOS women have larger NC than non-PCOS controls** is less consistently reported in abstracts than the association evidence within PCOS populations."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14720,
+    "output_tokens": 877,
+    "total_tokens": 15597
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3318,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, evidence synthesis, interpretation, and quality-signal sections, but it lacks a formal abstract, introduction, detailed methods, search strategy, data extraction and synthesis procedures, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human primary study within the date window `2004-11-01` to `2014-11-30`",
+      "Open-angle glaucoma patients plus healthy/nonglaucomatous controls for the main comparison",
+      "Evaluated translaminar pressure difference (TPD; IOP - ICP/CSF pressure) with quantitative values in OAG patients"
+    ],
+    "exclusion_criteria": [
+      "Excluded reviews, comments, case reports, experimental models, and studies without quantitative TPD data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The abstract-level evidence available in the fixed pool supports the conclusion that TPD is elevated in patients with open-angle glaucoma compared with healthy subjects",
+      "there is suggestive evidence that higher TPD is associated with glaucomatous damage, including neuroretinal rim loss"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12987,
+    "output_tokens": 1188,
+    "total_tokens": 14175
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.68,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5207,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a screening summary, evidence synthesis, conclusion, and list of included studies, but it lacks key systematic review sections such as an abstract, introduction, detailed methods, search strategy, quality assessment, formal discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "investigated the effect of adopting a healthy dietary pattern on periodontal parameters in patients with gingivitis or periodontitis compared to those maintaining standard or unhealthy dietary habits"
+    ],
+    "exclusion_criteria": [
+      "being published after the search end date (2022-09-20)",
+      "being reviews or opinion pieces",
+      "focusing on animal models",
+      "measuring self-reported or radiographic periodontal parameters only",
+      "evaluating single foods/supplements rather than whole dietary patterns",
+      "not comparing a healthy diet intervention against an unhealthy/standard diet in a population with periodontal disease"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Current RCT evidence indicates that adopting a comprehensive healthy dietary pattern\u2014specifically an anti-inflammatory or Mediterranean diet\u2014can significantly reduce gingival inflammation (gingivitis) in the short term (4\u20136 weeks).",
+      "However, the evidence for a clinically measurable improvement in periodontitis parameters via a customised high-fibre/high-nutritional diet over a longer duration (6 months) is currently lacking, with the sole eligible periodontitis RCT showing no significant benefit to periodontal indices despite improvements in systemic antioxidant status.",
+      "Two RCTs demonstrated significant improvements in gingival parameters following the adoption of a healthy diet, independent of changes in plaque levels:",
+      "While the intervention group successfully improved their dietary habits and antioxidant status, no significant differences were observed in periodontal indices between the intervention and control groups (who received standard clinical treatment without dietary advice)."
+    ]
+  }
+}

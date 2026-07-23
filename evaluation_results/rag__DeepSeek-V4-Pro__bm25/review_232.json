@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9581,
+    "output_tokens": 900,
+    "total_tokens": 10481
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.758,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3687,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic-review elements such as eligibility criteria, screening outcomes, study summary, limitations, and conclusion, but it lacks several standard sections such as an abstract, introduction, detailed methods/search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original human investigations (cohort design)",
+      "have a sample size of \u2265\u202f400 participants (or events for dichotomous outcomes)",
+      "a follow\u2011up of at least 1 year (for cardiovascular, mortality and similar outcomes) or 4 weeks (for physical performance)",
+      "to have measured sodium intake using at least one 24\u2011h urine collection, a food record or a 24\u2011h diet recall"
+    ],
+    "exclusion_criteria": [
+      "Cross\u2011sectional studies, animal experiments, reviews, modelling studies, and those relying on spot urine, food\u2011frequency questionnaires or self\u2011reported salt intake were excluded.",
+      "Interventions were not considered unless they were observational comparisons of habitual intake."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "That study suggests that a higher urinary sodium\u2011to\u2011potassium ratio is associated with an increased risk of incident heart failure (particularly HFrEF) and atrial fibrillation in people with CKD.",
+      "No eligible study addressed physical performance, osteoporosis, all\u2011cause mortality or blood\u2011pressure outcomes under the required design and measurement standards.",
+      "The review highlights a critical lack of high\u2011quality observational evidence using validated sodium intake measures to examine health outcomes in the general adult population.",
+      "No statistically significant association was observed for incident MI or HF with preserved ejection fraction."
+    ]
+  }
+}

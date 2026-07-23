@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28922,
+    "output_tokens": 898,
+    "total_tokens": 29820
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.42424242424242425,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4615384615384615,
+    "screening_accuracy": 0.7575757575757576,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.7524,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7305,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis/review elements such as search queries, eligibility criteria, screening decisions, and study characteristics, but it lacks full PRISMA-level rigor such as a detailed reproducible search strategy, formal risk-of-bias/quality assessment, and explicit quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human randomized trials",
+      "Parallel-group or within-person randomization",
+      "Evaluated interceptive extraction of the primary canine for displaced permanent maxillary canines",
+      "Compared extraction with no interceptive treatment/delayed treatment, or compared canine extraction alone with canine-plus-primary-first-molar extraction",
+      "Studies of palatal displacement, and inclusion of labial/central displacement was allowed"
+    ],
+    "exclusion_criteria": [
+      "Non-randomized designs",
+      "Retrospective cohorts without controls",
+      "Case reports",
+      "Editorials",
+      "Systematic reviews and meta-analyses"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The randomized evidence retrieved from the local MetaSyn corpus supports the conclusion that **interceptive extraction of the primary maxillary canine increases the likelihood of spontaneous eruption of palatally displaced permanent maxillary canines compared with no treatment or delayed treatment**.",
+      "The most applicable studies for children aged **10\u201313 years** show eruption rates near **67%\u201369%** with extraction versus **39%\u201342%** without extraction.",
+      "Benefit is **not uniform**: outcomes are better in **younger patients**, especially around **10\u201311 years**, and in canines with **less severe radiographic displacement**, **more favorable sector/alpha angle**, and **less advanced root development**.",
+      "My concrete opinion is that primary canine extraction is a **valid and worthwhile interceptive treatment**, but it should be used as a **radiographically guided, time-sensitive intervention**, not a reflexive procedure for every displaced canine.",
+      "Doing nothing appears to be the least favorable option in truly displaced cases, while routine escalation to additional extractions or expansion without indication is not supported as a universal rule."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17723,
+    "output_tokens": 994,
+    "total_tokens": 18717
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.5885,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5075,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with methodology, screening results, evidence synthesis, limitations, and included studies, but it lacks several standard sections such as an abstract, formal introduction, conclusion, references, detailed search strategy, data extraction process, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer-reviewed empirical studies published between January 1, 2020, and September 1, 2023",
+      "focusing on FL techniques for breast, lung, or prostate cancer",
+      "involving a comparative evaluation of FL models against centralized or single-centre baselines",
+      "reporting quantitative clinical or diagnostic outcomes"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "editorials",
+      "non-English publications",
+      "studies outside the specified cancer types",
+      "studies lacking the required comparative framework",
+      "being published outside the target date range (especially 2024-2026 publications)",
+      "being reviews or non-empirical commentaries",
+      "focusing on cancer types other than breast, lung, or prostate (e.g., melanoma, colorectal, pancreatic)",
+      "employing distributed infrastructures without training an FL model against a centralized/single-centre baseline",
+      "their abstracts indicated comparisons only against other FL variants (e.g., FedAvg vs. custom FL) rather than against centralized or single-institution models",
+      "they merely reported the performance of an FL model without a baseline comparison"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included evidence supports the premise that FL improves model generalizability and diagnostic performance over single-centre (local) models and can achieve performance on par with centralized approaches.",
+      "Both studies explicitly highlight the privacy advantages of FL.",
+      "Eligible evidence was found for prostate and breast cancers.",
+      "Consequently, no eligible primary studies evaluating FL against centralized baselines specifically for lung cancer were identified in this candidate pool.",
+      "Both studies demonstrate FL's superiority or parity compared to local/single-centre models, but the evidence for FL consistently outperforming fully pooled, centralized models trained on the same aggregated data is less direct\u2014Candidate 010 achieves parity with centralized approaches, while Candidate 001 focuses on cross-site generalization gains over local models.",
+      "Future research should prioritize explicit head-to-head comparisons between FL and centralized pooled-data models across all three cancer types, particularly lung cancer."
+    ]
+  }
+}

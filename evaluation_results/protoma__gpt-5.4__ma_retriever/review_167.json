@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 37828,
+    "output_tokens": 1157,
+    "total_tokens": 38985
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.1368421052631579,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.6875,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.9263157894736842,
+    "conditional_retention": 0.8461538461538461,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6441,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5387,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and logical systematic-review structure with abstract, background, PICO question, methods, detailed search strategy, eligibility criteria, screening results, synthesis methods, results, risk-of-bias assessment, discussion, conclusion, and included studies, but it falls short of excellent PRISMA-style rigor because of duplicated headings, incomplete reference details, limited data-extraction reporting, no formal PRISMA flow diagram, and an incompletely reported search window."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies of women at average risk of breast cancer aged 45-74 years, including data for the 45-49, 50-69, or 70-74 year subgroups when reported.",
+      "Randomized trials, comparative observational studies, modeling studies, or systematic evidence reports that evaluate mammography screening intervals and include annual, biennial, or triennial screening.",
+      "Studies that use biennial mammography screening as the reference group or provide direct comparisons between annual, biennial, and/or triennial mammography intervals.",
+      "Studies reporting at least one prespecified outcome: breast cancer deaths averted, QALYs, stage at detection, interval cancers, overdiagnosis, false-positive results, or radiation-related effects."
+    ],
+    "exclusion_criteria": [
+      "Studies limited to women at high risk of breast cancer, women with prior breast cancer, known genetic susceptibility, or other populations not representing average-risk screening populations.",
+      "Studies that do not evaluate mammography screening interval effects or that assess other screening modalities without interval-specific mammography comparisons.",
+      "Non-comparative studies without relevant outcome data, as well as case reports, case series, editorials, commentaries, and narrative reviews.",
+      "Studies that do not report any prespecified benefit or harm outcomes related to screening interval."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the pooled findings suggest that screening interval may affect outcomes compared with biennial mammography, but the evidence is not fully consistent.",
+      "The bottom line is that the random-effects meta-analysis identified a borderline statistically significant pooled effect, while substantial heterogeneity and the null fixed-effect estimate indicate that this result should be interpreted cautiously and in the context of important between-study differences.",
+      "Taken together, the evidence suggests that screening interval may matter, but the direction and magnitude of benefit are not sufficiently consistent to support strong causal inferences from the pooled estimate alone.",
+      "More broadly, the included literature indicates that shorter intervals may improve some screening outcomes, such as earlier stage detection or fewer interval cancers, but these gains must be weighed against greater exposure to false positives, overdiagnosis, and radiation-related harms.",
+      "Clinically, these findings support continued use of biennial mammography as a reasonable reference strategy for average-risk women, particularly because it appears to occupy a middle ground between possible gains from more frequent screening and the increased harms that accompany additional screening rounds.",
+      "The current evidence does not justify a uniform shift toward shorter intervals for all average-risk women aged 45-74 years.",
+      "A qualified recommendation is to favor biennial screening for most average-risk women, while individualizing interval decisions by age subgroup and patient preferences.",
+      "The main caveat is the substantial between-study heterogeneity (I\u00b2=84.1%), which limits confidence in a single pooled effect."
+    ]
+  }
+}

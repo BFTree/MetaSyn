@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10014,
+    "output_tokens": 1041,
+    "total_tokens": 11055
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.375,
+    "inclusion_f1": 0.35294117647058826,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": 0.6513,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3736,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a screening summary, synthesized findings, conclusion, and included-study list, but it lacks several formal systematic review sections such as abstract, introduction, detailed methods, search strategy, data extraction, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "employing vertex-based/surface-based morphometry to estimate whole-brain cortical thickness in medication-free (mostly treatment-na\u00efve) adult MDD patients compared to healthy controls"
+    ],
+    "exclusion_criteria": [
+      "utilized voxel-based morphometry (VBM) rather than vertex-based cortical thickness estimation",
+      "focused on ROI-based analyses",
+      "included medicated patients without a medication-free washout period",
+      "examined late-life depression (participants >65 years) or adolescent/youth populations (<18 years)",
+      "failed to report significant whole-brain clusters (implying a lack of effect coordinates for meta-analysis)",
+      "Reviews, meta-analyses, and theoretical papers were also excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In medication-free adults with MDD, particularly those in their first episode, vertex-based morphometry reveals a complex pattern of both cortical thickening (predominantly in frontal and parietal regions) and focal thinning (in lateral orbitofrontal and precentral regions).",
+      "Thickening may reflect active illness-related cortical changes or compensatory mechanisms close to illness onset, whereas thinning may be linked to specific neurobiological stressors such as hypercortisolemia.",
+      "These alterations are largely independent of illness duration or symptom severity, suggesting they may represent trait-related vulnerability markers rather than state-dependent consequences of depressive episodes.",
+      "The most consistent finding across the eligible studies was *increased* cortical thickness in medication-free, early-stage MDD patients compared to healthy controls, contrary to the atrophy often observed in chronic, medicated cohorts.",
+      "While thickening was more prevalent in early-stage untreated patients, focal thinning was also reported in specific regions:",
+      "The relationship between thickness and symptom severity was mixed."
+    ]
+  }
+}

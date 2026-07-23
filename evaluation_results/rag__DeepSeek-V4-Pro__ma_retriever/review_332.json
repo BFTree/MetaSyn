@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6859,
+    "output_tokens": 929,
+    "total_tokens": 7788
+  },
+  "metrics": {
+    "retrieval_recall": 0.9024390243902439,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.0975609756097561,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.17777777777777776,
+    "screening_accuracy": 0.835,
+    "conditional_retention": 0.10810810810810811,
+    "post_retrieval_loss": 0.8048780487804879,
+    "inclusion_consistency": 0.8174,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7676,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct Background, Methods, Results, Discussion, and Conclusion sections plus explicit inclusion/exclusion criteria and synthesis by time and region, but it lacks a full abstract, references, detailed search strategy, PRISMA flow, and quality assessment, so it falls short of excellent rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Confirmed mpox patients of all genders and ages",
+      "studies reporting the proportion of women among mpox cases",
+      "prevalence studies, case series, cross\u2011sectional, cohort, case\u2011control, and survey designs",
+      "global scope",
+      "English language",
+      "human studies",
+      "published up to January 4, 2022",
+      "only articles with a publication year on or before 2022 were considered"
+    ],
+    "exclusion_criteria": [
+      "Studies addressing only male cases",
+      "no sex distribution reported",
+      "qualitative, policy, case reports, and opinion pieces",
+      "those published after January 4, 2022 were excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the constraints of the candidate pool and the applied date restriction, only four primary studies from the pre\u20112022 period could be included.",
+      "These studies show that the proportion of women among confirmed mpox cases has historically ranged from approximately 19% to 57%.",
+      "No eligible studies from the 2022\u2011onwards period were identified, preventing any time\u2011period comparison and limiting the generalizability of these findings.",
+      "The limited evidence from pre\u20112022 studies indicates that the proportion of women among mpox cases varies considerably\u2014from roughly one\u2011fifth to more than half\u2014depending on the outbreak setting and transmission patterns.",
+      "Consequently, this review cannot estimate the proportion of women in the 2022\u2011onwards epidemic or compare it with earlier periods using the supplied candidate pool."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18986,
+    "output_tokens": 870,
+    "total_tokens": 19856
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.46808510638297873,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.619718309859155,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.5945945945945946,
+    "post_retrieval_loss": 0.3191489361702128,
+    "inclusion_consistency": 0.6083,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4037,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Objective, Methods, Results, Conclusions, and included studies, and it provides eligibility criteria and a synthesis approach, but it lacks a distinct Introduction/Discussion, full References, detailed search strategy, data extraction methods, screening flow, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "single\u2011arm phase I or phase II trial",
+      "adult RRMM population",
+      "experimental drug alone or with dexamethasone",
+      "reported activity in \u226510 intention\u2011to\u2011treat patients"
+    ],
+    "exclusion_criteria": [
+      "combination with drugs other than dexamethasone",
+      "restricted sub\u2011populations",
+      "supportive\u2011care or transplantation studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Agents with single-agent or dexamethasone-augmented ORR \u000220%, combined with manageable toxicity, frequently progressed to later-phase development (e.g., carfilzomib, pomalidomide, daratumumab, isatuximab).",
+      "Lower-activity compounds generally did not translate into approved therapies.",
+      "This synthesis reinforces the benchmark that a mean ORR \u000215\u000220% in early-phase testing is predictive of subsequent clinical success.",
+      "Toxicity patterns are class-dependent and underscore the need for supportive care protocols.",
+      "These findings provide a historical framework for evaluating novel RRMM therapies."
+    ]
+  }
+}

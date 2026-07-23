@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22580,
+    "output_tokens": 1427,
+    "total_tokens": 24007
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.18421052631578946,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.868421052631579,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.4485,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6572,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes search strategy, screening criteria, findings, synthesis, limitations, conclusion, and references, but it lacks formal Abstract and Introduction sections and does not report a quality assessment or detailed data extraction method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "2010-01-01 to 2022-11-15",
+      "original research",
+      "English language",
+      "prospective or level I/II evidence",
+      "CKD with >3 months reduced eGFR or kidney damage",
+      "hypertension",
+      "catheter-based radiofrequency renal denervation (RDN)",
+      "relevant BP/renal safety outcomes"
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, case reports, and dialysis-feasibility reports when they did not meet the prespecified CKD/eGFR-preservation focus or did not provide suitable prospective CKD data for the meta-analysis question"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "My evidence-based conclusion is **balanced but favorable for BP control, cautious for kidney protection**.",
+      "RDN appears to be a **reasonable adjunctive BP-lowering option** in selected hypertensive CKD patients, including some with more advanced disease, and short-term renal safety is generally reassuring.",
+      "However, the claim that RDN **preserves kidney function** remains **unproven**; the strongest renal finding is stability, not definitive improvement.",
+      "The 2015 eGFR-slope signal is interesting, but it is not strong enough to establish causality.",
+      "Across all included CKD cohorts, RDN was associated with clinically meaningful BP reductions.",
+      "Evidence for kidney preservation is weaker than the BP signal.",
+      "No study reported a major safety signal that would outweigh the BP benefit in selected patients."
+    ]
+  }
+}

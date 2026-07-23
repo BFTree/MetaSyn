@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6831,
+    "output_tokens": 1605,
+    "total_tokens": 8436
+  },
+  "metrics": {
+    "retrieval_recall": 0.8095238095238095,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.19047619047619047,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.32,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.23529411764705882,
+    "post_retrieval_loss": 0.6190476190476191,
+    "inclusion_consistency": 0.5685,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4395,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is reasonably organized with screening outcomes, evidence synthesis, limitations, and a conclusion, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, detailed search strategy, quality assessment, meta-analysis methods, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original aquatic-environment papers that directly examine heteroaggregation/flocculation and give explicit particle-size information for the microplastics and at least some indication of aggregate/floc formation or transport as aggregates"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "not aquatic flocculation studies",
+      "focused on treatment removal rather than environmental floc transport",
+      "did not report both microplastic size/shape and aggregate/floc size information in the abstract",
+      "Treatment/coagulation engineering rather than environmental flocculation",
+      "Reviews/systematic reviews/non-original articles",
+      "Not about flocculation/heteroaggregation of MPs in aquatic environments",
+      "Original aquatic studies but failing the exclusion rule because the abstract does not report both MP size/shape and aggregate size clearly enough"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included evidence is limited but consistent.",
+      "Across freshwater, estuarine/coastal, and marine settings, the abstracts indicate that microplastics can be incorporated into aggregates or flocs and then transported vertically or laterally as part of those aggregates rather than solely as individual particles.",
+      "These studies support the core review premise that incorporation into flocs is size dependent and environmentally mediated.",
+      "The strongest direct size evidence in the candidate pool sits mostly below or overlapping the proposed threshold of 162 \u00b5m.",
+      "The available abstract-level evidence therefore supports a synthesis in which transport mode is not determined by polymer buoyancy alone.",
+      "So the conclusion that particles below about 162 \u00b5m are especially incorporable is only partially supported by this screened abstract set.",
+      "What is well supported is that MPs around 63-125 \u00b5m and about 85 \u00b5m do incorporate into flocs/aggregates, and that larger fractions up to 500 \u00b5m may also do so in some environments.",
+      "From the fixed candidate pool, the eligible evidence indicates that floc-mediated transport of microplastics occurs in multiple aquatic environments and is strongly influenced by particle size, shape, buoyancy, and surface biological interactions.",
+      "The most directly supported incorporable size fractions in this screened set are in the tens to low-hundreds of micrometers, especially 63-125 \u00b5m and about 85 \u00b5m.",
+      "Evidence also suggests that some larger non-spherical buoyant particles up to 500 \u00b5m can flocculate with fine-grained sediment in seawater, so any universal threshold should be interpreted cautiously and as environmentally contingent rather than absolute."
+    ]
+  }
+}

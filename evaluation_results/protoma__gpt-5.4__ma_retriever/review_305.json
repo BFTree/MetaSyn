@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35263,
+    "output_tokens": 1088,
+    "total_tokens": 36351
+  },
+  "metrics": {
+    "retrieval_recall": 0.425531914893617,
+    "retrieval_precision": 0.32786885245901637,
+    "inclusion_recall": 0.06382978723404255,
+    "inclusion_precision": 0.3,
+    "inclusion_f1": 0.10526315789473684,
+    "screening_accuracy": 0.6065573770491803,
+    "conditional_retention": 0.15,
+    "post_retrieval_loss": 0.3617021276595745,
+    "inclusion_consistency": 0.7248,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6481,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized structure with Abstract, Background/Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, plus meta-analysis elements such as search strategy, eligibility criteria, screening counts, and synthesis methods, but it has duplicated headings, limited reference formatting, and less-than-complete PRISMA-style detail on data extraction and study flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational comparative studies (for example cohort, case-control, or population registry studies) that evaluate offspring of women diagnosed with polycystic ovary syndrome (PCOS) and include a comparator group of offspring of women without PCOS.",
+      "Studies in human pregnancies reporting maternal PCOS diagnosis as the exposure and assessing neonatal or perinatal outcomes in the offspring.",
+      "Studies including offspring/births from women with PCOS and women without PCOS, with outcomes reported at birth or in the perinatal period.",
+      "Studies reporting at least one eligible birth outcome: preterm birth, fetal growth restriction, low birth weight, mean birthweight, small for gestational age, neonatal intensive care unit admission, or perinatal mortality."
+    ],
+    "exclusion_criteria": [
+      "Studies without a non-PCOS comparator group, or studies that do not distinguish outcomes for offspring of women with PCOS versus women without PCOS.",
+      "Studies not focused on human offspring birth or perinatal outcomes, including studies limited to maternal outcomes, fertility treatment response, or later child outcomes without neonatal birth outcome data.",
+      "Non-comparative reports and non-primary research, including case reports, case series, narrative reviews, editorials, conference abstracts without sufficient data, and animal studies.",
+      "Studies that do not report any of the prespecified birth outcomes or where maternal PCOS status is not clearly defined as the exposure."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 10 studies, maternal PCOS was associated with a higher odds of adverse birth outcomes in offspring, although the random-effects estimate did not reach conventional statistical significance (OR 1.57, 95% CI 0.96-2.56; 7 studies contributing to the pooled OR).",
+      "However, the evidence is not definitive enough to support strong causal claims or major changes to routine management on its own.",
+      "A reasonable conclusion is that PCOS should be considered a marker of possible elevated obstetric and neonatal risk, prompting careful monitoring within standard risk assessment.",
+      "This interpretation is limited primarily by very high between-study heterogeneity (I2=91.9%), which indicates substantial inconsistency across studies."
+    ]
+  }
+}

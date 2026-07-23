@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16987,
+    "output_tokens": 994,
+    "total_tokens": 17981
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.8333333333333334,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.8695652173913043,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.16666666666666666,
+    "inclusion_consistency": 0.4725,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.31,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as PICO-based screening, exclusion criteria, and narrative synthesis by outcome, but it lacks several formal required sections including an abstract, introduction, detailed methods/search strategy, quality assessment, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population (adult men with PeCa confined to the glans)",
+      "Intervention (glansectomy \u00b1 neoglans reconstruction)",
+      "Comparison (baseline or benchmarks)",
+      "Outcome (functional data primary; oncological/QoL secondary)",
+      "Study Design (primary observational or interventional studies)"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "editorials",
+      "comments",
+      "conference abstracts",
+      "case reports lacking aggregate functional data",
+      "focused on non-glansectomy interventions (e.g., partial penectomy, glans resurfacing, laser therapy, phalloplasty)",
+      "addressed populations other than localized PeCa (e.g., urethral cancer, trauma, transgender surgery)",
+      "published after the search end date of 2024-09-29 (e.g., 2025/2026 publications)",
+      "Studies reporting only surgical or oncological outcomes without functional data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Preservation of erectile function and sexual activity is a primary benefit of glansectomy compared to more radical amputations, though functional declines are frequently noted relative to pre-operative baselines or less invasive techniques.",
+      "Studies consistently report high rates of erection preservation.",
+      "These domains appear relatively preserved.",
+      "The ability to void while standing is a critical functional outcome preserved by glansectomy, which maintains phallic length.",
+      "High rates of standing micturition are reported.",
+      "Glansectomy generally minimizes impact on urinary function compared to radical surgery (Candidate 003).",
+      "Sensory outcomes vary by reconstruction technique.",
+      "Cosmetic satisfaction is generally high.",
+      "Global QoL and health status remain favorable.",
+      "While functional preservation is the goal, glansectomy maintains acceptable oncological control."
+    ]
+  }
+}

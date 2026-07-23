@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12508,
+    "output_tokens": 875,
+    "total_tokens": 13383
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7538,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2655,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct review question, methods, screening results, study characteristics, synthesis, and included-study list, and it includes key review elements like eligibility criteria and screening process, but it lacks a full PRISMA-style structure with separate abstract/introduction/discussion/references and a detailed synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "undergraduate dental student population",
+      "direct comparison of TBL with at least one other teaching pedagogy",
+      "reporting of student satisfaction and/or academic performance outcomes"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, meta\u2011analyses, other reviews, protocols, editorials, conference abstracts, and studies in non\u2011dental populations were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Each included study reported favourable outcomes for TBL.",
+      "No study reported negative or neutral effects of TBL.",
+      "Collectively, the evidence suggests that TBL is an acceptable and effective pedagogy in undergraduate dental education, improving both satisfaction and academic outcomes when compared with traditional lectures.",
+      "However, the small number of studies and diverse contexts limit generalisability."
+    ]
+  }
+}

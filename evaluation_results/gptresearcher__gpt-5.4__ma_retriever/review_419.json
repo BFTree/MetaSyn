@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26902,
+    "output_tokens": 1037,
+    "total_tokens": 27939
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.031746031746031744,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9682539682539683,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.513,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7581,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Discussion, Conclusion, Included-Study List, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and a PRISMA-style narrative, but it lacks fuller PRISMA rigor such as a detailed quality/risk-of-bias assessment and formal data extraction or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years and older with overweight or obesity and comorbid depressive symptoms.",
+      "Internet-, web-, or mobile-based psychological interventions targeting depressive symptoms, including CBT, third-wave CBT, behavior therapy, psychodynamic or other psychological approaches.",
+      "Randomized control conditions such as treatment as usual, waitlist, or low-level support.",
+      "Depressive symptom severity and weight reduction."
+    ],
+    "exclusion_criteria": [
+      "Interventions not directly targeting mental health, interventions focused only on quality of life/well-being, highly specific populations, non-psychological interventions, and non-English/German studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the evidence supports a cautious conclusion: IMI that integrate mental health and weight-related behavior change can improve depressive symptoms, and sometimes weight, but the completed randomized evidence in adults with both overweight/obesity and depressive symptoms remains sparse, recent evidence is dominated by protocols, and long-term maintenance is still a major weakness.",
+      "The most defensible conclusion from the supplied local corpus is that IMI for adults with overweight/obesity and depressive symptoms are promising but under-evidenced.",
+      "The strongest completed randomized evidence supports short-term reductions in depressive symptoms and modest weight loss when interventions integrate mental health and weight-management content, as in *SHED-IT: Recharge* ([MetaSyn Corpus 7017](metasyn://corpus/7017); [Morgan et al., 2021](https://doi.org/10.1037/ccp0000671)).",
+      "But the newer 2024-2025 literature most relevant to this population is still largely protocol-based rather than outcome-based.",
+      "The local MetaSyn corpus does not provide enough completed contemporary RCT evidence within the specified search window to conclude that IMI are already well-established as effective for reducing depressive symptoms in adults with overweight or obesity and comorbid depressive symptoms.",
+      "The best available direct randomized evidence from the supplied corpus supports cautious optimism: integrated digital interventions can improve depressive symptoms and produce modest short-term weight loss, especially when they combine psychological treatment with weight-management content.",
+      "However, the evidence base remains small, recent high-relevance studies are still protocols, and long-term maintenance is unresolved.",
+      "My concrete judgment is that IMI in this population are not yet a proven mature treatment class; they are a promising but still development-stage approach."
+    ]
+  }
+}

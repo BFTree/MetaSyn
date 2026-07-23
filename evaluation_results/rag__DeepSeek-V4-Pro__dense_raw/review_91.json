@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15047,
+    "output_tokens": 899,
+    "total_tokens": 15946
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.5641025641025641,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.676923076923077,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.8461538461538461,
+    "post_retrieval_loss": 0.10256410256410256,
+    "inclusion_consistency": 0.8824,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5769,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Introduction, Methods, Findings, Discussion, and included-study/reference list sections, and it includes screening criteria, study selection, and synthesis themes, but it lacks a formal abstract, detailed reproducible search strategy, data extraction procedures, and quality/risk-of-bias assessment needed for PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "To be included, a publication had to describe primary research that used synthetic data generation methods and evaluated the resulting outputs."
+    ],
+    "exclusion_criteria": [
+      "Studies that were surveys, systematic or scoping reviews, protocols, editorials, or poster abstracts were excluded, as were publications in languages other than English, those reporting only unstructured data (images/text), and those that did not assess either utility or privacy of the generated data."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Despite this variety, no single utility metric is universally endorsed.",
+      "Privacy evaluation is even less standardised than utility assessment.",
+      "Among those that do measure privacy, there is no consensus on which metric is most appropriate, and the reporting of privacy parameters is often incomplete.",
+      "Overall, the literature does not demonstrate a consistent, equal emphasis on privacy and utility.",
+      "The evidence from the 26 included primary studies indicates that while there is a growing body of work on evaluating synthetic health data, the research community has not yet reached consensus on standardised methods for either privacy or utility assessment.",
+      "Privacy evaluation is particularly fragmented, with a wide array of metrics and a lack of agreement on what constitutes adequate protection.",
+      "In many studies, utility is prioritised over privacy, and the trade\u2011off between the two is not systematically explored.",
+      "Future research should focus on developing and validating a unified, multi\u2011dimensional evaluation protocol that balances privacy, utility, and fairness, and that is endorsed by the community."
+    ]
+  }
+}

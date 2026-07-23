@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 36128,
+    "output_tokens": 1026,
+    "total_tokens": 37154
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.11666666666666667,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.36363636363636365,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.4832,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5464,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening results, synthesis approach, results, risk-of-bias assessment, discussion, and conclusion, but it falls short of excellent because references are not formally provided, headings are duplicated, and some PRISMA-style elements such as a full data extraction method and standardized flow presentation are incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational study designs (cross-sectional, case-control, or cohort) or intervention studies that report baseline or subgroup comparisons between stunted and non-stunted children.",
+      "Studies conducted in low- and middle-income countries and including children under 5 years of age.",
+      "Studies that define stunting using height-for-age z-score criteria consistent with WHO standards (e.g., HAZ < -2 SD) and include a comparison group of non-stunted children with normal height-for-age.",
+      "Studies reporting gut microbiome composition outcomes, including alpha diversity, beta diversity, taxonomic abundance at phylum or genus level, and/or microbial functional or metabolic pathway profiles."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted outside LMICs or in populations not restricted to children under 5 years of age.",
+      "Studies that do not include stunting status as the exposure/grouping variable or do not include a non-stunted comparison group.",
+      "Studies that do not report gut microbiome composition data relevant to the review outcomes.",
+      "Reviews, meta-analyses, case reports, conference abstracts, editorials, protocols, animal studies, or in vitro studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The retained reports did not provide enough compatible numeric data for pooled meta-analysis.",
+      "No study reported sufficient data to calculate a comparable effect estimate for the association between stunting and gut microbiome composition; therefore, meta-analysis was not possible.",
+      "The available studies suggest that gut microbiome composition or function may differ according to stunting status in young children in LMICs, but the direction, size, and consistency of any association cannot be established from the available data.",
+      "Taken together, these studies suggest that microbiome differences between stunted and non-stunted children may exist, but the pattern was not sufficiently consistent or completely reported to support firm conclusions.",
+      "As a result, the current literature indicates possible microbiome perturbations associated with stunting, but it does not yet establish a clear, reproducible microbial signature of stunting in this population.",
+      "For practice, the present evidence does not support using gut microbiome markers as a reliable basis for identifying or managing stunting in children under 5 years in LMICs.",
+      "Overall, the current evidence base is limited and insufficient to support firm conclusions about a consistent association between gut microbiome composition and stunting in this population."
+    ]
+  }
+}

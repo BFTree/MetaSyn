@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18395,
+    "output_tokens": 1072,
+    "total_tokens": 19467
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.896551724137931,
+    "inclusion_f1": 0.912280701754386,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.5486,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6567,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around a review question, eligibility criteria, cancer-specific findings, and included studies, but it lacks most formal systematic review sections such as Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, and key PRISMA elements like detailed search strategy, screening process, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies (cohort, case-control, nested case-control, case-cohort) assessing bisphosphonate exposure (\u22651 prescription) vs. non-use on cancer incidence, reporting effect estimates (OR/RR/HR) with 95% CIs.",
+      "English language.",
+      "Search end date: 2019-12-07."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "comments",
+      "conference abstracts",
+      "in vitro/animal studies",
+      "studies without calculable effect estimates or focusing on non-incidence outcomes (e.g., mortality, survival, metastases)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Evidence regarding the association between bisphosphonate use and overall cancer risk is mixed.",
+      "Most studies suggest a neutral or protective association between bisphosphonate use and CRC risk.",
+      "The evidence leans towards a reduced risk of breast cancer with bisphosphonate use, though some large cohorts show no effect.",
+      "Included studies consistently indicate a protective association between bisphosphonates and endometrial cancer.",
+      "Data on liver cancer risk are sparse and suggest potential increased risk with specific agents or high doses.",
+      "Findings are conflicting.",
+      "Longer duration appears to enhance protective effects for some cancers."
+    ]
+  }
+}

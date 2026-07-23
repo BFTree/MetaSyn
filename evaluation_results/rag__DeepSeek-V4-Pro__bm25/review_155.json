@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8659,
+    "output_tokens": 961,
+    "total_tokens": 9620
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6956521739130435,
+    "inclusion_precision": 0.8421052631578947,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.6956521739130435,
+    "post_retrieval_loss": 0.30434782608695654,
+    "inclusion_consistency": 0.8528,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2776,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Objective, Methods, Results, Synthesis, and included-study list with screening criteria, but it lacks formal Abstract, Introduction, Discussion, Conclusion, References, quality assessment, detailed data extraction procedures, and quantitative meta-analysis methods, and the included-studies section contains an organizational error/self-correction."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "cohort of women with breast cancer",
+      "cohort, case\u2011control, or randomised controlled trial design (including retrospective analyses of RCTs)",
+      "statin use as the exposure",
+      "reported BCD or BCR",
+      "reported 95% confidence intervals or standard errors",
+      "published as a full\u2011length article",
+      "Only studies from the supplied pool were considered"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "laboratory studies",
+      "articles not reporting the outcomes of interest"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence from the 19 included observational studies indicates that postdiagnostic statin use is generally associated with a reduced risk of both breast cancer recurrence and breast cancer\u2011specific mortality.",
+      "The association appears stronger for lipophilic statins (especially simvastatin) and in patients with ER\u2011positive tumours.",
+      "However, the magnitude of the effect varies substantially across studies, and studies with more rigorous control for immortal time bias and confounding report smaller, sometimes non\u2011significant, associations.",
+      "Prospective randomised trials are needed to confirm causality and to identify the patient subgroups most likely to benefit."
+    ]
+  }
+}

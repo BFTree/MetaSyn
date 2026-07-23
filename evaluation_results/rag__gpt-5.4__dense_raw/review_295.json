@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15784,
+    "output_tokens": 2457,
+    "total_tokens": 18241
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3447,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.485,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with screening, included studies, synthesis, and interpretation, but it lacks most formal systematic review sections such as abstract, introduction, full methods, discussion, conclusion, references, detailed search strategy, inclusion/exclusion criteria, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "preterm infants undergoing heel lance",
+      "oral sucrose vs breast milk/expressed breast milk"
+    ],
+    "exclusion_criteria": [
+      "Not the right comparator: many trials compared sucrose/glucose with placebo, water, NNS, skin-to-skin, music, etc., but not breast milk/expressed breast milk.",
+      "Wrong population: term infants, mixed newborn populations without separable preterm results, or mean gestational age not clearly within the preterm target.",
+      "Wrong design: systematic reviews, meta-analyses, qualitative studies, cohorts, protocols.",
+      "Wrong procedure/context: not heel lance/venipuncture relevant to the review question."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In preterm infants undergoing heel lance, sucrose and breast milk/expressed breast milk appear to have similar analgesic effects on PIPP/PIPP-R pain scores.",
+      "There is no clear abstract-level evidence here that sucrose is superior to BM/EBM, nor that BM/EBM is superior to sucrose.",
+      "The evidence is limited to heel lance, mainly in moderate/late preterm infants.",
+      "The included abstracts do not adequately report crying duration, heart-rate change, or adverse events, so those outcomes cannot be synthesized meaningfully from the abstract-only data.",
+      "Based on the eligible studies in the supplied pool, oral sucrose does not appear clearly more effective than breast milk/expressed breast milk for heel-lance pain control in preterm infants; the available RCT abstracts suggest little to no difference in PIPP/PIPP-R pain scores.",
+      "Evidence for glucose, venipuncture, crying duration, heart rate, and adverse events is not adequately represented in the final included studies."
+    ]
+  }
+}

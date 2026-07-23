@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18317,
+    "output_tokens": 1499,
+    "total_tokens": 19816
+  },
+  "metrics": {
+    "retrieval_recall": 0.48936170212765956,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.2765957446808511,
+    "inclusion_precision": 0.9285714285714286,
+    "inclusion_f1": 0.42622950819672134,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.5652173913043478,
+    "post_retrieval_loss": 0.2127659574468085,
+    "inclusion_consistency": 0.6268,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3468,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with screening criteria, synthesis, study-by-study results, interpretation, and an included-study list, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality assessment, quantitative synthesis/meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary reports from 2010-01-01 to 2020-07-01",
+      "adult RRMM",
+      "single-arm phase I/II trials",
+      "testing an experimental compound as monotherapy or with dexamethasone only",
+      "with at least 10 patients and activity reported in an intention-to-treat population"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "pooled analyses",
+      "phase III/randomized studies",
+      "non-RRMM populations",
+      "combinations including agents other than dexamethasone",
+      "subgroup-only studies",
+      "articles outside the date window"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across included studies, ORR ranged from essentially no objective responses with some agents to about 55% in more active regimens; the strongest activity in this pool was seen with `carfilzomib \u00b1 low-dose dexamethasone` and `ixazomib + dexamethasone`.",
+      "Toxicity was dominated by hematologic events (especially thrombocytopenia, neutropenia, anemia), infections, infusion reactions for monoclonal antibodies, and agent-specific GI/constitutional effects.",
+      "The pool is heterogeneous in prior-line burden, refractoriness, and whether dexamethasone was given upfront or added later, so cross-study comparison is descriptive only.",
+      "Pure single-agent development often produced modest activity, whereas adding dexamethasone sometimes improved disease control, but toxicity remained substantial and heavily hematologic.",
+      "Because this evidence is from uncontrolled early-phase studies, any comparison across years or drug classes should be treated as hypothesis-generating rather than confirmatory."
+    ]
+  }
+}

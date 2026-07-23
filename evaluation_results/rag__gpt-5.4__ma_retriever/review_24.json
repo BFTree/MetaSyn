@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9634,
+    "output_tokens": 2284,
+    "total_tokens": 11918
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7507,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6245,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with screening, synthesis, conclusion, limits, and included articles, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, search strategy, data extraction, quality assessment, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The target review is narrowly about adult obese patients with and without type 2 diabetes mellitus (T2DM), receiving very low calorie diets (<800 kcal/day) or low-energy liquid-formula total diet replacement, with a direct comparison of weight change between the diabetic and non-diabetic groups."
+    ],
+    "exclusion_criteria": [
+      "not a primary trial (`systematic review`, `meta-analysis`, review, protocol)",
+      "no direct comparison between obese patients with and without T2DM",
+      "only T2DM participants or only non-diabetic participants",
+      "intervention was not a VLCD/low-energy liquid-formula total diet replacement",
+      "not clearly adult obesity-focused",
+      "no quantitative weight-loss comparison relevant to the review question",
+      "publication clearly outside the likely primary-study set or not a clinical comparison study",
+      "Excluded because, although both diabetic and non-diabetic participants were present, the abstract does not report a direct comparison of weight change between patients with and without T2DM."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these studies, the main pattern is consistent: obese patients with T2DM appear to lose about the same amount of weight as obese patients without T2DM when both receive a very low calorie diet program.",
+      "Candidate 003 and Candidate 004 therefore point in the same direction: similar overall weight loss in obese participants with and without T2DM under VLCD treatment.",
+      "From the supplied candidate pool, the abstract-level evidence supports the conclusion that obese adults with T2DM can achieve weight loss comparable to obese adults without T2DM when treated with a very low calorie diet program.",
+      "The best-matched study found no significant between-group difference in 24-week weight loss."
+    ]
+  }
+}

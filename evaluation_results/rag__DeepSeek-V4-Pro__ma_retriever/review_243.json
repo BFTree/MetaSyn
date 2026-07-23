@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8449,
+    "output_tokens": 1121,
+    "total_tokens": 9570
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.7272727272727273,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8888888888888888,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.5656,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.709,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening process, included studies, and narrative synthesis, but it lacks a full abstract, introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, quantitative meta-analysis methods, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language",
+      "peer-reviewed",
+      "original data",
+      "administration of MDMA combined with psychotherapy for a psychiatric condition",
+      "Only Phase 2 and 3 trials or pilot studies that delivered MDMA-assisted psychotherapy and reported adverse event data were retained."
+    ],
+    "exclusion_criteria": [
+      "no psychotherapy",
+      "reviews",
+      "commentaries",
+      "conference abstracts",
+      "book chapters",
+      "animal studies",
+      "Phase 1 studies lacking psychotherapy"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "MDMA\u2011assisted psychotherapy, when administered in a controlled clinical setting with thorough preparation, monitoring, and integration, demonstrates a **favourable and consistent short\u2011term safety profile** across diverse psychiatric conditions.",
+      "The most commonly observed adverse events are mild to moderate and time\u2011limited (e.g., headache, fatigue, transient anxiety, mild cardiovascular changes).",
+      "The available data do not signal any increased risk of treatment\u2011emergent suicidality, substance misuse, or medically serious complications.",
+      "However, the total number of participants remains modest, and the majority of data derive from tightly regulated Phase\u202f2 and 3 trials; real\u2011world safety monitoring and larger, longer\u2011term studies are advisable to confirm these findings and detect rare events."
+    ]
+  }
+}

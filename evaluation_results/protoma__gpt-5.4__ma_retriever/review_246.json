@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 39729,
+    "output_tokens": 973,
+    "total_tokens": 40702
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.45454545454545453,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6060606060606061,
+    "screening_accuracy": 0.875,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.6262,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5448,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening flow, and synthesis methods, but it falls short of excellent PRISMA-style rigor because references are not fully formatted, data extraction methods are only lightly described, and there are some duplicated headings and reporting gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Interventional human studies, including randomized or non-randomized clinical trials, that evaluate melatonin supplements or melatonin receptor agonists such as ramelteon or tasimelteon.",
+      "Studies enrolling healthy participants or patients with psychiatric disorders, including bipolar disorder, schizophrenia, major depressive disorder, or other psychiatric conditions.",
+      "Studies that include a placebo, control, or comparator condition for assessing the effects of the intervention.",
+      "Studies reporting at least one relevant sleep-wake or circadian outcome, such as sleep onset latency, total sleep time, wake after sleep onset, dim-light melatonin onset, phase shifts, or sleep timing."
+    ],
+    "exclusion_criteria": [
+      "Observational studies, case reports, case series, reviews, editorials, commentaries, conference abstracts, protocols, and non-human studies.",
+      "Studies limited to participants without healthy controls or psychiatric populations relevant to the review question, or focused primarily on non-psychiatric medical populations only.",
+      "Studies evaluating interventions other than melatonin or melatonin receptor agonists, or not separating their effects from multi-component interventions.",
+      "Studies that do not report eligible sleep-wake cycle or circadian rhythm outcomes, or do not include a placebo or control condition."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 11 studies involving healthy participants and patients with psychiatric disorders, melatonin supplements and melatonin receptor agonists were not associated with a clear overall benefit versus placebo or control on sleep-wake and circadian outcomes under the random-effects model (pooled MD 4.66, 95% CI -3.71 to 13.04; p=0.28).",
+      "Although the fixed-effects model suggested a small statistically significant effect (MD 1.54, 95% CI 0.29 to 2.78), the inconsistency between models and substantial heterogeneity (I2=73.8%) indicate that any benefit is likely modest and not reliably generalizable across populations or outcomes.",
+      "Clinically, these agents may still be reasonable when targeting circadian misalignment or sleep timing in selected patients, particularly where tolerability is a priority, but they should not be assumed to produce a consistent, meaningful improvement across psychiatric and nonpsychiatric groups.",
+      "The main caveat is the marked between-study heterogeneity, likely reflecting differences in diagnoses, interventions, dosing, and outcome definitions."
+    ]
+  }
+}

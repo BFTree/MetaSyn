@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11588,
+    "output_tokens": 1294,
+    "total_tokens": 12882
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.42857142857142855,
+    "inclusion_f1": 0.4615384615384615,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5004,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3184,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening, included studies, synthesis, limitations, and a conclusion, but it lacks major required sections such as an abstract, introduction, detailed methods/search strategy, quality assessment, formal meta-analysis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that evaluated the diagnostic accuracy of artificial intelligence (AI)-based methods\u2014particularly deep learning models\u2014for detecting pathological myopia (PM) on colour fundus photographs, reporting sensitivity, specificity, area under the receiver operating characteristic curve (AUROC), and/or diagnostic odds ratio, with a reference standard of expert clinical diagnosis.",
+      "original, peer-reviewed studies that developed and validated AI algorithms on colour fundus images to detect PM or myopic maculopathy (the hallmark of PM), and they reported the required diagnostic performance metrics."
+    ],
+    "exclusion_criteria": [
+      "reviews, meta-analyses, conference abstracts, or addressed different diseases, imaging modalities, or non\u2011diagnostic tasks."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All seven included studies employed deep learning models applied to colour fundus images to classify pathological myopia or the severity of myopic maculopathy.",
+      "All studies demonstrated that deep learning models can identify pathological myopia with high sensitivity and specificity, often rivalling or exceeding expert clinicians.",
+      "The available primary studies consistently show that AI\u2011based algorithms applied to colour fundus images can detect pathological myopia with high diagnostic accuracy (AUCs\u00a00.97\u20130.998, sensitivities\u00a0~85\u201395%, specificities\u00a0~93\u201399%).",
+      "The evidence supports the potential of these tools for screening and assisting clinicians.",
+      "However, the limited number of externally validated studies and the absence of prospective evaluations mean that the estimates should be interpreted with caution."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30468,
+    "output_tokens": 1109,
+    "total_tokens": 31577
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.17567567567567569,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.2,
+    "screening_accuracy": 0.7972972972972973,
+    "conditional_retention": 0.15384615384615385,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.6037,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5334,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a generally complete and well-organized systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening flow, statistical analysis, results, risk of bias, discussion, and conclusion, but it lacks a formal references section and contains organizational flaws such as duplicated headings and placeholder text in the main findings."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling people with HIV undergoing an analytical treatment interruption (ATI) of antiretroviral therapy.",
+      "Studies that compare placebo or no-intervention groups within ATI studies and/or compare early-ART initiators (within 6 months of HIV acquisition) with late-ART initiators.",
+      "Studies reporting at least one outcome of interest: time to viral rebound using plasma HIV RNA thresholds (>50, >400, or >10,000 copies/mL) or post-treatment control frequency (plasma viral load <50 copies/mL at day 84 post-ATI).",
+      "Interventional or observational primary studies with extractable data on ATI outcomes stratified by ART initiation timing or relevant comparator groups."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving ATI or not evaluating interruption of antiretroviral therapy in people with HIV.",
+      "Studies that do not include the relevant population or lack separation of early-ART versus late-ART groups or placebo/no-intervention comparator data.",
+      "Studies not reporting viral rebound timing or post-treatment control outcomes relevant to the review question.",
+      "Non-primary research articles such as reviews, editorials, commentaries, protocols, case reports, conference abstracts without sufficient data, or animal/in vitro studies."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 6 ATI studies, initiating ART early after HIV acquisition was associated with a more favorable ATI outcome than later ART initiation or no active intervention, with greater odds of post-treatment control and a longer time to viral rebound.",
+      "Clinically, this suggests that early-treated people with HIV may be the most appropriate candidates for remission-focused ATI studies, but it does not mean ATI is safe or effective as a routine care strategy, since viral rebound remained common and closely timed monitoring is still essential.",
+      "A reasonable implication is that ATI should remain restricted to well-supervised research protocols, with early-ART status used to stratify or enrich study populations.",
+      "The main caveat is that the evidence base was small and selective\u2014only 6 studies, with participants predominantly male, White, and relatively young\u2014and outcome definitions for rebound varied across studies.",
+      "This systematic review of six ATI studies suggests that timing of ART initiation may influence post-treatment virologic outcomes, with early ART initiation appearing to be associated with more favorable control after treatment interruption than late initiation.",
+      "The findings therefore support a cautious interpretation: early-treated individuals may have a greater chance of delayed rebound or short-term control off ART, but this advantage is not yet quantified with the level of certainty needed for strong predictive clinical use."
+    ]
+  }
+}

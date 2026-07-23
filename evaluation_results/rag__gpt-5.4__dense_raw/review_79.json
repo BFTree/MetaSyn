@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16084,
+    "output_tokens": 1116,
+    "total_tokens": 17200
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.35555555555555557,
+    "inclusion_precision": 0.7804878048780488,
+    "inclusion_f1": 0.48854961832061067,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.08888888888888889,
+    "inclusion_consistency": 0.3037,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1781,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with screening approach, eligibility judgment, synthesis summary, limitations, and included studies, but it lacks standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, quality assessment, and formal meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "I used **only** the supplied candidate pool.",
+      "I treated as eligible only records that **look like primary LMIC WASH intervention studies** on **water, sanitation, and/or handwashing** with **diarrhoeal disease and/or acute respiratory infection/respiratory illness** outcomes.",
+      "**primary intervention studies**"
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, meta-analyses, evidence maps, protocols/design papers, commentaries, purely observational/non-intervention studies, and studies without relevant health outcomes.",
+      "systematic reviews/meta-analyses/reviews",
+      "protocols or design/rationale papers",
+      "observational association studies without an intervention",
+      "studies focused only on uptake/behavior/process without diarrhoea/ARI outcomes",
+      "studies outside the review\u2019s apparent intervention/outcome scope"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "At abstract level, this literature seems to show a recurring pattern:",
+      "women are often central to delivery of WASH behaviors,",
+      "but their participation is poorly characterized,",
+      "their time/labor is rarely acknowledged,",
+      "women-specific outcomes are seldom measured,",
+      "and intervention reporting is mostly **gender-unaware**.",
+      "That means the evidence base may support child-health effectiveness questions better than questions about **equity, women\u2019s burden, or gender responsiveness**.",
+      "So for this review question, the abstract-level evidence suggests **time burden was generally not reported** and **compensation was not reported**.",
+      "So the evidence base appears to have assessed women mostly as **caregivers or intervention conduits**, not as primary beneficiaries with distinct outcomes.",
+      "Based on title/abstract only, the included interventions appear overwhelmingly **gender-unaware** rather than gender-responsive."
+    ]
+  }
+}

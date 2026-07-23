@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26301,
+    "output_tokens": 853,
+    "total_tokens": 27154
+  },
+  "metrics": {
+    "retrieval_recall": 0.8235294117647058,
+    "retrieval_precision": 0.5185185185185185,
+    "inclusion_recall": 0.5294117647058824,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.7777777777777778,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.8967,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8628,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as a review question, eligibility criteria, exact search queries, retrieval and screening decisions, included/excluded studies, synthesis by outcomes, limitations, and conclusion, but it lacks a conventional abstract, references section, formal quality/risk-of-bias assessment, and a completed quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Reported breast cancers, including invasive cancers and/or ductal carcinoma in situ (DCIS), detected in consecutive or randomly selected women with dense breasts.",
+      "Included women regardless of age, density classification system, or proportion with additional breast cancer risk factors.",
+      "Evaluated women screened with mammography who also underwent supplemental ultrasound screening, at minimum when mammography was negative."
+    ],
+    "exclusion_criteria": [
+      "Enrolled symptomatic women.",
+      "Focused on interval cancers after normal screening.",
+      "Compared different women receiving mammography and ultrasound rather than the same screened population.",
+      "Did not report cancers in dense breasts separately from cancers in fatty breasts.",
+      "Were published before 2000.",
+      "Were duplicate or overlapping reports when a more complete report from the same dataset was available."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The direction of evidence was consistent across included studies: supplemental ultrasound detected additional cancers that were not seen on mammography alone in women with dense breasts.",
+      "The overall direction was again consistent: adding ultrasound increased the number of screen-detected cancers beyond mammography alone.",
+      "The evidence therefore supports an increase in additional cancer detection, but not a defensible pooled numeric estimate from the currently preserved extraction.",
+      "The included studies also consistently indicate that supplemental ultrasound increased referral-related downstream testing, commonly reflected in recall rates, biopsy recommendations, or abnormal assessment rates.",
+      "The local evidence therefore supports supplemental ultrasound as a sensitivity-enhancing strategy, while also showing that this benefit is not cost-free in terms of referral burden.",
+      "Within the local MetaSyn PubMed corpus, the evidence from eligible studies published between 2000-01-01 and 2017-07-26 supports the conclusion that adding supplemental ultrasound to mammography in women with dense breasts increases cancer detection compared with mammography alone, including cancers detected only by ultrasound."
+    ]
+  }
+}

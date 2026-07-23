@@ -1,0 +1,71 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14854,
+    "output_tokens": 1343,
+    "total_tokens": 16197
+  },
+  "metrics": {
+    "retrieval_recall": 0.9696969696969697,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.696969696969697,
+    "inclusion_precision": 0.7931034482758621,
+    "inclusion_f1": 0.7419354838709677,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.71875,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.377,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4526,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, included/excluded studies, limitations, evidence summary, and conclusion, but it lacks a formal abstract, introduction, methods/results/discussion structure, detailed search strategy, quality assessment, and explicit data extraction or quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind randomized discontinuation/placebo-substitution trials in patients with major depressive disorder who achieved remission or stable response on antidepressants, comparing continuation of the same antidepressant with switch to placebo"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "secondary analyses without enough primary-trial detail to stand alone",
+      "non-randomized studies",
+      "augmentation/switching studies",
+      "psychotherapy comparisons",
+      "pediatric-only studies when the target question is not explicitly pediatric",
+      "bipolar and other excluded depressive populations",
+      "ECT-focused relapse prevention",
+      "studies not clearly using the required discontinuation design",
+      "reviews/meta-analyses/protocols: Candidates 001, 002, 005, 008, 010, 014, 016, 018, 022, 026, 030, 036, 045, 090, etc.",
+      "bipolar disorder: 007, 027, 042, 114, 115, 117, 157, 175.",
+      "augmentation/switch/TRD acute studies: 003, 052, 077, 100, 107, 118, 137, 147, 161, etc.",
+      "psychotherapy comparisons or combination designs not isolating continuation vs placebo as the core randomized contrast: 028, 032, 049, 053, 124, 174.",
+      "nonrandomized or observational studies: 013, 034, 035, 058, 129, etc.",
+      "ECT-focused relapse prevention: 098, 130.",
+      "pediatric/adolescent-only trials were not included for this synthesis focused on the main adult MDD maintenance question: 019, 061, 064.",
+      "secondary/post hoc predictor papers from already included trials were not counted as separate primary studies: 004, 011, 040, 056, 060, 066, 086, 104, 123, 182, 200."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across them, the direction of effect is consistent: continuing the antidepressant after remission generally lowers relapse/recurrence risk versus switching to placebo.",
+      "Several trials also suggest better treatment retention for lack of efficacy under continued antidepressant treatment, while tolerability differences during the blinded phase are usually small, though some studies note adverse events or possible discontinuation symptoms after placebo switch.",
+      "Across SSRIs, SNRIs, atypical antidepressants, and other agents, continuation treatment repeatedly outperformed placebo on time to relapse and/or relapse proportion.",
+      "Relapse reduction: strongly supported.",
+      "Treatment failure / lack of efficacy discontinuation: supported in some trials that explicitly counted discontinuation for inefficacy or intervention for depression.",
+      "Within this fixed pool, the eligible double-blind discontinuation RCT evidence supports the review\u2019s main claim: continuing the antidepressant used to achieve remission in MDD reduces relapse risk compared with switching to placebo.",
+      "The benefit appears broadly consistent across multiple antidepressant classes, is present in older adults, and is evident over roughly 6 to 12 months of continuation/maintenance treatment.",
+      "Evidence on acceptability and treatment failure is supportive but less uniformly reported in abstracts than relapse outcomes."
+    ]
+  }
+}

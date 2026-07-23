@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24591,
+    "output_tokens": 1979,
+    "total_tokens": 26570
+  },
+  "metrics": {
+    "retrieval_recall": 0.7857142857142857,
+    "retrieval_precision": 0.18333333333333332,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.6086956521739131,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.6363636363636364,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.7476,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5918,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-style elements such as search queries, eligibility criteria, screening decisions, study characteristics, and synthesis approach, but it lacks a formal quality/risk-of-bias assessment and full PRISMA-level detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Average-risk women aged 45-74, including relevant subgroup evidence for 45-49, 50-69, and 70-74",
+      "Comparison of annual, biennial, or triennial mammography intervals",
+      "RCTs, observational registry/cohort studies, and decision-analytic models",
+      "English-language studies",
+      "Published on or before April 30, 2020"
+    ],
+    "exclusion_criteria": [
+      "High-risk populations such as BRCA1/2 carriers, prior breast cancer, prior chest irradiation, lobular neoplasia, or direct family-member-defined high-risk cohorts",
+      "Post-2020 publications for the primary review evidence base",
+      "Studies not comparing intervals",
+      "Studies on surveillance after breast cancer treatment rather than population screening"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence base located in the local corpus supports a consistent conclusion: for women aged 50-69, and likely extending through 70-74, shorter screening intervals than biennial or triennial offer at most modest incremental benefit while clearly increasing harms, especially false positives and overdiagnosis.",
+      "For women aged 45-49, the evidence is weaker and more mixed; observational U.S. registry data suggest annual screening may reduce late-stage disease relative to biennial screening, which aligns with the 2015 American Cancer Society recommendation for annual screening from 45 to 54.",
+      "My judgment is that biennial screening is the best-supported reference interval overall for average-risk women 50-74, while evidence for women 45-49 is insufficiently robust to justify a universal annual policy in an NHS-like population without accepting materially greater harm.",
+      "The most defensible overall conclusion is that biennial mammography is the best-supported standard interval for average-risk women aged 50-74, because it preserves most of the benefit seen with annual screening while substantially reducing false positives and likely reducing overdiagnosis."
+    ]
+  }
+}

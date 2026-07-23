@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23607,
+    "output_tokens": 816,
+    "total_tokens": 24423
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.21,
+    "inclusion_recall": 0.44642857142857145,
+    "inclusion_precision": 0.8620689655172413,
+    "inclusion_f1": 0.5882352941176471,
+    "screening_accuracy": 0.895,
+    "conditional_retention": 0.5952380952380952,
+    "post_retrieval_loss": 0.30357142857142855,
+    "inclusion_consistency": 0.6904,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7709,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a screening summary, eligibility criteria, narrative synthesis, identified gaps, and included studies, but it lacks several standard systematic review sections such as a formal abstract, detailed methods/search strategy, quality assessment, explicit data extraction/synthesis methods, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human participants",
+      "psychophysical tests measuring retinal sensitivity thresholds using a full-field stimulus and adaptive methodology, such as FST, Whole-field SST-1, or final scotopic threshold from dark adaptometry",
+      "sufficient methodological or reporting detail"
+    ],
+    "exclusion_criteria": [
+      "animal studies",
+      "dark adaptometry without final threshold",
+      "tests not employing a full-field stimulus",
+      "insufficient methodological detail",
+      "reviews, protocols, editorials, or out-of-date articles published after September 30, 2022"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "There is significant variability in the chromatic properties of the stimuli used, primarily aimed at differentiating rod versus cone mediation:",
+      "Flash duration is a critical parameter for retinal sensitivity, yet it is almost universally omitted from clinical study abstracts.",
+      "The lack of standardized reporting units is a prominent source of variability:",
+      "Essential methodological details\u2014specifically dark adaptation duration and stimulus flash duration\u2014are routinely omitted from publications.",
+      "Consensus is needed on the standard adaptation state for cone-mediated FST.",
+      "While FST is feasible in children, gaps remain in accounting for age-related maturation of decision-making criteria and learning effects, necessitating pediatric-specific normative data and protocol adjustments (Candidate 029, excluded for date, highlighted this in abstract; included studies like Candidate 136 show feasibility but lack standardized pediatric adjustments)."
+    ]
+  }
+}

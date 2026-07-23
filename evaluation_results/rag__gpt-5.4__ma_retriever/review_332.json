@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12928,
+    "output_tokens": 817,
+    "total_tokens": 13745
+  },
+  "metrics": {
+    "retrieval_recall": 0.9024390243902439,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.3170731707317073,
+    "inclusion_precision": 0.8125,
+    "inclusion_f1": 0.45614035087719296,
+    "screening_accuracy": 0.87,
+    "conditional_retention": 0.35135135135135137,
+    "post_retrieval_loss": 0.5853658536585366,
+    "inclusion_consistency": 0.5967,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5741,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening decisions, eligibility rationale, narrative synthesis, limitations, conclusion, and included studies, but it lacks several formal systematic review sections such as a structured abstract, introduction, detailed methods/search strategy, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be **primary human studies**",
+      "include **confirmed or clearly described mpox case series/outbreak cohorts**",
+      "and **report sex distribution including women**"
+    ],
+    "exclusion_criteria": [
+      "**reviews, systematic reviews, overviews, editorials, protocols**, or non-primary articles",
+      "**case reports**",
+      "**male-only cohorts**",
+      "studies where **sex distribution was not reported clearly enough** in the abstract",
+      "or **published outside the review\u2019s search window** (especially many 2024\u20132025 articles)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Women comprised a notable fraction of mpox cases before 2022, including some outbreaks/settings with near-equal or even female-leaning proportions.",
+      "From 2022 onward in nonendemic settings, women represented a very small minority of reported confirmed cases in the eligible evidence.",
+      "The observed differences appear tied not only to calendar period but also to transmission context and geography.",
+      "Based on abstracts alone, explicit data on trans women were essentially absent in eligible primary studies.",
+      "Because this is abstract-only screening, and because the included studies were highly heterogeneous in setting and reporting, I am not estimating a pooled proportion."
+    ]
+  }
+}

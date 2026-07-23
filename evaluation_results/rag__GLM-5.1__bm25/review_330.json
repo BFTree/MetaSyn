@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11279,
+    "output_tokens": 857,
+    "total_tokens": 12136
+  },
+  "metrics": {
+    "retrieval_recall": 0.8064516129032258,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.6451612903225806,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.7142857142857142,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.16129032258064516,
+    "inclusion_consistency": 0.6488,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4425,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with context, synthesized findings, conclusion, and included studies, but it lacks formal sections such as Abstract, detailed Methods, Discussion, References, and key PRISMA/meta-analysis elements like a full search strategy, screening flow, quality assessment, data extraction procedures, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults \u226518 with schizophrenia spectrum disorders vs. healthy controls",
+      "focus on grammar/syntax",
+      "quantitative measures"
+    ],
+    "exclusion_criteria": [
+      "age <18",
+      "case reports",
+      "no healthy controls",
+      "reviews/meta-analyses",
+      "protocols",
+      "editorials",
+      "or studies lacking quantitative effect size data"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included primary studies consistently demonstrate that individuals with schizophrenia exhibit significant impairments across both syntactic production and comprehension domains relative to healthy controls, with considerable interindividual variability and complex relationships to cognitive and symptom profiles.",
+      "Multiple studies confirm that spontaneous and elicited speech in schizophrenia is characterized by reduced syntactic complexity and diversity.",
+      "Comprehension deficits are equally robust but more specifically tied to syntactic complexity.",
+      "The synthesized evidence robustly supports the presence of distinct syntactic impairments in schizophrenia across both production and comprehension modalities.",
+      "These impairments appear to be a core feature of the disorder, present from the first episode and linked to formal thought disorder, though their interindividual variability suggests heterogeneous underlying mechanisms that are not entirely subsumed by general cognitive dysfunction."
+    ]
+  }
+}

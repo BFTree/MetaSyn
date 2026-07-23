@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21860,
+    "output_tokens": 1116,
+    "total_tokens": 22976
+  },
+  "metrics": {
+    "retrieval_recall": 0.27450980392156865,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.2549019607843137,
+    "inclusion_precision": 0.8666666666666667,
+    "inclusion_f1": 0.3939393939393939,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.0196078431372549,
+    "inclusion_consistency": 0.6892,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2548,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear background, organized results by biomarker category, an overall synthesis, limitations, and an included-study list, but it lacks a formal abstract, introduction, methods, detailed search strategy, screening flow, data extraction/synthesis methods, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only longitudinal studies that assessed the biomarker before the outcome and used clinical-interview-based MDD diagnoses were eligible.",
+      "The 15 eligible studies all employed a prospective longitudinal design and examined a biomarker from one of the pre-specified domains (neuroimaging, hormones, neurotransmitters, oxidative stress, neurotrophic factors, or inflammatory markers) as a predictor of first-onset MDD or of MDD recurrence/relapse."
+    ],
+    "exclusion_criteria": [
+      "The search time-frame ended on 30 June 2019; therefore, all candidates published after that date were excluded.",
+      "No study used gastrointestinal or exclusively neurotransmitter (beyond norepinephrine) biomarkers in a suitable predictive design.",
+      "No eligible study examined gastrointestinal biomarkers; all candidates in that domain were either cross-sectional or published after 2019."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Consistent predictive signals were observed for several hormonal markers (especially morning cortisol, cortisol/DHEAS ratio, and cortisol stress reactivity) although the direction of the cortisol\u2011recurrence association was mixed.",
+      "Structural neuroimaging measures (reduced anterior insula, amygdala, or anterior cingulate volumes; enlarged CSF spaces) predicted both first onset and recurrence.",
+      "Functional connectivity markers (default mode and salience network dysfunction, self\u2011blame\u2011related hyperconnectivity) emerged as promising predictors of MDD onset or recurrence.",
+      "Inflammatory and oxidative stress markers (TNF\u2011\u03b1, HSP70, 3\u2011nitrotyrosine, TBARS) predicted first\u2011onset MDD in specific populations, but no study prospectively examined these markers for recurrence.",
+      "Neurotrophic factors (BDNF) showed time\u2011varying changes rather than a simple baseline prediction.",
+      "The included studies collectively indicate that biological markers from the specified domains hold promise for prospectively identifying individuals at risk for MDD onset or recurrence."
+    ]
+  }
+}

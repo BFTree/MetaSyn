@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20673,
+    "output_tokens": 998,
+    "total_tokens": 21671
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.5714285714285714,
+    "inclusion_recall": 0.03571428571428571,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0689655172413793,
+    "screening_accuracy": 0.4523809523809524,
+    "conditional_retention": 0.041666666666666664,
+    "post_retrieval_loss": 0.8214285714285714,
+    "inclusion_consistency": 0.5451,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7745,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, methods, eligibility criteria, search queries, screening rationale, study selection, findings, limitations, conclusion, and sources, but it lacks a formal abstract and full PRISMA-style rigor elements such as detailed flow counts and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double-blind randomized placebo-controlled trial",
+      "Minimum duration of 12 weeks",
+      "Enrichment design in which participants were stabilized on the antidepressant of interest during an open-label phase",
+      "Randomization to continue the same antidepressant or switch to placebo",
+      "Adult participants with MDD"
+    ],
+    "exclusion_criteria": [
+      "Focused on specific age-defined generations such as children/adolescents or older adults",
+      "Included participants with dual diagnoses of MDD plus other disorders",
+      "Were continuation studies randomizing patients during the acute phase rather than after maintenance-phase stabilization"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "That included abstract-only trial suggests that continued fluoxetine after prolonged open-label stabilization reduces recurrence and prolongs time to recurrence compared with placebo, with limited evidence of good tolerability and no excess adverse-event withdrawal signal [1].",
+      "The included fluoxetine study found that continuing fluoxetine reduced recurrence versus placebo:",
+      "This supports maintenance efficacy for fluoxetine in adults with recurrent unipolar major depression after prolonged open-label stabilization."
+    ]
+  }
+}

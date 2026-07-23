@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21920,
+    "output_tokens": 937,
+    "total_tokens": 22857
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.7058823529411765,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.8000000000000002,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.7713,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5768,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized sections and includes screening criteria and study-by-study synthesis, but it lacks a formal abstract, introduction, methods, results, discussion, conclusion, references, detailed search strategy, quality assessment, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies had to be primary screening studies in asymptomatic women with dense breasts, where women received mammography and supplemental ultrasound (at least after negative mammography), with breast cancer detection in dense breasts reported separately."
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, technology assessments, guidelines, qualitative studies, protocols, symptomatic/diagnostic-only cohorts, mixed-risk surveillance after prior cancer, studies before 2000, and studies where dense-breast-specific screening data were not clearly usable from the abstract.",
+      "the review explicitly excludes interval cancers",
+      "the review excludes studies published before 2000",
+      "the intervention in the target review is ultrasound generally, but these are specifically automated 3D/ABUS studies and may or may not have been included by the original review",
+      "Studies mixing symptomatic patients, surveillance after prior breast cancer, recall/assessment settings, or non-dense-specific populations were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across included studies, supplemental ultrasound after mammography in women with dense breasts consistently increases additional cancer detection, typically by about `~2 to 4 cancers per 1000` screened women with dense breasts or mammography-negative dense breasts.",
+      "Harms also increase: recall / abnormal interpretation / biopsy recommendation rates are higher, and several abstracts explicitly note low positive predictive value and more false positives.",
+      "The eligible abstract-level evidence supports that adding ultrasound to mammography in women with dense breasts increases detection of otherwise mammographically occult cancers.",
+      "The additional detection is usually modest in absolute terms (`~2\u20134 extra cancers per 1000`), but the trade-off is consistent: more recalls, more biopsies, and more false positives.",
+      "The evidence base in this pool is mostly retrospective and programmatic rather than randomized, so the direction of effect is consistent, but the exact magnitude likely varies by reader expertise, prevalence vs incidence screening, and local recall thresholds."
+    ]
+  }
+}

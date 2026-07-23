@@ -1,0 +1,47 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13579,
+    "output_tokens": 543,
+    "total_tokens": 14122
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.9139,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.836,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized around a review question, eligibility criteria, screening results, and conclusion, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, References, and key PRISMA elements like search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective clinical ATI studies in adults receiving placebo or no active intervention, with frequent plasma viral load (pVL) monitoring defined as a minimum of 5 planned pVL measurements within the first 84 days post-ATI and a maximum of 18 days between measurements within the first 42 days."
+    ],
+    "exclusion_criteria": [
+      "Excludes non-English, non-primary studies (abstracts, letters, reviews, etc.), studies with co-infection, animal/in-vitro studies, and pediatric/MTCT studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary study candidates met all eligibility criteria, primarily due to the inability to verify the specific pVL monitoring frequency requirement from the abstract text.",
+      "None were included."
+    ]
+  }
+}

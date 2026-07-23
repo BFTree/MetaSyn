@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22706,
+    "output_tokens": 908,
+    "total_tokens": 23614
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.35,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.4999999999999999,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.35,
+    "post_retrieval_loss": 0.65,
+    "inclusion_consistency": 0.4727,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5347,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, included studies, structured findings, conclusion, and article list, but it lacks formal Abstract/Introduction/Methods/Discussion/References sections and omits key PRISMA-style elements such as a detailed search strategy, screening process, data extraction methods, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "assessing the effect of interceptive extraction on PDC eruption",
+      "parallel-group and within-person (split-mouth) randomised designs"
+    ],
+    "exclusion_criteria": [
+      "Studies evaluating only pain, root resorption, or different interceptive modalities (e.g., rapid maxillary expansion alone) were excluded",
+      "systematic reviews, case reports, and non-randomised designs"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence consistently supports the efficacy of primary canine extraction in promoting the spontaneous eruption of PDCs compared to no treatment.",
+      "Studies reported significant improvements in the intraosseous position (distal movement, uprighting) and shorter mean eruption times in extraction groups compared to controls (010, 011, 030).",
+      "The benefits of extraction appear more pronounced in younger patients within the 10\u201313 year range (004, 010).",
+      "The findings regarding clinical eruption success are inconsistent.",
+      "While clinical success rates may not consistently differ, double extraction appears to favour greater positional improvements.",
+      "Interceptive extraction of the primary canine is an effective treatment for promoting the spontaneous eruption and normalization of position of palatally displaced maxillary canines in children aged 10\u201313 years, significantly increasing success rates compared to no intervention.",
+      "The addition of a primary first molar extraction (double extraction) does not consistently yield higher clinical eruption success rates than single extraction alone, though it may facilitate greater angular correction of the canine's intraosseous position."
+    ]
+  }
+}

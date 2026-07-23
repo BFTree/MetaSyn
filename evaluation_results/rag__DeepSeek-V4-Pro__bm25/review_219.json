@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10940,
+    "output_tokens": 2018,
+    "total_tokens": 12958
+  },
+  "metrics": {
+    "retrieval_recall": 0.39705882352941174,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.27941176470588236,
+    "inclusion_precision": 0.6785714285714286,
+    "inclusion_f1": 0.39583333333333337,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.7037037037037037,
+    "post_retrieval_loss": 0.11764705882352941,
+    "inclusion_consistency": 0.7106,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6127,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, methods, screening criteria, search results, outcome-based synthesis, overall assessment, and included studies list, but it lacks some PRISMA-level rigor elements such as a detailed search strategy, data extraction process, formal quality/risk-of-bias assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were eligible if they were experimental (in vitro, in vivo, human) or epidemiological investigations of radar with frequencies exclusively >6 GHz, and if the stated RF exposure level was at or below the ICNIRP (2020) occupational limits (whole\u2011body power density \u226450\u202fW/m\u00b2, whole\u2011body SAR \u22640.4\u202fW/kg; for in vitro local exposure, power density up to 100\u2013200\u202fW/m\u00b2, depending on frequency).",
+      "Only primary studies with full\u2011text availability in English were considered;",
+      "Where a study contained multiple frequency arms, only the part >6\u202fGHz was considered; the whole study was included if the relevant exposure was reported separately."
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials, and conference abstracts were excluded.",
+      "one radar study was excluded because it used frequencies below 6\u202fGHz"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included studies, which cover frequencies relevant to 5G and radar, overwhelmingly report no consistent adverse effects on genotoxicity, cell proliferation, or gene expression under low\u2011level exposure conditions.",
+      "A small number of studies observed biological changes, most notably in male reproductive parameters (rats) and in membrane\u2011related processes of bacteria and human cells.",
+      "Many of the observed effects were either subtle, associated with thermal mechanisms, or confined to specific cellular stress conditions.",
+      "No evidence of carcinogenicity or systematic organ toxicity emerged from this body of literature.",
+      "The reproductive findings, while derived from exposures far below occupational limits, warrant further investigation to clarify potential long\u2011term consequences.",
+      "Overall, the evidence does not support the hypothesis that low\u2011level RF fields above 6\u202fGHz cause significant adverse health effects under the evaluated exposure scenarios."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10995,
+    "output_tokens": 1059,
+    "total_tokens": 12054
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5295,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4715,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening criteria, exclusions, included studies, and narrative synthesis, but it lacks a formal Abstract, Introduction, full Methods, detailed search strategy, quality assessment, quantitative synthesis/meta-analysis methods, and complete References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: primary stage IV endometrial cancer",
+      "Design: original study",
+      "Sample size: at least 10 patients undergoing CRS",
+      "Outcome reporting: OS and/or PFS stratified by extent of cytoreduction",
+      "Comparator: incomplete/suboptimal CRS"
+    ],
+    "exclusion_criteria": [
+      "Exclusions: reviews/systematic reviews/meta-analyses, conference abstracts, non-original articles, uterine sarcoma studies, HIPEC studies, and studies without separable primary stage IV data",
+      "Review/systematic review, not primary study",
+      "Stage III/IV mixed cohorts without separate stage IV results",
+      "Not stratified by cytoreduction extent in the abstract",
+      "Wrong disease / excluded histology",
+      "HIPEC-related",
+      "Insufficient abstract information to confirm eligibility",
+      "Residual-disease threshold not aligned with the stated criterion (eg, \u22642 cm rather than \u22641 cm)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included abstracts, the direction of effect is highly consistent:",
+      "Optimal or complete cytoreduction was generally associated with longer overall survival",
+      "Several studies also reported longer progression-free survival",
+      "One study reported only a non-significant trend favoring optimal cytoreduction, but the direction still aligned with the rest of the literature",
+      "Based on title/abstract screening of the supplied pool, the eligible evidence supports an association between complete or optimal cytoreductive surgery and better overall survival compared with incomplete cytoreduction in primary stage IV endometrial cancer.",
+      "This pattern is consistent across multiple retrospective cohorts, including general stage IVB and serous-histology populations.",
+      "However, the evidence is non-randomized and vulnerable to confounding, so the abstracts support a strong prognostic/associational signal rather than firm causal inference."
+    ]
+  }
+}

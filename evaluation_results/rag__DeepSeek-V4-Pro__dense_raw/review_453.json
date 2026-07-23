@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12027,
+    "output_tokens": 970,
+    "total_tokens": 12997
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.6132,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6304,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear research question, eligibility criteria, screening summary, study characteristics, synthesis by outcome, limitations, conclusion, and included references, but it lacks a fully detailed PRISMA-style search strategy, explicit data extraction methods, and formal quality assessment details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with chronic hepatitis B (CHB) or chronic hepatitis C (CHC), excluding cohorts with HIV co\u2011infection.",
+      "Statin use (any type, lipophilic or hydrophilic) documented via prescription records.",
+      "Non\u2011statin users (no recorded statin prescriptions).",
+      "Incidence of HCC, all\u2011cause mortality, cirrhosis, cirrhosis decompensation.",
+      "Cohort studies (prospective or retrospective) and randomised controlled trials; only primary research articles were eligible.",
+      "1996\u201101\u201101 to 2024\u201107\u201131."
+    ],
+    "exclusion_criteria": [
+      "excluding cohorts with HIV co\u2011infection.",
+      "articles that did not focus on chronic viral hepatitis",
+      "did not compare statin\u2011exposed to non\u2011exposed groups",
+      "lacked relevant outcomes",
+      "included HIV\u2011co\u2011infected patients",
+      "or were not primary study reports (e.g., reviews, editorials, conference abstracts, protocols)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within this systematic review, statin exposure is consistently associated with a lower risk of HCC, cirrhosis, decompensation, and improved survival in individuals with chronic viral hepatitis B and C.",
+      "Lipophilic statins and higher cumulative doses appear to confer greater benefit.",
+      "These findings support the potential role of statins as chemopreventive agents in chronic viral hepatitis, though confirmatory randomised trials are still needed.",
+      "Statin use was consistently associated with a reduced incidence of HCC, with adjusted hazard ratios (aHR) ranging from 0.41 to 0.56 for overall statin use.",
+      "A clear dose\u2011response relationship emerged in multiple studies: longer duration and higher cumulative doses (e.g., \u2265600 cDDDs) were associated with larger risk reductions for HCC, cirrhosis, and decompensation."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11301,
+    "output_tokens": 1175,
+    "total_tokens": 12476
+  },
+  "metrics": {
+    "retrieval_recall": 0.6111111111111112,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.2777777777777778,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4347826086956522,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.45454545454545453,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4877,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4668,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening outcomes, synthesis, limitations, and included/excluded articles, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, detailed search strategy, quality assessment, and formal References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published between `2021-01-01` and `2024-07-31`,",
+      "a **systematic review with meta-analysis**,",
+      "about **humans**,",
+      "epidemiologic in nature, and",
+      "directly address the association between **periodontitis and a noncommunicable disease (NCD)**, including either direction of association."
+    ],
+    "exclusion_criteria": [
+      "I excluded narrative reviews, protocols, umbrella reviews, primary studies, animal/in vitro work, articles outside the date window, and reviews not clearly about periodontitis-NCD associations.",
+      "Narrative or general reviews without meta-analysis: Candidates 001, 004, 008, 010, 015, 017, 072, 074, 149",
+      "Protocols only: Candidate 009",
+      "Primary studies rather than systematic reviews: Candidates 011, 013, 031, 082, 095, 173",
+      "Outside date range: Candidates 119, 123, 197 are before 2021; many 2025+ candidates are after end date",
+      "Not periodontitis-NCD association reviews: many NCD service, policy, digital health, or unrelated oral-disease papers"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included reviews, the signal is mostly toward a **positive association**:",
+      "Within this fixed pool, the strongest abstract-level pattern is that periodontitis is associated with higher odds or risk of several NCDs, especially **diabetes/metabolic conditions** and some **immune-mediated/inflammatory conditions**, and that at least some systemic NCDs such as **IBD** and **hyperglycaemia/diabetes-related states** are associated with higher occurrence of periodontitis.",
+      "That is consistent with a **bidirectional relationship in selected disease pairs**, but not uniformly across all NCD categories.",
+      "From the eligible candidates in this pool, there is abstract-level evidence that periodontitis is associated with increased risk of several NCDs, especially **diabetes/metabolic syndrome**, some **immune-mediated inflammatory diseases**, and **lung cancer**, and that some NCDs, particularly **IBD** and **hyperglycaemic states**, are associated with higher risk or prevalence of periodontitis.",
+      "The evidence appears **suggestive and generally positive**, but it is **not comprehensive enough** in this pool to fully answer the umbrella-review question across all targeted NCD categories."
+    ]
+  }
+}

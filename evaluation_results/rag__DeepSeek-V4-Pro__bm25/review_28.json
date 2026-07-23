@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11714,
+    "output_tokens": 985,
+    "total_tokens": 12699
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.4216,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5685,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic screening/selection description, eligibility criteria, exclusion reasons, and conclusion, but it lacks most standard systematic review sections such as abstract, introduction, full methods, discussion, references, detailed search strategy, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults \u226518\u202fyears with excess weight or obesity (BMI\u202f\u2265\u202f27.5\u202fkg/m\u00b2).",
+      "a synchronous (real\u2011time), interactive, remotely delivered weight\u2011management intervention.",
+      "explicitly reported barriers and/or facilitators that influence engagement with that intervention.",
+      "primary mixed\u2011methods, quantitative, or qualitative research (not protocols, conference abstracts, reviews, editorials, or unpublished work)."
+    ],
+    "exclusion_criteria": [
+      "Articles were excluded if the intervention was asynchronous, not weight\u2011management focused, delivered only face\u2011to\u2011face, or if the paper reported only predictors/associations without identifying specific barriers or facilitators to engagement.",
+      "Wrong intervention or delivery mode: the intervention was either not weight\u2011management specific, not synchronous, or not remotely delivered.",
+      "Many studies described asynchronous digital tools (e\u2011mail, text messages, apps without real\u2011time interaction), in\u2011person programmes, or protocols rather than completed synchronous remote interventions.",
+      "Barriers/facilitators not reported: numerous trials and observational studies examined weight\u2011loss outcomes or adherence but did not investigate or report barriers and facilitators to engagement.",
+      "Population mismatch: several studies focused on children, adolescents, pregnant women without the required BMI threshold, or populations with conditions other than excess weight (e.g., normal\u2011weight participants, other chronic diseases).",
+      "Study type excluded: systematic reviews, scoping reviews, protocols, conference abstracts, and guidelines were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate fully satisfied all inclusion criteria.",
+      "The candidate pool did not contain any primary study that examined barriers and facilitators to engagement in a synchronous, remote weight-management intervention among adults with a BMI\u202f\u2265\u202f27.5\u202fkg/m\u00b2."
+    ]
+  }
+}

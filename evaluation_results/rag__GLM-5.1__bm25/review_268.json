@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12889,
+    "output_tokens": 910,
+    "total_tokens": 13799
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.782608695652174,
+    "inclusion_f1": 0.7058823529411765,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.10714285714285714,
+    "inclusion_consistency": 0.6487,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6279,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear evidence synthesis and a list of included studies, with some screening criteria described, but it lacks a formal abstract, introduction, methods section, detailed search strategy, data extraction process, quality/risk-of-bias assessment, quantitative synthesis methods, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind, randomized, placebo-controlled, enrichment (randomized withdrawal) design",
+      "adults with Major Depressive Disorder (MDD) who were stabilized on an antidepressant during an open-label phase",
+      "subsequently randomized to either continue the same antidepressant or switch to a placebo for a minimum of 12 weeks (ranging from 6 months to 2 years in the included trials)"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on specific generations (children, adolescents, or older adults)",
+      "those with dual diagnoses (e.g., bipolar disorder, psychotic depression, Parkinson's disease, alcohol dependence)",
+      "acute-phase trials",
+      "augmentation trials",
+      "observational studies",
+      "systematic reviews/meta-analyses"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence consistently demonstrates that continuing maintenance treatment with the stabilized antidepressant significantly reduces the risk of depressive relapse or recurrence compared to switching to a placebo.",
+      "Across the 24 included trials covering 13 different antidepressants, the cumulative relapse/recurrence rates in the placebo groups typically ranged from 20% to over 50% over 6 to 24 months, whereas the active treatment groups consistently exhibited significantly lower rates, often ranging from 6% to 25%.",
+      "Acceptability, measured by all-cause discontinuation during the double-blind phase, generally favored the active treatment or showed no significant difference.",
+      "Tolerability profiles in the maintenance phase were largely consistent with known acute-phase profiles, and discontinuation due to adverse events (AEs) during the double-blind phase was generally low for both active and placebo groups (often <5-8%).",
+      "The safety profiles observed in the maintenance phase reflect the pharmacological properties of the specific antidepressants:"
+    ]
+  }
+}

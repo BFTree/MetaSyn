@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12922,
+    "output_tokens": 689,
+    "total_tokens": 13611
+  },
+  "metrics": {
+    "retrieval_recall": 0.6595744680851063,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.845,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.6595744680851063,
+    "inclusion_consistency": 0.6704,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5026,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a brief screening outcome and exclusion rationale but lacks standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, and detailed PRISMA-style elements like search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary observational study",
+      "Rotterdam\u2011criteria PCOS diagnosis",
+      "PCOS versus non\u2011PCOS women",
+      "specified birth outcomes",
+      "studies published within the target window that clearly employ Rotterdam\u2011criteria PCOS diagnosis and report individual birth outcomes in a PCOS versus non\u2011PCOS comparison"
+    ],
+    "exclusion_criteria": [
+      "Publication date outside 2017\u201101\u201101 to 2022\u201106\u201113",
+      "Not a primary observational study",
+      "Lack of Rotterdam\u2011criteria PCOS diagnosis",
+      "Inappropriate comparison group or outcome",
+      "Use of self\u2011reported or ICD\u2011based PCOS diagnosis"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After a thorough screening of all 200 supplied candidate articles against the predefined eligibility criteria, **no primary study was eligible for inclusion** in this systematic review and meta\u2011analysis.",
+      "Because no candidate met all of the inclusion criteria, the final set of included primary\u2011study articles is empty.",
+      "None of the supplied candidates were included.",
+      "The systematic review is therefore unable to draw any evidence\u2011synthesised conclusions from this pool."
+    ]
+  }
+}

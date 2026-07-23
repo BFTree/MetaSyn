@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15208,
+    "output_tokens": 955,
+    "total_tokens": 16163
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5459,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6165,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes PICO framing, screening information, an included-study summary, and synthesis, but it lacks several standard systematic review sections and PRISMA-style elements such as a formal abstract, detailed search strategy, data extraction methods, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Patients in healthcare settings including hospitals, clinics, and pharmacies (the refined inclusion criteria focused on patients receiving medication prescriptions in a hospital setting).",
+      "Electronic health interventions including computerized decision-support systems (CDS), electronic health records (EHR), electronic medication administration records (eMAR), computerized physician order entry (CPOE), and barcode medication administration (BCMA).",
+      "Usual care (manual, paper\u2011based prescribing or usual care without the electronic intervention).",
+      "Quantitative data on the incidence of medication errors (including potential errors, actual errors, and adverse drug events).",
+      "Randomized controlled trials (RCTs), published in English, full\u2011text, peer\u2011reviewed."
+    ],
+    "exclusion_criteria": [
+      "not RCTs (e.g., systematic reviews, qualitative studies, observational designs, simulation studies, protocols, or non\u2011randomized interventions)",
+      "did not involve an electronic health intervention compared with usual care",
+      "did not report medication error outcomes",
+      "were conducted in non\u2011hospital settings (e.g., primary care only)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The study found no significant difference in dispensing error rates between the control and experimental groups (7.9% for both, p = 0.927).",
+      "The single eligible study provides limited evidence about the effectiveness of electronic health interventions in reducing medication errors.",
+      "The trial found no reduction in dispensing errors when a barcode-assisted system was introduced at the pharmacy dispensing stage, despite the intervention being a recognized technology for medication safety.",
+      "These findings underscore that the mere presence of an electronic intervention does not guarantee error reduction; successful integration into the clinical workflow, robust technical infrastructure, and comprehensive staff training are critical prerequisites.",
+      "No meta-analysis can be performed."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9652,
+    "output_tokens": 1194,
+    "total_tokens": 10846
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2222222222222222,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6942,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6015,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, eligibility decisions, synthesis, limitations, and a bottom line, but it lacks several standard systematic review sections such as abstract, introduction, full methods, formal results, discussion, references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "asymptomatic women in population-based breast screening",
+      "DBT versus DM",
+      "cancer detection rate and/or recall rate by breast density",
+      "BI-RADS (any edition)",
+      "2009-01-01 to 2020-11-23",
+      "primary comparative studies (paired or unpaired)"
+    ],
+    "exclusion_criteria": [
+      "automated density assessment",
+      "reviews/protocols/editorials",
+      "studies outside date range",
+      "non-screening or diagnostic-only populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the fixed pool, the evidence directly answering the review question is **very limited**.",
+      "Only one eligible primary study was identifiable from title/abstract alone.",
+      "The included study suggests that adding **DBT plus synthesized 2D mammography** to population screening may improve cancer detection relative to **FFDM**, and that this benefit is seen in both lower- and higher-density breasts.",
+      "Overall **CDR** was higher with DBT plus synthetic 2D than with FFDM.",
+      "This implies a **larger relative increase in cancer detection in high-density breasts** than in low-density breasts.",
+      "**Recall rate** was reported as similar overall between groups, but the abstract did **not report recall rate stratified by density**.",
+      "There is **some evidence** that DBT may improve **cancer detection more in women with high-density breasts** than in those with low-density breasts.",
+      "Evidence on **density-stratified recall differences** is **insufficient** from the included study.",
+      "Because only one study was includable, the evidence is **too sparse for robust synthesis** and does not support strong conclusions about consistency across settings or designs.",
+      "Using the fixed candidate pool, **one primary study** met the full criteria.",
+      "It suggests that **DBT may yield a larger increase in cancer detection in high-density than low-density breasts** in population screening, but **evidence for density-specific recall effects remains inadequate** from the includable abstracts alone."
+    ]
+  }
+}

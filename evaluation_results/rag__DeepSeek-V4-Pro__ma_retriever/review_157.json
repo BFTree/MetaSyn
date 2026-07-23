@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9665,
+    "output_tokens": 1293,
+    "total_tokens": 10958
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.5726,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3667,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core components are represented in abbreviated form, including background, screening results, included studies, synthesis, limitations, and references to included articles, but it lacks a formal abstract, detailed methods/search strategy, data extraction process, quality assessment, and a clear discussion/conclusion structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original studies published between 1 January 2009 and 23 November 2020 that reported CDR and/or recall rate stratified by BI-RADS breast density",
+      "DBT screening, compared with digital mammography (DM)",
+      "population-based screening"
+    ],
+    "exclusion_criteria": [
+      "published after the search end-date (2021\u20132025)",
+      "reviews, meta-analyses, protocols, editorials, or non-primary studies",
+      "did not compare DBT with DM in asymptomatic screening populations",
+      "did not report outcomes by BI-RADS density"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Candidate 005 shows that DBT+DM reduces recall rates across all density categories, including dense breasts.",
+      "Candidate 009 shows that the gain in CDR from DBT plus synthetic 2D is substantially larger in women with high breast density than in those with low density.",
+      "Together, these abstracts suggest that DBT\u2011based screening may be particularly advantageous in dense breasts by simultaneously improving cancer detection and reducing unnecessary recalls, although the CDR differential by density was not reported in Candidate 005 and the recall differential by density was not reported in Candidate 009.",
+      "The evidence is preliminary and based on only two studies, neither of which was a randomised controlled trial.",
+      "No study in the candidate pool directly compared DBT alone with DM in a density\u2011stratified manner within the eligible timeframe."
+    ]
+  }
+}

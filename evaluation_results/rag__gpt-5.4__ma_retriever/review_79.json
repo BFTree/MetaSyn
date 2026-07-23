@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19670,
+    "output_tokens": 1123,
+    "total_tokens": 20793
+  },
+  "metrics": {
+    "retrieval_recall": 0.5222222222222223,
+    "retrieval_precision": 0.235,
+    "inclusion_recall": 0.32222222222222224,
+    "inclusion_precision": 0.7073170731707317,
+    "inclusion_f1": 0.44274809160305345,
+    "screening_accuracy": 0.87,
+    "conditional_retention": 0.6170212765957447,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.2974,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1951,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is somewhat organized and includes eligibility/screening rationale, limitations, and a narrative synthesis, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, and detailed PRISMA-style elements like full search strategy, data extraction, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary-study articles",
+      "water, sanitation and/or handwashing interventions",
+      "low- and middle-income countries",
+      "outcomes related to diarrhoeal disease and/or acute respiratory infections"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "evidence maps",
+      "protocols",
+      "editorials/commentaries",
+      "cross-sectional observational studies",
+      "studies outside the intervention scope",
+      "articles that do not look like primary intervention studies from the title/abstract alone"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Most abstracts give enough information to judge health outcomes, but **almost none report the review\u2019s gender-focused outcomes** in the abstract: women\u2019s engagement in research activities, women\u2019s engagement in intervention delivery/activities, time burdens, compensation for time, or explicit assessment of women-specific impacts.",
+      "That means the evidence base appears suitable for classifying intervention content at a high level, but **poorly reported for the gender re-review questions** when relying on abstracts alone.",
+      "However, abstract reporting usually frames women as **household implementers or recipients**, not as decision-makers, co-designers, paid staff, or research partners.",
+      "Effects varied by adherence and context, with some strong positive trials and some null findings.",
+      "Large-scale implementation studies were more mixed, often showing behavior change without clear health gains.",
+      "Sanitation-only or large-scale sanitation promotion often improved latrine coverage or reduced open defecation, but health effects on diarrhoea were frequently absent or modest.",
+      "Combined packages did not consistently outperform single-component interventions.",
+      "ARI outcomes were less commonly measured; where assessed, findings were mixed.",
+      "Based on abstract content, most included studies are best provisionally classified as **gender-unaware** rather than gender-unequal."
+    ]
+  }
+}

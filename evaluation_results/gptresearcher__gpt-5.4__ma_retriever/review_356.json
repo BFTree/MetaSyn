@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34208,
+    "output_tokens": 1004,
+    "total_tokens": 35212
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.5483870967741935,
+    "inclusion_recall": 0.5909090909090909,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7428571428571429,
+    "screening_accuracy": 0.8709677419354839,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.4974,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7239,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening counts, and synthesis rationale, but it lacks a formal PRISMA flow diagram, detailed data extraction procedures, and structured risk-of-bias or quality assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "bipolar disorder/manic episode populations",
+      "LTCC antagonist intervention",
+      "placebo or active pharmacologic comparator",
+      "randomized controlled design for efficacy",
+      "preferably double-blind for efficacy and acceptability",
+      "allowance for open or non-randomized evidence only as supplementary adverse-effect or feasibility evidence",
+      "date limit up to 2016-02-15"
+    ],
+    "exclusion_criteria": [
+      "exclusion of serious concomitant medical illness studies",
+      "exclusion of cluster randomized trials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn corpus and respecting the pre-2016 search window, the evidence for LTCC antagonists in bipolar disorder is **mixed, sparse, and clinically insufficient**.",
+      "Verapamil is the only agent with more than isolated primary data, yet its record is contradictory: tiny early double-blind studies suggested antimanic benefit, but the best placebo-controlled randomized trial found **no benefit over placebo**, and later lithium-comparator trials only suggest possible similarity to lithium in small samples.",
+      "Maintenance evidence is even weaker and rests mainly on one small crossover study.",
+      "Evidence for nimodipine, nifedipine, and diltiazem is too non-randomized or preliminary to support efficacy claims.",
+      "**My concrete opinion is that LTCC antagonists should not be regarded as established treatments for acute mania, bipolar depression, or relapse prevention on the basis of this corpus.**",
+      "Verapamil remained an interesting mechanistic candidate, and perhaps a research-level adjunct in selected cases, but not a treatment with a sufficiently reliable evidence base for routine bipolar care."
+    ]
+  }
+}

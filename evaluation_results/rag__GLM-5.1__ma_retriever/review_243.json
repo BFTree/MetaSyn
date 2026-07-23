@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14641,
+    "output_tokens": 1137,
+    "total_tokens": 15778
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.5188,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4284,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes an evidence synthesis, brief eligibility/exclusion notes, and a list of included studies, but it lacks a formal abstract, introduction, methods section, detailed search strategy, screening process, quality assessment, and full references, resulting in major structural gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "administer MDMA in combination with psychotherapy to patients with a psychiatric condition",
+      "compare the intervention to a control condition (placebo or low-dose active placebo with therapy)",
+      "report on adverse events or safety outcomes",
+      "fall within the search end date of October 30, 2023"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "meta-analyses",
+      "protocols",
+      "commentaries",
+      "surveys",
+      "studies in healthy volunteers (Phase 1)",
+      "uncontrolled trials",
+      "articles published after the search end date"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence indicates that MDMA-AP possesses a favorable safety profile across psychiatric indications when administered in a controlled clinical setting with psychotherapy.",
+      "While expected transient side effects occur more frequently during and in the week following active MDMA sessions compared to placebo or low-dose controls, the incidence of SAEs remains low, and there is no signal for increased suicidality, abuse potential, or illicit substance use risk.",
+      "Across the included trials, MDMA-AP was consistently reported as well-tolerated, and no drug-related SAEs were reported in the Phase 2 pilot and dose-response studies for PTSD (Candidates 002, 003, 006) or the pilot study for LTI-related anxiety (Candidate 004).",
+      "A dedicated analysis of alcohol and substance use safety outcomes from a Phase 3 PTSD trial (Candidate 017) found that MDMA-AP does not appear to increase the risk of illicit drug use compared to placebo-with-therapy."
+    ]
+  }
+}

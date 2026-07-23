@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18067,
+    "output_tokens": 1526,
+    "total_tokens": 19593
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7586206896551724,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.3479,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3119,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a screening and evidence-synthesis summary with a conclusion and included-study list, but it lacks most standard review sections such as Abstract, Introduction, formal Methods, Results, Discussion, and References, and provides only limited PRISMA-style detail on search strategy, eligibility criteria, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "whether **OSA-related indicators** in adults with severe obesity predict **NAFLD presence/severity**",
+      "whether **bariatric/metabolic surgery** is associated with improvement in **both OSA and NAFLD-related outcomes** over time"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "editorials",
+      "animal studies",
+      "pediatric studies",
+      "studies outside the obesity target",
+      "studies not focused on OSA\u2192NAFLD",
+      "post-2022 literature beyond the review\u2019s search end window"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible primary studies, the evidence is **mostly supportive of an association**, but **not uniform**.",
+      "These studies collectively suggest that **intermittent hypoxia/hypoxemia may be more informative than AHI alone** in identifying patients with worse liver injury.",
+      "A recurring pattern is that **hypoxic burden** appears more consistently associated with **NASH/fibrosis/progressive liver injury** than apnea frequency alone.",
+      "So the conclusion is **supportive but not robustly comparative**.",
+      "Using only the supplied candidate pool, the evidence suggests that in **adults with severe obesity**, **OSA-related hypoxic burden**\u2014especially **intermittent hypoxia, ODI, and lower oxygen saturation**\u2014is more consistently associated with **NAFLD severity, NASH, and fibrosis** than apnea frequency alone.",
+      "Evidence for **bariatric/metabolic surgery** indicates that it may improve **both OSA and NAFLD-related outcomes over time**, but this part of the evidence base is comparatively sparse and mostly observational."
+    ]
+  }
+}

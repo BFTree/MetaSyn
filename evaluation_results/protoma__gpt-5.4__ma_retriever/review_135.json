@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35937,
+    "output_tokens": 1052,
+    "total_tokens": 36989
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05714285714285714,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.18181818181818182,
+    "inclusion_f1": 0.26666666666666666,
+    "screening_accuracy": 0.8428571428571429,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6801,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5384,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening results, statistical synthesis, results, risk of bias, discussion, and conclusion, but it falls short of excellent due to duplicated headings, lack of full references, and some topic/organization inconsistencies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adults with RAS wild-type metastatic colorectal cancer, either as the full study population or as a clearly reported eligible subgroup.",
+      "Randomized controlled trials or other comparative clinical studies evaluating anti-EGFR monoclonal antibody therapy (for example, cetuximab or panitumumab), alone or in combination with chemotherapy, against standard chemotherapy or another control treatment.",
+      "Studies reporting at least one relevant survival outcome, including overall survival (OS) and/or progression-free survival (PFS), with sufficient comparative data such as hazard ratios, median survival, or Kaplan-Meier estimates.",
+      "For multiple reports of the same trial, the most complete and recent report with usable outcome data should be included."
+    ],
+    "exclusion_criteria": [
+      "Studies including patients without confirmed RAS wild-type metastatic colorectal cancer, unless results for the eligible RAS wild-type subgroup are reported separately.",
+      "Single-arm studies, non-comparative studies, case reports, reviews, editorials, conference abstracts without sufficient data, and preclinical studies.",
+      "Studies evaluating interventions outside the review question, such as non-anti-EGFR targeted therapies alone, adjuvant/neoadjuvant treatment settings, or non-metastatic colorectal cancer populations.",
+      "Studies not reporting OS or PFS, or not providing sufficient data to extract or compare these outcomes between treatment groups."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "anti-EGFR monoclonal antibody therapy in patients with RAS wild-type metastatic colorectal cancer was associated with a pooled random-effects HR of 0.816 (95% CI 0.642-1.036; p=0.095) versus standard chemotherapy or control, indicating a nonsignificant trend toward improved overall and progression-free survival.",
+      "Although the fixed-effects estimate suggested benefit (HR 0.747, 95% CI 0.687-0.812), the random-effects result is more appropriate given the very high between-study heterogeneity (I2=85.5%, tau2=0.068).",
+      "Clinically, these findings support anti-EGFR therapy as a reasonable option in selected RAS wild-type patients, particularly where treatment goals favor potential survival gain, but they do not justify a uniform recommendation over standard approaches.",
+      "The main caveat is that substantial heterogeneity across studies limits confidence in the magnitude and consistency of benefit."
+    ]
+  }
+}

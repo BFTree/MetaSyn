@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4653,
+    "output_tokens": 1050,
+    "total_tokens": 5703
+  },
+  "metrics": {
+    "retrieval_recall": 0.9743589743589743,
+    "retrieval_precision": 0.19,
+    "inclusion_recall": 0.10256410256410256,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.18181818181818182,
+    "screening_accuracy": 0.825,
+    "conditional_retention": 0.10526315789473684,
+    "post_retrieval_loss": 0.8717948717948718,
+    "inclusion_consistency": 0.6662,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4151,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening process, eligibility criteria, and included studies, but it lacks most full systematic review/meta-analysis sections such as abstract, introduction, detailed methods, synthesis approach, quality assessment, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies that explicitly reported a regression coefficient (beta) for PFOS and birth weight with a 95% confidence interval (or other variance measure) were eligible.",
+      "Studies were required to have measured PFOS in maternal blood (before, during, or after pregnancy) or in infant umbilical cord or heel-stick samples."
+    ],
+    "exclusion_criteria": [
+      "They did not report a specific beta coefficient for PFOS and birth weight in grams (e.g., reported only quartile comparisons, z\u2011scores, odds ratios, correlations, or no quantitative estimate).",
+      "The outcome was not birth weight (e.g., childhood BMI, adiposity, neurodevelopment, thyroid hormones, anogenital distance).",
+      "The exposure was not PFOS (e.g., only other PFAS, mixtures without a PFOS\u2011specific estimate).",
+      "The article was a review, meta\u2011analysis, animal study, or commentary."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "After applying the criteria strictly, five primary studies from the candidate pool were found to be eligible.",
+      "All five studies provided a continuous beta coefficient (in grams) for the association between PFOS concentration and birth weight, along with a 95% confidence interval.",
+      "The reported effect sizes ranged from \u2013417.3\u202fg to +31.3\u202fg per log\u2011unit increase in PFOS, reflecting the variability in study design, population, and exposure levels.",
+      "These studies are suitable for inclusion in the planned meta\u2011analysis of PFOS and birth weight deficits."
+    ]
+  }
+}

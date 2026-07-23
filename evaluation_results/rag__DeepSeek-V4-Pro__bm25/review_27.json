@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12073,
+    "output_tokens": 1271,
+    "total_tokens": 13344
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7857142857142858,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.5559,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7082,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Objective, Methods, Results, Synthesis/limitations, and included-study references, but it lacks a formal abstract, introduction, detailed search strategy, data extraction process, quality/risk-of-bias assessment, and PRISMA-style screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials, prospective/retrospective cohort studies, cross\u2011sectional studies, and case\u2013control studies",
+      "Included adults with obesity (BMI\u202f\u2265\u202f35 or equivalent description of severe/morbid obesity).",
+      "Used OSA\u2011related indicators (AHI, oxygen desaturation index, minimum oxygen saturation, etc.) as the exposure.",
+      "Reported NAFLD outcomes (liver biopsy findings, NAFLD activity score, steatosis, fibrosis, inflammation, serum ALT/AST) as the primary or secondary endpoint.",
+      "Directly compared outcomes between patients with vs. without OSA, across OSA severity levels, or before and after bariatric surgery."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were descriptive, case series, case reports, reviews, editorials, protocols, animal experiments, exclusively paediatric populations, or did not meet the population/exposure/outcome criteria.",
+      "Articles published after the search end date (2022\u201110\u201108) were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The body of evidence consistently shows that in adults with severe obesity, greater OSA severity\u2014particularly nocturnal hypoxemia\u2014is associated with more advanced NAFLD, including NASH and fibrosis.",
+      "This association persists after adjustment for adiposity and metabolic confounders in multiple studies.",
+      "The findings support the use of polysomnography and hypoxia metrics (e.g., ODI, minimum SpO\u2082) as part of the risk stratification for NAFLD in obese patients.",
+      "Bariatric surgery appears to improve both OSA and NAFLD, but the independent contribution of OSA resolution to liver outcomes requires further prospective research."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30047,
+    "output_tokens": 1101,
+    "total_tokens": 31148
+  },
+  "metrics": {
+    "retrieval_recall": 0.2222222222222222,
+    "retrieval_precision": 0.5128205128205128,
+    "inclusion_recall": 0.15555555555555556,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2692307692307693,
+    "screening_accuracy": 0.8461538461538461,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.06666666666666667,
+    "inclusion_consistency": 0.3604,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2974,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized and includes strong meta-analysis elements like search strategy, eligibility criteria, screening results, and study classification, but it lacks a formal abstract, introduction, discussion/conclusion, and references, so the structure is solid but incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies",
+      "WASH interventions involving water, sanitation, and/or handwashing with soap",
+      "Conducted in LMIC settings",
+      "Assessed diarrhoeal disease and/or ARI outcomes",
+      "Published in English or Spanish",
+      "Relevant to the evidence base described in the seed question"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, evidence maps, or other secondary research",
+      "Observational studies without an intervention",
+      "Studies not clearly assessing diarrhoea and/or ARI outcomes",
+      "Studies not in English or Spanish where identifiable",
+      "Duplicates where identifiable"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "On the available local-corpus evidence, women\u2019s engagement in research activities was largely unreported.",
+      "Women\u2019s engagement in intervention activities was also poorly described, but indirect evidence suggests that many interventions depended on household labor traditionally performed by women.",
+      "The included abstracts rarely stated \u201cwomen\u201d directly as intervention actors.",
+      "No included abstract provided a clear accounting of:",
+      "Based on the available local-corpus information, time burden was not reported and compensation was not documented.",
+      "No included study abstract clearly assessed health, social, economic, or empowerment outcomes specific to women, such as:",
+      "Even where women likely carried much of the implementation work, the measured benefits were typically framed around child morbidity or generalized household disease reduction rather than women-specific outcomes.",
+      "Because most evidence was abstract-only, classification was conservative and based on what was explicitly reported."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33566,
+    "output_tokens": 897,
+    "total_tokens": 34463
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.038461538461538464,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.9615384615384616,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6593,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4492,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report includes most core systematic review sections and meta-analysis elements such as a detailed search strategy, eligibility criteria, screening flow, synthesis approach, study characteristics, and risk-of-bias assessment, but organization is weakened by duplicated headings, placeholder text in the main findings, and lack of a formal references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies conducted in low- and middle-income countries that include newborns or young infants up to 59 days of age.",
+      "Studies evaluating home visits delivered by trained community health workers as the main intervention during the neonatal or early infancy period.",
+      "Studies with a comparison group receiving standard care, usual care, or no community health worker home visits.",
+      "Studies reporting outcomes on identification of serious illness (for example sensitivity and/or specificity of CHW assessment) and/or care seeking from health facilities."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted outside low- and middle-income countries or in populations not limited to newborns and young infants up to 59 days of age.",
+      "Studies assessing community-based programs without a distinct home-visit component delivered by trained community health workers.",
+      "Studies without a relevant comparator, such as single-arm studies with no standard care or control group.",
+      "Studies that do not report either serious illness identification outcomes or care-seeking outcomes from health facilities."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 2 studies, home visits by trained community health workers were associated with better identification of serious illness and improved care seeking from health facilities compared with standard care, with effects summarized as relative risks.",
+      "Clinically, this suggests that proactive household contact can help families recognize danger signs earlier and move infants toward timely evaluation, which is important in newborns and young infants where delays can be fatal.",
+      "Home-visiting CHW programs should be considered a useful component of community newborn care in low- and middle-income settings, especially where access barriers are high.",
+      "The main caveat is the very small evidence base: with only 2 studies, the precision and generalizability of the estimate remain limited.",
+      "Taken together, the current evidence supports cautious optimism rather than definitive conclusions."
+    ]
+  }
+}

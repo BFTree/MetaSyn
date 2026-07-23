@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22544,
+    "output_tokens": 1024,
+    "total_tokens": 23568
+  },
+  "metrics": {
+    "retrieval_recall": 0.3191489361702128,
+    "retrieval_precision": 0.3409090909090909,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.6818181818181818,
+    "conditional_retention": 0.06666666666666667,
+    "post_retrieval_loss": 0.2978723404255319,
+    "inclusion_consistency": 0.5215,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.566,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Introduction, Methods, Results, limitations, Conclusion, included-study list, References, and key meta-analysis elements such as search strategy, eligibility criteria, screening decisions, and synthesis rationale, but it lacks full PRISMA-level rigor such as formal risk-of-bias/quality assessment, detailed data extraction procedures, and a PRISMA flow diagram."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies",
+      "English-language publications",
+      "Published between 2017-01-01 and 2022-06-13",
+      "Offspring of women with and without PCOS",
+      "Outcomes included at least one of: preterm birth, birthweight, fetal growth restriction, low birth weight, small for gestational age (SGA), macrosomia, large for gestational age (LGA), NICU admission, or perinatal mortality",
+      "PCOS diagnosis met Rotterdam criteria"
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, case reports, case series",
+      "Non-English publications",
+      "Studies using self-report or ICD-based PCOS ascertainment",
+      "Studies not reporting a PCOS versus non-PCOS comparison for outcomes of interest",
+      "Studies outside the prespecified date window"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "My concrete judgment is that **maternal PCOS is likely an independent risk factor for at least some adverse birth outcomes\u2014especially preterm birth and impaired fetal growth\u2014but the corpus segment strictly eligible under the original review protocol is too small to quantify the effect precisely**.",
+      "Under the strict eligibility criteria and based solely on the local MetaSyn corpus records supplied, **the formal review includes only one primary study**, which supports an association between Rotterdam-defined PCOS and higher adverse pregnancy outcomes after IVF/ICSI, particularly in certain phenotypes ([Corpus ID 7861](metasyn://corpus/7861)).",
+      "This is insufficient for a reliable quantitative meta-analysis.",
+      "However, when the included study is interpreted alongside deeper, newer corpus evidence, the most defensible conclusion is stronger than agnosticism: **maternal PCOS is likely an independent risk factor for at least some adverse birth outcomes, especially preterm birth and fetal growth restriction/low birth size, and this relationship is not fully explained by maternal BMI, gestational diabetes, or phenotype subgrouping** ([Corpus ID 46858](metasyn://corpus/46858); [Corpus ID 46588](metasyn://corpus/46588); [Corpus ID 46874](metasyn://corpus/46874)).",
+      "My concrete opinion is that the balance of evidence favors treating PCOS as a clinically meaningful prenatal risk exposure rather than merely a proxy for obesity or infertility treatment.",
+      "The main weakness is not inconsistency of signal, but the historical paucity of rigorously defined Rotterdam-based comparative birth-outcome studies within the original review window."
+    ]
+  }
+}

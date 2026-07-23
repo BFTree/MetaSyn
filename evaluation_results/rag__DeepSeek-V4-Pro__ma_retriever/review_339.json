@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23939,
+    "output_tokens": 1105,
+    "total_tokens": 25044
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.90625,
+    "inclusion_precision": 0.725,
+    "inclusion_f1": 0.8055555555555555,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.90625,
+    "post_retrieval_loss": 0.09375,
+    "inclusion_consistency": 0.8189,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5884,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, screening results, study characteristics, findings, and included studies, but it lacks a formal abstract, detailed methods, discussion/conclusion, references, quality assessment, data extraction procedures, and quantitative synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary studies that reported standardized IQ test scores obtained in childhood, adolescence, or early adulthood (<21 years) and their association with subsequent clinical health conditions (physical or mental) were eligible."
+    ],
+    "exclusion_criteria": [
+      "Studies focusing exclusively on clinical patient cohorts, those estimating IQ from later-life sociodemographic information, and those reporting only mortality without health outcomes were excluded.",
+      "IQ measurement outside the <21\u2011year window (e.g., ages 22\u201323 or older)",
+      "cross\u2011sectional design",
+      "outcomes limited to cognitive performance or health behaviours",
+      "mortality without morbidity",
+      "exclusive use of clinical populations",
+      "reliance on self\u2011reported school performance rather than standardized IQ tests",
+      "reviews, protocols, or not relevant to the research question"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "There is a consistent inverse association between early\u2011life IQ and risk of later mental disorders, particularly schizophrenia, severe depression, and alcohol\u2011related conditions.",
+      "High IQ was associated with a higher risk for Parkinson\u2019s disease in some studies.",
+      "For physical diseases, lower IQ generally predicted higher risk of cardiovascular disease, stroke, diabetes, and metabolic syndrome, although associations were often attenuated by adult socioeconomic status or education.",
+      "Several studies addressed potential confounding or mediation by socioeconomic factors, health behaviours, and education, and a few used sibling designs to control for shared family background.",
+      "The included studies did not directly examine healthcare quality as a moderator, but many adjusted for or examined education, which is a component of cognitive reserve."
+    ]
+  }
+}

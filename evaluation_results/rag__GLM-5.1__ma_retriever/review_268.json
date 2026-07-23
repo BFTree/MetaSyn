@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22462,
+    "output_tokens": 1099,
+    "total_tokens": 23561
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.8125,
+    "inclusion_f1": 0.8666666666666666,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.8756,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7335,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear methods/screening/results-style organization with inclusion/exclusion criteria and synthesis by drug, but it lacks several standard sections such as Abstract, Introduction, Discussion, Conclusion, formal References, detailed search strategy, data extraction procedures, quality assessment, and explicit meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double-blind randomized placebo-controlled trials (DBRPCTs) $\\ge$ 12 weeks duration, utilizing an enrichment design where patients stabilized on the index antidepressant during an open-label phase were subsequently randomized to continue the antidepressant or switch to placebo."
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on specific age generations (children, adolescents, or older individuals aged $\\ge$ 65)",
+      "studies including dual diagnoses of MDD and other disorders (to avoid heterogeneity)",
+      "continuation studies randomizing acute-phase patients",
+      "reviews, meta-analyses, protocols, editorials, conference abstracts, post-hoc analyses, or case reports",
+      "and interventions not listed in the target 20 antidepressants (e.g., antipsychotics, clomipramine, phenelzine, quetiapine)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies consistently demonstrate that continuing the stabilized antidepressant significantly reduces the risk of relapse or recurrence compared to switching to placebo.",
+      "Agomelatine: Candidate 016 reported a significantly lower cumulative relapse rate at 6 months (21.7% vs 46.6% for placebo) with no discontinuation syndrome.",
+      "Mixed Antidepressants (ANTLER): Candidate 088 evaluated continuing citalopram, sertraline, fluoxetine, or mirtazapine vs discontinuation (placebo) in primary care; continuing medication resulted in a significantly lower relapse rate (39% vs 56%) over 52 weeks.",
+      "Levomilnacipran: Candidate 022 found no statistically significant difference (potentially due to low placebo relapse), whereas Candidate 028 found a significantly longer time to relapse and lower crude relapse rates (14.5% vs 24.5%)."
+    ]
+  }
+}

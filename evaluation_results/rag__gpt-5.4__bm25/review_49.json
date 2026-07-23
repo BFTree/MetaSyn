@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7854,
+    "output_tokens": 1061,
+    "total_tokens": 8915
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7138,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5146,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 1.0,
+    "structure_quality_reason": "The report lacks nearly all required systematic review sections such as abstract, introduction, detailed methods, results, discussion, conclusion, and references, providing only a brief screening summary with no organized PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult males with a documented anxiety disorder diagnosis and erectile-function outcome",
+      "prevalence/severity of ED measured in diagnosed anxiety-disorder males",
+      "eligible adult male-only anxiety-disorder sample for ED prevalence/severity synthesis"
+    ],
+    "exclusion_criteria": [
+      "reviews/protocols/non-eligible populations",
+      "reviews, protocols, non-ED outcomes, or non-anxiety populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Included studies: none.",
+      "I did not find any candidate that matches the review question\u2019s core requirement: adult males with a documented anxiety disorder diagnosis and erectile-function outcome.",
+      "The closest match is `Candidate 024` (`Corpus ID: 8542`), but it studies panic disorder and incident ED risk in a cohort, not prevalence/severity of ED measured in diagnosed anxiety-disorder males as required.",
+      "`Candidate 039` (`Corpus ID: 8536`) includes PTSD and IIEF/ED, but the population is combat veterans with and without PTSD, not a focused anxiety-disorder male sample meeting the stated inclusion criteria.",
+      "`Candidate 006` (`Corpus ID: 8539`) measures erectile function in OCD/social anxiety patients, but the abstract does not establish an eligible adult male-only anxiety-disorder sample for ED prevalence/severity synthesis under your criteria.",
+      "Several other candidates are reviews, protocols, non-ED outcomes, or non-anxiety populations and were excluded accordingly."
+    ]
+  }
+}

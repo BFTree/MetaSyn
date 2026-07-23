@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18172,
+    "output_tokens": 1475,
+    "total_tokens": 19647
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.696969696969697,
+    "inclusion_precision": 0.8846153846153846,
+    "inclusion_f1": 0.7796610169491526,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.696969696969697,
+    "post_retrieval_loss": 0.30303030303030304,
+    "inclusion_consistency": 0.4917,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4934,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, eligibility decisions, synthesis findings, interpretation cautions, and a conclusion, but it lacks a formal abstract, introduction, comprehensive methods, dedicated discussion, and references, with no detailed search or quality-assessment documentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "patients with major depressive disorder (MDD) who achieved remission/response on antidepressants",
+      "double-blind randomized discontinuation/withdrawal trials",
+      "continued antidepressant vs switch to placebo",
+      "2018-10-10"
+    ],
+    "exclusion_criteria": [
+      "bipolar disorder, treatment-resistant/refractory depression, atypical/seasonal/perinatal/medical-cause depression, non-primary studies, protocols, reviews, secondary/post hoc reports when not the main trial report",
+      "later studies were not considered eligible for the target review",
+      "Not primary trials: reviews, meta-analyses, protocols, commentaries",
+      "Wrong population: bipolar disorder, treatment-resistant depression, atypical depression, chronic/double depression mixed populations not clearly matching the target",
+      "Wrong design: active-comparator continuation studies without placebo substitution, augmentation studies, acute-treatment trials",
+      "Outside search end date",
+      "Insufficient abstract detail to confirm the review\u2019s strict diagnostic/design criteria"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included abstracts, the evidence is highly consistent: **continuing antidepressant treatment after remission/response reduces relapse/recurrence risk compared with switching to placebo**.",
+      "Nearly all included placebo-substitution trials reported:",
+      "This pattern was seen across many antidepressant classes and across both **continuation-phase** and **maintenance-phase** studies.",
+      "So, based on abstracts alone, the protective effect is **not limited to one class**.",
+      "This supports the review question\u2019s interest in whether **maintaining the successful antidepressant regimen** is helpful; the answer from these abstracts is broadly yes.",
+      "The strongest and most consistently reported benefit is in the **first 6\u201312 months** after randomization.",
+      "Both older-adult abstracts reported **significantly lower recurrence/relapse** with continued antidepressant treatment than with placebo.",
+      "**Continuing the antidepressant that achieved remission/response in MDD reduces the risk of relapse/recurrence and treatment failure compared with switching to placebo.**",
+      "The evidence base is especially persuasive for the first **6\u201312 months** after remission/response."
+    ]
+  }
+}

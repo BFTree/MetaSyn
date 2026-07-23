@@ -1,0 +1,68 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19644,
+    "output_tokens": 1542,
+    "total_tokens": 21186
+  },
+  "metrics": {
+    "retrieval_recall": 0.96,
+    "retrieval_precision": 0.12,
+    "inclusion_recall": 0.88,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.8979591836734694,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.9166666666666666,
+    "post_retrieval_loss": 0.08,
+    "inclusion_consistency": 0.539,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5501,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes meta-analysis-specific elements like eligibility criteria, exclusion reasons, and a structured evidence synthesis, but it lacks several standard systematic review sections such as a full abstract, introduction, methods, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included people with bipolar disorder,",
+      "measured **intracellular calcium concentration/signalling** in cells,",
+      "reported basal and/or stimulated calcium responses, calcium flux/mobilization, or calcium-related electrophysiological signalling,",
+      "and were **primary studies** rather than reviews/editorials/protocols."
+    ],
+    "exclusion_criteria": [
+      "reviews, commentaries, protocols, or editorials,",
+      "treatment trials without a calcium-signalling outcome,",
+      "studies of calcium-related molecules/channels only without intracellular calcium signalling outcome,",
+      "studies in healthy subjects only,",
+      "animal studies,",
+      "or studies where bipolar data were not separable/relevant."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible titles/abstracts, the evidence is broadly consistent with **altered intracellular calcium homeostasis/signalling in bipolar disorder**, especially in:",
+      "The most repeated findings are:",
+      "**Higher basal intracellular calcium** in bipolar disorder vs healthy controls, especially in peripheral blood cells.",
+      "**Enhanced stimulated calcium responses**, especially after **serotonin (5-HT)**, **thrombin**, and sometimes **thapsigargin**.",
+      "Interpretation from abstracts alone: **basal elevation is common but not completely consistent**, and may depend on **mood state, treatment status, or sample type**.",
+      "This is the most consistent signal in the pool.",
+      "Interpretation: **stimulated calcium dysregulation appears more reproducible than resting calcium abnormality**.",
+      "The supplied pool gives some support for **state dependence**, but not decisively.",
+      "Interpretation: abnormalities may be **stronger during acute mood episodes**, but some findings are compatible with a **trait-like cellular phenotype**.",
+      "There is some evidence for **relative specificity to bipolar disorder**, especially in platelet 5-HT responses:",
+      "But specificity is **not complete**:",
+      "These abstracts suggest calcium-signalling abnormalities extend beyond peripheral blood cells:",
+      "These studies generally support a broader interpretation of bipolar disorder as involving **cellular calcium dysregulation across multiple cell types**, not just platelets.",
+      "From the eligible candidate pool, the title/abstract evidence supports the conclusion that **intracellular calcium signalling is frequently abnormal in bipolar disorder**, with the clearest pattern being:",
+      "There is partial evidence that these abnormalities:"
+    ]
+  }
+}

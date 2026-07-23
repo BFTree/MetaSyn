@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio
+message: Please cite the MetaSyn paper when using the dataset, model, or code.
+type: article
+url: https://arxiv.org/abs/2606.17041
+repository-code: https://github.com/THUIR/MetaSyn
+identifiers:
+  - type: url
+    value: https://arxiv.org/abs/2606.17041
+    description: arXiv preprint
+authors:
+  - family-names: Xie
+    given-names: Anzhe
+  - family-names: Su
+    given-names: Weihang
+  - family-names: Zhou
+    given-names: Yujia
+  - family-names: Liu
+    given-names: Yiqun
+  - family-names: Zhang
+    given-names: Min
+  - family-names: Ai
+    given-names: Qingyao
+year: 2026
+license: MIT

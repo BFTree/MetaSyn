@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18106,
+    "output_tokens": 1069,
+    "total_tokens": 19175
+  },
+  "metrics": {
+    "retrieval_recall": 0.8676470588235294,
+    "retrieval_precision": 0.295,
+    "inclusion_recall": 0.3088235294117647,
+    "inclusion_precision": 0.7,
+    "inclusion_f1": 0.4285714285714286,
+    "screening_accuracy": 0.765,
+    "conditional_retention": 0.3559322033898305,
+    "post_retrieval_loss": 0.5588235294117647,
+    "inclusion_consistency": 0.6794,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3202,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into evidence synthesis subsections and includes some eligibility criteria and a study list, but it lacks a formal abstract, introduction, methods, results, discussion, references, detailed search strategy, screening process, data extraction, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "experimental and epidemiological studies investigating low-level radiofrequency (RF) fields above 6 GHz (millimeter waves and terahertz radiation) at exposure levels below ICNIRP occupational limits, published by the end of 2019"
+    ],
+    "exclusion_criteria": [
+      "Studies on populations other than humans, human cells, or animal models (e.g., bacteria, yeast, plants, artificial vesicles)",
+      "reviews, dosimetry papers",
+      "studies with unstated or excessive exposure metrics (SAR > 0.4 W/kg for whole-body or PD > 200 W/m\u00b2 for local in vitro exposure)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence suggests that low-level RF exposure above 6 GHz predominantly does not induce direct DNA strand breaks or gross cytotoxicity in human cells in vitro.",
+      "However, subtle chromatin and chromosomal malsegregation effects (aneugenic rather than clastogenic) are reported at very low intensities, warranting further mechanistic investigation.",
+      "In vivo rat studies consistently point to potential male reproductive toxicity at low SARs for 10 and 50 GHz.",
+      "Most in vitro studies at 60 GHz (relevant to 5G) report no effect on gene expression, stress pathways, or proliferation.",
+      "Overall, the evidence base is heterogeneous, and there is a notable lack of experimental studies at specifically designated 5G mid-band frequencies (e.g., 24\u201339 GHz) within the strict low-level exposure limits defined by this review."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21144,
+    "output_tokens": 1216,
+    "total_tokens": 22360
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.43333333333333335,
+    "inclusion_precision": 0.65,
+    "inclusion_f1": 0.5199999999999999,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.975,
+    "post_retrieval_loss": 0.011111111111111112,
+    "inclusion_consistency": 0.3449,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3353,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized sections such as objective, screening process, included study characteristics, implications, and a study list, but it lacks a standard systematic review structure with abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and synthesis methods, and it contains inconsistencies in the final included-study count."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies from two existing systematic reviews of water, sanitation and hygiene (WASH) interventions on diarrhoeal disease and acute respiratory infections in low\u2011 and middle\u2011income countries (LMICs)",
+      "All records originated from the two source systematic reviews.",
+      "primary studies of WASH interventions",
+      "Studies that did evaluate a WASH intervention\u2019s effect on diarrhoea or acute respiratory infection (ARI) in LMICs."
+    ],
+    "exclusion_criteria": [
+      "Duplicates and non\u2011English/Spanish records (already removed prior to the candidate pool)",
+      "Records that were not primary studies of WASH interventions (e.g., systematic reviews, meta\u2011analyses, protocols, editorials, conference abstracts, qualitative studies, cross\u2011sectional surveys without an intervention, cost\u2011effectiveness analyses, and other non\u2011intervention designs)",
+      "Studies that did not evaluate a WASH intervention\u2019s effect on diarrhoea or acute respiratory infection (ARI) in LMICs.",
+      "Several studies that focused on handwashing behaviour or food hygiene without reporting diarrhoea/ARI were excluded, as were secondary analyses of trials."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The review\u2019s specific gender questions were not commonly addressed in the abstracts.",
+      "No abstract explicitly described the gender of fieldworkers, data collectors, or community health workers, nor did any report whether women were involved in study design or implementation.",
+      "No abstract reported time spent by women on WASH\u2011related tasks, nor whether time burdens were measured or compensated.",
+      "Health outcomes were routinely reported for children under five; none of the abstracts presented sex\u2011disaggregated outcomes for women (e.g., maternal diarrhoea, urogenital infections, or psychosocial effects).",
+      "None of the abstracts provided enough information to apply the WHO Gender Responsiveness Assessment Scale.",
+      "The full\u2011text screening will be essential to determine whether the included studies contain unreported gender data.",
+      "The absence of explicit gender reporting in abstracts suggests that future WASH trials should incorporate gender\u2011sensitive outcomes and reporting standards."
+    ]
+  }
+}

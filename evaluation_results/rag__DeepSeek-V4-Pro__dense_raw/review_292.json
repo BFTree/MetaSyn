@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 9371,
+    "output_tokens": 925,
+    "total_tokens": 10296
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.05555555555555555,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.10526315789473684,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.07142857142857142,
+    "post_retrieval_loss": 0.7222222222222222,
+    "inclusion_consistency": 0.6934,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5229,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, screening process, eligibility criteria, and results summary, but it lacks several required full-review sections such as Abstract, Introduction, Methods with detailed search strategy/data extraction/synthesis, Discussion, Conclusion, quality assessment, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "systematic reviews with meta\u2011analysis that examine the bidirectional association between periodontitis and noncommunicable diseases (NCDs) in humans, published between 1 January 2021 and 31 July 2024.",
+      "Eligible reviews must have an epidemiological design and explicitly investigate both directions (periodontitis as a risk factor for NCDs, and NCDs as a risk factor for periodontitis).",
+      "study type (systematic review with meta\u2011analysis)",
+      "focus on bidirectional periodontitis\u2013NCD associations",
+      "publication date",
+      "human epidemiological evidence"
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews, protocols, primary studies, animal/in\u2011vitro work, reviews without meta\u2011analysis, and studies examining only one direction of the association were excluded.",
+      "Primary research studies (cohort, cross\u2011sectional, case\u2011control, RCTs, Mendelian randomisation)",
+      "Narrative or scoping reviews lacking a meta\u2011analysis",
+      "Protocols, editorials, or conference abstracts",
+      "Published outside the 2021\u20132024 window",
+      "Not addressing the bidirectional relationship (i.e., studied only periodontitis \u2192 NCD or NCD \u2192 periodontitis, not both)",
+      "Not focused on periodontitis and NCDs (e.g., peri\u2011implant diseases, smoking, diet, pregnancy outcomes not classified as NCDs, etc.)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Only **one** record met all inclusion criteria.",
+      "This review explicitly investigated the bidirectional longitudinal risk.",
+      "The pooled estimates showed that periodontitis was associated with an increased risk of ulcerative colitis (but not Crohn\u2019s disease), while patients with IBD had a significantly higher risk of developing periodontitis.",
+      "No other candidate was eligible."
+    ]
+  }
+}

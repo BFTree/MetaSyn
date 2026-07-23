@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15516,
+    "output_tokens": 821,
+    "total_tokens": 16337
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.8000000000000002,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4957,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2273,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present in some form, including methods, results, conclusion, and included studies, but the report lacks a formal abstract, introduction, discussion, full references, detailed search strategy, screening flow, data extraction procedures, quality assessment, and rigorous synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with morbid obesity undergoing bariatric surgery",
+      "probiotic/synbiotic intervention",
+      "randomized or controlled clinical trial design",
+      "comparison with placebo, usual care, or no intervention"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-human studies",
+      "published after the search end date of 2023-03-14"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the effect of probiotics on clinical outcomes in bariatric surgery patients is heterogeneous, with benefits appearing more consistent for certain metabolic markers than for weight loss.",
+      "Current evidence suggests that probiotic supplementation following bariatric surgery may confer benefits for liver function (AST) and lipid metabolism (triglycerides), with more consistent support for these outcomes than for weight loss.",
+      "Improvements in vitamin B12 are observed in some trials but are not universal.",
+      "Weight loss benefits, when present, tend to be short-term.",
+      "Further research is needed to confirm long-term efficacy and optimize probiotic formulations."
+    ]
+  }
+}

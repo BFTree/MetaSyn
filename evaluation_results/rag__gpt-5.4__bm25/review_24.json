@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19212,
+    "output_tokens": 1028,
+    "total_tokens": 20240
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5978,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4218,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, included evidence, synthesis, limitations, and included studies, but it lacks the required abstract, introduction, formal methods, results, discussion, conclusion, and references, as well as detailed search strategy, screening procedures, data extraction, quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with obesity",
+      "intervention must be a very low calorie diet (<800 kcal/day) or low-energy liquid-formula diet (>800 kcal/day) using total diet replacement",
+      "must include a comparison between obese participants with T2DM and obese participants without T2DM receiving the same diet intervention",
+      "must report quantitative weight change",
+      "primary study only",
+      "publication date compatible with the review window (to 2015-12-31)"
+    ],
+    "exclusion_criteria": [
+      "included only people with T2DM or only people without T2DM,",
+      "compared diet types without a diabetic vs non-diabetic comparison,",
+      "were reviews/protocols/meta-analyses,",
+      "involved surgery/pharmacotherapy as the main intervention,",
+      "were case reports, or",
+      "were outside scope/population."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the two included studies, the abstract-level evidence points in a consistent direction:",
+      "Obese adults with T2DM can lose substantial weight on VLCD/total diet replacement programmes.",
+      "Weight loss appears broadly similar to that achieved by obese adults without T2DM receiving the same intervention.",
+      "Where differences appear, they may be small for total weight loss but more noticeable for body composition, with one study suggesting less fat loss per unit weight loss in T2DM.",
+      "The presence of T2DM does not appear to prevent clinically meaningful weight loss during VLCD treatment.",
+      "Any disadvantage in total weight loss for T2DM, if present, seems modest based on these abstracts.",
+      "One study suggests that the metabolic/physiologic response to weight loss may differ, even when the scale weight response is similar.",
+      "Given those limits, a quantitative pooled estimate is not reliable from the abstract text alone.",
+      "Based on the supplied candidate pool, the eligible evidence is small but fairly consistent: VLCD-based weight loss in obese adults with T2DM appears similar to that in obese adults without T2DM, though body composition changes may be somewhat less favorable in T2DM."
+    ]
+  }
+}

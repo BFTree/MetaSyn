@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17500,
+    "output_tokens": 760,
+    "total_tokens": 18260
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 0.25,
+    "inclusion_f1": 0.23529411764705882,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7096,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5125,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a screening process with inclusion/exclusion criteria and a list of included studies, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results synthesis, discussion, conclusion, references, quality assessment, and detailed data extraction or meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "used a vertex\u2011based (surface\u2011based) method to estimate whole\u2011brain cortical thickness",
+      "compared medication\u2011free adults (18\u201365 years) with major depressive disorder (MDD) to healthy controls",
+      "reported cluster coordinates in MNI or Talairach space"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "theoretical papers",
+      "case reports",
+      "ROI\u2011limited analyses",
+      "focused on peri\u2011 or postmenopausal women only",
+      "fell outside the search period (any publication after July 14, 2018, was deemed out\u2011of\u2011date)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After screening, eight primary\u2011study articles met all inclusion criteria at the abstract level.",
+      "No full\u2011text verification was possible; inclusion is based solely on the supplied titles and abstracts.",
+      "These eight studies all employed a vertex\u2011based (FreeSurfer) whole\u2011brain cortical thickness analysis, compared medication\u2011free (treatment\u2011na\u00efve or unmedicated) adults with MDD to healthy controls, and were published within the eligible date range.",
+      "No candidate meeting all criteria was omitted."
+    ]
+  }
+}

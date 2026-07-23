@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32167,
+    "output_tokens": 1125,
+    "total_tokens": 33292
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.10588235294117647,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.26666666666666666,
+    "screening_accuracy": 0.8941176470588236,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.6363636363636364,
+    "inclusion_consistency": 0.68,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5918,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections and meta-analysis elements are present, including abstract, background, methods, search strategy, eligibility criteria, screening flow, risk of bias, discussion, and conclusion, but the report lacks a references section and the main findings/results section is incomplete and disrupted by placeholder text requesting missing pooled estimates."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials or randomized comparator studies evaluating a digital health intervention for sleep in adolescents or young people aged 10-24 years.",
+      "Participants are predominantly adolescents/young adults within the target age range, or the study reports a mean age within 10-24 years.",
+      "Interventions include digital sleep-focused programs such as digital CBT-I, online/app-based sleep education, sleep hygiene, or holistic sleep promotion programs delivered primarily through digital platforms.",
+      "Studies report at least one eligible outcome related to insomnia severity, sleep quality, or mental health outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies without a randomized control/comparator group, including single-arm, observational, qualitative, case report, or protocol-only studies.",
+      "Studies in populations outside the 10-24 year age range or where adolescent/young adult data cannot be separated from other age groups.",
+      "Interventions that are not primarily digital, are not focused on sleep, or combine digital content with substantial in-person therapeutic components such that the digital effect cannot be isolated.",
+      "Studies that do not report relevant outcomes on insomnia severity, sleep quality, or mental health."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 4 randomized controlled trials in adolescents and young adults (mean age 19.0 years; 71% female), digital sleep interventions\u2014including dCBT-I and sleep promotion programs\u2014were associated with a modest benefit versus control on insomnia severity, sleep quality, and related mental health outcomes.",
+      "Clinically, this suggests these programs may offer a practical, scalable way to improve sleep and potentially confer broader psychological benefit, particularly where access to in-person sleep care is limited.",
+      "On this basis, digital sleep interventions can be considered a reasonable first-line or adjunct option for youth with sleep difficulties.",
+      "However, the conclusion should be interpreted cautiously because it rests on only 4 studies, combines heterogeneous intervention types, and is drawn from a sample that was predominantly female, which may limit generalizability.",
+      "Across four randomized comparisons, digital sleep interventions for adolescents and young adults appeared to improve insomnia-related outcomes, with effects summarized using standardized mean differences across insomnia severity, sleep quality, and mental health endpoints.",
+      "Given the small evidence base, the most defensible conclusion is that these interventions show promise rather than definitive efficacy."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10515,
+    "output_tokens": 1175,
+    "total_tokens": 11690
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.76,
+    "inclusion_precision": 0.8636363636363636,
+    "inclusion_f1": 0.8085106382978724,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.95,
+    "post_retrieval_loss": 0.04,
+    "inclusion_consistency": 0.6065,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6804,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a research question, methods summary, structured synthesis/results, included-study list, and summary/conclusion, but it lacks a formal abstract, introduction, discussion, full references, detailed search strategy, data extraction procedures, PRISMA flow details, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies measured intracellular Ca\u00b2\u207a concentrations (basal or stimulated), calcium flux/mobilisation, or calcium\u2011mediated electrophysiological signals in any cell type (including iPSC\u2011derived cells) from individuals with bipolar disorder."
+    ],
+    "exclusion_criteria": [
+      "Studies of blood/body fluids, animal models, and those measuring only calcium\u2011related molecules (channels, binding proteins, Ca\u00b2\u207a\u2011ATPase, TRPC7) without direct intracellular Ca\u00b2\u207a assessment were excluded.",
+      "Reviews, editorials, protocols, and conference abstracts were not eligible."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies provide robust evidence that intracellular calcium signalling is hyperactive in bipolar disorder, manifesting as elevated basal [Ca\u00b2\u207a] and exaggerated agonist\u2011stimulated responses in platelets, lymphocytes, lymphoblasts, olfactory neurons, and iPSC\u2011derived neurons.",
+      "While the abnormality is most consistently documented during acute mania and depression, some data support a trait\u2011like persistence into euthymia.",
+      "Enhanced serotonin\u2011induced Ca\u00b2\u207a mobilisation shows a degree of specificity for bipolar disorder relative to unipolar depression and schizophrenia, although overlaps exist, particularly with melancholic depression.",
+      "Pharmacological attenuation of hyperactive Ca\u00b2\u207a signalling by lithium, carbamazepine, and valproate further validates the pathophysiological importance of this pathway.",
+      "Future research should clarify state\u2011trait dynamics, refine cellular and genetic mechanisms, and determine whether calcium\u2011signalling markers can aid differential diagnosis and treatment selection."
+    ]
+  }
+}

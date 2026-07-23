@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14458,
+    "output_tokens": 1197,
+    "total_tokens": 15655
+  },
+  "metrics": {
+    "retrieval_recall": 0.851063829787234,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.46808510638297873,
+    "inclusion_precision": 0.9565217391304348,
+    "inclusion_f1": 0.6285714285714286,
+    "screening_accuracy": 0.905,
+    "conditional_retention": 0.55,
+    "post_retrieval_loss": 0.3829787234042553,
+    "inclusion_consistency": 0.485,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.405,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening summary, evidence and safety synthesis, limitations, and a list of included studies, but it lacks a formal abstract, introduction, detailed search strategy, data extraction and quality assessment methods, quantitative meta-analysis, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "single-arm phase I/II studies in adult relapsed/refractory multiple myeloma",
+      "as monotherapy or with dexamethasone only",
+      "within the 2010-01-01 to 2020-07-01 window"
+    ],
+    "exclusion_criteria": [
+      "newly diagnosed or smoldering myeloma rather than RRMM",
+      "randomized phase III or other non-early-phase designs",
+      "combinations with agents other than dexamethasone",
+      "reviews, protocols, subgroup-only reports, real-world studies, or non-primary-study articles",
+      "insufficient abstract information to confirm eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included abstract-level evidence suggests a consistent pattern:",
+      "Single-agent activity was often modest for many investigational drugs in heavily pretreated RRMM.",
+      "Adding dexamethasone sometimes improved activity, but responses remained variable across drug classes.",
+      "Proteasome inhibitor-based studies generally showed the strongest response signals among the included early-phase studies.",
+      "In early-phase RRMM studies restricted to monotherapy or dexamethasone-only combinations, efficacy was highly heterogeneous.",
+      "Carfilzomib-based regimens and some other proteasome inhibitor approaches showed the highest ORRs among included studies.",
+      "Many other experimental single agents had limited response rates, often with disease stabilization rather than high objective response.",
+      "Toxicity burden was substantial, especially hematologic toxicity, even when efficacy was modest."
+    ]
+  }
+}

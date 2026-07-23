@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4750,
+    "output_tokens": 826,
+    "total_tokens": 5576
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.6057,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4998,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review aim, screening criteria, evidence synthesis, conclusions, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, detailed search strategy, data extraction procedures, quality assessment, and rigorous meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "reported or allowed the calculation of the prevalence of hypertension in children and adolescents with TS aged \u226418 years",
+      "included all methods of BP assessment and definitions of hypertension",
+      "were reported in English",
+      "were published before the search end date of 2021-05-31"
+    ],
+    "exclusion_criteria": [
+      "only provided group comparisons of BP to a control population without reporting a prevalence for the TS group",
+      "were reviews, case reports, conference abstracts",
+      "published after the search end date"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The prevalence of hypertension in paediatric patients with Turner syndrome is substantial, with estimates ranging from approximately one-fifth to over one-third of the population in the included studies.",
+      "The variation in prevalence underscores the impact of BP measurement methodology; conventional office measurements appear to miss a considerable proportion of hypertensive cases, particularly nocturnal and masked hypertension.",
+      "ABPM provides a more comprehensive evaluation and is advantageous for detecting hypertension that would otherwise be missed by manual or oscillometric office measurements."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29204,
+    "output_tokens": 840,
+    "total_tokens": 30044
+  },
+  "metrics": {
+    "retrieval_recall": 0.20588235294117646,
+    "retrieval_precision": 0.27450980392156865,
+    "inclusion_recall": 0.058823529411764705,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.1095890410958904,
+    "screening_accuracy": 0.7843137254901961,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.14705882352941177,
+    "inclusion_consistency": 0.5759,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4564,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, included-study list, References, search strategy, eligibility criteria, screening table, and narrative synthesis, but it lacks a formal quality/risk-of-bias assessment and fully detailed PRISMA-style data extraction/screening flow needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Were primary experimental studies in humans, human cells, or biological systems.",
+      "Investigated RF exposure **above 6 GHz**.",
+      "Used exposure levels at or below the review\u2019s ICNIRP-based thresholds, with special allowance for in vitro local PD studies up to roughly **100\u2013200 W/m\u00b2** depending on frequency.",
+      "Included a non-exposed or sham-exposed comparison.",
+      "Were available as full papers in English.",
+      "Fell within the date window ending **2019-12-31**."
+    ],
+    "exclusion_criteria": [
+      "Were reviews, exposure-system/dosimetry-only papers without biological outcomes, case reports/series, or therapeutic papers without relevant bioeffects.",
+      "Were published after 2019-12-31.",
+      "Exceeded the exposure thresholds.",
+      "Did not provide enough exposure information to verify eligibility.",
+      "Appeared not to have an English full paper."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "there is no robust, consistent evidence that low-level RF fields above 6 GHz produce adverse biological effects under the specified exposure limits",
+      "The strongest eligible evidence consists of replicated null findings for genotoxicity and cellular stress in human eye-derived cells and a null proliferation/cell-cycle study in melanoma cells.",
+      "The best-supported current position is that null or thermally explicable findings predominate, while credible evidence for non-thermal adverse effects remains insufficient"
+    ]
+  }
+}

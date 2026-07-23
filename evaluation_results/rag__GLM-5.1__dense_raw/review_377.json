@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21094,
+    "output_tokens": 928,
+    "total_tokens": 22022
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.19047619047619047,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.32,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.19047619047619047,
+    "post_retrieval_loss": 0.8095238095238095,
+    "inclusion_consistency": 0.5185,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an evidence synthesis and included-study list, but it lacks most standard systematic review sections such as Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, and detailed PRISMA-style elements like search strategy, screening process, inclusion/exclusion criteria, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "These studies directly investigate the flocculation or aggregation of microplastics with natural aquatic particles (sediment, cyanobacteria) across marine, estuarine, and freshwater environments, explicitly reporting the size and shape of the microplastics involved."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence from the included studies indicates that flocculation with natural suspended particles is a dominant mechanism for the vertical transport and sedimentation of microplastics in aquatic environments, particularly for smaller size fractions.",
+      "The studies highlight that the size relationship between microplastics and ambient suspended particles governs whether incorporation into flocs occurs.",
+      "This supports the existence of a size threshold where smaller plastics are scavenged by larger flocs, while larger plastics may avoid incorporation if the ambient particles are comparatively small.",
+      "Candidate 007 specifically notes that even positively buoyant polymers settle rapidly once incorporated into flocs in natural seawater, overriding their intrinsic buoyancy.",
+      "Collectively, these findings suggest that flocculation acts as a significant sink for microplastics <500 \u00b5m (and especially <162 \u00b5m as explored in the broader context of the review target) in marine, estuarine, and freshwater systems.",
+      "The incorporation into faster-settling aggregates explains the presence of buoyant plastics in benthic sediments and implies that land-based microplastics transported by rivers are likely to accumulate in estuarine and coastal benthic zones due to flocculation with cohesive sediment."
+    ]
+  }
+}

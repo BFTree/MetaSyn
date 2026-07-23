@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8732,
+    "output_tokens": 1317,
+    "total_tokens": 10049
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6038,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5916,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening, exclusions, evidence synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, and References, with only limited meta-analysis-specific details provided."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "breast cancer tissue microbiome study",
+      "explicit comparison of TNBC vs non-TNBC or at least breast cancer subtypes including TNBC",
+      "16S rRNA sequencing on Illumina, covering V4 or V3-V4",
+      "primary case-control or cohort study",
+      "publication date within the review window"
+    ],
+    "exclusion_criteria": [
+      "non-Illumina platform",
+      "non-V4 coverage",
+      "unavailable/publicly inaccessible data",
+      "recent antibiotic exposure"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the 200 supplied candidates and limiting eligibility to the stated review window (`2023-01-01` to `2023-07-01`) plus the full microbiome/tissue/subtype/method criteria, I found **no eligible primary study**.",
+      "Because no candidate met the full eligibility criteria, there is **no includable evidence base** from this fixed pool for the target question.",
+      "As a result, the specific meta-analytic claim described in the review target, including comparisons across 200 breast tissue samples from four cohorts and enrichment of taxa such as *Azospirillum*, *Gemmiger formicilis*, and *Anaerobutyricum soehngenii*, **cannot be supported from the supplied candidates**.",
+      "That means this review, restricted to the supplied pool and abstract-level screening, yields an **empty inclusion set** rather than a quantitative or narrative synthesis of eligible TNBC tissue microbiome studies.",
+      "None were included.",
+      "No candidate met the complete inclusion criteria and avoided the exclusion criteria based on the supplied titles and abstracts."
+    ]
+  }
+}

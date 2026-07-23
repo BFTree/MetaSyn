@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15352,
+    "output_tokens": 1313,
+    "total_tokens": 16665
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.7647058823529411,
+    "inclusion_precision": 0.9285714285714286,
+    "inclusion_f1": 0.8387096774193549,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.6991,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6456,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Objective, Methods, Results, included studies, and Conclusion sections, and it includes meta-analysis elements such as eligibility criteria, screening details, study consolidation, heterogeneity, and narrative synthesis, but it lacks a full abstract/introduction, detailed search strategy, formal quality assessment methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary\u2011research articles published between 1\u202fJanuary\u202f2000 and 26\u202fJuly\u202f2017",
+      "Studied asymptomatic women with dense breasts (any density classification) undergoing screening mammography.",
+      "Included a supplemental whole\u2011breast ultrasound exam (hand\u2011held or automated) that was performed at least when mammography was negative.",
+      "Reported quantitative data on cancers detected only by ultrasound, additional screen\u2011detected cancer yield (per 1000 mammography\u2011negative women), and/or referral/diagnostic\u2011assessment rates (recall, biopsy, or positive predictive value).",
+      "Provided separate results for women with dense breasts (not mixed with fatty\u2011breast outcomes)."
+    ],
+    "exclusion_criteria": [
+      "Excluded symptomatic women, interval cancers only, studies where the mammography and ultrasound groups were drawn from different populations, duplicate publications, and studies published before 2000."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Fourteen distinct primary studies fulfilled the inclusion criteria.",
+      "All were observational (prospective or retrospective) and compared mammography alone with mammography plus supplemental bilateral breast ultrasound in women with dense breasts.",
+      "The studies varied widely in size (n \u2248 150 to >20\u202f000) and design, but collectively provided consistent evidence of increased cancer detection with the addition of ultrasound.",
+      "Among women with negative mammograms, supplemental ultrasound consistently identified mammographically occult cancers.",
+      "Adding ultrasound increased false\u2011positive recalls and biopsy recommendations in every study that reported these outcomes.",
+      "Most lacked a randomized design; women who underwent ultrasound often differed from those who did not in ways that could bias the estimated incremental detection.",
+      "No study reported long\u2011term outcomes such as interval cancer rates or breast cancer mortality.",
+      "Supplemental ultrasound consistently detects additional invasive cancers in women with dense breasts, yielding an extra 1\u20135 cancers per 1000 mammography\u2011negative screens.",
+      "Ultrasound significantly increases recalls and benign biopsies, with a false\u2011positive risk that may be mitigated by experience and strict interpretation criteria.",
+      "The benefit of finding otherwise occult cancers must be weighed against the higher recall and biopsy burden.",
+      "The included studies consistently show that supplemental ultrasound in women with dense breasts detects additional cancers\u2014mostly small, invasive, and node\u2011negative\u2014but at the cost of higher recall and biopsy rates.",
+      "These quantitative trade\u2011offs should inform clinical guidelines and shared decision\u2011making.",
+      "Higher\u2011quality, prospective comparative studies with standardized reporting of both benefits and harms are needed to confirm these findings."
+    ]
+  }
+}

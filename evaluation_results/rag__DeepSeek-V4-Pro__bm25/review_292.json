@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12842,
+    "output_tokens": 955,
+    "total_tokens": 13797
+  },
+  "metrics": {
+    "retrieval_recall": 0.6111111111111112,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.6111111111111112,
+    "inclusion_consistency": 0.6361,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5366,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, eligibility criteria, screening results, and conclusion, but it lacks a formal abstract, introduction, discussion, references, detailed search strategy, data extraction approach, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Study design: Systematic review with meta\u2011analysis (epidemiological).",
+      "Population: Humans with periodontitis and/or noncommunicable diseases.",
+      "Exposure/Outcome: Bidirectional investigation \u2013 periodontitis as a risk factor for NCDs, and/or NCDs as a risk factor for periodontitis.",
+      "Publication window: 2021\u201101\u201101 to 2024\u201107\u201131."
+    ],
+    "exclusion_criteria": [
+      "Protocols, narrative reviews, primary studies, animal/in vitro studies, reviews without meta\u2011analysis, and studies that did not assess both directions of the association.",
+      "Wrong study type: Narrative reviews, scoping reviews, primary observational studies, Mendelian randomization studies, animal experiments, or protocols.",
+      "No meta\u2011analysis: Several systematic reviews lacked a quantitative meta\u2011analysis.",
+      "Unidirectional focus: Reviews that examined only periodontitis as a risk factor for an NCD (or vice versa) without evaluating the reverse association.",
+      "Out\u2011of\u2011scope outcomes: Studies on conditions not classified as the target NCDs (e.g., inflammatory bowel disease, Sj\u00f6gren\u2019s syndrome, rheumatoid arthritis, metabolic syndrome, adverse pregnancy outcomes).",
+      "Publication date outside 2021\u20132024: Many candidates were published in 2025 or later, or before 2021."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "All 200 candidates were screened. None met the full eligibility criteria.",
+      "No eligible systematic review with meta-analysis was identified in the supplied candidate pool.",
+      "Therefore, no evidence synthesis could be performed for the bidirectional association between periodontitis and noncommunicable diseases based on the available records.",
+      "None of the candidates met the inclusion criteria."
+    ]
+  }
+}

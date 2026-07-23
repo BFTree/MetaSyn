@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12822,
+    "output_tokens": 956,
+    "total_tokens": 13778
+  },
+  "metrics": {
+    "retrieval_recall": 0.23809523809523808,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.23809523809523808,
+    "inclusion_consistency": 0.7165,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.522,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening outcomes and includes eligibility reasoning and a conclusion, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, References, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized, controlled trials (RCTs)",
+      "adults (\u226518 years) with major depressive disorder (MDD)",
+      "who have not responded to **at least two** antidepressant trials",
+      "comparing eligible interventions to **placebo or sham treatment**",
+      "with response rate as the primary outcome",
+      "The fundamental eligibility requirement of demonstrating non-response to \u22652 antidepressant treatments in a unipolar MDD population within a sham/placebo-controlled RCT"
+    ],
+    "exclusion_criteria": [
+      "Insufficient Treatment Resistance Definition",
+      "Lack of Placebo/Sham Control",
+      "Bipolar or Psychotic Depression",
+      "Non-Primary Study Designs",
+      "systematic reviews, meta-analyses, protocols, retrospective observational studies, case reports, and secondary analyses of trials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The screening process revealed a critical gap in the candidate pool: no primary study simultaneously met all the required criteria.",
+      "Based on a strict adherence to the supplied titles and abstracts, no candidate article qualifies as an eligible primary study for this specific network meta-analysis.",
+      "The fundamental eligibility requirement of demonstrating non-response to \u22652 antidepressant treatments in a unipolar MDD population within a sham/placebo-controlled RCT was not met by any article in the provided pool.",
+      "None were included."
+    ]
+  }
+}

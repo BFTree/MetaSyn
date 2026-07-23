@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16430,
+    "output_tokens": 1364,
+    "total_tokens": 17794
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.454,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.543,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility criteria, screening decisions, narrative synthesis, limitations, bottom-line conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with morbid obesity undergoing bariatric surgery",
+      "Probiotic or synbiotic supplementation at any dose/duration",
+      "Randomized or controlled clinical trial",
+      "Comparator must be placebo, standard care/usual care, no intervention, or similar eligible control",
+      "Bariatric surgery population clearly present",
+      "Probiotic/synbiotic intervention present",
+      "Randomized/double-blind/placebo- or control-based trial design present",
+      "Comparator acceptable based on abstract"
+    ],
+    "exclusion_criteria": [
+      "Excluded: non-bariatric populations, reviews/protocols, other GI procedures, and studies comparing probiotics primarily against another active intervention rather than an eligible control",
+      "Reviews/meta-analyses/protocols: 001, 002, 003, 011, 024, 027 and others",
+      "Wrong population/intervention context: many obesity/non-bariatric, pediatric, animal, NAFLD-only, or non-surgical studies",
+      "Comparator not eligible or mixed with other active treatment"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Using only the supplied candidate titles and abstracts, the eligible bariatric-surgery trials suggest that probiotic supplementation **may improve some postoperative biochemical outcomes**, especially **vitamin B12** and possibly **triglycerides** and **AST**, while effects on **weight loss** are **inconsistent**.",
+      "Evidence is limited but directionally positive in some trials:",
+      "Overall, the abstracts suggest **potential triglyceride improvement**, but not uniformly across studies.",
+      "Overall, abstracts suggest **probiotics may improve early postoperative vitamin B12 status**."
+    ]
+  }
+}

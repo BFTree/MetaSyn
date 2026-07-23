@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8052,
+    "output_tokens": 1244,
+    "total_tokens": 9296
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4615384615384615,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.3,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.6872,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5328,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening outcomes, evidence synthesis, limitations, and conclusions, but it lacks several standard systematic review sections such as an abstract, formal introduction, detailed methods/search strategy, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "I included only primary human randomized trials that evaluated interceptive extraction of the primary maxillary canine for displaced permanent maxillary canines in children in the mixed dentition, with outcomes on eruption success and/or normalization of eruptive position.",
+      "Per your criteria, I also considered randomized studies comparing extraction of the primary first molar in addition to primary canine extraction versus primary canine extraction alone."
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, theses, case reports, methodological papers, observational studies, veterinary studies, and trials of unrelated interventions.",
+      "Systematic review/meta-analysis/review/editorial: Candidates 004, 006, 007, 012, 014, 015, 017, 018, 019, 024, 028, 029, 074, 076, 121, etc.",
+      "Not a primary trial of the target intervention/comparison: Candidates 010, 011, 022, 032 focus on expansion/headgear or other interceptive modalities.",
+      "Secondary analyses, predictor papers, thesis, or methodological studies rather than primary eligible treatment-comparison reports: Candidates 003, 008, 009, 031, 033, 041, 044, etc.",
+      "Case reports or non-randomized designs: many others.",
+      "Veterinary or non-human: Candidates 030, 037, 038, 170, 180.",
+      "Mixed displacement populations not clearly matching the target intervention question when not focused on canine extraction efficacy for PDCs alone: Candidate 020 studied mesioangular displaced canines with mixed buccal/palatal/mid-alveolar positions and focused on root resorption rather than the main eruption/normalization question."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "randomized evidence supports that interceptive extraction of the primary canine probably increases the likelihood of successful eruption and improves eruptive position of palatally displaced maxillary permanent canines compared with no interceptive treatment or observation alone",
+      "For the secondary comparison, adding extraction of the primary first molar to primary canine extraction does not show a consistent advantage in eruption success, although some studies suggest better positional improvement."
+    ]
+  }
+}

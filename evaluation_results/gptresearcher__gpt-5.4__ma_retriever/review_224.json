@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33243,
+    "output_tokens": 749,
+    "total_tokens": 33992
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.26666666666666666,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.8222222222222222,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.4166,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4308,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style screening and findings sections, Discussion/Integration, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening decisions, and synthesis approach, but it lacks a formal quality/risk-of-bias assessment and has a minor inconsistency in the included-study count."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years and over",
+      "Diagnosis of hypertension based on office or home thresholds stated in the prompt",
+      "RCT design",
+      "English language",
+      "Biofeedback intervention of any modality",
+      "Reported systolic and/or diastolic blood pressure outcomes"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, editorials, conference abstracts",
+      "Non-randomized or pretest-posttest-only studies",
+      "Studies without a hypertensive adult population",
+      "Studies focused on outcomes outside blood pressure",
+      "Studies where the intervention was not meaningfully biofeedback-based"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "My concrete judgment is that the balance of evidence in the local MetaSyn corpus does **not** support biofeedback as a reliably effective stand-alone treatment for reducing blood pressure in adults with hypertension.",
+      "The most trustworthy conclusion comes from the convergence between the higher-level reviews and the better-controlled modern trials: effects are inconsistent, often small, often not superior to sham or other behavioral controls, and rarely supported by durable follow-up.",
+      "There are pockets of promise, particularly direct blood pressure biofeedback with substantial home practice and device-guided slow breathing for acute or nighttime effects, but these signals do not overcome the overall pattern of nonreplication and methodological weakness.",
+      "It should not be presented as a proven antihypertensive therapy comparable to medication, structured self-management with medication titration, or validated comprehensive lifestyle interventions."
+    ]
+  }
+}

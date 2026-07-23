@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16238,
+    "output_tokens": 997,
+    "total_tokens": 17235
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.6153846153846154,
+    "inclusion_f1": 0.6956521739130435,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.53,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.638,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objectives, eligibility criteria, included studies, narrative synthesis, limitations, and conclusion, but it lacks a formal abstract, detailed search strategy, PRISMA-style screening flow, data extraction methods, quality/risk-of-bias assessment, quantitative synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: adults (\u226518\u202fyears) with morbid obesity (BMI\u202f\u2265\u202f40 or \u226535 with comorbidities) undergoing any bariatric surgery.",
+      "Intervention: probiotic or synbiotic supplementation (any dose, any duration).",
+      "Comparison: placebo, usual care, or no intervention.",
+      "Study design: randomized controlled trial (RCT) or controlled clinical trial."
+    ],
+    "exclusion_criteria": [
+      "Exclusion: patients with other gastrointestinal procedures; comparisons of probiotics with active interventions other than placebo.",
+      "Records that were systematic reviews, meta-analyses, protocols, editorials, conference abstracts, narrative reviews, animal studies, or studies in populations not undergoing bariatric surgery were excluded.",
+      "Studies that did not isolate the effect of probiotics (e.g., a combined intervention with differing co\u2011interventions between groups) were also excluded.",
+      "One candidate (Candidate\u202f005) lacked an abstract and could not be evaluated; it was therefore excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Probiotic supplementation after bariatric surgery may improve vitamin B12 status and possibly reduce triglycerides, but effects on weight loss and liver enzymes are inconsistent.",
+      "The evidence base is small and heterogeneous, highlighting the need for larger, well\u2011designed RCTs with standardized outcome assessment.",
+      "This review provides a foundation for future meta\u2011analyses, but the currently available primary studies do not permit a definitive quantitative synthesis for all prespecified outcomes.",
+      "Thus, the effect on weight loss is inconsistent.",
+      "Evidence is sparse and mixed.",
+      "These findings suggest a potential beneficial effect, but the number of studies is limited.",
+      "The findings are largely consistent, pointing to a positive effect of certain probiotics on B12 status after bariatric surgery.",
+      "Overall, probiotics were well tolerated."
+    ]
+  }
+}

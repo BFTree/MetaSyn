@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25359,
+    "output_tokens": 1231,
+    "total_tokens": 26590
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.36,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.1818181818181818,
+    "screening_accuracy": 0.64,
+    "conditional_retention": 0.1111111111111111,
+    "post_retrieval_loss": 0.8888888888888888,
+    "inclusion_consistency": 0.5338,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8285,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic-review elements such as eligibility criteria, search queries, screening decisions, study characteristics, synthesis feasibility, limitations, and conclusion, but it lacks a conventional abstract, full reference list, and formal quality/risk-of-bias assessment needed for excellent PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult men aged 18 years or older",
+      "a documented anxiety-disorder diagnosis made by at least one qualified psychiatrist",
+      "original research",
+      "an erectile-function outcome relevant to this review, especially prevalence of ED and/or severity measured with IIEF/IIEF-5 or another explicitly screenable erectile-function measure"
+    ],
+    "exclusion_criteria": [
+      "measured anxiety symptoms without a clinical diagnosis",
+      "did not include an eligible erectile-function outcome",
+      "lacked usable full text where that absence prevented confirmation of eligibility",
+      "were not original research",
+      "focused on broad sexual dysfunction without a usable erectile-function result for this review"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn PubMed corpus up to **2019-11-28**, the evidence that met strict inclusion criteria was limited and supported only a **narrative** conclusion.",
+      "The included evidence indicates that **adult men with clinically diagnosed PTSD experience erectile dysfunction and impaired erectile function**, with one study contributing direct erectile-function severity evidence via **IIEF** and another contributing prevalence-type evidence via clinically documented ED in the medical record [4][5].",
+      "However, the local corpus did **not** provide a sufficiently robust or homogeneous set of eligible studies to support meta-analysis, and it did **not** provide retained eligible evidence for **OCD, social anxiety/social phobia, or panic disorder** under the strict requirement that diagnosis be made by a qualified psychiatrist.",
+      "Accordingly, the strongest corpus-grounded conclusion is that **PTSD appears associated with clinically meaningful erectile dysfunction burden in adult men**, but the local-corpus evidence is too sparse, too heterogeneous, and too incompletely extractable to generate pooled prevalence or severity estimates for anxiety disorders as a broader category."
+    ]
+  }
+}

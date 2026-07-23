@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15554,
+    "output_tokens": 1033,
+    "total_tokens": 16587
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7857142857142858,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.3903,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3048,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, screening criteria, evidence summary, and included studies table, but it lacks a formal abstract, introduction, methods, discussion, conclusion, references, detailed search strategy, data extraction process, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs",
+      "prospective/retrospective cohorts",
+      "cross\u2011sectional",
+      "case\u2011control studies",
+      "adults with obesity",
+      "exposure to OSA indicators",
+      "NAFLD outcomes assessed by biopsy, imaging, or serum markers",
+      "published up to 8 October 2022"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "editorials",
+      "conference abstracts",
+      "studies on animals or children",
+      "those not using BMI \u2265 35",
+      "those lacking relevant outcomes",
+      "articles published after the search end date"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Several studies using preoperative polysomnography and intra\u2011operative liver biopsy demonstrated significant associations between more severe OSA and worse histological NAFLD features.",
+      "MBS significantly reduced AHI, nocturnal hypoxia, and improved liver steatosis (by CT liver/spleen ratio) and fibrosis markers.",
+      "The study concluded that MBS plays a pivotal role in controlling both conditions and that OSA severity and its improvement may impact NAFLD prognosis after surgery."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17202,
+    "output_tokens": 832,
+    "total_tokens": 18034
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6452,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6259,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, brief evidence synthesis, conclusion, and included-study list, but it lacks a formal abstract, introduction, detailed methods, results organization, discussion, references, and key PRISMA-style elements such as full search strategy, screening process, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population (asymptomatic women in population screening)",
+      "intervention (DBT)",
+      "comparison (DM)",
+      "outcome (CDR and/or recall rate stratified by breast density using BI-RADS)",
+      "the search date window (2009-01-01 to 2020-11-23)"
+    ],
+    "exclusion_criteria": [
+      "published after the search end date (e.g., 2021-2025)",
+      "systematic reviews or protocols",
+      "used automated density assessment",
+      "evaluated diagnostic/surveillance settings rather than population screening",
+      "did not report outcomes stratified by breast density"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available evidence from the eligible search window indicates that DBT offers differential benefits compared to DM based on breast density.",
+      "For **cancer detection**, DBT demonstrates a significantly larger relative increase in high-density breasts compared to low-density breasts.",
+      "For **recall rates**, DBT significantly reduces recalls in women with dense breast categories (scattered fibroglandular, heterogeneously dense, and extremely dense).",
+      "These findings suggest that women with dense breasts derive a greater relative diagnostic benefit from DBT implementation in screening programs, addressing both the reduced sensitivity (higher CDR) and higher false-positive rates (lower recall) associated with DM in dense tissue."
+    ]
+  }
+}

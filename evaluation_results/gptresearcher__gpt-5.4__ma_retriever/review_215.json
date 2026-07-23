@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24477,
+    "output_tokens": 1287,
+    "total_tokens": 25764
+  },
+  "metrics": {
+    "retrieval_recall": 0.5641025641025641,
+    "retrieval_precision": 0.36666666666666664,
+    "inclusion_recall": 0.07692307692307693,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.13636363636363635,
+    "screening_accuracy": 0.65,
+    "conditional_retention": 0.13636363636363635,
+    "post_retrieval_loss": 0.48717948717948717,
+    "inclusion_consistency": 0.7603,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.475,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and extractability status, but it lacks full PRISMA-style rigor such as a formal quality/risk-of-bias assessment and a clearly specified quantitative synthesis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "examined birth weight in relation to **PFOS biomarker concentrations**;",
+      "measured PFOS in maternal blood before, during, or after pregnancy, or in infant cord blood / heel stick after pregnancy;",
+      "reported a regression coefficient or comparable estimate for the PFOS\u2013birth weight association in both sexes combined or separately; and",
+      "reported a 95% CI, standard error, or other variance information permitting inference."
+    ],
+    "exclusion_criteria": [
+      "did not report a PFOS-specific birth-weight estimate;",
+      "only reported other PFAS without usable PFOS birth-weight data;",
+      "focused on outcomes other than birth weight;",
+      "were reviews rather than primary studies; or",
+      "were relevant but lacked sufficient quantitative detail in the accessible corpus materials."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The local MetaSyn corpus supports the conclusion that **higher prenatal PFOS exposure is probably associated with lower birth weight**, but the association is **heterogeneous rather than uniform**.",
+      "The most directly extractable evidence shows one strong inverse cord-blood association and one smaller, imprecise inverse cord-serum association.",
+      "The broader cohort literature strengthens the case: maternal PFOS is repeatedly linked with lower birth weight or related fetal-growth deficits, especially in early pregnancy and particularly among **female infants**.",
+      "However, PFOS is not always the most consistent or strongest PFAS predictor; in several modern cohorts, **PFNA, PFDA, or PFOS alternatives** are equally or more strongly associated with adverse birth outcomes.",
+      "My concrete judgment is therefore: **PFOS should still be considered a credible fetal growth toxicant in human epidemiology, but current evidence suggests it operates within a broader PFAS mixture, and its apparent effect size depends heavily on sex stratification, biomarker timing, and specimen type.**"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29965,
+    "output_tokens": 1004,
+    "total_tokens": 30969
+  },
+  "metrics": {
+    "retrieval_recall": 0.76,
+    "retrieval_precision": 0.5428571428571428,
+    "inclusion_recall": 0.44,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.5945945945945945,
+    "screening_accuracy": 0.7428571428571429,
+    "conditional_retention": 0.5789473684210527,
+    "post_retrieval_loss": 0.32,
+    "inclusion_consistency": 0.4907,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4594,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, Included Study List, and References, and it includes meta-analysis-style elements such as search queries, eligibility criteria, screening results, and narrative synthesis, but it lacks full PRISMA rigor such as formal quality/risk-of-bias assessment, detailed data extraction procedures, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human primary studies in bipolar disorder",
+      "Direct measures of intracellular calcium concentration or stimulated calcium mobilization/flux",
+      "Cell-based outcomes, including platelets, lymphocytes, lymphoblastoid cells",
+      "Comparisons with healthy controls and optionally unipolar depression or schizophrenia",
+      "Mood-state relevant samples: mania, bipolar depression, euthymia/remission"
+    ],
+    "exclusion_criteria": [
+      "Animal studies",
+      "Studies of plasma, serum, cerebrospinal fluid, or body fluids without cellular intracellular calcium outcomes",
+      "Studies focused only on calcium-related molecules or channels without intracellular calcium phenotyping",
+      "Non-primary narrative reviews",
+      "Studies outside the search horizon if clearly postdated the review search end date of 2019-07-18"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a substantive and biologically coherent conclusion: intracellular calcium dysregulation in bipolar disorder is a replicated peripheral-cell phenotype, especially visible as elevated basal calcium and exaggerated stimulated calcium responses in platelets and lymphocytes during acute mania and bipolar depression.",
+      "Comparative studies suggest partial specificity relative to schizophrenia and, in some assays, unipolar depression.",
+      "Mechanistic studies point toward downstream signaling dysfunction involving calmodulin-related pathways, MLCK/CaMKII modulation, intracellular stores, and store-operated influx rather than a simple receptor-density explanation.",
+      "My concrete judgment is that this evidence is strong enough to treat altered peripheral calcium signaling as a credible pathophysiologic marker of bipolar disorder, but not strong enough to regard it as a universal trait marker or a clinically deployable diagnostic test.",
+      "The best interpretation is that it is a state-amplified biological abnormality with subgroup-dependent persistence, and its greatest value lies in mechanistic stratification and treatment-response research rather than diagnosis."
+    ]
+  }
+}

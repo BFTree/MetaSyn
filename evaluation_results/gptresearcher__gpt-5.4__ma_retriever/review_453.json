@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17857,
+    "output_tokens": 1019,
+    "total_tokens": 18876
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.2727272727272727,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.9090909090909091,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.5316,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5835,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and well-organized structure with abstract, introduction, methods, results, synthesis, limitations, conclusion, included-study list, and references, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, and screening approach, but it lacks a formal PRISMA flow diagram/counts, explicit data extraction procedures, and structured risk-of-bias or quality assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Chronic hepatitis B or chronic hepatitis C population",
+      "Statin-exposed group compared with a non-statin group",
+      "Reported at least one outcome of interest:",
+      "HCC",
+      "all-cause mortality",
+      "cirrhosis",
+      "cirrhosis decompensation",
+      "Cohort study or randomized controlled trial",
+      "English-language record",
+      "Available full-text in the local corpus"
+    ],
+    "exclusion_criteria": [
+      "No full-text access in the local corpus",
+      "Not a primary study",
+      "No relevant comparison",
+      "No outcome of interest",
+      "Cohort duplication where a more comprehensive or newer duplicate analysis would supersede",
+      "HIV-coinfected cohorts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus provides **coherent, clinically significant observational evidence** that statin exposure in chronic viral hepatitis is associated with lower risk of **HCC**, and also with reduced **cirrhosis progression** and **hepatic decompensation**, particularly in **compensated disease**.",
+      "My judgment is that this pattern is **unlikely to be entirely explained by bias**, though causality is not proven.",
+      "**Statins should not yet be prescribed universally solely as liver chemoprevention in all CHB/CHC patients, but they should be used confidently when otherwise indicated, and their hepatic benefit in compensated viral hepatitis appears probably real rather than incidental.**",
+      "Across CHB and CHC cohorts, statin exposure was consistently associated with **lower HCC risk**, generally in the range of **40% to 50% relative risk reduction**.",
+      "Evidence for reduced **cirrhosis progression** and **hepatic decompensation** was also consistent, especially in CHB progression cohorts and HCV compensated cirrhosis cohorts."
+    ]
+  }
+}

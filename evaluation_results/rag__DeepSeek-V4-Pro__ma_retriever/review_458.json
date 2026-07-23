@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10452,
+    "output_tokens": 1552,
+    "total_tokens": 12004
+  },
+  "metrics": {
+    "retrieval_recall": 0.967741935483871,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.03225806451612903,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0625,
+    "screening_accuracy": 0.855,
+    "conditional_retention": 0.03333333333333333,
+    "post_retrieval_loss": 0.9354838709677419,
+    "inclusion_consistency": 0.7804,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6648,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are represented in some form, including background, screening criteria, results, synthesis, limitations, conclusion, and included articles, but the report lacks a formal abstract, detailed search strategy, data extraction methods, risk-of-bias/quality assessment, and full references, so it falls short of very good PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: healthy community\u2011dwelling or independent older adults \u226560 years.",
+      "Intervention: technology\u2011assisted rehabilitation (VR exergaming with balance platforms or motion capture, serious gaming, wearables, telerehabilitation).",
+      "Comparison: conventional exercise or no treatment.",
+      "Outcome: balance and/or functional mobility (clinical scales, mobility tests, gait speed).",
+      "Study design: randomized controlled trial."
+    ],
+    "exclusion_criteria": [
+      "Studies that included participants with neurological, orthopedic, pulmonary, or oncological conditions, or that used robotic/exoskeleton devices, were excluded.",
+      "Review articles, protocols, conference abstracts, and non\u2011randomized designs were not eligible.",
+      "Publication outside the 2023\u201101\u201101 to 2023\u201106\u201110 window (e.g., 2022, 2024, 2025, etc.).",
+      "Study design not a randomized controlled trial (e.g., systematic reviews, scoping reviews, protocols, quasi\u2011experiments, qualitative studies).",
+      "Population restricted to clinical groups (e.g., Parkinson\u2019s disease, stroke, diabetes with hemodialysis, osteoarthritis, frailty\u2011specific cohorts with comorbidities, sarcopenia).",
+      "Intervention not meeting the technology\u2011assisted definition (e.g., purely conventional exercise, no exergaming/wearable/telerehabilitation component).",
+      "Primary outcome not balance or functional mobility, or no comparator arm."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "That trial provides preliminary evidence that a home\u2011based exergame program with telerehabilitation support improves balance, functional mobility, fall efficacy, and mood in healthy older adults.",
+      "The positive findings suggest that short\u2011term structured exergame programs can enhance balance and functional mobility while also improving psychological outcomes.",
+      "Robust conclusions about the comparative effectiveness of different technology\u2011assisted modalities cannot be drawn from the available evidence.",
+      "Further high\u2011quality trials with active comparators, longer follow\u2011up, and larger samples are needed to populate a future network meta\u2011analysis."
+    ]
+  }
+}

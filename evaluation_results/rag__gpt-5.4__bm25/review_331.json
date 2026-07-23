@@ -1,0 +1,68 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15220,
+    "output_tokens": 1714,
+    "total_tokens": 16934
+  },
+  "metrics": {
+    "retrieval_recall": 0.7352941176470589,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.6176470588235294,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.7241379310344829,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.84,
+    "post_retrieval_loss": 0.11764705882352941,
+    "inclusion_consistency": 0.4196,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3457,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized and includes the review question, screening criteria, evidence findings, limitations, synthesis, and included/excluded studies, but it lacks a formal abstract, detailed search strategy, data extraction procedures, quality or risk-of-bias assessment, quantitative synthesis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult patients with persistent pain after prior spinal surgery",
+      "randomized trial design",
+      "pain outcome reported",
+      "eligible intervention/comparator"
+    ],
+    "exclusion_criteria": [
+      "excluded reviews, protocols, case reports, observational studies, non-PSPS-T2 populations, and mixed populations when PSPS-T2-specific results were not evident from title/abstract.",
+      "protocols only: Candidates 017, 020",
+      "reviews/guidelines/meta-analyses: Candidates 007, 018, 021, 037, 060, 063, etc.",
+      "nonrandomized observational/case series/case reports: Candidates 001, 010, 025, 031, 053, 076, etc.",
+      "mixed or unclear populations not clearly PSPS-T2 from abstract alone: e.g., Candidate 005, Candidate 048, Candidate 083, Candidate 181"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Eligible randomized primary-study evidence was found.",
+      "The included evidence is dominated by spinal cord stimulation (SCS) trials, with fewer trials of epidural/interventional procedures and conservative therapies.",
+      "Very little directly addresses reoperation, and almost no network-ready evidence is visible here for physiotherapy/cognitive training as standalone comparators in PSPS-T2.",
+      "Several randomized trials in FBSS/PSPS-T2 suggest benefit from SCS-based strategies, especially against conventional medical management or reoperation.",
+      "Open-label pragmatic RCTs tend to favor SCS over non-SCS management.",
+      "More tightly controlled sham/placebo or crossover trials are smaller and sometimes negative or equivocal.",
+      "This pattern suggests probable efficacy of SCS in selected PSPS-T2 patients, but also highlights susceptibility to expectation/placebo effects and selection of responders.",
+      "Interventional injection/adhesiolysis evidence exists and is generally positive in abstracts, but most studies are small, single-center, and at risk of performance/placebo bias.",
+      "Conservative-treatment evidence is inconsistent and much thinner than the neuromodulation literature.",
+      "Medication studies do not show a coherent positive pattern.",
+      "Nonpharmacologic conservative evidence in this pool is minimal.",
+      "So, in this candidate pool, reoperation is underrepresented and not supported by a broad randomized evidence base.",
+      "From this candidate pool, the randomized evidence in PSPS-T2/FBSS most consistently supports **neuromodulation, especially SCS-based strategies**, over conventional medical management and over reoperation in at least one classic trial.",
+      "However, **placebo-controlled neuromodulation evidence is more mixed**, suggesting that treatment effects may be smaller or more uncertain when expectation bias is better controlled.",
+      "For **minimally invasive interventional treatments**, especially **percutaneous adhesiolysis** and some **epidural injection strategies**, the abstracts report positive pain results, but the evidence appears more single-center and methodologically fragile.",
+      "For **conservative treatments**, eligible randomized evidence is limited and inconsistent in this pool."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25865,
+    "output_tokens": 1547,
+    "total_tokens": 27412
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.34615384615384615,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.7058823529411765,
+    "screening_accuracy": 0.8076923076923077,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.493,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5239,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and well-organized structure with Abstract, Introduction, Methods, Results, synthesis sections, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-style elements such as search strategy, eligibility criteria, screening/exclusion reasons, and synthesis approach, but it lacks full PRISMA rigor such as formal quality/risk-of-bias assessment and detailed quantitative pooling methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Healthy adult non-pregnant women",
+      "Natural menstrual cycle and/or postmenopausal status",
+      "No hormonal contraception, hormone replacement therapy, supplementation, or treatment",
+      "Posterior pole assessment involving macula, choroid, or optic disc/peripapillary morphology",
+      "Current clinical imaging modalities such as OCT/OCTA",
+      "Studies of menstrual-phase differences or pre- vs post-menopausal differences"
+    ],
+    "exclusion_criteria": [
+      "Pregnancy or breastfeeding",
+      "Hormonal contraception/HRT/treatment/supplementation",
+      "Ocular or systemic disease-focused populations",
+      "Studies centered on between-sex differences rather than within women\u2019s life stages",
+      "Experimental studies",
+      "Functional/hemodynamic-only studies without relevant structural/morphologic posterior pole outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a clear, evidence-based conclusion: hormonal state across women\u2019s reproductive life stages influences posterior pole imaging findings, with the strongest evidence centered on the choroid and increasingly strong evidence for peripapillary/choriocapillaris OCTA markers.",
+      "In healthy naturally cycling women, mid-luteal choroidal thinning is the most reproducible finding, and newer evidence suggests associated changes in choroidal vascular structure.",
+      "In postmenopausal women, thinner choroid appears to be the most robust age-adjusted structural difference, while OCTA studies indicate microvascular alterations such as reduced choriocapillaris or peripapillary vessel density and, in some datasets, larger FAZ."
+    ]
+  }
+}

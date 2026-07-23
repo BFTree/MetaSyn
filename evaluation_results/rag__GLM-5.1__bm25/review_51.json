@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10974,
+    "output_tokens": 891,
+    "total_tokens": 11865
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5401,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around outcome categories and includes conclusions and a list of included studies, but it lacks major systematic review sections such as Abstract, Introduction, Methods, detailed search strategy, inclusion/exclusion criteria, screening process, data extraction, quality assessment, and formal synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "evaluating functional, aesthetic, and oncological outcomes in men with localized penile cancer (PeCa) confined to the glans undergoing glansectomy with or without neoglans reconstruction (primarily using split-thickness skin grafts [STSG]).",
+      "The included studies consist of retrospective cohorts and case series spanning from 2007 to 2025, with sample sizes ranging from 6 to 72 patients in the glansectomy-specific arms."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Glansectomy with STSG neoglans reconstruction is an effective organ-sparing strategy for localized penile cancer that preserves the ability to void standing and maintain sexual activity in the majority of patients.",
+      "Cosmetic satisfaction and glans sensation are largely favorable, though reduced sensitivity is expected.",
+      "While erectile function is often preserved, validated scores indicate a significant decline compared to baseline, and less radical organ-sparing techniques (like glans resurfacing) may yield better sexual outcomes.",
+      "Graft-related complications (partial loss, meatal stenosis) occur but are typically minor and manageable.",
+      "Oncological control is acceptable with low local recurrence rates in most series, though close surveillance is required."
+    ]
+  }
+}

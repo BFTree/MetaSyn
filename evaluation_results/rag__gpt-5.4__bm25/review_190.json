@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13168,
+    "output_tokens": 1278,
+    "total_tokens": 14446
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.6428571428571429,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.2777777777777778,
+    "inclusion_consistency": 0.5712,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.433,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening criteria, synthesized findings, limitations, conclusion, and included studies, but it lacks a formal abstract, full introduction/methods/results/discussion structure, detailed search strategy, PRISMA-style screening flow, quality assessment, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Be in dental settings or dental education/training/practice contexts.",
+      "Include empirical data or case-based analysis.",
+      "Report sexual misconduct/sexual harassment/inappropriate sexual behavior outcomes specifically for dental populations/settings.",
+      "Fall within 2010-01-01 to 2024-10-31."
+    ],
+    "exclusion_criteria": [
+      "not dental-specific",
+      "not about sexual misconduct specifically",
+      "reviews/protocols/editorials/position papers",
+      "outside the date window",
+      "or too broad on workplace violence without extractable sexual-misconduct-specific findings"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The supplied evidence shows that sexual misconduct is a documented problem in dental education, dental hygiene practice, oral and maxillofacial surgery training/practice, and dental professional meetings.",
+      "However, there is little abstract-level evidence on tested interventions, and most available data are survey-based.",
+      "No included abstract provided strong empirical evidence of an intervention reducing sexual misconduct in dentistry."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17689,
+    "output_tokens": 1191,
+    "total_tokens": 18880
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.875,
+    "inclusion_precision": 0.7,
+    "inclusion_f1": 0.7777777777777777,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.778,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5106,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, eligibility criteria, synthesis of findings, discussion, and an included-study list, but it lacks a formal abstract, introduction, conclusion, full references, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult patients \u2265\u202f18 years with a clinical diagnosis of MCI due to AD, AD dementia, or preclinical AD",
+      "studies examining the association of neuroinflammation (YKL\u201140, sTREM2, GFAP) with AD clinical stage, disease progression, or cognitive outcomes",
+      "English\u2011language primary studies published between 1\u202fFebruary\u202f2012 and 7\u202fFebruary\u202f2023",
+      "only articles explicitly reporting the biomarkers of interest in the target population were retained"
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, conference abstracts, case reports, case series, and non\u2011human studies were excluded.",
+      "published outside the 2012\u20132023 window",
+      "were review articles",
+      "did not measure YKL\u201140, sTREM2, or GFAP",
+      "studied populations other than the AD continuum"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies, spanning preclinical AD to dementia, consistently demonstrate that YKL\u201140 and GFAP are elevated in CSF and/or blood early in the AD continuum and that higher levels are associated with worse cognitive outcomes and disease progression.",
+      "YKL\u201140 appears to be a robust marker of microglial/astrocytic activation that adds independent prognostic information beyond classical amyloid and tau biomarkers.",
+      "GFAP, while less extensively studied in this set, shows promise as a plasma\u2011based indicator of astrocytic reactivity in preclinical AD and correlates with executive dysfunction.",
+      "The absence of eligible sTREM2 studies highlights a need for future research focusing on this biomarker within the specified timeframe.",
+      "All findings are limited to the candidate pool provided; the synthesis reflects only the evidence available from these 10 articles."
+    ]
+  }
+}

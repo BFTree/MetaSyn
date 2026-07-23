@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28893,
+    "output_tokens": 906,
+    "total_tokens": 29799
+  },
+  "metrics": {
+    "retrieval_recall": 0.8888888888888888,
+    "retrieval_precision": 0.3076923076923077,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3636363636363636,
+    "screening_accuracy": 0.7692307692307693,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6359,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3628,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, retrieval/search strategy, eligibility criteria, screening decisions, included studies, synthesis findings, limitations, conclusion, and sources, but it lacks a formal abstract, explicit introduction/background section, detailed quality/risk-of-bias assessment, and full PRISMA-style flow details needed for an excellent rating."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original studies",
+      "At least 10 patients with **primary stage IV endometrial cancer**",
+      "Patients underwent CRS",
+      "Reported **OS and/or PFS stratified by extent of cytoreduction**",
+      "If mixed with other stages or recurrent disease, data for **primary stage IV** had to be reported separately"
+    ],
+    "exclusion_criteria": [
+      "Conference abstracts",
+      "Case reports",
+      "Review articles",
+      "Meta-analyses",
+      "Editorials",
+      "Letters",
+      "Guidelines",
+      "Uterine sarcoma studies",
+      "HIPEC studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus and the 1997-2022 date range, the available evidence indicates that **more complete cytoreduction is associated with improved overall survival in patients with primary stage IV endometrial cancer**, with the clearest direct abstract-level evidence showing substantially longer median OS for **optimal CRS (\u22641 cm residual disease)** than for **incomplete CRS (>1 cm residual disease)**.",
+      "There was also abstract-level evidence suggesting that **microscopic residual disease** may be superior to **macroscopic but optimal residual disease**, which is directionally consistent with a benefit of **complete or near-complete CRS**.",
+      "However, the evidence base was limited, predominantly **abstract-only**, and too sparse and heterogeneous for a formal meta-analysis.",
+      "**PFS data were essentially unavailable** from the included corpus material.",
+      "**Yes, the available local-corpus evidence supports improved overall survival with optimal and possibly complete cytoreduction compared with incomplete cytoreduction in primary stage IV endometrial cancer.**",
+      "**The strength of evidence is limited by sparse, retrospective, abstract-only data.**",
+      "**PFS by cytoreduction extent remains unavailable from the corpus evidence summarized here.**"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8753,
+    "output_tokens": 1452,
+    "total_tokens": 10205
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6956521739130435,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.7804878048780488,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.6956521739130435,
+    "post_retrieval_loss": 0.30434782608695654,
+    "inclusion_consistency": 0.6527,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3131,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening judgments, exclusions, evidence overview, interpretation, limitations, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, PRISMA screening process, quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational cohort studies",
+      "one post hoc analysis of an RCT cohort",
+      "post-diagnostic statin exposure",
+      "pre-diagnostic use among women later diagnosed with breast cancer",
+      "breast cancer-specific death/mortality and/or breast cancer recurrence"
+    ],
+    "exclusion_criteria": [
+      "review/systematic review/meta-analysis articles",
+      "protocols/trial design papers",
+      "studies not in breast cancer patients",
+      "studies of cancer incidence/risk rather than prognosis after breast cancer",
+      "studies reporting only all-cause mortality, cardiovascular outcomes, tumor biomarkers, or short-term biologic effects",
+      "studies without a statin-user vs non-user comparison on BCD/BCR",
+      "laboratory-only or predominantly mechanistic papers"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the eligible abstracts, the dominant pattern is that statin use is **often associated with lower breast cancer-specific mortality and/or lower recurrence**, but results are **not uniform**.",
+      "So, based on titles/abstracts alone, the evidence base looks **supportive but heterogeneous**, with several sizeable cohorts showing inverse associations and several others showing null or attenuated estimates.",
+      "Taken together, the more bias-aware analyses still often suggest possible benefit, but some of the strongest apparent effects are attenuated in designs less vulnerable to time-related bias.",
+      "Abstract-level takeaway: **lipophilic statins, especially simvastatin, more often appear favorable in recurrence studies**, but the pattern is not fully consistent across disease settings.",
+      "Overall, the abstracts more often suggest **greater benefit in ER-positive / hormone receptor-positive disease** than in ER-negative disease.",
+      "The overall pattern is **compatible with a modest protective association** between statin use and breast cancer-specific mortality and recurrence.",
+      "However, there is **important heterogeneity**, and several studies using more careful time-varying or new-user approaches show **attenuated or null results**.",
+      "Confidence in causality is limited by the abstract-level observational design issues, including potential:"
+    ]
+  }
+}

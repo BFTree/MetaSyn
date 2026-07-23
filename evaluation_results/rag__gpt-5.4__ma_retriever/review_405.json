@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16492,
+    "output_tokens": 891,
+    "total_tokens": 17383
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.331,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening rationale, synthesis, and limitations, but it lacks a formal abstract, introduction, detailed methods, results section, discussion, conclusion, references, and key PRISMA elements such as search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "time perception distortions in patients with Alzheimer\u2019s disease",
+      "AD diagnosed using **reliable criteria such as NINCDS-ADRDA**",
+      "comparison to **healthy controls or normative timing standards**",
+      "outcomes involving **time estimation/perception**, including prospective or retrospective timing and short/long interval perception",
+      "publication window **2015-01-01 to 2015-12-31**",
+      "peer-reviewed journal articles only",
+      "AD population",
+      "time-perception outcome",
+      "eligible publication date"
+    ],
+    "exclusion_criteria": [
+      "These are all **outside the 2015 publication window** and therefore excluded.",
+      "Within 2015, the pool contains some AD-related papers, but they address other topics such as auditory semantics, technology, or non-time cognitive domains rather than time perception distortions in AD."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Given those constraints, **no candidate was eligible for inclusion**.",
+      "Based on the supplied pool and the review\u2019s date limits, there is **no includable primary-study evidence** for 2015 on time perception distortions in NINCDS-ADRDA-defined Alzheimer\u2019s disease versus healthy controls.",
+      "That means this review, as operationalized here, cannot support a 2015 evidence synthesis on:",
+      "A cautious narrative conclusion is that the candidate pool suggests the topic has been studied historically, but **not by any eligible 2015 primary-study article in the provided set**.",
+      "None were included."
+    ]
+  }
+}

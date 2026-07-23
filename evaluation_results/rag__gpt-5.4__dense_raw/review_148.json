@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10551,
+    "output_tokens": 1193,
+    "total_tokens": 11744
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.7142857142857143,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.6462,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5353,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, evidence synthesis, exclusions, and included studies, but it lacks most required systematic-review sections, including a formal abstract, introduction, detailed methods, results, discussion, conclusion, references, search strategy, data extraction process, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational **case-control or cohort** studies, published as full manuscripts",
+      "about **alcoholic beverage intake** (total alcohol and/or beer, wine, liquor)",
+      "about **renal cell/kidney cancer incidence risk**",
+      "in the **general adult population**",
+      "published **on or before 2011-08-31**"
+    ],
+    "exclusion_criteria": [
+      "meta-analyses/reviews/editorials/protocols",
+      "studies with **mortality** rather than incidence endpoints",
+      "clearly irrelevant cancer sites",
+      "likely duplicate reports from the same population when the abstract made that apparent and another candidate better fit the review rules (eg, alcohol-focused or larger/more comprehensive report)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible candidate studies, the evidence is **more consistent with an inverse association** between alcohol consumption and **renal cell/kidney cancer risk** than with no association or harm.",
+      "Most cohort evidence in the candidate pool suggests **lower RCC risk with alcohol intake**, especially with moderate intake.",
+      "The candidate pool supports a fairly coherent pattern: **alcohol consumption, especially at low-to-moderate levels, is generally associated with reduced renal cell/kidney cancer risk**."
+    ]
+  }
+}

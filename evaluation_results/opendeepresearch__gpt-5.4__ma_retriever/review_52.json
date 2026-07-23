@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24397,
+    "output_tokens": 1324,
+    "total_tokens": 25721
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.0975609756097561,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.2436,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and covers the core review sections with a clear logical flow, plus meta-analysis-specific elements like search queries, eligibility criteria, screening, and narrative synthesis, but it falls short of excellent PRISMA-level rigor because it lacks a formal quality/risk-of-bias assessment, a transparent data-extraction method, and a full abstract/references structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible evidence included primary studies in male patients with hard-flaccid syndrome addressing one or more of the following:",
+      "aetiopathogenesis",
+      "clinical presentation",
+      "diagnostic approaches",
+      "management or treatment",
+      "Case reports, case series, and other primary patient-level evidence were therefore eligible.",
+      "No language, geography, setting, or minimum sample-size restrictions were imposed beyond what was available in the local corpus."
+    ],
+    "exclusion_criteria": [
+      "Non-primary records without original patient data were excluded.",
+      "Corpus ID 111453 was excluded because it is explicitly a comment, not a primary patient-data study."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The current local-corpus evidence from 2018-01-01 through 2025-04-13 shows that hard-flaccid syndrome in male patients is an uncommon but clinically significant syndrome characterized by a semi-rigid penis in the flaccid state together with erectile dysfunction, sensory disturbance, perineal or pelvic pain, urinary symptoms, and substantial psychological burden.",
+      "The most consistent etiologic pattern is onset after sexual or masturbatory trauma, but the mechanism remains incompletely understood and is best viewed as multifactorial, involving neurovascular disturbance, pelvic floor dysfunction, pain processes, and psychosocial factors.",
+      "Diagnosis is presently clinical and exclusionary, with routine tests often unremarkable.",
+      "Treatment evidence is sparse and low level.",
+      "PDE5 inhibitors alone may be ineffective, while the most promising signals in the available evidence come from multimodal and biopsychosocial management approaches incorporating pain management, rehabilitation/exercise therapy, and education.",
+      "Because the literature consists mainly of case reports and a small case series, meta-analysis is not feasible, and current conclusions should be regarded as preliminary."
+    ]
+  }
+}

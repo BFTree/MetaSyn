@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16073,
+    "output_tokens": 956,
+    "total_tokens": 17029
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.7999999999999999,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6348,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.713,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a research question, eligibility criteria, screening summary, included studies, evidence synthesis, and summary, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, References, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: Offspring of pregnant women with overweight/obesity.",
+      "Intervention: Preconception or antenatal lifestyle RCT (diet and/or physical activity).",
+      "Comparison: Standard care or no intervention.",
+      "Outcomes: Cardiac structure, systolic and diastolic function, heart rate/heart rate variability, arterial stiffness/thickness, blood pressure.",
+      "Study design: Follow\u2011up of an RCT; original quantitative research in humans; full text available in English."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta\u2011analyses, protocols, editorials, conference abstracts, opinion pieces, animal studies.",
+      "RCTs solely in normal\u2011weight women, nutritional supplement/drug trials, or studies focusing only on maternal/fetal outcomes or non\u2011cardiovascular offspring health (e.g., adiposity alone)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The most consistent signal comes from the UPBEAT and LIFEstyle trials, which show that antenatal or preconception lifestyle interventions in women with obesity may prevent or reduce offspring cardiac remodelling (thinner septal walls, lower left ventricular mass, improved ejection fraction) and lower resting heart rate.",
+      "Effects on blood pressure and arterial stiffness are less clear, with null findings in several studies.",
+      "The evidence base is limited by small sample sizes, variable adherence, and differences in offspring age and measurement techniques.",
+      "Further large\u2011scale follow\u2011up studies are needed to confirm long\u2011term cardiovascular benefits."
+    ]
+  }
+}

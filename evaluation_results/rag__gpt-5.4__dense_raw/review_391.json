@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14940,
+    "output_tokens": 1095,
+    "total_tokens": 16035
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.6428571428571429,
+    "inclusion_consistency": 0.6018,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3514,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening criteria, evidence synthesis, study-level findings, limitations, and a bottom-line conclusion, and it includes meta-analysis-style elements like selection logic and synthesis approach, though it is not a fully formal PRISMA-structured review with explicit abstract, methods, results, discussion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective clinical ATI studies in adults",
+      "placebo or no active intervention arms only",
+      "with frequent post-ATI viral load monitoring",
+      ">=5 planned pVL measurements within 84 days",
+      "<=18 days between measurements within the first 42 days"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "pediatric studies",
+      "animal studies",
+      "non-English reports",
+      "interventional ATI studies where the analyzed group received an active cure intervention rather than placebo/no intervention",
+      "pregnancy/perinatal studies",
+      "non-ATI HIV care studies",
+      "ATI studies centered on active interventions without an eligible placebo/no-intervention group extractable from the abstract"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In adult placebo/no-intervention ATI studies, HIV viral rebound is usually rapid, most often within about 2-4 weeks and generally within 8 weeks.",
+      "Post-treatment control is uncommon, though occasional individuals remain off ART for 12-48 weeks.",
+      "Early ART initiation appears to delay rebound and modestly improve short-term off-ART control relative to chronic/late ART initiation, but it does not eliminate the risk of rapid rebound."
+    ]
+  }
+}

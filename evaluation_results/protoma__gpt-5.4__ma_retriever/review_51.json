@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31372,
+    "output_tokens": 1217,
+    "total_tokens": 32589
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.24,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.82,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4971,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2391,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Review Question, Methods, detailed search strategy, eligibility criteria, screening summary, study characteristics, risk of bias, Discussion, and Conclusion, but it lacks a formal References section and the Results section contains duplicated headings, placeholders, and inconsistencies about whether quantitative synthesis was actually performed."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling patients with localized penile cancer confined to the glans penis who underwent glansectomy, with or without neoglans reconstruction.",
+      "Randomized trials, cohort studies, case-control studies, case series, or retrospective/prospective observational studies reporting original clinical data.",
+      "Studies evaluating functional outcomes after glansectomy, including at least one of the following: erectile function, sexual activity, standing voiding, glans sensation, meatal stenosis, graft loss, cosmetic satisfaction, recurrence, or disease-specific survival.",
+      "Studies comparing postoperative function with pre-operative baseline function and/or accepted standard functional benchmarks, or otherwise reporting extractable postoperative functional outcome data relevant to the review question."
+    ],
+    "exclusion_criteria": [
+      "Studies of patients with penile cancer not confined to the glans, or mixed penile cancer populations where glans-confined cases cannot be separated.",
+      "Studies evaluating surgical treatments other than glansectomy as the primary intervention, including partial or total penectomy without distinct glansectomy-specific results.",
+      "Studies not reporting relevant functional, oncologic, or complication outcomes after glansectomy.",
+      "Reviews, editorials, conference abstracts without sufficient data, technical notes without patient outcomes, animal studies, and other non-original research."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 9 studies, glansectomy with or without neoglans reconstruction for penile cancer confined to the glans was associated with overall favorable functional outcomes versus preoperative or standard functional benchmarks, while maintaining acceptable oncologic control.",
+      "Clinically, this suggests that organ-preserving surgery can often retain erectile function, sexual activity, standing voiding, glans sensation, and cosmetic acceptability, with relatively low rates of meatal stenosis, graft loss, local recurrence, and disease-specific death.",
+      "These findings support glansectomy as a reasonable treatment option for appropriately selected patients who prioritize preservation of penile form and function without clearly compromising cancer control.",
+      "The main caveat is that the evidence base is limited to small, mostly retrospective studies using heterogeneous outcome measures and follow-up durations, so results should be interpreted cautiously and individualized to tumor extent and patient goals."
+    ]
+  }
+}

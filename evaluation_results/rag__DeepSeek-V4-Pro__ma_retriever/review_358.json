@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8901,
+    "output_tokens": 1248,
+    "total_tokens": 10149
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.22222222222222224,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.6824,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5638,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with a logical flow from aim to screening results, findings, synthesis, and limitations, and it includes core meta-analysis elements like study screening and evidence synthesis, though it lacks fuller PRISMA-style sections such as a detailed search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "administered racemic ketamine at sub\u2011anaesthetic doses (\u2264100\u202fmg\u202fkg\u207b\u00b9\u202fi.p. in rodents)",
+      "measured extracellular or evoked dopamine levels in brain regions relevant to the review",
+      "included appropriate baseline or control conditions"
+    ],
+    "exclusion_criteria": [
+      "did not report original dopamine measurements (e.g., assessed other neurotransmitters, behavioural, neuroimaging, or electrophysiological outcomes)",
+      "were reviews or meta\u2011analyses",
+      "used anaesthetic doses",
+      "employed non\u2011racemic ketamine (S\u2011ketamine, esketamine, (R)\u2011ketamine)",
+      "were not ketamine studies at all"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The two included studies provide complementary but contrasting evidence.",
+      "Candidate\u202f001 shows that acute sub\u2011anaesthetic ketamine robustly increases prefrontal dopamine release, whereas Candidate\u202f007 finds no effect on evoked striatal dopamine release.",
+      "The discrepancy may reflect differences in brain region (prefrontal cortex vs. nucleus accumbens), measurement technique (microdialysis of tonic extracellular levels vs. phasic evoked release), or species (rat vs. mouse).",
+      "Together, they underscore that ketamine\u2019s dopaminergic effects are region\u2011 and context\u2011dependent, a nuance critical for understanding its role in neuropsychiatric disorders.",
+      "Caution is warranted in generalising these findings."
+    ]
+  }
+}

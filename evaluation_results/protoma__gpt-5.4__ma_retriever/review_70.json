@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33624,
+    "output_tokens": 989,
+    "total_tokens": 34613
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.13513513513513514,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.588235294117647,
+    "screening_accuracy": 0.9054054054054054,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5939,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6464,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review structure with abstract, background, methods, detailed search strategy, eligibility criteria, screening results, narrative synthesis, risk-of-bias assessment, discussion, and conclusion, but duplicated headings, some internal inconsistency about quantitative synthesis, and the absence of a formal references section keep it below excellent."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Interventional comparative studies, preferably randomized or non-randomized controlled trials, evaluating probiotic supplementation in patients with morbid obesity undergoing bariatric surgery.",
+      "Studies including bariatric surgery patients with a control group receiving placebo, standard care, or the same perioperative protocol without probiotics.",
+      "Studies reporting at least one relevant outcome after probiotic use, including liver function (aspartate aminotransferase), lipid metabolism (triglycerides), body weight, vitamin B12 levels, dietary intake (energy, protein, carbohydrate, or fiber), or safety/side effects.",
+      "Studies in human participants undergoing any type of bariatric surgery, with outcomes assessed postoperatively or during perioperative follow-up."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving bariatric surgery patients with morbid obesity, or studies conducted in mixed populations where bariatric surgery patient data cannot be separated.",
+      "Studies without a probiotic intervention or without an appropriate control/comparator group not receiving probiotics.",
+      "Observational studies, case reports, case series, reviews, editorials, conference abstracts, animal studies, and in vitro studies.",
+      "Studies that do not report any prespecified clinical, biochemical, dietary, or safety outcomes relevant to the review question."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the current evidence is insufficient to draw firm conclusions about the effectiveness or safety of probiotic supplementation in this population, and better-reported, methodologically robust trials are needed.",
+      "On qualitative review, the evidence suggests that probiotics may have some potential to influence selected postoperative outcomes, including liver function, lipid metabolism, body weight, vitamin B12 status, dietary intake, and safety profiles, but findings were inconsistent and no clear pattern of benefit was evident across studies.",
+      "The major limitation of the evidence base was inadequate reporting of outcome data, which prevented pooled effect estimates and limited comparison between studies.",
+      "Because of these limitations, the available evidence does not support a robust comparative estimate of the effect of probiotics on any prespecified outcome.",
+      "Without pooled estimates, it is not possible to determine the magnitude or precision of any effect of probiotic supplementation after bariatric surgery.",
+      "As a result, the main conclusion from the available studies is not that probiotics are ineffective, but that the current evidence base is insufficiently reported to support a reliable quantitative estimate of benefit or harm."
+    ]
+  }
+}

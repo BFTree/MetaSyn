@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13520,
+    "output_tokens": 1016,
+    "total_tokens": 14536
+  },
+  "metrics": {
+    "retrieval_recall": 0.7619047619047619,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.7894736842105263,
+    "inclusion_f1": 0.7500000000000001,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9375,
+    "post_retrieval_loss": 0.047619047619047616,
+    "inclusion_consistency": 0.455,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.329,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear research question, methods, screening results, included studies, and organized evidence synthesis, but it lacks several standard sections such as an abstract, introduction, formal discussion/conclusion separation, references, detailed search strategy, data extraction procedures, quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human studies (healthy or psychiatric populations) administering a psychoplastogen from the specified list",
+      "with a comparison to baseline or placebo/control",
+      "and measuring peripheral BDNF (serum or plasma)",
+      "No publication date restrictions were applied beyond the search end date (2023\u201106\u201113)",
+      "all available timepoints were considered"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "animal/in vitro studies",
+      "and articles without BDNF measurement"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available human studies do not provide consistent evidence that psychoplastogens reliably elevate peripheral BDNF levels.",
+      "Positive findings are largely confined to a minority of ketamine trials and to low\u2011dose or single\u2011study LSD results, while the majority of investigations with LSD, psilocybin, ayahuasca, DMT, MDMA, and scopolamine report no significant change.",
+      "At present, peripheral BDNF does not appear to be a robust biomarker for the rapid neuroplastic effects of psychoplastogens in humans.",
+      "Further adequately powered studies with standardised measurement protocols and longer follow\u2011up are needed to clarify these relationships."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18277,
+    "output_tokens": 1092,
+    "total_tokens": 19369
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.3111111111111111,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 0.7777777777777778,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.3361,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3842,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, well-organized structure with abstract, introduction, methods, results, discussion, conclusion, and references, plus clear search queries, eligibility criteria, and screening tables, but it stops short of excellent PRISMA-level rigor because it lacks a formal quality/risk-of-bias assessment and a true quantitative synthesis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Southeast Asia setting",
+      "Observational empirical study",
+      "Human infectious disease outcome",
+      "Agricultural land-use exposure, occupational or residential",
+      "Comparator or analytically meaningful contrast involving lower/no agricultural exposure or differential exposure linked to agricultural land use",
+      "Publication by **2017-04-30**",
+      "English language"
+    ],
+    "exclusion_criteria": [
+      "Reviews/commentaries/theoretical work",
+      "Non-human or plant/fish disease",
+      "No land-use relevance",
+      "Child-only studies",
+      "Night-soil studies",
+      "Co-infection-only effect estimates",
+      "Post-2017-04-30 publications"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Under a strict screening framework, the local MetaSyn corpus provides **limited but credible evidence** that occupational or residential exposure to agricultural land-use in Southeast Asia is associated with higher infectious disease risk.",
+      "The signal is most convincing for **malaria, scrub typhus, and rickettsial infection**, and more moderately supported for **helminth infection**.",
+      "My concrete judgment is that the association is **real but conditional**.",
+      "Agricultural land-use is not an isolated causal factor; the highest risks occur where agriculture intersects with **forest-edge ecologies, overnight shelters, mobile work routines, vector exposure at night or dawn, and social disadvantage**.",
+      "Therefore, the best interpretation is that agricultural land-use in Southeast Asia functions as a **risk-generating system**, especially in rubber and forest-linked farming landscapes, rather than as a uniform exposure category.",
+      "For a formal meta-analysis, the main obstacle is not absence of signal but **poor comparability of exposure definitions and comparator groups**."
+    ]
+  }
+}

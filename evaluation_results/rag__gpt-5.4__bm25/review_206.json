@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14274,
+    "output_tokens": 905,
+    "total_tokens": 15179
+  },
+  "metrics": {
+    "retrieval_recall": 0.18181818181818182,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.4855,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6186,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening results, exclusions, evidence synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, and References, with only limited meta-analysis process detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published studies reporting early clinical evaluation of AI decision support systems for glaucoma diagnosis or progression detection, with outcomes being DECIDE-AI checklist adherence scores",
+      "Eligible records would therefore need, at minimum, to look like metaresearch on reporting quality of such glaucoma AI early clinical evaluation studies, or primary early clinical evaluation reports that were clearly part of that DECIDE-AI reporting-quality assessment context."
+    ],
+    "exclusion_criteria": [
+      "several are **systematic reviews or narrative reviews** of AI in glaucoma or related ophthalmology topics, which are excluded or not primary studies for this review target;",
+      "several are **technical model-development/validation studies** for glaucoma detection, but their abstracts do **not** indicate that they report **DECIDE-AI adherence outcomes**;",
+      "none explicitly present the review\u2019s required outcomes: **AI-Specific Score, Generic-Item Score, or overall DECIDE-AI Score**.",
+      "Excluded: systematic review, not a primary eligible study.",
+      "Excluded: systematic review.",
+      "Excluded: review.",
+      "This is a primary glaucoma AI evaluation study, but the abstract gives diagnostic performance only; it does **not** report DECIDE-AI adherence scoring outcomes required by the review target.",
+      "Excluded for the same reason: primary AI study, but no DECIDE-AI reporting-quality outcomes.",
+      "All excluded because they are model-development/diagnostic/classification/related ophthalmic AI studies rather than studies reporting **DECIDE-AI checklist adherence** in early clinical evaluation studies of glaucoma AI."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied 200-candidate pool and applying the full eligibility criteria, I found no eligible primary-study articles for this review question.",
+      "Because no candidate met the complete eligibility criteria, there is no includable evidence base from this fixed pool for synthesis of DECIDE-AI adherence in early clinical evaluation studies of AI decision support systems for glaucoma diagnosis or progression detection.",
+      "no conclusions can be drawn from this candidate pool about how well glaucoma AI early clinical evaluation studies adhered to DECIDE-AI standards.",
+      "The main reason for non-inclusion is not lack of glaucoma AI literature in the pool, but lack of records matching the specific metaresearch outcome framework required here.",
+      "None were included."
+    ]
+  }
+}

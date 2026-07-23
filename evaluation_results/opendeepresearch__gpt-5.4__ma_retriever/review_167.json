@@ -1,0 +1,80 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32999,
+    "output_tokens": 1311,
+    "total_tokens": 34310
+  },
+  "metrics": {
+    "retrieval_recall": 0.7857142857142857,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.782608695652174,
+    "screening_accuracy": 0.9636363636363636,
+    "conditional_retention": 0.8181818181818182,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.5251,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6071,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with an executive summary, detailed methods, eligibility criteria, exact search queries, screening approach, included studies, and narrative synthesis by comparison, outcome, and age group, but it lacks a formal abstract, explicit risk-of-bias/quality assessment, complete PRISMA flow details, and a clear final discussion/conclusion and references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Women aged **45\u201374 years**",
+      "Average risk of breast cancer",
+      "Prespecified attention to subgroups:",
+      "**45\u201349 years**",
+      "**50\u201369 years**",
+      "**70\u201374 years**",
+      "Mixed-risk populations were eligible only if average-risk findings were clearly separable.",
+      "**Annual**",
+      "**Biennial**",
+      "**Triennial**",
+      "Any direct comparison among these intervals, with particular attention to:",
+      "annual versus biennial",
+      "triennial versus biennial",
+      "Breast cancer deaths averted",
+      "Quality-adjusted life years",
+      "Stage at detection / tumor prognostic characteristics",
+      "Interval cancers",
+      "Overdiagnosis",
+      "False positive results",
+      "Radiation-related effects",
+      "Randomized controlled trials",
+      "Observational studies",
+      "Cohort studies",
+      "Time-trend studies",
+      "Registry / surveillance analyses",
+      "Decision-analytic / simulation / microsimulation modeling studies",
+      "English only"
+    ],
+    "exclusion_criteria": [
+      "High-risk women, including studies focused on or inseparable from women with:",
+      "**BRCA1/BRCA2 or other known susceptibility mutations**",
+      "**Prior breast cancer or lobular neoplasia**",
+      "**Prior chest irradiation**",
+      "**A direct family member with breast cancer**"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Biennial screening appears to provide a more favorable balance of benefits and harms than annual screening for many average-risk women aged 50\u201374 years, especially when false positives and biopsy recommendations are considered alongside cancer outcomes.",
+      "Annual screening may offer some benefit for selected younger subgroups, especially premenopausal women aged 40\u201349 or 45\u201349, and women with extremely dense breasts, mainly through less adverse tumor prognostic characteristics at diagnosis; however, this comes with substantially more false positives and additional testing.",
+      "Triennial screening is less well studied in directly eligible average-risk populations.",
+      "Modeling studies generally favor biennial screening as an efficient strategy, producing a large proportion of the mortality benefit of annual screening with substantially fewer harms.",
+      "Meta-analysis was not feasible because the evidence was too heterogeneous in design, data source, outcome definitions, effect measures, age stratification, and because a substantial fraction of the evidence was model-based rather than empirically observed."
+    ]
+  }
+}

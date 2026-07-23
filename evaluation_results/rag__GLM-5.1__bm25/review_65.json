@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6102,
+    "output_tokens": 1397,
+    "total_tokens": 7499
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5485,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5465,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, eligibility/screening summary, evidence synthesis, conclusions, and included studies, but it lacks several formal required sections and PRISMA/meta-analysis elements such as a detailed search strategy, data extraction methods, quality assessment, statistical synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult women with PCOS",
+      "NC measurement",
+      "non-PCOS controls or women with smaller NC",
+      "NC values, MetS prevalence, IR markers (e.g., HOMA-IR), and other metabolic risk factors"
+    ],
+    "exclusion_criteria": [
+      "lacked a PCOS population",
+      "did not measure NC",
+      "did not examine the association between NC and relevant metabolic outcomes (MetS, IR, or metabolic risk factors)",
+      "were reviews/meta-analyses/protocols/animal studies",
+      "had incompatible populations (e.g., children, general populations without PCOS focus, or male/mixed cohorts)",
+      "measured NC but only as a secondary descriptive variable alongside BMI categories without analyzing NC's direct association with metabolic outcomes",
+      "analyzed NC in general obese populations rather than PCOS-specific cohorts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence confirms that NC is significantly and independently associated with both MetS and IR in women with PCOS.",
+      "NC effectively serves as a simple, practical anthropometric marker of upper-body adiposity and metabolic risk in this population, with cutoff values generally ranging between 33 cm and 34.3 cm for identifying MetS and IR.",
+      "The association appears more robust in PCOS women compared to non-PCOS controls, suggesting NC has particular clinical utility in the metabolic screening of women with PCOS.",
+      "The included studies consistently demonstrate a positive and independent association between NC and MetS in women with PCOS:",
+      "NC showed significant positive associations with IR markers across the studies:"
+    ]
+  }
+}

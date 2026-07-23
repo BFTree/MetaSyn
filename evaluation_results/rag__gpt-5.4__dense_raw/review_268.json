@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17540,
+    "output_tokens": 1108,
+    "total_tokens": 18648
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.6071428571428571,
+    "inclusion_precision": 0.8947368421052632,
+    "inclusion_f1": 0.7234042553191489,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.6538461538461539,
+    "post_retrieval_loss": 0.32142857142857145,
+    "inclusion_consistency": 0.5633,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6231,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, evidence synthesis, exclusions, and a conclusion, but it lacks a full systematic-review structure such as a formal abstract, introduction, methods, results, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with MDD",
+      "Maintenance/relapse-prevention setting",
+      "Double-blind randomized placebo-controlled trial",
+      "Enrichment/randomized-withdrawal design: patients first stabilized on the same antidepressant of interest, then randomized to continue that antidepressant or switch to placebo",
+      "Minimum double-blind duration 12 weeks"
+    ],
+    "exclusion_criteria": [
+      "Excluding studies in children/adolescents, older-only samples, dual-diagnosis/special populations, acute-phase trials, reviews/protocols, and studies not clearly matching the enriched placebo-withdrawal design"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "continuing the antidepressant usually reduced relapse/recurrence versus placebo",
+      "In adults with major depressive disorder who have been stabilized on an antidepressant, continuing the same antidepressant is usually more effective than switching to placebo for preventing relapse during maintenance treatment.",
+      "This conclusion is supported across multiple antidepressants and multiple randomized-withdrawal trials.",
+      "The evidence is strongest for the general proposition of maintenance continuation vs placebo, while evidence about comparative differences between antidepressants is not addressable from these abstracts alone.",
+      "Safety and tolerability appear broadly acceptable in maintenance phases, but adverse-event reporting is too inconsistent at abstract level to support a robust comparative synthesis."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5590,
+    "output_tokens": 1014,
+    "total_tokens": 6604
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4742,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.496,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a screening and evidence-synthesis summary with eligibility criteria and exclusion rationale, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, Conclusion, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trial",
+      "adults with overweight/obesity",
+      "comorbid depressive symptoms",
+      "internet- or mobile-based intervention delivered by web/app",
+      "intervention aimed at improving mental health, based on psychological principles",
+      "comparison with usual care / no intervention / similar nonpsychological control",
+      "outcomes including depressive symptom severity, with weight reduction also relevant",
+      "article within the review\u2019s search window: `2023-07-01` to `2024-03-31`"
+    ],
+    "exclusion_criteria": [
+      "not a protocol, review, observational study, highly specific excluded population, or non-mental-health intervention",
+      "The exclusion criteria specifically rule out interventions that do not address mental health directly or that mainly target wellbeing/quality of life.",
+      "Protocol only, not a completed primary trial",
+      "Wrong population",
+      "Wrong intervention target",
+      "Wrong design",
+      "Excluded specific populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On that basis, **no candidate is eligible for inclusion as a final included primary-study article**.",
+      "Because no eligible article falls within the stated date range and full eligibility criteria, this review update yields **no includable primary-study evidence** from the supplied candidate pool.",
+      "From this pool, there is **no new eligible RCT evidence in the review period** to support or refute the effectiveness of IMIs for reducing depressive symptom severity in adults with overweight/obesity and comorbid depressive symptoms.",
+      "This leaves the evidence base for the specific PICO appearing **sparse and likely low in certainty** for the update period, chiefly because of **absence of eligible new trials**, not because of directly conflicting results.",
+      "Overall confidence for this update period: effectively **insufficient evidence**",
+      "**None were included.** No candidate in the supplied pool met all eligibility criteria."
+    ]
+  }
+}

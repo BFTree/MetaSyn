@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29795,
+    "output_tokens": 931,
+    "total_tokens": 30726
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.19736842105263158,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9210526315789473,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5488,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5246,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with clear review question, eligibility criteria, search queries, screening decisions, included studies, evidence characteristics, and narrative synthesis, but it lacks a formal abstract and does not show a full quality/risk-of-bias assessment or complete PRISMA-style reporting needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Systematic reviews **with meta-analysis**",
+      "Human epidemiological evidence",
+      "Publication date from **2021-01-01 to 2024-07-31**",
+      "Reviews addressing the association between **periodontitis and one or more NCDs**",
+      "Reviews could address one direction only, provided they contributed to the overall bidirectional question"
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews, overviews, scientific statements, commentaries",
+      "Systematic reviews **without** meta-analysis",
+      "Animal, in vitro, or mixed preclinical reviews not isolating human epidemiological evidence",
+      "Primary studies",
+      "Studies outside the date window",
+      "Critically low quality reviews **if explicitly identifiable from the available corpus record**; where quality could not be determined from corpus metadata/abstract alone, uncertainty was retained rather than assuming inclusion or exclusion"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across stroke, arrhythmia, and heart failure, the direction of evidence is broadly consistent: **periodontitis is associated with adverse cardiovascular outcomes**.",
+      "The available corpus material does not justify a claim of causality, but it does support a recurring epidemiological relationship across multiple cardiovascular endpoints [1]\u2013[3].",
+      "The corpus evidence supports a **two-way metabolic relationship overall**:",
+      "Recent eligible corpus evidence supports an association between **sleep-disordered breathing and periodontitis**, but the retained search results did not preserve a similarly strong set of eligible 2021\u20132024 meta-analyses for broader respiratory NCD categories.",
+      "The respiratory evidence is therefore **present but comparatively limited in scope** [7]."
+    ]
+  }
+}

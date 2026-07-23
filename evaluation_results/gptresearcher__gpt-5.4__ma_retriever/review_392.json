@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26963,
+    "output_tokens": 999,
+    "total_tokens": 27962
+  },
+  "metrics": {
+    "retrieval_recall": 0.21428571428571427,
+    "retrieval_precision": 0.04054054054054054,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9324324324324325,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.5197,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5693,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive and clearly organized systematic review structure with Abstract, Introduction, Methods, Results-style screening and findings sections, Limitations, Conclusion, included-study list, and References, and it includes PRISMA-style elements such as a documented search strategy, eligibility criteria, screening logic, evidence branch classification, synthesis approach, and explicit handling of missing MR evidence."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies from the local MetaSyn corpus relevant to salt/sodium intake, salt substitutes, potassium-enriched salt, or sodium-to-potassium balance.",
+      "Outcomes involving blood pressure, cardiovascular disease, cardiovascular mortality, stroke, heart failure, atrial fibrillation, myocardial infarction, renal safety, or related clinical safety endpoints.",
+      "Study designs of interest: RCTs, observational cohorts, and MR studies.",
+      "For MR studies specifically, titles and abstracts had to contain the phrase \u201cMendelian randomization.\u201d"
+    ],
+    "exclusion_criteria": [
+      "Relations where statistical significance was \u201cnot found.\u201d",
+      "Studies not providing empirical results relevant to the research question.",
+      "Non-primary evidence from the final included-study list where a more directly relevant primary study was available, though systematic reviews were still used to contextualize the field because the query explicitly concerned synthesis across evidence branches.",
+      "Records outside the practical topical scope of salt intake and cardiovascular/blood-pressure inference."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus provides strong and consistent evidence that reducing sodium intake lowers blood pressure, including in hypertensive and diabetic populations, and that low-sodium salt substitutes are a plausible scalable intervention with potential cardiovascular benefit.",
+      "However, the safety evidence for potassium-enriched substitutes is incomplete in CKD and among people taking medications that reduce potassium excretion.",
+      "Observational evidence suggests that higher potassium intake is associated with lower stroke mortality and that sodium-related cardiovascular risk may be non-linear, but these findings are not strong enough to overturn randomized evidence on blood-pressure reduction.",
+      "My concrete conclusion is this: **for the salt-intake case study, the corpus supports a causal claim for sodium reduction lowering blood pressure, but it does not support a complete triangulated causal claim for major cardiovascular outcomes across RCT, observational, and Mendelian randomization designs.**",
+      "The missing MR branch is not a minor gap; it materially limits convergence assessment.",
+      "An LLM system may perform well at extracting direction and significance where evidence exists, but for this case it should be judged just as much on recognizing **absence of evidence in one design branch** as on synthesizing positive findings in the others."
+    ]
+  }
+}

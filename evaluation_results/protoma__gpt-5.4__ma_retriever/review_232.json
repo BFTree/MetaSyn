@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 38894,
+    "output_tokens": 1361,
+    "total_tokens": 40255
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.011235955056179775,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.2,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.9550561797752809,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.605,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4333,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening counts, and synthesis methods, but it falls short of excellent PRISMA-style structure because references are not fully presented and there are some organizational issues such as duplicated headings and limited formal reporting of full study metadata."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies in general adult populations (participants aged 18 years or older), including community-based or population-based samples, with or without common chronic conditions, provided results for adults can be separated.",
+      "Randomized controlled trials, non-randomized intervention studies, prospective or retrospective cohort studies, case-control studies, or other observational studies that assess dietary salt/sodium intake levels and compare different intake categories or recommended lower-intake groups (e.g., <5 g/day salt or <2 g/day sodium).",
+      "Studies evaluating dietary salt/sodium intake as the exposure/intervention, measured by diet assessment, urinary sodium excretion, or defined intake targets/restriction levels, with a comparator of lower sodium intake groups or recommended intake levels.",
+      "Studies reporting at least one eligible health outcome: blood pressure, cardiovascular disease outcomes, physical performance, composite renal outcomes, chronic kidney disease, osteoporosis, or all-cause mortality."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted exclusively in children or adolescents, pregnant populations, or highly selected clinical subgroups not representative of the general adult population, unless general-adult data are reported separately.",
+      "Studies that do not assess dietary salt/sodium intake levels, do not include a relevant comparison across intake levels, or focus only on non-dietary sodium interventions without quantifying intake/exposure.",
+      "Studies that do not report any prespecified health outcomes of interest, or report only intermediate biochemical measures not linked to the review outcomes.",
+      "Non-original research and ineligible designs, including reviews, editorials, commentaries, protocols, case reports/series, conference abstracts only, animal studies, and duplicate publications of the same dataset."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no clear overall effect of lower dietary sodium intake, compared with higher intake levels, on change in systolic blood pressure in the general adult population.",
+      "Although the point estimate favored lower sodium intake, the confidence interval crossed the null, indicating that the overall association was small and statistically inconclusive.",
+      "Taken together, the pooled findings indicate that lower sodium intake was associated with a small, non-significant reduction in systolic blood pressure, with substantial inconsistency across studies.",
+      "The bottom line is that the available evidence does not show a robust or precise pooled effect in the general adult population, and any true benefit on systolic blood pressure is likely to be modest and context-dependent.",
+      "Taken together, the evidence from this review does not support a precise, uniform blood pressure-lowering effect of lower sodium intake in the general adult population, but it also does not exclude modest benefit in specific subgroups or contexts.",
+      "In this meta-analysis of 5 studies in the general adult population, lower dietary sodium intake compared with higher intake or usual/recommended intake levels was associated with a small, non-statistically significant reduction in systolic blood pressure; across the 3 studies contributing to the pooled estimate, the random-effects mean change was -0.565 mmHg (95% CI -1.199 to 0.068; p=0.080).",
+      "On balance, these findings support maintaining current recommendations to avoid high sodium intake rather than suggesting that pushing intake lower will produce a clear additional benefit in the general adult population.",
+      "The main caveat is the very high between-study heterogeneity (I\u00b2=96.5%), which substantially limits confidence in the pooled estimate."
+    ]
+  }
+}

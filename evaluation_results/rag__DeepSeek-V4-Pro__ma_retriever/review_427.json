@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17203,
+    "output_tokens": 1302,
+    "total_tokens": 18505
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.5799,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3563,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.65,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, screening results, included studies, synthesis, limitations, and article list, but it lacks a formal abstract, introduction, discussion/conclusion, full references, detailed search strategy, data extraction procedures, quality/risk-of-bias assessment, and explicit meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "tested a digital (eHealth/mHealth) behavioural sleep intervention",
+      "enrolled adolescents aged 10\u201324 years",
+      "included a control comparator",
+      "reported validated sleep outcomes"
+    ],
+    "exclusion_criteria": [
+      "Pilot RCTs",
+      "quasi\u2011experimental designs",
+      "protocols",
+      "reviews",
+      "studies involving participants with physical co\u2011morbidities",
+      "studies without primary sleep outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "dCBT\u2011I delivered via internet, app, or email consistently reduced insomnia severity and improved sleep quality in adolescents with clinical or sub\u2011threshold insomnia.",
+      "Improvements in insomnia mediated downstream benefits on depression and anxiety, supporting the transdiagnostic value of sleep interventions.",
+      "Brief, unguided text\u2011message sleep hygiene interventions did not demonstrate significant effects on sleep outcomes in two independent trials with university students, suggesting that low\u2011intensity messaging alone may be insufficient to alter sleep behaviour.",
+      "A large, multi\u2011behaviour school\u2011based eHealth intervention (Health4Life) that included sleep as one of several targets did not lead to measurable sleep improvements, highlighting the challenge of changing sleep within a broad lifestyle programme.",
+      "Active components that appear important include structured CBT\u2011I content (sleep restriction, stimulus control, cognitive restructuring), multi\u2011session delivery, and some degree of human support or coaching.",
+      "Brief, purely educational text\u2011message approaches lacked efficacy."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14539,
+    "output_tokens": 1100,
+    "total_tokens": 15639
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4506,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4181,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is reasonably organized with screening, evidence synthesis, overall judgment, and included studies, but it lacks formal abstract, introduction, methods, results, discussion/conclusion, references, detailed search strategy, data extraction, quality assessment, and quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language original prospective level I/II studies",
+      "published from 2010-01-01 through 2022-11-15",
+      "in hypertensive patients with CKD and resistant/uncontrolled hypertension",
+      "evaluating endovascular catheter-based radiofrequency renal denervation",
+      "with outcomes compared against baseline",
+      "Prospective original studies in CKD patients with resistant/uncontrolled hypertension undergoing catheter-based radiofrequency RDN, with BP and renal outcomes over follow-up."
+    ],
+    "exclusion_criteria": [
+      "reviews, consensus statements, technical reports, protocols, case reports/very small case series",
+      "studies focused on atrial fibrillation ablation adjuncts rather than RDN for CKD hypertension",
+      "non-CKD/general hypertension cohorts",
+      "ESRD-only cohorts when the CKD criterion did not clearly align with the target review",
+      "studies outside the date window",
+      "Wrong publication type: reviews/consensus/editorials/meta-analyses/protocols.",
+      "Wrong population: general hypertension, AF ablation cohorts, renovascular disease, or ESRD/dialysis-focused cohorts outside the intended CKD treatment-resistant hypertension population.",
+      "Wrong intervention: ultrasound/alcohol/laparoscopic/non-endovascular/non-radiofrequency approaches.",
+      "Wrong date: after 2022-11-15.",
+      "Insufficient design/size: case report or tiny case series not compatible with the prospective primary-study intent."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The candidate pool supports that catheter-based radiofrequency RDN in CKD patients with resistant hypertension may lower blood pressure over 6 to 12 months without an obvious short-term loss of kidney function in most treated patients.",
+      "The strongest and most directly relevant signal is for office systolic BP reduction.",
+      "A cautious review conclusion would be that the available prospective evidence suggests short-term feasibility, probable office BP reduction, and no consistent evidence of short-term kidney function decline after radiofrequency RDN in CKD-resistant hypertension, while stronger controlled studies are needed."
+    ]
+  }
+}

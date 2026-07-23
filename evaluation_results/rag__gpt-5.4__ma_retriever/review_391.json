@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5902,
+    "output_tokens": 1120,
+    "total_tokens": 7022
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.4210526315789473,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.5376,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3181,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into useful subsections and includes screening decisions and a brief evidence synthesis, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, full References, detailed search strategy, inclusion/exclusion criteria, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult prospective ATI studies",
+      "placebo or no active intervention only",
+      "frequent post-ATI viral load monitoring"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-human studies",
+      "pediatric populations",
+      "interventional ATI arms receiving active cure-directed agents"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence consistently shows that, in untreated/placebo ATI settings, viral rebound is usually rapid after ART interruption, typically within 2-4 weeks.",
+      "The main signal relevant to the review question is that earlier ART initiation may delay rebound modestly and may increase the proportion remaining off ART at 12 weeks, but durable post-treatment control remains uncommon.",
+      "Even so, the direction is stable: most participants rebound quickly.",
+      "This supports the review\u2019s framing that early ART influences rebound dynamics, but does not often produce post-treatment control by itself.",
+      "Rapid viral rebound is the norm after ATI in placebo/no-intervention adult cohorts.",
+      "Early ART initiation appears associated with somewhat delayed rebound compared with late/chronic ART initiation.",
+      "Post-treatment control is rare, even among highly selected participants with prolonged suppression or low measured reservoir burden."
+    ]
+  }
+}

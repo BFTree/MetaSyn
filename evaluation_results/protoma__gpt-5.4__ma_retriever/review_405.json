@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30913,
+    "output_tokens": 821,
+    "total_tokens": 31734
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.0547945205479452,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9452054794520548,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7215,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4338,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, background/introduction, review question, detailed methods, search strategy, eligibility criteria, screening flow, planned synthesis methods, results, discussion, and conclusion, but it lacks a references section and has an empty risk-of-bias section with no quality assessment, preventing a top PRISMA-rigor score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies using observational, case-control, cross-sectional, cohort, or experimental neuropsychological designs that assess time perception in Alzheimer's disease.",
+      "Studies including patients with Alzheimer's disease diagnosed according to NINCDS-ADRDA criteria.",
+      "Studies that include a comparison group of healthy controls and/or normative time perception standards.",
+      "Studies reporting outcomes on time perception distortions, including prospective timing, retrospective timing, or perception/estimation/discrimination of short or long time intervals."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, conference abstracts without full data, case reports/series, editorials, protocols, and animal or in vitro studies.",
+      "Studies in which the Alzheimer's disease population is not diagnosed using NINCDS-ADRDA criteria or where results for Alzheimer's disease cannot be separated from other dementia groups.",
+      "Studies not evaluating time perception outcomes, or focusing only on unrelated cognitive, behavioral, or neuropathological outcomes without a time perception measure.",
+      "Studies without an appropriate comparator (healthy controls or normative standards) or without original data relevant to the association between Alzheimer's disease pathology and time perception mechanisms."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified no eligible studies examining time perception distortions in patients with Alzheimer's disease diagnosed according to NINCDS-ADRDA criteria; therefore, quantitative synthesis and meta-analysis were not possible.",
+      "As a result, the current evidence base is effectively absent, and no firm conclusions can be drawn about whether Alzheimer's disease pathology is associated with specific alterations in time perception.",
+      "The principal finding of this review is therefore not a pattern of effect, but a clear absence of evidence meeting the prespecified eligibility criteria.",
+      "This gap highlights the need for well-designed primary studies using standardized diagnostic criteria and clearly reported time-perception outcomes."
+    ]
+  }
+}

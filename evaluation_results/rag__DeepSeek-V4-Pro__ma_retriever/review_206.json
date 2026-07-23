@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13686,
+    "output_tokens": 781,
+    "total_tokens": 14467
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.9090909090909091,
+    "inclusion_precision": 0.5555555555555556,
+    "inclusion_f1": 0.6896551724137931,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.9090909090909091,
+    "post_retrieval_loss": 0.09090909090909091,
+    "inclusion_consistency": 0.7348,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4102,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, eligibility criteria, screening summary, and included-study list, but it lacks several standard sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, quality assessment, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published in English.",
+      "Publication date from January 2020 to the search end date (25 May 2023).",
+      "Includes human glaucoma patients.",
+      "Evaluates an artificial intelligence, machine learning, or deep learning system intended to diagnose glaucoma or predict its progression."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "editorials",
+      "letters",
+      "protocols",
+      "conference abstracts",
+      "non\u2011human studies",
+      "any article that did not meet the above specifications"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, 18 met all criteria and were classified as primary early\u2011evaluation studies of AI\u2011based decision support for glaucoma.",
+      "The included studies cover a range of AI approaches\u2014convolutional neural networks, deep learning systems, support vector machines, random forests, ensemble methods, and a large language model (ChatGPT)\u2014applied to fundus photographs, optical coherence tomography, visual field data, anterior segment OCT, OCT angiography, and electroretinograms.",
+      "Outcomes include diagnostic accuracy, agreement with expert grading, progression detection, and classification of glaucoma subtypes.",
+      "No further primary studies meeting the criteria were identified in the pool."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10065,
+    "output_tokens": 1391,
+    "total_tokens": 11456
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3636363636363636,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.6093,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5279,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, screening criteria, included studies, synthesis, discussion, and conclusion, but it lacks a formal abstract, detailed search strategy, references, data extraction procedures, and quality assessment, so it falls short of PRISMA-style completeness."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included adult (\u226518\u202fyears) male participants with a documented diagnosis of an anxiety disorder made by a qualified psychiatrist",
+      "measured erectile function using the IIEF\u20115 (or a full IIEF)",
+      "reported original research data"
+    ],
+    "exclusion_criteria": [
+      "used screening instruments rather than formal psychiatric diagnosis",
+      "relied on tools other than the IIEF",
+      "were not primary research",
+      "Population\u2011based studies using administrative diagnostic codes (e.g., Candidate 024) were excluded because they did not employ the IIEF\u20115."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence base is extremely sparse.",
+      "Only two studies met the inclusion criteria, and they covered only PTSD, OCD, and SAD.",
+      "The findings indicate that ED is a substantial clinical concern in PTSD, and that erectile difficulties are present in both OCD and SAD.",
+      "The lack of studies using validated erectile\u2011function instruments in well\u2011diagnosed anxiety\u2011disorder populations\u2014particularly panic disorder and generalized anxiety disorder\u2014represents a major gap.",
+      "Future research should employ the IIEF\u20115 in samples with psychiatrist\u2011confirmed anxiety diagnoses to provide reliable prevalence and severity estimates.",
+      "In adult males with diagnosed anxiety disorders, erectile dysfunction is highly prevalent in PTSD (85% in one veteran sample) and is present in OCD and SAD.",
+      "Data on panic disorder, generalized anxiety disorder, and other anxiety disorders are absent from the IIEF\u2011based literature.",
+      "The limited number of eligible studies precludes a formal meta\u2011analysis and highlights the need for well\u2011designed primary studies that directly measure erectile function in these populations."
+    ]
+  }
+}

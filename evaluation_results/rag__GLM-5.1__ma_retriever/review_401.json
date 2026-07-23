@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16087,
+    "output_tokens": 627,
+    "total_tokens": 16714
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.636,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.418,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an objective, screening summary, and inclusion outcome, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, results, discussion, conclusion, references, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating the distinct microbial composition of breast tissue in triple-negative breast cancer (TNBC) patients compared to non-TNBC patients",
+      "16S rRNA sequencing data (Illumina, V4 or V3-V4 regions) generated from tissue samples within the specified search window (January 1, 2023, to July 1, 2023)",
+      "primary case-control or cohort studies"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews, umbrella reviews, or protocols"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on a thorough screening of the provided candidate pool against the review's research question, population, exposure, comparison, and specific inclusion/exclusion criteria, **no candidates were found to be eligible for inclusion.**",
+      "Given these extensive mismatches across date, population, exposure, and methodological requirements, the candidate pool does not contain any primary studies suitable for answering the specific research question of this meta-analysis.",
+      "None of the candidates were eligible for inclusion."
+    ]
+  }
+}

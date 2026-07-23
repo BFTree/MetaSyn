@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19535,
+    "output_tokens": 1313,
+    "total_tokens": 20848
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.875,
+    "inclusion_precision": 0.5833333333333334,
+    "inclusion_f1": 0.7000000000000001,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.125,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5405,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, screening summary, evidence synthesis by biomarker, conclusion, and included-study list, but it lacks a formal abstract, introduction, detailed methods, search strategy, data extraction process, quality assessment, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "published outside the 2012\u20132023 window",
+      "non-human (animal or postmortem tissue) studies",
+      "review articles",
+      "editorials",
+      "case reports/series",
+      "did not specifically examine the target neuroinflammatory biomarkers (YKL-40, sTREM2, or GFAP) in the AD continuum in relation to clinical stage or long-term cognitive/progression outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "YKL-40 and GFAP are robustly associated with clinical stages of AD, from preclinical to dementia, and show potential as prognostic markers for disease progression and cognitive decline.",
+      "YKL-40 has the most consistent evidence for staging and predicting dementia conversion and structural decline, though its direct association with cognitive test scores can vary by fluid type.",
+      "GFAP appears particularly sensitive to early preclinical changes and specific executive/processing speed deficits.",
+      "sTREM2 is elevated in AD dementia, but eligible longitudinal outcome data for this biomarker within the review timeframe is lacking."
+    ]
+  }
+}

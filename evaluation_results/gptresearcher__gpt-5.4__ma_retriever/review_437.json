@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32340,
+    "output_tokens": 1126,
+    "total_tokens": 33466
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.12244897959183673,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9591836734693877,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6294,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.559,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, limitations, Conclusion, References, search queries, eligibility criteria, screening table, study characteristics, and synthesis feasibility assessment, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed reproducible screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "compared **clinicians diagnosing skin lesions** **with vs. without deep learning\u2013based AI assistance**;",
+      "used **images of skin lesions or in-person visits**;",
+      "included at least one **skin malignancy**;",
+      "were primary research articles."
+    ],
+    "exclusion_criteria": [
+      "used **pathology slides** rather than skin lesion images or in-person lesion assessment;",
+      "only compared **clinicians vs. AI**, without clinician-with-AI vs. clinician-without-AI data;",
+      "used **non-deep-learning** methods;",
+      "were reviews, editorials, or case reports;",
+      "were outside the date window (**after 2022-11-08** or before 2017)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across included studies, the direction of effect was generally favorable to AI assistance, especially for **less-experienced clinicians**.",
+      "The strongest real-world evidence came from a South Korean randomized controlled trial showing **higher overall diagnostic accuracy with AI assistance than without it (53.9% vs. 43.8%, p = .019)**, with benefit concentrated in **nondermatology trainees** rather than dermatology residents ([\u201cEvaluation of Artificial Intelligence-Assisted Diagnosis of Skin Neoplasms,\u201d 2022](https://doi.org/10.1016/j.jid.2022.02.003)).",
+      "A prospective before-and-after study similarly found an increase in trainee top-1 accuracy from **46.5% to 58.3%** after AI support ([\u201cAugmenting the accuracy of trainee doctors\u2026,\u201d 2022](https://doi.org/10.1371/journal.pone.0260895)).",
+      "Experimental reader studies also suggested that well-performing AI can improve clinician accuracy, but faulty AI can mislead clinicians, including experts ([\u201cHuman-computer collaboration for skin cancer recognition,\u201d 2020](https://doi.org/10.1038/s41591-020-0942-0)).",
+      "The local MetaSyn corpus supports a clear but bounded conclusion: **deep learning\u2013based AI assistance improved clinician skin cancer diagnostic performance in the small pre-November 2022 evidence base, especially among less-experienced clinicians, but the evidence is not strong enough to support a general claim of pooled sensitivity/specificity improvement across all clinician groups and workflows**.",
+      "The most defensible position is that **AI should be treated as supervised decision support, not autonomous diagnosis**.",
+      "In my judgment, the literature available up to November 8, 2022, justifies **careful, guarded clinical adoption for augmentation of nonexperts**, but **does not justify routine reliance without safety layers, clinician oversight, and prospective validation in broader populations**."
+    ]
+  }
+}

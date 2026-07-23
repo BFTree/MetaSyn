@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24547,
+    "output_tokens": 916,
+    "total_tokens": 25463
+  },
+  "metrics": {
+    "retrieval_recall": 0.28205128205128205,
+    "retrieval_precision": 0.4074074074074074,
+    "inclusion_recall": 0.1794871794871795,
+    "inclusion_precision": 0.4666666666666667,
+    "inclusion_f1": 0.25925925925925924,
+    "screening_accuracy": 0.5555555555555556,
+    "conditional_retention": 0.6363636363636364,
+    "post_retrieval_loss": 0.10256410256410256,
+    "inclusion_consistency": 0.5509,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7382,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, methods, search queries, screening decisions, study characteristics, and synthesized findings, but it lacks a conventional abstract and full PRISMA-level rigor such as formal quality assessment/risk-of-bias procedures and a distinct references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "local MetaSyn PubMed corpus only",
+      "2018-01-01 through 2024-07-31",
+      "English-language primary research studies on synthetic structured health/medical data where generated outputs were actually evaluated",
+      "primary research on synthetic structured health/medical data with evaluation of outputs on utility and/or privacy dimensions"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "surveys",
+      "protocols",
+      "non-English publications",
+      "poster abstracts",
+      "studies without evaluation of generated output",
+      "studies using unstructured data such as images or text"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the 2018-01-01 to 2024-07-31 local MetaSyn PubMed corpus evidence, the literature does **not** show a mature, field-wide consensus on a single standardized method for evaluating synthetic structured health data.",
+      "Rather than consensus, the evidence suggests:",
+      "No single metric set emerged from the retrieved corpus as a universally adopted standard.",
+      "Utility assessment is broader, more common, and generally more mature than privacy assessment",
+      "Privacy is clearly part of the literature, but it is less uniformly incorporated than utility and is often narrower in scope.",
+      "Privacy assessment is present, but less consistently emphasized and less standardized",
+      "The balance of evidence suggests that **privacy is not generally given equal weight to utility** in the evaluation of synthetic structured health data."
+    ]
+  }
+}

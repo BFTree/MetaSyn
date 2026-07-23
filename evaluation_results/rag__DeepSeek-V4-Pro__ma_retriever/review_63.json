@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14767,
+    "output_tokens": 913,
+    "total_tokens": 15680
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6307,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7884,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with clear Background, Methods, Results, study summaries, synthesis, Discussion, Limitations, Conclusion, and included studies, and it includes screening criteria and qualitative synthesis, but it lacks a detailed search strategy, PRISMA flow, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "cohort studies published between January 1999 and November 2023",
+      "involving adults (>18 years) with morbid obesity undergoing LVSG",
+      "reporting pre\u2011 and postoperative conventional or high\u2011resolution manometry \u00b1 24\u2011h ambulatory pH monitoring"
+    ],
+    "exclusion_criteria": [
+      "non\u2011human",
+      "duplicates",
+      "abstracts",
+      "conference proceedings",
+      "review articles",
+      "meta\u2011analyses",
+      "case reports",
+      "editorials",
+      "protocols"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Laparoscopic vertical sleeve gastrectomy consistently leads to significant weight loss but is frequently associated with worsening of the DeMeester Score and a decrease in LESP and LESL in many patients, indicating a predisposition to postoperative GERD.",
+      "However, conflicting results exist, and some studies show improvement in sphincter pressure or length.",
+      "Rigorous preoperative evaluation of esophageal function and tailored surgical approaches are warranted to minimise reflux complications.",
+      "The majority of evidence points toward a deterioration of LESP and LESL, accompanied by increased esophageal acid exposure and higher DeMeester Scores.",
+      "The consistent finding is that LVSG tends to increase esophageal acid exposure in many patients, leading to a higher DeMeester Score and a substantial rate of de novo GERD."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10110,
+    "output_tokens": 1235,
+    "total_tokens": 11345
+  },
+  "metrics": {
+    "retrieval_recall": 0.18181818181818182,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6519,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4594,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with screening, included studies, evidence synthesis, and conclusion sections, but it lacks several core systematic review sections such as an abstract, introduction, full methods, discussion, formal references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies reporting early clinical evaluation of AI decision support systems for glaucoma diagnosis or progression detection",
+      "date range (January 2020 to May 25, 2023)",
+      "population (glaucoma patients)",
+      "exposure (AI for diagnosis/progression)"
+    ],
+    "exclusion_criteria": [
+      "excluding reviews, protocols, letters, and non-human studies",
+      "published in 2024, 2025, or 2026, which falls outside the specified search end date of May 25, 2023",
+      "published before 2020",
+      "systematic reviews, scoping reviews, or narrative reviews",
+      "AI for other conditions (e.g., COVID-19, ADHD, breast cancer, stroke)",
+      "non-AI glaucoma interventions (e.g., diet, medication adherence, IOP monitoring devices without AI)",
+      "uses AI to predict *caregiver mental health*, not glaucoma diagnosis or progression"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The identified early clinical evaluation studies for AI decision support in glaucoma (published between 2020 and May 2023) demonstrate capability in reporting technical AI specifications and performance metrics.",
+      "However, based on abstract content, they likely fall short of full DECIDE-AI adherence, particularly in describing the human-AI interaction workflow, clinical integration context, and comprehensive error analysis.",
+      "Improved adherence to DECIDE-AI standards would enhance the transparency and clinical interpretability of these AI systems.",
+      "Based on the available abstracts, the reporting quality of the two included studies presents a mixed picture, with significant gaps likely present in adherence to the full DECIDE-AI checklist, particularly regarding AI-specific contextual and interaction items."
+    ]
+  }
+}

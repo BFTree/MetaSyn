@@ -1,0 +1,103 @@
+{
+  "review_id": 130,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    59696,
+    281,
+    268,
+    269,
+    276,
+    271,
+    278,
+    283,
+    284,
+    273
+  ],
+  "retrieved_article_ids": [
+    284,
+    59696,
+    59697,
+    281,
+    279,
+    59564,
+    280,
+    283,
+    268,
+    63867,
+    59643,
+    270,
+    276,
+    271,
+    269,
+    278,
+    63911,
+    59539,
+    59565,
+    59562,
+    277,
+    16106,
+    59569,
+    275,
+    66630,
+    59662,
+    273
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 279776,
+    "output_tokens": 11353,
+    "total_tokens": 291129,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 44700,
+        "output_tokens": 3000,
+        "total_tokens": 47700
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 5420,
+        "output_tokens": 5000,
+        "total_tokens": 10420
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 219140,
+        "output_tokens": 1737,
+        "total_tokens": 220877
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9276,
+        "output_tokens": 985,
+        "total_tokens": 10261
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1240,
+        "output_tokens": 631,
+        "total_tokens": 1871
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 27,
+    "retrieved_unique": 27,
+    "included_count": 10,
+    "included_unique": 10,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 33,
+    "fetch_calls": 15,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 13,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

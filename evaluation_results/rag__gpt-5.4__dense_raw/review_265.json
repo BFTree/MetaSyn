@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17689,
+    "output_tokens": 1527,
+    "total_tokens": 19216
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.8780487804878048,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4447,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4018,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized components such as screening summary, evidence synthesis, limitations, included studies, exclusions, and bottom line, but it lacks a formal abstract, introduction, full methods, detailed search strategy, data extraction procedures, quality assessment, PRISMA-style flow, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The key inclusion hinge is whether the study is a human primary study of an eligible psychoplastogen with peripheral blood BDNF measured before/after treatment or versus control.",
+      "Studies were included only if they were primary human studies of an eligible psychoplastogen and reported peripheral blood BDNF measured in serum or plasma relative to baseline and/or placebo/control.",
+      "Human primary intervention studies",
+      "Eligible psychoplastogen exposure",
+      "Peripheral blood BDNF measured in serum or plasma",
+      "Comparison to baseline and/or placebo/control available from abstract"
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, protocols, commentaries, preclinical studies, and clinical studies without relevant peripheral BDNF outcome data were excluded.",
+      "Reviews/systematic reviews/meta-analyses/primers/commentaries",
+      "Protocols only",
+      "Preclinical or in vitro studies",
+      "Human studies without relevant BDNF peripheral outcome",
+      "Studies clearly outside the review\u2019s psychoplastogen/BDNF question",
+      "Excluded because the abstract lists BDNF among outcomes but does not report any BDNF result in the abstract.",
+      "Excluded because publication year is 2025, beyond the review search end date.",
+      "Excluded because they concern perioperative/postoperative esketamine use for surgical populations rather than the psychiatric/psychoplastogen context targeted by the source review question; they also post-date the search end where applicable."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across abstracts alone, the signal is mixed and appears highly dependent on compound, timing, matrix (plasma vs serum), and population.",
+      "From the included abstracts, ketamine/esketamine findings are inconsistent.",
+      "For serotonergic psychedelics, the clearest positive abstract-level evidence is for LSD, especially low-dose LSD in healthy volunteers, which reported acute plasma BDNF increases versus placebo.",
+      "Overall, using abstracts only, the evidence does not support a uniform class-wide conclusion that psychoplastogens reliably elevate peripheral BDNF in humans.",
+      "On abstract evidence alone, peripheral BDNF appears to be an inconsistent biomarker of human psychoplastogen-induced neuroplasticity.",
+      "Within the supplied pool, eligible human studies exist, but the abstract-level evidence is mixed and does not show a consistent peripheral BDNF increase across psychoplastogens."
+    ]
+  }
+}

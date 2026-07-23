@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8466,
+    "output_tokens": 852,
+    "total_tokens": 9318
+  },
+  "metrics": {
+    "retrieval_recall": 0.0,
+    "retrieval_precision": 0.0,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": null,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4705,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4232,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with a screening summary and conclusion, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, References, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies within 1971-01-01 to 2022-12-31 on **salt intake** and **blood pressure/cardiovascular outcomes**, with particular relevance to observational studies, Mendelian randomization, and randomized controlled trials for automated evidence triangulation"
+    ],
+    "exclusion_criteria": [
+      "excluding reviews, protocols, methods papers, and studies not about salt intake with blood pressure or cardiovascular outcomes",
+      "Most candidates are unrelated to salt intake.",
+      "Several salt-related records are **reviews, umbrella reviews, scoping reviews, protocols, pooled analyses, modelling studies, or methods papers**, not eligible primary studies.",
+      "Several potentially relevant salt studies are **published after the search end date** (`2022-12-31`).",
+      "Some primary studies involve salt, but do **not match the target evidence-triangulation scope well enough** from title/abstract alone, especially when they focus on implementation/usability, feasibility, genetics of salt sensitivity, or non-generalizable disease-specific populations rather than primary exposure-outcome evidence on salt intake and BP/CVD.",
+      "The target also emphasizes **LLM extraction/triangulation performance**, which no candidate primary article addresses directly."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On that basis, **none of the candidates are eligible as final included primary-study articles** for this review.",
+      "Based on the supplied pool and the review criteria, **no candidate can be confidently included as an eligible final primary-study article**.",
+      "None were included."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14539,
+    "output_tokens": 961,
+    "total_tokens": 15500
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.6785714285714286,
+    "inclusion_precision": 0.9047619047619048,
+    "inclusion_f1": 0.7755102040816326,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.9047619047619048,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.5864,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5464,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening logic, eligibility criteria, evidence synthesis, limitations, and a list of included studies, but it lacks a formal Abstract, Introduction, full Methods, Discussion/Conclusion, References, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with major depressive disorder.",
+      "Double-blind randomized placebo-controlled maintenance/continuation/relapse-prevention design.",
+      "Enrichment/randomized-withdrawal design: patients first stabilized or responded on the antidepressant of interest, then randomized to continue that same drug or switch to placebo.",
+      "Double-blind phase at least 12 weeks."
+    ],
+    "exclusion_criteria": [
+      "Not a review, protocol, pediatric/geriatric-only study, bipolar study, acute-phase study, augmentation study, observational study, or non-placebo comparator-only study.",
+      "review/protocol/meta-analysis/editorial rather than primary trial.",
+      "acute treatment rather than maintenance.",
+      "augmentation or combination strategy rather than antidepressant monotherapy versus placebo.",
+      "bipolar disorder, psychotic depression, anxiety disorder, smoking cessation, or other non-target condition.",
+      "pediatric/adolescent-only or older-adult-only populations excluded by the review.",
+      "open-label, observational, or non-placebo-controlled designs.",
+      "discontinuation studies not clearly enriched on the antidepressant of interest, or not clearly antidepressant-specific maintenance RCTs per the review\u2019s intended design."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the apparently eligible maintenance trials, the pattern is consistent: continuing the antidepressant after remission/response generally reduced relapse or recurrence compared with switching to placebo.",
+      "From the abstracts, most included trials report lower relapse/recurrence rates or longer time to relapse with active treatment than placebo:",
+      "This matters because the evidence base is not uniformly positive.",
+      "The findings therefore most strongly support continuation of a drug that has already worked for a patient, rather than broad class-level conclusions for all maintenance-phase adults."
+    ]
+  }
+}

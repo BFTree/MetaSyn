@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32270,
+    "output_tokens": 1020,
+    "total_tokens": 33290
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.14754098360655737,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8524590163934426,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8181818181818182,
+    "inclusion_consistency": 0.7115,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4054,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Introduction, Methods, Results, synthesis, Limitations, Conclusion, included-study list, and References, and it includes search queries, eligibility criteria, screening findings, and rationale for no meta-analysis, but it lacks a formal PRISMA flow diagram and explicit quality/risk-of-bias assessment procedures needed for the highest score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Be in English.",
+      "Be dated from January 2020 to May 25, 2023.",
+      "Include glaucoma patients.",
+      "Use AI, machine learning, or deep learning for glaucoma diagnosis or progression prediction.",
+      "Report early clinical evaluation of an AI decision support system."
+    ],
+    "exclusion_criteria": [
+      "Review articles",
+      "Letters",
+      "Protocols",
+      "Conference abstracts",
+      "Non-human studies",
+      "Pure algorithm-development or retrospective diagnostic-performance studies without early clinical evaluation"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, after screening, **no study met the full eligibility standard for inclusion as an early clinical evaluation study of an AI decision support system suitable for DECIDE-AI adherence assessment**.",
+      "My concrete conclusion is that, within the local corpus and time window of interest, the glaucoma AI literature was **methodologically mature in model benchmarking but underdeveloped in early clinical evaluation reporting**.",
+      "In practical terms, this means there is currently **no includable evidence base in the local corpus for a DECIDE-AI adherence meta-analysis focused on early clinical evaluation studies**.",
+      "**No studies were included.**",
+      "Because of this, the corpus does not merely show \u201clow reporting quality\u201d; it shows something more fundamental: **the target study type is largely absent**.",
+      "My judgment is that performing a quantitative meta-analysis of DECIDE-AI adherence from this corpus and time window would be **methodologically invalid**, because the necessary unit of analysis\u2014early clinical evaluation studies\u2014is missing.",
+      "However, none of the screened studies met the review\u2019s **true target condition**: **early clinical evaluation** of an AI decision support system suitable for assessment under **DECIDE-AI**.",
+      "Accordingly, **no study was included**, and **no valid DECIDE-AI adherence meta-analysis can be conducted from the eligible local-corpus evidence identified here**."
+    ]
+  }
+}

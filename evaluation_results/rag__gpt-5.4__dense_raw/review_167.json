@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13561,
+    "output_tokens": 964,
+    "total_tokens": 14525
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5946,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4318,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening decisions, evidence synthesis, limitations, conclusions, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they compared mammography screening intervals (annual, biennial, or triennial/3-yearly) in average-risk women, or decision models of such strategies."
+    ],
+    "exclusion_criteria": [
+      "reviews/guidelines/protocols/editorials",
+      "not interval comparisons",
+      "focused on high-risk women or women with prior breast cancer",
+      "published after the search end date (2020-04-30)",
+      "or addressed different questions such as modality comparisons rather than screening interval."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "For average-risk women aged 50-69, the abstracts most consistently support **biennial mammography** as the interval with the best balance of benefits and harms.",
+      "Evidence suggests that **annual screening may improve intermediate tumor outcomes** relative to biennial/triennial screening, especially in premenopausal women, but **direct mortality evidence is limited and not definitive** in the abstracts.",
+      "Evidence is less direct, but available models and broader observational data do **not clearly support annual over biennial** screening for average-risk women.",
+      "Evidence is comparatively sparse.",
+      "The harm advantage of **biennial over annual** screening is a very consistent finding.",
+      "Across model-based evidence, **biennial screening usually offers the best benefit-harm balance** for average-risk women."
+    ]
+  }
+}

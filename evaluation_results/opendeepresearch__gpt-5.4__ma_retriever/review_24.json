@@ -1,0 +1,74 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21790,
+    "output_tokens": 3399,
+    "total_tokens": 25189
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05357142857142857,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9821428571428571,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.604,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6002,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with clear eligibility criteria, search strategy, screening/selection, included and excluded studies, synthesis approach, meta-analysis feasibility, limitations, conclusion, and sources, but it lacks some formal PRISMA elements such as a labeled abstract/introduction and a detailed quality assessment or data extraction method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible designs were randomized and non-randomized comparative trials with quantitative weight-change outcomes.",
+      "Obese adults, approximately BMI 35.5-42.6 kg/m\u00b2",
+      "With and without T2DM",
+      "Adults defined as age 18 years or older",
+      "VLCD <800 kcal/day, or",
+      "low-energy liquid-formula diet >800 kcal/day",
+      "Obese participants without T2DM receiving the same formula-diet intervention",
+      "final weight loss in kilograms",
+      "rate of weight loss in kilograms per week",
+      "Primary study in the local MetaSyn PubMed corpus",
+      "Publication date between 1946-01-01 and 2015-12-31",
+      "Weight-management purpose",
+      "Quantitative weight change reported",
+      "Direct comparison of participants with vs without T2DM"
+    ],
+    "exclusion_criteria": [
+      "exclusion criteria not described in two studies",
+      "anti-obesity medication use excluded in one study",
+      "insulin use excluded in another study",
+      "included only participants with diabetes",
+      "compared formula diet vs conventional diet within T2DM",
+      "did not compare T2DM vs non-T2DM under the same intervention",
+      "included obese subjects with mixed metabolic status",
+      "retrieved abstract/methods/results did not establish an explicit eligible comparative trial of weight loss between T2DM and non-T2DM participants under the same intervention",
+      "case report",
+      "no comparator group without T2DM",
+      "no T2DM vs non-T2DM comparison",
+      "hyperinsulinemic normoglycemic population",
+      "not the required T2DM vs non-T2DM comparison"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both studies support the conclusion that obese adults with and without T2DM can lose substantial weight on intensive very-low-calorie formula-diet programs.",
+      "The available corpus evidence also suggests that weight-loss response may be somewhat less favorable in T2DM, particularly with respect to body-composition change, but the evidence is too sparse and incompletely reported to support a reliable pooled effect estimate.",
+      "A formal meta-analysis was therefore **not feasible** from the locally available data.",
+      "The most defensible conclusion is that **VLCD total diet replacement is effective for weight loss in both groups, while differences between T2DM and non-diabetic participants remain uncertain in magnitude because of limited and incomplete primary-study reporting in the local corpus**."
+    ]
+  }
+}

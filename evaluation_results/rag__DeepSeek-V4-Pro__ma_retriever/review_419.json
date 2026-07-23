@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15389,
+    "output_tokens": 1034,
+    "total_tokens": 16423
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5914,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7169,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized and includes key systematic review elements such as eligibility criteria, screening results, study characteristics, quality assessment, synthesis, and conclusion, but it lacks a detailed search strategy, full references, and more complete PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) that enrolled adults (\u226518 years) with overweight (BMI \u226525 kg/m\u00b2) or obesity (BMI \u226530 kg/m\u00b2) and co\u2011occurring depressive symptoms",
+      "Eligible interventions were IMI (web\u2011 or app\u2011based) targeting mental health through psychological techniques (e.g., cognitive\u2011behavioural therapy, behaviour modification).",
+      "Comparators were standard care, wait\u2011list, or no\u2011intervention controls.",
+      "Outcomes of interest were depressive symptom severity and weight reduction.",
+      "Only completed RCTs reported in English or German were considered"
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they did not directly target depressive symptoms, addressed only weight change without a mental health focus, or involved highly specific populations (e.g., pregnant women, post\u2011bariatric surgery, specific somatic diseases).",
+      "protocols, reviews, conference abstracts, and non\u2011experimental designs were excluded.",
+      "Not an RCT (e.g., protocol, systematic review, observational study, qualitative study, single\u2011arm trial)",
+      "Population did not require comorbid depressive symptoms at baseline (e.g., weight\u2011loss trials in unselected overweight/obese samples)",
+      "Intervention did not primarily target depressive symptoms (e.g., physical activity or dietary interventions without a mental health focus)",
+      "Highly specific population (e.g., diabetes, PCOS, post\u2011bariatric surgery)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified only one eligible RCT, indicating a very limited evidence base for internet\u2011 and mobile\u2011based interventions that specifically target depressive symptoms in adults with overweight or obesity and co\u2011occurring depression.",
+      "The single included study provides promising but preliminary evidence of effectiveness.",
+      "Further high\u2011quality RCTs are urgently needed that explicitly recruit participants with both conditions, employ active control groups, and report longer\u2011term outcomes.",
+      "Until such evidence accumulates, the efficacy of IMI for this dual\u2011burden population cannot be considered established."
+    ]
+  }
+}

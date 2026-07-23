@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15144,
+    "output_tokens": 940,
+    "total_tokens": 16084
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6742,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7469,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, results, synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, data extraction procedures, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult male participants with a psychiatrist-documented anxiety disorder",
+      "report prevalence or severity of ED using a validated tool (specifically noted as the International Index of Erectile Function, IIEF, or its short form)"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "non-original research",
+      "studies without a clinical anxiety diagnosis",
+      "those lacking a recognised erectile function measure"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Adult males with PTSD, OCD, or social anxiety disorder exhibit a high prevalence and severity of erectile dysfunction.",
+      "PTSD is associated with particularly elevated rates of ED.",
+      "There is a notable gap in the literature regarding ED in panic disorder and a need for studies that transparently report ED prevalence and severity using validated instruments in clinically diagnosed anxiety populations.",
+      "The available evidence, though limited to three studies, consistently shows that adult males with anxiety disorders\u2014specifically PTSD, OCD, and social anxiety disorder\u2014experience elevated rates of erectile dysfunction and poorer erectile function compared to controls.",
+      "Methodological heterogeneity (different populations, comparison groups, and outcome reporting) precludes meta\u2011analysis."
+    ]
+  }
+}

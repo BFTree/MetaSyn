@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 8912,
+    "output_tokens": 1706,
+    "total_tokens": 10618
+  },
+  "metrics": {
+    "retrieval_recall": 0.6808510638297872,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.845,
+    "conditional_retention": 0.03125,
+    "post_retrieval_loss": 0.6595744680851063,
+    "inclusion_consistency": 0.5579,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8739,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, screening criteria/results, included study summary, synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references, detailed search strategy/databases, full-text screening process, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies had to be published in English between 1\u202fJanuary\u202f2017 and 13\u202fJune\u202f2022",
+      "use a Rotterdam\u2011criteria\u2011based PCOS diagnosis",
+      "provide observational data on at least one of the specified birth outcomes",
+      "include a direct comparison between women with PCOS and women without PCOS",
+      "English language",
+      "publication between 1\u202fJanuary\u202f2017 and 13\u202fJune\u202f2022",
+      "Rotterdam\u2011criteria\u2011based PCOS diagnosis",
+      "observational design",
+      "reporting of at least one eligible birth outcome in both PCOS and non\u2011PCOS groups"
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta\u2011analyses, editorials, conference abstracts, case reports, case series, RCTs, and studies using self\u2011report or ICD\u2011based PCOS diagnosis were excluded.",
+      "Reviews, meta\u2011analyses, editorials, conference abstracts, case reports/series, RCTs, animal studies, and studies using self\u2011report or ICD\u2011based PCOS diagnosis were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one study met all inclusion criteria.",
+      "Only one eligible primary study was identified.",
+      "It provides evidence that women with PCOS (specifically Rotterdam phenotypes A and D) who conceive via IVF/ICSI have a higher risk of adverse pregnancy outcomes that include preterm birth.",
+      "However, it does not separate preterm birth from the composite endpoint, nor does it report other birth outcomes of interest.",
+      "Because no other studies could be included, a meta\u2011analysis is not feasible, and the overall strength of evidence is low.",
+      "Within the constraints of the supplied candidate pool, the evidence base is restricted to a single study.",
+      "No robust, multi\u2011study synthesis can be performed.",
+      "Only **one study** fulfilled all eligibility criteria.",
+      "The composite adverse pregnancy outcome (ectopic pregnancy, miscarriage, preterm birth) was significantly higher in PCOS phenotypes A (44%) and D (46.4%) than in the non\u2011PCOS group (28.7%; P=0.027).",
+      "Hypertensive disorders of pregnancy were also elevated in PCOS phenotypes A and C.",
+      "Neonatal birth\u2011outcome measures such as birthweight, SGA, and NICU admission were not reported.",
+      "Because only one eligible study was identified, a quantitative meta\u2011analysis is not possible.",
+      "The single included study suggests that certain PCOS phenotypes (A and D) are associated with a higher risk of adverse pregnancy outcomes that include preterm birth among IVF/ICSI\u2011conceived pregnancies.",
+      "However, the strength of evidence is low, and the findings may not generalise to spontaneously conceived pregnancies.",
+      "No conclusions can be drawn regarding other birth outcomes of interest.",
+      "The evidence base within the reviewed candidate pool is extremely limited."
+    ]
+  }
+}

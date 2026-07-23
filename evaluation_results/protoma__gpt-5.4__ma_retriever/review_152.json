@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29254,
+    "output_tokens": 1051,
+    "total_tokens": 30305
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.6666666666666666,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.17647058823529416,
+    "screening_accuracy": 0.4,
+    "conditional_retention": 0.15,
+    "post_retrieval_loss": 0.5666666666666667,
+    "inclusion_consistency": 0.6372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally clear systematic-review structure with abstract, background/introduction, review question, detailed search strategy, eligibility criteria, screening flow, synthesis approach, results, risk of bias, discussion, and conclusion, but it falls short of excellent due to duplicate headings, some internal inconsistencies, lack of a formal references section, and imperfect PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies involving patients with tongue squamous cell carcinoma (TSCC) that evaluate biomarker expression in liquid samples (IL-6, IL-8, prolactin) and/or tissue biopsies (HIF-1\u03b1, SOX2, E-cadherin, vimentin, MALAT1, TP53, NOTCH1).",
+      "Studies that assess the clinical relevance of TSCC biomarkers for early diagnosis and/or prognosis prediction, including outcomes such as diagnostic accuracy, survival, recurrence, metastasis, stage association, or other prognostic value measures.",
+      "Observational or interventional primary studies that report biomarker validation data in at least one independent patient cohort, allowing classification of biomarkers as validated in a single study or in two or more independent publications.",
+      "Studies with clearly defined TSCC populations and sufficient biomarker-specific results to link expression levels with diagnostic or prognostic outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused specifically on TSCC, or that combine oral/head and neck cancer populations without separate TSCC-specific data.",
+      "Studies evaluating biomarkers unrelated to the prespecified panel, or studies assessing non-expression endpoints only (e.g., mechanistic/genetic analyses without diagnostic or prognostic clinical relevance).",
+      "Animal studies, in vitro studies, case reports, reviews, editorials, letters, conference abstracts, protocols, and other non-original research publications.",
+      "Studies that do not report relevant diagnostic or prognostic outcomes, lack independent validation information, or have overlapping cohorts without providing distinct usable data."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not provide sufficiently extractable and comparable numerical data on diagnostic accuracy or prognostic effect estimates.",
+      "Qualitative assessment suggests that several biomarkers, including IL-6, IL-8, prolactin, HIF-1\u03b1, SOX2, E-cadherin, vimentin, MALAT1, TP53, and NOTCH1, may have potential clinical relevance, with biomarkers supported by at least two independent publications appearing more promising than those reported only once.",
+      "Nevertheless, the evidence remains preliminary and inconsistent across studies.",
+      "Overall, current evidence is insufficient to support firm conclusions or clinical implementation of any biomarker for TSCC at this stage."
+    ]
+  }
+}

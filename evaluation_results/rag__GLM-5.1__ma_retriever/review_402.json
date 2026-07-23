@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17194,
+    "output_tokens": 701,
+    "total_tokens": 17895
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.6663,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6288,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, eligibility criteria, screening methodology, screening results, and conclusion, but it lacks several standard systematic review sections such as abstract, introduction, discussion, references, quality assessment, data extraction, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCT or observational design (case-control/cohort);",
+      "Gut tissue/samples from children under 5 in LMICs comparing stunted vs. non-stunted;",
+      "Use of 16S rRNA sequencing on Illumina sequencers covering the V4 or V3-V4 hypervariable regions."
+    ],
+    "exclusion_criteria": [
+      "Studies without publicly accessible data or metadata;",
+      "Studies mentioning antibiotic administration within three months prior to sample collection;",
+      "Reviews, protocols, editorials, conference abstracts, or out-of-date articles."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary study articles met all the specified inclusion criteria for this systematic review.",
+      "None were included."
+    ]
+  }
+}

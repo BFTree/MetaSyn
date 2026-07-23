@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17620,
+    "output_tokens": 1189,
+    "total_tokens": 18809
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.508,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4669,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with an objective, screening summary, synthesis of findings, conclusion, and included studies, but it lacks formal Abstract/Introduction/Methods/Discussion sections, detailed search strategy, data extraction methods, quality assessment, and full references needed for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary randomized controlled trials (RCTs)",
+      "sucrose versus breast milk in preterm infants undergoing heel lance",
+      "glucose to BM/EBM in preterm infants",
+      "comparative analgesic efficacy of sucrose versus breast milk in late preterm infants (gestational ages ranging from 30 to 37 weeks) undergoing heel lance"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews or meta-analyses rather than primary randomized controlled trials (RCTs)",
+      "focused exclusively on term newborns or mixed term and preterm populations without separate analysis",
+      "evaluated sweet solutions against placebo, water, or other non-BM interventions, lacked a BM/EBM comparison arm, or combined BM with other interventions (like skin-to-skin contact or music) without a direct isolated comparison to sucrose/glucose",
+      "evaluated pain during procedures other than heel lancing or venipuncture (e.g., orogastric tube insertion, intramuscular injection)",
+      "its population was described generally as \"newborn babies\" without specifying preterm gestational age, and it likely included term infants"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based on the eligible primary studies, there is no statistically significant difference in pain intensity (measured by PIPP/PIPP-R scores) between sucrose and breast milk/expressed breast milk in preterm infants undergoing heel lance.",
+      "Breast milk appears to be non-inferior to sucrose for procedural pain relief in this population.",
+      "No eligible evidence was available from the provided candidate pool to evaluate the comparative effectiveness of glucose against breast milk in preterm infants for these procedures.",
+      "Further primary RCTs are needed to definitively assess glucose versus BM/EBM and to evaluate crying duration and heart rate changes as distinct outcomes."
+    ]
+  }
+}

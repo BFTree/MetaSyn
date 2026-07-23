@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9828,
+    "output_tokens": 1020,
+    "total_tokens": 10848
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.624,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3554,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear basic structure with Background, Methods, Results, Discussion, and included studies, but it lacks a formal abstract, conclusion, references, detailed search strategy, data extraction process, quality/risk-of-bias assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomized controlled trials (RCTs) that directly compared an oral sweet solution (sucrose or glucose in any concentration) with BM/EBM in infants born at less than 37 weeks\u2019 gestation were eligible."
+    ],
+    "exclusion_criteria": [
+      "enrolled term or mixed term-preterm populations without separate preterm analysis",
+      "used comparators other than BM/EBM (e.g., placebo, non\u2011nutritive sucking, skin\u2011to\u2011skin care, music)",
+      "were not primary RCTs (e.g., systematic reviews, protocols, qualitative studies)",
+      "targeted procedures other than heel lance or venipuncture"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Both studies showed no statistically significant difference between BM and sucrose, suggesting the two interventions provide comparable analgesia during heel lance.",
+      "The overall evidence directly comparing sucrose/glucose with breast milk is limited to these two small trials, both of which indicate equivalence or non\u2011inferiority in pain scores.",
+      "The identified evidence is sparse but consistent: in preterm infants undergoing heel lance, 24% sucrose and breast milk produce similar pain scores as measured by PIPP/PIPP\u2011R.",
+      "No RCTs comparing glucose (rather than sucrose) with BM/EBM met the inclusion criteria."
+    ]
+  }
+}

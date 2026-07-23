@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10434,
+    "output_tokens": 1065,
+    "total_tokens": 11499
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.45,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.5806451612903226,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.45,
+    "post_retrieval_loss": 0.55,
+    "inclusion_consistency": 0.765,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5173,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review target, screening/selection summary, synthesis of findings, and included studies, but it lacks several formal systematic review sections such as an abstract, full methods, detailed search strategy, quality assessment, statistical synthesis methods, discussion, conclusion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "interceptive treatment promotes eruption and normalizes the eruptive position of palatally displaced maxillary canines in children aged 10-13 years in the mixed dentition, compared to no intervention or delayed treatment",
+      "studies comparing single extraction to double extraction (canine + first molar)",
+      "those including labially or centrally displaced canines"
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were non-randomised (e.g., retrospective cohorts), case reports, reviews, meta-analyses, editorials, or if they assessed outcomes not relevant to the review target (e.g., pain, root resorption only, or interventions like RME without an extraction-only comparator)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included RCTs consistently demonstrate that interceptive extraction of the primary canine significantly promotes the eruption and improves the position of palatally displaced permanent canines (PDCs) compared to no intervention or observation alone.",
+      "Extraction leads to significant positional changes (distal movement and uprighting) of the PDC, facilitating normalization of the eruptive path (Candidates 001, 003, 025, 032).",
+      "While adjuncts showed higher rates, extraction alone still proved significantly more effective than no intervention."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30714,
+    "output_tokens": 1086,
+    "total_tokens": 31800
+  },
+  "metrics": {
+    "retrieval_recall": 0.6153846153846154,
+    "retrieval_precision": 0.09195402298850575,
+    "inclusion_recall": 0.38461538461538464,
+    "inclusion_precision": 0.4166666666666667,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.8850574712643678,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.5787,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5303,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, statistical synthesis, results, study selection, risk of bias, discussion, conclusion, and included studies, but it falls short of excellent due to duplicated headings, minor drafting artifacts, incomplete reference details, and some incomplete reporting such as the search window."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adults (>=18 years) with hypertension, other health conditions, or healthy participants.",
+      "Randomized controlled trials or other controlled prospective intervention studies comparing exercise training with a non-exercise control condition.",
+      "Interventions consisting of structured exercise training, including endurance training or other exercise modalities, delivered alone or as the primary intervention.",
+      "Studies reporting at least one relevant outcome: plasma renin activity, angiotensin-II, aldosterone, epinephrine, norepinephrine, 24-hour urinary sodium or potassium excretion, systolic blood pressure, diastolic blood pressure, or heart rate."
+    ],
+    "exclusion_criteria": [
+      "Studies in children or adolescents, animal studies, or non-human experimental studies.",
+      "Studies without a non-exercise comparator, or studies evaluating acute single-session exercise only rather than exercise training.",
+      "Interventions where exercise is not the primary component or effects of exercise cannot be separated from co-interventions such as diet, medication changes, or multifactorial lifestyle programs.",
+      "Reviews, editorials, protocols, case reports, conference abstracts without full data, and studies not reporting any prespecified hormonal, urinary electrolyte, blood pressure, or heart rate outcomes."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated **no statistically significant effect of exercise training versus non-exercise control** on the outcome synthesized across the two studies (**MD -3.30**, 95% CI **-11.81 to 5.21**; **p=0.45**).",
+      "Although the point estimate favored exercise, the confidence interval included both a potentially modest benefit and no effect, indicating substantial uncertainty.",
+      "Overall, the evidence is too inconsistent to draw a firm conclusion.",
+      "The confidence interval includes both potentially beneficial and potentially harmful effects, and therefore the available evidence does not establish a clear effect of exercise training on this outcome.",
+      "More broadly, the limited availability of complete group-level data prevented firm conclusions regarding plasma renin activity, angiotensin-II, aldosterone, catecholamines, urinary sodium and potassium excretion, blood pressure, or heart rate across the full evidence base.",
+      "In this meta-analysis of 12 studies, exercise training was not associated with a clear overall change in the outcome versus non-exercise control, with a random-effects pooled mean difference of -3.30 (95% CI -11.81 to 5.21; p=0.45).",
+      "The main caveat is the very high between-study heterogeneity (I\u00b2=93.4%), which indicates substantial inconsistency across studies, populations, and exercise modalities and limits confidence in a single pooled estimate."
+    ]
+  }
+}

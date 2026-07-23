@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6019,
+    "output_tokens": 1144,
+    "total_tokens": 7163
+  },
+  "metrics": {
+    "retrieval_recall": 0.9642857142857143,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.2777777777777778,
+    "screening_accuracy": 0.875,
+    "conditional_retention": 0.18518518518518517,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.5835,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around outcome themes and lists included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, search strategy, screening process, inclusion/exclusion criteria, quality assessment, quantitative synthesis methods, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "directly compare ultrabrief pulse ECT (UBP; <0.5 ms) with brief pulse ECT (BP; 0.5\u20131.5 ms)",
+      "in adult patients with depression",
+      "reporting on validated depression rating scale outcomes such as remission, response, or switching rates"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence indicates that BP ECT generally demonstrates higher remission rates than UBP ECT, though response rates are often comparable when UBP ECT is administered at sufficiently high stimulus doses (e.g., 6\u20138 times seizure threshold).",
+      "Multiple randomized and retrospective studies found BP ECT to be superior in achieving remission.",
+      "In contrast, when UBP RUL ECT was dosed at 8 times seizure threshold versus BP RUL ECT at 5 times threshold (Candidate 011), efficacy outcomes were not significantly different.",
+      "The efficacy of UBP ECT appears heavily dependent on electrode placement.",
+      "Even when ultimate response rates are similar, UBP ECT may require more treatments to achieve the same clinical endpoints.",
+      "Data on switching from UBP to BP ECT due to inadequate clinical response suggest a notable clinical occurrence.",
+      "None of the included primary studies provided specific comparative data on long-term relapse rates between UBP and BP ECT following the acute phase."
+    ]
+  }
+}

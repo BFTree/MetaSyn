@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23470,
+    "output_tokens": 1082,
+    "total_tokens": 24552
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.8709677419354839,
+    "inclusion_precision": 0.7714285714285715,
+    "inclusion_f1": 0.8181818181818182,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.8709677419354839,
+    "post_retrieval_loss": 0.12903225806451613,
+    "inclusion_consistency": 0.7829,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6198,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, eligibility criteria, screening results, study overview, discussion of meta-analysis considerations, included-study list, and conclusion, but it lacks a formal abstract, detailed search strategy, data-extraction and quality-assessment methods, actual synthesis results, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Participants: adults (\u226518 years) with a diagnosis of schizophrenia spectrum disorder (schizophrenia, schizoaffective or schizophreniform psychosis).",
+      "Comparator: demographically comparable healthy control group with no known psychiatric disorder.",
+      "Construct: empirical quantitative assessment of speech production and/or comprehension with an explicit focus on grammar and syntax.",
+      "Measures had to be derived in an identical manner from both groups and be expressed (or expressible) as means and standard deviations to allow effect\u2011size calculation."
+    ],
+    "exclusion_criteria": [
+      "Studies exclusively on individuals <18 years.",
+      "Case reports, case series, narrative reviews, systematic reviews, meta\u2011analyses, protocols, editorials, or conference abstracts.",
+      "Studies lacking a healthy control group.",
+      "Studies that did not report a quantitative syntactic outcome (e.g., purely lexical, semantic, pragmatic, or phonetic measures) or that used unconventional syntactic criteria precluding effect\u2011size extraction.",
+      "One study known to have received a retraction notice (none were present in the pool)."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across all studies, patients with schizophrenia consistently make more syntactic errors or show slower processing of complex structures than healthy controls, with differential vulnerability to non\u2011canonical word orders (passives, object relatives) and sentences that demand greater working\u2011memory resources.",
+      "Reduced global syntactic complexity (shorter utterances, fewer subordinate clauses, lower clausal density).",
+      "Over\u2011use of simple matrix sentences and reduced syntactic diversity.",
+      "Specific difficulties with verb\u2011argument structure and pronominal reference that are related to formal thought disorder and negative symptoms.",
+      "These generally report that comprehension and production deficits are positively correlated, although some dissociation is evident: syntactic comprehension impairment can be detected even when production appears relatively preserved, and vice\u2011versa.",
+      "A notable feature of the literature is the marked heterogeneity within the patient group.",
+      "The screened literature provides a robust empirical basis for meta\u2011analysing syntactic deficits in schizophrenia.",
+      "The quantitative synthesis of these studies should yield precise estimates of mean impairment and of inter\u2011individual variability, thereby addressing a long\u2011standing question in schizophrenia linguistics."
+    ]
+  }
+}

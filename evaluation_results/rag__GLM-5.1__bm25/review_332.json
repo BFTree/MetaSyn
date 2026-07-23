@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17176,
+    "output_tokens": 669,
+    "total_tokens": 17845
+  },
+  "metrics": {
+    "retrieval_recall": 0.43902439024390244,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.12195121951219512,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.21739130434782605,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.2777777777777778,
+    "post_retrieval_loss": 0.3170731707317073,
+    "inclusion_consistency": 0.605,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, findings, conclusion, and included studies list, but it lacks major systematic review sections such as abstract, introduction, full methods, results structure, discussion, references, detailed search strategy, data extraction, quality assessment, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "the proportion of women among confirmed mpox cases",
+      "the comparison across time periods (pre-2022 vs. 2022 onwards) and geographic regions (endemic vs. nonendemic)",
+      "Search end date: 2023-01-04"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The sex distribution of mpox cases varies dramatically by time period and geographic context.",
+      "In pre-2022 endemic outbreaks in the DRC, women represented nearly half of the confirmed cases (~45%).",
+      "However, during the 2022 global outbreak in nonendemic countries, women represented a very small minority (~1\u20132.4%), with cases overwhelmingly concentrated among men (predominantly men who have sex with men).",
+      "This shift highlights the changing epidemiology of mpox and the distinct transmission dynamics driving the 2022 outbreak compared to historical zoonotic patterns in endemic regions."
+    ]
+  }
+}

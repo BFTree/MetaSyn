@@ -1,0 +1,119 @@
+{
+  "review_id": 79,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    2150,
+    2152,
+    2118,
+    2162,
+    2088,
+    2095,
+    2126,
+    2124,
+    2153,
+    2148,
+    2106,
+    2116,
+    4650,
+    2122
+  ],
+  "retrieved_article_ids": [
+    2150,
+    2152,
+    31015,
+    2122,
+    2141,
+    31017,
+    2095,
+    31453,
+    31450,
+    30806,
+    71107,
+    31147,
+    31062,
+    2118,
+    31077,
+    30807,
+    31091,
+    2158,
+    31323,
+    2088,
+    31014,
+    2147,
+    31012,
+    2162,
+    30974,
+    31396,
+    2092,
+    2153,
+    30821,
+    30813,
+    2148,
+    2126,
+    2124,
+    2085,
+    2116,
+    31094,
+    4650,
+    30812,
+    2106
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 305173,
+    "output_tokens": 11795,
+    "total_tokens": 316968,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 39587,
+        "output_tokens": 3000,
+        "total_tokens": 42587
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 4947,
+        "output_tokens": 5000,
+        "total_tokens": 9947
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 250474,
+        "output_tokens": 2091,
+        "total_tokens": 252565
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9002,
+        "output_tokens": 1107,
+        "total_tokens": 10109
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1163,
+        "output_tokens": 597,
+        "total_tokens": 1760
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 39,
+    "retrieved_unique": 39,
+    "included_count": 14,
+    "included_unique": 14,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 21,
+    "fetch_calls": 20,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 14,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32737,
+    "output_tokens": 912,
+    "total_tokens": 33649
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.13186813186813187,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8681318681318682,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.695,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5811,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Methods, detailed search strategy, eligibility criteria, screening flow, planned synthesis methods, Results, Discussion, and Conclusion, but it lacks a references section and has an empty risk-of-bias/quality assessment section, so it falls short of full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving patients with breast, lung, or prostate cancer, using data drawn from multi-centre oncology settings or distributed datasets across institutions.",
+      "Studies evaluating federated learning approaches for training machine learning models on distributed cancer data, with comparison to centralized machine learning models trained on single-centre or aggregated data.",
+      "Studies reporting outcomes related to model generalizability, diagnostic or predictive performance, or clinical applicability for cancer detection, diagnosis, or precision medicine.",
+      "Original empirical studies with sufficient methodological detail on study design, population, intervention, comparator, and outcomes to enable screening and data extraction."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on breast, lung, or prostate cancer populations, or not based on multi-centre oncology data.",
+      "Studies that do not use federated learning as the primary intervention, or that lack a centralized machine learning comparator.",
+      "Studies that do not report relevant outcomes such as generalizability, model performance metrics, or clinical applicability in diagnosis, detection, or precision medicine.",
+      "Non-empirical publications or insufficiently reported records, including reviews, editorials, conference abstracts without full methods, protocols, and studies without enough information for eligibility assessment."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified no eligible multi-centre studies reporting extractable quantitative data on federated learning for breast, lung, or prostate cancer in relation to model generalizability, diagnostic performance, or clinical applicability.",
+      "As a result, quantitative synthesis was not possible, and no meta-analysis could be conducted.",
+      "Because no included studies met the review criteria, qualitative synthesis was also necessarily limited and does not provide a meaningful basis for judging whether federated learning performs better, worse, or comparably to centralized machine learning approaches in these cancer populations.",
+      "Overall, the current evidence is insufficient to support firm conclusions about the effectiveness or clinical value of federated learning in this setting, highlighting a clear need for well-reported multi-centre comparative studies.",
+      "This absence of eligible evidence substantially limits interpretation.",
+      "The review does not provide empirical support either for or against the use of federated learning, compared with centralized machine learning, in multi-centre breast, lung, or prostate cancer applications."
+    ]
+  }
+}

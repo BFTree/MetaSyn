@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5379,
+    "output_tokens": 1183,
+    "total_tokens": 6562
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.768,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6124,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with a clear review question, methods, eligibility criteria, screening summary, included studies, evidence synthesis, and conclusion, but it lacks a formal abstract, references section, detailed search strategy, data extraction process, and quality/risk-of-bias assessment needed for a higher PRISMA-style score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs with at least one intervention and one control arm.",
+      "Population: newborns and young infants \u226459 days in LMICs.",
+      "Intervention: home visits by CHWs trained to identify serious illness.",
+      "Outcomes: identification of serious illness (sensitivity/specificity) and/or care seeking from health facilities."
+    ],
+    "exclusion_criteria": [
+      "observational studies",
+      "trials where key outcomes (identification/referral) were unavailable for the control arm",
+      "studies conducted in high-income countries (e.g., Awasthi 2008, Bang 2005, Escobar 2001)",
+      "not an RCT",
+      "not targeting newborns/young infants",
+      "intervention not home visits by CHWs for illness identification",
+      "not reporting identification or care seeking outcomes",
+      "being protocols, reviews, or non-primary studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included trials demonstrate that home visits by trained CHWs increase care seeking from health facilities for sick newborns.",
+      "The IMNCI trial in India showed large increases in appropriate care seeking for severe neonatal illness and local infections.",
+      "The Newhints trial in Ghana showed a substantial improvement in care seeking for any sick newborn.",
+      "Neither study reported sensitivity or specificity of CHW identification of serious illness; thus, direct evidence on the accuracy of illness identification is not available from these two trials.",
+      "The consistent direction and magnitude of effect on care seeking across different LMIC settings (South Asia and sub-Saharan Africa) supports the effectiveness of home-visit strategies in improving healthcare utilisation for newborns.",
+      "Both provide moderate-certainty evidence that CHW home visits increase care seeking for sick newborns.",
+      "No included study reported data on the sensitivity or specificity of CHW identification of serious illness.",
+      "The limited number of included studies highlights a gap in the literature for trials that directly measure diagnostic accuracy alongside care-seeking outcomes."
+    ]
+  }
+}

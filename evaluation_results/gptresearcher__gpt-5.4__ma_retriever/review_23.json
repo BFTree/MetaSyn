@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31247,
+    "output_tokens": 977,
+    "total_tokens": 32224
+  },
+  "metrics": {
+    "retrieval_recall": 0.8888888888888888,
+    "retrieval_precision": 0.13793103448275862,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.9137931034482759,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.4994,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5094,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, synthesis, limitations, Conclusion, included-study list, and References, and it includes meta-analysis-relevant elements such as search query, eligibility criteria, screening process, and study selection table, but it lacks full PRISMA-level rigor such as a formal quality/risk-of-bias assessment and detailed quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials or randomized crossover studies",
+      "Adults aged 18 years or older",
+      "Healthy participants, including those with overweight/obesity but without chronic disease requiring medication",
+      "TRE with a 4-12 hour feeding window combined with exercise",
+      "Exercise-matched control with unrestricted or habitual eating window",
+      "Outcomes included FM, BF%, and/or FFM or lean mass",
+      "Intervention duration 4 weeks or longer",
+      "Original peer-reviewed English-language research",
+      "Publication date within 2016-10-01 to 2023-02-28"
+    ],
+    "exclusion_criteria": [
+      "Non-randomized studies",
+      "No exercise-matched control",
+      "No unrestricted/habitual eating comparator",
+      "TRE without exercise in both comparator arms",
+      "Interventions shorter than 4 weeks",
+      "Abstract-only evidence when design/outcomes were clearly ineligible",
+      "Studies outside the search-date window",
+      "Intermittent fasting protocols not representing daily TRE with a 4-12 hour feeding window, unless included only as contextual discussion and not as primary included evidence"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "TRE combined with exercise can reduce fat mass without compromising fat-free mass in adults, but its advantage over unrestricted eating with matched exercise is context-dependent.",
+      "The strongest benefit appears in overweight or obese adults doing concurrent training in free-living conditions, where TRE likely helps by structuring intake and facilitating a mild energy deficit.",
+      "In contrast, when calories and protein are tightly matched during resistance training, TRE is generally **muscle-safe** but often **not superior** to conventional eating for fat loss.",
+      "TRE plus exercise is a valid tool for body recomposition, but not a consistently superior one.",
+      "Its best use case is for adults who need a practical eating structure to support fat loss while exercising.",
+      "It should not be sold as inherently better than standard meal timing when diet quality, protein intake, and energy balance are already well controlled."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14560,
+    "output_tokens": 1003,
+    "total_tokens": 15563
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.786,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6076,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening summary, brief evidence synthesis, and included-study list, but it lacks a formal abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction approach, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies comparing the diagnostic accuracy of clinicians detecting skin cancer with and without deep learning-based AI assistance, published between 2017-01-01 and 2022-11-08.",
+      "These studies explicitly evaluate clinicians (including non-dermatologists/trainees) diagnosing skin lesions with the assistance of deep learning AI compared to their unassisted performance or a control group, within the required timeframe."
+    ],
+    "exclusion_criteria": [
+      "Were published outside the specified search window (most candidates were published in 2023 or later).",
+      "Did not focus on skin cancer/skin malignancies (e.g., studies on breast, lung, thyroid, or gastric cancer, or non-malignant skin conditions like psoriasis or tinea).",
+      "Only compared standalone AI performance to standalone clinician performance without an arm evaluating clinicians assisted by AI (exclusion criterion 2).",
+      "Used non-deep learning techniques or pathology slides rather than images of skin lesions or in-person visits.",
+      "Were reviews, editorials, or protocols."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The three included studies consistently demonstrate that deep learning-based AI assistance can improve the diagnostic accuracy of clinicians for skin cancer and skin neoplasms, particularly for less experienced practitioners.",
+      "Candidate 001 reported a significant increase in the top-1 diagnostic accuracy of non-dermatologists from 46.5% (unassisted) to 58.3% (AI-assisted) in a prospective controlled study (P = .008), while the control group showed no significant improvement.",
+      "Similarly, Candidate 014 found in a randomized controlled trial that the overall accuracy of non-expert physicians was significantly higher in the AI-assisted group (53.9%) compared to the unaided group (43.8%; P = 0.019), with the most significant augmentation observed in non-dermatology trainees.",
+      "Candidate 019 broadly evaluated human-computer collaboration and found that good quality AI-based support improves diagnostic accuracy over that of either AI or physicians alone.",
+      "The evidence also underscores potential risks.",
+      "Overall, the synthesized evidence suggests that deep learning AI assistance significantly enhances the diagnostic accuracy of clinicians\u2014especially those with less dermatological expertise\u2014for skin cancer recognition, though the reliability of the AI's outputs is critical to avoiding decreased performance."
+    ]
+  }
+}

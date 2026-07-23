@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10745,
+    "output_tokens": 2171,
+    "total_tokens": 12916
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.721,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4847,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes several review-specific elements such as eligibility criteria, screening decisions, exclusions, and narrative synthesis, but it lacks a full conventional systematic review structure including abstract, introduction, formal methods, discussion, conclusion, detailed search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCT/cluster RCT with intervention and control",
+      "newborns/young infants \u226459 days",
+      "low- and middle-income countries",
+      "home visits by trained CHWs to identify serious illness in young infants",
+      "standard care/control without such home visits",
+      "successful identification of serious illness and/or improved care seeking from health facilities",
+      "publications within the review search period ending 2014-10-21"
+    ],
+    "exclusion_criteria": [
+      "Outside the search end date (2017 > 2014).",
+      "Secondary/nested analysis published in 2016, outside the search window; not treated as a primary eligible trial report for this review.",
+      "protocol, not an eligible primary trial result paper.",
+      "quasi-experimental, not RCT.",
+      "reviews, protocols, non-RCTs, non-neonatal populations, high-income settings, or interventions not matching CHW newborn home-visiting for serious illness identification/care seeking."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "the evidence suggests that home visits by trained community health workers probably improve care seeking from health facilities for sick newborns/young infants in LMICs.",
+      "the supplied abstracts provide little direct evidence on diagnostic accuracy for identification of serious illness, such as sensitivity or specificity.",
+      "the direction of effect is consistent: CHW home visiting increased appropriate care seeking for neonatal illness."
+    ]
+  }
+}

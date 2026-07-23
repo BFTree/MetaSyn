@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26055,
+    "output_tokens": 1259,
+    "total_tokens": 27314
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.10344827586206896,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9655172413793104,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6146,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6449,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections and meta-analysis elements are present, including abstract, background, methods, search strategy, eligibility criteria, screening results, statistical analysis, risk of bias, discussion, and conclusion, but the organization is weakened by duplicated headings, an incomplete placeholder-filled main findings section, a conclusion with missing pooled values, and no proper references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies including healthy non-pregnant women from menarche through post-menopause, with groups defined by menstrual cycle phase and/or menopausal status.",
+      "Observational or interventional studies that compare posterior pole structural parameters across menstrual cycle phases (for example, follicular vs luteal) and/or between pre-menopausal and post-menopausal women.",
+      "Studies reporting at least one relevant ocular structural outcome from the posterior pole, such as macular morphology, choroidal thickness, or optic disc characteristics, measured with recognized ophthalmic imaging or examination methods.",
+      "Full-text articles providing sufficient data to identify the population, exposure/comparison group, and posterior pole structural outcomes of interest."
+    ],
+    "exclusion_criteria": [
+      "Studies including pregnant women, women with ocular or major systemic disease affecting posterior pole structure, or mixed populations where healthy non-pregnant women cannot be separated.",
+      "Studies that do not evaluate menstrual cycle phase or menopausal status as the main exposure/comparison, or that lack a relevant comparison between phases or menopausal groups.",
+      "Studies reporting only non-structural ocular outcomes, unrelated eye outcomes, animal or in vitro data, reviews, editorials, conference abstracts, case reports, or other non-original research designs.",
+      "Articles without accessible full text or without enough outcome data to determine eligibility."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the body of evidence suggests that any variation in macular morphology, choroidal thickness, or optic disc-related measures across the follicular and luteal phases, or between pre- and post-menopausal women, is likely to be small and not consistently demonstrated across studies.",
+      "Clinically, the current evidence does not support large, systematic posterior pole structural shifts attributable solely to physiological reproductive status in otherwise healthy women, but it also does not exclude subtle effects that may matter in high-precision imaging contexts.",
+      "Here, the sparse and inconsistently reported ophthalmic literature makes a cautious conclusion more appropriate than a definitive one.",
+      "This combination of biological plausibility and inconsistent empirical demonstration fits the pattern observed in the included studies: a signal may exist, but it is likely subtle, parameter-specific, and easily obscured by methodological noise.",
+      "Several sources of heterogeneity likely contributed to the mixed evidence.",
+      "The main caveat is that the evidence base is small and methodologically heterogeneous, which limits precision and confidence in the pooled estimate."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26933,
+    "output_tokens": 1085,
+    "total_tokens": 28018
+  },
+  "metrics": {
+    "retrieval_recall": 0.7272727272727273,
+    "retrieval_precision": 0.32,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.7086,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.859,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, exact search queries, retrieval yield, screening and study selection, included studies, narrative synthesis, meta-analytic feasibility, limitations, conclusion, and sources, but it lacks a formal abstract, conventional introduction/methods/results/discussion structure, and a detailed study-level quality or risk-of-bias assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human studies",
+      "quantitatively assessed PFAS exposure during in utero development and/or early childhood",
+      "measured obesity-related outcomes objectively during ages 1\u201312 years",
+      "reported a quantitative association between PFAS exposure and an obesity-related outcome"
+    ],
+    "exclusion_criteria": [
+      "studies without quantitative PFAS exposure assessment",
+      "studies limited to birth size or birth weight outcomes",
+      "non-primary-study material such as animal studies, simulations, and commentaries"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included local-corpus evidence suggests that **prenatal PFAS exposure may be associated with later childhood adiposity or overweight-related outcomes in some cohorts**, but the evidence is **mixed and heterogeneous**, not uniformly positive.",
+      "A cautious overall interpretation is that the local corpus supports a **possible association**, especially for **prenatal exposure**, but not a definitive or consistent causal pattern across all PFAS compounds, ages, and adiposity measures.",
+      "**The evidence is mixed rather than uniform.** Some studies support positive associations with overweight or adiposity indicators, while others are near null.",
+      "The evidence is more consistent with a conclusion of **possible modest obesogenic effects of some prenatal PFAS exposures** than with a conclusion of no relationship at all, but substantial heterogeneity remains.",
+      "The included evidence indicates that **prenatal PFAS exposure\u2014especially involving PFOA and PFOS\u2014has been associated in some cohorts with higher BMI-related or adiposity-related outcomes during childhood**, including overweight, BMI trajectories, waist-related measures, and skinfold-based adiposity.",
+      "The retrieved evidence therefore supports a **cautious conclusion of a possible association between prenatal PFAS exposure and pediatric obesity-related outcomes**, but does **not** establish a consistent effect across all studies or PFAS compounds."
+    ]
+  }
+}

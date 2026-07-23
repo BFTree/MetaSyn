@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12689,
+    "output_tokens": 1135,
+    "total_tokens": 13824
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.22727272727272727,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.3448275862068965,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.4166666666666667,
+    "post_retrieval_loss": 0.3181818181818182,
+    "inclusion_consistency": 0.4388,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4763,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear objective, methods, screening results, included studies, synthesis, limitations, conclusion, and article list, and it includes key meta-analysis elements such as eligibility criteria, screening counts, and synthesis approach, but it lacks a formal abstract, detailed search strategy, quality assessment, and full references needed for PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "geographical location in ASEAN (Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Timor\u2011Leste, Vietnam)",
+      "adult human populations (or studies including both adults and children)",
+      "exposure defined as agricultural land\u2011use (cultivation, animal breeding, etc.) for domestic, occupational, or residential purposes",
+      "comparison to unexposed populations",
+      "outcome of infectious disease prevalence or incidence",
+      "peer\u2011reviewed empirical observational studies"
+    ],
+    "exclusion_criteria": [
+      "non\u2011communicable diseases",
+      "plant/animal diseases",
+      "studies without a land\u2011use comparison",
+      "non\u2011English articles",
+      "reviews",
+      "theoretical work",
+      "studies on night\u2011soil use",
+      "studies focusing solely on children"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The available literature consistently indicates that agricultural land\u2011use exposure is associated with elevated risk of scrub typhus, murine typhus, malaria, and rickettsial infections in Southeast Asia.",
+      "However, the number of eligible primary studies is limited, and major gaps exist for other infectious diseases and for several ASEAN countries.",
+      "Future research should employ prospective designs, standardised land\u2011use exposure metrics, and include under\u2011represented nations to strengthen the evidence base for policy and intervention.",
+      "Three studies (Thailand, Malaysia, Lao PDR) consistently report higher seroprevalence or risk of scrub typhus among agricultural workers or residents in agricultural areas.",
+      "Two studies from Thailand and Myanmar show that agricultural activities (e.g., farming in forest fringes, rubber plantation work) were linked to increased malaria risk.",
+      "One Malaysian study among migrant workers found no significant difference in *Toxoplasma* seroprevalence between agricultural and non\u2011agricultural occupations, but baseline urban\u2011rural differences were observed.",
+      "The Malaysian study comparing animal farm workers and indigenous communities to urban blood donors found significantly higher seropositivity for spotted fever group rickettsiae and *Rickettsia typhi* in the exposed groups.",
+      "The evidence base is small (7 studies) and heterogeneous in pathogens and exposure metrics, precluding a formal meta\u2011analysis at this stage."
+    ]
+  }
+}

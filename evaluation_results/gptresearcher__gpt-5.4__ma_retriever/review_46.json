@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25668,
+    "output_tokens": 1237,
+    "total_tokens": 26905
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.20930232558139536,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.8837209302325582,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.9945,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, introduction, methods, results/findings, synthesis, rigor assessment, conclusion, and references, and it includes search queries, eligibility criteria, screening decisions, and synthesis approach, but it lacks a fully formal PRISMA flow, explicit data extraction procedures, and a standardized risk-of-bias assessment needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Peer-reviewed English-language journal articles",
+      "Publication dates from **2015-01-01 to 2022-12-31**",
+      "Population included **children with LGBTQ parents**",
+      "Included a **comparison group with different-sex parents**",
+      "Reported **child mental health, behavioral adjustment, emotional difficulties, or closely related mental health outcomes**"
+    ],
+    "exclusion_criteria": [
+      "Not peer-reviewed journal articles in English",
+      "Not a mental health outcome",
+      "Only focused on parental outcomes",
+      "Did not include children with different-sex parents"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the strongest and most directly relevant studies, children with same-sex parents or transgender parents generally did not show worse mental health or behavioral adjustment than comparison children with different-sex parents.",
+      "The best-designed evidence came from the Netherlands probability sample and the UK longitudinal adoptive cohort, both of which found no substantial disadvantage attributable to parent family type.",
+      "My conclusion is concrete: within the 2015\u20132022 local corpus, the more credible studies support mental-health parity rather than deficit among children with LGBTQ parents, and residual concerns are better explained by stigma, minority stress, and measurement limitations than by parental sexual orientation or gender identity itself.",
+      "No strong evidence of greater child mental health problems due to LGBTQ parent status itself",
+      "Parenting quality and parental mental health matter more than parent sexual orientation or gender identity",
+      "Population-based and longitudinal designs tend to support parity",
+      "Based on the eligible 2015\u20132022 studies retrieved from the local MetaSyn corpus, the most credible evidence does not support the claim that children with LGBTQ parents experience more mental health problems than children with different-sex parents.",
+      "My assessment is firm: when stronger methods are used\u2014especially probability sampling, explicit comparators, and longitudinal follow-up\u2014the results point to mental-health parity, not disadvantage.",
+      "The best-supported explanation for differences in child outcomes is not parental LGBTQ status itself, but the broader ecology of child development: parenting quality, parental mental health, and exposure to stigma.",
+      "The literature remains limited, especially for trans-parent families and more socioeconomically diverse populations, but the balance of trustworthy evidence from 2015\u20132022 weighs against deficit-based assumptions."
+    ]
+  }
+}

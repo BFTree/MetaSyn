@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13370,
+    "output_tokens": 1172,
+    "total_tokens": 14542
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.4845,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3839,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has clear headings and a logical evidence-synthesis flow, but it lacks the required abstract, introduction, methods, full results, discussion, conclusion, references, and key PRISMA/meta-analysis elements such as a detailed search strategy, screening process, data extraction, quality assessment, and quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "clearly includable primary studies",
+      "deep learning/artificial intelligence systems on colour fundus photographs",
+      "identifying pathological myopia (PM) or PM-defining myopic maculopathy",
+      "using human expert grading/META-PM-based grading as the reference framework"
+    ],
+    "exclusion_criteria": [
+      "later publications as ineligible",
+      "2022 items as date-uncertain when the abstract did not provide a month/day",
+      "studies that used OCT rather than colour fundus photography",
+      "studies on general myopia/high myopia rather than pathological myopia",
+      "reviews/challenges/datasets",
+      "search-date uncertainty",
+      "incomplete abstract-level reporting"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The includable abstract-level evidence is small but consistent: both included studies evaluated **deep learning/artificial intelligence systems on colour fundus photographs** for identifying **pathological myopia (PM)** or PM-defining myopic maculopathy, using human expert grading/META-PM-based grading as the reference framework.",
+      "Both reported **high discrimination** for PM detection from colour fundus images.",
+      "Reported **AUC** values for PM identification were very high:",
+      "Reported sensitivity/specificity were generally high for PM/MM tasks, though performance varied by lesion type:",
+      "From the included abstract-level evidence, AI\u2014especially deep learning\u2014shows **strong potential for PM screening/diagnosis from colour fundus photographs**, with:",
+      "but potentially weaker performance for some specific PM-related lesions."
+    ]
+  }
+}

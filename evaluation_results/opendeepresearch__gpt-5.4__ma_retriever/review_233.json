@@ -1,0 +1,71 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26531,
+    "output_tokens": 1603,
+    "total_tokens": 28134
+  },
+  "metrics": {
+    "retrieval_recall": 0.46153846153846156,
+    "retrieval_precision": 0.23076923076923078,
+    "inclusion_recall": 0.23076923076923078,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.3529411764705882,
+    "screening_accuracy": 0.8461538461538461,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.4091,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4522,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as a review question, search queries, eligibility criteria, screening decisions, included/excluded studies, and outcome-level findings, but it lacks several required structural sections including an abstract, formal introduction, discussion, references, quality assessment, and a defined quantitative synthesis/meta-analysis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "were randomized controlled trials",
+      "enrolled adults older than 18 years",
+      "evaluated exercise training as the main intervention",
+      "used exercise for at least 4 weeks",
+      "included a non-exercise control group",
+      "reported at least one eligible outcome:",
+      "plasma renin activity",
+      "angiotensin II",
+      "aldosterone",
+      "epinephrine",
+      "norepinephrine",
+      "24-hour urinary sodium",
+      "24-hour urinary potassium",
+      "systolic blood pressure",
+      "diastolic blood pressure",
+      "heart rate",
+      "Accepted exercise modalities included aerobic/endurance, resistance, and combined training."
+    ],
+    "exclusion_criteria": [
+      "no exercise intervention",
+      "no control group",
+      "no relevant outcome data",
+      "acute exercise only",
+      "no usable data for the control group",
+      "data not presented in a poolable format",
+      "crossover design with washout period less than 2 weeks"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall interpretation: exercise training may reduce or modify angiotensin II-related signaling in prehypertensive adults, but the corpus evidence available for this review is too limited for firm pooled inference.",
+      "Overall interpretation: aerobic exercise training in adults with hypertension appears to reduce sympathetic neurohumoral activity, especially norepinephrine-related measures, but the evidence is based largely on abstract-reported findings and incomplete numerical reporting.",
+      "Overall interpretation: evidence for an exercise effect on urinary sodium excretion is mixed and incompletely reported.",
+      "Early natriuretic mechanisms may occur, but robust pooled inference is not possible from the available corpus abstracts."
+    ]
+  }
+}

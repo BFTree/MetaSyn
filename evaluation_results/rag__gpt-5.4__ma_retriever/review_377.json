@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13940,
+    "output_tokens": 895,
+    "total_tokens": 14835
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.895,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.2729,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3152,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized as a screening summary with some eligibility rationale and evidence-synthesis discussion, but it lacks the standard systematic review structure including abstract, introduction, detailed methods, results, discussion/conclusion separation, references, search strategy, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "microplastic size and shape",
+      "aggregate/floc size",
+      "explicit aggregate/floc size",
+      "both MP size and shape"
+    ],
+    "exclusion_criteria": [
+      "reviews rather than original research",
+      "published after the search end date (after 2022-11-30)",
+      "focused on water treatment engineering/coagulation removal rather than flocculation in natural aquatic environments",
+      "focused on oil\u2013microplastic agglomerates, atmospheric MPs, soils, organisms, toxicity, or other non-target topics"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate could be confirmed as eligible on the basis of the supplied title/abstracts alone.",
+      "From the supplied abstracts, there is a consistent signal that microplastics can become incorporated into suspended aggregates or biologically mediated particles in aquatic systems, including:",
+      "Because your review question hinges on a size threshold for incorporation into flocs, this missing abstract-level detail is decisive.",
+      "Based on the abstracts alone, I cannot validly confirm any primary study as meeting the full inclusion set needed for a synthesis of the size threshold for floc incorporation and transport mode prediction.",
+      "None were included.",
+      "No candidate article could be confirmed as meeting all inclusion criteria and avoiding all exclusion criteria based on the supplied title/abstract information alone."
+    ]
+  }
+}

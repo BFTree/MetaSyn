@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13660,
+    "output_tokens": 1091,
+    "total_tokens": 14751
+  },
+  "metrics": {
+    "retrieval_recall": 0.45454545454545453,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.09090909090909091,
+    "inclusion_precision": 0.14285714285714285,
+    "inclusion_f1": 0.1111111111111111,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.6673,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3652,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes screening rationale, eligibility criteria, brief evidence synthesis, and included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, results, discussion, conclusion, references, search strategy, data extraction, quality assessment, and formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "January 2020 onward",
+      "glaucoma patients",
+      "AI/ML/DL used to diagnose glaucoma or predict glaucoma progression"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "letters",
+      "protocols",
+      "conference abstracts",
+      "non-human studies",
+      "non-glaucoma topics",
+      "non-primary articles or wrong design",
+      "wrong condition/topic",
+      "not early clinical evaluation of an AI decision support system for glaucoma diagnosis/progression despite glaucoma relevance",
+      "pre-2020"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Reported performance is generally favorable in the abstracts: examples include cross-institutional fundus-image detection with balanced accuracy around or above 80%, smartphone/offline systems with strong agreement against OCT/manual grading or specialist assessment, and multimodal models outperforming single-modality approaches.",
+      "However, from titles/abstracts alone, the likely reporting limitations for a DECIDE-AI-focused review are substantial: many abstracts emphasize accuracy metrics but provide limited information on workflow integration, user interaction, implementation context, safety monitoring, handling of failures, and human-AI interaction details that DECIDE-AI specifically expects in early clinical evaluation reporting.",
+      "The evidence base also looks heterogeneous in setting and maturity: some studies are closer to **technical validation in clinical cohorts**, while only a minority clearly evaluate the AI within a real clinical pathway or clinician-facing decision-support workflow.",
+      "Title/abstract screening alone supports inclusion as likely primary studies, but final certainty would require full-text confirmation."
+    ]
+  }
+}

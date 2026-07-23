@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20458,
+    "output_tokens": 1293,
+    "total_tokens": 21751
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.2331,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, an evidence summary, synthesis, limitations, and included/excluded studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, PRISMA-style flow, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "male patients with hard-flaccid syndrome (HFS), focusing on aetiopathogenesis, clinical presentation, diagnostic approaches, and management.",
+      "Eligible study designs here are primary studies on male HFS within the date range."
+    ],
+    "exclusion_criteria": [
+      "I excluded non-HFS articles, non-primary articles (reviews, comments, protocols), and clearly irrelevant conditions.",
+      "I also excluded candidates published after the search end date (`2025-04-13`)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base is very small and consists entirely of case-based observational evidence.",
+      "Overall, the mechanism remains hypothetical rather than proven.",
+      "Evidence on diagnosis is limited.",
+      "Management evidence is anecdotal and heterogeneous.",
+      "Taken together, the management literature supports no standard treatment.",
+      "Pelvic floor/rehabilitative and biopsychosocial approaches appear plausible from case evidence, PDE5 inhibitors alone may be ineffective in some patients, and multimodal treatment including LiSWT has been reported as successful in one case.",
+      "No standard treatment is supported.",
+      "Reported management includes PDE5 inhibitors, pelvic floor-focused rehabilitation, biopsychosocial therapy, and multimodal treatment including low-intensity shock wave therapy, but all effectiveness claims come from uncontrolled case-based evidence."
+    ]
+  }
+}

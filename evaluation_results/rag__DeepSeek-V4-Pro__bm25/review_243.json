@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6916,
+    "output_tokens": 937,
+    "total_tokens": 7853
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.6923076923076923,
+    "inclusion_f1": 0.7826086956521738,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.8857,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5964,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, included studies, synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references section, detailed search strategy, data extraction methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only published, peer-reviewed, English\u2011language studies that administered one or more doses of MDMA to humans in combination with psychotherapy for a target psychiatric condition were considered eligible."
+    ],
+    "exclusion_criteria": [
+      "Review articles, commentaries, conference abstracts, book chapters, animal studies, protocols, and studies without a psychotherapy component were excluded.",
+      "Phase\u202f1 studies (MDMA without psychotherapy) and studies in healthy volunteers were also excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible primary studies uniformly indicate that MDMA\u2011assisted psychotherapy has an acceptable safety profile across PTSD, social anxiety, anxiety related to life\u2011threatening illness, and major depressive disorder.",
+      "Acute side effects are predominantly mild to moderate, resolve quickly, and no persistent or severe drug\u2011related adverse events were identified.",
+      "These data support the tolerability of MDMA\u2011AP when delivered within rigorously structured protocols.",
+      "Despite heterogeneity in psychiatric indications (PTSD, social anxiety in autistic adults, life\u2011threatening illness\u2011related anxiety, and major depressive disorder) and study designs (randomized controlled trials, open\u2011label trials, and a clinical cohort description), the included studies consistently reported that MDMA\u2011assisted psychotherapy was well tolerated, with no treatment\u2011related serious adverse events in the vast majority of cases.",
+      "Nonetheless, the consistency of the safety signal across diverse populations and settings suggests that MDMA\u2011assisted psychotherapy, when administered in a controlled clinical environment with psychological support, is associated with a manageable and transient side\u2011effect profile."
+    ]
+  }
+}

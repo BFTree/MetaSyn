@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30518,
+    "output_tokens": 870,
+    "total_tokens": 31388
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11475409836065574,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.9180327868852459,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6336,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5017,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Introduction, Methods, screening results, study characteristics, narrative synthesis, meta-analytic feasibility, limitations, conclusion, and references, and it includes key meta-analysis elements such as search strategy, eligibility criteria, screening rationale, and synthesis approach, but it lacks a formal risk-of-bias/quality assessment and full PRISMA-style flow details needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Preconception or antenatal lifestyle RCTs in women with overweight/obesity.",
+      "Offspring outcomes: cardiac structure/function, heart rate, autonomic function, blood pressure, arterial stiffness/thickness.",
+      "Human, original quantitative follow-up studies of RCTs.",
+      "English, peer-reviewed, full-text available."
+    ],
+    "exclusion_criteria": [
+      "Trials in normal-weight women only.",
+      "Nutritional supplement or drug trials.",
+      "Studies focused only on maternal health, fetal outcomes, or non-cardiovascular offspring outcomes.",
+      "Reviews, meta-analyses, protocols, grey literature, conference abstracts, animal studies."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The best available local-corpus evidence supports the view that **offspring cardiac remodeling associated with maternal obesity is at least partly modifiable by maternal lifestyle intervention**, especially when the intervention is delivered **during pregnancy** or **before conception** in women with obesity.",
+      "The **strongest direct causal evidence** comes from the UPBEAT cardiac follow-up, where antenatal diet-plus-physical-activity intervention appeared to **prevent early concentric left ventricular remodeling** and improve autonomic-related parameters at age 3 years.",
+      "Preconception intervention findings in school-age children independently reinforce this conclusion by showing **more favorable cardiac structure, function, and shape** on both echocardiography and MRI.",
+      "The most defensible interpretation is that maternal obesity-related cardiovascular programming in offspring is **real, early, and modifiable**, but current evidence remains **promising rather than definitive**."
+    ]
+  }
+}

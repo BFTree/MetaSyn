@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20912,
+    "output_tokens": 851,
+    "total_tokens": 21763
+  },
+  "metrics": {
+    "retrieval_recall": 0.7692307692307693,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.6153846153846154,
+    "inclusion_precision": 0.6857142857142857,
+    "inclusion_f1": 0.6486486486486486,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.15384615384615385,
+    "inclusion_consistency": 0.7265,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5831,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening summary, synthesis findings, conclusion, and included studies, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, results, discussion, formal references, quality assessment, data extraction procedures, and a detailed search strategy."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that generate synthetic health-related data and evaluate their outputs (specifically utility and/or privacy), published between January 1, 2018, and July 31, 2024"
+    ],
+    "exclusion_criteria": [
+      "Studies using unstructured data (images/text), reviews, and non-English documents were excluded.",
+      "publication year outside the eligible range (especially 2025+ publications)",
+      "use of unstructured image/text data (e.g., neuroimaging, clinical notes, medical imaging GANs)",
+      "being reviews/surveys rather than primary research",
+      "lacking an explicit evaluation of the synthetic data's utility or privacy aspects"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The research community has not yet converged on a standardized evaluation methodology for synthetic health data.",
+      "Utility evaluation is consistently prioritized and more uniformly assessed, whereas privacy evaluation practices are inconsistent, often less rigorous, or omitted entirely in favor of qualitative claims.",
+      "Where both are assessed, a tension between privacy guarantees and data utility is a recurring finding, underscoring the need for standardized frameworks that holistically balance both dimensions.",
+      "The reviewed literature indicates **no prevailing consensus** on a single, standardized set of methods or metrics for evaluating synthetic health data.",
+      "The review reveals a **disparity in the rigorous assessment of privacy relative to utility**."
+    ]
+  }
+}

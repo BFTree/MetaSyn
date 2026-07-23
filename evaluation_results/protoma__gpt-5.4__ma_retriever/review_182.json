@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32015,
+    "output_tokens": 793,
+    "total_tokens": 32808
+  },
+  "metrics": {
+    "retrieval_recall": 0.95,
+    "retrieval_precision": 0.3392857142857143,
+    "inclusion_recall": 0.15,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.24,
+    "screening_accuracy": 0.6785714285714286,
+    "conditional_retention": 0.15789473684210525,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.6646,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4931,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening summary, synthesis plan, and risk-of-bias assessment, but it falls short of excellent due to duplicated headings, some internal inconsistencies about quantitative synthesis, and lack of a formal References section/fully detailed PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies including children aged 10-13 years with palatally displaced maxillary canines in the mixed dentition.",
+      "Studies evaluating extraction of the primary maxillary canine as an interceptive treatment.",
+      "Studies comparing primary canine extraction with no interceptive treatment, observation only, or delayed treatment.",
+      "Studies reporting outcomes on normalization of canine eruptive position and/or successful eruption of the palatally displaced maxillary canine, using prospective or retrospective comparative clinical study designs."
+    ],
+    "exclusion_criteria": [
+      "Studies including participants outside the target population, such as adults, children outside the 10-13 year range only, or patients without palatally displaced maxillary canines in the mixed dentition.",
+      "Studies evaluating other interceptive or surgical/orthodontic interventions without a separable primary canine extraction group.",
+      "Studies without an eligible comparator, or without reporting eruption-related outcomes relevant to normalization of position or successful eruption.",
+      "Case reports, case series without a comparison group, reviews, editorials, conference abstracts, and other non-original or non-comparative study designs."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On qualitative review, the available evidence suggests that primary canine extraction may improve normalization of eruptive position and increase the likelihood of successful eruption in some patients, particularly when used early in selected cases.",
+      "Nevertheless, this impression is based on limited and variably reported findings.",
+      "Overall, the current evidence remains suggestive rather than conclusive, and firm clinical recommendations cannot be made.",
+      "As a result, although the body of evidence points toward potential benefit, the magnitude and consistency of that benefit remain uncertain."
+    ]
+  }
+}

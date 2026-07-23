@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16370,
+    "output_tokens": 2090,
+    "total_tokens": 18460
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.6785714285714286,
+    "inclusion_precision": 0.9047619047619048,
+    "inclusion_f1": 0.7755102040816326,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.6785714285714286,
+    "post_retrieval_loss": 0.32142857142857145,
+    "inclusion_consistency": 0.6695,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5215,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The write-up is logically organized with clear evidence synthesis, included/excluded study lists, and limitations, but it lacks a full review structure such as explicit abstract, introduction, methods, results, discussion, conclusion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational primary studies in English",
+      "exposure defined as bisphosphonate use",
+      "outcome as incident cancer",
+      "reporting effect estimates"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "mechanistic/in vitro studies",
+      "treatment/survival studies after cancer diagnosis",
+      "adverse-event studies unrelated to incident cancer risk",
+      "articles published after the review search end date (`2019-12-07`)",
+      "in vitro/animal studies",
+      "oncology-treatment outcome studies",
+      "mortality-only studies after cancer diagnosis",
+      "studies published after `2019-12-07`"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the included studies, the overall pattern is that bisphosphonate use was generally not associated with an increased overall cancer risk.",
+      "Several studies suggested reduced risks for some site-specific cancers, especially colorectal, breast, and endometrial cancer, but these inverse associations were not entirely consistent across studies, and some authors explicitly noted likely residual confounding or healthy-user/screening effects.",
+      "For colorectal cancer, the evidence is mixed but leans toward a possible modest inverse association in several observational studies.",
+      "For upper gastrointestinal cancers, results were clearly heterogeneous.",
+      "Overall, the supplied primary literature does not support a firm type-specific conclusion.",
+      "Bottom line: within this fixed pool, eligible observational evidence suggests bisphosphonates are not associated with increased overall cancer risk, with possible protective associations for colorectal, breast, and especially endometrial cancer, but with inconsistent findings across cancer sites and no firm conclusion on nitrogen-containing vs non-nitrogen-containing agents from the supplied abstracts alone."
+    ]
+  }
+}

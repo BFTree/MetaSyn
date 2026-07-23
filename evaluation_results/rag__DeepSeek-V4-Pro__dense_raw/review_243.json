@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10067,
+    "output_tokens": 1230,
+    "total_tokens": 11297
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.7777777777777777,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.8677,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5741,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes key review elements such as eligibility criteria, screening results, included studies, findings, and conclusion, but it lacks several formal required sections such as an abstract, full introduction, detailed methods, references, quality assessment, and a clear quantitative synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that administered at least one dose of MDMA combined with psychotherapy to patients with a psychiatric condition"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "commentaries",
+      "protocols",
+      "animal work",
+      "Phase\u202fI studies lacking psychotherapy",
+      "studies without original data",
+      "Not a primary human study (systematic review, meta\u2011analysis, commentary, review, protocol, pooled analysis, or secondary analysis);",
+      "Did not include MDMA\u2011assisted psychotherapy (healthy\u2011volunteer laboratory challenge, recreational\u2011use survey, ketamine/psilocybin/other drug trial);",
+      "Published after the search end date (e.g., 2024\u20132026) or not reporting original clinical\u2011trial data;",
+      "Animal or in\u2011vitro research."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these trials, MDMA\u2011AP was consistently described as well\u2011tolerated, with no drug\u2011related serious adverse events and no signal of abuse liability, suicidality, or cardiovascular risk.",
+      "The available abstract data support a favourable acute safety profile, but detailed quantitative meta\u2011analysis of specific adverse events and their temporal distribution requires full\u2011text extraction and individual\u2011participant\u2011data access.",
+      "Every trial that commented explicitly stated that no serious adverse events were attributable to MDMA.",
+      "The two largest Phase\u202f3 PTSD trials (Candidates\u202f007 and\u202f013) reported that MDMA\u2011AP did not increase suicidality, abuse potential, or QT prolongation."
+    ]
+  }
+}

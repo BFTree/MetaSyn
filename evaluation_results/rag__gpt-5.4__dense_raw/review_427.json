@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20261,
+    "output_tokens": 1100,
+    "total_tokens": 21361
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.5537,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4443,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, eligibility, findings, limitations, and conclusion sections, and it includes meta-analysis-style elements like criteria and synthesis, but it lacks a full PRISMA-style structure with explicit abstract, methods, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adolescents/young adults aged 10-24",
+      "randomized controlled trial",
+      "digital sleep-focused behavioral intervention as the primary component",
+      "control comparator",
+      "sleep outcomes measured"
+    ],
+    "exclusion_criteria": [
+      "a protocol",
+      "review",
+      "pilot RCT",
+      "quasi-experimental study",
+      "social-network intervention",
+      "telephone/human-coaching-led primary intervention",
+      "populations excluded for co-existing physical health conditions"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the 3 included RCTs, digital sleep interventions generally improved **insomnia symptoms** relative to waitlist or active controls.",
+      "From the fixed candidate pool, the eligible primary evidence supports **digital CBT-I as an effective approach for improving adolescent/young adult insomnia symptoms**, with some evidence of downstream benefits for depression and broader psychopathology.",
+      "The strongest and most directly aligned evidence comes from adolescent insomnia samples using app- or internet-based CBT-I versus waitlist or active sleep-tip controls."
+    ]
+  }
+}

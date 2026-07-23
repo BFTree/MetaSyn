@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9872,
+    "output_tokens": 1655,
+    "total_tokens": 11527
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3086,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4618,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, screening criteria, results, synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references, detailed search strategy, data extraction procedures, quality assessment, and robust PRISMA-style meta-analysis elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary investigations (no reviews, case reports, comments, or experimental animal models)",
+      "enrolled OAG patients and healthy controls",
+      "provided quantitative TPD (or equivalent) values",
+      "addressed the association with optic disc structure"
+    ],
+    "exclusion_criteria": [
+      "no reviews, case reports, comments, or experimental animal models",
+      "Studies outside the 2004\u20132014 publication window were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Both studies consistently demonstrated that TPD is significantly higher in OAG patients than in healthy controls.",
+      "In the normal\u2011tension glaucoma group, a higher TPG was strongly correlated with a reduced NRA (r = \u20130.83, P = 0.01), indicating that greater translaminar pressure difference was associated with more advanced glaucomatous cupping.",
+      "The two included studies, though small, provide consistent evidence that patients with OAG exhibit an elevated translaminar pressure difference compared to healthy individuals.",
+      "The 2014 study further supports the hypothesis that this pressure imbalance contributes to structural damage of the optic nerve head, as reflected by loss of neuroretinal rim tissue.",
+      "Within the constrained search period, the available evidence indicates that translaminar pressure difference is elevated in OAG and that higher TPD correlates with structural glaucomatous optic disc damage (reduced neuroretinal rim area).",
+      "These findings support the potential role of TPD in glaucoma pathogenesis, but larger, well\u2011controlled studies with directly measured ICP and precise optic nerve head imaging are needed to confirm and quantify these relationships."
+    ]
+  }
+}

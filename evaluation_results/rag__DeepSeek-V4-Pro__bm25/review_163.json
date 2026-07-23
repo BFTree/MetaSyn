@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14565,
+    "output_tokens": 1566,
+    "total_tokens": 16131
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.8387096774193549,
+    "inclusion_f1": 0.8813559322033899,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4491,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6233,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is generally well organized and includes an objective, screening summary, study characteristics, findings, overall summary, and included studies list, but it lacks a formal Methods section with detailed search strategy, data extraction, risk-of-bias/quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational studies (cohort, case\u2013control, nested case\u2013control, or case\u2011cohort) that compared BP users with non\u2011users and reported incident cancer outcomes with effect estimates (OR, RR, or HR) and 95% confidence intervals"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "conference abstracts",
+      "cross\u2011sectional studies",
+      "in vitro/animal experiments",
+      "did not address incident cancer risk"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The body of included observational studies suggests that bisphosphonate use is not associated with an increased overall cancer risk and may be associated with a reduced risk of colorectal, breast, and endometrial cancers, particularly with longer duration.",
+      "Associations with esophageal, gastric, and other cancers are inconsistent and require further investigation.",
+      "The evidence base is limited by potential confounding (e.g., by bone density, lifestyle factors, and concomitant medications) and the observational nature of the studies.",
+      "The majority of studies reported an inverse association between bisphosphonate use and colorectal cancer risk.",
+      "A consistent inverse association was observed in multiple studies.",
+      "Three studies (WHI, PLCO, and a case\u2013control study) reported significantly reduced risks of endometrial cancer with bisphosphonate use, with hazard/odds ratios around 0.56\u20130.80.",
+      "Overall, no consistent dose\u2011response or duration\u2011response pattern emerged."
+    ]
+  }
+}

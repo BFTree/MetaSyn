@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11892,
+    "output_tokens": 1458,
+    "total_tokens": 13350
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6846,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.542,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with evidence synthesis, limitations, included studies, and exclusions, but it lacks most standard systematic review sections such as a formal abstract, introduction, detailed methods, results, discussion, conclusion, references, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies in asymptomatic population screening that compared DBT with DM and reported cancer detection and/or recall by BI-RADS breast density",
+      "population screening comparisons of DBT vs DM",
+      "primary-study articles",
+      "studies whose abstracts explicitly report BI-RADS-stratified cancer detection and/or recall by density"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses",
+      "protocols",
+      "diagnostic/symptomatic or surveillance studies",
+      "did not report density-stratified DBT vs DM screening outcomes",
+      "used automated density assessment",
+      "were outside the date window",
+      "were not population screening comparisons of DBT vs DM",
+      "automatically assessed breast density",
+      "systematic review/meta-analysis",
+      "not a primary study",
+      "reviews/protocols/editorials"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible studies, the evidence is directionally consistent that DBT improves screening performance relative to DM, but the pattern differs by outcome and density subgroup.",
+      "For **cancer detection rate (CDR)**, the more consistent signal is that DBT offers greater benefit in denser breasts.",
+      "For **recall rate**, DBT generally reduced recalls compared with DM, but this was not universal.",
+      "DBT increases cancer detection in both dense and non-dense breasts.",
+      "The incremental gain in cancer detection may be larger in dense breasts.",
+      "Recall reduction with DBT can occur across densities and may be especially notable in dense breasts in some settings, though not all studies show the same pattern.",
+      "Using only the supplied candidate pool and title/abstract screening, the evidence supports that DBT improves screening performance versus DM in population screening, with the strongest density-specific signal being **greater improvement in cancer detection among women with dense breasts**.",
+      "Evidence for **recall rate by density** is supportive but less uniform, with some studies showing reduced recalls across densities, especially dense breasts, while others suggest the trade-off depends on implementation and reading protocol.",
+      "Because only a limited number of abstracts clearly satisfy every criterion, this synthesis should be treated as a cautious abstract-based review rather than a definitive full systematic review conclusion."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9013,
+    "output_tokens": 883,
+    "total_tokens": 9896
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.547,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic evidence synthesis and a list of included studies with some screening rationale, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, detailed search strategy, data extraction, quality assessment, and full references, resulting in major structural gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "systematic reviews or meta-analyses",
+      "studies published outside the search date window (2017-01-01 to 2022-11-08)",
+      "studies focusing on non-skin cancers or histopathological slides",
+      "studies only comparing AI to clinicians without a combined human-AI versus human-alone comparison",
+      "studies using non-deep learning techniques",
+      "pure algorithm development papers without human clinician participants"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The four included primary studies consistently demonstrate that deep learning-based AI assistance improves the diagnostic accuracy of clinicians\u2014especially non-experts\u2014in detecting skin cancer from images compared to clinicians performing the same task unassisted.",
+      "However, the benefit is tightly coupled to the reliability of the AI model, as incorrect AI predictions can adversely mislead clinicians.",
+      "All studies reported a measurable increase in diagnostic accuracy when clinicians used AI assistance.",
+      "A prominent trend across the evidence is that AI assistance disproportionately benefits less experienced clinicians.",
+      "Beyond individual accuracy, AI assistance appears to standardize diagnostic decisions.",
+      "The synthesis also highlights a critical risk: faulty or incorrect AI predictions can mislead clinicians.",
+      "This underscores that while AI collaboration enhances average performance, it introduces vulnerability to automation bias, necessitating careful clinical integration and quality assurance of the algorithms."
+    ]
+  }
+}

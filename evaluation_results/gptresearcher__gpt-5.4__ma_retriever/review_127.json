@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32884,
+    "output_tokens": 958,
+    "total_tokens": 33842
+  },
+  "metrics": {
+    "retrieval_recall": 0.2978723404255319,
+    "retrieval_precision": 0.2545454545454545,
+    "inclusion_recall": 0.0851063829787234,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.1568627450980392,
+    "screening_accuracy": 0.8181818181818182,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.2127659574468085,
+    "inclusion_consistency": 0.7306,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4652,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening rationale, and qualitative synthesis, but it lacks full PRISMA rigor such as a formal risk-of-bias/quality assessment, detailed data extraction process, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language publications",
+      "Phase I or II single-arm trials",
+      "Adult RRMM population",
+      "Experimental compound given as monotherapy or in combination with dexamethasone only",
+      "At least 10 RRMM patients in the intention-to-treat population",
+      "Publication date within 2010-01-01 to 2020-07-01"
+    ],
+    "exclusion_criteria": [
+      "Experimental compound combined with drugs other than dexamethasone",
+      "Subgroup-only studies",
+      "Country-specific approval-purpose studies",
+      "Allogeneic stem cell therapy, bone-directed therapy, supportive care, or route-of-administration studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible early-phase evidence in the local MetaSyn corpus shows that experimental agents used alone or with dexamethasone in RRMM during 2010 to mid-2020 produced **modest but real anti-myeloma activity**, generally with ORRs in the **15% to 33%** range.",
+      "The dominant pattern is not therapeutic failure, but rather a tradeoff: clinical activity was achievable in heavily pretreated disease, yet toxicity, especially hematologic toxicity, frequently limited therapeutic appeal.",
+      "My concrete judgment is that **daratumumab plus dexamethasone** and **pomalidomide plus low-dose dexamethasone** offered the most credible efficacy-to-tolerability balance among the included regimens, while **selinexor plus dexamethasone** demonstrated important proof of mechanism in ultra-refractory disease but with a harsher toxicity profile.",
+      "**Filanesib**, by contrast, looked underpowered as an unselected therapy and mainly interesting because of its alpha-1-acid glycoprotein biomarker signal.",
+      "The broader excluded literature suggests that adding other active agents, especially proteasome inhibitors, can deepen responses substantially, but that lies outside the formal eligibility boundary of this review."
+    ]
+  }
+}

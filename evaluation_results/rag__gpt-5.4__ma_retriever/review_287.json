@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8229,
+    "output_tokens": 1277,
+    "total_tokens": 9506
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6735,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3218,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized systematic-review elements such as screening outcomes, inclusion rationale, exclusions, and a brief synthesis, but it lacks most standard sections including abstract, introduction, detailed methods, results, discussion, conclusion, references, quality assessment, and a full search/data synthesis strategy."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "a primary clinical comparative study in implant patients, within the date window, reporting periodontal biotype and relating it to marginal bone loss and peri-implant disease findings with at least 1 year follow-up."
+    ],
+    "exclusion_criteria": [
+      "studies focused on keratinized tissue only",
+      "mucosal height only",
+      "graft materials/prosthetic protocols",
+      "reviews",
+      "case reports/series without a phenotype comparison",
+      "animal/preclinical work",
+      "records outside the stated date window",
+      "non-implant phenotype papers",
+      "studies of different exposures"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included study suggests that a `thin periodontal biotype` is associated with greater marginal bone loss around implants and may act as a risk factor for additional bone loss.",
+      "In that cohort, implant survival remained very high overall, so the evidence supports an association with peri-implant tissue outcomes more than a clear difference in short-term implant survival.",
+      "The same study also reported peri-implantitis/mucositis cases, but from the abstract alone it does not provide a clean thin-vs-thick peri-implantitis incidence estimate; therefore, any conclusion on peri-implantitis risk should be cautious.",
+      "Overall, based on the fixed pool, the evidence base is very limited and insufficient for a robust synthesis on survival rate, peri-implantitis incidence, and broader clinical parameters."
+    ]
+  }
+}

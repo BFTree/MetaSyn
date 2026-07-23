@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22491,
+    "output_tokens": 1299,
+    "total_tokens": 23790
+  },
+  "metrics": {
+    "retrieval_recall": 0.59375,
+    "retrieval_precision": 0.59375,
+    "inclusion_recall": 0.15625,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.25641025641025644,
+    "screening_accuracy": 0.5,
+    "conditional_retention": 0.2631578947368421,
+    "post_retrieval_loss": 0.4375,
+    "inclusion_consistency": 0.6323,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5376,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct sections for review question, search strategy, screening/eligibility, included studies, outcome-specific synthesis, limitations, and conclusion, but it lacks a formal abstract and full PRISMA-style elements such as a complete flow diagram, detailed quality assessment, and fully rendered references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "measured intelligence using a **standardized test** before age 21;",
+      "used a **general-population or population-based** sample;",
+      "assessed the association between early-life intelligence and **later clinical health outcomes**;",
+      "reported **physical or mental disorder diagnoses**, including register-based hospital diagnoses or clinically defined disease outcomes;",
+      "were not limited to a purely clinical patient cohort without an appropriate comparison group."
+    ],
+    "exclusion_criteria": [
+      "estimated intelligence indirectly from later-life variables rather than measuring it in youth;",
+      "examined **mortality only** without disease outcomes;",
+      "reported only **subclinical or intermediate traits** without clinical diagnosis;",
+      "were duplicate/overlapping reports of the same outcome from the same underlying sample, where a more appropriate record was available;",
+      "were not retrievable within the local corpus."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus through 2023-05-19, lower standardized intelligence measured before age 21 is associated with a higher risk of several later-life clinical mental disorders, with the strongest evidence for schizophrenia and related psychoses.",
+      "Broader psychiatric morbidity also shows a generally consistent inverse relationship with early-life IQ.",
+      "The evidence for bipolar disorder is notably weaker or null.",
+      "Evidence for physical clinical disorders is limited in the retrieved corpus-based record set, with Alzheimer disease and related disorders the clearest included outcome.",
+      "The strength of the overall conclusion is moderate for mental disorders, especially psychotic disorders, and limited/insufficient for most physical disorders because of sparse retrieval, abstract-only records, and incomplete extractable effect sizes."
+    ]
+  }
+}

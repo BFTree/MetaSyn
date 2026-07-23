@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16143,
+    "output_tokens": 1100,
+    "total_tokens": 17243
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.9375,
+    "inclusion_f1": 0.8108108108108109,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6879,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3218,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, substance-specific evidence synthesis, summary, and included study list, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, References sections and omits key PRISMA-style details such as a full search strategy, screening flow, data extraction process, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating whether psychoplastogens (ketamine, esketamine, LSD, psilocybin, ayahuasca, DMT, MDMA, scopolamine, and rapastinel) elevate peripheral blood levels of brain-derived neurotrophic factor (BDNF) in humans compared to baseline or control conditions"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "non-human studies",
+      "protocols",
+      "articles published after the search end date (2023-06-13)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The current evidence base does not consistently support the hypothesis that psychoplastogens robustly elevate peripheral BDNF levels in humans within the first 24 hours or at later timepoints.",
+      "While some ketamine studies demonstrate increased plasma or serum BDNF, others find no change or decreases associated with specific response phenotypes.",
+      "For classic psychedelics (LSD, psilocybin, MDMA, ayahuasca), the limited available controlled data predominantly show no significant alteration of peripheral BDNF, with the exception of low-dose LSD and one LSD-ketanserin interaction study suggesting elevations.",
+      "Significant heterogeneity exists across study designs, populations (healthy vs. psychiatric), and biological matrices (serum vs. plasma), limiting definitive conclusions."
+    ]
+  }
+}

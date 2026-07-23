@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12605,
+    "output_tokens": 818,
+    "total_tokens": 13423
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.637,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1798,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, screening summary, conclusion, and eligibility outcome, but it lacks several standard sections such as abstract, full introduction, detailed methods, results, discussion, references, quality assessment, data extraction, and formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "patients with Alzheimer\u2019s disease (AD) diagnosed according to NINCDS-ADRDA criteria compared to healthy controls or normative standards",
+      "outcomes related to prospective timing, retrospective timing, and the perception of shorter and longer time intervals",
+      "studies published in peer-reviewed journals between January 1, 2015, and December 31, 2015"
+    ],
+    "exclusion_criteria": [
+      "out-of-date articles",
+      "Timing in Non-AD Populations",
+      "Prospective Memory vs. Time Perception",
+      "they did not measure the distortion of duration perception (prospective or retrospective timing) specified in the outcome criteria"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the supplied candidate pool, there is a complete evidence gap for the target question within the specified 2015 search window.",
+      "While older literature exists on time estimation deficits in AD, no peer-reviewed primary studies published in 2015 that met the NINCDS-ADRDA diagnostic requirement and assessed time perception distortions in AD versus healthy controls were available in the pool.",
+      "None were included."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13637,
+    "output_tokens": 1174,
+    "total_tokens": 14811
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.5995,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.73,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objectives, methods, inclusion/exclusion criteria, included studies, narrative synthesis, and limitations, but it lacks a formal abstract, introduction, conclusion, full references, detailed search strategy, PRISMA screening flow, quality/risk-of-bias assessment, and explicit meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: Adolescents aged 10\u201324 years (general or clinical populations).",
+      "Intervention: Digital health interventions for sleep (dCBT\u2011I, sleep hygiene, education, holistic programs) delivered via eHealth/mHealth.",
+      "Comparison: Any control condition (active or passive) in an RCT.",
+      "Outcomes: Sleep quality, insomnia severity, sleep hygiene, sleep knowledge, beliefs about sleep, or sleep arousal measured with validated questionnaires."
+    ],
+    "exclusion_criteria": [
+      "Pilot RCTs, quasi\u2011experimental designs, studies where digital was not the primary component, telephone\u2011based coaching, social\u2011network interventions, participants with co\u2011existing physical health conditions (e.g., cancer, pain), reviews, protocols, editorials, and studies with missing required parameters."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Three of the four (de Bruin, Werner\u2011Seidler, Chan) demonstrated statistically and clinically significant improvements in insomnia severity and/or sleep quality when compared with a control condition.",
+      "Effect sizes ranged from small to large (Cohen\u2019s *d* = 0.39 to ~1.0), with stronger effects observed for more intensive CBT\u2011I programs (Internet\u2011delivered, app\u2011based, email\u2011delivered).",
+      "The fourth study (Brooks et al.) found no differential effect of a text\u2011message sleep hygiene intervention, possibly due to the brevity and low intensity of the intervention or the active nature of all comparison arms.",
+      "**Insomnia severity** was the most frequently reported outcome and consistently improved.",
+      "**Sleep hygiene and dysfunctional sleep beliefs** also showed improvement in the CBT\u2011I studies, and mediation analyses indicated that changes in insomnia symptoms contributed to downstream improvements in psychopathology (depression, anxiety).",
+      "Long\u2011term follow\u2011up (up to 12\u202fmonths) in de Bruin et al. suggested durability of effects.",
+      "The greater the \u201cdose\u201d of CBT\u2011I (e.g., 6\u20138 week structured modules), the larger the effect.",
+      "The purely one\u2011way text\u2011message approach (Brooks et al.) may have been insufficient to produce differential behaviour change without additional interactive or personalised components."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31889,
+    "output_tokens": 1107,
+    "total_tokens": 32996
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.64,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8333333333333334,
+    "inclusion_consistency": 0.6617,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5069,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening counts, and statistical synthesis, but it lacks a formal references section/complete citations and has some organizational issues such as duplicated headings and inserted drafting text."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational human studies (prospective or retrospective cohort, case-control, or cross-sectional) that evaluate the association between periodontitis and one or more noncommunicable diseases, or between noncommunicable diseases and periodontitis.",
+      "Studies including individuals with periodontitis and/or a specified noncommunicable disease, with a comparison group without periodontitis or without the specific noncommunicable disease being studied.",
+      "Studies in which the exposure is clearly defined as periodontitis (for NCD outcomes) or as a noncommunicable disease (for periodontitis outcomes), using clinical, diagnostic, or medical record-based definitions.",
+      "Studies reporting development, prevalence, incidence, or progression of periodontitis and/or noncommunicable diseases as outcomes, with effect estimates such as odds ratio, risk ratio, or hazard ratio, or sufficient data to calculate them."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, narrative review, systematic review, meta-analysis, case report, case series, editorials, letters, conference abstracts, and other non-original research publications.",
+      "Studies without an appropriate comparator group, or studies not specifically examining the association between periodontitis and noncommunicable diseases.",
+      "Studies that do not define periodontitis or the noncommunicable disease of interest clearly, or that focus on acute infectious diseases, communicable diseases, or conditions outside the noncommunicable disease scope.",
+      "Studies not reporting relevant association outcomes or lacking extractable effect measures/data for odds ratio, risk ratio, or hazard ratio."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 12 studies, periodontitis was associated with higher odds of noncommunicable disease outcomes, with a pooled random-effects OR of 1.44 (95% CI 1.16-1.79).",
+      "This is a clinically meaningful association, suggesting that periodontal inflammation may mark or contribute to broader systemic disease risk, not just a statistically detectable one.",
+      "Practically, these findings support routine periodontal assessment and management as part of risk-aware care in patients with or at risk for NCDs, especially cardiovascular disease and diabetes.",
+      "However, the result should be interpreted cautiously because heterogeneity was very high (I2=91.9%), and the fixed-effects estimate was much smaller (OR 1.06), indicating the pooled effect is sensitive to model choice and likely reflects differences in study populations, definitions, and confounding control."
+    ]
+  }
+}

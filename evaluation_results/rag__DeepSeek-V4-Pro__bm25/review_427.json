@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18059,
+    "output_tokens": 1068,
+    "total_tokens": 19127
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.685,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6269,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear background, screening, study characteristics, synthesis, and conclusions, and it includes meta-analysis-style elements such as independent screening and inclusion/exclusion criteria, but it lacks a detailed search strategy, formal quality assessment, and full PRISMA-level structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) evaluating digital health interventions (in particular digital cognitive behavioral therapy for insomnia, dCBT\u2011I, and sleep promotion programs) for improving sleep outcomes in adolescents aged 10\u201324 years.",
+      "Interventions had to be delivered primarily via eHealth or mHealth modalities."
+    ],
+    "exclusion_criteria": [
+      "Studies involving participants with co\u2011existing physical health conditions (e.g., cancer, chronic pain), quasi\u2011experimental designs, or pilot RCTs were excluded.",
+      "reviews, protocols, studies in adults/older adults, cancer/pain populations, pilot RCTs, non\u2011sleep interventions, and studies without validated sleep outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Two well\u2011conducted RCTs provide consistent evidence that digitally delivered CBT\u2011I (smartphone app or Internet\u2011based program) is effective in reducing insomnia severity in adolescents aged 12\u201316 years (and young adolescents up to ~16 years).",
+      "Improvements are accompanied by reductions in co\u2011occurring depressive and anxiety symptoms, and mediation analyses in both trials suggest that sleep improvement is a mechanism through which mental health benefits arise.",
+      "No safety concerns were identified.",
+      "Both interventions were self\u2011guided or minimally supported, supporting scalability.",
+      "However, the evidence base is notably small.",
+      "Further large\u2011scale RCTs are needed to confirm effectiveness across the full 10\u201324\u2011year spectrum and to disentangle the active components of digital sleep interventions in young people."
+    ]
+  }
+}

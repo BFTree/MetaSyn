@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20302,
+    "output_tokens": 1059,
+    "total_tokens": 21361
+  },
+  "metrics": {
+    "retrieval_recall": 0.5222222222222223,
+    "retrieval_precision": 0.235,
+    "inclusion_recall": 0.5222222222222223,
+    "inclusion_precision": 0.5595238095238095,
+    "inclusion_f1": 0.5402298850574713,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4455,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1977,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with background, findings, synthesis/implications, conclusion, and an included-studies list, but it lacks several formal systematic review sections and PRISMA-style details such as a full search strategy, data extraction methods, quality assessment, and explicit synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies of water, sanitation, and handwashing (WASH) interventions in low- and middle-income countries (LMICs)",
+      "completed intervention evaluations",
+      "published in English or Spanish"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "commentaries",
+      "observational studies without a clear intervention component",
+      "studies not reporting diarrhoea or acute respiratory infection outcomes"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence base for WASH interventions in LMICs remains overwhelmingly gender\u2011unaware.",
+      "While women are frequently the primary recipients of behaviour\u2011change messages and are implicitly relied upon to carry out household water treatment and hygiene practices, their roles are rarely examined critically.",
+      "Time burdens are not measured or reported; compensation for participation is absent; and intervention impacts on women\u2019s own lives are not evaluated.",
+      "Of the 86 primary studies retained from the candidate pool, virtually none provided sufficient information to assess women\u2019s engagement, time burdens, or gender\u2011responsive intervention components.",
+      "The overwhelming majority of WASH intervention research in LMICs, as represented by this re\u2011review, is gender\u2011unaware.",
+      "This represents a critical evidence gap that must be addressed to ensure WASH programmes contribute to both health and gender equity goals."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17201,
+    "output_tokens": 711,
+    "total_tokens": 17912
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.8087,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.645,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes review criteria, screening rationale, and synthesis/conclusion elements, but it lacks a conventional abstract, introduction, full methods/results/discussion sections, references, detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized clinical trials (RCTs) or observational study designs.",
+      "Samples originating from a gut tissue/sample microbiome, case-control or cohort studies regardless of geographic location (provided population is from an LMIC).",
+      "Studies that explicitly use 16S rRNA sequencing method **and Illumina sequencers** to cover the **V4 or V3-V4 hypervariable regions**.",
+      "Publication date within the search window: **2023-01-01 to 2023-02-29**."
+    ],
+    "exclusion_criteria": [
+      "Studies without publicly accessible data or metadata.",
+      "Studies that mentioned antibiotic administration within three months prior to sample collection.",
+      "Reviews, protocols, editorials, conference abstracts, or out-of-date articles."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidates in the supplied pool satisfied all the simultaneous requirements of the review target\u2014specifically, the intersection of the 2023 publication window, the under-5 LMIC stunting outcome, and the explicit methodological specification of Illumina sequencers covering the V4 or V3-V4 16S rRNA hypervariable regions.",
+      "None were included."
+    ]
+  }
+}

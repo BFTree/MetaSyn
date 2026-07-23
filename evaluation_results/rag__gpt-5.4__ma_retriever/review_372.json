@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7602,
+    "output_tokens": 3659,
+    "total_tokens": 11261
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.3181818181818182,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.4666666666666667,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.3181818181818182,
+    "post_retrieval_loss": 0.6818181818181818,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3953,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility judgments, narrative synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, data extraction approach, quality assessment, PRISMA-style screening flow, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "were reviews, protocols, commentaries, or qualitative studies",
+      "were published after the review end date (2017-04-30)",
+      "were outside Southeast Asia",
+      "did not examine agricultural land-use exposure",
+      "had no relevant unexposed comparator and only studied already-exposed plantation/farm workers",
+      "focused on night soil / wastewater / human excreta use in agriculture, which is explicitly excluded",
+      "focused on children only or non-human outcomes"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Overall, the evidence suggests that **living or working in agricultural settings in Southeast Asia\u2014especially rubber plantations/rubber tapping, farming, and some livestock-associated settings\u2014was often associated with higher infectious disease risk or seropositivity** compared with less-exposed groups.",
+      "However, the evidence base appears **heterogeneous, mostly cross-sectional, and often indirect**, with many studies using occupational contrasts within rural populations rather than a clean exposed-vs-unexposed residential comparison.",
+      "Evidence from Thailand indicates that **rubber plantation-related work** was associated with malaria risk.",
+      "Agricultural work, especially when it involves nighttime or away-from-home activity in plantation or farm-hut environments, appears to increase vector exposure and malaria risk.",
+      "Evidence from Malaysia and Lao PDR suggests **agricultural work/farming** was associated with higher rickettsial exposure.",
+      "Both crop-related and livestock-related agricultural exposure may elevate risk of scrub typhus or other rickettsial infections, though the abstracts suggest somewhat different comparator groups across studies.",
+      "Evidence from the Philippines suggests **farming occupation** was a marker of higher helminth infection risk.",
+      "Agricultural occupation may be associated with higher soil- or environment-mediated parasite exposure, but the causal role of agricultural land-use per se is hard to isolate from poverty, sanitation, and water exposure.",
+      "Direct residential land-use evidence was relatively sparse, but one ecological study from northeast Thailand linked **village-surrounding agricultural land composition** with **Opisthorchis viverrini** prevalence.",
+      "This supports a possible **residential/agro-ecological pathway**, but it is ecological rather than individual-level evidence.",
+      "Based on the supplied candidate pool, the evidence is **limited but generally consistent** with an association between **occupational agricultural exposure** and increased infectious disease risk in Southeast Asia.",
+      "Evidence for **residential exposure to agricultural land-use** is much thinner than evidence for occupational exposure."
+    ]
+  }
+}

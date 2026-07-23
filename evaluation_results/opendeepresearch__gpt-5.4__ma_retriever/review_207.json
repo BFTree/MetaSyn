@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29167,
+    "output_tokens": 1301,
+    "total_tokens": 30468
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.36,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.88,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4994,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5244,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear review question, eligibility criteria, search queries, screening decisions, synthesis sections, limitations, conclusion, and study table, but it lacks a formal abstract, full references, explicit quality/risk-of-bias assessment, and complete PRISMA-style methods such as detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Included healthy adult women",
+      "Examined menstrual-cycle-related and/or menopausal-stage-related differences in posterior pole/disc morphology",
+      "Reported structural/anatomical posterior pole outcomes",
+      "Used contemporary clinical imaging modalities",
+      "Allowed extraction of a healthy-women segment when mixed populations were present"
+    ],
+    "exclusion_criteria": [
+      "Involved pregnancy, breastfeeding, hormonal contraception, hormone replacement therapy, treatments, or supplementation",
+      "Focused on disease-related changes unless a distinct healthy subgroup was available",
+      "Focused on sex differences rather than reproductive-stage differences within women",
+      "Were experimental",
+      "Focused on functional or haemodynamic outcomes rather than structure"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus up to 2024-02-18, the available evidence suggests that **posterior pole structure is responsive to reproductive hormonal status in healthy women**, with the strongest evidence relating to the **choroid**.",
+      "**Choroidal thickness and choroidal morphology vary across menstrual cycle phases**",
+      "**Postmenopausal status is associated with structural differences in the macula, choroid, RNFL, GCC/GCL, and optic nerve/peripapillary parameters**, although reporting completeness varies by study",
+      "Evidence for **menstrual-cycle-related optic disc change** in healthy women is sparse and weak",
+      "Evidence for **macular morphology changing across menstrual phases** in strictly eligible healthy untreated women is limited in this corpus",
+      "Overall, the corpus supports a hormonally linked structural signal across women\u2019s reproductive life stages, but the evidence base remains modest, heterogeneous, and frequently constrained by abstract-only reporting."
+    ]
+  }
+}

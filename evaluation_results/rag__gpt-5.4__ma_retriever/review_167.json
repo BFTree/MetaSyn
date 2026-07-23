@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19271,
+    "output_tokens": 1124,
+    "total_tokens": 20395
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6655,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2959,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening results, evidence synthesis, strengths/weaknesses, conclusions, and included studies, but it lacks a formal abstract, full introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, PRISMA flow, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies only",
+      "RCTs, observational studies, and decision-analytic models",
+      "English-language",
+      "Studies directly comparing screening intervals or modeling interval strategies relevant to annual/biennial/triennial mammography"
+    ],
+    "exclusion_criteria": [
+      "Guidelines, systematic reviews, editorials, commentaries, protocols",
+      "Studies focused on high-risk populations",
+      "Studies not really about interval comparisons",
+      "Studies published **after the review search end date (2020-04-30)**"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Biennial mammography appears to offer the best overall benefit-harm balance for average-risk women aged 50\u201369, and likely for 70\u201374 as well.",
+      "Annual screening may offer some benefit in younger/premenopausal women, especially through more favorable stage or tumor features, but this comes with substantially more false positives and likely more overdiagnosis.",
+      "Triennial screening may be reasonable for some lower-risk or lower-density women in modeling studies, but direct empirical support is more limited than for biennial screening.",
+      "Harms increase clearly with more frequent screening, especially false positives.",
+      "For outcomes like deaths averted, QALYs, and overdiagnosis, the modeling literature consistently favors biennial strategies as the most efficient default approach for average-risk populations."
+    ]
+  }
+}

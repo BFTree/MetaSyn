@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 41555,
+    "output_tokens": 1287,
+    "total_tokens": 42842
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11688311688311688,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.4375,
+    "inclusion_f1": 0.56,
+    "screening_accuracy": 0.8571428571428571,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6782,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7295,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening counts, statistical synthesis, and risk-of-bias assessment, but it has some structural imperfections such as duplicated headings, no formal References section, and limited detail on data extraction methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials or controlled intervention studies in adults (18 years or older) who are performing exercise training, including aerobic, resistance, or concurrent exercise.",
+      "Studies evaluating time-restricted eating (TRE) with a daily feeding window of 4-12 hours used in combination with exercise.",
+      "Studies with an exercise-matched control group using an unrestricted eating window.",
+      "Studies reporting at least one eligible body composition outcome: fat mass (kg), body fat percentage, or fat-free mass (kg)."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving adults or not involving exercise training.",
+      "Interventions that do not include TRE within a 4-12 hour feeding window, or that compare TRE without an exercise-matched control.",
+      "Studies lacking an unrestricted eating-window control group matched for exercise exposure.",
+      "Studies that do not report body composition outcomes of interest, or are reviews, editorials, protocols, case reports, or non-comparative designs."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated that time-restricted eating combined with exercise produced a significant reduction in body composition outcomes versus exercise with an unrestricted eating window, with a random-effects mean difference of -1.88 (95% CI -3.08 to -0.67; p = 0.002) across 3 studies.",
+      "The fixed-effect estimate was similar in direction and somewhat smaller in magnitude (-1.70, 95% CI -2.33 to -1.07), supporting a robust overall benefit despite between-study variability.",
+      "Overall, the evidence supports a favorable effect of combining TRE with exercise on body composition, but the certainty of the magnitude is limited by heterogeneity and the small number of studies.",
+      "The principal quantitative finding was that TRE plus exercise was associated with a statistically significant reduction in fat mass, with a pooled random-effects mean difference of -1.88 kg (95% CI -3.08 to -0.67; p=0.002) across the three studies that could be meta-analyzed.",
+      "Accordingly, the present results support a potential benefit of TRE for fat mass reduction when paired with exercise, but they do not yet establish a definitive effect across all body-composition outcomes.",
+      "In this meta-analysis of 16 studies, with pooled fat-mass data available from 3 exercise-matched comparisons, time-restricted eating (4-12 hour feeding window) combined with exercise was associated with a greater reduction in fat mass than unrestricted eating plus the same exercise (random-effects MD -1.88 kg, 95% CI -3.08 to -0.67; p=0.002).",
+      "On balance, TRE can be considered a reasonable adjunct for adults exercising for fat-loss goals, provided it is acceptable and sustainable for the individual.",
+      "That recommendation should remain cautious, however, because the pooled estimate is based on only 3 studies and showed moderate-to-substantial heterogeneity (I2=68.4%), which limits confidence in the consistency of the effect across populations and protocols."
+    ]
+  }
+}

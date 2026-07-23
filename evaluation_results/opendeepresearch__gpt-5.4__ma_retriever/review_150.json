@@ -1,0 +1,72 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28155,
+    "output_tokens": 1191,
+    "total_tokens": 29346
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.3939393939393939,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.8787878787878788,
+    "conditional_retention": 0.7692307692307693,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.5859,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6846,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong meta-analysis elements such as a review question, eligibility criteria, exact search queries, screening decisions with exclusions, study characteristics, and exposure-specific synthesis, but it lacks a conventional abstract and clearly separated Introduction, Discussion, Conclusion, and full References sections needed for a top PRISMA-style structure score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Women, including pre-menopausal and post-menopausal women.",
+      "serum PLP",
+      "dietary vitamin B6",
+      "serum vitamin B12",
+      "dietary vitamin B12",
+      "Dietary methionine",
+      "Lowest exposure category.",
+      "Breast cancer risk, reported as RR or OR with 95% CI.",
+      "Study must provide category-specific cases and participants/person-years, or enough information to derive them."
+    ],
+    "exclusion_criteria": [
+      "Duplicate-population nutrient/genotype reports:",
+      "Maruti et al. 2009a/2009b MTHFR C677T reports",
+      "Shrubsole et al. 2006 MTR/MTRR report",
+      "Studies without risk estimates:",
+      "Potera et al., 1977",
+      "Goodman et al., 2001",
+      "Schroecksnadel et al., 2003",
+      "excluded exposure",
+      "not a breast cancer risk study",
+      "excluded duplicate-population genotype/nutrient report per protocol",
+      "Excluded because choline was not one of the prespecified exposures.",
+      "Excluded because it did not examine incident breast cancer risk with RR/OR as required.",
+      "Excluded explicitly as a duplicate-population genotype/nutrient report under the review protocol.",
+      "Records retrieved in the genetics/one-carbon pathway area such as polymorphism-focused studies were not retained because the review question concerned nutrient exposures rather than gene-association or gene\u2013nutrient interaction analyses, and the brief explicitly directed exclusion of the duplicate genotype/nutrient reports.",
+      "Potera et al. 1977, Goodman et al. 2001, and Schroecksnadel et al. 2003 were to be excluded if encountered because they did not report the required risk estimate."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This is important because it directly supports an inverse association between higher circulating vitamin B6 status and lower breast cancer risk in postmenopausal women.",
+      "The association reportedly persisted after excluding cases diagnosed within one year of blood draw, which reduces concern that the result was driven solely by occult disease near diagnosis [1].",
+      "However, because many of these records were abstract-only in the local corpus, the available evidence does **not** allow secure reconstruction of all study-specific risk estimates.",
+      "**serum PLP evidence suggests an inverse association**",
+      "**dietary vitamin B6 evidence is suggestive of an inverse or at least non-harmful association, but consistency across studies cannot be fully verified from locally available text alone**"
+    ]
+  }
+}

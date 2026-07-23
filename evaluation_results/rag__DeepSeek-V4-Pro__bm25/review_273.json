@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18502,
+    "output_tokens": 689,
+    "total_tokens": 19191
+  },
+  "metrics": {
+    "retrieval_recall": 0.48484848484848486,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.42424242424242425,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5185185185185185,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.06060606060606061,
+    "inclusion_consistency": 0.4816,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5503,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report presents a research question, screening criteria, screening results, and included studies, but lacks a structured abstract, introduction, detailed search strategy, data extraction and synthesis methods, quality assessment, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies were double\u2011blind, randomized, placebo\u2011controlled trials employing a discontinuation design: patients with MDD who had responded/remitted during open\u2011label antidepressant treatment were randomly assigned to continue the same antidepressant or to switch to placebo.",
+      "Only primary trial reports were considered"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on bipolar disorder, treatment\u2011resistant depression (unless the design was a classic discontinuation trial), augmentation strategies, or non\u2011pharmacological interventions were excluded.",
+      "secondary analyses, reviews, protocols, and meta\u2011analyses were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All studies consistently demonstrated that continuing antidepressant medication significantly prolongs time to relapse and reduces the cumulative risk of relapse compared with placebo.",
+      "The protective effect was evident across different antidepressant classes, dosing schedules (daily versus weekly fluoxetine), and maintenance durations (from 6 months to 2 years).",
+      "No trial contradicted the overall finding that maintenance pharmacotherapy is superior to discontinuation."
+    ]
+  }
+}

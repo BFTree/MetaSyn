@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25243,
+    "output_tokens": 903,
+    "total_tokens": 26146
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6956521739130435,
+    "inclusion_precision": 0.8421052631578947,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.6956521739130435,
+    "post_retrieval_loss": 0.30434782608695654,
+    "inclusion_consistency": 0.6226,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an overview, outcome findings, effect modifiers, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, Methods, formal Results, Discussion, Conclusion, References, and key meta-analysis elements including search strategy, explicit inclusion/exclusion criteria, screening flow, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational cohort studies, case-control studies, and randomized controlled trials",
+      "compared statin users to non-statin users",
+      "reported effect estimates with 95% confidence intervals"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The findings indicate a generally favorable or neutral association between statin use and breast cancer outcomes, with notable variations based on statin lipophilicity, estrogen receptor (ER) status, cancer stage, and the timing of statin initiation.",
+      "Most included studies reported a reduced risk of BCD among statin users compared to non-users, although some found null associations:",
+      "The evidence regarding BCR is more heterogeneous, with several studies showing a protective effect\u2014particularly for lipophilic statins\u2014while others show no association or even potential harm in specific subgroups:",
+      "A consistent trend across the evidence suggests that lipophilic statins (e.g., simvastatin, atorvastatin) are more strongly associated with reduced recurrence and mortality than hydrophilic statins (e.g., pravastatin, rosuvastatin).",
+      "The protective effect of statins appears more pronounced in ER-positive disease.",
+      "The timing of statin initiation is a critical modifier."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9336,
+    "output_tokens": 1053,
+    "total_tokens": 10389
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.4425,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3574,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening decisions, evidence synthesis, conclusions, limitations, and an included study list, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, detailed Results, Discussion, formal References, search strategy, risk-of-bias assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult cancer patients with indwelling CVCs",
+      "prospective design",
+      "some patients receiving minidose warfarin or low-dose LMWH at a clearly specified dose",
+      "comparison against no prophylaxis/standard care",
+      "outcomes on VTE and bleeding",
+      "English, 1980-2005"
+    ],
+    "exclusion_criteria": [
+      "reviews/guidelines",
+      "retrospective or non-prospective studies",
+      "not in the target population",
+      "not about primary prophylaxis for CVC-related thrombosis in adult cancer patients",
+      "outside the publication window",
+      "lacked a no-prophylaxis comparator"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "That study reports that routine minidose warfarin (1 mg daily) did not reduce catheter thrombosis or venous thrombosis compared with no prophylaxis in adults with hematological malignancies and central venous catheters.",
+      "It also found no improvement in catheter survival.",
+      "From the candidate pool provided, the evidence does not support routine minidose warfarin prophylaxis for prevention of CVC-related venous thrombosis in adult cancer patients.",
+      "For low-dose LMWH, there is no eligible primary-study evidence in the supplied pool, so no conclusion can be made."
+    ]
+  }
+}

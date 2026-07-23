@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25050,
+    "output_tokens": 760,
+    "total_tokens": 25810
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.8787878787878788,
+    "inclusion_precision": 0.90625,
+    "inclusion_f1": 0.8923076923076922,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8787878787878788,
+    "post_retrieval_loss": 0.12121212121212122,
+    "inclusion_consistency": 0.5734,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6724,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes key review elements such as objective, inclusion/exclusion criteria, screening process, included studies, and evidence summary, but it lacks a formal abstract, introduction, detailed methods, results/discussion separation, conclusion, references, search strategy, data extraction procedures, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double\u2011blind, randomised controlled trials",
+      "Discontinuation design: patients with MDD who achieved remission during acute antidepressant treatment are randomised to continue the same antidepressant or switch to placebo",
+      "MDD diagnosed using Feighner criteria, Research Diagnostic Criteria, DSM\u2011III, DSM\u2011III\u2011R, DSM\u2011IV, DSM\u20115, or ICD\u201110",
+      "Outcomes: relapse rate, treatment failure, all\u2011cause dropout, tolerability",
+      "Publication date up to 10 October 2018"
+    ],
+    "exclusion_criteria": [
+      "Focus on bipolar disorder, personality disorder, substance use disorder, refractory depression, seasonal depression, perinatal depression, or depression caused by physical diseases",
+      "Records that were not primary double\u2011blind, placebo\u2011controlled discontinuation trials (e.g., reviews, meta\u2011analyses, protocols, open\u2011label studies, augmentation or switching studies, treatment\u2011resistant depression studies, non\u2011MDD populations, and studies without a placebo\u2011discontinuation arm)",
+      "Duplicate publications of the same trial"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "They consistently demonstrate that continuing antidepressant medication significantly reduces the risk of relapse compared with placebo.",
+      "Together they provide robust evidence that continuing antidepressant therapy after remission significantly prolongs time to relapse and reduces relapse rates across diverse patient groups (adults, elderly, children/adolescents).",
+      "The included studies can be used to examine the influence of antidepressant class, dosing schedule, duration of maintenance treatment, and patient age on relapse prevention."
+    ]
+  }
+}

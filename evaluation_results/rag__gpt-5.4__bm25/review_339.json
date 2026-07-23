@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18370,
+    "output_tokens": 1382,
+    "total_tokens": 19752
+  },
+  "metrics": {
+    "retrieval_recall": 0.46875,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.43478260869565216,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.15625,
+    "inclusion_consistency": 0.5591,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5458,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility criteria, screening summary, included studies, evidence synthesis, limitations, conclusion, and included article list, but it lacks a formal abstract, introduction, detailed search strategy, full data extraction/quality assessment methods, quantitative synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "General-population or population-based samples.",
+      "Intelligence/IQ measured before age 21.",
+      "Later-life clinical health outcomes, physical or mental."
+    ],
+    "exclusion_criteria": [
+      "Exclude studies focused solely on biomarkers/subclinical parameters, mortality-only outcomes, clinical cohorts without healthy controls, reviews/protocols, and duplicates of identical outcomes based on identical data.",
+      "wrong exposure (not early-life intelligence/IQ),",
+      "wrong outcome (education, cognition only, biomarkers/subclinical atherosclerosis, health behaviors, mortality only),",
+      "wrong population (clinical/high-risk cohorts only),",
+      "review/protocol/non-primary article,",
+      "outcome not clearly a clinical diagnosis."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included title/abstract-level evidence, there is a fairly consistent inverse association between early-life intelligence and later risk of several clinical disorders.",
+      "For **mental disorders**, the evidence is strongest and most consistent.",
+      "For **physical disorders**, evidence is also generally inverse but somewhat more heterogeneous.",
+      "The cardiovascular evidence is repeated across several cohorts (Candidates 032, 115, 137, 185), suggesting a recurring association between lower early-life cognitive ability and later CHD/CVD.",
+      "Stroke results are less consistent: some studies found weaker or null associations after adjustment (Candidate 137), while others still found an association, especially for visuospatial ability (Candidate 115).",
+      "Using only the supplied candidate pool, the title/abstract evidence supports the review\u2019s central premise: **lower intelligence measured before age 21 is generally associated with increased later risk of several clinical mental disorders and some physical diseases**, especially broad psychiatric hospitalization, schizophrenia-spectrum disorders, dementia, and cardiovascular disease.",
+      "The association appears more consistent for mental disorders than for physical disease outcomes.",
+      "Where examined, **education and adult socioeconomic position often attenuate the association**, suggesting that part of the pathway from early cognitive ability to later health operates through life-course social and educational processes."
+    ]
+  }
+}

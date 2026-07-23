@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5167,
+    "output_tokens": 900,
+    "total_tokens": 6067
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.7692307692307693,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.724,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.48,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes an objective, basic methods, screening results, inclusion criteria, and a list of included studies, but it lacks major required sections such as a formal abstract, introduction, quantitative results, discussion, conclusion, references, detailed search strategy, quality assessment, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "case\u2013control or cohort designs",
+      "reported relative risk (RR) estimates with 95% confidence intervals for categories or per-unit increases of alcoholic beverage intake in relation to incident renal cell, kidney cancer, or renal/kidney adenocarcinoma"
+    ],
+    "exclusion_criteria": [
+      "Studies using kidney cancer mortality as an endpoint were excluded.",
+      "When multiple publications from the same study population were available, only the most relevant or largest study was retained.",
+      "wrong cancer site (e.g., breast, colorectal, pancreatic, esophageal)",
+      "wrong exposure (e.g., dietary patterns other than alcohol, genetic polymorphisms)",
+      "non-primary study design (meta-analyses, reviews, ecological studies)",
+      "duplicate populations",
+      "lack of relevance"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The majority reported inverse associations between moderate alcohol consumption and renal cell cancer risk, with some noting sex-specific effects.",
+      "The studies provide the necessary dose-response or categorical risk estimates suitable for subsequent quantitative meta-analysis.",
+      "A total of 16 primary studies met all inclusion criteria.",
+      "The 16 eligible studies consist of 8 prospective cohort studies (including pooled analyses of multiple cohorts) and 8 case\u2013control studies."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17524,
+    "output_tokens": 1064,
+    "total_tokens": 18588
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.7619047619047619,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8205128205128205,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8888888888888888,
+    "post_retrieval_loss": 0.09523809523809523,
+    "inclusion_consistency": 0.5516,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3309,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening, synthesis, heterogeneity, and bottom-line sections, and it includes key meta-analysis elements such as inclusion/exclusion criteria and evidence synthesis, though it lacks a formal full manuscript structure with explicit abstract, introduction, methods, results, discussion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human primary studies in which an eligible psychoplastogen was administered and peripheral blood BDNF (serum or plasma) was measured against baseline and/or a control condition"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "mechanistic preclinical studies",
+      "nonhuman studies",
+      "non-eligible interventions",
+      "papers that did not clearly report peripheral BDNF outcomes for an eligible psychoplastogen based on title/abstract alone",
+      "unrelated interventions",
+      "biomarker association studies without psychoplastogen administration",
+      "outside the review timeframe/intent",
+      "published after the review end date"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across included studies, the evidence is mixed rather than uniformly supportive of peripheral BDNF elevation after psychoplastogens.",
+      "Overall, the title/abstract-level evidence from this pool does **not** support a consistent conclusion that psychoplastogens reliably elevate peripheral BDNF in humans.",
+      "There is some support for acute increases with certain regimens, especially low-dose LSD and some ketamine/esketamine contexts, but null findings are common, and positive effects appear sensitive to population, comparator, timing, and study design.",
+      "Based on the supplied candidate pool and abstract/title screening alone, the evidence is **mixed and overall insufficient to conclude that psychoplastogens consistently elevate peripheral blood BDNF in humans** relative to baseline or control.",
+      "The strongest repeated human evidence in this pool is for **variable ketamine/esketamine effects**, with both positive and null studies, while most included non-ketamine psychedelic studies are null or mixed, with a notable positive exception for one low-dose LSD study."
+    ]
+  }
+}

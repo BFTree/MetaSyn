@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17531,
+    "output_tokens": 940,
+    "total_tokens": 18471
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.25,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.4442,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6925,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening summary, synthesis of findings, conclusion, and included studies, but it lacks a formal abstract, introduction, methods/results/discussion structure, detailed search strategy, data extraction process, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "clinical comparative study",
+      "prospective/retrospective design",
+      "\u22651-year follow-up",
+      "MBL assessment",
+      "reporting gingival phenotype",
+      "published in the last 13 years"
+    ],
+    "exclusion_criteria": [
+      "narrative/other reviews",
+      "letters",
+      "commentaries"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The four included studies consistently indicate that a thin gingival or mucosal phenotype is a risk factor for increased marginal bone loss and unfavorable peri-implant clinical outcomes, whereas a thick phenotype serves as a protective factor.",
+      "The available evidence strongly supports that gingival phenotype significantly influences peri-implant outcomes.",
+      "A **thin gingival phenotype** is consistently associated with an increased risk of marginal bone loss and unfavorable clinical conditions such as buccal soft tissue dehiscence.",
+      "Conversely, a **thick gingival phenotype** acts as a protective factor, promoting crestal bone stability and reducing the risk of soft tissue complications around dental implants."
+    ]
+  }
+}

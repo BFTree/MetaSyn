@@ -1,0 +1,103 @@
+{
+  "review_id": 447,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    2666,
+    2655
+  ],
+  "retrieved_article_ids": [
+    2666,
+    2658,
+    115496,
+    98564,
+    115530,
+    2655,
+    2660,
+    73749,
+    2654,
+    72164,
+    2656,
+    73558,
+    58732,
+    75033,
+    2665,
+    75030,
+    74299,
+    2662,
+    73117,
+    2659,
+    63806,
+    15863,
+    118389,
+    118167,
+    73786,
+    106276,
+    73950,
+    66880,
+    35059,
+    59574,
+    35242,
+    35119,
+    42800,
+    113251,
+    67794
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 295689,
+    "output_tokens": 10956,
+    "total_tokens": 306645,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 38921,
+        "output_tokens": 3000,
+        "total_tokens": 41921
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 5490,
+        "output_tokens": 5000,
+        "total_tokens": 10490
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 240500,
+        "output_tokens": 1294,
+        "total_tokens": 241794
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9537,
+        "output_tokens": 976,
+        "total_tokens": 10513
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1241,
+        "output_tokens": 686,
+        "total_tokens": 1927
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 35,
+    "retrieved_unique": 35,
+    "included_count": 2,
+    "included_unique": 2,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 25,
+    "fetch_calls": 9,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 7,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10625,
+    "output_tokens": 1389,
+    "total_tokens": 12014
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.195,
+    "inclusion_recall": 0.3626373626373626,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.532258064516129,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8461538461538461,
+    "post_retrieval_loss": 0.06593406593406594,
+    "inclusion_consistency": 0.6458,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5132,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening, eligibility, synthesis, limitations, and included studies, but it lacks major standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction procedures, synthesis/statistical methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "postmortem brain samples from people with schizophrenia",
+      "neuroinflammatory markers, broadly including microglia, astrocytes/GFAP, cytokines, and related inflammatory markers",
+      "psychiatrically and neurologically healthy controls"
+    ],
+    "exclusion_criteria": [
+      "reviews, non-English papers, conference abstracts, infection/virus-focused papers, untargeted microarray/proteomics without targeted confirmation, and papers outside the source review\u2019s search end date (**2016-03-20**)",
+      "Review/non-primary articles",
+      "Not postmortem brain schizophrenia-vs-control studies",
+      "Published after the review end date",
+      "Untargeted approach without clear targeted confirmation",
+      "Retracted",
+      "Infection/virus-focused"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the eligible postmortem studies in the candidate pool, the evidence suggests a **heterogeneous neuroinflammatory signal in schizophrenia**, not a uniform pan-brain inflammatory phenotype.",
+      "Microglial abnormalities are reported more consistently than astroglial astrogliosis",
+      "Classic astrogliosis is often absent overall",
+      "Inflammatory transcripts/cytokine-related markers appear elevated in subsets",
+      "Overall, the abstracts support **possible region- and subgroup-specific microglial activation**, rather than a universal microgliosis signal.",
+      "So, the abstracts suggest **astrocytic abnormality without consistent classical reactive astrogliosis**.",
+      "Using only the supplied abstracts, the postmortem evidence supports the view that schizophrenia is associated with **altered cerebral inflammatory biology in at least a subset of cases**, especially at the level of:",
+      "But the evidence does **not** support a simple, uniform model of generalized brain inflammation or universal astrogliosis across all schizophrenia cases."
+    ]
+  }
+}

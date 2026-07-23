@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30604,
+    "output_tokens": 1001,
+    "total_tokens": 31605
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.038461538461538464,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9743589743589743,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6551,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6236,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly logical structure with abstract, background/introduction, methods, search strategy, eligibility criteria, study selection, synthesis approach, results, risk of bias, discussion, and conclusion, but organization is weakened by duplicated headings, placeholder text in the study-level results, no full references section, limited data extraction detail, and some internal inconsistencies about quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Empirical studies evaluating undergraduate dental students as the study population.",
+      "Studies examining team-based learning (TBL) as the primary educational intervention.",
+      "Studies including a comparator teaching pedagogy such as lectures, problem-based learning, enquiry-based learning, or case-based learning.",
+      "Studies reporting outcomes on student satisfaction and/or academic performance."
+    ],
+    "exclusion_criteria": [
+      "Studies involving populations other than undergraduate dental students, such as postgraduate trainees, qualified dentists, or students from other disciplines without separate dental undergraduate data.",
+      "Studies not evaluating TBL or not comparing TBL with another teaching pedagogy.",
+      "Non-empirical publications, including reviews, editorials, commentaries, conference abstracts without sufficient data, and study protocols.",
+      "Studies that do not report student satisfaction or academic performance outcomes."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the three included studies, the direction of findings was broadly favorable to team-based learning (TBL) for undergraduate dental students, but the evidence could only be synthesized narratively.",
+      "Taken together, the studies suggested that TBL may support positive educational experiences and may be associated with improved or at least comparable academic outcomes relative to comparator pedagogies.",
+      "However, the small number of studies, variation in comparators, and incomplete reporting of outcome data meant that the review could not determine the magnitude or precision of any benefit.",
+      "The most defensible conclusion is therefore that the available literature signals potential value of TBL in undergraduate dental education, but does not yet provide a quantitatively robust estimate of its effects on satisfaction or performance.",
+      "Quantitative synthesis was not possible because the included studies did not report sufficiently extractable or comparable outcome data for student satisfaction and academic performance.",
+      "On qualitative assessment, the available evidence suggests that TBL may be associated with favorable student perceptions and, in some contexts, similar or improved academic outcomes relative to other teaching approaches; however, these findings were inconsistent and cannot be interpreted as definitive.",
+      "Overall, the current evidence base is limited and insufficient to support firm conclusions about the effectiveness of TBL in undergraduate dental education."
+    ]
+  }
+}

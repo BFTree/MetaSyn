@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15201,
+    "output_tokens": 913,
+    "total_tokens": 16114
+  },
+  "metrics": {
+    "retrieval_recall": 0.5476190476190477,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.11904761904761904,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.2040816326530612,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.21739130434782608,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.6985,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4768,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has organized screening, exclusion, included-study, and brief synthesis sections, but it lacks a formal abstract, introduction, detailed methods, results with quantitative synthesis, discussion, conclusion, references, and comprehensive PRISMA-style elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with MDD/TRD",
+      "Failure of at least 2 antidepressant trials",
+      "Randomized controlled primary studies"
+    ],
+    "exclusion_criteria": [
+      "Not limited to excluded populations such as bipolar depression, psychotic depression, late-life-only, or special comorbid-only samples",
+      "Not reviews, protocols, observational studies, case reports, secondary analyses, or continuation/maintenance-only studies",
+      "the abstract did not clearly support key eligibility items"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Only a **small subset** of candidates were clearly eligible on title/abstract review.",
+      "**Intranasal esketamine** trials consistently reported **greater short-term antidepressant benefit** than placebo/control nasal spray plus oral antidepressant.",
+      "**Oral ketamine** showed **rapid and persistent symptom improvement** versus placebo in a small proof-of-concept RCT.",
+      "**Adjunctive minocycline** showed **signal of benefit** versus placebo in a pilot RCT.",
+      "**Ketamine as anesthetic during ECT** suggested **earlier improvement and higher remission-related outcomes** than propofol-based comparators.",
+      "**Psilocybin** showed short-term symptom reduction versus low-dose control, though with notable adverse events and uncertainty around durability.",
+      "From this candidate pool, the clearly includable randomized primary evidence supports **rapid-acting pharmacologic strategies**\u2014especially **esketamine** and **ketamine**\u2014with smaller pilot evidence for **minocycline** and **psilocybin**.",
+      "However, many candidate **neuromodulation** studies could not be confidently included from abstract-only screening because the stricter TRD definition or other eligibility details were insufficiently reported."
+    ]
+  }
+}

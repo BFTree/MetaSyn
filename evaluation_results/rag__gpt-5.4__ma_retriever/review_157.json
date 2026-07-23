@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7475,
+    "output_tokens": 1235,
+    "total_tokens": 8710
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.8132,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5679,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, eligibility criteria, screening summary, study-level results, synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed search strategy, quality assessment, full references, and robust PRISMA-style methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "asymptomatic women in **population-based breast screening**",
+      "**DBT vs DM** comparison",
+      "reports **cancer detection and/or recall by breast density**",
+      "breast density classified by **BI-RADS** (any edition)",
+      "English-language primary study",
+      "paired or unpaired comparative design eligible"
+    ],
+    "exclusion_criteria": [
+      "exclude studies using **automated density assessment**",
+      "exclude reviews, protocols, non-primary articles, diagnostic/symptomatic populations, surveillance studies, and out-of-range dates",
+      "not a primary screening study (eg, review, meta-analysis, protocol, editorial)",
+      "not population screening / symptomatic or surveillance setting",
+      "no breast-density-stratified DBT-vs-DM outcomes in the abstract",
+      "outside the review date window",
+      "automated density assessment explicitly used"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "DBT improves screening performance relative to DM",
+      "The benefit appears at least as great, and possibly greater, in denser breasts",
+      "The available included abstract-level evidence supports the idea that **DBT may confer greater relative benefit in women with high breast density** than in women with low breast density, especially for **cancer detection**.",
+      "For **recall**, evidence is also favorable to DBT, with one study indicating larger reductions in dense breasts.",
+      "Based on the supplied candidate pool and abstract-only screening, the evidence is **limited but supportive** of differential benefit of DBT by breast density in population screening.",
+      "**Cancer detection:** DBT appears to improve CDR over DM in both low- and high-density breasts, with a **larger increase in high-density breasts**.",
+      "**Recall:** DBT appears to reduce recall relative to DM, with **greater reductions in dense breasts** in at least one study.",
+      "The evidence base identified here is small and outcome-fragmented, so conclusions should be considered **suggestive rather than definitive**."
+    ]
+  }
+}

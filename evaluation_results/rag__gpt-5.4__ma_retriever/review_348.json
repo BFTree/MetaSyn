@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12027,
+    "output_tokens": 1351,
+    "total_tokens": 13378
+  },
+  "metrics": {
+    "retrieval_recall": 0.5490196078431373,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.35294117647058826,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.5070422535211269,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.19607843137254902,
+    "inclusion_consistency": 0.6366,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5223,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is somewhat organized with domain-based synthesis, an overall conclusion, and a list of included studies, but it lacks core systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, detailed References, search strategy, inclusion/exclusion criteria, data extraction, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "a biological biomarker measured prospectively before MDD onset/relapse/recurrence"
+    ],
+    "exclusion_criteria": [
+      "cross-sectional",
+      "review/meta-analysis/protocol articles",
+      "focused on treatment response rather than onset/relapse/recurrence of MDD",
+      "involved excluded populations such as late-life depression or bipolar disorder",
+      "did not clearly use a biological biomarker measured prospectively before MDD onset/relapse/recurrence",
+      "review, not a primary longitudinal study"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these abstracts, the strongest recurring signal is that dysregulation in stress-hormone systems measured during remission or before onset can predict later relapse, recurrence, or first onset of MDD.",
+      "Several studies reported that abnormal cortisol-related challenge tests, basal cortisol, DHEAS/cortisol ratios, thyroid-related markers, or related endocrine tests were associated with shorter time to recurrence or higher relapse risk.",
+      "There is also limited evidence for structural neuroimaging markers, particularly hippocampal/amygdala/CSF-space abnormalities, and one longitudinal midlife-women study suggesting oxidative/inflammatory/neurotrophic alterations before first-onset MDD.",
+      "The best-supported domain in this pool.",
+      "Still, the consistent high-level pattern is that endocrine dysregulation appears prospectively informative.",
+      "Using only the supplied candidate pool, the evidence supports the idea that some biological biomarkers can prospectively predict onset or recurrence of MDD, but the support is concentrated in endocrine markers rather than broadly across all biological systems listed in the review question.",
+      "The most repeatedly supported predictors are cortisol-based and related neuroendocrine measures in remitted or recurrent MDD populations.",
+      "Evidence for first onset in never-depressed or high-risk individuals exists but is thinner, and evidence for immune, oxidative, neurotrophic, neurotransmitter, and gastrointestinal biomarkers is much less developed in this pool."
+    ]
+  }
+}

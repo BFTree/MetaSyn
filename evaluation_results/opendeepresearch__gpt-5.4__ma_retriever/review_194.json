@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26087,
+    "output_tokens": 928,
+    "total_tokens": 27015
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.18181818181818182,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9090909090909091,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7378,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.621,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear sections for review question, eligibility criteria, search strategy, screening, included/excluded studies, synthesis, and limitations, but it lacks a formal abstract, explicit conclusion, and a complete references section/PRISMA-level reporting needed for an excellent rating."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "were **English-language**, **peer-reviewed journal** studies",
+      "evaluated **artificial intelligence**, **machine learning**, or **deep learning** methods",
+      "addressed **detection of pathological myopia** or closely linked myopic maculopathy/pathologic myopia classification tasks",
+      "used **colour fundus photographs**",
+      "reported diagnostic performance using measures such as **AUC/AUROC, sensitivity, specificity**, or similar indices",
+      "provided information on **dataset size**",
+      "described the **reference standard**",
+      "included a **validation set at least 10% the size of the training set**"
+    ],
+    "exclusion_criteria": [
+      "reviews or conference abstracts",
+      "duplicate records",
+      "not based on **colour fundus images**",
+      "not primarily about AI-based diagnostic detection/classification of pathological myopia",
+      "missing sufficient methodological detail or judged poor-quality based on locally available evidence",
+      "unable to contribute to a quantitative meta-analysis because a **2\u00d72 contingency table could not be formed**",
+      "supported only by insufficient abstract-only evidence when key eligibility details could not be verified"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Deep learning methods for fundus-based pathological myopia detection appear to have **strong diagnostic discrimination** in the development-era literature up to 2022-05-05.",
+      "The excluded but highly informative record **3096** reported AUCs from **0.881 to 0.982** for lesion-level tasks and an overall **92.08%** correct pathological myopia detection rate in abstract-only evidence [1].",
+      "The excluded but highly informative record **84693** reported an AUROC of **0.9980** for pathological myopia diagnosis [5].",
+      "These values indicate that the research field had already achieved very high internal or held-out validation performance in selected datasets.",
+      "A robust pooled diagnostic meta-analysis was **not defensibly achievable** from the locally retrievable evidence summarized here.",
+      "The review question can be answered qualitatively, but a pooled estimate of:"
+    ]
+  }
+}

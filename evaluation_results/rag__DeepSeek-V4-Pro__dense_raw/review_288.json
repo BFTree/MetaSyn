@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19966,
+    "output_tokens": 1071,
+    "total_tokens": 21037
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5815,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7617,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear research question, methods, eligibility criteria, screening results, included studies, synthesis, limitations, conclusion, and references to primary studies, but it lacks a detailed search strategy, explicit data-extraction and quality-assessment procedures, and quantitative meta-analytic synthesis required for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary interventional or observational studies",
+      "RCT, case\u2011control, cross\u2011sectional, or population survey design",
+      "clinically measured periodontal parameters (BOP, CAL, PPD, GI) by a qualified examiner",
+      "comparison between a diet acknowledged to optimise general health (Mediterranean, anti\u2011inflammatory, or high\u2011fruit\u2011vegetable\u2011whole\u2011grain pattern) and a diet considered detrimental or a habitual control",
+      "assessment of change over \u22654\u202fweeks",
+      "human adults (\u226518\u202fyears, \u226520 participants)"
+    ],
+    "exclusion_criteria": [
+      "Studies that were animal experiments, literature reviews, editorials, study protocols, or that did not report a direct comparison of whole diets and periodontal outcomes in adults were excluded.",
+      "Studies focusing on single foods, supplements, beverages, elimination diets (including vegetarian/vegan), or self\u2011reported periodontal outcomes were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Preliminary evidence from a small number of RCTs suggests that adopting a healthy dietary pattern \u2013 one low in refined carbohydrates and saturated fats, high in fibre, and rich in anti\u2011inflammatory nutrients \u2013 may reduce gingival inflammation in adults with gingivitis over 4\u20136\u202fweeks, independent of plaque control.",
+      "The effect in periodontitis remains unproven.",
+      "Two of the three studies (001 and 009) reported statistically significant reductions in gingival inflammation (bleeding on probing and/or gingival index) after 4\u20136\u202fweeks, despite constant plaque levels.",
+      "The third study (002) found no significant periodontal improvement, even though dietary compliance and antioxidant status improved.",
+      "Larger, longer\u2011term trials that include periodontitis patients, use standardised periodontal endpoints (CAL, PPD), and verify dietary adherence are necessary to confirm these findings and establish the role of diet as an adjunctive strategy in periodontal care."
+    ]
+  }
+}

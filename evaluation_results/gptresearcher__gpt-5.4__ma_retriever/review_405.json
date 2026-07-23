@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30951,
+    "output_tokens": 905,
+    "total_tokens": 31856
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06896551724137931,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9310344827586207,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5778,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4074,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/screening, Discussion-style contextual findings, Limitations, Conclusion, Included-Study List, and References, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening approach, and synthesis rationale, but it lacks a formal quality/risk-of-bias assessment and detailed data extraction procedures needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Peer-reviewed journal articles.",
+      "Primary studies relevant to time perception in AD.",
+      "AD diagnosis implemented according to reliable criteria such as **NINCDS-ADRDA**.",
+      "Outcomes involving time perception distortions, including prospective timing, retrospective timing, or shorter/longer interval judgments.",
+      "Publication date between **2015-01-01 and 2015-12-31**."
+    ],
+    "exclusion_criteria": [
+      "Studies outside the 2015 date window.",
+      "Studies not focused on AD time perception.",
+      "Studies lacking adequate AD diagnostic specificity.",
+      "Non-primary literature for formal inclusion.",
+      "Records available only as non-peer-reviewed sources."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Under the **specified 2015-only eligibility window**, the local MetaSyn PubMed corpus yields **no includable primary studies**, so this review cannot support a formal meta-analysis.",
+      "However, the broader local corpus strongly suggests that **Alzheimer\u2019s disease is associated with real and clinically meaningful time-perception distortion**, characterized less by a uniform directional bias and more by **greater error, lower precision, and higher variability** across multiple timing paradigms.",
+      "The best-supported theoretical interpretation is that these distortions are **not explained by episodic memory impairment alone**.",
+      "My concrete judgment is that the literature represented in this corpus supports time distortion as a **genuine cognitive feature of AD**, but **not yet as a validated early-stage or preclinical marker on par with recognition-memory decline or accelerated long-term forgetting**.",
+      "If the goal is a meaningful meta-analysis, the review should be rerun with a wider publication range, especially including the 1993-2009 core timing studies."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12542,
+    "output_tokens": 887,
+    "total_tokens": 13429
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.5161290322580644,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.42105263157894735,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6356,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4575,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes some systematic review elements such as eligibility criteria, screening summary, and a list of included studies, but it lacks standard sections like abstract, introduction, detailed methods, results synthesis, discussion, conclusion, references, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) of L\u2011type calcium channel antagonists (verapamil, diltiazem, nimodipine, nifedipine, methoxyverapamil, isradipine) compared with placebo or standard treatments in patients with bipolar disorder",
+      "For efficacy and acceptability, only double\u2011blind studies were considered",
+      "for adverse effects, single\u2011blind or open RCTs were also permitted",
+      "the most relevant non\u2011randomised evidence was summarised separately",
+      "Crossover trials were eligible only if first\u2011period data could be used.",
+      "Studies had to enrol patients with a primary diagnosis of bipolar disorder (any subtype, any standardised diagnostic criteria) and could examine LTCC antagonists as monotherapy or as add\u2011on treatment when pre\u2011existing treatments were evenly distributed."
+    ],
+    "exclusion_criteria": [
+      "they were not RCTs (e.g., reviews, case reports, open\u2011label non\u2011controlled studies)",
+      "did not study an eligible LTCC antagonist",
+      "did not include a bipolar disorder population",
+      "or had no usable abstract information"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After screening all 200 candidates, nine primary\u2011study articles met the inclusion criteria.",
+      "All are double\u2011blind RCTs that directly evaluate a relevant LTCC antagonist for acute manic episodes, maintenance treatment, or both, in patients with bipolar disorder.",
+      "No other candidate in the pool was eligible for inclusion."
+    ]
+  }
+}

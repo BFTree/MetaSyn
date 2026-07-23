@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15930,
+    "output_tokens": 1133,
+    "total_tokens": 17063
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.5308,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6009,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening approach, included/excluded studies, synthesis of findings, limitations, and included articles, but it lacks a formal abstract, introduction, detailed search strategy, quality assessment, quantitative meta-analysis methods, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies, not reviews/protocols/editorials.",
+      "Randomized controlled trials.",
+      "Conducted in adolescents/young people within the target age range.",
+      "Evaluating a digital sleep-focused behavioral intervention as the primary intervention.",
+      "Using a control/comparator group.",
+      "Reporting sleep outcomes from the title/abstract."
+    ],
+    "exclusion_criteria": [
+      "protocols, reviews, qualitative studies, implementation-only studies, open trials, quasi-randomized studies, non-randomized studies, pilot RCTs when clearly labeled as pilot and excluded by the review",
+      "studies where sleep was not the primary intervention target",
+      "studies centered on physical illness populations excluded by the review",
+      "studies using substantial non-digital or telephone/human-coaching delivery as the primary mode."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these included studies, digital sleep interventions generally improved insomnia symptoms and some self-reported sleep outcomes compared with control conditions.",
+      "Evidence for mental health improvement is present but less consistent and often secondary to sleep gains.",
+      "The included evidence suggests a consistent pattern for digital CBT-I and related digital insomnia interventions:",
+      "Insomnia severity: improved in all clearly eligible CBT-I studies versus waitlist or active control.",
+      "Sleep quality / related sleep outcomes: generally improved, especially self-reported sleep problems, presleep arousal, dysfunctional beliefs, sleep hygiene, and daytime functioning.",
+      "Mental health outcomes: some evidence of benefit, particularly depressive and anxiety-related symptoms, but effects are less uniform than for sleep.",
+      "CBT-I-focused digital interventions show clearer benefits than lighter-touch sleep education or text-message programs.",
+      "Lower-intensity education-only or text-message approaches appear less effective."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10754,
+    "output_tokens": 1067,
+    "total_tokens": 11821
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6761,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5026,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included/excluded studies, evidence synthesis, strengths/limitations, and a bottom line, but it lacks a formal Abstract, Introduction, detailed Methods/search strategy, quality assessment/risk of bias, full PRISMA-style flow, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trial/cluster-randomized trial",
+      "newborns/young infants up to 59 days in low- and middle-income countries",
+      "home visits by trained CHWs that include assessment/identification of serious illness in young infants",
+      "usual care/control without those home visits",
+      "successful identification/referral of serious illness and/or improved care seeking from health facilities",
+      "within the review search period ending 2014-10-21"
+    ],
+    "exclusion_criteria": [
+      "non-RCTs",
+      "high-income settings",
+      "protocol, not a completed primary results paper",
+      "published 2016, outside the stated search end date",
+      "CHW home visits were used, but the abstract does not clearly report newborn serious-illness identification or care-seeking outcomes as required",
+      "although relevant in population/intervention/design, the abstract does not clearly report the required outcomes of successful identification of serious illness or improved facility care seeking for sick young infants",
+      "Non-randomized, observational, review, protocol, high-income, or non-neonatal studies were excluded on design/population/intervention grounds."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "From the eligible abstracts, the evidence suggests that **home-visiting CHW interventions can improve care-seeking for sick newborns/young infants in LMIC settings**.",
+      "This directly supports the review question that CHW home visits can increase facility care-seeking for sick newborns.",
+      "This also supports a positive effect on care-seeking for neonatal illness.",
+      "A key limitation is that, from the supplied abstracts alone, the evidence is much stronger for **care-seeking outcomes** than for **diagnostic accuracy** outcomes.",
+      "Using only the supplied candidate pool and title/abstract information, the evidence indicates that **home visits by trained community health workers probably improve care-seeking from health facilities for serious illness in newborns/young infants in LMICs**.",
+      "However, the supplied abstracts do **not clearly provide sensitivity/specificity data** on CHW identification of serious illness, so the evidence for diagnostic accuracy is limited at abstract level."
+    ]
+  }
+}

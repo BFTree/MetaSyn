@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9941,
+    "output_tokens": 1015,
+    "total_tokens": 10956
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.7992,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6218,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes an objective, screening criteria, study summary, interpretation, and included-study list, but it lacks formal Abstract/Introduction/Methods/Results/Discussion/Conclusion sections, detailed search strategy, data extraction process, quality assessment, and full PRISMA-style synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only follow\u2011up studies of randomised controlled trials (RCTs) that delivered a lifestyle intervention to women with overweight or obesity before or during pregnancy and reported eligible cardiovascular outcomes in their offspring (any paediatric age) were considered."
+    ],
+    "exclusion_criteria": [
+      "Protocols, reviews, observational studies not linked to the original RCT intervention, animal studies, and interventions not targeting maternal overweight/obesity were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Evidence from these seven primary studies consistently suggests that lifestyle interventions in women with obesity\u2014whether delivered before conception or during pregnancy\u2014can favourably influence offspring cardiac structure and function in early childhood.",
+      "The most robust findings are a prevention of pathological left ventricular concentric remodelling (thinner walls, lower mass) and improvements in systolic and diastolic function indices.",
+      "Effects on heart rate are also noted, while blood pressure and arterial stiffness outcomes remain less conclusive.",
+      "The preconception window appears particularly promising, with structural and functional benefits persisting to mid\u2011childhood.",
+      "Limitations include considerable attrition, small sample sizes, and heterogeneity in outcome measurement, but the overall direction of effect supports the potential for early maternal lifestyle change to improve the cardiovascular health trajectory of the next generation."
+    ]
+  }
+}

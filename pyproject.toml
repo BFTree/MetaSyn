@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metasyn-benchmark"
+version = "1.2.0"
+description = "Reproducible retrieval, RAG, and evaluation code for MetaSyn"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = {text = "MIT"}
+dependencies = [
+  "datasets==3.0.0",
+  "faiss-cpu==1.8.0",
+  "numpy==1.24.4",
+  "openai==1.46.1",
+  "python-dotenv==1.0.1",
+  "rank-bm25==0.2.2",
+  "sentence-transformers==3.2.1",
+  "torch==2.3.1",
+  "transformers==4.43.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

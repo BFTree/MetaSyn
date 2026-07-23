@@ -1,0 +1,79 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21563,
+    "output_tokens": 2398,
+    "total_tokens": 23961
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1724137931034483,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.9310344827586207,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.4983,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4869,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is comprehensive and well organized, with clear review question, eligibility and exclusion criteria, local search strategy, screening decisions, study characteristics, narrative synthesis, meta-analysis feasibility assessment, risk-of-bias considerations, limitations, conclusion, and sources, but it lacks fully detailed PRISMA-style reporting such as a flow diagram, complete data extraction procedures, and formal quality-assessment results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials",
+      "Case-control studies",
+      "Cross-sectional studies",
+      "Population surveys",
+      "Human adults aged 18 years or older",
+      "Gingivitis or periodontitis present at baseline",
+      "In vivo studies only",
+      "Any country",
+      "Healthy overall dietary patterns or food-group-based dietary patterns associated with better general health",
+      "Broadly defined as low in refined carbohydrates, low in saturated fats, high in fibre, and high in nutritional value",
+      "Examples prespecified in the brief: Mediterranean, Optimised, Okinawan, Low Inflammatory diets",
+      "Unhealthy/Western diet",
+      "Standard dietary habits",
+      "Dietary patterns associated with poorer general health",
+      "Directly measured periodontal clinical parameters assessed on participants by a qualified examiner",
+      "Examples: bleeding on probing (BOP), clinical attachment loss (CAL), probing pocket depth (PPD), gingival index (GI), or equivalent clinical periodontal measures",
+      "Minimum intervention or follow-up duration: 4 weeks",
+      "Change over time required",
+      "Sample size at least 20",
+      "Any language where translation is possible"
+    ],
+    "exclusion_criteria": [
+      "Animal studies",
+      "Fewer than 20 participants",
+      "No direct clinical periodontal measurement",
+      "Radiograph-only or self-reported periodontal outcomes",
+      "No healthy-versus-unhealthy dietary pattern comparison",
+      "Single-food studies",
+      "Beverage-only studies",
+      "Supplement-only studies without whole foods",
+      "Case reports",
+      "Duplicate studies using the same data source",
+      "Elimination diets including vegetarian or vegan diets",
+      "Expert opinion pieces",
+      "Unretrievable data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "healthy overall dietary patterns may improve clinical signs of gingival inflammation in adults with gingivitis",
+      "The most defensible conclusion is that healthy dietary patterns may be a useful adjunct for reducing gingival inflammation, but stronger, fully reported, and protocol-eligible studies are needed\u2014especially in established periodontitis.",
+      "the current local corpus does **not support a robust quantitative meta-analysis** and does **not provide strong evidence for periodontitis-specific clinical improvements** such as CAL or PPD attributable to diet alone."
+    ]
+  }
+}

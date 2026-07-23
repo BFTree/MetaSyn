@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29271,
+    "output_tokens": 1260,
+    "total_tokens": 30531
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.3541666666666667,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.7708333333333334,
+    "conditional_retention": 0.35294117647058826,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6942,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4886,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, screening results, study characteristics, findings, limitations, conclusion, included-study list, and references, and it includes systematic-review elements such as search queries, eligibility criteria, screening decisions, and synthesis narrative, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment, detailed data extraction methods, PRISMA flow diagram/counts, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Study of melatoninergic agents on melatonin rhythm and sleep\u2013wake cycle in healthy participants or patients with psychiatric disorders",
+      "Randomized controlled trial",
+      "Adults aged 18\u201365 years",
+      "Data on internal rhythms such as sleep\u2013wake cycle or circadian melatonin rhythm"
+    ],
+    "exclusion_criteria": [
+      "Topic irrelevant",
+      "Animal or cell studies",
+      "Dementia, neurological disorders, organic brain damage, autism, intellectual disability",
+      "Medical conditions affecting circadian rhythms",
+      "Pregnancy/lactation",
+      "Non-English",
+      "Published before January 1, 1980"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus supports a firm conclusion that **melatoninergic agents can modulate sleep\u2013wake parameters and circadian timing in adults**, especially in healthy experimental paradigms.",
+      "The strongest evidence concerns **phase shifting and sleep initiation**.",
+      "Ramelteon shows a particularly important **non-linear dose-response**, with **1\u20134 mg outperforming 8 mg** for phase advance after schedule shift.",
+      "Tasimelteon demonstrates that a melatonin agonist can improve both **circadian alignment and objective sleep maintenance** after abrupt sleep-time advance.",
+      "Low-dose melatonin reliably shortens sleep latency, and daytime administration can promote daytime sleep.",
+      "In psychiatric populations, the evidence is much thinner.",
+      "The schizophrenia trial suggests meaningful benefit of add-on ramelteon on **sleep quality, melatonin biology, and psychiatric symptoms**, with a possibly stronger effect in patients with negative symptoms.",
+      "My concrete assessment is that the evidence base justifies **high confidence in chronobiotic efficacy**, **moderate confidence in sleep-promoting efficacy**, and only **low confidence in disorder-specific psychiatric efficacy outside schizophrenia**.",
+      "For bipolar disorder and MDD, the corpus supports the importance of circadian disruption, but not a strong evidence-based claim that melatonin, ramelteon, or tasimelteon has proven therapeutic circadian benefit in randomized adult psychiatric trials within the review window."
+    ]
+  }
+}

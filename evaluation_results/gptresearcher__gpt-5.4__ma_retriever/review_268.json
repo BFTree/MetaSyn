@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34336,
+    "output_tokens": 1096,
+    "total_tokens": 35432
+  },
+  "metrics": {
+    "retrieval_recall": 0.6785714285714286,
+    "retrieval_precision": 0.40425531914893614,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.7659574468085106,
+    "conditional_retention": 0.5263157894736842,
+    "post_retrieval_loss": 0.32142857142857145,
+    "inclusion_consistency": 0.5452,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6529,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Screening/Study Selection, Results, Limitations, Conclusion, Included Studies, and References, and it includes key meta-analysis elements such as search strategy, eligibility criteria, screening rationale, and qualitative synthesis, but it lacks a formal quality/risk-of-bias assessment and full PRISMA-style reporting needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adult MDD population",
+      "Double-blind randomized placebo-controlled trial",
+      "Minimum duration 12 weeks",
+      "Enriched-responder or enriched-stabilized design: patients first stabilized/responded on the same antidepressant, then randomized to continue that antidepressant or receive placebo"
+    ],
+    "exclusion_criteria": [
+      "Population restricted to children/adolescents or older adults",
+      "Dual-diagnosis populations",
+      "Continuation studies randomizing acutely symptomatic patients",
+      "Non-placebo-controlled head-to-head studies",
+      "Reviews, protocols, or secondary analyses without eligible placebo-randomized maintenance comparison",
+      "Studies without clear maintenance/continuation stabilization on the same antidepressant of interest"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The retrieved local corpus provides substantial evidence that continuing an antidepressant after remission or stable response reduces relapse or recurrence in adults with MDD compared with switching to placebo.",
+      "The most persuasive evidence in this corpus comes from escitalopram and venlafaxine, both of which show large and durable effects over 12 to 52 weeks and, for venlafaxine, up to 24 months ([42540](metasyn://corpus/42540); [40002](metasyn://corpus/40002)).",
+      "Fluoxetine, sertraline, citalopram, duloxetine, paroxetine, and agomelatine also show directionally consistent benefit.",
+      "My concrete judgment is that maintenance antidepressant therapy has genuine relapse-prevention efficacy in previously stabilized adult responders, and this is not plausibly dismissed as mere artifact.",
+      "At the same time, the enriched-withdrawal design almost certainly inflates apparent effectiveness relative to routine clinical practice, because it excludes nonresponders and patients who could not tolerate treatment, and in some cases may confound discontinuation effects with true relapse.",
+      "The most defensible conclusion is therefore not simply \u201cantidepressants work in maintenance,\u201d but rather: **for adults with MDD who have already responded to and tolerated a specific antidepressant, continuing that same medication usually confers clinically meaningful protection against relapse or recurrence over the next 6 to 24 months, though the size of benefit in broader practice is likely smaller than these trials suggest**."
+    ]
+  }
+}

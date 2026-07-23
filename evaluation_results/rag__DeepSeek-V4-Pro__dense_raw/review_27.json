@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8075,
+    "output_tokens": 1229,
+    "total_tokens": 9304
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7857142857142858,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.4854,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8164,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as objective, screening process, eligibility criteria, study characteristics, synthesis, limitations, conclusion, and included articles, but it lacks a formal abstract/introduction, detailed search strategy, data extraction methods, and quality/risk-of-bias assessment needed for a PRISMA-level score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "articles published up to 8 October 2022",
+      "randomized controlled trials, prospective and retrospective cohort studies, cross-sectional studies, and case\u2013control studies",
+      "adult population with obesity (BMI \u2265 35)",
+      "exposure to OSA or OSA-related indicators (apnea\u2013hypopnea index, intermittent hypoxia)",
+      "outcomes related to NAFLD (presence, severity, histology, liver enzymes)"
+    ],
+    "exclusion_criteria": [
+      "Descriptive studies, case series, case reports, reviews, and animal/in vitro studies were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In adults with severe obesity, OSA severity and nocturnal hypoxia are independently associated with a higher risk and greater histological severity of NAFLD, especially NASH and fibrosis.",
+      "Bariatric metabolic surgery appears to improve both OSA and NAFLD, with correlated improvements.",
+      "However, higher\u2011quality longitudinal studies with standardized liver histology are needed to confirm these findings and to establish whether treating OSA can directly modify the course of NAFLD in this population.",
+      "The included studies consistently show that in adults with severe obesity, OSA\u2011related indicators\u2014especially measures of intermittent hypoxia (AHI, oxygen desaturation index, minimum SpO\u2082, time spent with SpO\u2082 < 90%)\u2014are associated with the presence and histological severity of NAFLD, including NASH and fibrosis.",
+      "The single longitudinal study (Candidate 002) provides evidence that BMS improves both OSA and NAFLD, and that the degree of improvement in one condition correlates with the other."
+    ]
+  }
+}

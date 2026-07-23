@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14361,
+    "output_tokens": 1376,
+    "total_tokens": 15737
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.7058823529411765,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5359,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, outcome synthesis, modality-specific findings, limitations, and conclusion sections, but it lacks the full SR/MA structure such as explicit abstract, introduction, methods, results, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "not a primary trial (systematic reviews, umbrella reviews, narrative reviews, protocols, secondary analyses)",
+      "wrong population (children/adolescents, clinical disease populations, cancer survivors, NAFLD, T2D, etc.)",
+      "wrong intervention/comparator (no exercise-matched unrestricted-eating control, non-TRE fasting such as 5:2/ADF/Ramadan, TRE compared with another diet rather than unrestricted eating)",
+      "study duration **<4 weeks**",
+      "not clearly randomized or not controlled"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included trials, the overall signal is fairly consistent: when TRE is paired with exercise, fat mass and/or body fat percentage often decrease, while fat-free mass is generally maintained.",
+      "Based on the supplied candidate pool, the eligible randomized evidence supports that TRE combined with exercise can improve body composition in adults, mainly by reducing fat mass and body fat percentage while generally preserving fat-free mass.",
+      "The most consistent benefit is greater fat loss, while FFM preservation appears comparable to unrestricted eating with matched exercise rather than clearly superior.",
+      "The evidence is promising but short-term, small-sample, and heterogeneous."
+    ]
+  }
+}

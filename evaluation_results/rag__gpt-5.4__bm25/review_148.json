@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6241,
+    "output_tokens": 1337,
+    "total_tokens": 7578
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.5833333333333334,
+    "inclusion_f1": 0.5384615384615384,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.5384615384615384,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.7105,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5945,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, synthesis, eligible studies, and exclusions, but it lacks most formal systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, quality assessment, and full PRISMA-style search/data extraction details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary case-control or cohort studies in adults",
+      "full-text manuscripts",
+      "exposure of interest being total alcohol or specific alcoholic beverages",
+      "endpoint being renal cell/kidney cancer incidence (not mortality)",
+      "reporting RR/OR/HR with 95% CI or enough information noted in the abstract"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses",
+      "pooled reviews of other studies when not clearly a primary study unless they analyze original participant-level data as a pooled prospective analysis",
+      "non-renal cancer topics",
+      "mechanistic/genetic studies where alcohol was only a covariate/effect modifier and not the main exposure",
+      "mortality-endpoint studies",
+      "articles published after the source review search end if they were clearly not available by 2011-08-31",
+      "mortality-only kidney cancer studies per the explicit criteria",
+      "Published after the review search end and therefore not eligible for this review question as framed: 006, 038, 041, 098, and other later papers.",
+      "Not primarily alcohol-exposure RCC studies or alcohol only incidental/covariate: 014, 015, 026, 045, 078, 112, 052, 090, 163, 200.",
+      "Non-RCC or non-primary-study articles: many others in the pool."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible evidence, the direction of association is fairly consistent: **alcohol intake is generally associated with a lower risk of renal cell carcinoma/renal cell cancer**, especially for moderate intake levels.",
+      "Based on the supplied candidate pool and abstract-only screening, the eligible evidence supports a **consistent inverse association between alcohol consumption and renal cell cancer risk**, with broadly similar findings across sexes and study designs and no clear abstract-level evidence that the association differs materially by beverage type."
+    ]
+  }
+}

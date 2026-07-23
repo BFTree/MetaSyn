@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19017,
+    "output_tokens": 1138,
+    "total_tokens": 20155
+  },
+  "metrics": {
+    "retrieval_recall": 0.88,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.88,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.8627450980392156,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7047,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7199,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Screening Results, Synthesis, Discussion, Conclusion, and an included-study list, and it includes screening criteria and a synthesis structure, but it lacks a true abstract, detailed database search strategy, formal data extraction procedures, quality/risk-of-bias assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies reporting [Ca\u00b2\u207a]\u1d62 at baseline or after stimulation, calcium flux or mobilisation, or calcium\u2011mediated electrophysiological signals in any cell type (including iPSC\u2011derived cells)."
+    ],
+    "exclusion_criteria": [
+      "Studies measuring only blood or other body fluids, calcium\u2011related molecules (channels, binding proteins, Ca\u00b2\u207a\u2011ATPase, TRPC7), or using animal models were excluded.",
+      "Reviews, meta\u2011analyses, protocols, editorials, and conference abstracts were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Primary studies consistently demonstrate elevated basal intracellular calcium concentrations and enhanced stimulated calcium responses in multiple cell types from individuals with bipolar disorder compared with healthy controls.",
+      "The included studies provide robust and consistent evidence for hyperactive intracellular calcium signalling in bipolar disorder.",
+      "Basal [Ca\u00b2\u207a]\u1d62 is elevated in multiple blood cell types, and stimulated calcium responses to diverse agonists are exaggerated.",
+      "Evidence for diagnostic specificity (especially serotonin\u2011induced platelet calcium mobilisation) and for state\u2011 versus trait\u2011related patterns is accumulating but requires further systematic evaluation."
+    ]
+  }
+}

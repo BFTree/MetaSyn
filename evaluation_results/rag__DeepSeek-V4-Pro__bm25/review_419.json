@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14073,
+    "output_tokens": 1330,
+    "total_tokens": 15403
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6159,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3957,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, eligibility criteria, quality assessment, synthesis, and conclusion, but it lacks several standard sections such as an abstract, introduction, references, detailed search strategy, data extraction procedures, and full PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "adults \u226518 years with overweight/obesity and depressive symptoms",
+      "delivered a psychological IMI (web- or app-based) targeting depressive symptoms",
+      "compared the IMI with standard care, waitlist, or no intervention",
+      "reported depressive symptom severity and weight outcomes"
+    ],
+    "exclusion_criteria": [
+      "Protocols",
+      "reviews",
+      "editorials",
+      "non-RCTs",
+      "studies in pregnant or post-bariatric populations",
+      "systematic reviews",
+      "protocols",
+      "pilot/feasibility studies without randomisation",
+      "interventions not targeting depressive symptoms",
+      "populations without documented overweight/obesity",
+      "interventions not delivered via internet/mobile platforms"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one eligible RCT was identified.",
+      "It provides preliminary evidence that a self\u2011guided eHealth program targeting both weight and mood can produce clinically meaningful, medium\u2011sized reductions in depressive symptoms and weight among men with overweight/obesity and mild\u2011to\u2011moderate depressive symptoms.",
+      "However, the evidence base is extremely sparse: no trials in mixed\u2011gender or female populations, no comparisons with active controls, and no long\u2011term follow\u2011up beyond 6 months.",
+      "The lack of additional studies precludes meta\u2011analysis and limits the certainty of conclusions.",
+      "A single RCT (Candidate 017) met the inclusion criteria, demonstrating that an internet\u2011based self\u2011help program combined with weight\u2011loss advice can improve depressive symptoms and reduce weight in men with comorbid overweight/obesity and depression.",
+      "The evidence is promising but insufficient to draw firm conclusions about the overall effectiveness of IMIs for this population.",
+      "Large, well\u2011designed RCTs that include diverse populations, active comparators, and extended follow\u2011up are urgently needed to inform clinical practice."
+    ]
+  }
+}

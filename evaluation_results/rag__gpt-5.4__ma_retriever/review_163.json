@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18259,
+    "output_tokens": 1374,
+    "total_tokens": 19633
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.8928571428571429,
+    "inclusion_precision": 0.8928571428571429,
+    "inclusion_f1": 0.8928571428571429,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8928571428571429,
+    "post_retrieval_loss": 0.10714285714285714,
+    "inclusion_consistency": 0.6112,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5225,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, narrative evidence synthesis, limitations, and included/excluded study lists, but it lacks a formal abstract, introduction, methods section, detailed search strategy, data extraction process, quality/risk-of-bias assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language observational primary studies",
+      "bisphosphonate exposure (typically \u22651 prescription/use)",
+      "incident cancer risk versus non-use/comparison groups",
+      "published up to the review search end date (2019-12-07)"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses",
+      "protocols",
+      "narrative reviews",
+      "non-human/in vitro studies",
+      "treatment-outcome studies not about cancer incidence",
+      "MRONJ/other adverse-event papers",
+      "studies published after the search end date",
+      "records with insufficient abstract information to judge eligibility confidently from title/abstract alone"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence does **not consistently suggest an increased overall cancer risk** from bisphosphonate use.",
+      "Overall, from title/abstract evidence alone, the balance of studies leans toward **no overall increase**, with some suggestion of reduced risk in certain datasets.",
+      "So, the colorectal signal is **suggestive but inconsistent**, and vulnerable to residual confounding.",
+      "Findings are mixed but tend to suggest either:",
+      "This is one of the more consistently favorable site-specific signals in the pool.",
+      "Overall, the upper-GI evidence is **conflicted**, and any esophageal risk signal appears **study-dependent and not consistently replicated**.",
+      "Thus, **duration-response evidence is inconsistent** and does not establish a uniform pattern across cancer types.",
+      "From the supplied candidate pool, the observational evidence up to 2019 supports the conclusion that **bisphosphonate use is not clearly associated with an increased risk of overall cancer**."
+    ]
+  }
+}

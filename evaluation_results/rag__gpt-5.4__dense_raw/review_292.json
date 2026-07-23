@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5864,
+    "output_tokens": 1426,
+    "total_tokens": 7290
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3636363636363636,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.4807,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4362,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening, eligibility, synthesis, conclusions, included/excluded studies, and it explains criteria and decision logic, but it lacks a full PRISMA-style structure with a detailed search strategy, formal methods section, and complete meta-analysis reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "systematic reviews **with meta-analysis**",
+      "published **2021-01-01 to 2024-07-31**",
+      "human epidemiological evidence",
+      "about associations between **periodontitis** and **noncommunicable diseases**",
+      "relevant to the umbrella review\u2019s target outcomes"
+    ],
+    "exclusion_criteria": [
+      "not a systematic review with meta-analysis",
+      "outside date range",
+      "protocol only",
+      "umbrella review rather than eligible source review",
+      "primary study rather than review",
+      "topic not within the target NCD-periodontitis association",
+      "not clearly human epidemiological review",
+      "I did **not** include reviews on pregnancy outcomes, inflammatory bowel disease, autoimmune disease outside the target framing, oral cancer/urogenital cancer published after July 2024, narrative reviews, protocols, or primary cohort/cross-sectional studies."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included evidence consistently supports that periodontitis is associated with higher risk of several NCD outcomes, but the strength of inference varies by outcome and by study design.",
+      "Based on the eligible records in this fixed pool, the evidence from recent systematic reviews with meta-analysis suggests that **periodontitis is associated with increased risk of several noncommunicable diseases**, particularly **diabetes**, and also **stroke**, **metabolic syndrome**, and **lung cancer**.",
+      "The most convincing signal in this set comes from the longitudinal diabetes review, which also reports a severity gradient.",
+      "Evidence for other outcomes is supportive but more vulnerable to confounding, heterogeneity, and mixed study designs.",
+      "The candidate pool does **not** provide adequate recent review-level evidence for the full **bidirectional** relationship across the main NCDs specified.",
+      "As a result, the best-supported synthesis is: periodontitis appears to function as a risk marker, and possibly a risk factor, for several NCDs, but the reverse direction is insufficiently represented here."
+    ]
+  }
+}

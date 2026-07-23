@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17004,
+    "output_tokens": 1236,
+    "total_tokens": 18240
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.4278,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4338,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with screening criteria, narrative synthesis, limitations, included studies, and a bottom line, but it lacks major required systematic review sections such as a formal abstract, introduction, detailed methods, PRISMA-style search/screening process, quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language original prospective level I/II studies",
+      "published from 2010-01-01 to 2022-11-15",
+      "enrolling hypertensive patients with CKD and resistant/refractory hypertension",
+      "evaluating endovascular catheter-based radiofrequency renal denervation"
+    ],
+    "exclusion_criteria": [
+      "not centered on excluded secondary causes or major excluded comorbid populations",
+      "reviews/consensus statements/meta-analyses",
+      "published after the search end date",
+      "studied atrial fibrillation adjunctive ablation rather than isolated CKD hypertension cohorts",
+      "focused on ESRD/dialysis rather than the review\u2019s target CKD population",
+      "used non-radiofrequency or non-endovascular approaches",
+      "case reports/animal studies",
+      "did not clearly report a CKD-specific prospective cohort within the required window"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "From the supplied candidate pool, the abstract-level evidence suggests that catheter-based radiofrequency RDN in hypertensive CKD patients is associated with meaningful BP reduction and generally stable kidney function over 6 to 12 months, with limited longer-term data and mostly small uncontrolled studies.",
+      "The evidence supports feasibility and short-term safety more strongly than it supports definitive renal preservation.",
+      "For effectiveness, the eligible abstract-level evidence supports that radiofrequency catheter-based RDN is associated with reduced office BP and usually reduced ambulatory BP in hypertensive CKD patients at 6 and 12 months.",
+      "For kidney preservation, the evidence is weaker.",
+      "Most studies support stability of kidney function rather than clear improvement.",
+      "The evidence base is therefore low certainty for causal claims."
+    ]
+  }
+}

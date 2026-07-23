@@ -1,0 +1,74 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25830,
+    "output_tokens": 1187,
+    "total_tokens": 27017
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.5,
+    "inclusion_recall": 0.12121212121212122,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.2105263157894737,
+    "screening_accuracy": 0.5833333333333334,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.42424242424242425,
+    "inclusion_consistency": 0.5233,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6349,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes strong systematic-review elements such as eligibility criteria, search strategy, screening decisions, included studies, and qualitative synthesis, but it lacks several standard structural sections including an abstract, formal introduction, discussion, conclusion, reference list, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Patients with MDD who achieved remission or clear response/remission during acute antidepressant treatment.",
+      "Continuation of the same antidepressant medication used to achieve remission.",
+      "Switching to placebo/discontinuation of the antidepressant.",
+      "Relapse rate",
+      "Treatment failure",
+      "All-cause dropout",
+      "Tolerability/acceptability",
+      "Only double-blind randomized controlled trials with a discontinuation design.",
+      "Operationalized diagnoses limited to:",
+      "Feighner criteria",
+      "Research Diagnostic Criteria",
+      "DSM-III",
+      "DSM-III-R",
+      "DSM-IV",
+      "DSM-5",
+      "ICD-10"
+    ],
+    "exclusion_criteria": [
+      "Studies focused on:",
+      "Bipolar disorder",
+      "Personality disorder",
+      "Substance use disorder",
+      "Refractory depression",
+      "Seasonal depression",
+      "Perinatal depression",
+      "Depression secondary to specific physical diseases"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the definitively included studies, the direction of evidence consistently favored **continuation of the antidepressant over switching to placebo** for prevention of relapse or depressive return during maintenance/discontinuation phases.",
+      "No included study, as represented in the local corpus record, suggested placebo was superior.",
+      "The broad qualitative conclusion is that, among patients who improved or remitted on acute antidepressant treatment, maintaining the same antidepressant reduced the likelihood of subsequent depressive worsening compared with discontinuation to placebo.",
+      "On that basis, the evidence direction is again favorable to continued antidepressant treatment.",
+      "The benefit of maintenance treatment versus placebo was observed across multiple pharmacologic classes, suggesting that the protective effect is not confined to a single antidepressant mechanism.",
+      "The corpus evidence supports maintenance benefit under routine once-daily continuation strategies.",
+      "The beneficial effect of continuation appears across both medium-term and longer-term maintenance durations."
+    ]
+  }
+}

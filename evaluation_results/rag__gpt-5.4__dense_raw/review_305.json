@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13613,
+    "output_tokens": 1583,
+    "total_tokens": 15196
+  },
+  "metrics": {
+    "retrieval_recall": 0.6595744680851063,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.85,
+    "conditional_retention": 0.03225806451612903,
+    "post_retrieval_loss": 0.6382978723404256,
+    "inclusion_consistency": 0.4522,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.549,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct sections for screening criteria, results, evidence synthesis, limitations, exclusions, and final included study, but it lacks full PRISMA-style detail such as a complete search strategy, data extraction process, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "offspring of women with PCOS vs non-PCOS",
+      "observational primary studies",
+      "birth outcomes such as preterm birth, fetal growth restriction, low birth weight, mean birthweight, SGA/LGA, macrosomia, NICU admission, perinatal mortality",
+      "2017-01-01 to 2022-06-13",
+      "English",
+      "Rotterdam criteria required"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, non-primary articles, studies using self-report or ICD-based PCOS diagnosis, studies without the relevant two-group comparison, and studies not reporting outcomes of interest",
+      "outside the date window,",
+      "reviews/meta-analyses/protocols,",
+      "not about birth outcomes,",
+      "did not compare PCOS vs non-PCOS offspring,",
+      "were restricted to women with PCOS only,",
+      "or did not clearly state Rotterdam criteria in the abstract."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one eligible primary study was identifiable from the supplied abstracts, so the evidence base available here is very limited and not sufficient for a meaningful quantitative synthesis.",
+      "Using only the supplied pool, the available eligible evidence provides limited support for an association between maternal PCOS and adverse birth-related outcomes, particularly in an ART-treated population.",
+      "the evidence comes from one study only",
+      "the abstract emphasizes phenotype-specific differences rather than a single pooled PCOS effect",
+      "and no broader synthesis across natural conception and ART populations is possible from the eligible pool provided.",
+      "Based only on the supplied candidate pool and abstract-level screening, one observational study met the review criteria.",
+      "It suggests increased adverse pregnancy/birth-related outcomes in some Rotterdam-defined PCOS phenotypes after IVF/ICSI, including preterm birth within composite adverse outcomes.",
+      "However, this is insufficient to establish a robust evidence base for PCOS as an independent risk factor for adverse offspring birth outcomes across the broader population."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14417,
+    "output_tokens": 1089,
+    "total_tokens": 15506
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.7872340425531915,
+    "inclusion_consistency": 0.5722,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4883,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening result, exclusions, evidence synthesis, and included-studies statement, but it lacks a formal abstract, introduction, full methods, results, discussion, conclusion, references, and detailed PRISMA-style search, extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "only studies where **PCOS diagnosis met the Rotterdam criteria** were eligible",
+      "PCOS vs non-PCOS offspring birth outcomes",
+      "2017-01-01 to 2022-06-13 window",
+      "primary observational studies"
+    ],
+    "exclusion_criteria": [
+      "clearly used **non-Rotterdam criteria** such as NIH, or",
+      "did not report enough in the abstract to verify Rotterdam-based diagnosis, or",
+      "were not the right comparison design for PCOS vs non-PCOS offspring birth outcomes, or",
+      "fell outside the date window, or",
+      "were reviews rather than primary observational studies.",
+      "ICD-based PCOS diagnosis"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied candidate pool and the stated eligibility criteria, I found **no primary-study articles that can be confidently included** for this review question.",
+      "Because **no eligible primary studies were included**, there is **no abstract-level evidence from this fixed pool** that can be synthesized for the target question under the full criteria, especially the Rotterdam-only restriction.",
+      "No eligible study from the supplied pool can be used to estimate whether maternal PCOS is an **independent risk factor** for preterm birth, fetal growth restriction, low birth weight, mean birthweight, SGA, NICU admission, perinatal mortality, macrosomia, or LGA in offspring.",
+      "Any broader conclusion would require relaxing the protocol restrictions or using studies/full texts not available here, which I did not do.",
+      "**None were included.**"
+    ]
+  }
+}

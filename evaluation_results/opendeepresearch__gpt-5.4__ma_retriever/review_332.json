@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24716,
+    "output_tokens": 1326,
+    "total_tokens": 26042
+  },
+  "metrics": {
+    "retrieval_recall": 0.2682926829268293,
+    "retrieval_precision": 0.22448979591836735,
+    "inclusion_recall": 0.0975609756097561,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.17777777777777776,
+    "screening_accuracy": 0.8571428571428571,
+    "conditional_retention": 0.36363636363636365,
+    "post_retrieval_loss": 0.17073170731707318,
+    "inclusion_consistency": 0.7351,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7252,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a clear logical flow with all major sections present\u2014methods, screening, included/excluded studies, findings, limitations, and conclusion\u2014and it includes meta-analysis-specific elements like search queries and eligibility criteria, though it lacks full PRISMA rigor such as formal risk-of-bias assessment and a complete quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human mpox cases",
+      "Any age",
+      "Any gender",
+      "Focus on studies that allowed identification of the proportion of women among cases",
+      "Mpox/monkeypox infection",
+      "Proportion of women among cases, or sex distribution from which women could be identified or derived",
+      "Prevalence studies",
+      "Case series",
+      "Cross-sectional studies",
+      "Cohort studies",
+      "Case-control studies",
+      "Surveys",
+      "English language",
+      "Human studies",
+      "Published or unpublished data if present in the local corpus",
+      "Search period: inception to 2023-01-04"
+    ],
+    "exclusion_criteria": [
+      "Studies only of male cases",
+      "Studies not reporting sex distribution or proportion of women",
+      "Qualitative studies",
+      "Policy papers",
+      "Case reports",
+      "Opinion pieces"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus provided enough evidence to support a structured narrative synthesis, but **not a formal meta-analysis**, of the proportion of women among confirmed mpox cases up to **2023-01-04**.",
+      "**Before 2022 in endemic settings**, women formed a substantial share of mpox cases and, in some subgroups, could outnumber men.",
+      "**From 2022 onward in nonendemic outbreak reports available before the cutoff**, women represented only a small minority of cases.",
+      "The observed sex distribution of mpox therefore appears to vary importantly by **time period** and **geographic context**.",
+      "A precise pooled global proportion of women among confirmed mpox cases could not be estimated from the local corpus alone because of incomplete reporting, abstract-only availability, mixed confirmed/probable denominators, and date-window constraints."
+    ]
+  }
+}

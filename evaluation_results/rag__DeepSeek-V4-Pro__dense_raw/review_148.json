@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15059,
+    "output_tokens": 1006,
+    "total_tokens": 16065
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.7200000000000001,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.6763,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5486,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes Aim, Methods, screening results, study findings, Discussion, Included Studies, and Conclusion, but it lacks a formal abstract, introduction, references, detailed search strategy, data extraction process, quality assessment, and quantitative synthesis methods expected for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original case\u2011control and cohort studies that reported relative risk (RR) estimates with 95% confidence intervals (CIs) for categories or per\u2011unit increments of alcohol intake",
+      "Studies had to be of case\u2011control or cohort design, focus on total or specific alcoholic beverages as the exposure, and report RCC incidence (not mortality)."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta\u2011analyses, pooled analyses of published results, editorials, protocols, conference abstracts, and articles beyond the search end date (August\u202f31,\u202f2011) were excluded.",
+      "When multiple publications arose from the same underlying population, we retained the study that combined independent cohorts, made alcohol the primary exposure, or had the largest number of cases/longest follow\u2011up."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Inverse associations predominated, though results were not uniform:",
+      "The included studies collectively indicate that moderate alcohol consumption is generally associated with a reduced risk of RCC, with some evidence that the inverse association may be stronger in women or differ by beverage type (e.g., wine, beer).",
+      "However, a few case\u2011control studies reported null or, in one instance, possibly positive associations.",
+      "Because only abstracts were available, a full quantitative synthesis could not be performed, and the exact risk estimates for some studies remain unknown.",
+      "The evidence from the eligible primary studies largely supports an inverse relationship between alcohol intake and RCC risk, particularly for moderate consumption.",
+      "Sex\u2011 and beverage\u2011specific effects were suggested but not consistent across all studies.",
+      "The few null or opposing findings highlight the need for cautious interpretation and further detailed synthesis using full\u2011text data."
+    ]
+  }
+}

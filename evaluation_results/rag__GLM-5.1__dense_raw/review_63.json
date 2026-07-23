@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10600,
+    "output_tokens": 1324,
+    "total_tokens": 11924
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.7692307692307693,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5216,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7169,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a focused evidence synthesis and conclusion plus a study list, and it mentions inclusion/exclusion and screening criteria, but it lacks several standard review sections such as an abstract, full methods, discussion, and references, so it is good rather than very good."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary cohort studies",
+      "conventional or high-resolution manometry \u00b1 24-hour pH monitoring to compare pre-operative and post-operative data in adult morbidly obese patients undergoing laparoscopic vertical sleeve gastrectomy (LVSG/LSG)"
+    ],
+    "exclusion_criteria": [
+      "studies published after November 2023",
+      "non-human studies",
+      "reviews",
+      "meta-analyses",
+      "case reports",
+      "editorials",
+      "protocols",
+      "studies that did not utilize conventional or high-resolution manometry \u00b1 24-hour pH monitoring to compare pre-operative and post-operative data in adult morbidly obese patients undergoing laparoscopic vertical sleeve gastrectomy (LVSG/LSG)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The synthesized evidence from the 16 eligible cohort studies reveals consistent trends regarding the physiological impact of laparoscopic vertical sleeve gastrectomy (LVSG) on the esophagogastric junction and acid exposure in patients with morbid obesity, alongside uniformly successful BMI reduction.",
+      "The predominant finding across the literature is a significant decrease in LESP following LVSG.",
+      "Most studies assessing LESL reported a shortening or reduction in length post-operatively.",
+      "There is strong consensus that LVSG worsens objective GERD metrics.",
+      "All included studies reported significant and expected reductions in BMI following LVSG, confirming the efficacy of the intervention for weight loss (e.g., Candidates 002, 006, 007, 012).",
+      "The synthesis indicates that while LVSG achieves significant BMI reduction in morbidly obese patients, it predominantly compromises the antireflux barrier by decreasing LESP and shortening LESL, which corresponds with a consistent worsening of the DeMeester score and an increase in de novo or persistent GERD.",
+      "Rare exceptions of increased LESP or LESL suggest that specific surgical modifications (like hiatal repair or angle of His approximation) may alter these dynamics, though they do not typically override the trend of increased acid exposure."
+    ]
+  }
+}

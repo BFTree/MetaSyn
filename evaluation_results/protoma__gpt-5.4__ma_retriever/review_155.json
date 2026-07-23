@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 40371,
+    "output_tokens": 939,
+    "total_tokens": 41310
+  },
+  "metrics": {
+    "retrieval_recall": 0.9130434782608695,
+    "retrieval_precision": 0.4772727272727273,
+    "inclusion_recall": 0.5217391304347826,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.7727272727272727,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.391304347826087,
+    "inclusion_consistency": 0.6604,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5148,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it provides meta-analysis elements such as detailed search queries, screening criteria, study selection counts, and synthesis methods, but it falls short of excellent due to duplicate headings, an incomplete/formal references section, limited data extraction detail, and some PRISMA-style gaps such as an unspecified search start date."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies including patients diagnosed with breast cancer.",
+      "Studies evaluating statin use as the exposure, including overall statin use or specific classes such as lipophilic and hydrophilic statins, compared with non-use.",
+      "Studies reporting breast cancer-specific death and/or breast cancer recurrence as outcomes.",
+      "Observational or interventional comparative studies that provide effect estimates for the association between statin use and outcomes (e.g., hazard ratios, risk ratios, or odds ratios)."
+    ],
+    "exclusion_criteria": [
+      "Studies not conducted in breast cancer patients or not reporting results separately for breast cancer populations.",
+      "Studies without a comparison group of non-statin users, or studies assessing medications other than statins without isolating statin effects.",
+      "Studies reporting outcomes unrelated to breast cancer-specific death or breast cancer recurrence only (e.g., all-cause mortality only, drug response only, biomarker studies only).",
+      "Case reports, case series, reviews, editorials, letters, conference abstracts, animal studies, and laboratory-only studies without patient outcome data."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 13 studies of patients with breast cancer, statin use was associated with a significantly lower risk of breast cancer\u2013specific death and/or recurrence compared with non-use, with a pooled random-effects HR of 0.80 (95% CI 0.71\u20130.90; p=0.0002), indicating about a 20% relative risk reduction.",
+      "Clinically, this suggests that statins\u2014whether lipophilic or hydrophilic\u2014may confer meaningful adjunctive benefit in survivorship and disease control, particularly for patients who already have a cardiovascular indication for treatment.",
+      "On that basis, statin therapy can be considered a reasonable supportive strategy in breast cancer care when otherwise appropriate, but not yet as a stand-alone anticancer intervention.",
+      "The main caveat is the very high between-study heterogeneity (I\u00b2=95.7%), which limits certainty about the magnitude and consistency of benefit across populations, statin types, and treatment settings."
+    ]
+  }
+}

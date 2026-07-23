@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15342,
+    "output_tokens": 1157,
+    "total_tokens": 16499
+  },
+  "metrics": {
+    "retrieval_recall": 0.7352941176470589,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.5588235294117647,
+    "inclusion_precision": 0.8636363636363636,
+    "inclusion_f1": 0.6785714285714287,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.76,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.4206,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4711,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present with a clear narrative flow and included-study list, but the report lacks an abstract, detailed search strategy, data extraction and synthesis methods, formal quality/risk-of-bias assessment, and quantitative meta-analysis details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomized controlled trials (RCTs) published in English, Dutch, or French through 18 December 2023 were eligible.",
+      "Studies were included if they were RCTs (parallel or crossover) that enrolled adults with PSPS\u2011T2, compared any of the interventions of interest, and reported pain intensity."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, observational studies, case reports, animal studies, protocols, and studies on other populations were excluded.",
+      "not an RCT",
+      "wrong population (e.g., PSPS\u2011T1, spinal cord injury, postherpetic neuralgia)",
+      "systematic review or guideline",
+      "cost\u2011utility analysis",
+      "protocol",
+      "lack of pain intensity outcome"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Several RCTs demonstrated that SCS added to CMM/OMM provides statistically and clinically significant reductions in pain intensity compared to CMM alone.",
+      "Pain reductions were sustained up to 12\u201324 months.",
+      "Trials comparing SCS waveforms found that while all modalities reduced pain, high\u2011frequency (10\u202fkHz) and burst stimulation often provided greater back pain relief than traditional low\u2011frequency tonic stimulation, though some studies showed no significant difference.",
+      "Adding PNFS or subcutaneous stimulation to SCS improved back pain in patients with predominant leg pain response.",
+      "Epidural injections and percutaneous adhesiolysis were effective for post\u2011surgery syndrome.",
+      "Candidate 033 directly compared SCS to reoperation and found SCS more successful (9/19 vs 3/26 patients, p<0.01) and less likely to require crossover.",
+      "SCS also reduced the need for opioid analgesics.",
+      "Future updates should incorporate direct comparisons across all four treatment modalities and larger, sham\u2011controlled trials with longer follow\u2011up."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14760,
+    "output_tokens": 735,
+    "total_tokens": 15495
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.6391,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.638,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear target, screening criteria/outcomes, synthesis of evidence, conclusion, and included article citation, but it lacks a formal abstract, introduction, methods section with detailed search strategy/data extraction/quality assessment, discussion, and full references, limiting PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original prospective comparative studies (Level I or II) published between January 1, 2009, and June 1, 2021, assessing RDN+PVI versus PVI alone in hypertensive patients with AF"
+    ],
+    "exclusion_criteria": [
+      "Studies involving secondary hypertension, type I diabetes, late-stage kidney disease (mean eGFR < 45 mL/min/1.73 m\u00b2), congestive heart failure, or LVEF < 35% were excluded",
+      "reviews, meta-analyses, protocols, editorials, and out-of-date articles"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the eligible literature within the specified date range and criteria, adding renal denervation to pulmonary vein isolation in hypertensive patients with paroxysmal atrial fibrillation significantly reduces AF recurrence and improves systolic blood pressure control compared to PVI alone, without increasing procedural complications.",
+      "Evidence regarding eGFR outcomes in this specific population and intervention combination remains absent from the eligible primary study pool.",
+      "The addition of RDN significantly increased the likelihood of freedom from AF, atrial flutter, or atrial tachycardia at 12 months.",
+      "RDN provided a significant additive benefit in systolic BP reduction.",
+      "Procedural complications within 30 days were similar between groups, occurring in 7 patients (4.5%) in the RDN+PVI group and 7 patients (4.7%) in the PVI-alone group."
+    ]
+  }
+}

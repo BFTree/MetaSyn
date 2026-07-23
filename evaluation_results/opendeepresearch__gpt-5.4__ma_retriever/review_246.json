@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27110,
+    "output_tokens": 1145,
+    "total_tokens": 28255
+  },
+  "metrics": {
+    "retrieval_recall": 0.7272727272727273,
+    "retrieval_precision": 0.48484848484848486,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.5454545454545454,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.5757575757575758,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.6914,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4945,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic review elements such as PICO, inclusion/exclusion criteria, exact search queries, screening flow, study characteristics, narrative synthesis, meta-analysis feasibility, and risk-of-bias considerations, but it lacks a formal abstract and visible references section and does not fully present a conventional PRISMA-style quantitative meta-analysis structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Study of the influence of melatoninergic agents on melatonin rhythm and/or sleep-wake cycle in healthy participants and/or patients with psychiatric disorders",
+      "Randomized controlled trial",
+      "Participants aged 18\u201365 years",
+      "Reporting data on internal rhythms such as sleep-wake cycle and circadian melatonin rhythm"
+    ],
+    "exclusion_criteria": [
+      "Irrelevant to the topic",
+      "Animal or cell-model study",
+      "Dementia, neurological disorders, organic brain damage, autism, or intellectual disability",
+      "Medical conditions known to affect circadian rhythms, such as cancer or surgery-related conditions",
+      "Pregnancy or lactation",
+      "Non-English report",
+      "Published before 1980-01-01"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Melatoninergic agents do affect sleep-wake and circadian outcomes in adults.",
+      "The strongest and most consistent effect is on sleep initiation/sleep propensity.",
+      "Melatonin itself has the broadest evidence base in the retrieved corpus.",
+      "Melatonin receptor agonists also appear effective, but the evidence base is smaller.",
+      "Phase-shifting effects are supported, especially when timing of administration is biologically relevant."
+    ]
+  }
+}

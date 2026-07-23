@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8514,
+    "output_tokens": 908,
+    "total_tokens": 9422
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6298,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2971,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with background/objective, screening/methods, results, and conclusion sections, but it lacks a formal discussion, references, and detailed PRISMA-style elements such as a full search strategy, inclusion/exclusion framework, and synthesis or quality-assessment methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies published during 2015 (search dates: 2015\u201101\u201101 to 2015\u201112\u201131)",
+      "AD be diagnosed using reliable criteria such as NINCDS\u2011ADRDA",
+      "Outcomes of interest were prospective and retrospective timing, and perception of shorter and longer intervals.",
+      "Only articles published in 2015 were eligible.",
+      "The article had to study AD patients diagnosed according to NINCDS\u2011ADRDA (or equivalent) and report time\u2011perception distortions (prospective/retrospective timing, interval estimation)."
+    ],
+    "exclusion_criteria": [
+      "The population did not consist of AD patients diagnosed by NINCDS\u2011ADRDA criteria, and the outcomes were not time\u2011perception tasks.",
+      "All other candidates were published outside the 2015 window (range: 1981\u20132026) and were excluded on publication date alone, without further content assessment.",
+      "Population not AD (diagnosed semantic dementia/anterior temporal lobe degeneration); outcomes not time perception."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary\u2011study article in the supplied candidate pool met all inclusion criteria for this systematic review.",
+      "The evidence base for the specified research question within the 2015 search period is empty."
+    ]
+  }
+}

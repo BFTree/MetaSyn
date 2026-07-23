@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28999,
+    "output_tokens": 1255,
+    "total_tokens": 30254
+  },
+  "metrics": {
+    "retrieval_recall": 0.7391304347826086,
+    "retrieval_precision": 0.5666666666666667,
+    "inclusion_recall": 0.391304347826087,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.7,
+    "conditional_retention": 0.5294117647058824,
+    "post_retrieval_loss": 0.34782608695652173,
+    "inclusion_consistency": 0.824,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3808,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis review elements such as search queries, eligibility criteria, screening summary, exclusions, and narrative synthesis, but it lacks a formal quality/risk-of-bias assessment and detailed data extraction or pooled synthesis methods needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Women with breast cancer",
+      "Cohort studies, case-control studies, randomized trials, or retrospective analyses of trials",
+      "Statin use as exposure",
+      "Reported BCD or BCR",
+      "Reported 95% CIs or SEs",
+      "Full-length articles"
+    ],
+    "exclusion_criteria": [
+      "Laboratory studies, case reports, ecological studies, conference abstracts, editorials",
+      "Records outside the search end date",
+      "Studies without target outcomes",
+      "Secondary reviews/meta-analyses for the formal included-study set"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the eligible primary studies in the local MetaSyn corpus up to June 13, 2024, postdiagnostic statin use is **more convincingly associated with reduced breast cancer-specific mortality than with reduced recurrence**.",
+      "The recurrence literature is favorable overall but inconsistent, and the strongest modern cohort in older U.S. women found no overall recurrence benefit despite lower breast cancer-specific mortality.",
+      "Evidence also indicates that **lipophilic statins** may be more beneficial than hydrophilic statins and that benefit may be concentrated in **ER-positive/HR+/HER2-** disease.",
+      "My concrete judgment is this: **statins are unlikely to be a large, broadly effective antirecurrence therapy in breast cancer, but they are plausible adjuncts that may confer a small-to-moderate mortality advantage in selected patients, especially with lipophilic agents and endocrine-sensitive tumors.**",
+      "Earlier observational estimates probably overstated the effect size.",
+      "The best current interpretation is not \u201cstatins clearly improve all breast cancer outcomes,\u201d but rather \u201cstatins may modestly improve prognosis, and the most credible effect is on breast cancer-specific mortality.\u201d"
+    ]
+  }
+}

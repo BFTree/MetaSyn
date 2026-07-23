@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12169,
+    "output_tokens": 725,
+    "total_tokens": 12894
+  },
+  "metrics": {
+    "retrieval_recall": 0.14285714285714285,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.5517,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5501,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into Methods, Results, and Conclusion and includes basic eligibility and screening details, but it lacks major required sections such as Abstract, Introduction, Discussion, and References, and omits key meta-analysis elements like data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The target population comprised the general population studied in observational studies, Mendelian randomization (MR) investigations, or randomized controlled trials (RCTs) that examined the relationship between salt intake (exposure) and blood pressure, cardiovascular diseases, or cardiovascular deaths (outcomes).",
+      "The search window was 1 January 1971 to 31 December 2022.",
+      "For MR studies, only records with \u201cMendelian randomization\u201d in the title or abstract were considered."
+    ],
+    "exclusion_criteria": [
+      "Articles that were not primary empirical studies (e.g., reviews, protocols, editorials, modeling studies, meta-analyses, commentaries, or studies solely reporting LLM performance) were excluded.",
+      "Records whose publication year fell outside 1971\u20132022 were removed."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After screening, **no candidate met the inclusion criteria**.",
+      "The fixed candidate pool contained no eligible primary\u2011study article that satisfies all inclusion criteria for the case study on salt intake and blood pressure/cardiovascular outcomes.",
+      "Consequently, no studies could be included in the evidence synthesis.",
+      "None."
+    ]
+  }
+}

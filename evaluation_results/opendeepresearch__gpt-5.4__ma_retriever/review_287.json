@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31345,
+    "output_tokens": 819,
+    "total_tokens": 32164
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.07692307692307693,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5693,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7105,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with a clear review question, eligibility criteria, search strategy, screening process, synthesis discussion, limitations, conclusion, and references, but it lacks some full PRISMA-style rigor elements such as a detailed risk-of-bias/quality assessment and formal data extraction methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Clinical trial or clinical study",
+      "Comparative study",
+      "Prospective or retrospective article",
+      "Systematic review only if it assessed at least 1-year follow-up and marginal bone loss around dental implants",
+      "Reported gingival phenotype as thin or thick",
+      "Published within the last 13 years"
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews",
+      "Other non-systematic reviews not meeting inclusion requirements",
+      "Letters to the editor",
+      "Commentaries"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Under the strict search-window and eligibility rules specified in the brief, **no study was eligible for inclusion**.",
+      "No conclusion can be drawn from included studies because none met all criteria.",
+      "The strict local-corpus review identified **no includable study** within the required 2023-04-01 to 2023-09-30 retrieval window.",
+      "Using only the local MetaSyn PubMed corpus and applying the required search window of **2023-04-01 through 2023-09-30**, along with the stated inclusion and exclusion criteria, **no study was eligible for inclusion** in the systematic review.",
+      "there is **no includable local-corpus evidence** within the specified retrieval window to determine whether thin gingival phenotype worsens implant survival, marginal bone loss, peri-implantitis risk, or related peri-implant outcomes compared with thick phenotype;",
+      "**meta-analysis is not feasible**;",
+      "and any impression that thin phenotype may be associated with worse soft tissue stability or greater bone loss derives only from **screened but excluded studies**, not from the formal included evidence base.",
+      "Under the present protocol, however, the correct systematic-review conclusion is that **no study was included**."
+    ]
+  }
+}

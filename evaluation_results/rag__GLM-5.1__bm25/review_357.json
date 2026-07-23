@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22031,
+    "output_tokens": 654,
+    "total_tokens": 22685
+  },
+  "metrics": {
+    "retrieval_recall": 0.5274725274725275,
+    "retrieval_precision": 0.24,
+    "inclusion_recall": 0.5164835164835165,
+    "inclusion_precision": 0.9791666666666666,
+    "inclusion_f1": 0.6762589928057554,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.9791666666666666,
+    "post_retrieval_loss": 0.01098901098901099,
+    "inclusion_consistency": 0.5659,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4619,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with review context, synthesized findings, conclusion, and included studies, but it lacks a formal abstract, introduction, methods section, detailed search strategy, screening flow, data extraction methods, quality assessment, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies on postmortem human brain tissue with targeted measurements of neuroinflammatory markers",
+      "an explicit schizophrenia vs. healthy control comparison",
+      "publication before the search end date of March 20, 2016"
+    ],
+    "exclusion_criteria": [
+      "Untargeted approaches (unless confirmed by targeted methods)",
+      "studies focusing on viruses/infections",
+      "reviews",
+      "retracted articles"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The postmortem evidence does not support a uniform, global neuroinflammatory state in all individuals with schizophrenia.",
+      "Instead, it suggests that neuroinflammatory alterations\u2014particularly microglial activation and the upregulation of specific immune transcripts like IFITM and SERPINA3\u2014are concentrated in a distinct \"high-inflammatory\" subgroup of patients.",
+      "Astrocyte findings remain bifurcated, with evidence for both regional deficits (potentially reflecting lost homeostatic support) and reactive astrogliosis (in inflammation-associated subgroups or specific elderly/demented cohorts).",
+      "General glial density appears largely unaltered, indicating that inflammatory changes reflect functional/phenotypic shifts rather than gross cellular proliferation."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24518,
+    "output_tokens": 1095,
+    "total_tokens": 25613
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.8181818181818182,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.8571428571428572,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8181818181818182,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.5111,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4418,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, synthesis by intervention/population, and a list of included studies, but it lacks several formal required sections such as Abstract, Introduction, Methods, Discussion, Conclusion, full References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs",
+      "age 18\u201365",
+      "outcomes on sleep (SOL, TST, WASO, sleep efficiency) and/or circadian phase (DLMO, DLMOff, phase shifts, sleep timing)"
+    ],
+    "exclusion_criteria": [
+      "animal/cell studies",
+      "dementia",
+      "neurological disorders",
+      "autism",
+      "intellectual disability",
+      "pregnancy/lactation",
+      "non\u2011English",
+      "articles before 1980"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Exogenous melatonin, when given in the afternoon/early evening (\u22485\u20137\u202fh before habitual bedtime), produces reliable phase advances of the melatonin and temperature rhythms.",
+      "The phase\u2011shifting effect is accompanied by acute hypothermia and sleepiness, but the hypnotic and phase\u2011shifting actions can be dissociated (e.g., low doses may promote sleep without large phase shifts).",
+      "Ramelteon and tasimelteon, given close to bedtime, can advance the circadian clock after an abrupt schedule shift.",
+      "Tasimelteon\u2019s phase shift parallels its sleep\u2011promoting action.",
+      "These studies confirm that in MDD, agomelatine not only alleviates depressive symptoms but also rapidly restabilises circadian rest\u2013activity rhythms and sleep architecture.",
+      "Agomelatine (25\u201350\u202fmg/day) normalises circadian rest\u2013activity rhythms in MDD, while ramelteon (8\u202fmg) partially corrects delayed sleep phase in ADHD, though with a risk of sleep fragmentation.",
+      "Ramelteon add\u2011on in schizophrenia improves melatonin rhythm and sleep quality."
+    ]
+  }
+}

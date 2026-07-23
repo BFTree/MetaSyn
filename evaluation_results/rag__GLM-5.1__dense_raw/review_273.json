@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15403,
+    "output_tokens": 1170,
+    "total_tokens": 16573
+  },
+  "metrics": {
+    "retrieval_recall": 0.9696969696969697,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.9090909090909091,
+    "inclusion_precision": 0.7317073170731707,
+    "inclusion_f1": 0.8108108108108109,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.9375,
+    "post_retrieval_loss": 0.06060606060606061,
+    "inclusion_consistency": 0.8612,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6466,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review target, screening criteria, synthesis summary, and included-study list, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, References, detailed search strategy, data extraction procedures, risk-of-bias/quality assessment, and statistical meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind RCTs",
+      "discontinuation design",
+      "MDD diagnosis via specified criteria"
+    ],
+    "exclusion_criteria": [
+      "bipolar, personality, substance use, refractory, seasonal, perinatal, physical disease-induced depression",
+      "reviews, protocols, secondary analyses, editorials, out-of-date articles published after the search end date of 2018-10-10"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The 41 included primary studies consistently demonstrate that continuing antidepressant medication significantly reduces the risk of relapse/recurrence and treatment failure compared to switching to placebo.",
+      "Across all antidepressant classes, relapse/recurrence rates in the placebo discontinuation groups typically ranged from 30% to over 50% within 6 to 12 months, whereas rates in the continuation groups ranged from approximately 10% to 30%.",
+      "Almost all studies reporting survival analysis found a significantly longer time to relapse/recurrence in the medication continuation arm compared to the placebo arm.",
+      "Continuation of medication generally reduced treatment failure (defined as dropout for inefficacy or relapse).",
+      "Efficacy in relapse prevention is robust across classes, including SSRIs (fluoxetine, escitalopram, citalopram, paroxetine, fluvoxamine, sertraline), SNRIs (venlafaxine, desvenlafaxine, duloxetine, levomilnacipran, milnacipran), TCAs (amitriptyline, imipramine, clomipramine), MAOIs (phenelzine, selegiline), and atypical agents (mirtazapine, bupropion, reboxetine, tianeptine, agomelatine, vortioxetine, quetiapine).",
+      "The protective effect of continued medication is sustained over the evaluation periods (typically 6 months to 1 year, up to 2 years in the PREVENT study).",
+      "Efficacy is maintained across age groups."
+    ]
+  }
+}

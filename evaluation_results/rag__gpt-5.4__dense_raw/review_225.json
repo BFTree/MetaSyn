@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20322,
+    "output_tokens": 1211,
+    "total_tokens": 21533
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.5369,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3681,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening, eligibility, synthesis, interpretation, limitations, and bottom-line sections, and it includes key meta-analysis elements like inclusion/exclusion criteria and study-level comparisons, but it lacks a full PRISMA-style methods structure, explicit search strategy, formal data extraction/synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: adults with low-renin hypertension (LRH)",
+      "Design: randomized controlled trials",
+      "Intervention: mineralocorticoid receptor antagonist (MRA) therapy",
+      "Comparison: placebo or other antihypertensives",
+      "Outcomes: blood pressure change and/or safety/tolerability"
+    ],
+    "exclusion_criteria": [
+      "primary aldosteronism or other known secondary/monogenic causes of LRH",
+      "non-English records",
+      "conference abstracts",
+      "non-RCTs",
+      "reviews/protocols"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "MRA therapy is effective for lowering blood pressure in adults with low-renin hypertension.",
+      "eplerenone was more effective",
+      "Against placebo, spironolactone provided additional BP reduction in a low-renin population.",
+      "Safety appears acceptable in short-term studies",
+      "MRA therapy appears effective for BP reduction in low-renin hypertension",
+      "Short-term tolerability appears generally acceptable based on the abstracts."
+    ]
+  }
+}

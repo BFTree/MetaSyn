@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7493,
+    "output_tokens": 878,
+    "total_tokens": 8371
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.8461538461538461,
+    "inclusion_precision": 0.5238095238095238,
+    "inclusion_f1": 0.6470588235294118,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.9166666666666666,
+    "post_retrieval_loss": 0.07692307692307693,
+    "inclusion_consistency": 0.5953,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5429,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes an objective, screening criteria/process, and a list of included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, data extraction, quality assessment, synthesis/meta-analysis methods, Discussion, Conclusion, and References, with an inconsistency in the number of included studies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "in adults (\u226518\u202fy)",
+      "with an exercise training intervention (aerobic, resistance, or combined) lasting at least 4\u202fweeks",
+      "a non\u2011exercise control group",
+      "reporting at least one of the listed outcomes"
+    ],
+    "exclusion_criteria": [
+      "crossover trials with a washout <2\u202fweeks",
+      "lacked an exercise intervention",
+      "had no control group",
+      "involved only acute exercise",
+      "were animal experiments",
+      "were reviews/guidelines",
+      "did not report any outcome of interest"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Twenty\u2011two RCTs met all inclusion criteria.",
+      "Each study provided data on at least one of the specified outcomes: plasma renin activity, angiotensin\u2011II, aldosterone, epinephrine, norepinephrine, urinary sodium/potassium excretion, systolic/diastolic blood pressure, or heart rate.",
+      "Several studies reported both RAAS hormones and blood pressure; others reported only blood pressure and/or heart rate.",
+      "These 21 studies form the evidence base for the systematic review and meta\u2011analysis.",
+      "No other candidate from the supplied pool met the prespecified eligibility criteria."
+    ]
+  }
+}

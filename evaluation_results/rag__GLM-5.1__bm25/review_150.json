@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10086,
+    "output_tokens": 1188,
+    "total_tokens": 11274
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6038,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3814,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a screening description, evidence synthesis by exposure, and a list of included studies, but it lacks several standard review sections such as an abstract, full methods, discussion, conclusion, and references, so it falls short of a complete PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "vitamin B6, vitamin B12, and methionine exposures in relation to breast cancer risk in women (with a search end date of 2013-06-18)",
+      "dose-response data (cases and person-years per category) for formal dose-response analysis"
+    ],
+    "exclusion_criteria": [
+      "Articles published after the search end date",
+      "those focusing on other outcomes",
+      "reviews/meta-analyses",
+      "studies not providing quantitative risk estimates (RR/OR with 95% CI) for the specified exposures in the abstract",
+      "the study explicitly excluded by the review criteria (Maruti et al., 2009; Candidate 067)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Seven primary studies met the inclusion criteria based on the information available in their titles and abstracts.",
+      "Two case-control studies evaluated dietary vitamin B6 intake and reported inverse associations with breast cancer risk.",
+      "The Women's Health Study (Candidate 138) reported no overall association for plasma PLP (RR = 0.91, 95% CI: 0.63\u20131.30), but noted an inverse association with postmenopausal breast cancer (P for trend = 0.04).",
+      "Findings for dietary vitamin B12 intake were inconsistent across the three included studies.",
+      "Regarding serum vitamin B12 levels, the Women's Health Study (Candidate 138) found no overall association with breast cancer risk (RR = 1.29, 95% CI: 0.92\u20131.82).",
+      "Only one included study provided a quantitative risk estimate for dietary methionine intake.",
+      "Several studies noted differences by menopausal status."
+    ]
+  }
+}

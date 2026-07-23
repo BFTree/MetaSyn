@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22692,
+    "output_tokens": 859,
+    "total_tokens": 23551
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.6259,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4841,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening summary, organized synthesis of findings, conclusion, and included studies list, but it lacks a formal abstract, introduction, detailed methods, explicit search strategy, data extraction process, quality assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "digital cognitive behavioral therapy for insomnia (dCBT-I), sleep hygiene education, and lifestyle/exergaming interventions"
+    ],
+    "exclusion_criteria": [
+      "non-RCT designs (quasi-experimental, single-arm, observational, qualitative, implementation studies)",
+      "pilot RCTs",
+      "study protocols",
+      "systematic reviews, meta-analyses, and scoping reviews",
+      "interventions targeting conditions other than sleep (e.g., depression, anxiety, substance use) where sleep was not a primary intervention target or validated sleep outcome",
+      "populations with co-existing physical health conditions (e.g., chronic pain, cancer, epilepsy, headache)",
+      "interventions delivered via human-based telephone coaching or social networks"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Digital CBT-I interventions (app, internet, or email-based) are effective for improving insomnia severity and sleep outcomes in adolescents and young adults, with insomnia reduction acting as a key mechanism for improving concurrent mental health symptoms.",
+      "Conversely, standalone digital sleep hygiene text messages and broad multi-behavior lifestyle apps showed null effects on sleep in the included trials.",
+      "Exergaming represents a promising digital lifestyle approach for improving sleep quality in younger adolescents."
+    ]
+  }
+}

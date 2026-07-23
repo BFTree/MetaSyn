@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30451,
+    "output_tokens": 1049,
+    "total_tokens": 31500
+  },
+  "metrics": {
+    "retrieval_recall": 0.2857142857142857,
+    "retrieval_precision": 0.0449438202247191,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 0.16666666666666666,
+    "inclusion_f1": 0.1,
+    "screening_accuracy": 0.9101123595505618,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.5066,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4952,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening counts, and synthesis methods, but it lacks a formal References section and has minor structural issues such as duplicated headings and limited PRISMA-style presentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies conducted in the general population using observational designs, Mendelian randomization analyses, or randomized controlled trials.",
+      "Studies that assess salt intake or salt exposure level as the exposure/intervention, including comparisons across differing levels of salt intake.",
+      "Studies reporting at least one relevant health outcome: blood pressure, cardiovascular disease, or cardiovascular mortality.",
+      "Studies evaluating LLM-based evidence extraction in relation to these studies may be included if they report extraction performance metrics such as direction of effect, statistical significance, Convergency of Evidence (CoE), or Level of Convergency (LoC)."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted exclusively in highly selected clinical populations where findings are not intended to represent the general population, unless general-population results are reported separately.",
+      "Studies that do not measure salt intake/exposure directly or do not compare different levels of salt exposure.",
+      "Studies that do not report any eligible outcome related to blood pressure, cardiovascular disease, cardiovascular death, or the specified LLM extraction performance metrics.",
+      "Study designs outside the review scope, such as case reports, narrative reviews, editorials, protocols, or mechanistic studies without population-level outcome data."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no clear overall association between salt intake and the primary outcome under the random-effects model.",
+      "In practical terms, the confidence interval spanned both a potentially modest benefit and a potentially modest adverse effect, so the meta-analytic estimate does not support a definitive direction of effect.",
+      "Notably, the fixed-effect model yielded a statistically significant pooled estimate in the opposite direction of emphasis, with a pooled MD of `0.152` (95% CI `0.027` to `0.276`; `p=0.0172`).",
+      "The bottom line is that the random-effects meta-analysis did not show a statistically significant pooled effect of salt intake on the outcome, and the moderate heterogeneity together with the conflicting fixed-effect result indicates that the evidence is not fully convergent.",
+      "Taken together, these findings do not provide robust evidence for a consistent pooled effect of salt intake on the included outcomes in this review, but they also do not exclude modest effects that may become clearer in larger and more harmonized datasets.",
+      "Clinically, this effect is essentially null and too small to support a meaningful impact on blood pressure or cardiovascular risk on its own, although the fixed-effect model suggested a small positive association (MD 0.152, 95% CI 0.027 to 0.276), indicating some model-dependent instability.",
+      "Taken together, these findings do not justify strong conclusions from this dataset alone; a cautious recommendation is to continue following established salt-intake guidance based on the broader cardiovascular literature rather than this pooled estimate."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25759,
+    "output_tokens": 992,
+    "total_tokens": 26751
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.06818181818181818,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.1111111111111111,
+    "inclusion_f1": 0.15384615384615383,
+    "screening_accuracy": 0.7727272727272727,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5596,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6568,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Discussion-style synthesis, Conclusion, included-study list, References, search query, eligibility criteria, and screening decisions, but it lacks full PRISMA-style rigor such as a formal quality/risk-of-bias assessment and detailed quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Any clinical trial/study",
+      "Comparative study",
+      "Prospective or retrospective articles",
+      "A systematic review that addressed at least a 1-year follow-up with an assessment of MBL around implants",
+      "Articles reporting gingival phenotype (thin or thick)",
+      "Published in the last 13 years"
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews",
+      "Other reviews not meeting criterion 4",
+      "Letters",
+      "Commentaries"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the local MetaSyn corpus alone, I conclude that **thin gingival/peri-implant phenotype is a clinically important risk indicator for unfavorable peri-implant outcomes, especially greater marginal or crestal bone loss, increased recession, and higher odds of buccal soft-tissue dehiscence and peri-implant inflammation**.",
+      "The most convincing evidence comes from recent long-term and prospective studies showing that thicker tissues\u2014or thin tissues augmented to exceed approximately `2 mm`\u2014are associated with better bone stability.",
+      "Keratinized mucosal width/height appears at least as important as mucosal thickness alone and may be the stronger protective factor in some cohorts.",
+      "However, **the evidence does not support a strong claim that thin phenotype alone materially lowers implant survival**, because survival rates remain high and failures are not consistently phenotype-stratified.",
+      "My objective judgment is that phenotype should be considered a determinant of implant **success quality** rather than of implant **survival** per se.",
+      "For clinicians, this means that thin phenotype should trigger more careful planning for implant position, tissue augmentation, and maintenance rather than be treated as a contraindication to implant therapy."
+    ]
+  }
+}

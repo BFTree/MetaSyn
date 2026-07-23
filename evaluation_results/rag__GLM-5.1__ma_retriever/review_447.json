@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17740,
+    "output_tokens": 976,
+    "total_tokens": 18716
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.479,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into overview, evidence synthesis, conclusions, and included studies, but it lacks most standard systematic review sections and PRISMA-style methods such as a detailed search strategy, screening process, inclusion/exclusion criteria, data extraction, quality assessment, and synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "direct comparative evaluation of an FL model against centralized or single-centre ML baselines on the same datasets",
+      "a clear focus on FL methodology within the 2020\u20132023 window",
+      "utilized FL and explicitly compared it against centralized or single-centre baselines within the specified timeframe"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The two included studies provide empirical support that federated learning enhances model generalizability and diagnostic performance in multi-centre oncology settings compared to traditional single-centre training, while successfully addressing privacy constraints.",
+      "The synthesized evidence suggests that federated learning is an effective paradigm for improving ML model generalizability and diagnostic accuracy in breast and prostate cancer tasks compared to single-centre models.",
+      "FL achieves performance levels comparable to or better than centralized training without the need to aggregate sensitive patient data across institutions.",
+      "However, the lack of eligible lung cancer studies in this specific candidate pool meeting the comparative framework criterion indicates a current gap in the explicitly reported FL-vs-centralized literature for lung cancer within the reviewed timeframe."
+    ]
+  }
+}

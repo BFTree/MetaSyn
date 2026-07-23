@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 3984,
+    "output_tokens": 671,
+    "total_tokens": 4655
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6848,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4322,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes a research question, eligibility criteria, screening process, screening results, and conclusion, but it lacks most standard systematic review sections such as abstract, introduction, full methods, discussion, references, detailed search strategy, data extraction plan, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary study design (case\u2013control or cohort)",
+      "Samples originating from breast tissue microbiome",
+      "Use of 16S rRNA sequencing with Illumina sequencers covering the V4 or V3\u2013V4 hypervariable regions",
+      "Explicit comparison of TNBC versus non-TNBC breast cancer subtypes",
+      "Availability of (publicly accessible) homogeneous data"
+    ],
+    "exclusion_criteria": [
+      "Studies that did not address breast cancer subtypes, used non\u2011tissue samples (e.g., gut, fecal, oral, blood), employed other sequencing platforms or non\u2011V4 regions, or were reviews, protocols, editorials, or conference abstracts were excluded.",
+      "Non\u2011breast cancers (colorectal, gastric, lung, pancreatic, cervical, etc.)",
+      "Non\u2011tissue microbiomes (gut, fecal, oral, salivary, urinary, blood, milk)",
+      "Reviews, meta\u2011analyses, protocols, or commentaries",
+      "Studies that did not compare TNBC with non\u2011TNBC breast tissue"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No eligible primary-study article was identified in the supplied candidate pool.",
+      "Because no candidate met the inclusion criteria, the list is empty.",
+      "The review could not proceed to synthesis with the provided candidate set."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10334,
+    "output_tokens": 997,
+    "total_tokens": 11331
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.796,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4913,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear research question, methods, search results, included-study summaries, synthesis, implications, and final study list, but it lacks a formal abstract, detailed search strategy, screening/data-extraction procedures, quality or risk-of-bias assessment, references, and a formal synthesis method, so it does not meet full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "racemic ketamine administered at sub\u2011anaesthetic doses (\u2264100\u202fmg\u202fkg\u207b\u00b9\u202fi.p. in rodents)",
+      "direct measurement of dopamine levels in brain regions"
+    ],
+    "exclusion_criteria": [
+      "studies using anaesthetic ketamine doses",
+      "those lacking a control condition",
+      "non\u2011English articles",
+      "reviews",
+      "studies without original data",
+      "those not reporting variability (SD/SEM)",
+      "in vitro work",
+      "studies that reported only dopamine metabolites or other dopaminergic markers without actual dopamine concentrations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the three eligible studies, the effect of sub\u2011anaesthetic ketamine on brain dopamine levels is not uniform.",
+      "In freely moving rats, acute ketamine robustly increased extracellular dopamine in the prefrontal cortex (Candidate\u202f017) and elevated tissue dopamine content in the striatum and cortex in mice (Candidate\u202f069).",
+      "In contrast, when dopamine release was evoked electrically in anaesthetised mice, ketamine had no effect (Candidate\u202f006).",
+      "These divergent findings may reflect methodological differences (e.g., conscious vs. anaesthetised states, basal vs. evoked release, species, and brain region) and highlight the complexity of ketamine\u2019s interaction with dopamine systems.",
+      "The only chronic\u2011dosing study (Candidate\u202f017) showed that repeated ketamine exposure leads to adaptations that dampen the acute dopaminergic response, a pattern that may be relevant to the drug\u2019s long\u2011term effects in neuropsychiatric conditions.",
+      "The absence of eligible data from non\u2011human primates and humans, and the small number of rodent studies, underscores a significant gap in the literature.",
+      "Future primary research that directly measures dopamine levels under controlled, sub\u2011anaesthetic ketamine conditions\u2014across species and with standardised endpoints\u2014would be necessary to draw robust conclusions about ketamine\u2019s dopaminergic effects and their clinical implications."
+    ]
+  }
+}

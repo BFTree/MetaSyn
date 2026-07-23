@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9184,
+    "output_tokens": 1552,
+    "total_tokens": 10736
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.03571428571428571,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.06666666666666667,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.07142857142857142,
+    "post_retrieval_loss": 0.4642857142857143,
+    "inclusion_consistency": 0.3701,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5355,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with a review question, screening summary, evidence synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, References, and detailed PRISMA-style elements like search strategy, inclusion/exclusion criteria, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults living with excess weight (BMI \u226527.5 kg/m\u00b2)",
+      "synchronous, remote health interventions for weight management",
+      "synchronous (real-time), interactive, remotely delivered",
+      "reporting explicit barriers and facilitators to engagement"
+    ],
+    "exclusion_criteria": [
+      "asynchronous (self-guided, app-only, email, or text-message-only) interventions or face-to-face/in-person programs",
+      "reported only effectiveness data (weight loss, BMI change) or statistical predictors of engagement (demographics) without explicitly identifying qualitative or specific \"barriers and facilitators\" to engagement.",
+      "populations outside the criteria (e.g., children, adolescents, postpartum women without confirmed BMI \u226527.5, or general older adults without specified obesity).",
+      "Protocols, systematic reviews, meta-analyses, and development/methodology papers were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Two primary studies met all inclusion criteria, specifically evaluating synchronous remote components (telephone or tele-counselling) and reporting explicit barriers and facilitators to engagement.",
+      "The included evidence highlights specific factors within the **Capability**, **Opportunity**, and **Motivation** domains that influence engagement with synchronous remote weight management interventions for adults with excess weight.",
+      "The remote delivery mode itself acts as a significant facilitator by offering **convenience** and accessibility, allowing participants to receive support via a \"simple and convenient mode of communication\" (Candidate 065).",
+      "**Scheduling conflicts** and **competing demands** (e.g., work, family) were identified as primary barriers to attending sessions, even in a remote format (Candidate 053).",
+      "This suggests that while remote interventions remove geographic barriers, temporal barriers remain significant.",
+      "Synchronous interaction provides **accountability** and **social support**, which participants found highly beneficial for encouragement and motivation (Candidate 065).",
+      "The desire for **increased frequency of tele-counselling sessions** suggests that social opportunity is a key driver of engagement, and more contact is perceived as a facilitator (Candidate 053).",
+      "Participants engaged more when they perceived the intervention as **beneficial** for their goals (Candidate 065).",
+      "**Competing demands** reduce the priority and reflective motivation to engage with the intervention amidst other life responsibilities (Candidate 053).",
+      "Lack of familiarity or skills with the technology platform can hinder capability, implied by the recommendation to integrate mobile technology more seamlessly to improve acceptability (Candidate 053)."
+    ]
+  }
+}

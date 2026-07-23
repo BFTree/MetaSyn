@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13592,
+    "output_tokens": 977,
+    "total_tokens": 14569
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.7166,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3251,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening results, eligibility criteria, exclusions, and a brief evidence synthesis, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, and References, and provides only limited meta-analysis structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "use a **vertex-based whole-brain cortical thickness** method;",
+      "compare **MDD vs healthy controls**;",
+      "study **adults aged 18-65**;",
+      "include **medication-free** patients;",
+      "provide **effect coordinates in MNI or Talairach space**."
+    ],
+    "exclusion_criteria": [
+      "post-2018 timing",
+      "treatment exposure",
+      "adolescent or older-age populations",
+      "non-primary-study status",
+      "non-cortical-thickness focus",
+      "unclear medication-free eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None of the candidate articles can be confirmed as eligible from title/abstract alone.",
+      "Because no candidate can be confidently included based on the supplied title/abstract information, there is no includable evidence base from this fixed pool that can support the target meta-analysis as specified.",
+      "However, that observation is not sufficient for formal inclusion, because the review question requires studies with confirmed whole-brain vertex-based cortical-thickness analysis and reported stereotactic coordinates.",
+      "None were included.",
+      "No article from the supplied candidate pool could be confirmed as meeting all inclusion criteria from the title and abstract alone."
+    ]
+  }
+}

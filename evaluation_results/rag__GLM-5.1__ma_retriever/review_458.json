@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9259,
+    "output_tokens": 1144,
+    "total_tokens": 10403
+  },
+  "metrics": {
+    "retrieval_recall": 0.967741935483871,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.03225806451612903,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0625,
+    "screening_accuracy": 0.855,
+    "conditional_retention": 0.03333333333333333,
+    "post_retrieval_loss": 0.9354838709677419,
+    "inclusion_consistency": 0.7865,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.52,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key review elements such as objectives, eligibility criteria, screening results, and narrative synthesis, but it lacks several standard sections including abstract, introduction, discussion, conclusion, references, detailed search strategy, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Healthy older adults aged \u226560",
+      "Balance, functional mobility, or gait specified as a primary outcome",
+      "Technology-assisted rehabilitation intervention (exergaming, serious gaming, wearables, or telerehabilitation) with at least one control group",
+      "Randomized design"
+    ],
+    "exclusion_criteria": [
+      "Specialized populations (neurodegenerative diseases, neurological, orthopedic, or pulmonary disorders, cancers, or other non-healthy conditions such as frailty, cognitive impairment, or diabetes)",
+      "Interventions including robotic or exoskeleton devices",
+      "Non-primary study designs (systematic reviews, other reviews, protocols, editorials, conference abstracts)",
+      "Publications outside the Jan 1, 2023 \u2013 June 10, 2023 window (\"out-of-date articles\")"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Due to the identification of only a single eligible primary study, a network meta-analysis comparing the relative effectiveness of multiple technology-assisted intervention modalities could not be conducted.",
+      "Results demonstrated significant improvements in the intervention group across multiple balance and functional mobility outcomes\u2014including the Berg Balance Scale (BBS), Timed Up and Go Test (TUGT), Functional Reach Test (FRT), One-Leg Standing Test (OLST), and Five-Times Sit-to-Stand (FTSTS)\u2014compared to the control group.",
+      "These findings suggest that home-based exergaming, supported by remote monitoring, is an effective modality for enhancing balance and functional mobility in healthy older adults when compared to no intervention.",
+      "However, evidence regarding the comparative efficacy of different technology types (e.g., motion capture vs. balance platforms vs. wearables) or their performance relative to conventional active exercise remains absent within this narrow 2023 search window.",
+      "Consequently, the review cannot fulfill its original network meta-analysis objective, and the generalizability of the findings is limited to the specific exergame modality and comparator tested in that single study."
+    ]
+  }
+}

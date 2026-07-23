@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11726,
+    "output_tokens": 1261,
+    "total_tokens": 12987
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.9333333333333333,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5314,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4408,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections are present and the flow is clear, with inclusion criteria and a synthesis section, but it lacks an abstract, detailed search strategy, PRISMA-style screening details, data extraction methods, formal quality/risk-of-bias assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective, original research articles published between 2010\u201101\u201101 and 2022\u201111\u201115 that compared RDN outcomes to baseline measurements",
+      "original research",
+      "English language, published after 1 January 2010",
+      "level I or II prospective study",
+      "included patients with an eGFR <60\u202fmL/min/1.73\u202fm\u00b2 or albuminuria for >3\u202fmonths",
+      "diagnosis of hypertension"
+    ],
+    "exclusion_criteria": [
+      "secondary hypertension other than CKD",
+      "renovascular anomalies",
+      "heart failure with LVEF <35%",
+      "non\u2011English"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All studies reported significant reductions in office and ambulatory BP from baseline.",
+      "The consistent finding across these small, uncontrolled studies is that RDN produces clinically meaningful reductions in BP in a high\u2011risk CKD population with resistant hypertension.",
+      "The procedure appears safe, with no accelerated loss of renal function; in fact, several studies suggest stabilisation or slight improvement in eGFR slope.",
+      "In patients with CKD and resistant hypertension, catheter\u2011based radiofrequency renal denervation is associated with significant reductions in both office and ambulatory BP at 6\u201112 months and appears to preserve or stabilise kidney function.",
+      "The procedure has a favourable short\u2011term safety profile.",
+      "These findings warrant confirmation in larger, randomised, sham\u2011controlled trials with longer follow\u2011up."
+    ]
+  }
+}

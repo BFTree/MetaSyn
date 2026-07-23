@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31761,
+    "output_tokens": 1090,
+    "total_tokens": 32851
+  },
+  "metrics": {
+    "retrieval_recall": 0.696969696969697,
+    "retrieval_precision": 0.3898305084745763,
+    "inclusion_recall": 0.3939393939393939,
+    "inclusion_precision": 0.7647058823529411,
+    "inclusion_f1": 0.5199999999999999,
+    "screening_accuracy": 0.7627118644067796,
+    "conditional_retention": 0.5652173913043478,
+    "post_retrieval_loss": 0.30303030303030304,
+    "inclusion_consistency": 0.4131,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5707,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background/introduction, methods, detailed search strategy, eligibility criteria, screening results, synthesis methods, results, risk-of-bias assessment, discussion, conclusion, and included studies, but it falls short of excellent because the organization has duplicated headings and it lacks a formal references section and fully polished PRISMA-style presentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials or randomized discontinuation trials comparing continuation of the same antidepressant used to achieve acute remission versus switching to placebo/discontinuation.",
+      "Adult patients with major depressive disorder who achieved remission during acute antidepressant treatment before randomization to continuation or placebo.",
+      "Intervention is maintenance/continuation treatment with the same antidepressant medication, and the comparator is placebo after antidepressant discontinuation.",
+      "Studies report at least one relevant outcome during continuation/maintenance follow-up: relapse rate, treatment failure, all-cause dropout, or tolerability/acceptability."
+    ],
+    "exclusion_criteria": [
+      "Studies in participants without major depressive disorder, not in remission at randomization, or consisting mainly of children/adolescents, elderly-only populations, or patients with major psychiatric comorbidities such as bipolar disorder or psychotic disorders.",
+      "Non-randomized studies, acute-phase treatment trials without a continuation/discontinuation comparison after remission, or studies not using placebo as the discontinuation comparator.",
+      "Studies in which the continued treatment is not the same antidepressant that achieved remission, or that evaluate combination therapies/augmentation without a separable same-drug continuation versus placebo comparison.",
+      "Studies that do not report any of the prespecified outcomes (relapse, treatment failure, all-cause dropout, tolerability/acceptability)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 17 studies, continuing the antidepressant that achieved remission was associated with a substantially lower odds of relapse than switching to placebo, with a pooled random-effects OR of 0.40 (95% CI 0.30-0.53; 6 studies contributing to this estimate).",
+      "Clinically, this suggests that maintenance antidepressant therapy meaningfully reduces the risk of depressive recurrence after acute response, supporting continuation treatment as a practical strategy to preserve remission in patients with major depressive disorder.",
+      "On that basis, patients who remit with antidepressant medication should generally be advised to continue the same agent during the maintenance phase, particularly when relapse would carry significant functional or safety consequences.",
+      "That recommendation should be tempered by the substantial between-study heterogeneity (I2=79%), which indicates that the magnitude of benefit likely varies across patient populations, treatment durations, and study designs."
+    ]
+  }
+}

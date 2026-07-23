@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14341,
+    "output_tokens": 1064,
+    "total_tokens": 15405
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7962,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6894,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as the research question, search dates, eligibility criteria, screening summary, evidence synthesis, and findings, but it lacks a formal abstract, introduction, detailed methods, quality assessment, meta-analysis/statistical synthesis methods, discussion, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Non\u2011randomised or randomised controlled trial with a primary purpose of weight management",
+      "adult participants (\u226518\u202fyears)",
+      "weight change reported quantitatively",
+      "explicit comparison of weight change in patients with and without T2DM receiving the same formula\u2011diet intervention"
+    ],
+    "exclusion_criteria": [
+      "Use of anti\u2011obesity medications or insulin as an exclusion criterion in some studies",
+      "studies without a direct diabetic\u2011versus\u2011non\u2011diabetic comparison were excluded",
+      "not a primary study (reviews, meta\u2011analyses, protocols, editorials, case reports, conference abstracts)",
+      "no comparison of diabetic versus non\u2011diabetic groups",
+      "interventions not meeting the definition of VLCD or low\u2011energy liquid formula diet",
+      "lack of quantitative weight\u2011loss data",
+      "population not exclusively obese adults"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included trials confirm that VLCDs produce substantial weight loss in obese individuals, irrespective of T2DM status.",
+      "The magnitude of total weight loss at 12\u201324\u202fweeks appears similar between diabetic and non\u2011diabetic participants (approximately 5\u20139\u202fkg).",
+      "However, one study suggests that the composition of weight loss may differ: diabetic patients may lose proportionally less fat mass, potentially due to insulin\u2011mediated antilipolytic effects.",
+      "Neither study reported a statistically significant difference in overall weight loss favouring either group, but the trend was toward slightly lower absolute weight loss in the diabetic group.",
+      "The evidence base is limited to only two direct\u2011comparison trials, both conducted with VLCDs; no eligible studies addressed low\u2011energy liquid\u2011formula diets (>800\u202fkcal/day) with a total diet replacement design."
+    ]
+  }
+}

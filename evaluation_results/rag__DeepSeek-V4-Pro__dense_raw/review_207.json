@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16006,
+    "output_tokens": 1120,
+    "total_tokens": 17126
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4823,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, study characteristics, synthesis of findings, limitations, implications, and included studies, but it lacks key systematic review sections such as a formal abstract, introduction, methods, detailed search strategy, screening process, data extraction methods, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy adult women",
+      "eumenorrheic women not using hormonal contraception or replacement therapy",
+      "healthy postmenopausal women without hormone therapy"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The most robust finding is a luteal\u2011phase\u2011associated thinning of the choroid, possibly linked to progesterone\u2011mediated vasoconstriction or fluid shifts.",
+      "Retinal structural layers (RNFL, GCC) and optic disc morphology appear largely stable across the cycle in healthy eyes.",
+      "Findings were mixed.",
+      "A consistent trend toward thinner choroid during the luteal phase and after menopause suggests sensitivity to oestrogen and progesterone fluctuations.",
+      "The magnitude of change is small, and age\u2011related thinning may overshadow menopause\u2011specific effects.",
+      "Postmenopausal data are conflicting\u2014some studies indicate thinning, others report no difference or even a paradoxical positive association with time since menopause.",
+      "OCTA\u2011derived measures hint at reduced choriocapillaris perfusion and FAZ enlargement after menopause, while cycle\u2011related changes are subtle and restricted to the deep capillary plexus.",
+      "The conflicting RNFL/GCC findings after menopause warrant further investigation with adequate control for age, axial length, and cardiovascular risk factors."
+    ]
+  }
+}

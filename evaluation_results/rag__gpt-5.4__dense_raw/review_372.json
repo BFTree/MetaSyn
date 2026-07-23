@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11984,
+    "output_tokens": 1508,
+    "total_tokens": 13492
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.5789473684210527,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.1863,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3608,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into synthesis, evidence direction, limitations, and included studies, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion/conclusion, references, PRISMA flow, quality assessment, and data synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "2017-04-30 search end date",
+      "observational primary studies",
+      "agricultural land-use exposure as the exposure of interest",
+      "an unexposed comparator or analyzable contrast",
+      "adult populations and infectious outcomes"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-English-unknown items",
+      "child-only studies",
+      "post-search articles",
+      "published after April 2017",
+      "non-SE Asia settings",
+      "did not involve agricultural land-use exposure as the exposure of interest",
+      "lacked an unexposed comparator or analyzable contrast",
+      "focused on children only",
+      "night soil / human excreta in agriculture",
+      "studies assessing the impact of using human faeces as fertilizer / night soil"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The dominant pattern is that living or working in agricultural settings, especially rubber plantations and farming environments, is associated with higher prevalence or odds of infectious disease outcomes.",
+      "The clearest evidence concerns malaria and some rickettsial / zoonotic infections.",
+      "Across included studies, the overall direction is toward a positive association between agricultural land-use exposure and infectious disease risk in Southeast Asia, especially for:",
+      "Support is strongest for occupational exposure rather than purely residential proximity to agriculture."
+    ]
+  }
+}

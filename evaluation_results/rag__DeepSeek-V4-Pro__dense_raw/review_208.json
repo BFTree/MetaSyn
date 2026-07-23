@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20096,
+    "output_tokens": 718,
+    "total_tokens": 20814
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.21,
+    "inclusion_recall": 0.5892857142857143,
+    "inclusion_precision": 0.8918918918918919,
+    "inclusion_f1": 0.7096774193548389,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.16071428571428573,
+    "inclusion_consistency": 0.4802,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4533,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear brief summary, eligibility/exclusion criteria, screening count, and included-study list, but it lacks most formal review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, full References, quality assessment, and detailed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human participants",
+      "FST or equivalent whole\u2011field scotopic threshold psychophysics",
+      "sufficient description of methodology",
+      "publication up to 30\u202fSeptember\u202f2022"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "animal studies",
+      "articles lacking FST methodology"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This scoping review mapped the variability in full\u2011field stimulus threshold (FST) testing methodology and reporting across studies in severe retinal disease.",
+      "A total of 37 primary\u2011study articles met all criteria.",
+      "These 37 articles form the evidence base for mapping FST methodological variability.",
+      "They encompass early FST development, cross\u2011sectional and longitudinal applications, treatment trials, and comparisons with other functional measures, providing a diverse picture of how FST has been implemented and reported in severe retinal disease populations up to September\u202f2022."
+    ]
+  }
+}

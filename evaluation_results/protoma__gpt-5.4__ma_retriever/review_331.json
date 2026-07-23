@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30617,
+    "output_tokens": 1265,
+    "total_tokens": 31882
+  },
+  "metrics": {
+    "retrieval_recall": 0.6470588235294118,
+    "retrieval_precision": 0.3492063492063492,
+    "inclusion_recall": 0.4117647058823529,
+    "inclusion_precision": 0.8235294117647058,
+    "inclusion_f1": 0.5490196078431372,
+    "screening_accuracy": 0.8253968253968254,
+    "conditional_retention": 0.6363636363636364,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.446,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6143,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening counts, synthesis methods, and quality assessment, but it falls short of excellent PRISMA-style structure due to duplicated headings, lack of formal references, limited data extraction detail, and some inconsistencies between the stated network meta-analysis/SMD aim and the reported OR-based synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adults with Persistent Spinal Pain Syndrome Type 2 (PSPS-T2), defined as chronic spinal pain persisting or recurring after previous spinal surgery.",
+      "Randomized controlled trials, quasi-randomized trials, or other comparative interventional studies evaluating at least one eligible treatment modality for PSPS-T2.",
+      "Studies assessing neuromodulation (especially spinal cord stimulation), minimally invasive treatments (especially epidural injections), conservative treatments (e.g., physiotherapy, cognitive/behavioral training, medication), or reoperation, compared with sham/placebo, conservative care, or another eligible active treatment.",
+      "Studies reporting pain intensity outcomes with sufficient quantitative data to derive effect estimates (e.g., means, standard deviations, change scores, or data convertible to standardized mean differences)."
+    ],
+    "exclusion_criteria": [
+      "Studies including patients without prior spinal surgery, acute postoperative pain only, or mixed populations where PSPS-T2 data cannot be separated.",
+      "Non-comparative studies, case reports/series, narrative reviews, systematic reviews, editorials, letters, conference abstracts only, study protocols, and preclinical/animal studies.",
+      "Studies evaluating interventions outside the prespecified treatment categories or lacking an eligible comparator group.",
+      "Studies not reporting pain intensity outcomes or not providing sufficient data for quantitative synthesis of pain outcomes."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 17 studies in patients with persistent spinal pain syndrome type 2, active treatment, particularly neuromodulation-based approaches, was associated with a markedly greater likelihood of pain improvement than comparator strategies, with a pooled random-effects OR of 13.50 (95% CI 2.69-67.60; p=0.0015).",
+      "Clinically, this suggests that for carefully selected patients with ongoing pain after spinal surgery, neuromodulation may offer meaningful pain relief beyond conservative care, sham treatment, or other commonly used alternatives, and should be considered a serious option in multidisciplinary management rather than a last resort.",
+      "However, this conclusion should be applied with caution: the evidence base was heterogeneous (I2=89.2%), the confidence interval was wide, and the pooled estimate likely reflects substantial differences in interventions, comparators, and study design rather than a single uniform treatment effect.",
+      "The pooled analysis demonstrated a statistically significant overall benefit of the included interventions for patients with persistent spinal pain syndrome type 2, with a random-effects pooled odds ratio (OR) of 13.50 (95% CI 2.69 to 67.60; p=0.0015) across 10 studies.",
+      "Despite this heterogeneity, the overall direction of effect remained favorable across the evidence base."
+    ]
+  }
+}

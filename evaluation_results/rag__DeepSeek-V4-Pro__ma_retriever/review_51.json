@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16306,
+    "output_tokens": 1076,
+    "total_tokens": 17382
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.8181818181818182,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.4384,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3436,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present and the report is logically organized with inclusion/exclusion criteria, screening, study characteristics, synthesis, discussion, and conclusion, but it lacks an abstract, formal introduction, references, detailed search strategy, data extraction methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: Adult men with penile squamous cell carcinoma confined to the glans (Tis\u2013T2).",
+      "Intervention: Glansectomy with or without neoglans reconstruction using split\u2011thickness skin graft (SSG).",
+      "Comparison: Pre\u2011operative baseline function or standard functional benchmarks.",
+      "Outcomes: Functional (erectile function, sexual activity, voiding ability while standing, glans sensation, meatal stenosis, graft loss, cosmetic satisfaction) and oncological (recurrence, disease\u2011specific survival).",
+      "Study design: Any primary study (prospective/retrospective, observational, randomised or non\u2011randomised) reporting functional data."
+    ],
+    "exclusion_criteria": [
+      "Studies that did not meet the PICO framework; systematic reviews, narrative reviews, protocols, editorials, conference abstracts, or studies without functional outcome data.",
+      "Articles that were clearly not primary studies, did not involve glansectomy for penile cancer, or lacked functional outcome data were excluded.",
+      "Reviews, case reports on non\u2011squamous malignancies, total phallic reconstruction, and procedures other than glansectomy (e.g., laser excision, partial penectomy, urethrectomy) were removed."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In patients with localized penile cancer confined to the glans, glansectomy with split\u2011thickness skin graft reconstruction yields excellent functional outcomes: erectile function is preserved in the majority, standing voiding is maintained in almost all, and cosmetic satisfaction is high.",
+      "Oncological control is satisfactory, with low local recurrence and high disease\u2011specific survival.",
+      "The included primary studies, though retrospective and heterogeneous, provide consistent evidence supporting the functional benefits of this organ\u2011sparing technique.",
+      "The available evidence consistently demonstrates that glansectomy with SSG reconstruction is an oncologically safe procedure that preserves sexual and urinary function in the majority of patients with glans\u2011confined penile cancer.",
+      "Erectile function is maintained in most men, and almost all can void standing.",
+      "Cosmetic satisfaction is very high."
+    ]
+  }
+}

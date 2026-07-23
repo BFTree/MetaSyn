@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15212,
+    "output_tokens": 822,
+    "total_tokens": 16034
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.48275862068965514,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.7217,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4692,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear organized flow with review context, screening criteria, evidence synthesis, conclusions, and included studies, but it lacks a formal abstract, full methods/search strategy, data extraction and quality assessment details, distinct discussion section, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer-reviewed original research relating to plastics/MPs and flocculation processes in aquatic environments"
+    ],
+    "exclusion_criteria": [
+      "articles not reporting the size and shape of MPs or aggregates",
+      "articles published after the search end date (2022-11-30)",
+      "reviews",
+      "protocols",
+      "studies focused on engineered water treatment processes (e.g., coagulation for drinking water or wastewater removal) rather than natural environmental flocculation"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence confirms a distinct size threshold for the flocculation of microplastics in aquatic environments.",
+      "MPs below ~500 \u00b5m (and particularly those <162 \u00b5m, down to nanoplastic scales) readily incorporate into inorganic, biogenic, or anthropogenic flocs, shifting their transport from individual buoyant/suspended particles to settling aggregates that accumulate in benthic and sedimentary sinks.",
+      "Conversely, large MPs (>1 mm) resist hetero-aggregation and remain as individual entities.",
+      "Future predictive models of MP environmental fate must therefore prioritize floc-mediated transport for smaller size fractions while accounting for altered sinking dynamics in biogenic aggregates."
+    ]
+  }
+}

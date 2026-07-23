@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20579,
+    "output_tokens": 806,
+    "total_tokens": 21385
+  },
+  "metrics": {
+    "retrieval_recall": 0.18181818181818182,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7596,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3968,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear basic flow from background and screening to results and discussion, but lacks a formal abstract, dedicated methods section, detailed search strategy, data extraction and synthesis methods, quality assessment, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies published in English between January 2020 and 25 May 2023",
+      "involving glaucoma patients",
+      "employing AI, machine learning, or deep learning for diagnosis or progression prediction",
+      "early clinical evaluations of AI for glaucoma diagnosis or progression detection"
+    ],
+    "exclusion_criteria": [
+      "Review articles",
+      "protocols",
+      "conference abstracts",
+      "letters",
+      "non-human studies",
+      "reporting guidelines",
+      "systematic reviews",
+      "addressed diseases other than glaucoma",
+      "published after the search end date"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the 200 candidates, 2 studies were identified as early clinical evaluations of AI for glaucoma diagnosis or progression detection.",
+      "No eligible studies addressed progression prediction specifically; both focused on diagnosis.",
+      "The scarcity of eligible records within the pool reflects the limited volume of early-stage AI evaluation studies for glaucoma that were both published within the targeted timeframe and captured by the source review\u2019s search strategy.",
+      "The two included studies exemplify the type of early clinical evaluation work that the DECIDE-AI checklist is designed to appraise.",
+      "Both employed retrospective data and compared multiple machine learning or deep learning approaches to differentiate glaucomatous from healthy eyes.",
+      "However, the small number of eligible studies precludes any meaningful quantitative synthesis of DECIDE-AI adherence scores.",
+      "The findings highlight a significant gap in published, early-stage clinical validation of AI decision support systems for glaucoma, particularly within the scanned literature pool.",
+      "Future systematic reviews should broaden the search to capture grey literature, preprints, and more recent publications to better assess reporting quality in this rapidly evolving field."
+    ]
+  }
+}

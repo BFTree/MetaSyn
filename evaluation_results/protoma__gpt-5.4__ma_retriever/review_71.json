@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35647,
+    "output_tokens": 903,
+    "total_tokens": 36550
+  },
+  "metrics": {
+    "retrieval_recall": 0.9090909090909091,
+    "retrieval_precision": 0.08771929824561403,
+    "inclusion_recall": 0.6363636363636364,
+    "inclusion_precision": 0.4666666666666667,
+    "inclusion_f1": 0.5384615384615385,
+    "screening_accuracy": 0.9035087719298246,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.7136,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6521,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes the major systematic review/meta-analysis sections plus detailed search strategy, eligibility criteria, screening counts, synthesis methods, heterogeneity statistics, and risk-of-bias discussion, but it falls short of excellent PRISMA-style structure because full references are absent, headings are duplicated, and data extraction/quality assessment details are somewhat incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human studies with children up to 12 years of age (or data reported separately for this age group).",
+      "Studies assessing prenatal and/or postnatal exposure to PFAS, including individual compounds such as PFOA and PFOS.",
+      "Studies with a comparison group of lower PFAS exposure levels or non-exposed/reference participants.",
+      "Studies reporting pediatric obesity measures, including BMI, BMI z-score, or waist circumference."
+    ],
+    "exclusion_criteria": [
+      "Studies in adults only, adolescents older than 12 years without separable child data, or non-human/in vitro studies.",
+      "Studies not measuring PFAS exposure prenatally or postnatally, or not reporting specific PFAS (e.g., PFOA/PFOS) exposure data.",
+      "Studies that do not report any eligible obesity outcome (BMI, BMI z-score, or waist circumference).",
+      "Non-original research such as reviews, editorials, commentaries, conference abstracts, or duplicate reports."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no clear overall association between higher prenatal or postnatal PFAS exposure and pediatric obesity measures across the nine included studies reporting beta coefficients.",
+      "Taken together, these findings suggest that any overall effect of PFAS exposure on pediatric adiposity is likely small and uncertain.",
+      "Overall, the evidence does not support a robust pooled association between PFAS exposure and childhood obesity measures up to 12 years of age, and the substantial heterogeneity indicates that the observed findings should be interpreted cautiously.",
+      "Taken together, these results do not support a consistent overall relationship between PFAS exposure and BMI-related outcomes in childhood.",
+      "Accordingly, PFAS exposure should not be considered an established determinant of pediatric obesity in clinical or public health decision-making, although minimizing exposure remains reasonable for broader toxicologic concerns."
+    ]
+  }
+}

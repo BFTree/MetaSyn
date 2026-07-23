@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30765,
+    "output_tokens": 898,
+    "total_tokens": 31663
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.2692307692307692,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.6923076923076923,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.6861,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.591,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as search strategy, eligibility criteria, screening decisions, study characteristics, narrative synthesis, limitations, feasibility of meta-analysis, conclusion, and sources, but it lacks a formal abstract and does not include full PRISMA-style rigor elements such as quality/risk-of-bias assessment or a detailed screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized clinical trial or observational design",
+      "case-control or cohort-type sampling context acceptable; tissue/gut microbiome context acceptable",
+      "population relevant to the review question: children under 5 years, with priority given to LMIC settings",
+      "comparison between stunted and non-stunted children",
+      "16S rRNA sequencing",
+      "Illumina sequencing platform",
+      "V4 or V3\u2013V4 hypervariable region"
+    ],
+    "exclusion_criteria": [
+      "no publicly accessible data or metadata were available",
+      "antibiotics were administered within three months before sample collection"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence indicates that, among Indonesian children aged 3\u20135 years, stunting was associated with significant differences in gut microbiome composition relative to children with normal nutritional status.",
+      "However, the evidence base is too limited for quantitative synthesis, and the included study still has unresolved uncertainty regarding public data/metadata accessibility and exclusion of recent antibiotic exposure.",
+      "Direct evidence on microbiome metabolic pathways was not available from the included record.",
+      "The current local-corpus evidence therefore supports a cautious conclusion: **stunting in under-5 children appears associated with measurable differences in gut microbial diversity and taxonomic composition, but the evidence base retrieved here is too sparse and too uncertain for meta-analytic pooling or firm causal interpretation.**"
+    ]
+  }
+}

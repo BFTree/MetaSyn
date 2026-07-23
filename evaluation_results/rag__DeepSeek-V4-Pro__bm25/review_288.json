@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11337,
+    "output_tokens": 1159,
+    "total_tokens": 12496
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.5497,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4691,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear research question, screening methods, eligibility criteria, results, study characteristics, evidence synthesis, limitations, conclusions, and included studies, but it lacks a formal abstract, full introduction, detailed search strategy, and quality/risk-of-bias assessment needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies",
+      "employed an eligible design (RCT, case\u2013control, cross\u2011sectional, population survey)",
+      "measured periodontal parameters (BOP, CAL, PPD, GI) by a qualified examiner",
+      "directly compared a health\u2011promoting dietary pattern with an unhealthy/Western or standard diet",
+      "assessed change over \u22654 weeks",
+      "included \u226520 human adults"
+    ],
+    "exclusion_criteria": [
+      "no dietary intervention",
+      "no periodontal outcomes",
+      "animal or in\u2011vitro designs",
+      "narrative reviews",
+      "self\u2011reported periodontal status",
+      "supplements rather than whole\u2011food dietary patterns",
+      "lack of a suitable controlled comparison"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Two trials (007, 022) demonstrated that adopting a health\u2011oriented diet reduces gingival inflammation in patients with gingivitis.",
+      "The only study that specifically enrolled periodontitis patients (153) did not find significant between\u2011group differences in periodontal indices (PPD, CAL, BOP) after an intensive dietary counselling intervention that successfully increased fruit, vegetable, and whole\u2011grain intake.",
+      "The evidence therefore supports a beneficial effect of healthy dietary patterns on gingival inflammation, but the impact on established periodontitis remains unproven.",
+      "Within the scope of this systematic review, adopting a healthy diet \u2013 exemplified by a Mediterranean pattern or a specifically anti\u2011inflammatory diet \u2013 can reduce gingival bleeding in patients with gingivitis over 4\u20136 weeks, without changing plaque levels.",
+      "However, there is currently no direct randomised evidence that such diets improve pocket depth or attachment loss in patients with periodontitis.",
+      "The findings highlight the potential role of dietary modification as an adjunct in the management of gingivitis and underline the need for larger, longer\u2011term trials in periodontitis populations."
+    ]
+  }
+}

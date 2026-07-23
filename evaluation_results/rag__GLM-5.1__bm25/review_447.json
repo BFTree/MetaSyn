@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8974,
+    "output_tokens": 1033,
+    "total_tokens": 10007
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.6357,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a brief evidence synthesis and lists included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "focus on federated learning (FL) applications in breast or prostate cancer",
+      "employ FL methods on multi-centre data",
+      "explicitly evaluate their models against single-centre (local) or centralized baselines as required by the comparative framework criterion"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both studies focus on federated learning (FL) applications in breast or prostate cancer, employ FL methods on multi-centre data, and explicitly evaluate their models against single-centre (local) or centralized baselines as required by the comparative framework criterion.",
+      "The included studies investigate federated learning (FL) as a privacy-preserving mechanism to improve machine learning (ML) model generalizability and performance in oncology, specifically addressing the challenges of data silos and inter-institutional variability.",
+      "The study demonstrated that while local ML models trained on single-institution data could predict response, collaborative training via FL significantly improved performance.",
+      "Crucially, the FL model's performance was found to be on par with the best current centralized approaches that rely on time-consuming expert annotations, achieving this without sharing patient data across hospitals.",
+      "The results indicated that FL led to significant improvements in cross-site generalization performance (intersection-over-union improved by 100% for segmentation; accuracy improved by 9.5-14.8% for classification) with negligible degradation in intra-site performance compared to models trained on single-centre data.",
+      "Both studies confirm that FL enables collaborative model training on distributed oncology data without compromising patient privacy.",
+      "They provide empirical evidence that FL models generalize better across institutions than single-centre models and can achieve performance levels comparable to or exceeding centralized baselines, thereby addressing the dual challenges of data privacy and model generalizability in multi-centre cancer research."
+    ]
+  }
+}

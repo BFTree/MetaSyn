@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30646,
+    "output_tokens": 1137,
+    "total_tokens": 31783
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06493506493506493,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.935064935064935,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.4678,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4487,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes Abstract, Background/Introduction, Methods with detailed search strategy and eligibility criteria, Results with study selection and synthesis, risk-of-bias assessment, Discussion, and Conclusion, but it lacks a formal References section and has some structural inconsistencies such as duplicated headings and minor reporting contradictions."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adult hypertensive patients with atrial fibrillation undergoing catheter-based rhythm control, with hypertension identified at baseline.",
+      "Randomized controlled trials or comparative prospective/retrospective cohort studies that directly compare renal denervation (RDN) combined with pulmonary vein isolation (PVI) versus PVI alone.",
+      "Studies reporting at least one prespecified outcome: atrial fibrillation recurrence, systolic blood pressure, diastolic blood pressure, estimated glomerular filtration rate (eGFR), or procedure-related complication/adverse event rate.",
+      "Human clinical studies with sufficient data to extract results for both intervention and comparator groups."
+    ],
+    "exclusion_criteria": [
+      "Studies without the target population, including non-hypertensive atrial fibrillation populations, mixed populations without separable data, pediatric populations, or non-human studies.",
+      "Studies not evaluating the intervention/comparator of interest, including RDN without PVI, PVI combined with other non-RDN adjunctive procedures only, or studies lacking a PVI-alone control group.",
+      "Non-comparative designs or non-original reports, such as case reports, case series, reviews, editorials, letters, conference abstracts without full data, and protocols.",
+      "Studies not reporting any relevant clinical or safety outcomes of interest, or lacking extractable data for atrial fibrillation recurrence, blood pressure, renal function, or complications."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The pooled analysis demonstrated **no statistically significant difference in atrial fibrillation recurrence** between **renal denervation plus pulmonary vein isolation (RDN+PVI)** and **PVI alone**.",
+      "This indicates that, overall, the addition of RDN to PVI **did not confer a clear benefit** in reducing recurrence risk, and the confidence interval was wide enough to remain compatible with either a clinically important reduction or increase in hazard.",
+      "Taken together, these findings suggest that **the available evidence does not show a consistent reduction in atrial fibrillation recurrence with RDN+PVI compared with PVI alone** in hypertensive patients with atrial fibrillation.",
+      "Across the six included studies, the pooled time-to-event estimate for atrial fibrillation recurrence did not show a statistically significant advantage for the combined strategy.",
+      "Therefore, the present evidence base is insufficient to support routine adoption of combined RDN+PVI solely for recurrence prevention.",
+      "Current evidence does not justify recommending RDN+PVI over PVI alone for all hypertensive patients with AF on the expectation of reducing recurrence.",
+      "In this meta-analysis of 6 studies in hypertensive patients with atrial fibrillation, renal denervation plus pulmonary vein isolation was not associated with a clear reduction in atrial fibrillation recurrence compared with pulmonary vein isolation alone (pooled random-effects HR 1.29, 95% CI 0.58\u20132.90; p=0.53).",
+      "Clinically, this suggests that adding renal denervation cannot currently be expected to improve rhythm outcomes in a reliable or meaningful way, despite its theoretical blood pressure benefit."
+    ]
+  }
+}

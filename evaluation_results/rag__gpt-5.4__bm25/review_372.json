@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13001,
+    "output_tokens": 1159,
+    "total_tokens": 14160
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 0.7272727272727273,
+    "inclusion_f1": 0.4848484848484849,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.4064,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.435,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening outcomes, synthesis, limitations, conclusion, and included studies, but it lacks formal Abstract, Introduction, detailed Methods/search strategy, quality assessment, and full References, so it only partially meets systematic review/meta-analysis structure standards."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Southeast Asia setting.",
+      "Human observational primary study.",
+      "Exposure tied to agricultural land use, agricultural work, plantation/rubber/oil palm settings, farm huts, or agricultural surrounding land.",
+      "Infectious disease prevalence, seropositivity, or infection risk outcome.",
+      "Comparator or contrast present, either explicit unexposed groups or lower-exposure groups within the study."
+    ],
+    "exclusion_criteria": [
+      "Wrong geography: e.g. India, Fiji, Ghana, California.",
+      "Wrong outcome: non-infectious outcomes, ecological outcomes, pollution only.",
+      "Wrong publication type: reviews, protocols, commentaries.",
+      "Excluded exposure framing: forest exposure without agricultural land-use contrast, or human-faeces/night-soil agriculture.",
+      "Population mismatch where the study centered on children/pregnancy only."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The included studies mostly support a positive association between agricultural occupational or residential exposure and infectious disease risk, especially for malaria, scrub typhus, rickettsial infection, leptospirosis, and some parasite infections.",
+      "Evidence is mostly cross-sectional or case-control, so the review question can be addressed in terms of association, not causation.",
+      "Across the included studies, agricultural exposure was associated with higher infectious disease risk in several ways:",
+      "Evidence is fairly consistent that agricultural work in rubber/plantation settings increases malaria risk.",
+      "Agricultural work and agricultural-area residence/work were repeatedly associated with higher exposure or seropositivity.",
+      "This supports agricultural-land occupational risk but the evidence volume in this candidate pool is limited.",
+      "Within this fixed pool, the eligible primary studies overall support the review hypothesis: living or working in agricultural land-use settings in Southeast Asia is associated with increased infectious disease risk in humans.",
+      "The most consistent evidence concerns malaria in rubber/plantation workers and scrub typhus/rickettsial exposure among agricultural workers and agriculturally exposed communities.",
+      "Evidence for leptospirosis and land-use-linked parasitic infection is present but thinner.",
+      "A quantitative meta-analysis would be difficult from abstract-only data because exposure and outcome definitions are too heterogeneous and effect estimates are incompletely reported.",
+      "A narrative synthesis is the defensible approach on the supplied information."
+    ]
+  }
+}

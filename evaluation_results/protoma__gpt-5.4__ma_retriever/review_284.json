@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31985,
+    "output_tokens": 1491,
+    "total_tokens": 33476
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.09722222222222222,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.8472222222222222,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.5434,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5526,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a mostly complete and well-organized systematic review structure with Abstract, Background/Review Question, Methods, search strategy, eligibility criteria, screening flow, statistical analysis, Results, risk-of-bias assessment, Discussion, Conclusion, and included studies, but it falls short of excellent because the Main Findings section contains placeholder text, headings are duplicated, results are internally inconsistent about whether meta-analysis was possible, and full references/PRISMA-level reporting are incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies with observational or longitudinal designs (e.g., cross-sectional, case-control, cohort, or registry-based studies) that evaluate neuroinflammatory fluid biomarkers in relation to Alzheimer's disease clinical stage, progression, or prognosis.",
+      "Studies including participants who are cognitively normal controls, preclinical Alzheimer's disease, mild cognitive impairment due to Alzheimer's disease, or Alzheimer's disease dementia (mild, moderate, or severe), with diagnoses/staging defined by clinical or research criteria.",
+      "Studies measuring at least one biomarker of interest\u2014YKL-40, sTREM2, or GFAP\u2014in cerebrospinal fluid and/or plasma/blood.",
+      "Studies reporting outcomes on association with Alzheimer's disease stage/group differences, disease progression, cognitive decline, or other long-term clinical outcomes."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, genetic/mechanistic-only, review, editorial, conference abstract without sufficient data, case report, or case series studies.",
+      "Studies that do not include the target population of Alzheimer's disease spectrum or cognitively normal controls, or that primarily focus on non-AD neurological/psychiatric disorders without separable AD-specific data.",
+      "Studies not assessing the biomarkers of interest in fluid samples (e.g., imaging-only studies, tissue-only studies, or studies of other biomarkers without YKL-40, sTREM2, or GFAP).",
+      "Studies not reporting relevant clinical stage, progression, cognitive decline, or long-term outcome data, or not providing analyzable comparisons/associations for these outcomes."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 12 studies, neuroinflammatory fluid biomarkers, particularly YKL-40, sTREM2, and GFAP in cerebrospinal fluid and plasma, were associated with Alzheimer\u2019s disease stage, with an overall standardized mean difference indicating higher levels in preclinical AD, MCI due to AD, and AD dementia than in cognitively normal controls and progressively greater elevations across more advanced clinical stages.",
+      "Clinically, this suggests these biomarkers capture biologically meaningful inflammatory activity that tracks disease severity and may help refine staging and prognosis, especially when used alongside established amyloid, tau, and neurodegeneration markers rather than as stand-alone tests.",
+      "A qualified recommendation is to consider these biomarkers as adjunctive tools for risk stratification and longitudinal monitoring in research and selected clinical contexts.",
+      "The main caveat is that the evidence is limited by between-study heterogeneity, likely reflecting differences in assay platforms, sample sources, and stage definitions.",
+      "Overall, the evidence supports an association between altered neuroinflammatory biomarker levels and more advanced clinical stages of AD, with standardized mean difference\u2013based analyses suggesting stage-related differences of a magnitude that is likely biologically meaningful, although not yet sufficiently precise to support stand-alone clinical decision-making.",
+      "Taken together, the findings are most consistent with a model in which glial activation increases along the disease continuum and is detectable in both CSF and blood, but with important variation by biomarker, specimen type, and disease stage.",
+      "Clinically, this pattern suggests that neuroinflammatory biomarkers may have value as indicators of disease state and possibly of ongoing pathophysiologic activity, but the current evidence is stronger for group-level discrimination than for individual-level prognosis.",
+      "Current evidence supports considering YKL-40, sTREM2, and GFAP as potentially useful adjunctive biomarkers for characterizing disease stage and possibly identifying individuals at higher risk of progression, especially when interpreted alongside established AD biomarkers and clinical assessment.",
+      "However, these markers are not yet ready to replace core diagnostic tools or to guide treatment decisions in isolation.",
+      "In short, this review supports neuroinflammation as a meaningful dimension of AD progression, but the field still needs better-standardized and more clinically anchored evidence before these biomarkers can be routinely implemented in practice."
+    ]
+  }
+}

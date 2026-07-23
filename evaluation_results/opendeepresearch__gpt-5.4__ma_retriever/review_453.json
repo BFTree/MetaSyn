@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19652,
+    "output_tokens": 1259,
+    "total_tokens": 20911
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.391304347826087,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.8260869565217391,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.7518,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6619,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key meta-analysis elements such as the review question, eligibility criteria, exact search queries, screening decisions, study characteristics, outcome-specific findings, and limitations, but it lacks a formal abstract/introduction and a fully developed conclusion/references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included patients with chronic hepatitis B and/or chronic hepatitis C;",
+      "compared statin-exposed versus non-statin-exposed groups;",
+      "reported at least one eligible outcome: HCC, all-cause mortality, cirrhosis, or cirrhosis decompensation;",
+      "used a cohort design or RCT design."
+    ],
+    "exclusion_criteria": [
+      "lacked accessible full-text sections in the local corpus;",
+      "were non-English;",
+      "had unavailable or incalculable data;",
+      "did not report outcomes of interest;",
+      "represented duplicate or overlapping cohorts where a more comprehensive or newer report should be retained;",
+      "included HIV-coinfected cohorts;",
+      "were reviews, editorials, commentaries, replies, or umbrella/meta-analytic secondary literature."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included cohort studies, statin exposure was consistently associated with lower HCC risk in chronic viral hepatitis populations",
+      "The accessible corpus evidence supports the conclusion that statin exposure is associated with a reduced incidence of HCC in chronic viral hepatitis populations.",
+      "The accessible corpus evidence supports the conclusion that statin exposure is associated with lower all-cause mortality, although certainty is lower than for HCC.",
+      "The available evidence suggests statin exposure is associated with a lower risk of cirrhosis progression or incident cirrhosis in both CHB and CHC populations."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32023,
+    "output_tokens": 983,
+    "total_tokens": 33006
+  },
+  "metrics": {
+    "retrieval_recall": 0.5490196078431373,
+    "retrieval_precision": 0.358974358974359,
+    "inclusion_recall": 0.3137254901960784,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.46376811594202894,
+    "screening_accuracy": 0.8205128205128205,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.6023,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7748,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, logically ordered structure with abstract, introduction, methods, eligibility and screening procedures, results organized by biomarker domain, limitations, conclusion, included studies, and references, plus search queries and synthesis-oriented interpretation; however, it lacks full PRISMA-level detail such as a flow diagram, comprehensive database search strategy, formal risk-of-bias assessment, standardized data extraction, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "MDD outcome established by clinical interview or clinician-assessed diagnosis.",
+      "Longitudinal design.",
+      "Biomarker assessed prospectively before onset, relapse, or recurrence.",
+      "Biomarker derived from a leading biological model."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they primarily involved bipolar disorder, mixed mood diagnoses with less than 75% MDD, late-life depression, depression secondary to medical disorders, or lacked prospective biomarker assessment."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "My concrete judgment is that the prospective biomarker literature up to mid-2019 supports a real but modest predictive role for HPA-axis biomarkers, strongest for recurrence and for selected adolescent high-risk cohorts, but is not yet sufficient to justify a clinically generalizable biomarker model for MDD prediction.",
+      "The local MetaSyn corpus evidence through June 2019 does not support a broad conclusion that biological biomarkers across all major theoretical domains can reliably predict MDD.",
+      "It supports a narrower and more defensible conclusion: **prospective HPA-axis biomarkers, especially CAR for selected adolescent onset studies and DEX/CRH or cortisol/DHEAS measures for recurrence in remitted recurrent MDD, show real predictive value, but the effects are heterogeneous, modestly transportable at best, and stronger for recurrence than for first onset**.",
+      "My concrete opinion is that the pre-2019 biomarker literature had identified genuine neuroendocrine risk signals, but had not solved the predictive problem.",
+      "The field\u2019s strongest results are too dependent on developmental stage, prior illness, environmental stress, and sample enrichment to justify a unitary biomarker model of MDD vulnerability.",
+      "If one had to choose the most credible prospective biomarker branch from this evidence alone, it would be HPA-axis dysregulation, with priority given to dynamic or ratio-based measures over isolated basal cortisol values."
+    ]
+  }
+}

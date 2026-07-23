@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5885,
+    "output_tokens": 964,
+    "total_tokens": 6849
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": 0.6971,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4803,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with screening decisions, study-by-study synthesis, exclusions, conclusions, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, References, detailed search strategy, data extraction, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "healthy adult non-pregnant women, no hormonal contraception/HRT/treatment exposure, and posterior pole structural outcomes limited to macula, choroid, and optic disc/disc-adjacent morphology."
+    ],
+    "exclusion_criteria": [
+      "studies focused on hemodynamics/vascular function alone, functional brain or systemic outcomes, disease populations without separable healthy-woman structural results, pregnancy, contraceptive/HRT exposure, reviews/protocols, and publications outside the review end date.",
+      "the 2025/2026 records as out of date for a search ending `2024-02-18`."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The strongest scoping-review signal from the supplied pool is that endogenous menstrual-cycle fluctuations are associated with modest, repeated changes in choroidal structure, especially mid-luteal thinning.",
+      "Evidence for menstrual-cycle effects on healthy optic disc morphology is weak and largely negative in the available healthy-control abstract.",
+      "Postmenopause may be associated with thinner choroid, but disentangling hormonal status from aging is difficult based on the available abstract-level evidence.",
+      "Across menstrual-cycle studies, the most consistent finding is thinner choroid in the mid-luteal phase versus follicular/ovulatory phases.",
+      "Evidence for macular or optic disc structural change in healthy women is sparse; one OCTA study addressed retinal vascular density rather than morphology, and healthy controls in the migraine optic-disc study showed no significant disc topography change."
+    ]
+  }
+}

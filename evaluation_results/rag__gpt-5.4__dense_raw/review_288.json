@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19176,
+    "output_tokens": 1548,
+    "total_tokens": 20724
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.6378,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5057,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with screening, synthesis, findings, conclusion, and included studies, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods/search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "all interventional human studies in adults with gingivitis/periodontitis, sample size \u226520, with clinician-measured periodontal outcomes and follow-up \u22654 weeks"
+    ],
+    "exclusion_criteria": [
+      "self-reported periodontal outcomes only",
+      "no diseased periodontal population at baseline",
+      "diet exposure not a whole dietary pattern",
+      "no qualifying comparison",
+      "review/protocol/animal study"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence is **small and heterogeneous**, mostly short-term dietary interventions.",
+      "Two gingivitis RCTs directly testing anti-inflammatory/Mediterranean-style diets reported **improved gingival inflammation despite stable plaque**, which is consistent with a diet-mediated inflammatory effect rather than improved oral hygiene alone.",
+      "One periodontitis dietary-advice trial found **no significant between-group differences in periodontal indices** despite improved diet quality and antioxidant status.",
+      "One adjunctive periodontitis study suggested an **optimized diet may enhance reductions in PPD and bleeding**, but inter-group differences were not statistically significant in the main comparison and the design appears less rigorous than the gingivitis RCTs.",
+      "**Gingivitis:** Evidence is more consistently positive.",
+      "Both eligible gingivitis RCTs support benefit on gingival inflammatory measures over 4\u20136 weeks.",
+      "**Periodontitis:** Evidence is weaker and mixed.",
+      "One trial was null for periodontal indices; another suggested possible adjunctive benefit but with limited statistical separation between groups.",
+      "Abstract-level evidence from the fixed pool suggests that adopting a healthier, anti-inflammatory/Mediterranean-type diet **may improve short-term gingival inflammation** in adults with gingivitis.",
+      "For **periodontitis**, current eligible evidence is **insufficient and inconsistent** to conclude clear improvement in CAL/PPD or other periodontal parameters versus usual diet.",
+      "Overall certainty is likely **low**, limited by small samples, short follow-up, and heterogeneous interventions/comparators."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18070,
+    "output_tokens": 1232,
+    "total_tokens": 19302
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.7772,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6509,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, screening/exclusion rationale, included study details, and conclusion, but it lacks a formal abstract, full introduction/methods/results/discussion structure, references, detailed search strategy, data extraction, quality assessment, and meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) that compared an anti\u2011EGFR antibody (cetuximab or panitumumab), alone or with standard therapy, against the same standard therapy in patients with mCRC",
+      "assessed BRAF mutation status within the RAS WT subgroup",
+      "reported overall survival (OS) or progression\u2011free survival (PFS) outcomes stratified by BRAF status",
+      "RCT",
+      "anti\u2011EGFR monoclonal antibody (cetuximab) compared with no anti\u2011EGFR therapy",
+      "assessment of BRAF mutations in the KRAS WT subgroup",
+      "OS/PFS outcomes"
+    ],
+    "exclusion_criteria": [
+      "not RCTs in mCRC",
+      "did not evaluate an anti\u2011EGFR monoclonal antibody",
+      "lacked a comparator arm without anti\u2011EGFR therapy",
+      "did not report survival outcomes by BRAF mutation status within the RAS WT subset",
+      "Non\u2011RCT designs or reviews: Retrospective analyses, single\u2011arm studies, case reports, systematic reviews, and pooled analyses of multiple trials (Candidates 001, 002, 003, 004, 006, 010, 013, 014, 015, etc.).",
+      "Wrong patient population: Trials in non\u2011small\u2011cell lung cancer, breast cancer, melanoma, biliary tract cancer, etc., or early\u2011stage colorectal cancer (Candidates 028, 040, 077, 082, 083, 093, 133, 136, etc.).",
+      "Inappropriate intervention/comparator: Studies evaluating anti\u2011EGFR antibodies in both arms (e.g., maintenance comparisons, cetuximab vs. bevacizumab) or anti\u2011EGFR tyrosine kinase inhibitors rather than monoclonal antibodies (Candidates 002, 022, 034, 044, 124, 170).",
+      "Insufficient BRAF\u2011specific treatment effect data: Several RCTs that compared anti\u2011EGFR antibody plus chemotherapy versus chemotherapy alone and assessed BRAF mutations did not provide quantitative data on the anti\u2011EGFR treatment effect according to BRAF status within the RAS WT subgroup.",
+      "Potentially relevant but incomplete: One candidate (008) from a randomized phase III study of panitumumab reported response rates by BRAF status but did not present OS/PFS hazard ratios for the BRAF\u2011mutant subgroup; it was therefore judged to provide insufficient quantitative data on the predictive effect."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied candidate pool, only the CO.17 biomarker analysis (Candidate 019) qualifies as a primary study that directly addresses the predictive value of BRAF V600E mutation status for anti\u2011EGFR antibody therapy in RAS wild\u2011type mCRC.",
+      "This single study provides limited evidence, and its interaction test did not reach statistical significance, highlighting the need for additional primary RCTs with adequate BRAF\u2011mutant representation to robustly assess the predictive role of BRAF mutation status."
+    ]
+  }
+}

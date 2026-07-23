@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28061,
+    "output_tokens": 1424,
+    "total_tokens": 29485
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11290322580645161,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.9193548387096774,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.5832,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4226,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and complete, with clear Abstract, Introduction, Methods, Results, Discussion, Conclusion, and References sections plus explicit search, screening, and synthesis descriptions, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed quantitative meta-analytic methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "racemic ketamine at sub-anaesthetic doses",
+      "dopamine measured in brain",
+      "compared with a baseline or control",
+      "rodents, non-human primates, humans",
+      "racemic ketamine, preferably sub-anaesthetic",
+      "dopamine levels in brain",
+      "baseline or control condition",
+      "1972-07-01 to 2016-07-15"
+    ],
+    "exclusion_criteria": [
+      "anesthetic doses",
+      "in vitro work",
+      "non-original studies",
+      "non-English studies",
+      "studies lacking variance data",
+      "studies reporting only non-dopamine outcomes or dopamine-related measures other than dopamine levels",
+      "anesthetic-only dosing",
+      "no baseline/control",
+      "non-English",
+      "non-original data",
+      "no variance reporting",
+      "in vitro only",
+      "no dopamine level reporting"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Under the supplied eligibility criteria and based only on the local MetaSyn corpus retrieval shown, the included evidence base is small but coherent.",
+      "Subanaesthetic racemic ketamine in rodents increases extracellular dopamine most clearly in medial prefrontal cortex, and that increase appears to depend on glutamate-driven AMPA/kainate signaling rather than direct dopaminergic pharmacology.",
+      "Repeated daily ketamine exposure raises basal mPFC dopamine but blunts the acute dopamine surge, indicating fast neuroadaptation of cortical dopamine dynamics.",
+      "The broader claim that ketamine uniformly elevates brain dopamine is not supported.",
+      "The stronger conclusion is a **region-specific, indirect, and exposure-history-dependent dopaminergic effect**, with the prefrontal cortex showing the clearest direct evidence."
+    ]
+  }
+}

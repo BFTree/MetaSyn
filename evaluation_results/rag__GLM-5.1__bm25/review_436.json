@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9424,
+    "output_tokens": 1264,
+    "total_tokens": 10688
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4842,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5694,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes PICO criteria, screening rationale, exclusions, and a synthesis conclusion, but it lacks several required formal sections such as abstract, introduction, full methods, results, discussion, references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "patients receiving medication prescriptions in a hospital setting",
+      "electronic prescribing (e.g., CPOE or CDS)",
+      "manual/paper-based prescribing or usual care",
+      "the reporting of quantitative data on the incidence of medication errors (including potential errors, actual errors, and adverse drug events)",
+      "Studies were required to be randomized controlled trials (RCTs), published in English between May 1, 2023, and November 3, 2024, and available as full-text, peer-reviewed articles.",
+      "Only RCTs were eligible.",
+      "The outcome must explicitly report quantitative data on the *incidence of medication errors*.",
+      "The population was restricted to a hospital setting."
+    ],
+    "exclusion_criteria": [
+      "Many candidates evaluating medication errors with electronic interventions used pre-post observational designs (e.g., Candidate 002), retrospective cohort analyses (e.g., Candidate 042), mixed-methods evaluations, or qualitative designs.",
+      "Several RCTs evaluating CPOE/CDS on medication-related outcomes were published prior to this window (e.g., Candidate 028 from 2010, Candidate 023 from 2018, Candidate 003 from 2019, Candidate 172 from 2022) and were consequently excluded as out-of-date articles.",
+      "Several RCTs within the date frame evaluated CDS but measured different outcomes, such as guideline-concordant prescribing appropriateness rather than error incidence (e.g., Candidate 035), blood pressure control (e.g., Candidate 161), or laboratory test ordering (e.g., Candidate 025).",
+      "RCTs conducted in primary care or outpatient clinics were excluded (e.g., Candidate 161, Candidate 191).",
+      "Systematic reviews, scoping reviews, protocols, and editorials were excluded per the criteria (e.g., Candidate 001, Candidate 012, Candidate 061, Candidate 102)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Despite the availability of studies evaluating electronic health interventions on medication safety and prescribing behavior, none of the screened candidates simultaneously satisfied all the stringent inclusion criteria\u2014specifically the requirement for an RCT design published within the 2023\u20132024 window that directly quantifies the incidence of medication errors in a hospital prescribing context.",
+      "Therefore, no quantitative data could be synthesized for this meta-analysis, and the evidence base for this specific review question remains vacant within the supplied candidate pool.",
+      "None were included."
+    ]
+  }
+}

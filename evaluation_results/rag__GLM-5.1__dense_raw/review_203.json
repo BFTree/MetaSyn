@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22308,
+    "output_tokens": 1131,
+    "total_tokens": 23439
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.1993,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6025,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, screening/selection criteria, narrative synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, methods/results/discussion structure, detailed search strategy, data extraction process, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "publications from November 1, 2004, to November 30, 2014",
+      "direct quantitative evidence on TPD levels in OAG versus healthy controls and their association with structural optic nerve damage"
+    ],
+    "exclusion_criteria": [
+      "Articles published after this date were excluded.",
+      "articles were excluded if they were reviews, economic models, mechanism studies without quantitative clinical data, case reports, animal/experimental studies, or if they did not evaluate TPD, did not include OAG patients compared to healthy controls, or did not present quantitative TPD values.",
+      "publication dates falling outside the 2004\u20132014 window",
+      "evaluating unrelated topics (e.g., vascular risk factors, corneal thickness, quality of life, surgical interventions)",
+      "utilized subjects with ocular hypertension (OHT) as the comparison group rather than \"healthy subjects without glaucoma,\"",
+      "did not present quantitative TPD values for OAG patients in the abstract",
+      "modeled estimated TPD rather than measuring it in a clinical OAG vs. healthy cohort"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included studies confirm that the TPD (also referred to as the translaminar pressure gradient or trans-lamina cribrosa pressure difference in the literature, calculated as IOP minus ICP/CSF-P) is significantly elevated in patients with OAG compared to healthy individuals.",
+      "Furthermore, both studies establish a correlation between elevated TPD and structural glaucomatous damage.",
+      "The available clinical evidence from the 2004\u20132014 search period indicates that the translaminar pressure difference is significantly elevated in patients with open-angle glaucoma\u2014including both high-tension and normal-tension subtypes\u2014relative to healthy controls.",
+      "Moreover, higher TPD values are associated with greater structural damage to the optic disc, specifically reduced neuroretinal rim area and visual field loss.",
+      "These findings support the biomechanical theory that the pressure gradient across the lamina cribrosa, rather than absolute IOP alone, plays a critical role in the pathogenesis of glaucomatous optic neuropathy."
+    ]
+  }
+}

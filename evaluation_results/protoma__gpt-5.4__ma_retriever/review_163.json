@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 43712,
+    "output_tokens": 1094,
+    "total_tokens": 44806
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.2826086956521739,
+    "inclusion_recall": 0.8214285714285714,
+    "inclusion_precision": 0.8518518518518519,
+    "inclusion_f1": 0.8363636363636364,
+    "screening_accuracy": 0.9239130434782609,
+    "conditional_retention": 0.8846153846153846,
+    "post_retrieval_loss": 0.10714285714285714,
+    "inclusion_consistency": 0.6057,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5258,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search queries, eligibility criteria, screening counts, and synthesis methods, but it lacks a formal references section and has some duplicated headings and limited detail on data extraction procedures, preventing an excellent PRISMA-level structure score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies (prospective or retrospective cohort studies, case-control studies, or nested case-control studies) or randomized studies that provide original human data on bisphosphonate exposure and subsequent cancer risk.",
+      "Studies conducted in the general adult population or in populations of bisphosphonate users/non-users, including patients with osteoporosis or other bone-related conditions, with a comparator group of non-users or lower/no exposure to bisphosphonates.",
+      "Studies evaluating bisphosphonate use as the exposure of interest, including nitrogen-containing or non-nitrogen-containing bisphosphonates, with or without assessment of duration, dose, or cumulative use.",
+      "Studies reporting cancer outcomes, including all-cause/overall cancer incidence or specific cancer types such as colorectal, breast, endometrial, liver, or pancreatic cancer, and providing effect estimates (e.g., RR, OR, HR, SIR) with confidence intervals or sufficient data to calculate them."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, mechanistic, review, editorial, commentary, conference abstract-only, case report/case series, cross-sectional, or ecological studies, or any study not presenting original human comparative data.",
+      "Studies in pediatric populations only, highly selected non-generalizable populations without an appropriate non-user comparator, or studies in which bisphosphonate users cannot be distinguished from users of other bone-active drugs.",
+      "Studies not evaluating bisphosphonate exposure specifically, lacking a relevant comparator group, or focusing only on cancer prognosis, recurrence, mortality, or treatment response rather than incident cancer risk.",
+      "Studies not reporting eligible cancer outcomes of interest, not providing usable risk estimates/data, or duplicate publications based on the same cohort where the most complete or recent report should be retained."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 27 studies, including 24 contributing to the pooled odds ratio, bisphosphonate use was associated with a lower overall risk of cancer compared with non-use (random-effects OR 0.89, 95% CI 0.83\u20130.96; p=0.002), indicating about an 11% relative reduction.",
+      "Clinically, this suggests that bisphosphonates do not appear to increase cancer risk and may confer a modest protective association across the general population and typical users with osteoporosis or related bone disease.",
+      "These findings support reassurance for patients already using bisphosphonates for established indications and do not suggest a need to avoid treatment because of cancer concerns.",
+      "However, the substantial between-study heterogeneity (I\u00b2=88.6%) and likely differences in populations, cancer types, bisphosphonate classes, and duration of use mean the observed association should be interpreted cautiously and should not, by itself, justify prescribing bisphosphonates for cancer prevention."
+    ]
+  }
+}

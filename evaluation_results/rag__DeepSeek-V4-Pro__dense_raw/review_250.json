@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16617,
+    "output_tokens": 1190,
+    "total_tokens": 17807
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.047619047619047616,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.08695652173913042,
+    "screening_accuracy": 0.91,
+    "conditional_retention": 0.1111111111111111,
+    "post_retrieval_loss": 0.38095238095238093,
+    "inclusion_consistency": 0.6855,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4763,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening decisions, included studies, observations, and a conclusion, but it lacks several standard systematic review sections such as an abstract, full introduction, references, detailed search strategy, data extraction methods, quality assessment, and formal synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) comparing pharmacological (e.g., ketamine, aripiprazole, minocycline) or neuromodulatory treatments (e.g., ECT, rTMS, theta\u2011burst stimulation) with placebo/sham or each other in adults with treatment\u2011resistant depression (TRD)",
+      "Eligible participants had unipolar major depressive disorder and had failed to respond to at least two adequate antidepressant trials.",
+      "The primary outcome of interest was response rate, expressed as odds ratios.",
+      "Each explicitly enrolled adults with unipolar TRD (non\u2011response to \u22652 antidepressant trials) and compared a pharmacotherapeutic agent (intranasal esketamine) with placebo or an active comparator, reporting response rates."
+    ],
+    "exclusion_criteria": [
+      "Studies that included bipolar depression, psychotic depression, or fewer than 10 participants per arm were excluded.",
+      "All systematic reviews, meta\u2011analyses, narrative reviews, protocols, editorials, conference abstracts, case reports, retrospective/naturalistic studies, secondary/post\u2011hoc analyses, and open\u2011label single\u2011arm trials were removed because they were not primary RCTs.",
+      "Studies that did not explicitly enroll adults with TRD (\u22652 failed antidepressant trials) were excluded, as were those that included bipolar disorder, psychotic features, or adolescent populations.",
+      "Reviews/meta\u2011analyses",
+      "Observational/real\u2011world/retrospective studies",
+      "Secondary/post\u2011hoc analyses of RCTs",
+      "Protocols/pilot feasibility without sham control",
+      "RCTs that did not require \u22652 failed antidepressant trials or enrolled non\u2011TRD populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic screening identified four placebo\u2011 or active\u2011controlled RCTs that satisfy the strict TRD definition (\u22652 failed antidepressants) and report response rates.",
+      "All feature intranasal esketamine; no trials of other pharmacological agents or neuromodulatory procedures met the criteria in this candidate set.",
+      "The evidence base is therefore insufficient to perform a comprehensive network meta\u2011analysis of the originally envisaged 25 treatments.",
+      "Future updates should consider broadening the search to capture RCTs with slightly less stringent resistance criteria or including studies that provide individual\u2011patient data for subgroup analyses limited to participants with \u22652 prior failures."
+    ]
+  }
+}

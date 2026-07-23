@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6896,
+    "output_tokens": 1970,
+    "total_tokens": 8866
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4296,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6367,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with clear review question, screening criteria, results, included-study characteristics, synthesis, limitations, conclusion, and included reference, but it lacks a formal abstract, full introduction, detailed search strategy, and complete PRISMA-style methods such as data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years or older with overweight or obesity.",
+      "Comorbid depressive symptoms at baseline.",
+      "An internet- or mobile-based psychological intervention delivered through a website or smartphone app.",
+      "The intervention explicitly targeted depressive symptoms or mental health, rather than weight or general well-being alone.",
+      "Randomized controlled trial design.",
+      "An eligible control condition, such as a waiting list, no intervention, standard care, or usual care.",
+      "English- or German-language publication, insofar as this could be determined from the supplied record."
+    ],
+    "exclusion_criteria": [
+      "Exclusion of protocols, systematic reviews, secondary analyses, observational studies, nonclinical interventions, pregnancy-specific or other highly specific populations, and interventions addressing weight without directly targeting depressive symptoms.",
+      "Study protocols rather than completed trials, including Candidates 001, 003, 075, 089, 152, 178, 185, and 199.",
+      "Systematic reviews, meta-analyses, umbrella reviews, or other evidence syntheses, including Candidates 005, 016, 018, 027, 049, 067, 088, 129, and 192.",
+      "No randomized controlled comparison or observational/single-arm design, including Candidates 007, 044, 079, 086, 091, 100, 101, and 104.",
+      "Participants who were not adults with overweight/obesity and comorbid depressive symptoms, including depression studies in adolescents, university students, general adult samples, or other populations.",
+      "Interventions targeting weight, physical activity, diabetes, insomnia, or general well-being without directly targeting depressive symptoms, including Candidates 030, 043, 052, 058, 108, 110, 111, 150, 162, and 177.",
+      "Highly specific populations excluded by the criteria, such as pregnant women, people after bariatric surgery, people with cancer, or people with specific neurological or psychiatric conditions.",
+      "Studies in which depressive symptoms were only a secondary or exploratory outcome and the abstract did not establish that participants had comorbid depressive symptoms at baseline."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the fixed candidate pool, there is **one eligible completed primary RCT**.",
+      "It provides preliminary evidence that an integrated, self-guided internet intervention can reduce depressive symptom severity and body weight in men with overweight or obesity and comorbid depressive symptoms compared with a wait-list control.",
+      "The available evidence is insufficient to determine the overall effectiveness of internet- and mobile-based psychological interventions for the broader target population.",
+      "No pooled estimate, modality comparison, or robust evidence-quality judgment can be made from this single eligible article.",
+      "The evidence should therefore be regarded as **limited and uncertain**, despite the reported moderate effect on depressive symptoms and large effect on weight."
+    ]
+  }
+}

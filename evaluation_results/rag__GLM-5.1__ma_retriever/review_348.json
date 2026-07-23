@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21747,
+    "output_tokens": 906,
+    "total_tokens": 22653
+  },
+  "metrics": {
+    "retrieval_recall": 0.5490196078431373,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.49019607843137253,
+    "inclusion_precision": 0.8620689655172413,
+    "inclusion_f1": 0.625,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8928571428571429,
+    "post_retrieval_loss": 0.058823529411764705,
+    "inclusion_consistency": 0.5467,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with an introduction, thematic results, conclusion, and included articles, but it lacks major required systematic review sections such as an abstract, full methods, detailed search strategy, screening process, data extraction, synthesis approach, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "MDD diagnosis via clinical interview",
+      "prospective longitudinal design",
+      "a publication date before June 2019"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Evidence from longitudinal primary studies supports the prospective predictive utility of several biological biomarkers for MDD onset, relapse, and recurrence.",
+      "HPA axis dysregulation\u2014particularly elevated cortisol responses on the DEX/CRH test and persistent DST non-suppression\u2014is a consistent predictor of relapse, though findings regarding basal cortisol levels are mixed and null findings exist.",
+      "Structural brain alterations, especially smaller hippocampal volumes, enlarged CSF spaces, and reduced insula/amygdala grey matter, reliably indicate a worse prognosis or higher risk of onset.",
+      "Frontal EEG asymmetry and specific sleep EEG parameters also serve as trait-like vulnerability markers for onset and recurrence.",
+      "Preliminary evidence highlights the role of oxidative stress and specific inflammatory markers (e.g., low TNF-\u03b1) in predicting onset, although the directionality of inflammatory effects requires further subtype-specific investigation.",
+      "Limitations across the evidence base include frequently small sample sizes, heterogeneous biomarker assessments, and varying follow-up durations."
+    ]
+  }
+}

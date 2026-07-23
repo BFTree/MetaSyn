@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6997,
+    "output_tokens": 904,
+    "total_tokens": 7901
+  },
+  "metrics": {
+    "retrieval_recall": 0.7272727272727273,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.7272727272727273,
+    "inclusion_precision": 0.34782608695652173,
+    "inclusion_f1": 0.4705882352941176,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6964,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.55,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, eligibility criteria, results, and a brief synthesis overview, but it lacks major required systematic review sections such as abstract, introduction, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and formal meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "PFAS measured during in\u2011utero or early childhood.",
+      "Objectively measured obesity/adiposity indicator (BMI, BMI z\u2011score, waist circumference, or equivalent body\u2011composition metric) assessed at 1\u201312 years of age.",
+      "Primary observational study reporting a quantitative association between PFAS and the obesity outcome.",
+      "Any article meeting all criteria was included"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "systematic reviews",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "animal/in\u2011vitro studies",
+      "studies limited to birth outcomes",
+      "studies lacking a quantitative obesity endpoint",
+      "studies not focused on PFAS",
+      "all others were excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence shows heterogeneity: positive associations (especially with prenatal PFOA, PFNA), negative or null associations for some PFAS (e.g., PFOS, PFHxS), and evidence of effect modification by sex, age, and lifestyle factors.",
+      "Mixture analyses (e.g., BKMR, WQS, quantile g\u2011computation) indicate that the overall PFAS mixture may influence childhood adiposity.",
+      "These studies collectively support a need for further investigation into chemical\u2011 and timing\u2011specific effects of PFAS on pediatric obesity."
+    ]
+  }
+}

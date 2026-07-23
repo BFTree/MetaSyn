@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27496,
+    "output_tokens": 1359,
+    "total_tokens": 28855
+  },
+  "metrics": {
+    "retrieval_recall": 0.46153846153846156,
+    "retrieval_precision": 0.14634146341463414,
+    "inclusion_recall": 0.3076923076923077,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.4444444444444444,
+    "screening_accuracy": 0.926829268292683,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.15384615384615385,
+    "inclusion_consistency": 0.5463,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4683,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included studies, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening decisions, study characteristics, and synthesis rationale, but it lacks full PRISMA-level rigor such as a detailed reproducible search strategy, formal data extraction process, risk-of-bias/quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults over 18 years",
+      "RCTs",
+      "Exercise training as the primary intervention",
+      "Minimum duration 4 weeks",
+      "Non-exercise control condition",
+      "Reported at least one required outcome: RAAS markers, catecholamines, urinary sodium/potassium-related measures, blood pressure, or heart rate"
+    ],
+    "exclusion_criteria": [
+      "Acute exercise studies",
+      "Cross-over studies excluded under the stated rule",
+      "No control group",
+      "No relevant outcomes",
+      "No usable control data",
+      "Ineligible formats for pooling"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these trials, exercise training consistently lowered blood pressure.",
+      "The evidence does not support a single universal RAAS mechanism.",
+      "The local MetaSyn corpus supports a clear conclusion: **exercise training lowers blood pressure in adults with hypertension-related conditions, and this benefit is often accompanied by favorable changes in RAAS-linked and neurohumoral physiology, but the dominant pathway is phenotype-specific rather than universal**.",
+      "In resistant hypertension and obesity-associated prehypertension, exercise can substantially reduce renin or angiotensin II and improve endothelial signaling.",
+      "In mild essential hypertension, the earlier and more reproducible signals are renal dopamine/kallikrein activation, natriuretic tendencies, plasma volume reduction, and later suppression of norepinephrine.",
+      "The better model is hierarchical: **early renal sodium-handling effects and vascular adjustments may initiate response in some phenotypes, while sympathetic downregulation sustains BP improvement; direct RAAS suppression is pronounced in selected high-RAAS phenotypes rather than all adults.**"
+    ]
+  }
+}

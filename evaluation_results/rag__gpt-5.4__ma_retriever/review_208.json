@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 22235,
+    "output_tokens": 1217,
+    "total_tokens": 23452
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.21,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.9333333333333333,
+    "inclusion_f1": 0.6511627906976745,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6539,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4748,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized into screening approach, evidence themes, limitations, gaps, exclusions, included studies, and a bottom line, but it lacks a formal abstract, introduction, detailed search strategy, data extraction/quality assessment methods, PRISMA-style screening flow, and proper references, with some disorganized repetition in the included-study list."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human participants with severe retinal disease or closely relevant inherited retinal disease populations.",
+      "A psychophysical full-field threshold method using adaptive thresholding or equivalent full-field luminance/sensitivity threshold measurement.",
+      "Sufficient methodological or reporting detail in the abstract to contribute to a review of FST methodology/reporting variability."
+    ],
+    "exclusion_criteria": [
+      "Exclusion of reviews, narrative overviews, protocols, editorials, non-full-field tests, prosthesis electrical-threshold papers, and studies where FST was only mentioned without useful method detail.",
+      "I also respected the review end date of `2022-09-30`; articles clearly published after that date were not treated as eligible for inclusion in the synthesis of available evidence up to that point.",
+      "I excluded reviews and non-primary papers such as Candidate 001, 019, 031, 053, 072, 084, 099, 123, 139, 145, 160, 165, 166, 182, and others.",
+      "I also excluded non-full-field threshold methods, prosthesis threshold studies, and post-2022 studies outside the review end date."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The abstracts show clear methodological heterogeneity across studies, but reporting is often incomplete at abstract level.",
+      "Feasibility in ultralow vision is one of the strongest consistent findings.",
+      "Chromatic FST is widely used but not uniformly implemented.",
+      "Reporting of adaptation and threshold units is inconsistent.",
+      "The most defensible conclusion from these abstracts is that FST was already established as a valuable low-vision endpoint in severe retinal disease, but reporting conventions were not standardized well enough to ensure straightforward cross-study comparability."
+    ]
+  }
+}

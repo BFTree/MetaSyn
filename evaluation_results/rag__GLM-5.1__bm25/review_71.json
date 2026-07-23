@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20651,
+    "output_tokens": 1132,
+    "total_tokens": 21783
+  },
+  "metrics": {
+    "retrieval_recall": 0.7272727272727273,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.7272727272727273,
+    "inclusion_precision": 0.5714285714285714,
+    "inclusion_f1": 0.64,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.595,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5041,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening summary, evidence synthesis, conclusion, and included study list, but it lacks a formal abstract, introduction, detailed methods, quantitative meta-analysis approach, quality assessment, and full PRISMA-style search and selection details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prenatal and postnatal exposure to perfluoroalkyl and polyfluoroalkyl substances (PFAS)",
+      "pediatric obesity in children up to 12 years of age",
+      "Fourteen primary epidemiological studies met all eligibility criteria and were included in the final qualitative evidence synthesis."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, meta-analyses, protocols, commentaries, and studies assessing outcomes outside the scope of pediatric obesity (e.g., neurodevelopment, birth weight only, pubertal timing, respiratory outcomes) or populations outside the 1\u201312 year age range were excluded.",
+      "Studies published after the search end date of February 26, 2022, were also excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Prenatal exposure to PFAS, specifically PFOA, is moderately associated with increased pediatric adiposity (higher BMI, waist circumference, and visceral fat) in children up to 12 years of age.",
+      "PFOS and PFHxS demonstrate largely null or inverse associations, particularly when measured postnatally.",
+      "Future risk assessments should prioritize gestational exposure windows and evaluate PFAS as mixtures, accounting for sex-specific modifications.",
+      "The evidence regarding prenatal PFAS exposure and obesity measures in childhood (1\u201312 years) demonstrates significant heterogeneity across specific PFAS compounds, with PFOA showing the most consistent positive associations with increased adiposity, while PFOS often demonstrates null or inverse associations.",
+      "Evidence for postnatal or childhood-measured PFAS concentrations tends to show inverse or null associations with adiposity, which may reflect reverse causality (e.g., larger body mass leading to higher PFAS volume of distribution or different excretion rates) or distinct biological mechanisms compared to in-utero exposure.",
+      "Gestational exposure appears to be a more sensitive window for obesogenic effects, particularly for PFOA, which may program altered BMI trajectories (lower infant BMI followed by accelerated mid-childhood BMI gain)."
+    ]
+  }
+}

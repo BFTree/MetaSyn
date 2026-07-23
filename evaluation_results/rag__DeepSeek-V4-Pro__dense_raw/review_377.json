@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9086,
+    "output_tokens": 1159,
+    "total_tokens": 10245
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.895,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6287,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6229,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, methods, inclusion/exclusion criteria, screening results, final eligibility outcome, and conclusion, but it lacks several full systematic review sections such as an abstract, introduction, discussion, references, quality assessment, detailed search strategy, and data synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Information on plastics/MPs;",
+      "Flocculation processes of MPs in aquatic environments;",
+      "Peer\u2011reviewed original research."
+    ],
+    "exclusion_criteria": [
+      "Studies that do not report (1) the size and shape of MPs, and (2) the size of aggregates/flocs.",
+      "Reviews, editorials, conference abstracts, and studies in non\u2011aquatic or engineered environments (e.g., wastewater treatment plants, water treatment coagulation, atmospheric deposition, soil, human tissues) were excluded when they did not address natural flocculation.",
+      "Publication date filter was applied (only years \u2264\u202f2022)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The supplied candidate pool did not yield any eligible primary\u2011study article that simultaneously reports the size and shape of microplastics and the size of the flocs they form in aquatic environments.",
+      "This finding highlights a critical gap in the openly abstracted literature: while many papers discuss MP aggregation, the explicit reporting of both MP and aggregate dimensions is rarely present in abstracts, hindering meta\u2011analytic assessments of size\u2011dependent flocculation behavior.",
+      "Future primary studies should ensure that key size parameters are summarised in the abstract to facilitate systematic evidence syntheses."
+    ]
+  }
+}

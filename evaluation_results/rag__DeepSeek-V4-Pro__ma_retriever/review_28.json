@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14544,
+    "output_tokens": 748,
+    "total_tokens": 15292
+  },
+  "metrics": {
+    "retrieval_recall": 0.8214285714285714,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.88,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8214285714285714,
+    "inclusion_consistency": 0.4654,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.337,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear objective, methods, screening results, included study details, synthesis framework, limitations, conclusion, and included-study list, but it lacks formal abstract/introduction/references and PRISMA-style rigor elements such as a detailed search strategy and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult participants with BMI \u226527.5\u202fkg/m\u00b2",
+      "a synchronous, interactive, remote weight\u2011management intervention",
+      "reporting of barriers and/or facilitators to engagement",
+      "a primary study design (qualitative, quantitative, or mixed\u2011methods)"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews",
+      "meta\u2011analyses",
+      "protocols",
+      "conference abstracts",
+      "editorials",
+      "studies of asynchronous or purely face\u2011to\u2011face interventions",
+      "those solely reporting demographic predictors without substantive barriers/facilitators"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the supplied candidate pool, evidence on barriers and facilitators to engagement in synchronous remote weight management interventions for adults with excess weight is extremely sparse.",
+      "The single eligible study highlights the importance of technological infrastructure, social connection, and motivational alignment.",
+      "Future primary research explicitly designed to capture engagement\u2011related barriers and facilitators across diverse synchronous remote weight\u2011management programmes is needed to populate the COM\u2011B/TDF framework comprehensively.",
+      "Only one primary study from the pool met all inclusion criteria:",
+      "Interruptions in internet connectivity negatively impacted both delivery modes.",
+      "Synchronous delivery via Zoom promoted greater social engagement and accountability compared with Facebook.",
+      "Participants valued health improvements, weight loss, and reduced medication dependence as motivators.",
+      "The digital platform improved access for rural residents."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29435,
+    "output_tokens": 761,
+    "total_tokens": 30196
+  },
+  "metrics": {
+    "retrieval_recall": 0.71875,
+    "retrieval_precision": 0.38333333333333336,
+    "inclusion_recall": 0.28125,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.41860465116279066,
+    "screening_accuracy": 0.7333333333333333,
+    "conditional_retention": 0.391304347826087,
+    "post_retrieval_loss": 0.4375,
+    "inclusion_consistency": 0.6156,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5285,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive, logically organized structure with abstract, introduction, detailed methods, eligibility criteria, search queries, screening process, included-study characteristics, results, limitations, conclusion, and references, and it incorporates key PRISMA-style elements including study selection, evidence synthesis, subgroup interpretation, and discussion of confounding and mediation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Standardized intelligence testing in childhood, adolescence, or early adulthood before age 21.",
+      "Clinical health outcomes occurring later in life.",
+      "General-population or population-based samples; case-control studies allowed.",
+      "Physical and mental disorder outcomes."
+    ],
+    "exclusion_criteria": [
+      "Intelligence estimated from later-life social or demographic indicators.",
+      "Mortality-only outcomes without health disorders.",
+      "Nonclinical endpoints only.",
+      "Clinical-only cohorts without suitable population comparison.",
+      "Duplicates based on identical outcomes from identical data."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The local MetaSyn corpus supports the conclusion that **lower intelligence measured before age 21 is associated with increased risk of several later-life health disorders, but the strength and likely meaning of the association differ importantly by diagnosis**.",
+      "The evidence is strongest and most coherent for schizophrenia-spectrum disorders, severe depression to a lesser extent, overall dementia, and especially vascular dementia.",
+      "In contrast, bipolar disorder shows little or no association, and many physical-health associations\u2014particularly metabolic outcomes\u2014appear to be substantially mediated by education and adult socioeconomic position.",
+      "My concrete conclusion is that early-life IQ should not be treated as a universal direct causal risk factor for all later disease.",
+      "The corpus instead points to **multiple mechanisms**: developmental brain vulnerability for psychosis, vascular pathways for dementia, and educational/socioeconomic mediation for many cardiometabolic outcomes."
+    ]
+  }
+}

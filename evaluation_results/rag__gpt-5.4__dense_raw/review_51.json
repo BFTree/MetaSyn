@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6795,
+    "output_tokens": 1528,
+    "total_tokens": 8323
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4647,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3613,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, synthesis of results, limitations, conclusions, and included studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion sections, a detailed search strategy, explicit data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: adult men with penile cancer confined to the glans",
+      "Intervention: glansectomy with or without neoglans reconstruction, especially with split-thickness skin graft / split-skin graft",
+      "Outcomes: functional outcomes required for inclusion",
+      "Study design: primary studies only"
+    ],
+    "exclusion_criteria": [
+      "Exclude: reviews, technique papers without usable functional data, non-penile-cancer populations, pediatric/non-adult populations, broader mixed OSS cohorts where glansectomy-specific functional data could not be isolated, and studies with no functional data",
+      "review/systematic review/commentary only",
+      "no functional data in abstract",
+      "mixed penile-preserving cohorts without isolatable glansectomy functional results",
+      "interventions other than glansectomy-focused treatment",
+      "pediatric/nonadult or non-penile-cancer populations"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The most defensible conclusion from these abstracts is that glansectomy, with or without neoglans reconstruction, appears to offer a reasonable balance between oncologic control and preservation of sexual, urinary, and cosmetic outcomes in men with localized penile cancer.",
+      "From the supplied candidate pool, the evidence supports that glansectomy for glans-confined penile cancer, particularly with split-thickness skin graft neoglans reconstruction, usually preserves standing micturition and at least some erectile/sexual function, with generally high cosmetic satisfaction and acceptable short-term oncologic outcomes.",
+      "Evidence is stronger for feasibility and general functional preservation than for precise quantification of benefit."
+    ]
+  }
+}

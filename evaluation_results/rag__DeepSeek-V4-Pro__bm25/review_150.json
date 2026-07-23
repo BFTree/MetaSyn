@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19466,
+    "output_tokens": 960,
+    "total_tokens": 20426
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.7333333333333333,
+    "inclusion_f1": 0.7586206896551724,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.7977,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3566,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has clear Background, Methods, Results, and included-study sections with eligibility criteria and some screening/duplicate handling, but it lacks a formal abstract, discussion, conclusion, references, detailed search strategy, data extraction procedures, quality assessment, and fully specified synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary epidemiological studies that examine the association between one\u2011carbon metabolism nutrients\u2014vitamin B\u2086 (assessed as dietary intake or serum pyridoxal 5\u02b9\u2011phosphate [PLP]), vitamin B\u2081\u2082 (dietary intake or serum levels), and methionine (dietary intake)\u2014and the risk of breast cancer in women.",
+      "Eligible studies were required to provide relative risk (RR) or odds ratio (OR) estimates with 95% confidence intervals and, for dose\u2011response analyses, to report case and participant (or person\u2011year) numbers across exposure categories.",
+      "(1) exposure of interest explicitly included vitamin B\u2086/PLP, vitamin B\u2081\u2082, or methionine;",
+      "(2) outcome was incident breast cancer (or risk thereof);",
+      "(3) a quantitative risk estimate (RR/OR with 95% CI) was reported."
+    ],
+    "exclusion_criteria": [
+      "Duplicate reports from the same study population were handled by retaining the analysis with the largest number of cases;",
+      "reviews, meta\u2011analyses, conference abstracts, and studies not reporting a risk estimate were excluded.",
+      "Studies focusing solely on gene\u2013diet interactions without presenting a main effect of the nutrient were not considered to meet the exposure criterion.",
+      "Duplicate publications from the same cohort were identified; the report with the larger number of cases was retained."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Findings are mixed; some report no overall association, while others suggest an inverse relation in certain subgroups (e.g., postmenopausal women, ER\u2011negative tumours).",
+      "Candidate 055 reported a 30% reduced risk of invasive postmenopausal breast cancer in the highest PLP quartile, while Candidate 138 observed an inverse association with postmenopausal breast cancer but no overall association.",
+      "Results range from null to marginally positive or inverse, with some evidence of effect modification by menopausal status.",
+      "Candidate 138 measured plasma vitamin B\u2081\u2082 and found no significant overall association, although subgroup analyses by menopausal status were presented.",
+      "Many showed no clear association, though Candidate 009 reported an inverse trend with postmenopausal breast cancer."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19822,
+    "output_tokens": 1212,
+    "total_tokens": 21034
+  },
+  "metrics": {
+    "retrieval_recall": 0.9375,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8135593220338982,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.1875,
+    "inclusion_consistency": 0.5935,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6302,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, evidence synthesis, limitations, interpretation, and included studies, but it lacks a formal abstract, introduction, detailed methods, quantitative meta-analysis, quality assessment, explicit data-extraction and synthesis procedures, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Exposure**: standardized intelligence/IQ measured in **childhood, adolescence, or early adulthood before age 21**",
+      "**Population**: general-population or population-based samples; case-control studies allowed",
+      "**Outcomes**: **clinical** later-life physical or mental health conditions"
+    ],
+    "exclusion_criteria": [
+      "**Exclusions**: mortality-only studies, nonclinical outcomes only, later-life estimated intelligence, reviews/protocols/editorials, and clearly ineligible clinical-only cohorts",
+      "**Wrong exposure**: many studies examined childhood adversity, SES, depression, pollution, etc., rather than early-life IQ",
+      "**Wrong outcome**: academic performance, health behaviors, symptoms only, subclinical markers, or cognition/cognitive aging without clinical disorder",
+      "**Not primary eligible studies**: systematic reviews, meta-analyses, umbrella reviews, protocols",
+      "**Age at IQ assessment not clearly <21**: some studies measured \u201cyouth\u201d IQ partly beyond the threshold",
+      "**Special/clinical populations** rather than general-population samples"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "From the eligible abstracts, the evidence is **mostly consistent** that **lower early-life intelligence is associated with higher later risk of a broad range of clinical disorders**.",
+      "Across these abstracts, schizophrenia appears to be the **most robust mental-disorder association**.",
+      "The evidence also generally points toward **lower early-life IQ predicting later severe or hospital-diagnosed depression**, including large registry studies.",
+      "Several studies support an inverse association between early-life cognitive ability and later **dementia** risk.",
+      "Overall, the dementia evidence looks substantial, but subtype-specific patterns matter.",
+      "Cancer did not show the same consistent pattern as vascular outcomes.",
+      "Within this fixed candidate pool, the eligible evidence supports the conclusion that **lower intelligence measured early in life is generally associated with increased risk of later mental and physical disorders**, especially:",
+      "The association is **not universal**:",
+      "A repeated finding is that **education and adult socioeconomic position substantially attenuate many observed associations**, suggesting important life-course social pathways."
+    ]
+  }
+}

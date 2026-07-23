@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27378,
+    "output_tokens": 850,
+    "total_tokens": 28228
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.45652173913043476,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.5555555555555556,
+    "inclusion_f1": 0.2702702702702703,
+    "screening_accuracy": 0.5652173913043478,
+    "conditional_retention": 0.23809523809523808,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6714,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7057,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear search/retrieval, screening criteria, included evidence, synthesis, limitations, conclusion, evidence table, and references, but it lacks a formal abstract/introduction and does not provide full PRISMA-level rigor such as detailed data extraction procedures, study quality/risk-of-bias assessment, or a complete screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary observational studies published in English through `2019-12-07`",
+      "Observational cohort, case-control, and nested case-control studies",
+      "Exposure defined as bisphosphonate use with at least one prescription",
+      "Cancer incidence outcomes",
+      "Studies reporting effect estimates with confidence intervals, or enough data to derive them"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses from the inclusion set",
+      "Reviews and meta-analyses",
+      "Conference abstracts",
+      "Animal/in vitro work",
+      "Studies without usable effect estimates",
+      "Post-diagnostic mortality-only studies"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "My judgment from the retrieved corpus is that oral bisphosphonates should be considered cancer-neutral overall, not anticancer drugs.",
+      "The CRC literature contains repeated inverse associations, but the deeper and more reliable evidence does not support a causal protective effect.",
+      "Any apparent benefit is likely modest, duration-linked in some datasets, and vulnerable to residual confounding.",
+      "Site-specific reductions for breast or endometrial cancer remain hypothesis-generating rather than practice-changing.",
+      "First, oral bisphosphonates do not appear to increase overall cancer incidence.",
+      "Second, the apparent CRC protective association is not stable enough to treat as causal.",
+      "Third, site-specific reductions may exist for breast and endometrial cancer, but they are not strong enough to generalize as a class effect."
+    ]
+  }
+}

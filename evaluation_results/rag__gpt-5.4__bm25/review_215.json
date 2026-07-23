@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10564,
+    "output_tokens": 1191,
+    "total_tokens": 11755
+  },
+  "metrics": {
+    "retrieval_recall": 0.7435897435897436,
+    "retrieval_precision": 0.145,
+    "inclusion_recall": 0.46153846153846156,
+    "inclusion_precision": 0.6428571428571429,
+    "inclusion_f1": 0.537313432835821,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.6206896551724138,
+    "post_retrieval_loss": 0.28205128205128205,
+    "inclusion_consistency": 0.5788,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4634,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with a bottom line, screening summary, narrative synthesis, and included/excluded study lists, but it lacks standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, detailed search strategy, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective or cross-sectional human pregnancy/birth cohort studies that examined PFOS biomarker concentrations in maternal blood, cord blood, or newborn biospecimens and reported birth weight associations with an effect estimate and uncertainty",
+      "Human studies of pregnant women/newborns",
+      "PFOS measured in maternal serum/plasma/whole blood or cord blood",
+      "Birth weight analyzed as an outcome",
+      "Abstract reports regression coefficient, contrast estimate, or enough quantitative association information suggesting likely meta-analytic usability",
+      "studies that, from abstract alone, most clearly satisfy the PFOS-specific birth-weight association requirement"
+    ],
+    "exclusion_criteria": [
+      "animal studies",
+      "reviews",
+      "mechanistic papers without eligible birth-weight analyses",
+      "studies outside the date window",
+      "papers that did not report PFOS-birth weight regression results in a usable way from the abstract",
+      "candidates that the review\u2019s own exclusion rules indicate should not be in the primary analysis, especially the ECHO pooled paper",
+      "Not about birth weight",
+      "Not human pregnancy/newborn populations",
+      "Pre-2013 publications",
+      "2025 publications outside the search end date",
+      "Reviews/meta-analyses/editorials",
+      "ECHO pooled study flagged by the provided exclusion text for non-primary analysis",
+      "Studies where the abstract suggests only narrative/no usable PFOS birth-weight estimate",
+      "Pre-2013 studies that otherwise look relevant were excluded by the search start date."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The direction of association is often negative, but not uniformly so.",
+      "Given title/abstract-only screening, the weight of evidence in this candidate pool supports an association between higher prenatal PFOS biomarker concentrations and lower birth weight, but with meaningful between-study heterogeneity by population, biospecimen, timing, sex stratification, and analytic framework."
+    ]
+  }
+}

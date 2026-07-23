@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15940,
+    "output_tokens": 602,
+    "total_tokens": 16542
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.7538,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3978,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening process, results, and conclusion, but it lacks major systematic review sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, discussion, references, and synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "vertex\u2011based whole\u2011brain cortical thickness measurement",
+      "comparison of medication\u2011free MDD patients with healthy controls",
+      "adult population (excluding >65 and <18)",
+      "medication\u2011free status (never\u2011medicated or \u22657 days drug\u2011free)",
+      "explicit reporting of peak effect coordinates in MNI or Talairach space"
+    ],
+    "exclusion_criteria": [
+      "studies published after this date are excluded from the systematic review",
+      "Studies that did not clearly meet all five criteria were excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate article satisfied all inclusion criteria.",
+      "Consequently, no primary study could be included.",
+      "Based on the fixed candidate pool and the abstract-level screening, **zero studies were eligible for inclusion**.",
+      "Future updates of this review would require access to full-text reports and potentially a broader search that captures studies explicitly reporting stereotactic coordinates of cortical thickness differences."
+    ]
+  }
+}

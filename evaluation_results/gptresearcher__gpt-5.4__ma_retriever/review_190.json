@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33936,
+    "output_tokens": 778,
+    "total_tokens": 34714
+  },
+  "metrics": {
+    "retrieval_recall": 0.9444444444444444,
+    "retrieval_precision": 0.5666666666666667,
+    "inclusion_recall": 0.6111111111111112,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.7666666666666667,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5072,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6315,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Interpretation, Limitations, Conclusion, included-study list, and References, and it includes systematic-review elements such as search approach, eligibility criteria, screening decisions, exclusions, and narrative synthesis, but it lacks formal quality/risk-of-bias assessment and detailed quantitative meta-analysis methods needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Dental professionals, dental students, educators, staff, or patients in dental care settings",
+      "Empirical data on sexual misconduct, sexual harassment, inappropriate sexual behavior, or closely related dental-setting mistreatment where sexual misconduct was a reported component",
+      "Studies reporting prevalence, perpetrators/victims, impacts, reporting/response issues, or interventions/policies",
+      "All study designs",
+      "January 2010 to October 2024",
+      "English or with English abstract/translation available"
+    ],
+    "exclusion_criteria": [
+      "Mixed-profession studies without dentistry-specific outcomes",
+      "Non-empirical commentary/editorial/opinion only",
+      "Studies outside timeframe",
+      "Studies lacking dental-setting empirical relevance to sexual misconduct"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Within the local MetaSyn corpus for 2010 through October 2024, the evidence shows that sexual misconduct in dentistry is recurrent across dental education, specialty training, and practice.",
+      "Patients are important perpetrators, especially for hygienists and trainees, but internal actors such as professors, senior colleagues, dentists, office managers, and coworkers also contribute materially to the burden.",
+      "Harms include emotional distress, depression symptoms, job exit, and damage to professional self-concept.",
+      "Reporting awareness and response confidence are consistently weak.",
+      "The literature remains heavily descriptive, with minimal intervention evaluation.",
+      "On the available evidence, the most defensible conclusion is that dentistry has already crossed the threshold for institution-wide preventive action; waiting for stronger intervention trials before implementing structured reporting, training, and response systems would not be justified."
+    ]
+  }
+}

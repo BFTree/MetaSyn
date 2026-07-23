@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13984,
+    "output_tokens": 1156,
+    "total_tokens": 15140
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.7391304347826086,
+    "inclusion_precision": 0.85,
+    "inclusion_f1": 0.7906976744186046,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.7391304347826086,
+    "post_retrieval_loss": 0.2608695652173913,
+    "inclusion_consistency": 0.8759,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2983,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as eligibility criteria, screening summary, included studies, and narrative evidence synthesis, but it lacks several standard sections including Abstract, Introduction, formal Methods, Discussion, Conclusion, References, detailed search strategy, data extraction methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women with breast cancer as the cohort of interest",
+      "analysis of data from a cohort, case-control, or randomised controlled trial (including retrospective analyses of published RCTs)",
+      "statin use as the exposure",
+      "a comparison of statin users with non-users",
+      "reporting of breast cancer-specific death (BCD) or breast cancer recurrence (BCR) (or both) as outcomes",
+      "provision of 95% confidence intervals (or standard errors) for the association of interest",
+      "publication as a full-length article"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews",
+      "meta-analyses",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "laboratory experiments",
+      "case reports",
+      "ecological studies",
+      "studies that did not meet the PECO criteria"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included observational studies consistently suggest that post\u2011diagnostic statin use is associated with a modest reduction in breast cancer\u2011specific mortality and recurrence.",
+      "The effect appears more pronounced for lipophilic statins, in ER\u2011positive disease, and possibly in advanced\u2011stage patients.",
+      "However, important heterogeneity exists, likely driven by variations in study design, handling of immortal time bias, statin type, and patient characteristics.",
+      "The evidence base is entirely observational, and the one post\u2011hoc RCT analysis showed a signal of potential harm for hydrophilic statins that needs careful interpretation.",
+      "Well\u2011designed randomised trials remain essential to confirm causality and to identify the patients who would benefit most from adjuvant statin therapy."
+    ]
+  }
+}

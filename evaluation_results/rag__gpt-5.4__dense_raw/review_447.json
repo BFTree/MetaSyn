@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16615,
+    "output_tokens": 1306,
+    "total_tokens": 17921
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.5833333333333334,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.4804,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4021,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized around screening and evidence synthesis, but it lacks a formal abstract, introduction, detailed methods, search strategy, screening and data-extraction procedures, quality assessment, statistical synthesis methods, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Cancer type: breast, lung, or prostate only",
+      "Intervention: federated learning (FL)",
+      "Comparison: centralized ML baseline, single-site models, or literature-referenced centralized/non-FL comparison",
+      "Outcome: quantitative model performance/generalizability/clinical utility",
+      "Design/publication: empirical, peer-reviewed, English, dated 2020-01-01 to 2023-09-01"
+    ],
+    "exclusion_criteria": [
+      "Wrong year: e.g., 2024+, 2025+, 2026",
+      "Review/editorial/protocol/platform/infrastructure only without an eligible primary FL oncology comparison study",
+      "Wrong cancer type or non-target oncology",
+      "No FL",
+      "No clear relevant clinical quantitative oncology outcome",
+      "Outside date window",
+      "Not clearly comparative against centralized/single-site or not sufficiently empirical"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "These studies collectively suggest that, in breast, lung, and prostate cancer applications, federated learning is generally reported to:",
+      "However, the evidence base is still small, heterogeneous in task and comparator choice, and often stronger for comparison versus **local/single-institution models** than versus a rigorously matched **centralized pooled-data benchmark**.",
+      "Across included studies, the reported direction is mostly favorable to FL for:",
+      "Some studies compare FL mainly against **single-site/local models**, not necessarily a true centralized pooled-data benchmark.",
+      "Therefore, the evidence more confidently supports:",
+      "Based on title/abstract screening of the supplied pool, the evidence **supports federated learning as a promising and often beneficial approach for multi-centre breast, lung, and prostate cancer machine learning**, especially for improving **generalizability across institutions** while preserving privacy.",
+      "The evidence is **most convincing for FL outperforming single-centre/local models** and enabling collaboration without data sharing.",
+      "It is **less consistently conclusive** that FL outperforms a rigorously matched **centralized pooled-data approach**, because many abstracts do not report that comparison clearly.",
+      "Federated learning appears to improve cross-site robustness and practical multicentre model development in target cancers, with generally favorable performance relative to siloed local training, but evidence versus centralized pooled-data machine learning remains limited and methodologically heterogeneous."
+    ]
+  }
+}

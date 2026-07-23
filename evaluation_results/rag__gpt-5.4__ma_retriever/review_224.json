@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26415,
+    "output_tokens": 1127,
+    "total_tokens": 27542
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.8148148148148148,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.461,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4285,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.25,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, included/excluded studies, evidence synthesis, and uncertainty notes, but it lacks standard systematic review sections such as a formal abstract, introduction, full methods, discussion/conclusion, references, detailed search strategy, quality assessment, and explicit data extraction/synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with hypertension",
+      "Biofeedback intervention of any modality",
+      "Randomized controlled trial",
+      "English-language publication",
+      "Comparator such as sham, no intervention, usual care, or another control condition",
+      "Outcome includes systolic and/or diastolic blood pressure"
+    ],
+    "exclusion_criteria": [
+      "Reviews/systematic reviews/protocols/statements/editorials",
+      "Not a primary hypertension biofeedback RCT",
+      "Wrong population",
+      "Not clearly English or abstract suggests non-English article",
+      "Not clearly randomized/controlled or insufficient abstract detail"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across abstracts, the pattern is mixed but leans toward at least some short- to intermediate-term BP benefit:",
+      "Several trials report greater reductions in systolic and/or diastolic BP versus sham/control, such as direct BP biofeedback, home direct BP biofeedback, behavioral treatment including temperature biofeedback, heart-rate biofeedback, and internet-based biofeedback-assisted relaxation.",
+      "Some studies suggest benefit mainly for systolic BP, not consistently for diastolic BP.",
+      "Some studies suggest biofeedback may not outperform credible comparators like relaxation, sham feedback, or self-monitoring.",
+      "Multicomponent interventions complicate attribution when biofeedback is bundled with relaxation, meditation, or yoga.",
+      "At title/abstract level, biofeedback for hypertension appears:",
+      "plausible as a BP-lowering adjunct,",
+      "supported by several small randomized or controlled trials,",
+      "but inconsistent across modalities and comparators,",
+      "with heterogeneity in intervention content and trial design that would likely limit pooled inference without careful full-text assessment.",
+      "The main limitations visible already from abstracts are:",
+      "small sample sizes,",
+      "unclear randomization reporting in several older studies,",
+      "multimodal interventions that blend biofeedback with relaxation/yoga/meditation,",
+      "short follow-up,",
+      "inconsistent superiority over active controls."
+    ]
+  }
+}

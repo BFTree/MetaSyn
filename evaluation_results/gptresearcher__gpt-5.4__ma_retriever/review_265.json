@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28708,
+    "output_tokens": 984,
+    "total_tokens": 29692
+  },
+  "metrics": {
+    "retrieval_recall": 0.6190476190476191,
+    "retrieval_precision": 0.23636363636363636,
+    "inclusion_recall": 0.38095238095238093,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5517241379310345,
+    "screening_accuracy": 0.9090909090909091,
+    "conditional_retention": 0.6153846153846154,
+    "post_retrieval_loss": 0.23809523809523808,
+    "inclusion_consistency": 0.4543,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5093,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Interpretation/Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and synthesis considerations, but it lacks a formal quality/risk-of-bias assessment and full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human participants, including healthy volunteers and psychiatric patients.",
+      "Psychoplastogens named in the seed, including ketamine, esketamine, LSD, psilocybin, ayahuasca/DMT, MDMA, scopolamine, and rapastinel.",
+      "Baseline or placebo/control.",
+      "Peripheral BDNF in blood, specifically serum or plasma.",
+      "All available timepoints were eligible, though the motivating interest was within 24 hours.",
+      "Human primary study design.",
+      "Administration of an eligible psychoplastogen or directly relevant classic psychedelic comparator study with peripheral BDNF.",
+      "Explicit peripheral blood BDNF outcome in serum or plasma.",
+      "Availability up to the seed end date of 2023-06-13 for strict temporal eligibility."
+    ],
+    "exclusion_criteria": [
+      "Records clearly identified as reviews, broad mechanism papers, or non-primary syntheses were excluded from the included-study list but were used for contextual interpretation where appropriate.",
+      "Records published after 2023-06-13 were not included in the final included-study list, though some were informative for methodological context and are identified as such.",
+      "reviews or broader syntheses, not primary studies.",
+      "published after the seed search end date of 2023-06-13, therefore not eligible for the included-study list."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local corpus evidence does not support a robust general claim that psychoplastogens reliably elevate peripheral blood BDNF in humans.",
+      "One well-designed low-dose LSD study found acute plasma BDNF increases within 4 to 6 hours, proving that a rapid peripheral signal is detectable under dense sampling conditions.",
+      "However, several other controlled psychedelic studies and a ketamine/esketamine TRD study did not detect comparable changes.",
+      "The most defensible synthesis is that peripheral BDNF is a **possible but inconsistent** human biomarker of psychoplastogen action, with detectability likely governed by assay matrix, sampling density, and pharmacokinetic alignment.",
+      "Any future meta-analysis should stratify at minimum by plasma versus serum, acute sampling window, and drug class.",
+      "A single pooled estimate across these designs would be scientifically weak."
+    ]
+  }
+}

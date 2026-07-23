@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17951,
+    "output_tokens": 989,
+    "total_tokens": 18940
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.5024,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4611,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes meta-analysis-relevant elements such as screening/selection, eligibility rationale, synthesis approach, and conclusions, but it lacks several standard systematic review sections including a formal abstract, introduction, detailed methods/search strategy, quality assessment, discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Level I or Level II original prospective comparative studies",
+      "evaluated RDN+PVI versus PVI alone",
+      "patients with paroxysmal AF and essential hypertension"
+    ],
+    "exclusion_criteria": [
+      "studies were published after the search end date of June 1, 2021",
+      "systematic reviews, meta-analyses, narrative reviews, consensus statements, study protocols, or case reports/series",
+      "RDN alone without concomitant PVI",
+      "unrelated interventions",
+      "populations with chronic kidney disease (CKD) or secondary hypertension",
+      "patients with advanced CKD (mean eGFR potentially <45 mL/min/1.73m\u00b2) or heart failure"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The trial demonstrated a significant antiarrhythmic benefit.",
+      "This indicates that adding RDN significantly reduces the risk of AF recurrence.",
+      "The addition of RDN yielded a clinically meaningful and statistically significant reduction in systolic blood pressure.",
+      "Procedural safety was comparable between the two groups.",
+      "Based on the available candidate pool, current evidence from a single high-quality randomized clinical trial supports the hypothesis that adding renal denervation to pulmonary vein isolation significantly improves both rhythm control (by reducing AF recurrence) and blood pressure control in hypertensive patients with paroxysmal AF, without increasing procedural complication rates.",
+      "Further large-scale, multicenter randomized trials are necessary to confirm these findings across broader AF populations (e.g., persistent AF) and to explicitly quantify the long-term impact on eGFR."
+    ]
+  }
+}

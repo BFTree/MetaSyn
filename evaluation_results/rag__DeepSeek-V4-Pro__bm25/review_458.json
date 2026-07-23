@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16034,
+    "output_tokens": 1130,
+    "total_tokens": 17164
+  },
+  "metrics": {
+    "retrieval_recall": 0.3225806451612903,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.3225806451612903,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.4444444444444444,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7082,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6067,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a research question, screening process, eligibility summary, synthesis of included RCTs, findings, limitations, and study list, but it lacks several standard sections such as Abstract, Introduction, formal Methods, Discussion/Conclusion, References, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "technology\u2011assisted rehabilitation interventions\u2014virtual reality exergaming (with balance platforms or motion capture), serious gaming, wearables, and telerehabilitation\u2014on balance and functional mobility in community\u2011dwelling older adults aged \u226560 years",
+      "compared with conventional exercises or no treatment",
+      "randomized controlled trials (RCTs)",
+      "participants aged 60 years and older who were described as healthy, community\u2011dwelling, prefrail, or frail",
+      "technology\u2011based interventions",
+      "balance, functional mobility, or gait as primary outcomes"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews, meta\u2011analyses, protocols, observational studies, case reports",
+      "studies that enrolled populations with specific neurological, orthopaedic, or other disease conditions",
+      "without a primary diagnosis of a neurodegenerative, neurological, orthopaedic, or pulmonary disorder"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Virtual\u2011reality exergaming (Wii\u202fFit, custom exergames) and augmented\u2011reality training consistently produced significant within\u2011group improvements on the BBS, TUG, and postural sway measures.",
+      "When compared directly with conventional balance exercises, exergaming interventions were at least as effective, and in several trials (e.g., Candidates\u202f050,\u202f084,\u202f096) showed greater gains in dynamic balance and reactive postural control.",
+      "Dance\u2011based exergames (Candidate\u202f051) and stepping exergames (Candidate\u202f084) improved gait speed and dual\u2011task walking performance more than conventional training.",
+      "Telerehabilitation programs (Candidates\u202f067,\u202f113,\u202f129) also demonstrated clinically meaningful improvements in the TUG and functional gait assessments.",
+      "No serious adverse events were attributed to any technology\u2011assisted intervention.",
+      "Exergaming and tele\u2011exercise programs were feasible and led to improvements in balance and lower\u2011limb strength, suggesting that technology\u2011assisted rehabilitation is accessible even in more vulnerable older populations."
+    ]
+  }
+}

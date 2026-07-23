@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23120,
+    "output_tokens": 1259,
+    "total_tokens": 24379
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.5454545454545454,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.6864,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4686,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening approach, results-style inclusion decisions, narrative evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, full introduction/methods/results/discussion structure, detailed search strategy, data extraction methods, quality assessment, quantitative synthesis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "melatonin supplements and melatonin receptor agonists, versus placebo/control",
+      "sleep-wake and circadian outcomes in healthy adults and adults with psychiatric disorders",
+      "adult psychiatric populations and randomized placebo/control designs"
+    ],
+    "exclusion_criteria": [
+      "Review, protocol, editorial, or umbrella review rather than a primary RCT",
+      "Animal/preclinical study",
+      "Wrong population for this review target (eg, neurological disease, glaucoma, Parkinson\u2019s disease, blind individuals, non-psychiatric circadian sleep disorders only)",
+      "No placebo/control condition or only active-comparator design",
+      "No relevant sleep/circadian outcome in the abstract",
+      "Outside age range or likely older-adult sample only",
+      "Non-English title/abstract item"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Using only the supplied candidate pool, the evidence supports that **melatonin and melatonin receptor agonists can acutely improve sleep initiation and can phase-shift circadian rhythms in healthy adults**, especially when timed in relation to desired bedtime or an imposed phase advance.",
+      "Overall, the candidate pool supports melatoninergic agents as **chronobiotic and sleep-promoting interventions**, but the psychiatric-disorder evidence is limited and far less robust than the healthy-volunteer evidence.",
+      "Most included healthy-volunteer studies suggest that melatoninergic interventions can:",
+      "Only a small minority of eligible records involved psychiatric disorders.",
+      "This is clinically important because it suggests circadian advancement may not automatically translate into better overall sleep quality."
+    ]
+  }
+}

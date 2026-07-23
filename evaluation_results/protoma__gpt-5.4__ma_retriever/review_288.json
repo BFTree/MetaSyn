@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23862,
+    "output_tokens": 928,
+    "total_tokens": 24790
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.08064516129032258,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.9354838709677419,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5963,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6266,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized and includes the major systematic review sections plus meta-analysis-specific elements such as search strategy, eligibility criteria, screening results, synthesis plan, and risk-of-bias assessment, but it falls short of excellent due to duplicated headings, minor internal inconsistencies, lack of a full references section, and incomplete PRISMA-style details such as a formal flow diagram and detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling patients with periodontal diseases, specifically gingivitis and/or periodontitis.",
+      "Studies evaluating adoption of a healthy dietary pattern, such as Mediterranean, Optimised, Okinawan, or low inflammatory diets characterized by low refined carbohydrates, low saturated fats, high fibre, and high nutritional value.",
+      "Studies including a comparator group with unhealthy or Western diet patterns, habitual/standard diet, or lower adherence to a healthy diet.",
+      "Studies reporting periodontal clinical outcomes, including measures of gingivitis or periodontitis severity such as bleeding indices, plaque indices, probing depth, clinical attachment loss, or gingival inflammation."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving participants with gingivitis or periodontitis, or mixing periodontal and non-periodontal populations without separate data.",
+      "Studies not assessing dietary pattern exposure/intervention relevant to healthy vs unhealthy/standard diet comparisons, including studies limited to single nutrients, supplements, or non-dietary lifestyle factors alone.",
+      "Studies not reporting periodontal parameters as outcomes.",
+      "Non-eligible study designs, including animal or in vitro studies, case reports, narrative reviews, systematic reviews, editorials, letters, conference abstracts, and studies without an original comparison group."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "On qualitative assessment, the available evidence suggests a possible beneficial effect of healthier dietary patterns on periodontal parameters, with trends toward reduced gingival inflammation and improved clinical periodontal measures compared with unhealthy or usual diets.",
+      "Nevertheless, these findings should be interpreted cautiously.",
+      "Overall, current evidence is suggestive but insufficient to support firm conclusions about the effect of healthy diets on periodontal disease severity.",
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently consistent or extractable numerical data for meta-analysis."
+    ]
+  }
+}

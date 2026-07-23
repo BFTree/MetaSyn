@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14877,
+    "output_tokens": 937,
+    "total_tokens": 15814
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.195,
+    "inclusion_recall": 0.38461538461538464,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.5343511450381679,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.8974358974358975,
+    "post_retrieval_loss": 0.04395604395604396,
+    "inclusion_consistency": 0.717,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5109,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Objective, Methods, Key Findings, Summary, and Included Studies, and it includes screening criteria, but it lacks formal Abstract, Introduction, Discussion/Conclusion, full References, detailed search strategy, data extraction methods, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "postmortem brain samples",
+      "measurement of neuroinflammatory markers",
+      "comparison with psychiatrically and neurologically healthy controls"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "conference abstracts",
+      "non\u2011English papers",
+      "studies using only untargeted methods (e.g., microarray, shotgun proteomics) without targeted confirmation",
+      "studies focused on viruses/infection"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence synthesis reveals a complex, region\u2011 and subtype\u2011specific pattern of neuroinflammatory alterations in schizophrenia.",
+      "The postmortem literature consistently points to a state of low\u2011grade neuroinflammation in schizophrenia, manifesting as increased microglial activation, altered astrocyte protein expression without frank astrogliosis, and elevated pro\u2011inflammatory cytokines and immune\u2011related transcripts.",
+      "These changes are not uniform; they appear concentrated in specific brain regions (e.g., prefrontal and temporal cortices, hippocampus, midbrain) and in subgroups of patients with high inflammatory profiles.",
+      "The findings support the hypothesis that neuroimmune dysregulation contributes to the pathophysiology of schizophrenia, possibly through interactions with glutamatergic and dopaminergic systems."
+    ]
+  }
+}

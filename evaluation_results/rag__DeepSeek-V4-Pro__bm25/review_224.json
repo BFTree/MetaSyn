@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11307,
+    "output_tokens": 1393,
+    "total_tokens": 12700
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.065,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6923076923076923,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.4946,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6626,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes Introduction, Methods, Results, study characteristics, narrative synthesis, Conclusion, and a list of included studies, but it lacks an Abstract, detailed search strategy, data extraction procedures, risk-of-bias/quality assessment, formal references, and PRISMA-style rigor elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomised controlled trials (RCTs) published in English were eligible.",
+      "were RCTs,",
+      "enrolled adults (\u226518 years) with a diagnosis of hypertension (office BP \u2265140/90 mmHg or home BP \u2265135/85 mmHg),",
+      "delivered a biofeedback intervention (e.g., heart rate variability, thermal, electromyographic, blood pressure, or device\u2011guided breathing biofeedback),",
+      "compared the biofeedback intervention against a control condition (standard care, no intervention, or sham biofeedback),",
+      "reported systolic and/or diastolic blood pressure outcomes."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, meta\u2011analyses, protocols, conference abstracts, editorials, non\u2011randomised studies, and studies in non\u2011hypertensive populations were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available RCTs suggest that some biofeedback modalities (e.g., blood pressure biofeedback, thermal biofeedback, and device\u2011guided breathing) may produce modest reductions in blood pressure compared with control conditions, but the evidence is inconsistent and often of limited methodological quality.",
+      "The clinical relevance of the observed reductions remains uncertain, and no single biofeedback approach emerges as clearly superior.",
+      "Well\u2011powered, long\u2011term trials with standardised protocols and appropriate sham controls are needed to determine the true effectiveness of biofeedback for hypertension management.",
+      "Many trials reported statistically significant within\u2011group BP reductions, but between\u2011group differences were often modest or inconsistent.",
+      "Several studies highlighted that the magnitude of BP lowering was comparable to or smaller than the placebo effect, and long\u2011term (>6 months) efficacy data are scarce."
+    ]
+  }
+}

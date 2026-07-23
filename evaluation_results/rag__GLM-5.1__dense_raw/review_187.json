@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12998,
+    "output_tokens": 902,
+    "total_tokens": 13900
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7474,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5904,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes review context, screening summary, findings, conclusion, and included studies, but it lacks a formal abstract, detailed introduction, methods, search strategy, data extraction and quality assessment procedures, synthesis methodology, discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language",
+      "undergraduate dental students",
+      "comparison of TBL with another teaching pedagogy",
+      "relevant outcomes"
+    ],
+    "exclusion_criteria": [
+      "non-English",
+      "postgraduate",
+      "no comparison pedagogy",
+      "systematic reviews/meta-analyses/protocols",
+      "and articles published after the search end date of May 2, 2023"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available evidence indicates that TBL is an effective alternative to traditional didactic lectures in undergraduate dental education, yielding higher student satisfaction and improved academic performance.",
+      "When compared to another active learning pedagogy like the flipped classroom, TBL demonstrates comparable effectiveness, suggesting that while TBL provides clear advantages over passive lecture formats, its academic outcomes are similar to other structured active learning strategies.",
+      "Both studies report significantly higher student satisfaction with TBL.",
+      "Both studies demonstrate objective academic improvements with TBL.",
+      "Term-end examination results indicated that TBL classes had slightly higher scores than FC classes; however, this difference was not statistically significant."
+    ]
+  }
+}

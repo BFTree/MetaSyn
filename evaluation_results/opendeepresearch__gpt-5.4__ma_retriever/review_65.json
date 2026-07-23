@@ -1,0 +1,74 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27967,
+    "output_tokens": 1415,
+    "total_tokens": 29382
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.25925925925925924,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.8148148148148148,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.4554,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6675,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear eligibility criteria, search queries, screening decisions, included-study descriptions, and narrative synthesis, but it lacks a formal abstract, introduction, references section, quality assessment, and full meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies included adult women with PCOS, defined as age 18 years or older, or clearly described as adult women.",
+      "Any accepted PCOS definition was eligible, including Rotterdam, NIH, AE-PCOS, self-report, or ICD-based definitions.",
+      "Neck circumference measured as an anthropometric marker of upper-body adiposity.",
+      "No comparator restriction was imposed.",
+      "PCOS versus non-PCOS controls",
+      "Comparisons within PCOS populations by lower versus higher NC",
+      "PCOS-only studies assessing associations between NC and metabolic outcomes",
+      "Eligible outcomes included NC values and at least one relevant metabolic outcome, including:",
+      "Metabolic syndrome",
+      "Insulin resistance or related markers",
+      "Anthropometric measures such as BMI or waist circumference",
+      "Blood pressure",
+      "Lipids",
+      "Glucose-insulin measures",
+      "Type 2 diabetes or impaired glucose tolerance",
+      "Design eligibility was kept broad.",
+      "Any primary human study capable of contributing quantitative evidence was eligible."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they had:",
+      "An incompatible population or study design",
+      "No NC measurement",
+      "Outcomes outside the prespecified metabolic scope"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Evidence exists but is incomplete in the accessible local corpus.",
+      "A direct quantitative conclusion that adult women with PCOS have larger NC than non-PCOS controls cannot be firmly established from the retrievable corpus text alone, even though one included study clearly had the right comparator framework.",
+      "This objective is supported more consistently.",
+      "Larger NC was associated with metabolic syndrome [3][4]",
+      "Larger NC tracked with obesity and central adiposity measures such as BMI and waist circumference [4]",
+      "Larger NC was associated with blood pressure abnormalities [3][4]",
+      "Larger NC was linked to hyperglycemia/abnormal glucose tolerance [3][4]",
+      "Larger NC was linked to dyslipidemia [3][4]",
+      "This was the clearest and strongest signal.",
+      "The available local-corpus evidence supports a relationship between NC and metabolic dysregulation, but the support for insulin resistance per se is more indirect in the retrieved material."
+    ]
+  }
+}

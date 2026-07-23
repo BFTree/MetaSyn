@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21895,
+    "output_tokens": 1410,
+    "total_tokens": 23305
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9583333333333334,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4302,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7785,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clearly labeled sections for the review question, eligibility criteria, search strategy, screening, included/excluded studies, study characteristics, synthesis, limitations, and conclusion, and it includes several meta-analysis-specific elements, though it lacks full PRISMA-level rigor such as a formal risk-of-bias assessment and reproducible quantitative pooling details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included patients with open-angle glaucoma and healthy subjects without glaucoma",
+      "evaluated TPD / translaminar pressure gradient, defined as IOP minus ICP or lumbar cerebrospinal fluid pressure",
+      "reported quantitative TPD values in open-angle glaucoma patients",
+      "provided information, where available, on:",
+      "study type",
+      "number of subjects",
+      "population characteristics",
+      "inclusion criteria",
+      "data processing or measurement quality",
+      "Ethics Committee approval"
+    ],
+    "exclusion_criteria": [
+      "duplicates",
+      "experimental models",
+      "review papers, chapters, or supplements",
+      "case reports",
+      "comments or abstracts without usable primary data",
+      "studies that did not evaluate TPD",
+      "studies that did not include glaucoma patients",
+      "studies that did not present quantitative TPD values in open-angle glaucoma patients"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the local MetaSyn PubMed corpus and the date range **2004-11-01 to 2014-11-30**, the eligible evidence suggests that **translaminar pressure difference (IOP \u2212 ICP) is higher in patients with open-angle glaucoma than in healthy controls** and that **higher TPD is associated with glaucomatous damage**, including **structural optic disc change such as reduced neuroretinal rim area** [1][2].",
+      "The evidence is directionally consistent but limited in quantity and completeness.",
+      "Because the locally retrievable records did not preserve all of the exact quantitative data needed for pooled effect estimation, a formal reproducible meta-analysis could not be completed from the available local evidence alone.",
+      "The best-supported conclusion is therefore a **qualitative systematic-review conclusion** rather than a quantitative pooled estimate.",
+      "Based on the two included studies, the local corpus evidence supports the conclusion that **TPD/translaminar pressure gradient is higher in open-angle glaucoma than in healthy controls** [1][2].",
+      "Yes, the locally retrieved evidence supports an association between elevated TPD and **structural glaucomatous optic disc damage**, especially **reduced neuroretinal rim area** [2][3]."
+    ]
+  }
+}

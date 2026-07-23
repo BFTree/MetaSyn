@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12257,
+    "output_tokens": 1468,
+    "total_tokens": 13725
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5193,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4734,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening decisions, evidence synthesis, and interpretation, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original primary study",
+      "primary stage IV endometrial cancer population, or a mixed population with separate stage IV results",
+      "underwent cytoreductive surgery",
+      "OS and/or PFS reported by cytoreduction extent",
+      "at least 10 patients in the relevant stage IV population",
+      "within date range"
+    ],
+    "exclusion_criteria": [
+      "not be reviews, abstracts, guidelines, case reports, or HIPEC studies",
+      "review/systematic review/guideline/editorial",
+      "mixed stage III/IV populations without separate stage IV results",
+      "recurrent disease, molecular studies, or treatment-sequencing studies not reporting OS by cytoreduction extent",
+      "carcinosarcoma or uterine sarcoma-focused studies",
+      "outside date range"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence consistently points in the same direction: **complete or optimal cytoreduction is associated with longer overall survival than incomplete cytoreduction in patients with primary stage IV endometrial cancer**.",
+      "However, the evidence base is entirely observational in this pool, so the findings support association rather than proving a causal survival benefit.",
+      "Across studies, the effect direction is highly consistent:",
+      "From the eligible candidate pool, the evidence supports that **maximal cytoreduction, especially complete resection or at least optimal residual disease status, is associated with improved overall survival versus incomplete cytoreduction in primary stage IV endometrial cancer**.",
+      "The magnitude of association is clinically substantial in multiple studies.",
+      "The data support **association**, not definitive proof of treatment effect.",
+      "Even so, the consistency across institutions, eras, and stage IV subgroups strengthens confidence that extent of cytoreduction is an important prognostic factor and likely clinically meaningful."
+    ]
+  }
+}

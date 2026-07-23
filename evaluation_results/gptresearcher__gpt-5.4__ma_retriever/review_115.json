@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23667,
+    "output_tokens": 1186,
+    "total_tokens": 24853
+  },
+  "metrics": {
+    "retrieval_recall": 0.8888888888888888,
+    "retrieval_precision": 0.27586206896551724,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.896551724137931,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.7318,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3628,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, References, explicit search queries, eligibility criteria, screening decisions, and synthesis tables, but it lacks full PRISMA-style rigor such as a formal risk-of-bias/quality assessment and detailed data extraction procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original studies from 1997-01-01 to 2022-12-31",
+      "at least 10 patients with primary stage IV EC undergoing CRS",
+      "survival outcomes stratified by extent of cytoreduction",
+      "Enroll at least 10 patients with primary stage IV EC who underwent CRS.",
+      "Report OS and/or PFS stratified by extent of cytoreduction.",
+      "Define cytoreduction by complete/no gross residual disease, optimal residual disease <=1 cm, or incomplete/gross residual disease >1 cm.",
+      "If mixed-stage cohorts were included, provide separable survival data for primary stage IV patients."
+    ],
+    "exclusion_criteria": [
+      "Conference abstracts",
+      "Case reports",
+      "Review articles",
+      "Meta-analyses",
+      "Editorials",
+      "Letters",
+      "Guidelines",
+      "Uterine sarcoma studies",
+      "HIPEC studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus provides a coherent and persuasive body of evidence that complete or optimal cytoreductive surgery is associated with substantially better overall survival than incomplete cytoreduction in primary stage IV endometrial cancer.",
+      "The strongest stage IVB cohorts show a clear survival gradient from complete resection to minimal residual disease to bulky residual disease, and this relationship persists across different metastatic patterns and histologic subtypes.",
+      "My judgment is that this is not a weak or trivial association: residual disease appears to be one of the strongest prognostic variables in this disease setting, and the effect sizes are large enough to support maximal safe CRS as a legitimate therapeutic objective.",
+      "Therefore, the correct clinical interpretation is not that every patient with stage IV EC should undergo aggressive surgery, but that when complete or near-complete cytoreduction appears realistically achievable and patient condition permits, the available evidence strongly favors pursuing it over knowingly leaving bulky residual disease.",
+      "Across the retrieved literature, the evidence consistently supports a strong association between lesser residual disease and improved overall survival (OS), including in stage IVB-specific cohorts and in patients with extra-abdominal metastases."
+    ]
+  }
+}

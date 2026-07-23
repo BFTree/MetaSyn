@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11740,
+    "output_tokens": 937,
+    "total_tokens": 12677
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.8181818181818182,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.5615,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3313,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening/selection criteria, a synthesis of findings, a conclusion, and a list of included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, quantitative synthesis approach, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult patients with morbid obesity (BMI \u2265 40 or \u2265 35 with comorbidities) undergoing bariatric surgery",
+      "probiotics or synbiotics compared to placebo, digestive enzymes, care as usual, or no intervention, in an RCT or CCT design"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "animal/ex vivo studies",
+      "out-of-date (published after 2023-03-14)",
+      "involved non-bariatric populations (e.g., general obesity, NAFLD without surgery, T2DM without surgery)",
+      "used non-qualifying comparators (e.g., UDCA without a placebo arm)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the effect of probiotic supplementation on clinical outcomes in morbidly obese patients undergoing bariatric surgery is mixed and often modest:",
+      "Probiotic supplementation in morbidly obese patients undergoing bariatric surgery may offer modest benefits for liver function (AST) and triglyceride levels, particularly when combined with specific micronutrients or in certain surgical subpopulations (e.g., mini-gastric bypass).",
+      "Benefits for weight loss and Vitamin B12 are observed in some short-term analyses but are not consistently sustained or significant across all trials.",
+      "Probiotics are generally safe with mild or no adverse effects."
+    ]
+  }
+}

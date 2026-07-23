@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19409,
+    "output_tokens": 1122,
+    "total_tokens": 20531
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3039,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5383,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with a research question, search period, screening criteria, included-study summaries, findings, limitations, conclusion, and included references, but it lacks formal Abstract/Introduction/Methods/Results/Discussion headings and does not provide a detailed database search strategy, data extraction process, or formal quality assessment sufficient for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary research",
+      "included OAG patients and healthy controls",
+      "reported quantitative TPD values",
+      "published within the search window"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "case reports",
+      "comments",
+      "abstracts",
+      "experimental models"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included studies consistently demonstrate that the translaminar pressure difference is elevated in patients with open\u2011angle glaucoma compared with healthy controls.",
+      "Candidate\u202f003 (Ren et al., 2010) used invasive lumbar CSF pressure measurements and showed significantly higher TPD in both normal\u2011tension and high\u2011tension glaucoma than in controls, with a dose\u2011response relationship between TPD and visual field loss.",
+      "Candidate\u202f001 (2014) confirmed higher TPG in glaucoma groups (NTG and HTG) and found a strong negative correlation between TPG and neuroretinal rim area in NTG, linking TPD directly to structural optic disc damage.",
+      "Within the selected search window, the available primary evidence indicates that the translaminar pressure difference is elevated in OAG patients relative to healthy individuals and is associated with structural glaucomatous changes (neuroretinal rim thinning) and functional loss (visual field defects).",
+      "These findings support the hypothesis that an increased TPD contributes to optic nerve damage in glaucoma.",
+      "However, the small number of studies and methodological differences limit the strength of a meta\u2011analytic synthesis; future reviews should incorporate studies published after 2014 to obtain a more comprehensive estimate."
+    ]
+  }
+}

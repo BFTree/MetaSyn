@@ -1,0 +1,102 @@
+{
+  "review_id": 215,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    70016,
+    3401,
+    3383
+  ],
+  "retrieved_article_ids": [
+    3778,
+    3386,
+    70019,
+    3777,
+    3409,
+    3393,
+    3388,
+    70018,
+    70016,
+    3779,
+    3401,
+    3383,
+    86861,
+    3390,
+    3380,
+    3396,
+    3404,
+    70014,
+    90084,
+    86735,
+    70000,
+    86827,
+    86667,
+    90075,
+    90100,
+    3402,
+    69997,
+    3405,
+    3394,
+    86705,
+    3397,
+    3382,
+    3381
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 15,
+    "input_tokens": 383663,
+    "output_tokens": 15229,
+    "total_tokens": 398892,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 66467,
+        "output_tokens": 3000,
+        "total_tokens": 69467
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 5668,
+        "output_tokens": 5000,
+        "total_tokens": 10668
+      },
+      "researcher": {
+        "calls": 9,
+        "input_tokens": 300498,
+        "output_tokens": 5556,
+        "total_tokens": 306054
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9440,
+        "output_tokens": 880,
+        "total_tokens": 10320
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1590,
+        "output_tokens": 793,
+        "total_tokens": 2383
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 33,
+    "retrieved_unique": 33,
+    "included_count": 3,
+    "included_unique": 3,
+    "search_calls": 4,
+    "unique_search_queries": 4,
+    "retrieved_instances": 80,
+    "duplicate_exposures": 47,
+    "fetch_calls": 13,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 9,
+    "source_review_ids_removed_count": 1,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

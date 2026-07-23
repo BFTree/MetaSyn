@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9842,
+    "output_tokens": 1287,
+    "total_tokens": 11129
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.3455,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5666,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes background, screening results, included studies, synthesis, limitations, and conclusion, but it lacks a formal abstract, detailed methods/search strategy, data extraction process, quality assessment, full discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomised controlled trials (RCTs) with relevant outcomes were eligible."
+    ],
+    "exclusion_criteria": [
+      "not RCTs",
+      "did not involve CHW home visits targeting newborn/young infant illness identification",
+      "did not report outcomes of serious\u2011illness identification or care seeking",
+      "were conducted in high\u2011income settings",
+      "Three pre\u2011specified studies (Awasthi 2008, Bang 2005, Escobar 2001) were also excluded as per the exclusion criteria."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "This systematic review identified three cluster\u2011RCTs that demonstrate that home visits by trained CHWs in LMICs improve care seeking from health facilities for sick newborns and young infants.",
+      "No included study directly reported diagnostic accuracy outcomes.",
+      "The findings support the use of CHW home\u2011visiting strategies to enhance neonatal care seeking, while highlighting a need for future trials that also measure the validity of CHW\u2011based illness identification.",
+      "The evidence consistently shows that trained CHW home visits increase appropriate care seeking, but there is a gap in direct measures of identification accuracy (sensitivity/specificity) in these RCTs."
+    ]
+  }
+}

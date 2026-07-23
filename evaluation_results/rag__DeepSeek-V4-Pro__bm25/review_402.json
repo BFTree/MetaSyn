@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7931,
+    "output_tokens": 811,
+    "total_tokens": 8742
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.7569,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7247,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, screening process, and findings, but it lacks most standard review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, detailed search strategy, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary studies (RCTs or observational designs) with the specified sequencing technology, population, exposure, comparator, and outcome were eligible.",
+      "using studies that employed 16S rRNA sequencing on Illumina platforms targeting the V4 or V3\u2011V4 regions."
+    ],
+    "exclusion_criteria": [
+      "Studies without explicit mention of Illumina sequencing and V4/V3\u2011V4 amplicons were excluded.",
+      "Studies that did not report data on the gut microbiome\u2013stunting association in under\u20115s in LMICs, or that were reviews, protocols, animal studies, or irrelevant populations, were also excluded.",
+      "The requirement for publicly accessible data and the absence of antibiotic use within three months of sampling could not be verified from the abstracts and were therefore considered not met unless explicitly stated."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate article met all inclusion criteria.",
+      "Several studies did examine gut microbiota and linear growth or stunting in LMIC settings (e.g., Candidates 001, 002, 003, 004, 011, 087, 097).",
+      "However, none of their abstracts explicitly stated that the sequencing was performed on an **Illumina** platform and targeted the **V4 or V3\u2011V4** hypervariable regions, as required.",
+      "Therefore, the systematic review cannot include any study from the supplied pool.",
+      "None were included."
+    ]
+  }
+}

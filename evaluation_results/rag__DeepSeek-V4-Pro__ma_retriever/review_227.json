@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10689,
+    "output_tokens": 952,
+    "total_tokens": 11641
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.6928,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.658,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has clear objective, methods, screening results, included-study findings, synthesis, implications, and included references, but it lacks a formal abstract, introduction, discussion/conclusion headings, detailed search strategy, explicit data extraction process, quality/risk-of-bias assessment, and formal meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they reported or allowed calculation of hypertension prevalence in children and adolescents with TS \u226418 years of age.",
+      "All BP assessment methods and definitions of hypertension were accepted.",
+      "Studies that included adults were eligible only if paediatric (\u226418 years) data could be evaluated independently.",
+      "Only English\u2011language primary studies were considered"
+    ],
+    "exclusion_criteria": [
+      "reviews, case reports, conference abstracts, and papers that only compared BP with a control group without providing prevalence data were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The findings confirm that hypertension is highly prevalent in paediatric TS and that ABPM reveals a substantially greater burden of abnormal BP than office measurements alone.",
+      "Nocturnal hypertension and non\u2011dipping patterns are particularly common.",
+      "The evidence base is limited to a small number of cross\u2011sectional studies, and only one directly compared ABPM with other methods.",
+      "Future research should standardise BP measurement protocols and hypertension definitions to enable more precise prevalence estimates and meta\u2011analysis.",
+      "This study highlights that ABPM substantially improves detection of hypertension in TS and alters clinical management."
+    ]
+  }
+}

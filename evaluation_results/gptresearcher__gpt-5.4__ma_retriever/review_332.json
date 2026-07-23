@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29096,
+    "output_tokens": 881,
+    "total_tokens": 29977
+  },
+  "metrics": {
+    "retrieval_recall": 0.12195121951219512,
+    "retrieval_precision": 0.0641025641025641,
+    "inclusion_recall": 0.024390243902439025,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.047619047619047616,
+    "screening_accuracy": 0.9487179487179487,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.0975609756097561,
+    "inclusion_consistency": 0.7843,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8074,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, screening/results, synthesis, limitations, Conclusion, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and synthesis rationale, but it lacks full PRISMA-style rigor such as a formal flow diagram, detailed data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Confirmed mpox patients",
+      "All genders and ages",
+      "Reports the proportion or sex distribution including women",
+      "Observational primary studies: prevalence studies, case series, cross-sectional, cohort, case-control, surveys",
+      "Global geography",
+      "English",
+      "Human studies",
+      "Published through January 4, 2022"
+    ],
+    "exclusion_criteria": [
+      "Male-only studies",
+      "Studies not reporting sex distribution",
+      "Qualitative, policy, case reports, opinion reports"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Strictly applying the supplied eligibility criteria yields **one included study** and does **not** support a valid meta-analysis of the proportion of women among mpox cases across both pre-2022 and 2022-onward periods.",
+      "The proportion of women among mpox cases varies sharply by geography, transmission mode, and outbreak period.",
+      "Pre-2022 endemic DRC surveillance already showed that women constituted a substantial share of confirmed cases and that sex distribution differed by age and exposure pattern ([1115](metasyn://corpus/1115)).",
+      "Post-2022 multinational nonendemic spread was overwhelmingly male-dominant ([20909](metasyn://corpus/20909)), but newer DRC clade Ib and mixed-setting outbreaks often include near parity or even female-majority case distributions ([20979](metasyn://corpus/20979); [20942](metasyn://corpus/20942); [20773](metasyn://corpus/20773)).",
+      "My conclusion is that sex distribution in mpox should be treated as a context-dependent epidemiologic property rather than generalized from any single outbreak template.",
+      "Reviews and surveillance strategies that rely too heavily on the male-dominant 2022 nonendemic pattern will under-detect women and girls in African endemic and emergent settings."
+    ]
+  }
+}

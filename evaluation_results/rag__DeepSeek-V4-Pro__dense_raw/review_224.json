@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14107,
+    "output_tokens": 988,
+    "total_tokens": 15095
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.4585,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3877,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes a research question, screening criteria/process, included studies, and narrative evidence summary, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, Conclusion, References, risk-of-bias assessment, and detailed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trial",
+      "adult hypertensive participants diagnosed with office SBP \u2265140/DBP \u226590 mmHg or home SBP/DBP \u2265135/85 mmHg",
+      "any biofeedback modality",
+      "comparison with standard care, sham, or no biofeedback",
+      "English language",
+      "blood pressure change as outcome"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews",
+      "editorials",
+      "conference abstracts",
+      "non\u2011RCT designs",
+      "outcomes outside BP"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Several trials report statistically significant reductions in systolic and/or diastolic BP in biofeedback groups compared with controls.",
+      "Conversely, Candidate\u202f006 found no specific biofeedback effect over placebo, with similar BP reductions in both arms, highlighting a strong placebo component.",
+      "Longer\u2011term follow\u2011up is limited.",
+      "Blinding and sham control varied widely, and the heterogeneity of biofeedback protocols, BP measurement methods, and comparator groups precludes direct pooling or a definitive quantitative synthesis without full individual study data.",
+      "Overall, the included RCTs provide mixed but cautiously suggestive evidence that certain biofeedback interventions may produce modest short\u2011term BP reductions in hypertensive adults.",
+      "However, the small number of studies, risk of bias, and inconsistent results underscore the need for larger, rigorously controlled trials with longer follow\u2011up before biofeedback can be recommended as a standard adjunctive therapy for hypertension."
+    ]
+  }
+}

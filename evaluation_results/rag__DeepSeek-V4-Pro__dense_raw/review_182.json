@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7517,
+    "output_tokens": 1660,
+    "total_tokens": 9177
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.45,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5625000000000001,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.45,
+    "post_retrieval_loss": 0.55,
+    "inclusion_consistency": 0.6411,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4445,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, included studies, synthesis, and a conclusion, but it lacks major required systematic review sections such as an abstract, introduction, full methods, formal results/discussion structure, references, search strategy, data extraction, quality assessment, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomised controlled trials (RCTs) that assessed the effect of extractive the primary canine (or compared double extraction of the primary canine and first molar to single extraction) on the eruption or position of palatally displaced permanent canines in children with mixed dentition were eligible."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, meta\u2011analyses, non\u2011randomised studies, case reports, animal studies, and trials that did not investigate the primary canine extraction as an interceptive measure were excluded.",
+      "addressed unrelated interventions/outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Taken together, the evidence consistently demonstrates that interceptive extraction of the primary canine increases the likelihood of unassisted eruption of a palatally displaced permanent canine within 12\u201324\u202fmonths.",
+      "The magnitude of benefit is clinically meaningful, though results from earlier small trials vary.",
+      "Double extraction of the primary canine and first molar does not appear to offer a reliable additional advantage over single extraction."
+    ]
+  }
+}

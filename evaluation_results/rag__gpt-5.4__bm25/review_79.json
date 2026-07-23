@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12613,
+    "output_tokens": 994,
+    "total_tokens": 13607
+  },
+  "metrics": {
+    "retrieval_recall": 0.1111111111111111,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.07777777777777778,
+    "inclusion_precision": 0.7,
+    "inclusion_f1": 0.14,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.03333333333333333,
+    "inclusion_consistency": 0.2136,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2046,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening, included studies, synthesis, and conclusion, but it lacks most standard systematic review sections such as abstract, introduction, full methods, detailed search strategy, quality assessment, formal data extraction/synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary-study articles of WASH interventions in LMICs that fall within the study universe of prior systematic reviews on diarrhoeal disease and acute respiratory infections",
+      "diarrhoea-focused WASH intervention trials in LMICs",
+      "ARI-focused WASH intervention trials in LMICs",
+      "large-scale or school/community WASH intervention evaluations with diarrhoea or respiratory illness outcomes"
+    ],
+    "exclusion_criteria": [
+      "reviews, evidence maps, protocols, editorials, burden/modeling papers, cross-sectional studies, and non-primary analyses that were not intervention evaluations",
+      "near-miss WASH papers when the abstract suggested they were outside the review frame, such as protocols, formative studies, uptake/process-only papers, mediation/reanalysis papers, and studies without diarrhoea/ARI intervention-effect outcomes as the main evaluative focus"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across these studies, intervention effectiveness on health outcomes was mixed: some diarrhoea reductions were reported, but several large-scale or combined interventions showed limited or no effect, especially for ARI or additive combined effects.",
+      "On title/abstract evidence, women are often present as mothers, caregivers, or enrolled pregnant women, but their engagement is not described in a way that supports robust assessment of who participated, who implemented, whether they bore time costs, or whether they were compensated.",
+      "Likewise, impacts specific to women are largely not evaluated.",
+      "The included intervention abstracts are best characterized as predominantly **gender unaware** under the WHO Gender Responsiveness Assessment Scale.",
+      "Main limitation: this synthesis is constrained to the supplied titles and abstracts, so any finer judgment about women\u2019s engagement, compensation, or exact WHO gender-responsiveness classification remains provisional."
+    ]
+  }
+}

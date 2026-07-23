@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17241,
+    "output_tokens": 1418,
+    "total_tokens": 18659
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6024,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3696,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening logic, eligibility criteria, study-level synthesis, heterogeneity notes, and limitations, but it is not a full PRISMA-style manuscript structure with all standard sections like abstract, methods, results, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "evaluate **AI / deep learning** for **pathological myopia (PM)** or closely aligned **myopic maculopathy** detection/classification;",
+      "use **color fundus photographs/images**;",
+      "report diagnostic performance such as **AUC/AUROC, sensitivity, specificity**;",
+      "compare against human grading / ophthalmologist grading / a reference standard;",
+      "provide enough dataset and validation information in the abstract to look consistent with the review question."
+    ],
+    "exclusion_criteria": [
+      "**Review/scoping/systematic review** articles: Candidates 004, 011, 025, 038, 055, etc.",
+      "**Wrong imaging modality**: OCT-only studies such as 012, 018, 019.",
+      "**Wrong target condition**: glaucoma, diabetic retinopathy, breast cancer, colonoscopy, etc.",
+      "**Not clearly within review timeframe/end date**: 2023+ studies would post-date the review search end of 2022-05-05 and should not represent the evidence base of that review even if otherwise relevant.",
+      "**Conference/challenge style or later methodological studies** outside the review window: e.g., 006, 016, 041, 192.",
+      "**General ocular-disease datasets** where pathological myopia was only one class and not clearly the PM-specific detection study targeted by the review: 049."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "On balance, the evidence base appears to support high diagnostic accuracy of deep learning systems for PM detection on fundus photographs, but it is likely dominated by retrospective development/validation studies, often from single-country or limited-center datasets.",
+      "Reported performance is generally high, with AUCs commonly in the 0.97-0.998 range for PM/MM-related tasks, and sensitivities/specificities often in the high 80s to high 90s, though exact thresholds and task definitions vary.",
+      "Overall, the abstract-level evidence supports that, by 2021-2022, AI systems based on color fundus images had already shown high apparent sensitivity, specificity, and AUC for detecting pathological myopia and related myopic maculopathy, but the evidence base likely remained limited by retrospective design, heterogeneous task definitions, and incomplete external validation."
+    ]
+  }
+}

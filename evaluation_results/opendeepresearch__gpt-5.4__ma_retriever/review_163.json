@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26936,
+    "output_tokens": 1082,
+    "total_tokens": 28018
+  },
+  "metrics": {
+    "retrieval_recall": 0.6785714285714286,
+    "retrieval_precision": 0.5277777777777778,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.5277777777777778,
+    "conditional_retention": 0.10526315789473684,
+    "post_retrieval_loss": 0.6071428571428571,
+    "inclusion_consistency": 0.6967,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.803,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, search strategy, study selection, included study characteristics, outcome-based results, synthesis feasibility, limitations, conclusion, and sources, but it lacks a formal abstract and complete PRISMA-style rigor such as full deduplication accounting and structured quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies only:",
+      "cohort studies",
+      "case-control studies",
+      "nested case-control studies",
+      "case-cohort studies",
+      "Exposure: one or more bisphosphonate prescriptions",
+      "Outcome: incident cancer",
+      "Reported effect estimates such as ORs, RRs, or HRs with 95% CIs, or enough data to calculate them",
+      "English-language studies",
+      "If overlapping publications existed, the most recent or most complete report would be preferred"
+    ],
+    "exclusion_criteria": [
+      "Cross-sectional studies",
+      "Reviews, comments, and conference abstracts",
+      "In vitro or animal studies",
+      "Studies without extractable or calculable effect estimates",
+      "Studies of cancer progression, metastasis, or recurrence rather than incident primary cancer"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The most defensible conclusion is that **bisphosphonate use does not appear to increase overall cancer risk**, while evidence for lower risk of certain specific cancers is suggestive rather than conclusive.",
+      "Taken together, the local-corpus evidence documented here supports the conclusion that **bisphosphonate use is not clearly associated with increased cancer incidence**, while any apparent protective associations for specific cancers remain uncertain and vulnerable to bias.",
+      "Overall cancer: no significant association was found between oral alendronate use and incident overall cancer.",
+      "Breast cancer: a small reduction in risk was reported in one large nested case-control study series.",
+      "Pancreatic cancer: a reduced risk association was also reported in that same study series.",
+      "available evidence was insufficient for a reliable comparison of nitrogen-containing versus non-nitrogen-containing bisphosphonates, and duration analyses did not show clear consistent trends for the main relevant outcomes."
+    ]
+  }
+}

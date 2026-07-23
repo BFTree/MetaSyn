@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19987,
+    "output_tokens": 955,
+    "total_tokens": 20942
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4825,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a review question, screening approach, narrative results, limitations, exclusions, and included studies, but it lacks standard sections such as abstract, formal introduction, detailed methods, quality assessment, quantitative synthesis methods, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "not a primary RCT report of results",
+      "protocol/review/editorial/scoping review",
+      "pilot RCT",
+      "non-digital or not primarily a digital sleep intervention",
+      "population outside the target age range or mixed with ineligible ages",
+      "participants with co-existing physical health conditions specifically excluded by the review",
+      "secondary analysis/companion paper rather than the main primary-trial report"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across all 3 included RCTs, digital CBT-I formats were associated with improved insomnia-related outcomes.",
+      "Overall direction of effect: **consistent benefit for digital CBT-I on insomnia symptoms**.",
+      "Mental health findings were also broadly favorable, though less uniformly durable than sleep outcomes.",
+      "Overall direction of effect: **digital CBT-I may improve mental health, especially depressive/anxiety symptoms, but mental health effects may be smaller or less durable than sleep effects, and may be weaker than face-to-face CBT-I**.",
+      "Digital CBT-I appears **effective for reducing insomnia symptoms** in adolescents and young adults.",
+      "Benefits for **depression and broader psychopathology** are promising but appear more variable.",
+      "The strongest recurring mechanism signal is that **improved insomnia may drive improvements in mental health**."
+    ]
+  }
+}

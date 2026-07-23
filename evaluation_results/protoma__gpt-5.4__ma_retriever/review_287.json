@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30884,
+    "output_tokens": 807,
+    "total_tokens": 31691
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06557377049180328,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.28571428571428575,
+    "screening_accuracy": 0.9180327868852459,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6144,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3122,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with Abstract, Background, Methods, search strategy, eligibility criteria, screening results, synthesis approach, risk of bias, Discussion, and Conclusion, but it falls short of excellent due to duplicated headings, minor organizational artifacts, no full References section, and some inconsistencies in reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving human patients with dental implants.",
+      "Studies comparing gingival phenotype/thickness groups, specifically thin versus thick gingival phenotype or equivalent soft-tissue biotype classification around implants.",
+      "Clinical comparative study designs (e.g., randomized trials, cohort studies, case-control studies, or cross-sectional clinical studies) conducted in clinical settings.",
+      "Studies reporting at least one relevant outcome: implant survival rate, marginal bone loss, peri-implantitis incidence, or peri-implant clinical parameters."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, ex vivo, review, case report/case series, conference abstract, letter, editorial, or expert opinion studies.",
+      "Studies not involving dental implants or not evaluating gingival phenotype as the exposure/comparator of interest.",
+      "Studies without a comparison between thin and thick gingival phenotype groups or without extractable phenotype-specific data.",
+      "Studies not reporting any of the prespecified outcomes related to implant survival, bone loss, peri-implantitis, or clinical peri-implant parameters."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Quantitative synthesis was not possible because the included studies did not report extractable data in a sufficiently consistent format for pooling.",
+      "Qualitatively, the available evidence suggests that a thick gingival phenotype may be associated with more favorable peri-implant soft tissue conditions and potentially better clinical outcomes, but findings were limited and not consistently reported across studies.",
+      "Overall, the current evidence remains insufficient to draw firm conclusions, and better-designed studies with standardized outcome reporting are needed."
+    ]
+  }
+}

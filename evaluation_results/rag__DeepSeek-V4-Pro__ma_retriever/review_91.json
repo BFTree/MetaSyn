@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24216,
+    "output_tokens": 1046,
+    "total_tokens": 25262
+  },
+  "metrics": {
+    "retrieval_recall": 0.7692307692307693,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.6410256410256411,
+    "inclusion_precision": 0.6944444444444444,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.92,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.1282051282051282,
+    "inclusion_consistency": 0.7999,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7299,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Introduction, Methods, Results, Discussion, and included-study list with screening criteria and synthesis themes, but it lacks an abstract, separate conclusion, full references, detailed search strategy, data extraction process, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies describing synthetic data generation methods for health-related data and evaluating the outputs"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "non-English",
+      "lacked utility/privacy assessments",
+      "used unstructured data (images/text)",
+      "poster abstracts",
+      "fell outside the 2018\u20132024 publication window"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The field lacks a standardized benchmark or evaluation protocol.",
+      "Privacy evaluation is present in the majority of included studies, but the depth and rigor vary widely:",
+      "Crucially, several studies note that privacy evaluation is often incomplete, ad-hoc, or absent.",
+      "A recurring theme across the included studies is the **trade-off between privacy and utility**.",
+      "The evidence suggests that **utility is more frequently and systematically evaluated than privacy**.",
+      "The included studies reveal **no consensus on a standardized evaluation methodology**.",
+      "The findings of this scoping review indicate that, while the evaluation of synthetic health data is an active and maturing research area, three critical gaps persist:",
+      "There is no agreed-upon set of metrics or evaluation protocols for either utility or privacy.",
+      "Privacy evaluation is often less rigorous and less consistently applied than utility evaluation.",
+      "Most utility assessments are based on statistical similarity or machine learning performance, with few studies involving clinician-led evaluations or testing in real clinical workflows.",
+      "These gaps highlight the need for community-driven efforts to develop standardized benchmarks, privacy metrics, and reporting guidelines that ensure synthetic health data is evaluated holistically and transparently."
+    ]
+  }
+}

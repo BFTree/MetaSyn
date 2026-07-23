@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24490,
+    "output_tokens": 1035,
+    "total_tokens": 25525
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.11666666666666667,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.20588235294117646,
+    "screening_accuracy": 0.78,
+    "conditional_retention": 0.14,
+    "post_retrieval_loss": 0.7166666666666667,
+    "inclusion_consistency": 0.4696,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6006,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, screening/selection criteria, biomarker-level synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, data extraction process, quality assessment, and separate discussion/references needed for higher PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "TSCC patients",
+      "date range (2010\u20132017)",
+      "specified exposures in body fluids (IL-6, IL-8, Prolactin) and tissue biopsies (HIF-1\u03b1, SOX2, E-cadherin, vimentin, MALAT1, TP53, NOTCH1)",
+      "requiring tissue-based immunohistochemical (IHC) studies to encompass multivariate statistical assessment"
+    ],
+    "exclusion_criteria": [
+      "fell outside the 2010\u20132017 date range",
+      "investigated biomarkers outside the specified exposure list (e.g., Foxp3, RKIP, HMGA2, miRNAs)",
+      "focused on anatomical subsites other than the mobile/oral tongue (e.g., base of tongue, general HNSCC, other cancers)",
+      "were reviews/meta-analyses",
+      "lacked requisite clinical significance (IHC tissue studies without multivariate analysis)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Among the specified biomarkers, **Vimentin, E-cadherin, and SOX2** show consistent clinical relevance for prognosis prediction in TSCC, having been validated as independent prognostic factors in at least two independent IHC studies with multivariate analysis.",
+      "**HIF-1\u03b1** (tissue) and **IL-6/IL-8** (saliva) demonstrate preliminary relevance in single studies and require further independent validation.",
+      "Prolactin, MALAT1, TP53, and NOTCH1 lack eligible IHC/multivariate validation within the 2010\u20132017 search parameters, representing gaps in the current evidence base for their clinical utility in TSCC under these specific methodological standards."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23146,
+    "output_tokens": 707,
+    "total_tokens": 23853
+  },
+  "metrics": {
+    "retrieval_recall": 0.9444444444444444,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6896551724137931,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.5882352941176471,
+    "post_retrieval_loss": 0.3888888888888889,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized with an overview, thematic synthesis, and included-study list, but it lacks standard systematic review sections such as explicit Methods, Results, Discussion, Conclusion, References, and key meta-analysis elements including detailed search strategy, inclusion/exclusion criteria, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "This systematic review aimed to explore the prevalence, causes, impacts, and interventions related to sexual misconduct in dental care settings among dental practitioners, staff, patients, and students.",
+      "The synthesized evidence indicates that sexual misconduct is a prevalent issue across multiple dental settings, though rates vary significantly by population and definition:",
+      "The data highlight a dichotomy in perpetrator profiles based on the setting:",
+      "Sexual misconduct has significant professional and emotional impacts.",
+      "Victims report emotional trauma, fear, impaired job performance, and psychological problems (Candidate 016).",
+      "Underreporting and a lack of preparedness are pervasive.",
+      "The included studies frequently call for institutional and educational interventions rather than evaluating specific implemented programs."
+    ]
+  }
+}

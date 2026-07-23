@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24366,
+    "output_tokens": 1285,
+    "total_tokens": 25651
+  },
+  "metrics": {
+    "retrieval_recall": 0.25,
+    "retrieval_precision": 0.12280701754385964,
+    "inclusion_recall": 0.10714285714285714,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.19354838709677416,
+    "screening_accuracy": 0.9298245614035088,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4299,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.466,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with all major sections present and includes systematic review elements such as search queries, PICOS screening criteria, screening decisions, study characteristics, synthesis, limitations, conclusion, and references, but it lacks full PRISMA-style rigor such as a formal quality assessment/risk-of-bias appraisal and detailed data extraction methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult populations with BMI greater than or equal to 27.5 kg/m2",
+      "synchronous real-time remote interventions for weight management",
+      "explicit reporting of barriers or facilitators to engagement",
+      "adults 18+ with BMI >= 27.5 kg/m2 or providers caring for this population.",
+      "synchronous, interactive, remote weight-management interventions.",
+      "explicit barriers and/or facilitators to engagement.",
+      "qualitative, quantitative, or mixed-methods studies.",
+      "up to 2023-10-31."
+    ],
+    "exclusion_criteria": [
+      "asynchronous web-only or self-directed interventions.",
+      "studies reporting only demographic predictors or clinical outcomes without discussing engagement mechanisms.",
+      "Systematic reviews, scoping reviews, meta-analyses, protocols, and studies lacking engagement barrier/facilitator data were excluded.",
+      "they focused on effectiveness without reporting engagement barriers/facilitators, were reviews, or were outside the date range."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible local-corpus evidence indicates that engagement in synchronous remote weight-management interventions among adults living with excess weight is shaped primarily by convenience, human support, and implementation quality.",
+      "The strongest facilitator evidence comes from qualitative findings that telephone and text support are perceived as simple, convenient, and useful for encouragement, motivation, and accountability ([Dunn et al., 2021](metasyn://corpus/6938)).",
+      "Rural and veteran telehealth studies support the conclusion that remote delivery expands access and can be acceptable, but also show that engagement falters when technical complexity, device burden, or weak implementation support are not addressed ([Study record](metasyn://corpus/6921); [Study record](metasyn://corpus/6931)).",
+      "Programs that are synchronous but technologically cumbersome will underperform.",
+      "Programs that are simple, accessible, and accountability-rich are much more likely to engage participants.",
+      "Within COM-B, **opportunity** and **reflective motivation** are the dominant mechanisms, with **capability** barriers becoming critical when digital friction is high."
+    ]
+  }
+}

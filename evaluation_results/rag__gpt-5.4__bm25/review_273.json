@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14657,
+    "output_tokens": 1564,
+    "total_tokens": 16221
+  },
+  "metrics": {
+    "retrieval_recall": 0.48484848484848486,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.6111111111111112,
+    "inclusion_f1": 0.43137254901960786,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.15151515151515152,
+    "inclusion_consistency": 0.494,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5836,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with headings for review question fit, screening summary, evidence synthesis, limitations, included studies, and conclusion, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, PRISMA-style screening details, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with **major depressive disorder** who **achieved remission/response on antidepressants**",
+      "then entered a **double-blind randomized discontinuation/withdrawal trial**",
+      "comparing **continuation of the same antidepressant** vs **switch to placebo**",
+      "outcomes including **relapse/treatment failure/dropout/tolerability**"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, non-RCTs, acute-treatment studies, augmentation/switching studies, bipolar studies, pediatric studies, psychotherapy-comparator designs that do not isolate antidepressant continuation vs placebo, and studies without clear discontinuation design",
+      "reviews/meta-analyses/protocols: 003, 004, 012, 016, 024, 040, 061, 063, 065, 073, 087, 099, 108, 118, 126, 150, 161, 179, etc.",
+      "bipolar disorder studies: 007, 009, 025, 044, 067, 094, 110, 152, 164, 165, 183",
+      "pediatric/adolescent studies: 015, 020, 079, 174, 181",
+      "psychotherapy or MBCT/PCT comparison studies not isolating the direct antidepressant-vs-placebo maintenance contrast as a standalone trial arm for this review question: 001, 005, 013",
+      "non-discontinuation acute/augmentation/TRD studies: 002, 011, 019, 027, 033, 043, 045, 060, 098, 104, 135, 156, etc.",
+      "studies not clearly matching operationalized diagnostic criteria from abstract or not clearly MDD-only discontinuation RCTs: 081 (atypical depression by Columbia criteria, not one of the specified diagnostic systems in the abstract), 100 (drug-free period then recurrence-prevention design, but feasibility-focused and not clearly the standard continuation-after-remission design targeted here)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible abstracts, the direction of effect is very consistent: **continuing the antidepressant that achieved remission/response lowers relapse/recurrence risk compared with switching to placebo**.",
+      "So, on title/abstract evidence alone, the main conclusion is strong: **maintenance antidepressant therapy after remission in MDD is associated with lower relapse risk than discontinuation to placebo**.",
+      "Given the abstracts, the clearest consistent effect is on **relapse prevention**; evidence for all-cause dropout and tolerability is present but more variably described.",
+      "Using only the supplied titles and abstracts, the evidence supports that **continuing antidepressant medication after remission in MDD reduces relapse/recurrence risk versus switching to placebo**, with broadly consistent findings across antidepressant classes, maintenance durations, and at least one older-adult population.",
+      "The relapse-prevention signal is much stronger and more consistently reported than dropout/tolerability differences."
+    ]
+  }
+}

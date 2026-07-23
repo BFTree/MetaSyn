@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28075,
+    "output_tokens": 1288,
+    "total_tokens": 29363
+  },
+  "metrics": {
+    "retrieval_recall": 0.8676470588235294,
+    "retrieval_precision": 0.295,
+    "inclusion_recall": 0.5588235294117647,
+    "inclusion_precision": 0.7037037037037037,
+    "inclusion_f1": 0.6229508196721312,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 0.6440677966101694,
+    "post_retrieval_loss": 0.3088235294117647,
+    "inclusion_consistency": 0.6707,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5206,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, included evidence summaries, synthesis by outcome, and an overall assessment, but it lacks several standard systematic review sections such as abstract, introduction, formal methods, discussion/conclusion separation, references, detailed search strategy, data extraction process, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The target exposure was low-level radiofrequency (RF) fields above 6\u202fGHz (millimetre waves, including THz and 5G frequencies) at levels below the ICNIRP occupational limits (whole\u2011body SAR \u2264\u202f0.4\u202fW/kg or power density \u2264\u202f50\u202fW/m\u00b2, with in vitro local exposure allowed up to 100\u2013200\u202fW/m\u00b2).",
+      "Studies also had to be primary experimental investigations (in vitro, in vivo, human) or epidemiological studies of radar at >6\u202fGHz, reporting relevant biological or health endpoints (genotoxicity, cell proliferation, gene expression, cancer, reproductive effects, etc.)."
+    ],
+    "exclusion_criteria": [
+      "Reviews, commentaries, modelling studies without biological endpoints, therapeutic studies without specific bio\u2011effects, case reports, and studies not in English were excluded.",
+      "Exposure frequency below 6\u202fGHz (e.g., 900\u202fMHz, 1.9\u202fGHz, 2.45\u202fGHz, 3.5\u202fGHz, etc.).",
+      "High exposure levels exceeding the low\u2011level thresholds (SAR >\u202f0.4\u202fW/kg whole\u2011body or power density >\u202f200\u202fW/m\u00b2 where specified).",
+      "Not a primary experimental or epidemiological study (review, commentary, exposure measurement only, methods paper).",
+      "No biological or health effect endpoint reported.",
+      "Insufficient information on exposure level to confirm compliance with low\u2011level criteria.",
+      "Full text not available in English or abstract absent.",
+      "Candidate 123 (\u201cEffects of 100 GHz radiation\u2026\u201d) was excluded because the abstract does not specify power density or SAR, making it impossible to verify compliance with the low\u2011level criterion."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The body of eligible primary literature indicates that **low\u2011level RF fields above 6\u202fGHz do not cause overt genotoxicity or classical stress responses in mammalian cells**.",
+      "The few positive findings (aneuploidy, altered signalling, growth inhibition) are sporadic, often occur under narrow exposure conditions, and have not been consistently reproduced.",
+      "Reproductive studies in rats hint at possible oxidative stress\u2011mediated effects, but exposure levels and durations vary widely, preventing firm conclusions.",
+      "No epidemiological data on radar >6\u202fGHz or cancer outcomes in humans were available within this candidate pool.",
+      "The evidence therefore aligns with the view that exposures below ICNIRP occupational limits are unlikely to produce adverse health effects, although knowledge gaps remain\u2014particularly regarding long\u2011term, multi\u2011frequency, and combined environmental exposures."
+    ]
+  }
+}

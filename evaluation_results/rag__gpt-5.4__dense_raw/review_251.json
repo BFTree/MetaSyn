@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9517,
+    "output_tokens": 1512,
+    "total_tokens": 11029
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.4365,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3106,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility application, included evidence, and a brief synthesis, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective studies in adult cancer patients with indwelling CVCs",
+      "comparing primary thromboprophylaxis with minidose warfarin or low-dose LMWH against no prophylaxis/standard care",
+      "published in English from 1980 to 2005"
+    ],
+    "exclusion_criteria": [
+      "retrospective",
+      "non-comparative",
+      "outside the date window",
+      "non-English",
+      "pediatric/non-cancer",
+      "did not study primary prophylaxis against a no-prophylaxis comparator"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based on the eligible evidence available in this candidate set, there is **insufficient evidence to support routine primary thromboprophylaxis with minidose warfarin** for adult cancer patients with indwelling central venous catheters.",
+      "The only eligible study found **no reduction in thrombosis**, and the evidence base here does **not allow a reliable assessment of bleeding risk**."
+    ]
+  }
+}

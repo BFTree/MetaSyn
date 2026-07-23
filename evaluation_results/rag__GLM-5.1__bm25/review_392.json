@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8785,
+    "output_tokens": 781,
+    "total_tokens": 9566
+  },
+  "metrics": {
+    "retrieval_recall": 0.0,
+    "retrieval_precision": 0.0,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": null,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5503,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6939,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic organized flow with review context, screening summary, and synthesis of included evidence, but it lacks most formal required sections such as abstract, introduction, full methods, discussion, conclusion, references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies (observational, Mendelian randomization, and randomized controlled trials) investigating the relationship between salt intake and blood pressure (BP) or cardiovascular diseases/deaths, specifically focusing on salt reduction interventions in hypertensive populations.",
+      "publications between 1971 and 2022-12-31.",
+      "Mendelian randomization (MR) studies were required to explicitly mention \"Mendelian randomization\" in their title or abstract."
+    ],
+    "exclusion_criteria": [
+      "Studies lacking statistical significance findings (or reporting \"not found\"), systematic reviews, protocols, and modelling studies were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Only one primary study met all criteria: a randomized controlled trial (Candidate 039) evaluating a salt reduction intervention in a hypertensive population within the specified timeframe.",
+      "The study found significant chronological improvements in the behavior of consuming salt less than 6 g/day in both groups.",
+      "Importantly, significant chronological decreases were observed in mean systolic and diastolic blood pressure in both groups, with significant differences observed in food salt concentration and urinary salinity between the intervention and control groups.",
+      "This study provides empirical evidence supporting the efficacy of targeted salt reduction interventions in lowering blood pressure among hypertensive populations, aligning with the review\u2019s focus on triangulating evidence for salt intake's effect on cardiovascular risk factors."
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28790,
+    "output_tokens": 982,
+    "total_tokens": 29772
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11627906976744186,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.6666666666666665,
+    "screening_accuracy": 0.9302325581395349,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.4795,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4434,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included-study list, and References, and it includes search queries, eligibility criteria, screening decisions, and a narrative synthesis approach, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs",
+      "Case-control studies",
+      "Cross-sectional studies",
+      "Population surveys",
+      "Adults aged 18+",
+      "Human, in vivo",
+      "At least 20 participants",
+      "Examiner-measured periodontal outcomes (e.g., BOP, CAL, PPD, GI)",
+      "Comparison between healthier vs less healthy/usual/Western dietary patterns",
+      "Minimum 4 weeks for change-over-time studies"
+    ],
+    "exclusion_criteria": [
+      "Animal studies",
+      "<20 participants",
+      "Self-reported-only periodontal outcomes",
+      "Single food/beverage/supplement studies",
+      "Vegetarian/vegan elimination diets",
+      "Expert opinion/reviews",
+      "Unretrievable data",
+      "Duplicate data sources"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence supports a differentiated conclusion.",
+      "Healthy whole-diet patterns\u2014especially Mediterranean-style and anti-inflammatory diets low in refined carbohydrates and richer in fiber, omega-3\u2013containing foods, and antioxidant-dense foods\u2014**do improve short-term gingival inflammation and bleeding in adults with gingivitis**, and they appear to do so even when plaque levels do not change.",
+      "For **periodontitis**, however, the evidence is currently **suggestive rather than definitive**.",
+      "Dietary improvement may support better response to standard periodontal therapy, particularly for bleeding and probing depth, but the available studies do not consistently show clear between-group clinical benefits over 3\u20136 months.",
+      "Therefore, my objective but concrete opinion is this: **healthy dietary change should be regarded as a credible adjunct for reducing gingival inflammation and a promising supportive strategy in periodontitis care, but not yet as an evidence-established primary treatment modifier for periodontitis outcomes such as CAL and PPD.**",
+      "The gingivitis evidence is already actionable; the periodontitis evidence still needs larger, longer, well-controlled trials with standardized diets and full clinical reporting."
+    ]
+  }
+}

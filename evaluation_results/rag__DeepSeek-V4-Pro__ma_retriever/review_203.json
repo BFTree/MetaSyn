@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14452,
+    "output_tokens": 2466,
+    "total_tokens": 16918
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4164,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4688,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct synthesis, study summary, and evidence sections, and it includes key meta-analysis elements such as inclusion criteria, screening, and synthesis, but it lacks a full conventional manuscript structure with explicit abstract, methods, results, discussion, conclusion, and references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies that (1) enrolled patients with OAG and healthy controls, (2) provided quantitative TPD values, and (3) were published between 2004\u201111\u201101 and 2014\u201111\u201130 were considered."
+    ],
+    "exclusion_criteria": [
+      "All other candidates were excluded because they did not meet the temporal window (2004\u201111\u201101 to 2014\u201111\u201130), were not primary studies, lacked quantitative TPD values in OAG, failed to include healthy controls, or addressed unrelated topics."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The two included studies, despite their relatively small sample sizes, offer consistent and complementary evidence supporting the hypothesis that **the translaminar pressure difference is elevated in open\u2011angle glaucoma relative to healthy eyes**.",
+      "Both studies found significantly higher TPD in OAG groups (NTG, HTG, normal\u2011IOP glaucoma, high\u2011IOP glaucoma) compared with controls.",
+      "Together, these findings indicate that the magnitude of the trans\u2011lamina cribrosa pressure gradient is related to the extent of optic nerve injury.",
+      "Both studies support the notion that a higher translaminar pressure gradient is a relevant parameter in glaucoma pathogenesis, beyond IOP alone.",
+      "However, the consistency of the direction and significance of findings across these two independent investigations strengthens the conclusion that TPD is elevated in OAG and correlates with glaucomatous optic nerve damage."
+    ]
+  }
+}

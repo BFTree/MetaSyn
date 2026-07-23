@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14657,
+    "output_tokens": 797,
+    "total_tokens": 15454
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.8333333333333334,
+    "inclusion_consistency": 0.8589,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3481,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with background, methods, eligibility criteria, screening, results, study characteristics, and synthesis sections, but it lacks a formal abstract, detailed search strategy, data-extraction and quality-assessment methods, explicit conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Evaluated machine\u2011learning or AI algorithms for the detection of PM.",
+      "Used colour fundus images.",
+      "Reported performance indices suitable for a meta\u2011analysis of diagnostic accuracy (e.g., area under the receiver\u2011operator curve [AUROC], sensitivity, specificity).",
+      "Provided information on the dataset size and the reference standard.",
+      "Included a validation set that was at least 10% of the size of the training set."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, protocols, conference abstracts.",
+      "Studies that did not focus on PM detection.",
+      "Studies using imaging modalities other than colour fundus photography (e.g., OCT, OCTA, anterior\u2011segment OCT).",
+      "Studies that did not report sensitivity and specificity for PM detection.",
+      "Articles published after 5 May 2022 (the search end date)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only a single study fulfilled all eligibility criteria.",
+      "The included study demonstrated very high sensitivity and specificity for PM detection using a deep learning system trained on a large, manually graded dataset.",
+      "The five\u2011fold cross\u2011validation and external validation suggest robustness; however, the evidence base is limited to one investigation.",
+      "The small number of eligible studies precludes a quantitative meta\u2011analysis.",
+      "The high reported accuracy must be interpreted cautiously; no independent replication was available within the eligible pool, and no study provided a direct comparison with a clinical reference standard in a fully independent prospective cohort (the external validation set was retrospective).",
+      "No other candidate met the full set of inclusion criteria."
+    ]
+  }
+}

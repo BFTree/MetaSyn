@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14579,
+    "output_tokens": 1044,
+    "total_tokens": 15623
+  },
+  "metrics": {
+    "retrieval_recall": 0.8928571428571429,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.2777777777777778,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.4987,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6167,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening summary, evidence synthesis, and included studies list, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Discussion, Conclusion, References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population, intervention, comparison, outcomes, and study design criteria",
+      "The included studies evaluate the acute efficacy of UBP ECT compared to BP ECT in patients with major depressive episodes, primarily focusing on response and remission rates, speed of response, and switching rates."
+    ],
+    "exclusion_criteria": [
+      "being a review, editorial, or conference abstract",
+      "evaluating interventions other than ultrabrief pulse (UBP) versus brief pulse (BP) electroconvulsive therapy (ECT) (e.g., magnetic seizure therapy, transcranial magnetic stimulation, ketamine)",
+      "using non-standard administration schedules (e.g., daily ECT) or experimental amplitudes outside the 800\u2013900 mA range",
+      "focusing on non-depression populations (e.g., schizophrenia, mania)",
+      "lacking a BP ECT comparison group",
+      "having a sample size of \u226410 participants"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Findings regarding the comparative antidepressant efficacy of UBP versus BP ECT are heterogeneous, likely influenced by electrode placement and the relative stimulus dosage (multiple of seizure threshold) applied to each pulse width.",
+      "For **right unilateral (RUL) ECT**, several randomized trials found comparable efficacy when UBP was administered at a higher relative dosage than BP.",
+      "Conversely, other studies found BP RUL superior.",
+      "For **bilateral (bitemporal/bifrontal) ECT**, efficacy appears more consistently diminished for UBP at standard dosing multiples, though dosing adjustments may mitigate this.",
+      "A consistent finding across multiple studies is that UBP ECT requires more treatment sessions or exhibits a slower speed of response to achieve clinical improvement compared to BP ECT.",
+      "Only one study explicitly reported switching rates due to inefficacy or intolerance during the acute course.",
+      "None of the included primary study abstracts provided comparative data on relapse rates between UBP and BP ECT following the acute treatment phase."
+    ]
+  }
+}

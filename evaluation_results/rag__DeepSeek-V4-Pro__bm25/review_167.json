@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12174,
+    "output_tokens": 1256,
+    "total_tokens": 13430
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.56,
+    "inclusion_f1": 0.717948717948718,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7182,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6059,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background/Objectives, Methods, Results by outcome, Conclusion, and included studies, but it lacks a formal abstract, introduction/discussion sections, detailed search strategy, data extraction procedures, PRISMA screening flow, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women at average breast cancer risk in the specified age groups",
+      "comparison of annual, biennial, or triennial mammography",
+      "reporting of at least one of the listed outcomes",
+      "study designs comprising randomized controlled trials, observational studies (cohort, time\u2011trend, registry\u2011based), or decision\u2011analytic models (with 100% adherence assumed for modeling studies)"
+    ],
+    "exclusion_criteria": [
+      "Studies restricted to high\u2011risk populations (e.g., BRCA mutation carriers, strong family history, previous breast cancer) were excluded",
+      "systematic reviews, guidelines, protocols, and non\u2011primary research"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence from modeling and observational studies consistently indicates that for average\u2011risk women, biennial mammography offers a favorable balance of benefits and harms across all age groups from 45 to 74 years.",
+      "Annual screening increases benefit but with disproportionately higher false positives and overdiagnosis, while triennial screening may be a reasonable option for selected low\u2011risk subgroups.",
+      "Decision\u2011making should consider individual risk factors, breast density, and personal preferences regarding the trade\u2011offs.",
+      "Biennial screening appears to reduce breast cancer mortality with fewer false positives than annual screening.",
+      "Biennial screening is the most efficient strategy, maintaining most of the mortality benefit of annual screening while markedly reducing false positives and overdiagnosis.",
+      "Biennial screening continues to avert deaths and is cost\u2011effective, but the absolute benefit is smaller than in younger groups."
+    ]
+  }
+}

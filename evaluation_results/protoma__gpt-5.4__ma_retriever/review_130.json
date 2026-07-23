@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35854,
+    "output_tokens": 874,
+    "total_tokens": 36728
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.27586206896551724,
+    "inclusion_recall": 0.7647058823529411,
+    "inclusion_precision": 0.7647058823529411,
+    "inclusion_f1": 0.7647058823529412,
+    "screening_accuracy": 0.8793103448275862,
+    "conditional_retention": 0.8125,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.7393,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6602,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes the major systematic review/meta-analysis sections plus detailed search strategy, eligibility criteria, screening counts, synthesis methods, heterogeneity statistics, and risk-of-bias assessment, but it has some structural imperfections such as duplicated headings, limited data-extraction detail, no full references section, and less-than-complete PRISMA-style presentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies of women with dense breast tissue undergoing breast cancer screening.",
+      "Studies evaluating supplemental ultrasound screening in addition to mammography, with mammography alone as the comparator or with outcomes reported in mammography-negative women after mammography.",
+      "Original screening studies with comparative or non-comparative designs that provide extractable data on screening performance.",
+      "Studies reporting at least one relevant outcome: cancers detected only by ultrasound, additional screen-detected cancer cases per 1000 mammography-negative women, or referral rates for diagnostic assessment."
+    ],
+    "exclusion_criteria": [
+      "Studies not focused on women with dense breast tissue or not conducted in a breast cancer screening population.",
+      "Studies not evaluating supplemental ultrasound with mammography, or lacking a relevant mammography-alone/comparable screening context.",
+      "Case reports, case series, reviews, editorials, conference abstracts without sufficient data, and other non-original research.",
+      "Studies that do not report any prespecified outcomes related to ultrasound-only cancer detection, additional cancer detection yield, or referral for diagnostic assessment."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated that adding ultrasound to mammography increased cancer detection among women with dense breast tissue compared with mammography alone, although the estimated magnitude of effect was highly uncertain because of substantial between-study heterogeneity.",
+      "In clinical terms, the direction of effect was consistently in favor of supplemental ultrasound, suggesting that ultrasound can identify additional malignancies that are not detected on mammography in women with dense breasts.",
+      "Overall, the findings support the conclusion that supplemental ultrasound added to mammography increases cancer detection in women with dense breast tissue, particularly for cancers not visible on mammography alone.",
+      "The most defensible interpretation is therefore that supplemental ultrasound probably improves detection in this population, but the size of that benefit remains uncertain and likely varies across settings.",
+      "On balance, supplemental ultrasound is reasonable to consider for women with dense breasts, especially when individualized risk is higher or mammographic sensitivity is a concern."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18995,
+    "output_tokens": 1162,
+    "total_tokens": 20157
+  },
+  "metrics": {
+    "retrieval_recall": 0.9666666666666667,
+    "retrieval_precision": 0.29,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.18181818181818182,
+    "screening_accuracy": 0.74,
+    "conditional_retention": 0.10344827586206896,
+    "post_retrieval_loss": 0.8666666666666667,
+    "inclusion_consistency": 0.5373,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.457,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with an objective, screening/selection summary, evidence synthesis, conclusion, and included studies, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods, discussion, references, quality assessment, data extraction process, and PRISMA-style search details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "investigated the specified target biomarkers (IL-6, IL-8, Prolactin in liquid samples; HIF-1\u03b1, SOX2, E-cadherin, vimentin, MALAT1, TP53, and NOTCH1 in tissue biopsies) in TSCC patients",
+      "reported clinical significance",
+      "utilized immunohistochemistry (IHC) with multivariate statistical assessment",
+      "were published between 2010 and 2017"
+    ],
+    "exclusion_criteria": [
+      "Studies investigating other anatomical subsites, base of tongue, animal models, micro-RNAs, reviews, or lacking multivariate analysis were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Among the target biomarkers, **Vimentin** and **SOX2** are the only markers demonstrating consistent, independent prognostic relevance for TSCC across at least two independent tissue-based IHC studies employing multivariate analysis.",
+      "E-cadherin and HIF-1\u03b1 show potential prognostic value but are currently limited to single-study validation within this evidence base.",
+      "None of the liquid-based biomarkers (IL-6, IL-8, Prolactin) met the stringent criteria for independent prognostic validation in the available literature pool."
+    ]
+  }
+}

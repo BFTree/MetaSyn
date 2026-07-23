@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20209,
+    "output_tokens": 1152,
+    "total_tokens": 21361
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6521739130434783,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.7317073170731708,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.6521739130434783,
+    "post_retrieval_loss": 0.34782608695652173,
+    "inclusion_consistency": 0.681,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3037,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, exclusions, synthesis findings, and included studies, but it lacks several core systematic review sections such as abstract, introduction, full methods, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and formal synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies (cohort, case-control, or randomized controlled trials)",
+      "investigating statin use as the exposure and breast cancer-specific death (BCD) or breast cancer recurrence (BCR) as outcomes in women with breast cancer",
+      "with reported confidence intervals or standard errors"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews or meta-analyses (e.g., Candidates 001, 002, 003, 008, 027)",
+      "reviews, protocols, or editorials (e.g., Candidates 031, 036, 050)",
+      "studies focusing on other cancers (e.g., hepatocellular, prostate, ovarian)",
+      "studies examining other exposures (e.g., aspirin, beta-blockers, bisphosphonates) where statins were merely covariates",
+      "studies reporting only overall survival or all-cause mortality without specific BCD/BCR data (e.g., Candidates 005, 030, 042)",
+      "in vitro or animal model studies",
+      "articles published after the search end date of 2024-06-13 (e.g., Candidates 015, 024)",
+      "not reporting 95% confidence intervals for the statin-outcome association in the abstract (e.g., Candidates 010, 025, 028, 040, 054)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence suggests a potential protective association between statin use and breast cancer-specific mortality, though findings for recurrence are more inconsistent, and important effect modifiers influence these associations.",
+      "Most cohort studies reported a reduced risk of BCD associated with statin use, particularly post-diagnostic use.",
+      "However, two studies found no significant association: a Scottish study (026) found little evidence for post-diagnostic statin protection (HR 0.93), and an Irish study (019) found no association for de novo post-diagnostic use (HR 0.88).",
+      "The association between statin use and recurrence was less consistent.",
+      "Lipophilic statins (especially simvastatin) consistently showed stronger associations with reduced recurrence and mortality than hydrophilic statins (011, 049, 007)."
+    ]
+  }
+}

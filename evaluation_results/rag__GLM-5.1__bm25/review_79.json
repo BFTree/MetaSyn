@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19588,
+    "output_tokens": 913,
+    "total_tokens": 20501
+  },
+  "metrics": {
+    "retrieval_recall": 0.1111111111111111,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.18867924528301885,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.3112,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2527,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around an evidence synthesis and conclusion with an included-studies list, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results, discussion, references, detailed search strategy, data extraction, quality assessment, and synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "WASH intervention trials or rigorous evaluations assessing impacts on diarrhoeal disease or acute respiratory infections (ARI) in low- and middle-income countries (LMICs), consistent with the population criteria of the source systematic reviews."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, protocols, editorials, scoping reviews, evidence and gap maps, and studies outside the WASH/diarrhea/ARI scope were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The existing evidence from WASH intervention trials on diarrhoeal disease and ARI in LMICs predominantly engages women as research participants (mothers/caretakers reporting on child health) but lacks explicit consideration of women as intervention implementers.",
+      "There is a critical evidence gap regarding the time burdens placed on women by these interventions and whether such burdens are compensated.",
+      "Evaluation of impacts specific to women is rare, with only one identified instance (menstrual self-efficacy).",
+      "Consequently, the interventions largely remain gender-unaware, failing to integrate the WHO Gender Responsiveness Assessment Scale or explicitly address gender dynamics beyond targeting mothers for child health outcomes."
+    ]
+  }
+}

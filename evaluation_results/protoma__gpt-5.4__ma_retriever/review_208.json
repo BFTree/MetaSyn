@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 36809,
+    "output_tokens": 957,
+    "total_tokens": 37766
+  },
+  "metrics": {
+    "retrieval_recall": 0.5357142857142857,
+    "retrieval_precision": 0.47619047619047616,
+    "inclusion_recall": 0.23214285714285715,
+    "inclusion_precision": 0.65,
+    "inclusion_f1": 0.3421052631578948,
+    "screening_accuracy": 0.6190476190476191,
+    "conditional_retention": 0.43333333333333335,
+    "post_retrieval_loss": 0.30357142857142855,
+    "inclusion_consistency": 0.6968,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5445,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally clear systematic review structure with abstract, background, review question, methods, search strategy, eligibility criteria, screening process, synthesis methods, results, risk of bias, discussion, conclusion, and included studies, but duplicated headings, incomplete formal references, and limited PRISMA-style detail prevent an excellent rating."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving patients with severe retinal disease, particularly inherited retinal disease, including pediatric or mixed-age populations.",
+      "Studies that evaluate, describe, compare, or report full-field stimulus threshold (FST) testing methodology used in clinical or research settings.",
+      "Studies reporting at least one relevant FST methodological element or outcome, such as whole-field retinal light sensitivity threshold, flash luminance units, stimulus color, flash duration, test strategy, dark adaptation protocol, variability in reporting, or standardization guidance.",
+      "Primary empirical study designs, including interventional, observational, methodological, or validation studies, conducted in human participants."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving patients with severe retinal disease or inherited retinal disease, or conducted only in healthy participants, animal models, or laboratory simulations without patient FST data.",
+      "Studies that do not include full-field stimulus threshold testing or do not provide usable information on FST methodology, testing parameters, reporting standards, or threshold outcomes.",
+      "Publications focused solely on other ophthalmic tests without specific FST-related methods or outcomes.",
+      "Non-primary research articles, including narrative reviews, editorials, commentaries, conference abstracts without sufficient methodological detail, and study protocols without results."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 20 studies of full-field stimulus threshold (FST) testing in severe retinal disease, including inherited retinal disease and pediatric populations, the only pooled quantitative comparison available from 2 studies showed a significant association across methodological approaches (random-effects OR 1.466, 95% CI 1.314\u20131.635; I\u00b2=0%).",
+      "This suggests that differences in FST methodology are not trivial: they may meaningfully influence measured whole-field retinal sensitivity and, therefore, affect interpretation of disease severity, longitudinal change, and treatment response.",
+      "Clinically, FST remains a valuable outcome measure for patients with profound vision loss, but results should be interpreted cautiously and compared only when core parameters\u2014flash luminance units, stimulus color and duration, dark adaptation, and test strategy\u2014are clearly aligned.",
+      "The main caveat is that the pooled estimate is based on just 2 studies, while the broader literature shows substantial inconsistency in reporting and limited standardization across centers."
+    ]
+  }
+}

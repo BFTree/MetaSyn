@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9377,
+    "output_tokens": 1072,
+    "total_tokens": 10449
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.7872340425531915,
+    "inclusion_consistency": 0.7223,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6756,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a screening summary, eligibility criteria, exclusion reasons, and final inclusion result, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results synthesis, discussion, conclusion, references, quality assessment, and detailed search strategy."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational studies investigating whether polycystic ovary syndrome (PCOS) is an independent risk factor for adverse birth outcomes in offspring, requiring a comparison between offspring of women with PCOS and offspring of women without PCOS.",
+      "Only studies published between January 1, 2017, and June 13, 2022, were eligible.",
+      "A protocol amendment restricted inclusion to studies where the PCOS diagnosis explicitly met the **Rotterdam criteria**.",
+      "Studies must report specific observational data on target birth outcomes (preterm birth, birthweight, fetal growth restriction, low birth weight, small for gestational age, macrosomia, or large for gestational age) in PCOS vs. non-PCOS groups."
+    ],
+    "exclusion_criteria": [
+      "Studies utilizing self-reported data, ICD codes, or other criteria (e.g., NIH) were excluded.",
+      "Systematic reviews, meta-analyses, narrative reviews, protocols, editorials, case reports, and conference abstracts were excluded.",
+      "Studies reporting these outcomes only as part of an unextractable composite, or reporting non-target outcomes (e.g., miscarriage only, sebum production, cytokines, long-term childhood traits), were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None were included.",
+      "No candidate in the supplied pool simultaneously met all four constraints: (1) published within 2017\u20132022, (2) observational study design comparing PCOS to non-PCOS, (3) explicit use of Rotterdam criteria for PCOS diagnosis, and (4) reporting specific observational data on the target birth outcomes (preterm birth, birthweight, FGR, LBW, SGA, macrosomia, or LGA) in the two groups."
+    ]
+  }
+}

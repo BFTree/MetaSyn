@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10888,
+    "output_tokens": 1039,
+    "total_tokens": 11927
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.5909090909090909,
+    "inclusion_precision": 0.8666666666666667,
+    "inclusion_f1": 0.7027027027027029,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.5698,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4029,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, synthesis, limitations, conclusions, and included studies, but it lacks major systematic review sections such as an abstract, introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, quantitative synthesis methods, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult hospitalized patients with sepsis/risk of sepsis",
+      "an automated EHR-integrated alerting system",
+      "a usual-care comparator",
+      "outcomes including mortality and/or length of stay"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "pediatric studies",
+      "prediction-model-only papers without a comparator intervention",
+      "commentaries/letters",
+      "general deterioration systems not sepsis-specific",
+      "outpatient/primary-care settings",
+      "studies lacking enough abstract information to confirm eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across these studies, the most consistent pattern is improved process measures (earlier antibiotics, more lactate testing, better bundle-related actions), while mortality effects are mixed and often null.",
+      "Length-of-stay findings are also mixed, but several ED/ward/surgical ICU studies report shorter hospital or ICU LOS after alert implementation.",
+      "The evidence base appears heterogeneous by setting and by intervention intensity: alerts paired with workflow support, decision support, pharmacists, rapid response teams, or multidisciplinary programs seem more favorable than alert-only systems.",
+      "Based on the candidate pool, automated sepsis alerting systems appear more reliable for improving recognition and care processes than for reducing mortality.",
+      "Mortality benefit is inconsistent across studies; LOS may improve in some ED, surgical ICU, and hospital-wide implementations.",
+      "The strongest abstract-level signal is that alerts alone often do not change hard outcomes, whereas alerts embedded in broader response workflows may be more effective."
+    ]
+  }
+}

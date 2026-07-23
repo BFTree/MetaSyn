@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28422,
+    "output_tokens": 1164,
+    "total_tokens": 29586
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.2727272727272727,
+    "inclusion_recall": 0.4166666666666667,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5882352941176471,
+    "screening_accuracy": 0.8787878787878788,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4454,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4696,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a clear, well-organized structure with most major systematic review sections present, including review question, framework, search queries, screening, study selection, characteristics, and synthesis, but it falls short of excellent PRISMA-level rigor because the evidence handling is somewhat incomplete and the presentation ends abruptly without a fully developed conclusion or full reproducible extraction details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult men with penile cancer localized to and confined to the glans penis.",
+      "glansectomy with or without neoglans reconstruction, including reconstruction with split-thickness skin graft (SSG) where reported.",
+      "any treatment for penile cancer confined to the glans; if direct comparators are absent, pre-operative baseline function or standard functional benchmarks.",
+      "any primary clinical study design."
+    ],
+    "exclusion_criteria": [
+      "studies not meeting PICO criteria and studies with no functional outcome data.",
+      "they were reviews or overviews rather than primary studies,",
+      "they mixed interventions/populations without separable glansectomy data,",
+      "they lacked functional outcome data,",
+      "or they were published after 2024-09-29."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available local corpus evidence suggests that **erectile function is often preserved after glansectomy with reconstruction**, but the certainty is low because of small sample sizes, observational design, and incomplete corpus access.",
+      "Sexual activity and erectile capacity appear **frequently retained**, especially compared with the expected functional loss from more radical penile surgery.",
+      "The available local corpus evidence supports that **most patients can void satisfactorily, often while standing**, after glansectomy with reconstruction.",
+      "**Cosmetic satisfaction appears high** after glansectomy with neoglans reconstruction, especially with SSG-based approaches.",
+      "**Meatal stenosis is a recurrently reported complication** and should be regarded as a meaningful risk after glansectomy/reconstruction.",
+      "SSG reconstruction appears generally feasible with acceptable graft take, but **partial or total graft loss can occur**.",
+      "The included studies suggest that **glansectomy with or without neoglans reconstruction can achieve acceptable oncological control in selected glans-confined disease**.",
+      "However, these conclusions remain based on **small observational series**, not comparative high-certainty evidence."
+    ]
+  }
+}

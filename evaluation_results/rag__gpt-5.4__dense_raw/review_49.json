@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10977,
+    "output_tokens": 2017,
+    "total_tokens": 12994
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6464,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6441,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening decisions, evidence synthesis, conclusions, limitations, and included studies, with a logical flow and meta-analysis-style subgroup discussion, but it lacks a full PRISMA-level structure such as a detailed search strategy, explicit inclusion/exclusion criteria, and formal methods/results sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Fits adult male panic disorder population and directly examines ED.",
+      "Best match to the review question: adult males, diagnosed PTSD, comparison group, validated erectile-function instrument (**IIEF**), and explicit ED prevalence/severity results.",
+      "Includes adults with psychiatrist-diagnosed **OCD** and **social anxiety disorder**, includes male participants, and uses the **IIEF**."
+    ],
+    "exclusion_criteria": [
+      "**Not clinically diagnosed anxiety disorder**:",
+      "**Primary population not an anxiety-disorder sample**:",
+      "**Sexual dysfunction broad, not clearly erectile-function specific enough in abstract**:",
+      "**Mixed or subclinical PTSD sample / abstract insufficient for ED outcome**:"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "PTSD has the most convincing evidence for a high burden of ED in adult men, including markedly elevated prevalence and more severe dysfunction on IIEF-based assessment.",
+      "Panic disorder is also associated with ED, but the available abstract supports this mainly through administrative diagnosis risk, not prevalence/severity metrics.",
+      "Evidence for OCD and social anxiety disorder is present but limited and less directly quantifiable from the abstract alone.",
+      "Given these limits, any evidence synthesis should emphasize that the available pool suggests a real association between anxiety disorders and erectile dysfunction, but the quality and directness of evidence vary substantially by diagnosis, with PTSD best supported."
+    ]
+  }
+}

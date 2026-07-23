@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20340,
+    "output_tokens": 968,
+    "total_tokens": 21308
+  },
+  "metrics": {
+    "retrieval_recall": 0.9375,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.8125,
+    "inclusion_precision": 0.8125,
+    "inclusion_f1": 0.8125,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.8666666666666667,
+    "post_retrieval_loss": 0.125,
+    "inclusion_consistency": 0.631,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2872,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into a review question, findings by outcome domain, methodological considerations, and included studies, but it lacks core systematic review sections such as Abstract, Introduction, Methods, Results, Discussion, Conclusion, formal References, and PRISMA-style details including search strategy, inclusion/exclusion criteria, screening process, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "lower intelligence (IQ) measured in early life (<21 years)",
+      "Outcomes are primarily clinical diagnoses or biomarkers linked to diagnoses"
+    ],
+    "exclusion_criteria": [
+      "age criteria overlap >21",
+      "age"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The eligible primary studies consistently demonstrate that lower intelligence (IQ) measured in childhood, adolescence, or early adulthood is associated with an increased risk of a wide range of clinical health conditions in later life.",
+      "Lower early-life IQ is robustly associated with an increased risk of subsequent mental disorders.",
+      "There is strong evidence that lower early-life IQ predicts a higher risk of specific physical illnesses.",
+      "The associations between early-life IQ and later health outcomes are frequently mediated or moderated by socioeconomic and educational factors.",
+      "Adjusting for adult socioeconomic status (SES) or educational attainment often substantially attenuates the IQ-health relationship, suggesting that IQ influences health partly through shaping educational and occupational trajectories (Candidates 005, 008, 031, 037, 043)."
+    ]
+  }
+}

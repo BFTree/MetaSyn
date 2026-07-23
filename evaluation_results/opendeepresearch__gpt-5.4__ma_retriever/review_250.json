@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24111,
+    "output_tokens": 927,
+    "total_tokens": 25038
+  },
+  "metrics": {
+    "retrieval_recall": 0.38095238095238093,
+    "retrieval_precision": 0.22535211267605634,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.24489795918367344,
+    "screening_accuracy": 0.8450704225352113,
+    "conditional_retention": 0.375,
+    "post_retrieval_loss": 0.23809523809523808,
+    "inclusion_consistency": 0.5896,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6342,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized and includes strong meta-analysis elements such as eligibility criteria, search queries, screening decisions, and included/excluded studies, but it lacks several standard sections like an abstract, introduction, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized, controlled trials",
+      "Adults (\u226518 years) with MDD",
+      "Treatment-resistant depression defined as nonresponse to **at least 2 antidepressant treatments**",
+      "Pharmacological or neuromodulatory antidepressant intervention",
+      "Comparator: placebo or sham",
+      "Minimum **10 participants per study arm**",
+      "Not restricted to a narrowly defined comorbid subgroup"
+    ],
+    "exclusion_criteria": [
+      "Bipolar depression",
+      "Depression with psychotic features",
+      "Nonrandomized studies",
+      "Reviews, protocols, open-label studies, maintenance studies, or active-comparator-only studies without placebo/sham",
+      "Studies not clearly meeting the \u201cfailed \u22652 antidepressant trials\u201d criterion",
+      "Records after the search end date of **2023-04-13**"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "This record supports the conclusion that **esketamine is represented by direct placebo-controlled evidence in TRD**.",
+      "The available notes identify the study as an efficacy and safety trial, which is consistent with a response-rate signal favoring active treatment, although arm-level responder counts were not preserved in the current extraction.",
+      "The titles themselves suggest a positive antidepressant signal, though one describes the effect as **modest**, and one suggests that superiority became clearer **1 month after treatment**.",
+      "Together, they indicate that sham-controlled rTMS has direct RCT evidence in medication-resistant or treatment-resistant major depression.",
+      "These studies provide direct sham-controlled evidence for TBS in refractory or resistant depression.",
+      "In addition, the retrieved TBS review record (`40542`) reported that across sham-controlled TBS RCTs, TBS was superior to sham for response on the Hamilton Depression Rating Scale"
+    ]
+  }
+}

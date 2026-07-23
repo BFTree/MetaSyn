@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30144,
+    "output_tokens": 952,
+    "total_tokens": 31096
+  },
+  "metrics": {
+    "retrieval_recall": 0.6,
+    "retrieval_precision": 0.6206896551724138,
+    "inclusion_recall": 0.15,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.2571428571428572,
+    "screening_accuracy": 0.5172413793103449,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.45,
+    "inclusion_consistency": 0.8553,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.884,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic-review elements such as a defined review question, explicit search queries, eligibility criteria, screening decisions, included/excluded studies, and biomarker-specific synthesis, but it lacks some full PRISMA-level rigor such as a formal abstract, detailed quality/risk-of-bias assessment, complete quantitative synthesis methods, and clearly presented references/conclusion."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "investigated associations between TSCC and biomarkers",
+      "reported clinical significance of biomarker expression",
+      "studied oral cavity biomarkers only when all samples were from the tongue",
+      "for immunohistochemistry studies, included multivariate statistical assessment",
+      "had an English full-text version available, although local corpus access to full text was sometimes incomplete"
+    ],
+    "exclusion_criteria": [
+      "mixed anatomical oral cavity subsites or broader head and neck cancers without tongue-specific sampling",
+      "had unclear clinical implications",
+      "focused exclusively on the base of tongue",
+      "were animal-only biomarker studies",
+      "investigated micro-RNAs as biomarkers",
+      "were case reports, letters, or systematic reviews"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "SOX2 expression was associated with **poor prognosis**",
+      "**Reduced E-cadherin expression** was linked to **EMT**, **metastatic potential**, and **poor prognosis**",
+      "**Higher vimentin expression** was associated with **EMT**, tumor aggressiveness, and worse prognosis",
+      "**No eligible contemporary evidence** in the local corpus for prolactin within the protocol window",
+      "A meta-analysis was explored for feasibility but was only to be considered if the locally available records reported sufficiently compatible quantitative data."
+    ]
+  }
+}

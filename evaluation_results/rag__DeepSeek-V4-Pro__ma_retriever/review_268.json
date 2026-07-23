@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20489,
+    "output_tokens": 1017,
+    "total_tokens": 21506
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.9642857142857143,
+    "inclusion_precision": 0.8709677419354839,
+    "inclusion_f1": 0.9152542372881356,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9642857142857143,
+    "post_retrieval_loss": 0.03571428571428571,
+    "inclusion_consistency": 0.8645,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6006,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear research question, methods, screening results, summary of included studies, and study list, but it lacks a full Abstract, Introduction, Discussion, Conclusion, formal References section, detailed search strategy, data extraction process, quality assessment, and completed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind, randomized, placebo-controlled trials (DBRPCTs) with an enrichment design (stabilization on the antidepressant of interest during an open-label phase, followed by randomization to the same antidepressant or placebo) and a minimum double-blind duration of 12 weeks"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on children, adolescents, older individuals, or those with dual diagnoses",
+      "continuation studies randomizing patients in the acute phase",
+      "not a primary DBRPCT (reviews, meta\u2011analyses, protocols, post\u2011hoc analyses, open\u2011label studies, observational studies)",
+      "adjunctive antipsychotic augmentation rather than antidepressant monotherapy",
+      "treatment\u2011resistant depression populations",
+      "wrong population (bipolar disorder, elderly\u2011only, post\u2011stroke, seasonal affective disorder)",
+      "absence of a placebo arm",
+      "lack of the required enrichment design"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "They confirm that continued antidepressant treatment significantly reduces the risk of relapse/recurrence compared with placebo in patients who have achieved remission or response during open\u2011label stabilization.",
+      "The double\u2011blind maintenance phases range from 24 weeks to 104 weeks, providing robust data on relapse prevention.",
+      "All studies employed an enrichment design, thereby focusing on the population likely to benefit from long\u2011term treatment.",
+      "These studies will form the evidence base for the planned network meta\u2011analysis."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16118,
+    "output_tokens": 1120,
+    "total_tokens": 17238
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.7352941176470589,
+    "inclusion_precision": 0.8928571428571429,
+    "inclusion_f1": 0.806451612903226,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.7575757575757576,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.5365,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4853,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear sections for review question fit, screening summary, inclusion/exclusion rationale, narrative synthesis by modality, limitations, and a final study list, but it lacks a full PRISMA-style methods/results/references structure and explicit quantitative synthesis details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized or randomized crossover trials in adults with FBSS/PSPS-T2/post-lumbar surgery syndrome/post-surgery syndrome.",
+      "Interventions relevant to the review: SCS/neuromodulation, epidural or adhesiolysis procedures, conservative/psychological/pharmacologic care, or reoperation.",
+      "Pain outcome reported."
+    ],
+    "exclusion_criteria": [
+      "Reviews/guidelines/protocols/editorials: e.g., 001, 005, 010, 025, 032, 036, 038, 055, 068, 073, 082, 136.",
+      "Non-randomized comparative or observational follow-up analyses: e.g., 003, 009, 017, 019, 035, 079.",
+      "Case reports/technical reports: e.g., 014, 020, 021, 039, 042, 052, 097, 109, 116, 117, 187.",
+      "Populations not clearly PSPS-T2/without previous spine surgery: e.g., 006, 011, 018, 022, 037, 054? no, 054 is FBSS so included; 059 not clearly prior surgery-only; 074 is FBSS and included.",
+      "Mixed pain populations without separable PSPS-T2 data: e.g., 007, 065.",
+      "Out of scope outcomes only or inadequate design for this review question."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "At the title/abstract level, the evidence base in this pool most strongly supports:",
+      "SCS over conventional medical management for pain reduction in FBSS/PSPS-T2.",
+      "SCS over reoperation in selected patients with persistent radicular pain after lumbar surgery.",
+      "Percutaneous adhesiolysis as more effective than caudal epidural injection controls in post-lumbar surgery syndrome.",
+      "More mixed results for newer SCS waveforms when tested against sham/placebo or alternative active SCS paradigms.",
+      "Much less extensive evidence for conservative noninvasive treatments."
+    ]
+  }
+}

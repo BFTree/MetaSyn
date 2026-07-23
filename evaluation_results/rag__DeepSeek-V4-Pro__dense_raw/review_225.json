@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9182,
+    "output_tokens": 1030,
+    "total_tokens": 10212
+  },
+  "metrics": {
+    "retrieval_recall": 0.625,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.5243,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5779,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct background/objective, methods, screening results, study characteristics, synthesis, and conclusion sections, and it includes key meta-analysis elements such as eligibility criteria, screening process, and evidence synthesis, though it lacks a formal abstract/introduction/reference structure and full PRISMA-style detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomised controlled trials (RCTs) conducted in populations explicitly selected for low\u2011renin hypertension were eligible.",
+      "adults with low\u2011renin hypertension (LRH)",
+      "MRA (spironolactone, eplerenone)",
+      "placebo or active antihypertensive (ACE\u2011inhibitor, ARB, diuretic)",
+      "change in systolic/diastolic blood pressure (BP), time to target BP, defined daily dose to achieve target BP, end\u2011organ dysfunction, adverse effects",
+      "RCT"
+    ],
+    "exclusion_criteria": [
+      "secondary hypertension (including primary aldosteronism), non\u2011English language, conference abstracts, reviews, non\u2011RCT designs"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Available RCT evidence, although sparse, indicates that MRA therapy effectively reduces blood pressure in adults with low\u2011renin hypertension.",
+      "The antihypertensive effect appears at least as good as that of ARBs and thiazide diuretics, and may be superior to ARBs when renin is profoundly suppressed.",
+      "The safety profile in these short studies was acceptable.",
+      "However, the evidence is insufficient to determine whether MRAs confer additional organ protection or differ in longer\u2011term tolerability compared with other antihypertensives in this specific population.",
+      "Larger, contemporary trials with standardised low\u2011renin definitions and longer follow\u2011up are needed to strengthen conclusions."
+    ]
+  }
+}

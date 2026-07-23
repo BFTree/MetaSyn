@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17435,
+    "output_tokens": 1864,
+    "total_tokens": 19299
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.7272727272727272,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5205,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5613,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear target, screening/selection summary, evidence synthesis, conclusion, and included study list, but it lacks several standard sections such as an abstract, formal introduction, detailed methods, search strategy, data extraction process, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adopting a healthy diet (low in refined carbohydrates, low in saturated fats, high in fibre, and high in nutritional value)",
+      "patients with periodontal diseases (gingivitis or periodontitis)",
+      "compared to those following an unhealthy, Western, or standard diet"
+    ],
+    "exclusion_criteria": [
+      "animal models (e.g., murine, rat, or monkey studies)",
+      "studies lacking periodontal parameter measurements or relying on self-reported periodontal outcomes",
+      "interventions focused on single foods/supplements rather than whole dietary patterns",
+      "studies on populations without periodontal diseases (e.g., cancer, diabetes, cardiovascular disease cohorts without periodontal focus)",
+      "review articles",
+      "studies using the same data sources as already included primary trials"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence from the six included studies consistently indicates that healthy dietary patterns\u2014characterized by high fibre, high nutritional value, and low refined carbohydrates and saturated fats\u2014are associated with beneficial periodontal outcomes, though the magnitude and manifestations vary by study design and population.",
+      "Randomized controlled trials and prospective studies provide causal insight into the benefits of dietary modification on gingivitis and periodontitis.",
+      "Two RCTs focusing on gingivitis demonstrated that adopting an anti-inflammatory or Mediterranean diet for 4 to 6 weeks significantly reduced gingival bleeding and gingival index compared to control groups maintaining standard dietary habits, notably without any difference in plaque values.",
+      "This suggests that the dietary change directly modulates the host inflammatory response rather than altering plaque accumulation.",
+      "Adopting a healthy diet (such as the Mediterranean, anti-inflammatory, or optimized Nordic diets) appears to significantly reduce gingival inflammation in patients with gingivitis and enhance the clinical outcomes of non-surgical therapy in periodontitis.",
+      "Observational data further confirms that long-term adherence to such diets protects against the development and severity of periodontal disease, whereas poor-quality Western diets exacerbate risk.",
+      "The evidence suggests that diet primarily modulates periodontal parameters through host inflammatory and antioxidant pathways rather than by reducing microbial plaque load."
+    ]
+  }
+}

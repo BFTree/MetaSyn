@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5450,
+    "output_tokens": 1161,
+    "total_tokens": 6611
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.16666666666666666,
+    "inclusion_consistency": 0.7816,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.523,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.25,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes Methods, Results, Synthesis, Conclusion, eligibility criteria, screening process, and included studies, but it lacks formal Abstract, Introduction, Discussion, full References, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment needed for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "evaluate AI\u2011based detection of PM on colour fundus images",
+      "report at least one of AUROC, sensitivity, or specificity",
+      "state the dataset size and reference standard",
+      "employ a validation set of \u226510% of the training set",
+      "be published in English in a peer\u2011reviewed journal"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "conference abstracts",
+      "articles that could not provide a 2\u00d72 contingency table"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All four studies demonstrated high discriminative performance, with AUCs ranging from 0.987 to 0.998 for PM detection.",
+      "Sensitivity and specificity, where reported, exceeded 90% in most models, indicating strong potential for screening applications.",
+      "Heterogeneity in study size, exact definition of PM (binary vs. category within myopic maculopathy), and reporting of sensitivity/specificity metrics limits direct quantitative pooling but consistently supports high diagnostic accuracy.",
+      "Deep learning\u2011based algorithms applied to colour fundus images achieve excellent diagnostic accuracy for pathological myopia, with AUCs approaching 1.0 and sensitivities/specificities generally >90%.",
+      "These findings underscore the feasibility of AI\u2011assisted PM screening.",
+      "Standardised reporting of sensitivity, specificity, and validation procedures would facilitate future meta\u2011analytic pooling."
+    ]
+  }
+}

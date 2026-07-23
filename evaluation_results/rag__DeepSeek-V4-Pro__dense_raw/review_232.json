@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 8027,
+    "output_tokens": 1460,
+    "total_tokens": 9487
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6702,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3934,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening process, exclusion reasons, inclusion outcome, and conclusion, but it lacks several standard systematic review sections and key meta-analysis details such as a search strategy, data extraction, synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original human investigations (not reviews, commentaries, protocols, etc.)",
+      "assessment of dietary salt/sodium intake as the exposure",
+      "a relevant health outcome (blood pressure, cardiovascular disease, physical performance, renal outcomes, CKD, osteoporosis, all\u2011cause mortality)",
+      "for cohort studies: duration \u22651\u202fyear (categories I, II, V) or \u22654\u202fweeks (category III), \u2265400 participants or events, and sodium intake measured by 24\u2011h urine, food record, or 24\u2011h diet recall (FFQ, spot urine, and cross\u2011sectional studies were excluded)",
+      "publication date up to the search end date of 2020\u201112\u201131."
+    ],
+    "exclusion_criteria": [
+      "FFQ, spot urine, and cross\u2011sectional studies were excluded",
+      "The vast majority of candidates were published after 2020 (search end date exceeded) and were therefore immediately excluded.",
+      "Study design was not an eligible cohort study (e.g., cross\u2011sectional, case\u2011control, RCT, modelling, review, guideline).",
+      "Sodium intake was assessed by questionnaire/FFQ, spot urine, or a simple self\u2011report, not by 24\u2011h urine, food record, or 24\u2011h diet recall.",
+      "The exposure was not specifically dietary salt/sodium (e.g., dietary pattern indices, potassium, whole grains, protein).",
+      "The outcome was not among the specified health outcomes (e.g., cancer, physiological biomarkers).",
+      "Sample size was too small (<400 participants or events) for cohort studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None of the 200 candidates met the complete inclusion criteria.",
+      "Therefore, no articles were included in this evidence synthesis.",
+      "The candidate pool did not contain any eligible primary study that could be used to address the research question under the strict methodological requirements of this systematic review."
+    ]
+  }
+}

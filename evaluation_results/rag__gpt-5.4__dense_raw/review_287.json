@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18962,
+    "output_tokens": 1561,
+    "total_tokens": 20523
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.484,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3056,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, synthesis, limitations, and conclusion sections, but it lacks a full systematic-review structure such as a formal abstract, introduction, methods, results, discussion, and references, so it is good rather than very good."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "using only the supplied 200-item candidate pool",
+      "periodontal/gingival biotype as a comparator associated with marginal bone loss and peri-implant disease outcomes in patients with implants",
+      "patients with a history of treated chronic periodontitis and 1-year follow-up after loading"
+    ],
+    "exclusion_criteria": [
+      "Not about gingival/peri-implant phenotype or did not compare thin vs thick phenotype",
+      "Review, narrative review, systematic review, case report, case series, survey, animal/preclinical, or non-implant topic",
+      "Published outside the eligible 13-year window",
+      "Did not report outcomes relevant to implant survival, marginal bone loss, peri-implantitis, or related clinical peri-implant outcomes in relation to phenotype",
+      "Did not provide at least abstract-level evidence of a comparative phenotype analysis",
+      "wrong publication year relative to the search window",
+      "not clearly thin vs thick gingival phenotype",
+      "review rather than primary study",
+      "no comparative phenotype analysis tied to the target outcomes"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Thin periodontal biotype was associated with greater marginal bone loss",
+      "The study explicitly states that thin periodontal biotype represents a risk factor for additional bone loss",
+      "Thin gingival/periodontal phenotype may be associated with increased marginal bone loss around dental implants"
+    ]
+  }
+}

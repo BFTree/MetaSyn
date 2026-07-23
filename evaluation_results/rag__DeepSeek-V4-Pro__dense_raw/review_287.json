@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19462,
+    "output_tokens": 1492,
+    "total_tokens": 20954
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.1111111111111111,
+    "inclusion_f1": 0.15384615384615383,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.668,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4043,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background/aim, search and screening criteria, synthesized results, clinical implications, and an included-study list, but it lacks a formal abstract, full methods section with data extraction and quality assessment, detailed PRISMA-style search strategy, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The top\u2011200 candidate pool was screened against predefined criteria: any comparative clinical study (prospective/retrospective) or systematic review reporting gingival phenotype and at least one of the outcomes (implant survival, MBL, peri\u2011implantitis, clinical parameters), published in the last 13 years (i.e., 2010\u202fonwards for a review conducted in 2023)."
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews, letters, commentaries, non\u2011implant studies, and those without phenotype comparisons were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the nine studies, a consistent pattern emerges: a thick gingival phenotype\u2014whether defined as thick periodontal biotype, wider keratinised mucosa, or greater soft\u2011tissue height\u2014is associated with reduced marginal bone loss, lower risk of peri\u2011implantitis, and fewer soft\u2011tissue dehiscences.",
+      "The evidence for implant survival is less clear because failure rates were low and studies were not powered to detect differences.",
+      "The protective effect of adequate keratinised tissue and thick mucosal phenotype is particularly evident in long\u2011term cohorts (up to 20\u202fyears).",
+      "However, heterogeneity in phenotype definitions and outcome measures limits direct pooling; future prospective studies should standardise the assessment of gingival phenotype (e.g., mucosal thickness, KM width) and report MBL, peri\u2011implantitis incidence, and survival consistently.",
+      "Thick mucosa/phenotype was consistently associated with less MBL.",
+      "None of the included studies reported a statistically significant difference in implant survival solely attributable to phenotype; survival rates were generally high in both thick and thin groups where reported (e.g., Candidate\u202f130 had 100\u202f% survival at 1\u202fyear, but no comparison by biotype reached significance)."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34448,
+    "output_tokens": 1192,
+    "total_tokens": 35640
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.15384615384615385,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.9423076923076923,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.7458,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6041,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review/meta-analysis structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening results, synthesis methods, risk-of-bias assessment, results, discussion, conclusion, and included studies, but it falls short of excellent PRISMA-style rigor because the references are not fully presented, data extraction methods are only lightly described, and there are organizational artifacts such as duplicated headings and an inserted drafting note."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human interventional studies, including randomized controlled trials or other clinical trials, evaluating MDMA-assisted psychotherapy in patients with a psychiatric illness such as PTSD, depression, terminal illness-related psychiatric symptoms, or other diagnosed psychiatric conditions.",
+      "Studies in which the intervention includes MDMA administered as part of a psychotherapy-assisted treatment protocol, compared with placebo-assisted psychotherapy or another control condition.",
+      "Studies reporting safety outcomes, including side effects during MDMA medication sessions, side effects within 7 days after sessions, and/or adverse events occurring during the treatment period.",
+      "Full-text articles with sufficient data to determine study population, intervention/comparator, and adverse event outcomes."
+    ],
+    "exclusion_criteria": [
+      "Non-human, preclinical, in vitro, case report, review, editorial, commentary, protocol, conference abstract-only, or other non-original research publications.",
+      "Studies not involving patients with a psychiatric illness or not evaluating MDMA as an adjunct to psychotherapy.",
+      "Studies without a placebo or control comparator, or without separable data for the MDMA-assisted psychotherapy arm.",
+      "Studies not reporting side effects, adverse events, or other safety/tolerability outcomes related to treatment."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 7 studies, MDMA-assisted psychotherapy was not associated with a clear increase in side effects or adverse events compared with placebo-assisted psychotherapy or other control conditions, although the pooled random-effects estimate was imprecise and highly uncertain (OR 2.04, 95% CI 0.05\u201378.67; p=0.70).",
+      "Clinically, this suggests that current trial data do not show a consistent safety signal for MDMA-AP, but they also do not rule out either meaningful harm or relative safety, given the extremely wide confidence interval.",
+      "As a result, MDMA-AP should be considered with caution and used only in closely monitored settings with appropriate psychiatric and medical oversight.",
+      "The main caveat is that between-study heterogeneity was very high (I\u00b2=88.7%), indicating substantial inconsistency across the limited available studies and reducing confidence in the pooled estimate.",
+      "This systematic review found no clear evidence that MDMA-assisted psychotherapy (MDMA-AP) increases overall side effects or adverse events relative to placebo-assisted psychotherapy or other control conditions, but the estimate is highly uncertain.",
+      "These divergent pooled estimates, together with the very wide confidence interval under the random-effects model, indicate that the available comparative evidence is too sparse and inconsistent to support a precise inference about harm.",
+      "The signal is therefore best interpreted as inconclusive rather than reassuring or concerning in a definitive sense.",
+      "Overall, the available evidence does not demonstrate a consistent effect of MDMA-assisted psychotherapy on side effects and adverse events, and the high between-study heterogeneity means that these findings should be regarded as inconclusive rather than confirmatory."
+    ]
+  }
+}

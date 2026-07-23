@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12606,
+    "output_tokens": 983,
+    "total_tokens": 13589
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.8125,
+    "inclusion_f1": 0.8666666666666666,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.6909,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4193,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a methodology/scope section, synthesized findings, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed search strategy, screening process, data extraction methods, quality assessment, and full PRISMA-style methodological rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women at average risk of breast cancer aged 45\u201374 years (with specific interest in subgroups 45\u201349, 50\u201369, and 70\u201374 years)",
+      "Outcomes of interest include breast cancer deaths averted, quality-adjusted life years (QALYs), cancer stage at detection, interval cancers, overdiagnosis, false-positive results, and radiation-related effects.",
+      "English-language primary studies (RCTs, observational cohorts, and decision-analytic models assuming 100% adherence for models) published before April 30, 2020"
+    ],
+    "exclusion_criteria": [
+      "high-risk populations, reviews, guidelines, and editorials"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "For average-risk women aged 50\u201374, biennial mammography screening provides the most efficient balance of benefits (mortality reduction, favorable stage at detection) and harms (false positives, overdiagnosis).",
+      "Annual screening offers incremental mortality benefits and earlier stage detection\u2014particularly for women in their 40s and those with dense breasts\u2014but significantly increases false-positive results and overdiagnosis.",
+      "Triennial screening may be a reasonable approach for subsets of average-risk women with lower breast density to further reduce harms, though it slightly attenuates mortality benefits.",
+      "Radiation-related harms are negligible across all modeled intervals."
+    ]
+  }
+}

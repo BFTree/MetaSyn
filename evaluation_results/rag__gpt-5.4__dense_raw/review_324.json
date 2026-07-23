@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7364,
+    "output_tokens": 1155,
+    "total_tokens": 8519
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8235294117647058,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.6868,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4739,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with evidence synthesis, interpretation, limitations, screening judgments, and included studies, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, quality assessment, PRISMA-style flow, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary study of pharmacogenetic-guided antipsychotic prescribing versus usual care, with clinical and/or economic outcomes.",
+      "Direct pharmacogenetic-guided antipsychotic intervention with clinical outcomes.",
+      "Direct pharmacogenetic-guided antipsychotic intervention with economic outcomes.",
+      "Primary studies only."
+    ],
+    "exclusion_criteria": [
+      "Reviews/editorials/protocols: 001, 011, 012, 013, 018, 022, 024, 033, 034, 036, 046, 052, 094, etc.",
+      "Non-interventional pharmacogenetic association studies without guided prescribing: 008, 010, 014, 027, 050, 074, 079, 081, 090, 192, etc.",
+      "Non-antipsychotic primary medication focus: many antidepressant/ADHD/other-drug candidates.",
+      "Pure economic models rather than observed clinical studies: 002, 028, 032, 042."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included evidence suggests mixed but credible support for pharmacogenetics-guided antipsychotic treatment.",
+      "One large Danish trial found no benefit of routine CYP2D6/CYP2C19 genotyping on antipsychotic persistence, symptoms, or adverse effects overall.",
+      "A more recent Chinese RCT of multigenetic pharmacogenomics-guided treatment reported better short-term symptom improvement and higher response rates than treatment as usual.",
+      "Routine PGx testing for all schizophrenia-spectrum patients does not yet show consistent benefit across all core outcomes.",
+      "More targeted or multigene-guided approaches may improve outcomes, particularly symptom response or side-effect burden in selected patients.",
+      "Economic benefit is plausible and has some supportive evidence, especially in metabolically extreme subgroups, but remains uncertain at the broad population level.",
+      "There is some primary-study evidence that pharmacogenetic-guided antipsychotic treatment can improve outcomes, but results are inconsistent across studies."
+    ]
+  }
+}

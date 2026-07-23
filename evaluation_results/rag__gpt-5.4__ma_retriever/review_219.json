@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18889,
+    "output_tokens": 833,
+    "total_tokens": 19722
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.33,
+    "inclusion_recall": 0.23529411764705882,
+    "inclusion_precision": 0.6153846153846154,
+    "inclusion_f1": 0.3404255319148936,
+    "screening_accuracy": 0.71,
+    "conditional_retention": 0.24242424242424243,
+    "post_retrieval_loss": 0.7352941176470589,
+    "inclusion_consistency": 0.5099,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3898,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear overall flow with background, screening logic, evidence synthesis, exclusions, included studies, and conclusion, but it lacks a formal abstract, detailed methods for searching and data extraction, explicit quality assessment, quantitative synthesis, and a references section required for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary study, not a review/comment/protocol/exposure-method paper.",
+      "Frequency above 6 GHz.",
+      "Publication year no later than 2019.",
+      "Biological/health endpoint relevant to the review.",
+      "Exposure plausibly low-level and within or near the stated inclusion thresholds."
+    ],
+    "exclusion_criteria": [
+      "review/comment only",
+      "therapeutic focus without relevant adverse bioeffect question",
+      "frequency below 6 GHz",
+      "publication after 2019",
+      "dosimetry-only or exposure-measurement-only",
+      "likely exposure above inclusion thresholds"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the abstract-level evidence in this candidate pool is **mixed but leans toward no consistent effect in better-controlled in vitro MMW studies around 40-60 GHz**, while several other studies, especially some older animal/cell studies, report positive findings on chromatin, reproduction, oxidative stress, apoptosis, or genotoxic-related endpoints.",
+      "On abstracts alone, the body of evidence looks heterogeneous in both direction and likely methodological quality.",
+      "Using only the supplied titles and abstracts, the candidate pool yields a mixed evidence base with more frequent null findings in controlled 40-60 GHz in vitro studies than in older heterogeneous studies.",
+      "The abstracts do not support a simple conclusion that low-level >6 GHz RF consistently causes adverse biological effects, but they also do not rule out effects, because several studies report changes in genotoxic-related, reproductive, neural, apoptotic, transcriptomic, or oxidative-stress endpoints.",
+      "The abstract-only evidence is too heterogeneous and too incompletely reported to make a strong causal judgment."
+    ]
+  }
+}

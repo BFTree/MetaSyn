@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5393,
+    "output_tokens": 964,
+    "total_tokens": 6357
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4698,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6495,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review objective, screening criteria, exclusion reasons, and synthesis outcome, but it lacks several standard systematic review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, detailed search strategy, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies must fall within the search window (2023-07-01 to 2024-03-31).",
+      "Only randomized controlled trials (RCTs) evaluating clinical psychological interventions were eligible.",
+      "Studies must focus on adults (\u226518 years) with overweight/obesity (BMI \u226525) and comorbid depressive symptoms.",
+      "IMIs must explicitly target depressive symptom severity based on psychological principles.",
+      "Eligible control conditions were standard care or no intervention."
+    ],
+    "exclusion_criteria": [
+      "Numerous candidates were excluded for being out-of-date (published prior to July 2023 or after March 2024).",
+      "Protocols, pilot/feasibility trials without primary efficacy outcomes, single-arm studies, retrospective analyses, qualitative studies, systematic reviews, meta-analyses, and scoping reviews were excluded.",
+      "Studies targeting general populations without BMI requirements, nonclinical populations (e.g., PHQ-9 < 10), or highly specific populations (e.g., postpartum women, T2DM, hypertension, post-bariatric surgery, PCOS) were excluded.",
+      "Interventions primarily targeting weight loss, eating behaviors, physical activity, or general well-being without a direct depression focus were excluded.",
+      "Studies utilizing excluded controls\u2014such as waitlists, treatment as usual (TAU involving psychotherapy/pharmacotherapy), active psychological placebos, or low-level psychosocial support\u2014were removed."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the comprehensive screening of the supplied candidate pool against the rigorous inclusion and exclusion criteria, **no eligible primary-study articles were identified**.",
+      "Consequently, it is not possible to synthesize quantitative or qualitative evidence regarding the efficacy of internet- and mobile-based interventions for reducing depressive symptom severity in adults with overweight or obesity compared to standard care or no intervention within this search window.",
+      "The lack of eligible trials highlights a notable gap in recent, rigorously controlled RCT evidence specifically addressing comorbid depressive symptoms (rather than general well-being or weight loss alone) in this population using acceptable control conditions.",
+      "None were included.",
+      "No candidate in the provided pool met all the requisite PICO, design, and date criteria for this systematic review."
+    ]
+  }
+}

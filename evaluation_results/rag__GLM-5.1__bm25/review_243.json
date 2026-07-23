@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18389,
+    "output_tokens": 1065,
+    "total_tokens": 19454
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.7706,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6175,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes most core components such as review target, screening summary, evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods, quality assessment, data extraction procedures, and a rigorous PRISMA-style search and synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) of MDMA-AP in psychiatric populations with placebo or active control conditions"
+    ],
+    "exclusion_criteria": [
+      "reviews, commentaries, or meta-analyses",
+      "conference abstracts, book chapters, or protocols",
+      "animal studies or Phase 1 healthy volunteer studies lacking psychotherapy",
+      "studies published after the search end date of 2023-10-30",
+      "non-MDMA interventions",
+      "uncontrolled trials lacking a comparison group as specified in the research question"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the included Phase 2 and 3 RCTs, MDMA-assisted psychotherapy demonstrates a favorable safety profile in patients with PTSD, social anxiety related to autism, and anxiety related to life-threatening illness.",
+      "The incidence of serious adverse events is negligible across the evidence base.",
+      "While severe-intensity TEAEs may occur more frequently in the MDMA group than in placebo controls (as observed in the Phase 3 trial by Candidate 043), these events do not constitute serious safety concerns and the treatment is consistently deemed safe and well-tolerated compared to control conditions.",
+      "Across all included pilot and Phase 2 studies (Candidates 001, 002, 004, 006, 009), MDMA-AP was consistently reported as safe and well-tolerated, with **no drug-related serious adverse events (SAEs)** occurring in the active dose groups."
+    ]
+  }
+}

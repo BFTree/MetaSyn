@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12223,
+    "output_tokens": 1078,
+    "total_tokens": 13301
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.6428571428571429,
+    "inclusion_consistency": 0.6372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8186,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening categories, eligibility constraints, evidence synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, methods section, detailed search strategy, data extraction/synthesis methods, quality assessment, and full references expected for a rigorous systematic review/meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults",
+      "prospective clinical ATI studies",
+      "placebo or no active intervention groups only",
+      "frequent pVL monitoring early after ATI"
+    ],
+    "exclusion_criteria": [
+      "exclude non-English, reviews, commentary, case reports, animal/in vitro, coinfection-focused studies, and pediatric/adolescent studies"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "HIV viral rebound is usually rapid, often around 2\u20134 weeks.",
+      "Post-treatment control is uncommon.",
+      "Earlier ART initiation may modestly delay rebound and slightly increase short-term time off ART, but does not reliably prevent rebound.",
+      "These studies collectively support the review\u2019s central premise that, absent an effective intervention, ATI usually leads to prompt viral recrudescence even in highly selected participants with prolonged suppression and low reservoirs.",
+      "Abstract-defined durable or meaningful control was rare:"
+    ]
+  }
+}

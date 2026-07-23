@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20609,
+    "output_tokens": 698,
+    "total_tokens": 21307
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7857142857142857,
+    "inclusion_precision": 0.6875,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.21428571428571427,
+    "inclusion_consistency": 0.8487,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6107,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, screening results, included/excluded study lists, and notes, but it lacks a formal abstract, introduction, discussion, conclusion, references, detailed search strategy, data extraction procedures, quality assessment, and full synthesis methods expected of a complete PRISMA-style systematic review/meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "case\u2013control or cohort design",
+      "exposure of total or specific alcoholic beverages",
+      "outcome of renal cell/kidney adenocarcinoma",
+      "reported relative risks (RRs) with 95% confidence intervals for categorical or continuous alcohol intake"
+    ],
+    "exclusion_criteria": [
+      "duplicate populations (only the study combining independent data, focusing on alcohol as the main exposure, or with the largest case number/follow-up was retained)",
+      "studies using mortality endpoints (e.g., Ozasa 2007, Kim 2010 \u2013 none in the pool)",
+      "meta-analyses, reviews, ecological, genetic-only, or non-RCC studies",
+      "articles published after the search end date (31 August 2011)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After removing clearly ineligible records (meta-analyses, reviews, wrong outcome, post-2011 publication, non-alcohol exposure), 14 candidate studies appeared potentially eligible.",
+      "Overlapping study populations were resolved using the pre\u2011defined hierarchy.",
+      "Below is the list of eligible primary\u2011study articles, each with its exact title and Corpus ID as supplied in the candidate pool.",
+      "This set of 12 studies provides the evidence base for the planned dose\u2013response meta\u2011analysis of alcohol intake and renal cell cancer risk, covering total alcohol and beverage\u2011specific associations, both sexes, and cohort and case\u2013control designs."
+    ]
+  }
+}

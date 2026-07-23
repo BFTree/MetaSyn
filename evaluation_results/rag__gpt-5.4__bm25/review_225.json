@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7396,
+    "output_tokens": 1132,
+    "total_tokens": 8528
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47619047619047616,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.1875,
+    "inclusion_consistency": 0.5573,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5438,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes screening criteria, evidence synthesis, safety, limitations, and included studies, but it lacks major standard sections such as an abstract, introduction, detailed methods, formal results, references, search strategy, data extraction, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with low-renin hypertension (LRH)",
+      "Randomized controlled trials",
+      "MRA therapy (eg, spironolactone, eplerenone)",
+      "Comparator: placebo or another antihypertensive",
+      "Outcomes: blood pressure change and/or safety/tolerability"
+    ],
+    "exclusion_criteria": [
+      "known secondary hypertension (including primary aldosteronism), non-English records, conference abstracts, non-randomized studies, reviews/protocols",
+      "Reviews/editorials/protocols rather than primary RCTs",
+      "Non-LRH populations",
+      "Resistant hypertension without clear LRH population",
+      "Non-randomized or uncontrolled studies",
+      "Primary aldosteronism/secondary hypertension populations",
+      "Animal/preclinical studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "A **small set of eligible randomized trials** was identified.",
+      "Across these abstracts, **MRAs consistently lowered blood pressure in adults with low-renin hypertension**, and in head-to-head comparisons they were **at least as effective as thiazide diuretics** and in one eplerenone trial **more effective than losartan**.",
+      "Safety signals were present but generally manageable in the short term; **hyperkalemia appears uncommon in the included abstracts**, while **spironolactone endocrine tolerability details were limited**.",
+      "Because this assessment is based **only on titles/abstracts**, confidence is limited by incomplete reporting of randomization methods, exact outcome definitions, and subgroup details.",
+      "Based on the supplied abstracts, **MRA therapy appears effective for lowering blood pressure in adults with low-renin hypertension**.",
+      "**Eplerenone is superior to placebo**",
+      "**Eplerenone may be more effective than losartan in LRH**",
+      "**Spironolactone is effective and appears roughly comparable to thiazide diuretics for BP lowering in LRH**",
+      "Short-term tolerability appears **generally acceptable**, but the evidence available in abstracts is insufficient to fully characterize safety, long-term harms, time to target BP, drug burden reduction, or end-organ effects."
+    ]
+  }
+}

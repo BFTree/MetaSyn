@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17678,
+    "output_tokens": 824,
+    "total_tokens": 18502
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.9092,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8232,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes review target, screening criteria, and screening results, but it lacks standard systematic review sections such as Abstract, Introduction, Methods in full detail, Discussion, Conclusion, References, quality assessment, data extraction methods, and formal synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Case-control or cohort studies regardless of geographic location;",
+      "Samples originating from a tissue microbiome;",
+      "Use of 16S rRNA sequencing method on Illumina sequencers covering V4 or V3-V4 hypervariable regions;",
+      "Studies that specifically included BC subtypes (TNBC vs. non-TNBC comparison);",
+      "Available, homogeneous data."
+    ],
+    "exclusion_criteria": [
+      "Did not address BC subtypes;",
+      "Data unavailability;",
+      "Did not use Illumina sequencing technology;",
+      "Did not cover variable region 4 (V4);",
+      "Mentioned antibiotic administration within three months prior to sample collection;",
+      "Without publicly accessible data or metadata.",
+      "Reviews, protocols, editorials, conference abstracts, and out-of-date articles were not treated as eligible primary studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Given the strict alignment of criteria\u2014particularly the specific 2023 date range, the TNBC vs. non-TNBC breast tissue comparison, and the 16S V4/V3-V4 Illumina sequencing requirement\u2014no article in the supplied candidate pool satisfied all conditions for inclusion.",
+      "None were included.",
+      "No primary study within the pool fell within the 2023-01-01 to 2023-07-01 window while also meeting the subject criteria."
+    ]
+  }
+}

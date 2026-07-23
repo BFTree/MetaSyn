@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9937,
+    "output_tokens": 1304,
+    "total_tokens": 11241
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.7272727272727273,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7272727272727273,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.7615,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7391,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes the review question, eligibility criteria, screening outcome, and a brief evidence synthesis, but it lacks a full systematic review structure with formal methods, search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies in English",
+      "published from January 2020 to 2023-05-25",
+      "include glaucoma patients",
+      "use AI / machine learning / deep learning to diagnose glaucoma or predict/detect progression"
+    ],
+    "exclusion_criteria": [
+      "not be reviews, letters, protocols, conference abstracts, or non-human studies"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied candidate pool and title/abstract screening, I identified **10 potentially eligible primary studies**.",
+      "The evidence is weighted toward **diagnostic AI** rather than **progression detection**, with several **multimodal** approaches and only limited abstract-level detail relevant to **DECIDE-AI reporting quality assessment**.",
+      "Full-text assessment would be necessary for actual DECIDE-AI adherence scoring.",
+      "Most eligible studies evaluated AI for classifying glaucomatous vs normal eyes or glaucomatous optic neuropathy.",
+      "Only a minority addressed **progression**, mainly via **visual field progression** or **future progression risk**.",
+      "Abstracts commonly report that multimodal input improved performance over single-modality approaches.",
+      "Title/abstract screening alone cannot determine checklist scores."
+    ]
+  }
+}

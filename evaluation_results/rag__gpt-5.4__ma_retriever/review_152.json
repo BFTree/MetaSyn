@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8032,
+    "output_tokens": 1072,
+    "total_tokens": 9104
+  },
+  "metrics": {
+    "retrieval_recall": 0.9666666666666667,
+    "retrieval_precision": 0.29,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.76,
+    "conditional_retention": 0.1724137931034483,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.6116,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6527,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear headings, eligibility rules, included/excluded evidence, and a synthesis/conclusion section, but it lacks a full PRISMA-style article structure with explicit abstract, methods, results, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human studies",
+      "on **tongue squamous cell carcinoma / oral tongue / mobile tongue** specifically",
+      "within the date window",
+      "reporting clinical relevance of biomarker findings for diagnosis and/or prognosis",
+      "English full text presumed available from the candidate pool",
+      "and, for **IHC-based tissue biomarker studies**, the abstract needed to indicate **multivariate analysis** or equivalent adjusted prognostic modeling"
+    ],
+    "exclusion_criteria": [
+      "mixed oral cavity/head and neck populations without tongue-only analysis",
+      "base-of-tongue focus",
+      "review/systematic review/meta-analysis/editorial/case report",
+      "animal-only work",
+      "microRNA-focused biomarker studies",
+      "clearly out-of-date publication year",
+      "unclear clinical implications for the biomarker of interest",
+      "**Prolactin papers** were excluded for being **pre-2010**:",
+      "Studies on **microRNAs** were excluded by protocol.",
+      "Reviews/meta-analyses/systematic reviews were excluded.",
+      "Several tongue studies on other biomarkers were excluded from the final synthesis because they did not match the review\u2019s target biomarker set or did not clearly meet the multivariate/IHC requirement from the abstract."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied candidate pool, the most reproducible tissue-biomarker signals for TSCC prognosis are **SOX2** and **vimentin**, with **E-cadherin** also repeatedly implicated but somewhat less consistently as an independent marker.",
+      "For liquid biomarkers, **salivary IL-6 and IL-8** show potential clinical relevance for early detection/prognosis, but the abstract-level evidence in this pool is comparatively sparse and not as well cross-validated as the tissue biomarkers.",
+      "**Prolactin** had no eligible evidence within the review window.",
+      "**HIF-1\u03b1, MALAT1, and TP53** appear promising but remain supported by only single eligible studies here, and **NOTCH1** lacked a directly eligible validating study in the provided set.",
+      "Because this screening used only supplied titles/abstracts, these conclusions should be treated as **abstract-level synthesis**, not full-text risk-of-bias assessment."
+    ]
+  }
+}

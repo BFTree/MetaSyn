@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8541,
+    "output_tokens": 906,
+    "total_tokens": 9447
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5775,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3344,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, screening criteria/process, screening results, and conclusion, but it lacks several required systematic review sections such as abstract, introduction, full methods, discussion, references, detailed search strategy, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with overweight/obesity and comorbid depressive symptoms",
+      "IMI targeting depressive symptoms based on psychological principles",
+      "standard care or no intervention",
+      "depressive symptom severity and weight reduction"
+    ],
+    "exclusion_criteria": [
+      "waitlist",
+      "TAU involving psychotherapy/pharmacotherapy",
+      "low-level support",
+      "attention/psychological placebo",
+      "protocols",
+      "reviews",
+      "non-RCTs",
+      "studies targeting highly specific populations (e.g., pregnant women, specific somatic diseases like cancer or diabetes)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Upon screening the 200 candidates, **no primary-study articles met all inclusion criteria**.",
+      "Based on the supplied candidate pool, there are no eligible completed randomized controlled trials that evaluate the effectiveness of internet- and mobile-based interventions targeting depressive symptom severity in adults with overweight or obesity compared to standard care or no intervention.",
+      "Consequently, no evidence synthesis regarding the efficacy or quality of evidence for this specific PICO combination can be provided from this pool.",
+      "None were included."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26310,
+    "output_tokens": 1093,
+    "total_tokens": 27403
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.09259259259259259,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.18181818181818182,
+    "screening_accuracy": 0.9259259259259259,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.7073,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6642,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results, Discussion, Conclusion, and References, and it includes systematic-review elements such as search queries, eligibility criteria, screening decisions, and synthesis rationale, but it lacks full PRISMA-style rigor such as detailed data extraction procedures and formal quality or risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults >=18 years with severe obesity (BMI >= 35 kg/m2).",
+      "online, group-based interventions targeting obesity-related behavior change, especially diet and/or physical activity.",
+      "any comparator or none required.",
+      "weight loss, behavior change, engagement, acceptability, usability, or experience.",
+      "A study was included only if the local corpus record clearly supported the severe-obesity criterion from title/abstract or other provided text."
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, and descriptive papers without intervention evaluation.",
+      "Studies with mixed overweight/obesity populations but no evidence that the enrolled sample met BMI >= 35 on average or by eligibility threshold were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The best-supported conclusion is narrower: online group delivery appears feasible and capable of producing clinically meaningful weight loss in severe-obesity populations, but robust comparative evidence against standard care or waitlist controls is still missing.",
+      "The included trial found that both delivery formats produced clinically meaningful weight loss by 6 months.",
+      "The best direct evidence suggests that online group-based weight-management treatment for adults with severe obesity is **feasible and potentially effective**, but current direct evidence is **too limited to support strong causal claims about superiority over standard care, waitlist, or alternative active interventions**.",
+      "That study supports the feasibility and clinical usefulness of online group delivery, showing about 5% to 6% weight loss over 6 months and no meaningful loss of effectiveness relative to phone-based group treatment ([Corpus ID 4573](metasyn://corpus/4573)).",
+      "My overall opinion is that online group interventions for severe obesity are promising enough to warrant use and further development, but the evidence base is still too immature to justify confident comparative claims."
+    ]
+  }
+}

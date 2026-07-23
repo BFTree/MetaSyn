@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11797,
+    "output_tokens": 1343,
+    "total_tokens": 13140
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 0.7,
+    "inclusion_f1": 0.7,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.5266,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.764,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is reasonably organized around screening, evidence synthesis, included/excluded studies, and conclusions, but it lacks standard systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, References, and detailed PRISMA-style elements like search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with morbid obesity undergoing bariatric surgery",
+      "probiotic or synbiotic supplementation versus placebo/usual care/no intervention",
+      "randomized or controlled clinical trials"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews/meta-analyses, protocols, reviews, observational studies, non-bariatric populations, animal studies, or trials where probiotics were compared against another active regimen rather than a plain control",
+      "not probiotics versus placebo alone"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence suggests that probiotic supplementation after bariatric surgery has mixed but generally favorable short-term effects on some biochemical and anthropometric outcomes, with little sign of major safety problems in the abstracts provided.",
+      "Overall, the abstract-level evidence supports a possibility of modest short-term benefits in selected outcomes such as weight loss, vitamin B12, triglycerides, and possibly AST, but the pattern is not uniform across studies or surgery types.",
+      "Evidence on dietary intake outcomes is limited, and strong conclusions on safety cannot be made beyond the absence of major harms in the abstracts."
+    ]
+  }
+}

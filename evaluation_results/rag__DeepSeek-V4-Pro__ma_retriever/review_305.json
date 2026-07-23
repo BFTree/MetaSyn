@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12318,
+    "output_tokens": 873,
+    "total_tokens": 13191
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.7872340425531915,
+    "inclusion_consistency": 0.8031,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5472,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, screening summary, observations, and conclusion, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results, discussion, references, detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary observational studies (2017\u20132022) that examine, in offspring of women with polycystic ovary syndrome (PCOS) versus those without, adverse birth outcomes while controlling for key confounders.",
+      "The review required the PCOS diagnosis to meet the Rotterdam criteria and the study to report at least one of the specified birth outcomes (preterm birth, fetal growth restriction, low birth weight, mean birthweight, small for gestational age, macrosomia, large for gestational age, NICU admission, perinatal mortality)."
+    ],
+    "exclusion_criteria": [
+      "Publication year outside the 2017\u20132022 window (e.g., earlier than 2017 or later than June 2022).",
+      "PCOS diagnosis not explicitly stated to be based on the Rotterdam criteria (many studies used NIH, ICD\u2011codes, self\u2011report, or did not specify the diagnostic criteria).",
+      "Study design not eligible (systematic reviews, meta\u2011analyses, narrative reviews, editorials, case reports, conference abstracts, or protocols).",
+      "Outcomes not including the required birth outcomes or only reporting composite endpoints without specific data on preterm birth, birthweight, SGA, LGA, etc.",
+      "Non\u2011English language publications."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No study from the provided candidate pool satisfied all eligibility criteria for this systematic review.",
+      "The evidence base for Rotterdam\u2011defined PCOS and independent risk for adverse birth outcomes in the specified timeframe remains unpopulated based on the supplied sources.",
+      "After applying all criteria, no candidate article met the inclusion requirements.",
+      "None of the candidates were eligible for inclusion."
+    ]
+  }
+}

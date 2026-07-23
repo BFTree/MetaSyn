@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22359,
+    "output_tokens": 1100,
+    "total_tokens": 23459
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.4111111111111111,
+    "inclusion_precision": 0.5211267605633803,
+    "inclusion_f1": 0.45962732919254656,
+    "screening_accuracy": 0.815,
+    "conditional_retention": 0.925,
+    "post_retrieval_loss": 0.03333333333333333,
+    "inclusion_consistency": 0.5036,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0721,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, methods, synthesized findings, conclusion, and included studies, but it lacks a formal abstract, introduction/background, detailed search strategy, screening flow, data extraction procedures, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary research (excluding reviews, protocols, editorials, and conference abstracts) assessing WASH interventions on diarrhoeal disease or acute respiratory infections in LMICs, published in English or Spanish."
+    ],
+    "exclusion_criteria": [
+      "observational analyses without an intervention component",
+      "focused on outcomes other than diarrhoea/ARI (e.g., trachoma)."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The current evidence base for WASH interventions targeting diarrhoea and ARI in LMICs is largely gender-unaware.",
+      "Women are primarily engaged as unpaid implementers of household WASH behaviours and data reporters.",
+      "There is a critical gap in the reporting of time burdens and compensation for women, and health impacts specific to women are rarely evaluated.",
+      "Future WASH research and interventions should shift towards gender-responsive or transformative approaches by measuring and mitigating time burdens, compensating women's labour where feasible, and evaluating impacts on women's empowerment and health outcomes directly.",
+      "None of the included primary studies reported on the **time burdens** imposed on women by the WASH interventions (e.g., time spent on new water treatment procedures, maintaining handwashing stations, or attending hygiene sessions) nor did any study report on **compensating** women for these time investments.",
+      "The vast majority of studies evaluated impacts on **child health** (diarrhoea, respiratory infections, growth) or **household-level indicators** (water quality, latrine coverage).",
+      "Based on the WHO Gender Responsiveness Assessment Scale, the included literature predominantly falls into the **\"Gender Unaware\"** or **\"Gender Unequal\"** categories:"
+    ]
+  }
+}

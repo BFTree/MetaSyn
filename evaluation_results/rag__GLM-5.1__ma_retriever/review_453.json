@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23520,
+    "output_tokens": 989,
+    "total_tokens": 24509
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.9,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.671,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5755,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a review objective, screening summary, outcome-based synthesis, conclusion, and included study list, but it lacks several formal systematic review sections and PRISMA-style details such as a full abstract, introduction, detailed search strategy, data extraction methods, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies investigating whether statin exposure is associated with a reduced incidence of hepatocellular carcinoma (HCC), all-cause mortality, cirrhosis, and cirrhosis decompensation in individuals with chronic viral hepatitis (chronic hepatitis B [CHB] or chronic hepatitis C [CHC]) compared to non-statin users",
+      "observational cohort studies (including emulated target trials)"
+    ],
+    "exclusion_criteria": [
+      "reviews, meta-analyses, editorials, case reports, or non-English publications",
+      "populations other than chronic viral hepatitis (e.g., MASLD/NAFLD, general population, other cancers)",
+      "the exposure was not statins versus non-statin users",
+      "cohorts with co-morbid HIV infection",
+      "published outside the search window (1996\u20132024)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the identified observational evidence, statin exposure\u2014particularly lipophilic statins and higher cumulative doses\u2014is consistently associated with a reduced incidence of HCC, cirrhosis, decompensation, and mortality in individuals with chronic viral hepatitis (CHB and CHC) compared to non-users.",
+      "The findings suggest a potential chemopreventive and antifibrotic role for statins in this population, though the observed associations are subject to the inherent confounding limitations of cohort studies.",
+      "The included studies consistently report a protective association between statin use and reduced HCC incidence in both CHB and CHC populations.",
+      "Statin use is frequently associated with a reduced risk of progression to cirrhosis and incident cirrhosis in viral hepatitis.",
+      "Evidence supports a beneficial effect of statins on preventing decompensation in patients with advanced viral hepatitis.",
+      "Statin exposure is associated with decreased mortality in chronic viral hepatitis cohorts."
+    ]
+  }
+}

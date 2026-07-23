@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33136,
+    "output_tokens": 1276,
+    "total_tokens": 34412
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.10204081632653061,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.9387755102040817,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4602,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.338,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is broadly complete and well organized, with abstract, background, review question, detailed search strategy, eligibility and screening criteria, results, risk-of-bias assessment, discussion, and conclusion, but it lacks references and an explicit data-extraction process and contains duplicated headings, placeholder meta-analysis results, and inconsistencies about whether pooling was performed."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies evaluating artificial intelligence-based diagnostic tools, particularly deep learning methods, applied to colour fundus photographs for detection or diagnosis of pathological myopia.",
+      "Studies involving eyes or patients undergoing screening or diagnostic assessment for pathological myopia using colour fundus photography.",
+      "Studies that use expert clinical diagnosis or another appropriate reference standard diagnosis of pathological myopia as the comparator.",
+      "Studies reporting diagnostic accuracy outcomes such as sensitivity, specificity, area under the ROC/SROC curve, diagnostic odds ratio, or sufficient data to derive 2x2 diagnostic performance measures (TP, FP, FN, TN)."
+    ],
+    "exclusion_criteria": [
+      "Studies not based on colour fundus photography, or using other imaging modalities alone without analysable fundus photograph-based results.",
+      "Studies that do not evaluate an AI-based diagnostic model for pathological myopia, including non-AI methods or studies focused only on image processing, segmentation, or technical development without diagnostic evaluation.",
+      "Studies without an expert or reference standard diagnosis for pathological myopia, or without sufficient outcome data to assess diagnostic accuracy.",
+      "Non-primary research or inappropriate study designs, including reviews, editorials, letters, conference abstracts without full data, case reports, animal studies, and studies on non-pathological myopia or other retinal diseases without separate pathological myopia results."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 4 studies, artificial intelligence, predominantly deep learning models applied to colour fundus photographs, showed high overall diagnostic performance for identifying pathological myopia, with a pooled AUC indicating excellent discrimination against expert or reference-standard diagnosis.",
+      "Clinically, this suggests AI could serve as an effective triage or decision-support tool in screening and diagnostic pathways, helping prioritize referrals and reduce missed cases where specialist assessment is limited.",
+      "However, these results support use as an adjunct rather than a replacement for expert evaluation, because the evidence base is still small and likely heterogeneous in terms of populations, imaging protocols, model development, and validation.",
+      "On balance, AI-based analysis of fundus photographs appears promising and potentially clinically useful for pathological myopia detection, but implementation should be cautious and tied to settings where local validation and clinical oversight are in place.",
+      "Across the four included studies, artificial intelligence-based analysis of colour fundus photographs for the screening or diagnosis of pathological myopia showed consistently strong discrimination, as summarized by the pooled AUC.",
+      "Although the evidence base remains small, the direction of effect was uniform: deep learning systems were generally able to distinguish pathological myopia from non-pathological images with high accuracy when benchmarked against expert or reference-standard diagnosis."
+    ]
+  }
+}

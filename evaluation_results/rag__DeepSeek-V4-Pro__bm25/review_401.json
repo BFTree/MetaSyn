@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5034,
+    "output_tokens": 1261,
+    "total_tokens": 6295
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6479,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5742,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objectives, eligibility criteria, screening findings, included-study status, and conclusion, but it lacks formal Abstract, Introduction, Discussion, References, detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that directly compare the microbial composition of breast tissue from patients with triple-negative breast cancer (TNBC) versus patients with other (non\u2011TNBC) breast cancer subtypes, using 16S rRNA gene sequencing (Illumina platform, covering the V4 or V3\u2011V4 hypervariable regions).",
+      "case\u2011control or cohort designs",
+      "publicly accessible, homogeneous data",
+      "explicitly address BC subtypes",
+      "Breast cancer patients with tissue samples, comparing TNBC to non\u2011TNBC.",
+      "Breast tissue microbiome (not gut, blood, or other).",
+      "16S rRNA sequencing using Illumina technology, specifically targeting V4 or V3\u2011V4 regions.",
+      "Explicit differentiation between TNBC and other breast cancer molecular subtypes.",
+      "Publicly accessible sequence data and metadata."
+    ],
+    "exclusion_criteria": [
+      "any study that did not analyse breast\u2011tissue microbiome by the specified sequencing method",
+      "lacked subtype\u2011specific information",
+      "had evidence of recent antibiotic exposure in participants"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Consequently, **no study met all inclusion criteria**.",
+      "After screening the 200 provided titles and abstracts, **no primary\u2011study articles were eligible for inclusion**.",
+      "The systematic review did not identify any primary study from the supplied candidate pool that directly investigated the distinct microbial composition of breast tissue in TNBC compared to non\u2011TNBC patients using Illumina\u2011based 16S rRNA sequencing (V4 or V3\u2011V4 regions) with accessible data.",
+      "The available evidence is insufficient to conduct the planned meta\u2011analysis.",
+      "Future primary research that specifically compares the breast tissue microbiota of molecularly defined BC subtypes with rigorous, harmonised sequencing protocols would be required to address this question."
+    ]
+  }
+}

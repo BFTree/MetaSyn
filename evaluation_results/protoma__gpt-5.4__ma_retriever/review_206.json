@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24079,
+    "output_tokens": 888,
+    "total_tokens": 24967
+  },
+  "metrics": {
+    "retrieval_recall": 0.9090909090909091,
+    "retrieval_precision": 0.14925373134328357,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8507462686567164,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.9090909090909091,
+    "inclusion_consistency": 0.5389,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.624,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most required systematic review sections plus meta-analysis elements such as search strategy, eligibility criteria, screening results, and planned synthesis methods, but it has duplicated headings, an empty risk-of-bias section, no references section, and lacks a completed quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published primary research studies reporting early clinical evaluation of an AI decision support system used for glaucoma diagnosis and/or glaucoma progression detection in human clinical care settings.",
+      "Study population includes patients with glaucoma, suspected glaucoma, or individuals undergoing assessment for glaucoma diagnosis or progression in a clinical setting.",
+      "The intervention is an AI-based clinical decision support system intended to assist diagnosis or progression identification, rather than a purely technical algorithm development study.",
+      "The study reports outcomes relevant to DECIDE-AI reporting adherence, including sufficient information to assess AI-specific items, generic reporting items, or an overall DECIDE-AI checklist score."
+    ],
+    "exclusion_criteria": [
+      "Studies limited to algorithm development, retrospective model validation, image classification benchmarking, or laboratory-only performance testing without early clinical evaluation in a real or simulated clinical workflow.",
+      "Studies not focused on glaucoma diagnosis or glaucoma progression detection, or evaluating AI tools not intended for clinical decision support.",
+      "Reviews, editorials, commentaries, letters, conference abstracts without full reports, study protocols, and other non-primary research publications.",
+      "Studies that do not report enough methodological and reporting detail to permit assessment of adherence to the DECIDE-AI checklist or its component scores."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified no published studies reporting early clinical evaluation of AI decision support systems for glaucoma diagnosis or progression detection that met the inclusion criteria.",
+      "Accordingly, quantitative synthesis was not possible, and DECIDE-AI adherence scores, including AI-specific, generic-item, and overall scores, could not be calculated or compared.",
+      "In the absence of eligible studies, there was no qualitative evidence from early clinical evaluations to suggest how well such systems are currently reported against DECIDE-AI standards in this clinical domain.",
+      "Overall, the current evidence base is absent rather than merely inconclusive, underscoring a clear need for published early-stage clinical evaluations with sufficiently detailed reporting."
+    ]
+  }
+}

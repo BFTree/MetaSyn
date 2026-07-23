@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4373,
+    "output_tokens": 835,
+    "total_tokens": 5208
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8333333333333334,
+    "inclusion_consistency": 0.5008,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4822,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes the review objective, screening criteria, eligibility results, and implications, but it lacks several standard sections such as a formal abstract, introduction, detailed methods, discussion, conclusion, references, quality assessment, and data synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective studies published in English between 1980 and 2005",
+      "with a defined catheter insertion site",
+      "clearly specified dose of anticoagulant",
+      "population (cancer patients with CVCs)",
+      "intervention (minidose warfarin or low\u2011dose LMWH)",
+      "comparison (no prophylaxis)",
+      "prospective design",
+      "explicit reporting of catheter insertion site",
+      "Site of catheter insertion defined."
+    ],
+    "exclusion_criteria": [
+      "they did not address the target population or intervention",
+      "were not prospective",
+      "were published outside the allowable date range",
+      "were review articles, guidelines, case reports, or studies on other conditions (e.g., orthopedic surgery, pregnancy, COVID\u201119, non\u2011cancer settings)",
+      "not a primary prospective study",
+      "not involving cancer patients with CVCs",
+      "intervention not minidose warfarin or low\u2011dose LMWH",
+      "no comparison to no prophylaxis",
+      "publication after 2005",
+      "non\u2011English language"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None of the supplied candidates met all inclusion criteria.",
+      "Therefore, no primary study was included in this evidence synthesis.",
+      "The available candidate pool does not provide a prospective study that directly answers the research question while fulfilling all methodological and reporting criteria.",
+      "The evidence base for this specific comparison remains limited within the searched timeframe."
+    ]
+  }
+}

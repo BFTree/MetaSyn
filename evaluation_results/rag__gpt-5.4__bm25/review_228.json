@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16607,
+    "output_tokens": 1536,
+    "total_tokens": 18143
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.4201,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6729,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included/excluded studies, evidence synthesis, and limitations, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Discussion/Conclusion, References, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: hypertensive patients with atrial fibrillation undergoing PVI",
+      "Intervention/comparator: RDN + PVI vs PVI alone",
+      "Design: original research, prospective comparative, Level I/II",
+      "Date/language: English, within the review window"
+    ],
+    "exclusion_criteria": [
+      "secondary hypertension, type 1 diabetes, advanced kidney disease/failure, CHF, LVEF <35%, non-English, and non-primary-study publication types"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "From the eligible primary studies available in the supplied pool, the evidence is **generally favorable** toward adding **RDN to PVI** in hypertensive AF patients, but it is **not uniformly consistent**.",
+      "The best available primary-study evidence supports a reduction in AF recurrence with adjunctive RDN, but smaller pilot trials show uncertainty.",
+      "BP lowering appears directionally improved with adjunctive RDN, which is biologically plausible and consistent with the intervention\u2019s intended mechanism.",
+      "Based on the included abstracts alone, evidence on **eGFR** is **insufficient**.",
+      "The included evidence does **not suggest a major safety penalty**, but the safety database in primary comparative trials is still limited."
+    ]
+  }
+}

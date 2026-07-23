@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6643,
+    "output_tokens": 1527,
+    "total_tokens": 8170
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6531,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4179,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes screening criteria, eligible studies, exclusions, narrative synthesis, and limitations, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion/Conclusion, References, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials only",
+      "metastatic colorectal cancer",
+      "anti-EGFR monoclonal antibody compared with the same standard therapy or control",
+      "outcomes including OS or PFS",
+      "crucially, tumors assessed for **BRAF mutation status within the RAS wild-type subgroup** (at minimum beyond KRAS exon 2 where specified by the review question)",
+      "enough quantitative treatment-effect information by BRAF and RAS status to contribute to the review question"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "non-randomized studies",
+      "case reports",
+      "wrong disease",
+      "wrong timeframe",
+      "lacked abstract evidence that they reported anti-EGFR treatment effects specifically by **BRAF status within RAS wild-type** patients"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "BRAF mutation does not identify a group with clear benefit from anti-EGFR monoclonal antibody therapy",
+      "patients without BRAF mutation within the RAS/KRAS wild-type population appear more likely to benefit.",
+      "The abstract-level evidence supports a cautious conclusion: BRAF V600E mutation is associated with poor outcomes and possibly reduced anti-EGFR benefit, but the randomized evidence available here is insufficient to prove a clear predictive interaction for OS/PFS."
+    ]
+  }
+}

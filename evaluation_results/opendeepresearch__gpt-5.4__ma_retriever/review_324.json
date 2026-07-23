@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23906,
+    "output_tokens": 1068,
+    "total_tokens": 24974
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.3333333333333333,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7499999999999999,
+    "screening_accuracy": 0.8666666666666667,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.7765,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3952,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, search strategy, retrieval/screening process, included and excluded studies, narrative synthesis, and meta-analysis feasibility, but it lacks a formal abstract, explicit risk-of-bias/quality assessment, complete conclusion, and visible references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies evaluating clinical and/or economic outcomes after pharmacogenetics-guided treatment in individuals taking antipsychotics, with antipsychotics as the primary prescribed medication."
+    ],
+    "exclusion_criteria": [
+      "Antipsychotics not the primary prescribed medication",
+      "Protocols",
+      "Reviews",
+      "Commentaries",
+      "Letters",
+      "Editorials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "As a result, the direction and magnitude of benefit cannot be synthesized quantitatively from the current corpus notes alone.",
+      "This means their results are hypothesis-generating rather than definitive.",
+      "As a result, the economic evidence is too limited and methodologically heterogeneous to support a firm conclusion that PGx-guided antipsychotic prescribing is cost-saving or cost-effective across settings.",
+      "A quantitative meta-analysis was not supported by the identified evidence as extracted from the local corpus.",
+      "Under these conditions, narrative synthesis is more appropriate than statistical pooling."
+    ]
+  }
+}

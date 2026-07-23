@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11614,
+    "output_tokens": 1272,
+    "total_tokens": 12886
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.625,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7692307692307693,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.375,
+    "inclusion_consistency": 0.5637,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4243,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening approach, evidence synthesis, interpretation, limitations, exclusions, included studies, and conclusion, but it lacks a full formal structure with abstract, introduction, detailed methods, references, quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "include adult women with PCOS",
+      "report NC measurement",
+      "examine at least one relevant outcome: NC values versus controls and/or MetS, IR, glucose/lipid traits, blood pressure, or related anthropometric/metabolic outcomes"
+    ],
+    "exclusion_criteria": [
+      "were reviews/meta-analyses, statements, or narrative reviews",
+      "did not measure/report neck circumference",
+      "focused on pregnancy, adolescents, or other non-target populations",
+      "did not link NC to review-relevant metabolic outcomes in PCOS"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these studies, the evidence is consistent in direction: NC is higher or more adverse in PCOS-related metabolic phenotypes, and within PCOS populations, larger NC is associated with worse metabolic status, especially MetS and IR.",
+      "The abstract-level evidence supports NC as a simple upper-body adiposity marker associated with adverse metabolic status in adult women with PCOS.",
+      "The evidence is strongest for:\n- association of larger NC with MetS\n- association of larger NC with IR/HOMA-IR\n- correlation of NC with central adiposity, blood pressure, and triglycerides",
+      "The evidence for the specific comparison \u201cwomen with PCOS have larger NC than non-PCOS controls\u201d is less completely reported in the abstracts than the within-PCOS association analyses, even though some included studies contain control groups.",
+      "Yes, the candidate pool supports inclusion of primary studies showing that higher NC in adult women with PCOS is associated with worse metabolic health, especially MetS and IR.",
+      "Direct abstract-level evidence that average NC is larger in PCOS than in non-PCOS controls is present only indirectly/suggestively in this pool and is less well reported than the within-PCOS metabolic association evidence."
+    ]
+  }
+}

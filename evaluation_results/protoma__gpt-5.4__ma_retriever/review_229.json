@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32714,
+    "output_tokens": 1133,
+    "total_tokens": 33847
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.1111111111111111,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.5555555555555556,
+    "inclusion_f1": 0.6250000000000001,
+    "screening_accuracy": 0.9074074074074074,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4889,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4682,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is largely complete and well-organized with Abstract, Background, Review Question, Methods, Results, Risk of Bias, Discussion, and Conclusion sections, and it includes PRISMA-style elements such as search strategy, eligibility criteria, screening flow, synthesis approach, and quality assessment, but it lacks a formal References section and the Main Findings section is incomplete with placeholders and internal inconsistencies about whether meta-analysis was possible."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adult hypertensive patients with chronic kidney disease (CKD) and treatment-resistant or resistant hypertension.",
+      "Interventional studies evaluating renal denervation using endovascular catheter-based radiofrequency ablation of the renal nerves.",
+      "Studies reporting within-patient pre- versus post-intervention data or longitudinal outcomes using baseline measurements as the comparator.",
+      "Studies reporting at least one relevant outcome: office or ambulatory systolic/diastolic blood pressure, estimated glomerular filtration rate (eGFR), serum creatinine, or procedural complication rates."
+    ],
+    "exclusion_criteria": [
+      "Studies in populations without CKD, without hypertension, or without treatment-resistant/resistant hypertension, or studies limited to pediatric participants.",
+      "Studies evaluating renal denervation techniques other than endovascular catheter-based radiofrequency ablation, non-RDN interventions, or surgical/non-catheter approaches.",
+      "Reviews, editorials, letters without original data, case reports, conference abstracts without sufficient data, animal studies, and in vitro studies.",
+      "Studies not reporting baseline and follow-up outcome data for blood pressure, kidney function, or procedural safety outcomes relevant to the review question."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 9 studies, renal denervation (RDN) in patients with chronic kidney disease and treatment-resistant hypertension was associated with a meaningful reduction in blood pressure from baseline, with the clearest signal being a fall in systolic pressure on office and ambulatory monitoring, while kidney function measures such as eGFR and serum creatinine showed no consistent evidence of short-term deterioration and procedural complications were uncommon.",
+      "Clinically, this pattern suggests that RDN may offer a useful adjunct for patients whose blood pressure remains uncontrolled despite intensive medical therapy, particularly when sustained blood pressure reduction is the primary goal and preservation of renal function is a concern.",
+      "However, this should be interpreted cautiously because the evidence is based on pre-post comparisons rather than randomized controls, making the estimates vulnerable to regression to the mean, confounding, and between-study heterogeneity.",
+      "Overall, the direction of effect across the included literature suggests that RDN is associated with reductions in both office and ambulatory blood pressure in this high-risk population, while renal function outcomes and procedural safety appear generally acceptable in the short to intermediate term.",
+      "The main contribution of the present review is therefore not proof of efficacy in the strict causal sense, but a structured estimate of the observed post-RDN trajectory in a difficult-to-treat CKD population."
+    ]
+  }
+}

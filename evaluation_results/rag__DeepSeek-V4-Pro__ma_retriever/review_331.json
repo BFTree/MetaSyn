@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20467,
+    "output_tokens": 1439,
+    "total_tokens": 21906
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.7941176470588235,
+    "inclusion_precision": 0.84375,
+    "inclusion_f1": 0.8181818181818182,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.8181818181818182,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.6244,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2763,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, screening results, study characteristics, limitations, conclusion, and included-study list, but it lacks a formal abstract/introduction/discussion/references structure and does not provide detailed PRISMA-style search strategy, data extraction, quality assessment, or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) with parallel or crossover designs",
+      "enlisting adults with PSPS\u2011T2/FBSS",
+      "assessing pain intensity as an outcome",
+      "published in English, Dutch, or French up to 18 December 2023"
+    ],
+    "exclusion_criteria": [
+      "Reviews, observational studies, protocols, case reports, and non\u2011RCT designs were excluded.",
+      "Studies published after the search end date (e.g., 2024) were also excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Multiple RCTs demonstrate that SCS provides clinically and statistically significant improvements in leg and back pain compared with CMM alone (e.g., Candidates 004, 008, 011, 018, 022).",
+      "Adding PNFS to SCS improved back pain relief in patients with FBSS who had inadequate back pain control with SCS alone (Candidates 002, 009, 013, 022).",
+      "One RCT (Candidate 012) showed that SCS was more successful than reoperation for persistent radicular pain after lumbosacral spine surgery.",
+      "Multiple RCTs indicate that percutaneous adhesiolysis and epidural steroid injections (caudal, transforaminal, interlaminar) are effective for post\u2011lumbar surgery syndrome, with some evidence favoring adhesiolysis over caudal injections alone (Candidates 040, 058, 064, 075, 076, 083, 131, 149, 168, 184).",
+      "A substantial body of RCT evidence directly addresses the comparative effectiveness of treatment modalities for pain intensity in PSPS\u2011T2."
+    ]
+  }
+}

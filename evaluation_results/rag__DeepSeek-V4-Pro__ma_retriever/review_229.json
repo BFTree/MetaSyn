@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 6,
+    "input_tokens": 26661,
+    "output_tokens": 1043,
+    "total_tokens": 27704
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.9333333333333333,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4936,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3407,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, screening summary, study characteristics, results-style findings, limitations, conclusion, and included studies, but it lacks formal Abstract/Introduction/Methods/Discussion/References sections and does not provide a detailed search strategy, data extraction process, quality assessment, or quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "8 original prospective studies",
+      "patients with CKD (eGFR\u202f<\u202f60\u202fml/min/1.73\u202fm\u00b2 or albuminuric kidney damage) and treatment-resistant hypertension",
+      "catheter-based radiofrequency RDN (using the Symplicity Flex\u2122, Symplicity Spyral\u2122, or EnligHTN\u2122 systems)",
+      "No studies published after the search end date (15 November 2022) were retained."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "consensus statements",
+      "case reports",
+      "animal studies",
+      "conference abstracts",
+      "non-English records",
+      "trials that did not include CKD/resistant hypertension or did not report \u22656-month follow-up outcome data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In hypertensive patients with stage 3\u20135 CKD and treatment\u2011resistant hypertension, catheter\u2011based radiofrequency renal denervation appears to produce **clinically meaningful and sustained reductions in office and ambulatory blood pressure** (particularly systolic) over 6\u201324\u202fmonths without compromising kidney function.",
+      "The safety profile is favourable, with a low incidence of peri\u2011procedural complications and no signal of renal function deterioration.",
+      "These observations, derived from a limited body of small prospective studies, support the feasibility and potential benefit of RDN in this high\u2011risk population.",
+      "However, definitive confirmation awaits larger, adequately powered randomised controlled trials with sham controls and long\u2011term renal and cardiovascular outcomes."
+    ]
+  }
+}

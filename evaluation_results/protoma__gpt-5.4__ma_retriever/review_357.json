@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33712,
+    "output_tokens": 1036,
+    "total_tokens": 34748
+  },
+  "metrics": {
+    "retrieval_recall": 0.4175824175824176,
+    "retrieval_precision": 0.31666666666666665,
+    "inclusion_recall": 0.23076923076923078,
+    "inclusion_precision": 0.9130434782608695,
+    "inclusion_f1": 0.368421052631579,
+    "screening_accuracy": 0.8416666666666667,
+    "conditional_retention": 0.5526315789473685,
+    "post_retrieval_loss": 0.18681318681318682,
+    "inclusion_consistency": 0.7087,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5105,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized and includes all major systematic review/meta-analysis sections plus detailed search strategy, eligibility criteria, screening process, synthesis methods, heterogeneity statistics, and risk-of-bias assessment, but it falls short of excellent PRISMA-style structure because it lacks a formal references section, has duplicated headings, and contains some reporting inconsistencies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human postmortem brain studies including individuals with a schizophrenia diagnosis and a healthy non-schizophrenic postmortem control group.",
+      "Studies examining neuroinflammatory markers in brain tissue, including microglial markers, GFAP expression, glial cell densities, cytokines, arachidonic cascade markers, substance P, SERPINA3, or IFITM.",
+      "Observational comparative study designs reporting data for schizophrenia cases versus controls from postmortem brain samples.",
+      "Studies reporting sufficient outcome data on neuroinflammatory marker levels, expression, density, or related quantitative comparisons between schizophrenia and control groups."
+    ],
+    "exclusion_criteria": [
+      "Animal, in vitro, imaging, peripheral tissue, cerebrospinal fluid, blood-based, or non-postmortem studies.",
+      "Studies without a healthy control group, without a schizophrenia-specific sample, or with diagnoses not clearly defined as schizophrenia.",
+      "Reviews, editorials, conference abstracts without full data, case reports, and other non-original publications.",
+      "Studies not assessing the prespecified neuroinflammatory outcomes in brain tissue, or duplicate reports using the same sample for the same outcome without unique analyzable data."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 23 postmortem studies, with quantitative pooling available from 2 studies, schizophrenia was associated with higher odds of neuroinflammatory abnormalities in brain tissue compared with healthy controls (random-effects OR 9.34, 95% CI 0.88\u201399.69; fixed-effect OR 5.71, 95% CI 2.67\u201312.25).",
+      "However, the random-effects estimate was imprecise and did not meet conventional statistical significance, and heterogeneity was substantial (I\u00b2=86.8%), indicating marked inconsistency across studies.",
+      "Accordingly, these findings should be interpreted as supportive but not definitive evidence, and neuroinflammatory markers are best viewed at present as research-enriching biomarkers rather than stand-alone diagnostic or treatment-guiding tools.",
+      "Overall, the findings support a probable increase in neuroinflammatory marker abnormalities in schizophrenia postmortem brain tissue compared with controls, but the evidence base remains limited and heterogeneous, warranting cautious interpretation."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 15576,
+    "output_tokens": 796,
+    "total_tokens": 16372
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a scope, thematic synthesis, gaps, and included studies, but it lacks several standard systematic review sections such as an abstract, formal introduction, detailed methods, PRISMA-style search strategy, inclusion/exclusion criteria, quality assessment, data extraction process, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies directly addressing hard\u2011flaccid syndrome (HFS) in male patients"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base is therefore limited to descriptive clinical observations, but the consistency of findings across reports allows a preliminary synthesis of the current understanding of HFS.",
+      "No controlled trials or comparative studies were found.",
+      "Taken together, the evidence suggests that unimodal pharmacological therapy is ineffective, while multimodal strategies incorporating pelvic floor rehabilitation, shockwave therapy, and psychosocial support may offer benefit.",
+      "However, all reports are uncontrolled and lack long\u2011term follow\u2011up beyond a few cases.",
+      "There are no epidemiological data, no validated diagnostic criteria, and no randomised trials of any intervention.",
+      "The pathophysiology remains speculative."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22979,
+    "output_tokens": 1949,
+    "total_tokens": 24928
+  },
+  "metrics": {
+    "retrieval_recall": 0.3516483516483517,
+    "retrieval_precision": 0.6037735849056604,
+    "inclusion_recall": 0.25274725274725274,
+    "inclusion_precision": 0.9583333333333334,
+    "inclusion_f1": 0.39999999999999997,
+    "screening_accuracy": 0.8113207547169812,
+    "conditional_retention": 0.71875,
+    "post_retrieval_loss": 0.0989010989010989,
+    "inclusion_consistency": 0.7045,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4813,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes strong systematic-review elements such as search queries, eligibility criteria, screening approach, and inclusion/exclusion decisions, but it lacks several standard sections including an abstract, formal introduction, discussion, conclusion, references, quality assessment, and clear synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Used postmortem human brain samples.",
+      "Measured neuroinflammatory markers or predefined related glial/inflammatory outcomes.",
+      "Compared schizophrenia cases with psychiatrically and neurologically healthy controls."
+    ],
+    "exclusion_criteria": [
+      "Untargeted approaches such as microarray or shotgun proteomics, unless accompanied by targeted confirmation.",
+      "Focused on viruses or infection as the principal topic.",
+      "Reviews.",
+      "Non-English papers.",
+      "Conference abstracts.",
+      "Published after 2016-03-20."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No evidence for astrogliosis in brains of schizophrenic patients. A post-mortem study.",
+      "Increase in HLA-DR immunoreactive microglia in frontal and temporal cortex of chronic schizophrenics.",
+      "Layer-specific reductions in GFAP-reactive astroglia in the dorsolateral prefrontal cortex in schizophrenia.",
+      "Inflammation-related genes up-regulated in schizophrenia brains.",
+      "Elevated viral restriction factor levels in cortical blood vessels in schizophrenia."
+    ]
+  }
+}

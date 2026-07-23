@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15547,
+    "output_tokens": 887,
+    "total_tokens": 16434
+  },
+  "metrics": {
+    "retrieval_recall": 0.7692307692307693,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.46153846153846156,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.631578947368421,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3076923076923077,
+    "inclusion_consistency": 0.5673,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4893,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present in condensed form, including objective, methods, findings, synthesis, limitations, and references, with basic screening criteria and synthesis approach described, but it lacks a formal introduction/discussion/conclusion structure and does not include detailed PRISMA elements such as databases searched, full search strategy, screening flow, data extraction procedures, or quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "in adults (\u226518\u202fyears)",
+      "using any exercise training modality for at least 4\u202fweeks",
+      "reporting at least one pre\u2011defined outcome"
+    ],
+    "exclusion_criteria": [
+      "Animal studies",
+      "reviews",
+      "acute exercise",
+      "non\u2011RCTs",
+      "trials lacking a non\u2011exercise control group",
+      "studies not reporting required outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across all included studies, exercise training consistently reduced sympathetic outflow (norepinephrine) and either decreased or tended to decrease components of the circulating RAAS (renin activity, angiotensin\u2011II, aldosterone), particularly in hypertensive and heart failure populations.",
+      "These neurohormonal adaptations were accompanied by significant blood pressure reductions and, in several trials, improved functional capacity.",
+      "The evidence supports the concept that structured exercise training counteracts neuroendocrine over\u2011activation in cardiovascular disease, providing a mechanistic basis for its antihypertensive and cardioprotective effects.",
+      "Heterogeneity in populations and interventions precluded quantitative pooling in this screening phase, but the direction of effect is consistent."
+    ]
+  }
+}

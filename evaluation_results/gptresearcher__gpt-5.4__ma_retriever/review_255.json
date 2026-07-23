@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29771,
+    "output_tokens": 977,
+    "total_tokens": 30748
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.32558139534883723,
+    "inclusion_recall": 0.21428571428571427,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.3243243243243243,
+    "screening_accuracy": 0.7441860465116279,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.6149,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7586,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized, with abstract, introduction, methods, eligibility criteria, search queries, screening results, findings, limitations, conclusion, included studies, and references, but it lacks detailed data-extraction procedures, formal quality or risk-of-bias assessment, PRISMA flow documentation, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included adults aged 18 years or older;",
+      "used operationalized depressive diagnoses (DSM/RDC/ICD), including unipolar or bipolar major depressive episodes;",
+      "assessed depression severity with validated rating scales;",
+      "evaluated ultrabrief pulse ECT (<0.5 ms) compared with brief-pulse or conventional ECT, or reported clinically relevant outcomes for ultrabrief treatment relevant to the review aims."
+    ],
+    "exclusion_criteria": [
+      "relied solely on clinical impression outcomes;",
+      "used non-standard schedules such as daily ECT;",
+      "used experimental stimulation parameters outside conventional current ranges;",
+      "combined ECT with another concurrent somatic intervention for depression;",
+      "were case reports or series with `<= 10` participants;",
+      "were reviews, editorials, or otherwise non-primary studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the most rigorous studies, ultrabrief right unilateral ECT consistently showed a cognitive advantage, especially for autobiographical memory and orientation, but efficacy findings were mixed and depended materially on dosing and protocol.",
+      "When ultrabrief right unilateral ECT was dosed higher than brief-pulse right unilateral ECT, efficacy could be comparable with less cognitive burden; however, other high-dose trials found lower remission rates and slower remission with ultrabrief treatment.",
+      "Naturalistic studies suggest that in routine practice ultrabrief ECT often requires more treatments, more dose escalation, and more switching to other parameters.",
+      "Long-term comparative relapse evidence is sparse.",
+      "The acute efficacy evidence does not support a blanket claim that ultrabrief pulse ECT is equivalent to brief-pulse ECT.",
+      "Cognitive sparing is the clearest and most reproducible advantage of ultrabrief pulse RUL ECT.",
+      "The local MetaSyn corpus supports a nuanced conclusion rather than a simple endorsement of one pulse width over the other.",
+      "Ultrabrief right unilateral ECT has a credible and clinically important cognitive advantage, especially for autobiographical memory and orientation.",
+      "However, brief-pulse right unilateral ECT appears more reliable when rapid remission and shorter treatment courses are the priority.",
+      "High-dose ultrabrief treatment can match brief-pulse efficacy in some randomized settings, but not consistently across trials.",
+      "Real-world studies reinforce that ultrabrief ECT often requires more sessions, more dose escalation, and more switching to alternative parameters."
+    ]
+  }
+}

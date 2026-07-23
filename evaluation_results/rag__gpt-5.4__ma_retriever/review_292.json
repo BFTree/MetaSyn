@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11969,
+    "output_tokens": 1268,
+    "total_tokens": 13237
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.8333333333333334,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.8333333333333334,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.16666666666666666,
+    "inclusion_consistency": 0.6189,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3803,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening, inclusion decisions, synthesis, limitations, and article listings, and it includes meta-analysis-specific elements such as screening criteria and evidence synthesis, but it lacks a full PRISMA-style methods section with detailed search, extraction, and quality-assessment procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "systematic reviews with meta-analysis",
+      "human epidemiological evidence",
+      "published 2021-01-01 to 2024-07-31",
+      "addressing the association between periodontitis and a noncommunicable disease (NCD) in either umbrella-review direction:",
+      "periodontitis \u2192 NCD, or",
+      "NCD \u2192 periodontitis"
+    ],
+    "exclusion_criteria": [
+      "narrative reviews",
+      "protocols",
+      "editorials/comments",
+      "umbrella reviews",
+      "intervention-only reviews",
+      "primary studies",
+      "articles outside the date window",
+      "items whose title/abstract did not allow confirmation of the inclusion criteria",
+      "critically low quality"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across most included meta-analyses, the direction **periodontitis \u2192 later or prevalent NCDs** was reported as **positive**.",
+      "Overall, the abstract-level pattern suggests that **periodontitis is consistently associated with higher odds/risk of several NCDs**, especially cardiometabolic and malignancy outcomes.",
+      "Evidence for the reverse direction is **more limited and more uneven**.",
+      "So, the reverse direction is supported for several chronic conditions, but the review literature appears **less mature and less temporally robust** than for periodontitis-to-NCD associations.",
+      "This is an important nuance: **bidirectionality is not uniformly symmetric**.",
+      "The evidence base is broader than it is definitive"
+    ]
+  }
+}

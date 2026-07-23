@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12411,
+    "output_tokens": 1279,
+    "total_tokens": 13690
+  },
+  "metrics": {
+    "retrieval_recall": 0.7692307692307693,
+    "retrieval_precision": 0.15,
+    "inclusion_recall": 0.5128205128205128,
+    "inclusion_precision": 0.9523809523809523,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.2564102564102564,
+    "inclusion_consistency": 0.5409,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.588,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, thematic synthesis, conclusions, included studies, and exclusions, but it lacks a formal abstract/introduction/methods/results/discussion structure, detailed search strategy, PRISMA-style screening flow, quality assessment, and explicit data extraction or meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary studies from 2018-01-01 to 2024-07-31",
+      "Studies on synthetic health-related/medical data",
+      "Studies that evaluate generated outputs on utility and/or privacy"
+    ],
+    "exclusion_criteria": [
+      "Reviews, scoping/systematic reviews, viewpoints, editorials, protocols",
+      "Studies on unstructured data only (images/text)",
+      "No evaluation of generated output",
+      "Out of date range",
+      "Non-English"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The candidate pool does not show consensus on a single standardized evaluation method for synthetic health-related tabular/longitudinal data.",
+      "Across eligible primary studies, utility evaluation is common and often multi-pronged, but privacy evaluation is more heterogeneous, narrower, and often lighter-weight.",
+      "Many studies assess both, but utility is typically richer and more application-linked, while privacy is frequently reduced to one or a small number of disclosure-risk proxies.",
+      "That pattern supports the conclusion that privacy is generally not given equal methodological emphasis to utility.",
+      "Based on this candidate pool, the research community does not appear to have reached consensus on standardized methods for evaluating privacy and utility of synthetic health-related data.",
+      "There is some emerging convergence on broad evaluation domains, especially resemblance/fidelity, utility, and privacy, but not on a common metric set or decision framework.",
+      "Utility assessment is generally more developed and more prominent than privacy assessment.",
+      "Privacy is frequently considered, but not with equal methodological consistency or depth."
+    ]
+  }
+}

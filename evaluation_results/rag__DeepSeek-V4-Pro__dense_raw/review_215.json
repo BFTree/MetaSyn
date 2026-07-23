@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18840,
+    "output_tokens": 818,
+    "total_tokens": 19658
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.18,
+    "inclusion_recall": 0.20512820512820512,
+    "inclusion_precision": 0.5714285714285714,
+    "inclusion_f1": 0.3018867924528302,
+    "screening_accuracy": 0.83,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.717948717948718,
+    "inclusion_consistency": 0.6609,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4748,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, and Discussion, and it includes inclusion/exclusion criteria and a screening process, but it lacks an abstract, conclusion, references, and fuller meta-analysis rigor elements such as a search strategy and synthesis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "a quantitative measure of association (\u03b2 or equivalent contrast) between PFOS and birth weight (or birth weight z\u2011score),",
+      "a 95% confidence interval or a measure of variance that allowed its calculation,",
+      "the use of a maternal or neonatal biomarker as the exposure."
+    ],
+    "exclusion_criteria": [
+      "Records that were systematic reviews, meta\u2011analyses, protocols, editorials, conference abstracts, or clearly non\u2011primary research were excluded.",
+      "Studies that reported only other PFAS, outcomes other than birth weight, or failed to give PFOS\u2011specific effect estimates with confidence intervals were also excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, 14 primary articles met the inclusion criteria.",
+      "Many abstracts mentioned PFOS and birth weight but did not present a PFOS\u2011specific coefficient and confidence interval; others focused on preterm birth, childhood growth, or other endpoints.",
+      "The 14 studies identified represent those from the candidate pool that unambiguously contained the required PFOS\u2013birth weight regression estimate with confidence intervals.",
+      "This screening provides a transparent foundation for the subsequent meta\u2011analysis of PFOS and birth weight deficits."
+    ]
+  }
+}

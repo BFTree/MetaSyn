@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22501,
+    "output_tokens": 977,
+    "total_tokens": 23478
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.7058823529411765,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6262,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4144,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a scope, screening summary, synthesis of findings, methodological considerations, and included studies, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, explicit data extraction or synthesis methods, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "associations between posterior pole structures (macula, choroid, and optic disc) and hormonal fluctuations across women's reproductive life stages (menstrual cycle phases and menopausal status) in healthy adult non-pregnant women not using hormonal contraception or replacement therapy"
+    ],
+    "exclusion_criteria": [
+      "pregnancy",
+      "breastfeeding",
+      "hormonal contraception",
+      "hormone replacement therapy (HRT)",
+      "treatments/supplementation",
+      "ocular or systemic diseases (unless a healthy control/segment was included)",
+      "sex differences rather than within-women stage differences",
+      "functional or haemodynamic outcomes (e.g., blood flow, perfusion density)",
+      "published after the search end date (2024-02-18)",
+      "Reviews, editorials, letters, and protocols"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence base is small and exhibits some heterogeneity.",
+      "The consistent finding of choroidal thinning during the luteal phase suggests a strong hormonal influence on choroidal morphology, whereas structural changes in the optic disc and macula during the menstrual cycle appear absent or negligible in healthy women.",
+      "Regarding menopause, the primary structural impact seems to be on the choroid, though age confounding remains a significant factor to disentangle.",
+      "Future research specifically targeting structural morphology in strictly healthy, unmedicated populations across both the menstrual cycle and menopausal transition is warranted to clarify age-adjusted menopausal effects on the RNFL and macula."
+    ]
+  }
+}

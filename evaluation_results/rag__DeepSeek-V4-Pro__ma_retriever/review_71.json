@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22542,
+    "output_tokens": 932,
+    "total_tokens": 23474
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.3793103448275862,
+    "inclusion_f1": 0.5499999999999999,
+    "screening_accuracy": 0.91,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.8054,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6155,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present and the flow is clear, with inclusion/exclusion criteria and narrative synthesis elements, but it lacks a formal abstract, detailed search strategy, PRISMA screening flow, data extraction methods, quality/risk-of-bias assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "assess PFAS exposure in utero or during early childhood",
+      "measure weight/obesity objectively",
+      "measure outcomes between 1 and 12 years of age",
+      "report a quantitative association between PFAS and an obesity measure (BMI, BMI z\u2011score, waist circumference, or overweight/obesity defined by these indices)"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta\u2011analyses",
+      "animal studies",
+      "studies that only reported birth outcomes (e.g., birth weight without later childhood follow\u2011up)",
+      "studies focusing exclusively on adolescents >12 years",
+      "those reporting only non\u2011obesity outcomes (e.g., neurodevelopment, thyroid function, bone health)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Results across studies were mixed, showing both positive, null, and occasionally negative associations depending on the specific PFAS compound, timing of exposure, and child sex.",
+      "The included studies varied in PFAS congeners measured, timing of exposure assessment, adjustment for confounders (maternal BMI, diet, breastfeeding, socioeconomic status), and methods for handling co\u2011exposure to multiple PFAS.",
+      "Nonetheless, the body of evidence suggests that prenatal exposure to certain PFAS, particularly PFOA, may modestly increase the risk of childhood obesity, while findings for PFOS and other PFAS are less consistent.",
+      "This systematic review of high\u2011quality primary studies indicates that prenatal exposure to PFAS is associated with childhood adiposity, with PFOA showing the most consistent positive associations.",
+      "Postnatal exposure showed weaker and sometimes inverse associations.",
+      "Sex\u2011specific effects and differences by chemical type and exposure window were evident.",
+      "Additional research is needed to clarify the role of PFAS mixtures, identify critical windows, and determine long\u2011term metabolic consequences."
+    ]
+  }
+}

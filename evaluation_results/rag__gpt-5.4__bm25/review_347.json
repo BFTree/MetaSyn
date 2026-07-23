@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16217,
+    "output_tokens": 1438,
+    "total_tokens": 17655
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.64,
+    "inclusion_precision": 0.9411764705882353,
+    "inclusion_f1": 0.7619047619047621,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.16,
+    "inclusion_consistency": 0.5048,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8158,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into screening, eligible evidence, narrative synthesis, limitations, and bottom line, and it includes meta-analysis-style elements such as inclusion criteria and synthesis approach, though it lacks a formal abstract/introduction/methods/results/discussion/references structure and full PRISMA rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "I included primary studies in bipolar disorder that measured intracellular Ca2+ concentration or stimulus-evoked Ca2+ mobilization/signalling in cells."
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, guidelines, treatment trials without relevant calcium outcomes, animal studies, and studies focused only on calcium-related molecules/genes/proteins rather than intracellular calcium measurements or calcium signalling responses."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The candidate pool strongly supports altered intracellular calcium homeostasis/signalling in bipolar disorder, especially in peripheral cells.",
+      "The most consistent finding is elevated basal intracellular Ca2+ in platelets and/or lymphocytes in bipolar disorder versus healthy controls.",
+      "Several studies also report enhanced stimulated Ca2+ responses, particularly platelet responses to serotonin (`5-HT`) and thrombin; one study found greater thapsigargin responses as well.",
+      "Mood-state signals are suggested but not fully consistent: acute bipolar depression and mania tend to show higher calcium measures, while euthymic or remitted bipolar samples are sometimes reported as similar to controls.",
+      "Comparative specificity is mixed but leans toward bipolar specificity more than unipolar depression or schizophrenia for some platelet calcium measures, especially `5-HT`-stimulated responses.",
+      "From the supplied pool, the evidence supports altered intracellular calcium signalling in bipolar disorder, most robustly as elevated basal intracellular Ca2+ and enhanced agonist-stimulated platelet calcium responses.",
+      "Abnormalities appear more evident during acute mania or bipolar depression than euthymia/remission.",
+      "Some evidence suggests greater specificity to bipolar disorder than schizophrenia and some other psychiatric conditions, but separation from unipolar depression is not completely consistent across studies."
+    ]
+  }
+}

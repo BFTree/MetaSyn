@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11677,
+    "output_tokens": 1075,
+    "total_tokens": 12752
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.3,
+    "inclusion_f1": 0.3157894736842105,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": 0.6779,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5145,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with objective, methods, screening criteria, results, synthesis, limitations, and conclusion, and it includes key meta-analysis elements, but it lacks a formal abstract/introduction framing, data extraction and quality assessment details, and a true PRISMA-level reference/flow structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "used a vertex\u2011based method (e.g., FreeSurfer) for whole\u2011brain CT estimation",
+      "compared medication\u2011free MDD adults (18\u201365 years) with healthy controls",
+      "restricted samples to medication\u2011free patients (never\u2011medicated or \u22657\u2011day washout)",
+      "reported effect coordinates of significant clusters in MNI or Talairach space"
+    ],
+    "exclusion_criteria": [
+      "Reviews, theoretical papers, case reports, ROI\u2011based analyses, and studies focused on peri\u2011/postmenopausal women were excluded.",
+      "no vertex\u2011based whole\u2011brain cortical thickness analysis (e.g., VBM, DTI, functional MRI, ROI)",
+      "inclusion of medicated patients or unclear medication status",
+      "absence of significant CT clusters with coordinates",
+      "non\u2011adult samples",
+      "non\u2011MDD populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Medication\u2011free MDD patients exhibit reliable cortical thickness alterations in prefrontal, parietal, cingulate, and temporal regions.",
+      "Both increases and decreases in CT are observed, influenced by symptom severity, cortisol levels, illness duration, and childhood trauma.",
+      "These findings suggest that cortical thickness measured by vertex\u2011based MRI methods captures both neurodevelopmental vulnerability and illness\u2011related plasticity.",
+      "Future longitudinal studies with harmonised protocols and comprehensive clinical phenotyping are needed to clarify the trajectory of these changes and their prognostic value.",
+      "Notably, the direction of thickness change varied\u2014both increases and decreases were reported\u2014which may reflect illness stage, duration, or the presence of childhood adversity.",
+      "Some studies reported a mixture of both thickening and thinning, suggesting region\u2011specific vulnerability."
+    ]
+  }
+}

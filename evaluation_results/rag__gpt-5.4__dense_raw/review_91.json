@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13242,
+    "output_tokens": 1083,
+    "total_tokens": 14325
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.5128205128205128,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.6349206349206349,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.7692307692307693,
+    "post_retrieval_loss": 0.15384615384615385,
+    "inclusion_consistency": 0.5498,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4873,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening results, synthesis, limitations, and included studies, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods, full results, discussion/conclusion, references, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "are within the date range 2018-01-01 to 2024-07-31",
+      "concern synthetic health-related/medical data",
+      "are primary research, not reviews/protocols/editorials",
+      "evaluate the generated synthetic outputs on utility and/or privacy",
+      "do not focus on excluded unstructured data types like images/text"
+    ],
+    "exclusion_criteria": [
+      "reviews/scoping reviews/systematic reviews/protocols/viewpoints/editorials",
+      "outside the date range (mostly 2025/2026, or pre-2018)",
+      "about public attitudes, governance, consent, app privacy, or AI ethics rather than evaluation of synthetic medical data",
+      "about unstructured synthetic data such as clinical notes/text (for example, Candidate 026)",
+      "about synthetic data generation without clear output evaluation in the abstract",
+      "not clearly about health-related synthetic data evaluation"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on these included abstracts, there is **not a clear community-wide consensus on a standardized method** for evaluating privacy and utility of synthetic health-related data.",
+      "However, the abstracts suggest that these are **used variably and inconsistently**, rather than as a standard core set adopted across the field.",
+      "**No strong consensus is evident.**",
+      "This pattern suggests **partial convergence at the level of metric categories**, but **not standardization at the level of a fixed evaluation protocol**.",
+      "**Usually no.** Based on abstracts alone, privacy is often **present but not equally developed**.",
+      "From the supplied abstracts alone, the literature appears to support the following conclusions:",
+      "**There is no settled consensus** on a standardized evaluation method for synthetic health-related data.",
+      "There is **some recurring agreement on broad dimensions** to assess:",
+      "**Utility is more consistently and more extensively measured than privacy**.",
+      "Privacy evaluation is present, but often **narrower, less standardized, and less comprehensive**.",
+      "A minority of studies propose or apply **more holistic evaluation frameworks**, suggesting movement toward standardization, but not yet consensus."
+    ]
+  }
+}

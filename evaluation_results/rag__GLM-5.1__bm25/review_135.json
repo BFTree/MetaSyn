@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8441,
+    "output_tokens": 882,
+    "total_tokens": 9323
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6536,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3082,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around exclusion reasoning and final inclusion status, but it lacks most required systematic review sections such as abstract, introduction, full methods, results synthesis, discussion, conclusion, references, and detailed PRISMA-style elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "This RCT assessed BRAF mutation status within a fully RAS wild-type (WT) population",
+      "requiring assessment as a subset of a \"RAS (minimally KRAS exon 2 and 3) WT subgroup.\"",
+      "the review targets PFS and OS outcomes and requires sufficient quantitative data to determine the treatment effect according to BRAF status"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews/meta-analyses",
+      "non-RCTs (retrospective/observational)",
+      "non-colorectal cancer studies",
+      "published after the search end date of 2014-07-31",
+      "focusing on populations other than RAS wild-type mCRC"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on a rigorous screening of the supplied candidate abstracts against the specified inclusion and exclusion criteria, no primary study articles were found to be eligible for this evidence synthesis.",
+      "None were included."
+    ]
+  }
+}

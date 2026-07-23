@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23797,
+    "output_tokens": 1205,
+    "total_tokens": 25002
+  },
+  "metrics": {
+    "retrieval_recall": 0.851063829787234,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.46808510638297873,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.619718309859155,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.55,
+    "post_retrieval_loss": 0.3829787234042553,
+    "inclusion_consistency": 0.7641,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3596,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, eligibility/screening process, included studies, synthesis of findings, outcomes, toxicity, and conclusions, but it lacks several formal required sections such as a structured abstract, introduction, detailed methods, discussion, references, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "phase I and II clinical trials of investigational compounds given as monotherapy or in combination with dexamethasone in adult patients with relapsed/refractory multiple myeloma (RRMM)",
+      "English-language publications from 1 January 2010 to 1 July 2020",
+      "with a minimum of 10 RRMM patients evaluable for response"
+    ],
+    "exclusion_criteria": [
+      "phase III trials",
+      "included combinations with other antimyeloma agents (except dexamethasone)",
+      "focused on newly diagnosed disease, smoldering myeloma, or maintenance",
+      "reviews",
+      "subgroup analyses",
+      "real\u2011world evidence",
+      "protocols",
+      "lacked usable primary data"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "ORRs varied considerably across the agents.",
+      "Most single\u2011agent trials produced modest activity, with partial response or better rates typically in the 0\u201320% range.",
+      "These data indicate that, while many novel agents have limited single\u2011agent activity, the addition of dexamethasone can modestly improve response rates, and a few compounds (e.g., selinexor, oprozomib) demonstrated clinically meaningful responses in heavily pretreated populations.",
+      "Most adverse events were grade 1\u20132 and manageable with supportive care.",
+      "The landscape encompasses diverse mechanisms of action, with ORRs generally below 20% for monotherapy but improving with dexamethasone co\u2011administration.",
+      "Toxicity was manageable, though hematologic and gastrointestinal events were common."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26919,
+    "output_tokens": 1122,
+    "total_tokens": 28041
+  },
+  "metrics": {
+    "retrieval_recall": 0.4852941176470588,
+    "retrieval_precision": 0.38823529411764707,
+    "inclusion_recall": 0.3088235294117647,
+    "inclusion_precision": 0.8076923076923077,
+    "inclusion_f1": 0.44680851063829785,
+    "screening_accuracy": 0.8,
+    "conditional_retention": 0.6363636363636364,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.5724,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5861,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background, review question/PICO, methods, detailed search strategy, eligibility criteria, screening results, synthesis approach, risk-of-bias assessment, discussion, and conclusion, but it lacks a proper references section and has some organizational issues such as duplicated headings and minor internal inconsistencies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original experimental or epidemiological studies in relevant biological systems, including human populations, human cells or tissues, in vitro cell models, and in vivo animal models.",
+      "Studies assessing exposure to low-level radiofrequency electromagnetic fields above 6 GHz (millimetre waves), including 5G-relevant frequencies or radar emissions, at levels stated or reasonably inferable to be below ICNIRP occupational exposure limits.",
+      "Studies that include an appropriate comparison group or condition, such as sham-exposed, unexposed, or lower/non-exposed control populations or samples.",
+      "Studies reporting biological or health-related outcomes, including genotoxicity, cell proliferation, gene expression, cell signalling, membrane function, cancer, reproductive effects, or other disease-related endpoints."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, conference abstracts without full data, methodological/engineering papers, dosimetry-only studies, and studies focused solely on physical or technical outcomes without biological or health endpoints.",
+      "Studies evaluating radiofrequency exposures at 6 GHz or below, or exposures exceeding ICNIRP occupational limits, or where exposure conditions are insufficiently described to determine frequency range or exposure level.",
+      "Studies without a relevant control or comparator condition, or without enough outcome data to evaluate biological or health effects.",
+      "Studies outside the target evidence base, such as purely in silico investigations or studies of non-RF co-exposures where the specific effect of >6 GHz radiofrequency exposure cannot be distinguished."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across individual studies, findings were mixed and not consistently replicated across models or endpoints.",
+      "Overall, the body of evidence was characterized more by heterogeneity in methods and reporting than by convergence on a reproducible effect.",
+      "Taken together, the included literature did not show a clear, reproducible pattern of adverse effects at exposure levels below ICNIRP occupational limits.",
+      "The overall picture is therefore one of fragmented and heterogeneous evidence rather than a coherent signal of effect.",
+      "For practice and policy, the most defensible interpretation is cautious: based on the currently available and reportable evidence, there is no consistent, reproducible indication of biological or health effects from low-level >6 GHz exposures below ICNIRP occupational limits, but the evidence base is not yet strong enough to support precise quantitative risk estimates.",
+      "Overall, the current evidence base remains limited and insufficient to support firm conclusions about health risks from low-level exposures above 6 GHz."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31924,
+    "output_tokens": 1018,
+    "total_tokens": 32942
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.21212121212121213,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3636363636363636,
+    "screening_accuracy": 0.8484848484848485,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.918,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, detailed search queries, screening decisions, study characteristics, narrative synthesis, feasibility of meta-analysis, limitations, and sources, but it lacks a formal abstract, PRISMA flow diagram/counts, standardized quality/risk-of-bias assessment, and full reference list needed for excellent structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies",
+      "Peer-reviewed journal articles",
+      "Published in English",
+      "Published from **2015-01-01 through 2022-12-31**",
+      "Relevant to the PECO question",
+      "Reporting a **child** mental health outcome or mental health problem",
+      "Including a **comparison group of children with different-sex parents**"
+    ],
+    "exclusion_criteria": [
+      "Not peer-reviewed English-language journal articles",
+      "Not focused on a mental health outcome",
+      "Focused only on parental outcomes",
+      "Lacking a comparison group of children with different-sex parents"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The confirmed evidence located in the local corpus from 2015\u20132022 does **not** support the claim that children with LGBTQ parents have poorer mental health outcomes than children with different-sex parents.",
+      "The only definitively included study found in the preserved research record reported **null differences** across multiple behavioral and psychosocial domains [1].",
+      "Among the small number of eligible studies retrievable and confirmable from the local MetaSyn PubMed corpus for 2015\u20132022, there is no confirmed evidence of worse child mental health/behavioral outcomes among children with same-sex parents compared with children with different-sex parents.",
+      "A quantitative meta-analysis is **not feasible** on the basis of the retrieved and confirmable local-corpus evidence.",
+      "As a result, the available local-corpus evidence from this review **does not indicate worse mental health outcomes among children with same-sex parents**.",
+      "However, the evidence base is too small and too incomplete to support broad claims across all LGBTQ parent families, especially for **gender minority/trans parents**."
+    ]
+  }
+}

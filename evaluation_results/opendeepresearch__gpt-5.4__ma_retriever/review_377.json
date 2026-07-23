@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 377,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33359,
+    "output_tokens": 958,
+    "total_tokens": 34317
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.5384615384615384,
+    "inclusion_recall": 0.09523809523809523,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.17391304347826084,
+    "screening_accuracy": 0.5384615384615384,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.5477,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.436,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review/meta-analysis elements such as search queries, eligibility criteria, screening outcomes, included study characteristics, synthesis approach, evidence table, limitations, and feasibility of meta-analysis, but it lacks a formal abstract, complete conclusion/references, and explicit quality or risk-of-bias assessment needed for PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "included plastics or microplastics,",
+      "addressed flocculation/aggregation processes involving microplastics in aquatic environments,",
+      "were peer-reviewed original research articles."
+    ],
+    "exclusion_criteria": [
+      "microplastic size and shape",
+      "aggregate/floc size"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Support is suggestive, not definitive.",
+      "No included study in the retrieved corpus explicitly established 162 \u00b5m as a universal cutoff.",
+      "Microplastics smaller than approximately 100\u2013160 \u00b5m appear most likely to be incorporated into aquatic flocs, while incorporation becomes less consistent in the 100\u2013250 \u00b5m range and is much less likely above 250 \u00b5m.",
+      "Microplastic incorporation into flocs is most likely when MP size is substantially smaller than the characteristic floc/aggregate size and especially when MP size falls below about 100\u2013160 \u00b5m; incorporation becomes variable at intermediate sizes and much less likely once particles exceed a few hundred micrometers.",
+      "A formal meta-analysis appears not currently feasible from the local corpus evidence retrieved under the strict eligibility rules.",
+      "The local corpus supports a threshold-like region, not an exact universal cutoff.",
+      "The value <162 \u00b5m should be treated as a plausible working threshold rather than a conclusively established one."
+    ]
+  }
+}

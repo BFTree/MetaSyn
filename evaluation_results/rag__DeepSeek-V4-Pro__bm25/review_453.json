@@ -1,0 +1,67 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24981,
+    "output_tokens": 1378,
+    "total_tokens": 26359
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.7421,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.633,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear methods, screening results, eligibility criteria, included studies, evidence synthesis, limitations, and conclusion, but it lacks a formal abstract/introduction, detailed search strategy, references, and explicit quality/risk-of-bias assessment needed for PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "participants with chronic hepatitis B or C",
+      "a statin-exposed group and a non-exposed control group",
+      "reporting of \u22651 outcome of interest (HCC, all-cause mortality, cirrhosis, cirrhosis decompensation)",
+      "a cohort or randomised controlled trial design"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "editorials",
+      "protocols",
+      "case reports",
+      "non-English articles",
+      "studies that did not report eligible outcomes",
+      "cohorts with HIV co-infection",
+      "Not a primary study (review, editorial, protocol, case report)",
+      "Population not chronic viral hepatitis (e.g., MASLD, ALD, autoimmune hepatitis, general cirrhosis of mixed aetiology, post-transplant)",
+      "HIV co-infected cohorts",
+      "No statin-exposure comparison (e.g., studies of antiviral therapy, biomarkers, or other medications)",
+      "Outcomes not in the set of HCC, all-cause mortality, cirrhosis, or cirrhosis decompensation"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Despite differences in populations and statin types, the results are remarkably consistent:",
+      "All studies that examined HCC (001, 002, 003, 004, 008, 018) reported a significantly lower risk among statin users.",
+      "Three studies (001, 002, 008) assessed all-cause mortality and consistently found lower rates in statin users.",
+      "Statin use was associated with a 40-50% reduction in progression to cirrhosis (candidate 013: aHR 0.59; candidate 005: aHR 0.51 for cirrhosis) and a dose-dependent antifibrotic effect in HCV (candidate 004: aHR 0.6 for cirrhosis with >180 cDDDs).",
+      "In CHB (candidate 005) statins reduced decompensation risk by about 50% (aHR 0.53), and in HCV-related compensated cirrhosis (candidate 009) statin users had a 45% lower decompensation risk (HR 0.55).",
+      "In this literature set, statin use was consistently associated with substantially lower risks of HCC, cirrhosis, cirrhosis decompensation, and all-cause mortality in patients with chronic hepatitis B or C.",
+      "The effects appeared dose-dependent and were particularly pronounced for lipophilic statins.",
+      "While these findings support the hypothesis that statins have a chemopreventive role in viral-hepatitis-related liver disease, confirmation through randomised controlled trials is needed before statins can be recommended specifically for this purpose."
+    ]
+  }
+}

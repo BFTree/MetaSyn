@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31078,
+    "output_tokens": 1117,
+    "total_tokens": 32195
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.04918032786885246,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.2222222222222222,
+    "inclusion_f1": 0.26666666666666666,
+    "screening_accuracy": 0.8688524590163934,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.16666666666666666,
+    "inclusion_consistency": 0.5178,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6646,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background, Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes meta-analysis elements such as detailed search queries, eligibility criteria, screening counts, and synthesis methods, but it lacks a formal references section and has some duplicated headings and minor organizational inconsistencies that prevent a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies conducted in healthcare settings such as hospitals, clinics, ambulatory care, long-term care, or pharmacies involving patients or medication-use processes affecting patients.",
+      "Studies evaluating an electronic health intervention intended to improve medication use or safety, including computerized decision-support systems, electronic health records, electronic medication administration records, computerized physician order entry, or barcode medication administration.",
+      "Studies that include a comparison with usual care, pre-implementation practice, or a non-electronic medication management process.",
+      "Studies reporting medication safety outcomes, including potential medication errors, actual medication errors, or adverse drug events."
+    ],
+    "exclusion_criteria": [
+      "Studies not conducted in healthcare delivery settings or not involving patient care or medication-use processes.",
+      "Studies evaluating non-electronic, purely educational, administrative, or unrelated digital interventions, or technologies outside the specified electronic medication management systems.",
+      "Studies that do not report medication error-related outcomes, such as those limited to workflow efficiency, user satisfaction, or general clinical outcomes without medication safety data.",
+      "Non-original research or insufficiently detailed reports, such as editorials, commentaries, letters, conference abstracts only, case reports, or protocols."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no statistically significant reduction in medication errors with electronic health interventions compared with usual care.",
+      "Therefore, the pooled estimate does not provide conclusive evidence that electronic health interventions reduce medication errors.",
+      "Overall, although the fixed-effects model suggested a statistically significant reduction, the highly heterogeneous random-effects analysis provides insufficiently precise evidence to establish a consistent reduction in medication errors.",
+      "This systematic review found that electronic health interventions aimed at medication-use processes may reduce medication errors, but the certainty of that conclusion is limited by substantial inconsistency across studies.",
+      "In this meta-analysis of 9 studies, including 4 in the quantitative synthesis, electronic health interventions (such as CDS, EHR, eMAR, CPOE, and BCMA) were not associated with a statistically reliable reduction in medication errors compared with usual care in the random-effects model (pooled OR 0.627, 95% CI 0.071\u20135.526; p=0.6746).",
+      "Clinically, this means electronic systems may reduce medication errors in some healthcare environments, but their impact is not consistent enough to assume benefit universally."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17694,
+    "output_tokens": 1393,
+    "total_tokens": 19087
+  },
+  "metrics": {
+    "retrieval_recall": 0.7435897435897436,
+    "retrieval_precision": 0.145,
+    "inclusion_recall": 0.15384615384615385,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.87,
+    "conditional_retention": 0.20689655172413793,
+    "post_retrieval_loss": 0.5897435897435898,
+    "inclusion_consistency": 0.5489,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a limited screening summary and list of included studies with reasons, but it lacks a formal abstract, introduction, detailed methods, results synthesis, discussion, conclusion, references, quality assessment, and clear PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "the screening process focused on identifying studies that examine the association between biomarker concentrations of perfluorooctane sulfonic acid (PFOS) and birth weight (in grams), specifically looking for studies that report regression coefficients (betas) with 95% confidence intervals (or equivalent variance measures) for maternal or cord blood samples.",
+      "These studies explicitly report beta coefficients and 95% CIs for the association between PFOS concentrations and birth weight in grams (or log/kilo-grams convertible to grams) in the relevant populations."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "After screening the titles and abstracts of the 200 candidates, 9 primary studies met all inclusion criteria.",
+      "Reports a significant association for female infants where birth weight was 186.6 g less in the highest quartile of PFOS exposure compared to the lowest (95% CI: -363.4, -9.8).",
+      "Reports that girls born to mothers in the upper tertile of PFOS concentrations weighed 140 g less at birth than those in the lower tertile (95% CI: -238, -42).",
+      "Reports a regression coefficient for PFOS in cord samples and birth weight of \u03b2 = -417.3 g (95% CI: -742.1, -92.4) per log10 unit increase.",
+      "Reports beta coefficients for the association between maternal serum PFOS levels and birth weight (per log10 unit: beta = -148.8 g; 95% CI: -297.0 to -0.5 g), including sex-stratified results for female infants (beta = -269.4 g; 95% CI: -465.7 to -73.0 g).",
+      "Reports an adjusted regression coefficient for PFOS in cord blood and birth weight per ln unit of \u03b2 = -110.2 gm (95% CI: -176.0, -44.5).",
+      "Reports a significant association where a logarithmic unit increment in maternal serum PFOS was associated with a reduced birth weight of 0.217 kg (217 g) (95% CI: -0.385, -0.049)."
+    ]
+  }
+}

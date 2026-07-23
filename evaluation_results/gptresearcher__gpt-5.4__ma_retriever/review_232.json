@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30682,
+    "output_tokens": 1050,
+    "total_tokens": 31732
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015873015873015872,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9841269841269841,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7652,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4608,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive PRISMA-style structure with abstract, introduction, methods, results/screening, synthesis, limitations, conclusion, included-study list, and references, plus detailed search query, eligibility criteria, screening decisions, exposure-measurement considerations, and synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human research",
+      "Original investigations",
+      "Assessed salt/sodium intake",
+      "Assessed a health-related or surrogate outcome",
+      "For detailed inclusion, sodium needed to be a sufficiently isolated exposure",
+      "Required relevance to the general adult population review question",
+      "included studies must be human, original investigations, assess sodium intake directly, and evaluate relevant health outcomes.",
+      "Cohort studies also require substantial duration and sample size."
+    ],
+    "exclusion_criteria": [
+      "Additional restrictions exclude studies where sodium is not the only exposure variable, studies relying on spot urine or food frequency questionnaire estimates for detailed appraisal, cross-sectional studies, and studies of sodium-to-potassium ratio alone.",
+      "Excluded if sodium was bundled with major co-interventions",
+      "Excluded if sodium exposure relied only on spot urine, FFQ, or sodium-to-potassium ratio alone",
+      "Excluded if cross-sectional",
+      "Excluded if review, protocol, commentary, or other non-original article types"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the provided local MetaSyn corpus retrieval output and screening strictly against the stated eligibility criteria, no study was included in the final review set.",
+      "Sodium reduction consistently lowers blood pressure in the short term, and it likely improves albuminuria/proteinuria in CKD-related settings.",
+      "Short-term declines in eGFR after sodium reduction appear more consistent with hemodynamic change than structural kidney injury.",
+      "The best exposure measurement remains 24-hour urinary sodium; weaker methods such as spot urine likely degrade inference.",
+      "However, the evidence branch retrieved here does not provide adequate, directly eligible support for strong claims about long-term hard outcomes in the general adult population.",
+      "My concrete opinion is that sodium reduction is probably beneficial as a public-health strategy for lowering blood pressure and reducing renal stress markers, but the provided local corpus set is insufficient to claim robust long-term benefit on mortality, major cardiovascular events, or definitive renal outcomes under rigorous systematic review standards.",
+      "The main issue is not that sodium lacks effect; it is that the retrievable evidence here is dominated by surrogate endpoints, specialized populations, and designs outside the target review frame."
+    ]
+  }
+}

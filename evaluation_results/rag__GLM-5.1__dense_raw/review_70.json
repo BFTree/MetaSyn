@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15246,
+    "output_tokens": 1012,
+    "total_tokens": 16258
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.8571428571428572,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.5022,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5322,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, results organized by outcome, conclusion, and included-study list, but it lacks a formal abstract, introduction, discussion, detailed search strategy, data extraction process, quality assessment, and PRISMA-style screening/synthesis details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult patients with morbid obesity undergoing bariatric surgery",
+      "administered probiotics/synbiotics as the intervention",
+      "compared them to placebo/standard care/no intervention",
+      "measured relevant clinical outcomes"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "animal studies",
+      "non-RCTs",
+      "involved other gastrointestinal procedures",
+      "compared probiotics to active interventions other than placebo/standard care (e.g., UDCA)",
+      "studies published after the search end date of 2023-03-14"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the efficacy of probiotic supplementation on the specified outcomes is heterogeneous and often conflicting.",
+      "The effect of probiotics on liver function, specifically aspartate aminotransferase (AST/ASAT), is inconsistent.",
+      "Probiotic supplementation appears to have a potential beneficial effect on triglycerides in some studies.",
+      "The impact of probiotics on weight loss remains controversial.",
+      "Evidence regarding vitamin B12 levels is mixed.",
+      "Overall, probiotics appear safe, with no serious adverse events reported in the included trials, though minor gastrointestinal side effects (soft stools, nausea) were noted in some cases.",
+      "Current evidence from RCTs suggests that probiotic supplementation may offer modest benefits for triglycerides and AST in specific formulations, and may improve early weight loss and vitamin B12 status in some contexts.",
+      "However, the findings are inconsistent across trials, and many studies report no significant difference compared to placebo for these outcomes.",
+      "Probiotics appear to have a positive effect on eating behaviors (binge eating) and are generally safe, though they may cause minor gastrointestinal side effects."
+    ]
+  }
+}

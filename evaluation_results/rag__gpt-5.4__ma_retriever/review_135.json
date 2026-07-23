@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15742,
+    "output_tokens": 1344,
+    "total_tokens": 17086
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.7325,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4576,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening results, included/excluded studies, evidence synthesis, limitations, and a bottom-line conclusion, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies had to be RCTs in mCRC",
+      "anti-EGFR antibody therapy was compared against the same standard therapy or control",
+      "tumors were assessed for BRAF mutation status within a RAS wild-type subgroup (or at minimum a clearly relevant KRAS-wild-type subgroup consistent with the review timeframe)",
+      "OS or PFS outcomes were available by biomarker subgroup"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses",
+      "nonrandomized biomarker studies",
+      "case reports",
+      "protocols",
+      "non-mCRC populations",
+      "wrong intervention/comparator structure",
+      "did not clearly provide anti-EGFR treatment effects stratified by BRAF status within a RAS/KRAS wild-type subgroup",
+      "Nonrandomized or single-arm biomarker studies",
+      "Wrong population/intervention/comparator or not anti-EGFR-vs-control RCTs for this question",
+      "Studies in KRAS-mutant or noneligible disease settings",
+      "Post-2024 pooled/meta work or non-primary synthesis"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Anti-EGFR therapy shows benefit mainly in molecularly selected wild-type populations, especially for RAS/KRAS wild-type disease.",
+      "BRAF mutation consistently appears to be associated with poorer outcomes, but the abstracts provide weak and incomplete evidence that BRAF V600E is a true predictive marker of reduced benefit from anti-EGFR therapy, as opposed to being mainly prognostic.",
+      "From the supplied abstracts alone, the evidence does not convincingly show that BRAF V600E mutation status is a validated predictive biomarker for anti-EGFR treatment benefit in RAS wild-type metastatic colorectal cancer.",
+      "The stronger signal is that BRAF mutation is a negative prognostic factor.",
+      "Where prediction was tested directly, the abstracted evidence does not demonstrate a significant interaction with anti-EGFR benefit, and at least one abstract explicitly says BRAF was not predictive.",
+      "The main limitation is sparse BRAF-mutant sample size and incomplete BRAF-stratified effect reporting in the abstracts."
+    ]
+  }
+}

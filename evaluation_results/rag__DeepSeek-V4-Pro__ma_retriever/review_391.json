@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8301,
+    "output_tokens": 946,
+    "total_tokens": 9247
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.21428571428571427,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.21428571428571427,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.6965,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3465,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized sections for screening methods, screening results, and included studies, but it lacks core systematic review sections such as abstract, introduction, full methods, discussion, conclusion, references, search strategy, data extraction, quality assessment, and synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "described a prospective clinical analytical treatment interruption (ATI) study",
+      "enrolled adults who received placebo or no active intervention",
+      "explicitly indicated frequent plasma viral load monitoring (minimum 5 planned pVL measurements within the first 84 days post-ATI, with \u226418 days between measurements in the first 42 days)"
+    ],
+    "exclusion_criteria": [
+      "Studies of children/adolescents",
+      "co-infections",
+      "animal/in-vitro work",
+      "case reports",
+      "reviews",
+      "conference abstracts",
+      "non-English publications",
+      "any record that did not provide sufficient information to confirm the monitoring requirement",
+      "not a primary prospective ATI study (e.g., reviews, meta-analyses, modelling, routine care cohorts, drug-resistance surveillance)",
+      "active interventional arm without a distinct placebo/no-intervention group",
+      "study of infants/children/adolescents",
+      "animal/in-vitro experiment",
+      "co-infection",
+      "case report",
+      "failure to demonstrate frequent viral load monitoring"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Four records satisfied all inclusion criteria based on the information in the abstract; they are listed below.",
+      "All four studies were prospective ATI investigations in which participants interrupted antiretroviral therapy (ART) without any active immunologic or pharmacologic intervention during the interruption, and all described close or frequent virologic monitoring.",
+      "Two studies enrolled only chronically infected individuals (late ART), one included both early and chronic initiators, and one enrolled women with early ART."
+    ]
+  }
+}

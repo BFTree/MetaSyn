@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13871,
+    "output_tokens": 1172,
+    "total_tokens": 15043
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6187,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5999,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key review elements such as the research question, eligibility criteria, screening process, evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, separate discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Newborns and young infants up to 59 days of age from low- and middle-income countries.",
+      "Home visits by trained community health workers (CHWs).",
+      "Standard care or control group without home visits by community health workers.",
+      "Identification of serious illness (sensitivity and specificity) and care seeking from health facilities.",
+      "1966-01-01 to 2014-10-21.",
+      "Three cluster-randomised controlled trials conducted in low- and middle-income countries (Ghana, India, and South Africa) met the eligibility criteria.",
+      "All three evaluated packages that included home visits by trained community health workers during the neonatal period and measured the impact on care seeking from health facilities."
+    ],
+    "exclusion_criteria": [
+      "Published after the search end date of October 21, 2014 (considered out-of-date for this review's scope).",
+      "Not randomized controlled trials (RCTs); this included observational studies, cross-sectional surveys, quasi-experimental designs, prospective cohorts, systematic reviews, and trial protocols.",
+      "Conducted in high-income countries (per the Escobar 2001 exclusion logic).",
+      "Interventions that did not primarily consist of home visits by trained CHWs to identify serious illness (e.g., group sessions, TBA training, handwashing promotion, WASH interventions, or facility-based improvements).",
+      "Populations outside the specified age range (e.g., older children, or studies lacking focus on the neonatal/young infant period).",
+      "Studies lacking data on the identification or care seeking for seriously ill young infants (per the Bang 2005 exclusion logic, where studies focusing solely on mortality without illness identification/referral data were excluded)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesis of eligible RCTs indicates that home visits by trained community health workers in low- and middle-income countries significantly improve care seeking from health facilities for newborns and young infants with severe illness.",
+      "The most direct evidence comes from the Newhints and IMNCI trials, which explicitly targeted the identification of danger signs and showed substantial increases in appropriate care seeking for seriously ill neonates.",
+      "The intervention significantly increased independent care seeking for severe newborn illness from 55.4% in control zones to 77.3% in intervention zones (RR 1.43, 95% CI 1.17\u20131.76; p=0.001).",
+      "The intervention significantly increased treatment seeking from an appropriate provider for severe neonatal illness (RR 1.76, 95% CI 1.38 to 2.24)."
+    ]
+  }
+}

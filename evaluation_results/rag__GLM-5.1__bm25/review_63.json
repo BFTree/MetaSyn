@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11788,
+    "output_tokens": 1442,
+    "total_tokens": 13230
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.7692307692307693,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5262,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6989,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with review context, screening summary, outcome-based synthesis, conclusion, and included studies, but it lacks several formal required sections such as abstract, full methods, discussion, references, detailed search strategy, data extraction process, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult cohort studies published between 1999 and 2023",
+      "utilized conventional or high-resolution manometry \u00b1 24-hour ambulatory pH studies",
+      "comparative studies evaluating LVSG alongside other bariatric procedures were included if they explicitly reported pre/post-operative esophageal function data for the LVSG cohort"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "case reports",
+      "conference abstracts",
+      "editorials",
+      "out-of-date (>2023)",
+      "non-human",
+      "pediatric",
+      "did not provide comparative pre-operative and post-operative physiological test data for the specified outcomes"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The synthesis of pre-operative and post-operative esophageal function test data reveals that LVSG predominantly results in a reduction of LESP and a shortening of LESL.",
+      "These structural and functional changes at the esophagogastric junction are strongly associated with a worsening of GERD, evidenced by significant increases in the DeMeester score and acid exposure time in the majority of studies.",
+      "While one study suggested an increase in LESP and LESL potentially tied to surgical technique, the overarching physiological trend points toward a compromised antireflux mechanism post-LVSG."
+    ]
+  }
+}

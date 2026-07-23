@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31482,
+    "output_tokens": 762,
+    "total_tokens": 32244
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.3181818181818182,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47619047619047616,
+    "screening_accuracy": 0.7954545454545454,
+    "conditional_retention": 0.35714285714285715,
+    "post_retrieval_loss": 0.5625,
+    "inclusion_consistency": 0.687,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5135,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with all major sections, explicit search queries, eligibility criteria, screening decisions, study characteristics, synthesis, limitations, conclusion, and references, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment and detailed quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs in adults with LRH",
+      "MRA therapy compared with placebo or other antihypertensive treatment",
+      "Outcomes including blood pressure change, target BP attainment, antihypertensive dose requirement, end-organ dysfunction, or adverse effects"
+    ],
+    "exclusion_criteria": [
+      "Known secondary hypertension, including PA or monogenic LRH",
+      "Non-English records",
+      "Conference abstracts",
+      "Incorrect population, non-randomized design, wrong comparator, or missing relevant outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the local MetaSyn corpus, randomized evidence supports that MRA therapy is effective for lowering blood pressure in adults with low-renin hypertension.",
+      "However, when low-renin hypertension is studied outside confirmed primary aldosteronism, spironolactone generally lowers blood pressure about as well as thiazide or thiazide-like diuretics rather than clearly better.",
+      "Eplerenone shows superiority to losartan in LRH, which supports aldosterone-targeted therapy over renin-dependent blockade in this phenotype.",
+      "Safety is agent- and dose-dependent: older high-dose spironolactone regimens produced more side effects, while eplerenone appears better tolerated but still requires potassium monitoring.",
+      "Overall, the best-supported conclusion is that MRAs are effective but not uniformly superior in LRH; the aggregate evidence favors a pragmatic view of LRH as a volume/sodium-retention state for which both MRA and thiazide-based strategies are valid, with therapy choice guided by tolerability, comorbidity, and treatment goal."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15599,
+    "output_tokens": 1002,
+    "total_tokens": 16601
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.5454545454545454,
+    "inclusion_precision": 0.46153846153846156,
+    "inclusion_f1": 0.4999999999999999,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.5454545454545454,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.6494,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6689,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening decisions, narrative synthesis, limitations, and an included-study list, but it lacks a formal abstract, introduction, detailed search strategy, full data extraction/synthesis methods, quality assessment, and PRISMA-style reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population: children up to 12 years",
+      "exposure: prenatal and/or postnatal PFAS exposure",
+      "outcomes: objectively measured obesity-related outcomes during ages 1-12 years, such as BMI, BMI z-score, waist circumference, adiposity, overweight/obesity",
+      "study must report a quantitative association"
+    ],
+    "exclusion_criteria": [
+      "no quantitative PFAS assessment",
+      "only birth outcomes",
+      "animal/simulation/commentary/review",
+      "outcome outside the target age range"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence consists mainly of prospective birth cohorts examining prenatal PFAS exposure, with fewer studies assessing postnatal/childhood PFAS exposure.",
+      "Across studies, results are heterogeneous by chemical, timing, age at assessment, and sex.",
+      "Because the evidence here comes from abstracts only, study quality, confounding control, and comparability of effect estimates cannot be fully assessed.",
+      "Across the included abstracts, heterogeneity is substantial.",
+      "`Timing`: prenatal exposure appears more consistently implicated than postnatal exposure.",
+      "`Age-dependent effects`: several abstracts suggest possible reversal over time, with lower BMI in infancy/early life but higher later BMI or faster gain ([Corpus 4589], [Corpus 69990]).",
+      "`Sex-specificity`: multiple studies report sex differences, but not in a consistent direction ([Corpus 3672], [Corpus 4589], [Corpus 3835])."
+    ]
+  }
+}

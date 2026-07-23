@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32210,
+    "output_tokens": 1123,
+    "total_tokens": 33333
+  },
+  "metrics": {
+    "retrieval_recall": 0.19047619047619047,
+    "retrieval_precision": 0.11940298507462686,
+    "inclusion_recall": 0.11904761904761904,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.20833333333333331,
+    "screening_accuracy": 0.9402985074626866,
+    "conditional_retention": 0.625,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.7081,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5906,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most PRISMA-style structural elements such as abstract, background, review question, detailed search strategy, eligibility criteria, screening results, statistical analysis, study characteristics, risk of bias, discussion, and conclusion, but it falls short of excellent because the conclusion and results contain placeholders/instructions, there are duplicated headings, inconsistent statements about whether pooling was possible, and no formal references section is provided."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials (including parallel-group or crossover designs) evaluating an active treatment for treatment-resistant depression against placebo or sham control.",
+      "Studies enrolling adults (18 years or older) with treatment-resistant unipolar depression, defined as failure to respond to at least two adequate antidepressant trials, and excluding bipolar depression or psychotic depression.",
+      "Studies assessing eligible pharmacological or neuromodulatory interventions for treatment-resistant depression, including but not limited to ECT, ketamine, aripiprazole, minocycline, rTMS, TBS, and related antidepressant treatments.",
+      "Studies reporting response rate data sufficient to estimate treatment effect versus placebo/sham, including outcomes reported as or convertible to odds ratios."
+    ],
+    "exclusion_criteria": [
+      "Studies including participants with bipolar depression, psychotic depression, or mixed psychiatric populations where treatment-resistant unipolar depression data cannot be separated.",
+      "Non-randomized studies, observational studies, case series, case reports, reviews, meta-analyses, conference abstracts, dissertations, or study protocols without trial results.",
+      "Studies comparing active treatments only, different doses/schedules of the same treatment without a placebo/sham arm, or lacking an appropriate placebo or sham comparator.",
+      "Studies not reporting response outcomes or insufficient data to calculate comparative treatment effects for response rate."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated that active treatment was associated with higher odds of response than placebo or sham among adults with treatment-resistant depression, based on six included studies.",
+      "Overall, the direction of effect favored the intervention group, with the pooled odds ratio indicating a clinically meaningful improvement in treatment response.",
+      "Overall, the bottom line is that the available pooled evidence supports a benefit of active treatment over placebo or sham for response in treatment-resistant depression, although the exact magnitude and certainty of that benefit depend on the pooled odds ratio, its confidence interval, and the degree of between-study heterogeneity.",
+      "Across six included studies, the available evidence suggests that active treatment can improve response rates relative to control, but the strength of inference remains constrained by the small evidence base and uneven reporting.",
+      "The present evidence supports continued use and development of both neuromodulatory and pharmacological strategies for TRD, particularly when patients have failed standard antidepressant approaches, but it does not justify a strong hierarchy across the many available options based on the current dataset alone.",
+      "Clinically, this suggests that selected pharmacological and neuromodulatory interventions can provide meaningful benefit for patients who have not responded to at least two antidepressant trials, supporting their consideration in specialist care.",
+      "However, the result should be interpreted cautiously because the evidence base is small and combines heterogeneous interventions, limiting confidence in the size and consistency of benefit across individual treatments."
+    ]
+  }
+}

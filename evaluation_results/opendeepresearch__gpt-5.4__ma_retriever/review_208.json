@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31080,
+    "output_tokens": 1106,
+    "total_tokens": 32186
+  },
+  "metrics": {
+    "retrieval_recall": 0.2857142857142857,
+    "retrieval_precision": 0.5,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.24615384615384617,
+    "screening_accuracy": 0.71875,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6691,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8993,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and covers the core systematic review structure with clear review question, search strategy, eligibility criteria, screening yield, study characteristics, and synthesized findings, but it lacks a formal abstract, explicit references section, and a true quality assessment/risk-of-bias component expected for an excellent PRISMA-style review."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human participants only",
+      "Any age and any visual function level",
+      "Psychophysical retinal sensitivity threshold testing using a **full-field stimulus**",
+      "Adaptive psychophysical methodology",
+      "Including:",
+      "full-field stimulus threshold testing",
+      "whole-field scotopic retinal sensitivity testing / SST-1",
+      "final scotopic threshold from dark adaptometry, **only when final scotopic threshold was actually reported**",
+      "Clinical and/or research settings",
+      "Empirical, theoretical, conceptual, or grey-literature reports with sufficient methodological detail"
+    ],
+    "exclusion_criteria": [
+      "Animal or non-human-only studies",
+      "Dark adaptometry without final scotopic threshold reported",
+      "Tests not using a full-field stimulus",
+      "Animal/biochemical-only settings",
+      "Records mentioning testing without useful methodological or reporting detail",
+      "Records published after 2022-09-30"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Because the available literature was methodologically heterogeneous and often incompletely reported in the accessible local-corpus records, this review is best interpreted as a **systematic scoping-style evidence synthesis** rather than a quantitative meta-analysis.",
+      "The local corpus supports several robust conclusions.",
+      "FST has been used primarily in severe retinal disease where conventional perimetry or acuity measures may be insufficient",
+      "The evidence base is clinically diverse but methodologically fragmented",
+      "Reporting completeness is uneven and often insufficient for direct methodological comparison",
+      "This incompleteness itself is one of the review\u2019s most important results.",
+      "This suggests broad adoption across severe retinal disease, but not yet a harmonized methodological standard.",
+      "The central review outcome was **variability in implementation and reporting**, and the local corpus strongly supports that concern.",
+      "In other words, incomplete methods reporting reduces both **comparability** and **clinical interpretability**.",
+      "This means the evidence base supports a need for standardization much more strongly than it supports any one preferred protocol.",
+      "The evidence up to 2022-09-30 supports the need for a standardized FST reporting framework in severe retinal disease."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17546,
+    "output_tokens": 834,
+    "total_tokens": 18380
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.1,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes an objective, findings summary, methodological rigor discussion, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, formal Results, Discussion/Conclusion, References, and PRISMA-style elements like search strategy, inclusion/exclusion criteria, data extraction, screening flow, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "children with gender and sexual minority (LGBTQ) parents",
+      "mental health problems compared to children with different-sex parents",
+      "studies published between 2015 and 2022",
+      "comparing mental health and psychological adjustment outcomes between children with LGBTQ parents and those with different-sex (heterosexual) parents"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence reveals a largely reassuring picture, though with some contested findings depending on the dataset and methodology used:",
+      "The majority of the included studies (4 out of 6) found no significant mental health disadvantages for children raised by LGBTQ parents compared to different-sex parents.",
+      "Two studies utilizing U.S. population-based datasets (Candidates 005 and 006) reported elevated mental health risks for children or adult offspring of same-sex parents.",
+      "Overall, the evidence suggests that when controlling for family stability and utilizing rigorous matched designs, children with LGBTQ parents demonstrate similar or sometimes better psychological adjustment compared to their peers with different-sex parents.",
+      "Disparities found in population-based surveys may reflect the impacts of stigma, family disruption, or measurement artifacts rather than the parental gender or sexual orientation itself."
+    ]
+  }
+}

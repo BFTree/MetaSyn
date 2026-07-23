@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22090,
+    "output_tokens": 992,
+    "total_tokens": 23082
+  },
+  "metrics": {
+    "retrieval_recall": 0.9444444444444444,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.6111111111111112,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4935,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5877,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Methods-Results-Discussion-Conclusion structure and lists included studies, but it lacks a formal abstract, detailed search strategy, screening flow, data-extraction and synthesis methods, quality assessment, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population (dental professionals, staff, students, patients in dental settings)",
+      "phenomenon of interest (empirical data on sexual misconduct, including prevalence, perpetrators, victims, and interventions)",
+      "study design (any empirical design)",
+      "language (English or translation available)",
+      "timeframe (January 2010 \u2013 October 2024)"
+    ],
+    "exclusion_criteria": [
+      "Studies that only addressed general workplace violence without specific sexual\u2011misconduct data, mixed health\u2011profession samples without dental\u2011specific outcomes, or non\u2011empirical pieces were excluded.",
+      "Reviews, protocols, editorials, and out\u2011of\u2011timeframe articles were also removed."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Sexual misconduct is a pervasive issue within dental care and education settings, with high prevalence rates and significant negative impacts on individuals and the profession.",
+      "The current evidence base is almost entirely descriptive.",
+      "Future research must prioritize the development and rigorous evaluation of multi\u2011level interventions that target individual, interpersonal, and organisational factors, and should include longitudinal outcome measures.",
+      "The available evidence indicates that sexual misconduct is a widespread and underacknowledged problem in dentistry, affecting dental hygienists, students, residents, practitioners, and academic researchers.",
+      "A critical gap remains in intervention research.",
+      "Despite clear calls for mandatory education, robust policies, and culture change, no study in this pool tested the effectiveness of a specific preventive or management intervention for sexual misconduct in dentistry."
+    ]
+  }
+}

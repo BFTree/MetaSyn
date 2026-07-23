@@ -1,0 +1,71 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 17793,
+    "output_tokens": 1679,
+    "total_tokens": 19472
+  },
+  "metrics": {
+    "retrieval_recall": 0.9545454545454546,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.7727272727272727,
+    "inclusion_precision": 0.85,
+    "inclusion_f1": 0.8095238095238095,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8095238095238095,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.5117,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4335,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, screening results, study characteristics, key findings, and included studies, but it lacks formal Introduction/Discussion/Conclusion sections, a detailed database search strategy, data extraction procedures, risk-of-bias/quality assessment, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs in participants aged 18\u201365",
+      "intervention with melatonin or a melatonin receptor agonist",
+      "comparison with placebo or control",
+      "reporting sleep\u2011wake cycle parameters (SOL, TST, WASO) and/or circadian rhythm measures (DLMO, phase shifts, sleep timing)",
+      "published 1980\u201101\u201101 to 2020\u201105\u201131",
+      "English language"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "animal/cell studies",
+      "neurological disorders",
+      "dementia",
+      "autism",
+      "intellectual disability",
+      "medical conditions affecting circadian rhythms",
+      "pregnancy/lactation",
+      "non\u2011primary study designs",
+      "commentaries",
+      "animal/in vitro studies",
+      "non\u2011RCT designs",
+      "protocols",
+      "post\u2011hoc analyses",
+      "light\u2011only interventions",
+      "populations outside psychiatric/healthy scope",
+      "age ranges <18 or >65",
+      "active comparators without placebo/control",
+      "non-English reports"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, melatonin and its receptor agonists exert consistent phase-advancing effects when given at appropriate circadian times (late afternoon/early evening).",
+      "In psychiatric populations, ramelteon augmented circadian entrainment and sleep quality, supporting the principle that targeting melatonin receptors may treat circadian dysfunction in schizophrenia and ADHD.",
+      "the included RCTs demonstrate that melatoninergic agents can modulate both the timing and quality of sleep in accordance with their chronobiotic properties."
+    ]
+  }
+}

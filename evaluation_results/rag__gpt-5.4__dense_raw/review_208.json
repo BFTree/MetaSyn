@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8144,
+    "output_tokens": 1282,
+    "total_tokens": 9426
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.21,
+    "inclusion_recall": 0.44642857142857145,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.617283950617284,
+    "screening_accuracy": 0.915,
+    "conditional_retention": 0.5952380952380952,
+    "post_retrieval_loss": 0.30357142857142855,
+    "inclusion_consistency": 0.7208,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3855,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organization around screening criteria, included/excluded evidence, themes, and limitations, but it lacks formal required sections such as Abstract, Introduction, Methods, Results, Discussion, Conclusion, and References, and it does not provide PRISMA-style details such as a full search strategy, data extraction process, or quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human studies in severe retinal disease/IRD populations that used a psychophysical full-field stimulus threshold/full-field sensitivity threshold type test with at least some methodological description, published no later than 2022-09-30"
+    ],
+    "exclusion_criteria": [
+      "I excluded reviews, surveys, protocols, editorials, non-human work, studies centered on other modalities where FST was only incidental, and clearly out-of-date-ineligible records after the end date."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across abstracts, FST is consistently presented as a practical measure for patients with poor fixation, nystagmus, very low vision, nonrecordable ERGs, or inability to complete standard perimetry.",
+      "Methodological variability is evident even from abstracts alone: studies used different stimulus sets (white only vs chromatic red/blue/white and sometimes green), different adaptation states (dark-adapted, light-adapted, or both), different purposes (baseline characterization, repeatability, structure-function correlation, trial endpoint development, treatment response), and different reporting units (for example dB, log cd/m\u00b2, log cd.s/m\u00b2, or explicit device-referenced zero points).",
+      "That pattern supports your review question: FST is widely used, but reporting is not consistently standardized at the abstract level.",
+      "A key limitation of this synthesis is that I only used the supplied titles and abstracts, so I cannot verify details that are typically found only in full text.",
+      "Bottom line: this candidate pool contains a substantial pre-October-2022 FST evidence base in severe retinal disease, but even at abstract level the literature shows clear heterogeneity in stimulus selection, adaptation conditions, device/platform use, mediation rules, and threshold reporting units, with frequent under-reporting of core procedural details needed for harmonized guidance."
+    ]
+  }
+}

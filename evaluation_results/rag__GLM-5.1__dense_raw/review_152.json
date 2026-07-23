@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15919,
+    "output_tokens": 1316,
+    "total_tokens": 17235
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.11666666666666667,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.208955223880597,
+    "screening_accuracy": 0.785,
+    "conditional_retention": 0.14,
+    "post_retrieval_loss": 0.7166666666666667,
+    "inclusion_consistency": 0.6279,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes some review-specific elements such as search parameters, eligibility criteria, screening results, and evidence synthesis, but it lacks a formal abstract, introduction, detailed methods, quality assessment, PRISMA-style screening flow, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies published between 2010-01-01 and 2017-06-30",
+      "investigating TSCC biomarker expression levels (specifically IL-6, IL-8, Prolactin in liquid samples; HIF-1\u03b1, SOX2, E-cadherin, vimentin, MALAT1, TP53, and NOTCH1 in tissue biopsies).",
+      "Inclusion required IHC tissue studies to encompass multivariate statistical analysis.",
+      "biomarkers validated in at least two independent studies across different sample sources (body fluids and tissue biopsies)",
+      "patients with tongue squamous cell carcinoma (TSCC) or oral tongue squamous cell carcinoma (OTSCC/mobile tongue SCC), reporting clinical significance and employing multivariate statistical analysis for tissue-based IHC assessments."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "SOX2 shows consistent clinical relevance across two independent cohorts as an independent prognostic marker for poor survival in TSCC.",
+      "Vimentin demonstrates consistent and robust independent prognostic value for poor survival outcomes in TSCC across two distinct studies.",
+      "E-cadherin loss is an independent predictor of metastasis (DNM) in early-stage TSCC, but its independent prognostic value for survival is not consistently validated across multivariate survival analyses in the pool.",
+      "HIF-1\u03b1 shows clinical relevance as an independent prognostic marker in a single eligible study; it lacks replication within this candidate pool.",
+      "SOX2 and Vimentin are the only tissue biomarkers consistently validated as independent prognostic factors for survival in TSCC across multiple independent cohorts using IHC and multivariate analysis.",
+      "HIF-1\u03b1 (tissue) and IL-6/IL-8 (saliva) show prognostic or diagnostic potential in single eligible studies but require further independent replication to establish consistency."
+    ]
+  }
+}

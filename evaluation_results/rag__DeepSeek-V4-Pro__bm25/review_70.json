@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11691,
+    "output_tokens": 1116,
+    "total_tokens": 12807
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.5244,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6212,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear sections for the review question, methods/search boundaries, screening results, study characteristics, outcomes, limitations, conclusion, and included articles, and it includes key meta-analysis elements such as eligibility criteria and screening rationale, but it lacks full PRISMA-level detail such as a reproducible database search strategy, explicit data extraction procedures, formal risk-of-bias assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary randomized controlled trials (RCTs) or controlled clinical trials (CCTs)",
+      "adults (\u226518\u202fyears) with morbid obesity (BMI\u202f\u2265\u202f40 or\u202f\u2265\u202f35 with comorbidities) undergoing any type of bariatric surgery",
+      "compared probiotic or synbiotic supplementation against placebo, usual care, or no intervention",
+      "reported relevant outcomes"
+    ],
+    "exclusion_criteria": [
+      "Studies that included other gastrointestinal procedures",
+      "used non\u2011placebo comparators without a probiotic\u2011alone arm",
+      "were published after the search deadline",
+      "not primary studies (e.g., systematic reviews, meta\u2011analyses, protocols, narrative reviews)",
+      "did not involve bariatric surgery patients",
+      "did not test probiotics",
+      "were published after the search end date"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence suggests that peri\u2011 and post\u2011operative probiotic supplementation may confer modest improvements in liver enzymes, triglycerides, weight loss, and vitamin B12 status, while being well tolerated.",
+      "However, the small number of studies and their methodological diversity warrant cautious interpretation.",
+      "Candidate 013 reported a significant decrease in AST with the probiotic/prebiotic blend compared to placebo.",
+      "Candidates 005, 013, and others assessed triglycerides; several showed significant within\u2011group or between\u2011group reductions favouring probiotics.",
+      "Candidates 002, 003, 007, and 013 noted greater weight loss or BMI reduction in probiotic groups, while others found no significant difference.",
+      "No serious adverse events were attributed to probiotics in any of the included studies."
+    ]
+  }
+}

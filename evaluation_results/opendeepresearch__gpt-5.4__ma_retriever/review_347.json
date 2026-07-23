@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30989,
+    "output_tokens": 1342,
+    "total_tokens": 32331
+  },
+  "metrics": {
+    "retrieval_recall": 0.92,
+    "retrieval_precision": 0.5609756097560976,
+    "inclusion_recall": 0.32,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.48484848484848486,
+    "screening_accuracy": 0.6341463414634146,
+    "conditional_retention": 0.34782608695652173,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.6598,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5623,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear review question, eligibility criteria, exact search queries, retrieval/deduplication, screening decisions, included/excluded studies, study characteristics, and structured synthesis, but it lacks a conventional abstract and fully developed PRISMA-style elements such as formal risk-of-bias/quality assessment and complete reference reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies were human primary studies in bipolar disorder that directly measured one or more of the following:",
+      "Basal intracellular free calcium concentration",
+      "Stimulated intracellular calcium responses",
+      "Calcium flux, mobilisation, or signalling responses",
+      "Calcium-mediated electrophysiological or imaging outcomes",
+      "Any eligible human cell type, including platelets, lymphocytes, fibroblasts, olfactory neuronal cells, and iPSC-derived cells, if directly measured in relation to bipolar disorder",
+      "Only studies published up to **2019-07-18** were eligible."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they:",
+      "Measured calcium only in blood, serum, plasma, cerebrospinal fluid, or other body fluids without intracellular cellular calcium outcomes",
+      "Focused only on calcium-related machinery or molecules, such as calcium channels, calcium-binding proteins, Ca\u00b2\u207a-ATPase, or TRPC7, without intracellular calcium outcome measures",
+      "Were animal or non-human studies",
+      "Were reviews, commentaries, or non-primary reports",
+      "Included bipolar participants only as a small unseparated subgroup such that bipolar-specific findings could not be meaningfully extracted"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included corpus supports a **recurrent signal of elevated intracellular calcium and/or exaggerated stimulated calcium responses in bipolar disorder**, especially in peripheral cells.",
+      "At the same time, not all studies were positive.",
+      "This indicates that the literature is **directionally consistent but not uniform**.",
+      "Taken together, the evidence suggests basal intracellular calcium elevation may be more prominent in **acute mood episodes** than in euthymia.",
+      "This repeated pattern supports an abnormality not just of resting calcium set-point, but of **cellular calcium mobilisation capacity**.",
+      "These findings fit with a broader hypothesis of altered intracellular calcium homeostasis rather than a disturbance restricted to one receptor system.",
+      "These findings suggest that at least some intracellular calcium abnormalities may be **more pronounced in bipolar disorder than in unipolar depression**, particularly in acute bipolar depression.",
+      "**No firm conclusion** can be drawn from the retained local corpus evidence regarding bipolar disorder versus schizophrenia for intracellular calcium outcomes."
+    ]
+  }
+}

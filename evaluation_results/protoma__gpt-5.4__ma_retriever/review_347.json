@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20889,
+    "output_tokens": 967,
+    "total_tokens": 21856
+  },
+  "metrics": {
+    "retrieval_recall": 0.84,
+    "retrieval_precision": 0.35,
+    "inclusion_recall": 0.32,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.48484848484848486,
+    "screening_accuracy": 0.7833333333333333,
+    "conditional_retention": 0.38095238095238093,
+    "post_retrieval_loss": 0.52,
+    "inclusion_consistency": 0.3602,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5997,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening summary, and synthesis plan, but it lacks a full references section and has some structural imperfections such as duplicated headings and limited detail on data extraction."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational human studies (e.g., case-control, cross-sectional, cohort) or baseline data from intervention studies that include individuals with bipolar disorder and at least one comparison group of healthy controls and/or, where relevant, unipolar depression or schizophrenia.",
+      "Participants are individuals diagnosed with bipolar disorder (including manic, depressive, mixed, or euthymic states), with diagnosis defined by standardized criteria such as DSM/ICD or clear clinical diagnostic assessment.",
+      "Studies measure intracellular calcium outcomes in peripheral blood cells, specifically basal free intracellular calcium ion concentrations in platelets and/or lymphocytes, and/or stimulated intracellular calcium responses to 5-HT or thrombin.",
+      "Studies report original quantitative data enabling comparison of calcium measures between bipolar disorder participants and comparator groups."
+    ],
+    "exclusion_criteria": [
+      "Studies that do not clearly separate bipolar disorder data from other psychiatric diagnoses or that lack a defined bipolar disorder diagnosis.",
+      "Studies without an appropriate comparator group relevant to the review question (healthy controls, or where applicable unipolar depression or schizophrenia).",
+      "Studies not assessing the prespecified outcomes, such as those not measuring basal or stimulated intracellular calcium concentrations in platelets or lymphocytes, or measuring calcium only in other tissues/cell types.",
+      "Reviews, meta-analyses, case reports/series, conference abstracts without full data, animal studies, in vitro-only studies, and duplicate publications from the same sample."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the studies did not report extractable numerical data in a sufficiently consistent form for meta-analysis.",
+      "Qualitatively, the available evidence suggests there may be abnormalities in intracellular calcium regulation in bipolar disorder, including possible elevations in basal [Ca2+] and altered responses to 5-HT or thrombin, but findings were variable across cell types, comparators, and mood states.",
+      "The main limitation of this review is the lack of usable quantitative reporting, which substantially restricts interpretation.",
+      "Overall, the current evidence is suggestive but insufficient to support firm conclusions."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7236,
+    "output_tokens": 1045,
+    "total_tokens": 8281
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5791,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7817,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized with clear Objective, Methods, Screening Results, Included Studies, Synthesis, Limitations, and Conclusions, and includes key review elements such as eligibility criteria, screening flow, and synthesis approach, but it lacks a formal abstract/introduction, detailed database search strategy, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population of individuals taking antipsychotics",
+      "pharmacogenetics-guided prescribing compared with standard care",
+      "reporting of clinical or economic outcomes"
+    ],
+    "exclusion_criteria": [
+      "Protocols, reviews, commentaries, letters, editorials, and studies where antipsychotics were not the primary medication were excluded.",
+      "articles published after that date were also excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Current primary evidence on pharmacogenetic testing for antipsychotic treatment is limited and conflicting.",
+      "While some studies suggest clinical and economic benefits, particularly in individuals with extreme CYP450 metabolizer phenotypes, a large pragmatic trial did not support routine testing.",
+      "Future research should focus on well-powered RCTs that pre\u2011specify genetically defined subgroups and include both clinical and economic endpoints.",
+      "Overall, the evidence suggests that PGx-guided antipsychotic prescribing may improve outcomes in genetically defined subgroups (e.g., CYP2D6 poor/ultrarapid metabolizers) but routine, unselected testing has not consistently demonstrated benefit."
+    ]
+  }
+}

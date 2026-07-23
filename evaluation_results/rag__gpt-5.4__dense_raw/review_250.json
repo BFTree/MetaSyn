@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11282,
+    "output_tokens": 1184,
+    "total_tokens": 12466
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.30952380952380953,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4727272727272727,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7222222222222222,
+    "post_retrieval_loss": 0.11904761904761904,
+    "inclusion_consistency": 0.7041,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4701,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, evidence, exclusion, and bottom-line sections, and it includes meta-analysis-relevant elements such as eligibility criteria and study categorization, but it lacks a full PRISMA-style structure with explicit methods, data extraction, synthesis, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary randomized controlled trials",
+      "Adults with unipolar major depressive disorder / treatment-resistant depression",
+      "Failure of at least two antidepressant trials",
+      "a clearly treatment-resistant/refractory adult MDD population at abstract level",
+      "\u226510 participants per arm",
+      "Treatments relevant to the review question (pharmacologic antidepressant-effect agents and neuromodulation)"
+    ],
+    "exclusion_criteria": [
+      "No bipolar depression or psychotic depression",
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "observational studies",
+      "case reports/series",
+      "economic analyses",
+      "biomarker-only papers",
+      "studies in bipolar/mixed depression",
+      "youth-only samples",
+      "studies limited to clearly special populations (eg, late-life-only) when that conflicted with the review criteria"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Active neuromodulation vs sham generally showed better antidepressant response in several trials, especially for:",
+      "Intranasal esketamine trials consistently reported superiority over control in TRD.",
+      "Ketamine studies in TRD also generally suggested antidepressant benefit, including oral and IV forms.",
+      "In direct small head-to-head trials, ECT often appeared more effective than rTMS, though these comparisons were relatively small and not always sham-controlled.",
+      "From the fixed candidate pool, the title/abstract evidence most strongly supports inclusion of adult TRD RCTs of rTMS/TBS/SNT, ketamine, and esketamine, plus a small number of ECT-vs-rTMS direct comparisons.",
+      "The pool does not clearly supply eligible primary RCTs for every intervention named in the target review, especially aripiprazole and minocycline, once the full eligibility rules are applied at abstract level."
+    ]
+  }
+}

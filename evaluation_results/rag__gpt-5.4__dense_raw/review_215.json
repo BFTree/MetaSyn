@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22003,
+    "output_tokens": 1060,
+    "total_tokens": 23063
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.18,
+    "inclusion_recall": 0.3076923076923077,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.4067796610169492,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6153846153846154,
+    "inclusion_consistency": 0.5818,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5018,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear overall organization and includes eligibility criteria, screening decisions, included and excluded studies, and a synthesis of findings, but it lacks a conventional abstract, introduction, detailed methods, formal data extraction and quality assessment procedures, quantitative synthesis methods, references, and a distinct discussion/conclusion structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "population: pregnant women/newborns",
+      "exposure: PFOS biomarker concentration",
+      "outcome: birth weight or birth-weight change",
+      "study type/data needs: original primary studies with biomarker measurement in maternal blood during/around pregnancy, or infant cord/heel-stick samples, and reporting an association estimate or enough variance information",
+      "date window: 2013-01-01 to 2024-04-18"
+    ],
+    "exclusion_criteria": [
+      "exclusions: reviews, meta-analyses, protocols, non-primary papers, out-of-date articles, and studies clearly outside the review\u2019s analytic scope",
+      "Because the search window starts in 2013, earlier studies were excluded even if otherwise relevant.",
+      "I also excluded studies that did not report birth weight results for PFOS, focused only on other outcomes, were reviews/meta-analyses, or were published after 2024-04-18.",
+      "wrong outcome.",
+      "postnatal adiposity focus.",
+      "wrong primary outcome.",
+      "Several strong-looking PFOS/birth-weight studies were excluded solely because they were published before 2013, including candidates 001, 002, 014, and 019.",
+      "Reviews/meta-analyses or non-primary papers: 039, 058, 063, 070, 094, 102, 104, 148, 200.",
+      "Outside date range after 2024-04-18: 010, 017, 037, 051, 052, 056, 061, 064, 078, 083, 084, 085, 087, 090, 091, 092, 098, 101, and others from 2025/2026.",
+      "Wrong outcome/no birth weight result: many candidates focused on preterm birth, neurodevelopment, adiposity, AGD, hypertension, miscarriage, thyroid hormones, etc.",
+      "Likely overlapping ECHO pooled publication explicitly noted for exclusion from primary analysis: 030."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across eligible abstracts, the direction of association is more often inverse than null: higher maternal or cord PFOS concentrations are frequently associated with lower birth weight or lower birth-weight-for-gestational-age metrics, although several studies report weak, null, sex-specific, or cohort-specific findings.",
+      "Most informative findings from the abstracts point toward a small reduction in birth weight with higher PFOS exposure, but heterogeneity is evident.",
+      "The abstract-level evidence supports a generally inverse but heterogeneous association between higher PFOS biomarker concentrations and birth weight deficits, with some null studies and several sex-specific findings.",
+      "The strongest consistency appears in cohorts directly modeling birth weight or fetal-growth indices from maternal or cord PFOS biomarkers, but full-text review would still be needed to confirm exact meta-analytic extractability of the required beta and variance data."
+    ]
+  }
+}

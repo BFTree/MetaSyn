@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24716,
+    "output_tokens": 1295,
+    "total_tokens": 26011
+  },
+  "metrics": {
+    "retrieval_recall": 0.5490196078431373,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.43137254901960786,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.5866666666666666,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.7857142857142857,
+    "post_retrieval_loss": 0.11764705882352941,
+    "inclusion_consistency": 0.4641,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.366,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear overall flow with background/objective, evidence summary, limitations, and included studies, but it lacks several formal systematic review sections and PRISMA-style elements such as a structured abstract, detailed methods, explicit inclusion/exclusion criteria, quality assessment, and data synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "longitudinal, primary research studies",
+      "biological biomarkers\u2014derived from theories of neuroimaging (brain volumes), gastrointestinal factors, immunology, neurotrophic factors, neurotransmitters, hormones, and oxidative stress\u2014were prospectively assessed before the onset, relapse, or recurrence of major depressive disorder (MDD) diagnosed via clinical interview",
+      "publication dates up to June 2019"
+    ],
+    "exclusion_criteria": [
+      "outcome was not clearly defined as relapse/recurrence",
+      "the abstract did not explicitly report the prospective assessment of the biomarker before the outcome",
+      "any later publications"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The most consistent evidence arises from HPA\u2011axis challenge tests, particularly the DEX/CRH test, showing that persistent hyperactivity after treatment is a robust predictor of short\u2011term relapse.",
+      "Structural neuroimaging findings (smaller hippocampal volume, enlarged CSF spaces) also appear to carry prognostic value.",
+      "The few prospective studies of inflammatory and oxidative stress markers suggest a role in the onset of MDD, but the evidence base is smaller.",
+      "Notably, none of the included studies addressed gastrointestinal factors, neurotrophic factors (e.g., BDNF) as predictors of onset/relapse, or functional neuroimaging; the candidate pool contained no eligible study on these topics meeting the longitudinal prospective design."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18089,
+    "output_tokens": 1219,
+    "total_tokens": 19308
+  },
+  "metrics": {
+    "retrieval_recall": 0.0,
+    "retrieval_precision": 0.0,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": null,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4819,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.536,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, methods, eligibility criteria, screening process, results, and discussion, but it lacks several standard sections such as an abstract, formal introduction, conclusion, references, detailed search strategy, quality assessment, and data synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: General population; studies across observational, MR, and RCT designs.",
+      "Exposure: Salt intake (or salt\u2011reduction intervention).",
+      "Comparison: Varying levels of salt exposure across study designs.",
+      "Outcomes: Blood pressure, cardiovascular diseases, cardiovascular deaths; also (for LLM evaluation) direction of effect, statistical significance, Convergency of Evidence (CoE), and Level of Convergency (LoC).",
+      "For MR studies: Title/abstract must contain \u201cMendelian randomization\u201d.",
+      "Included primary studies from the Cochrane Database of Systematic Reviews (CDSR) on salt\u2011reduction interventions in hypertensive populations were considered as the reference set (not directly part of this screening)."
+    ],
+    "exclusion_criteria": [
+      "Relations where the \u201csignificance\u201d field was \u201cnot found\u201d (i.e., only empirical evidence from study results).",
+      "Participant counts from MR studies (not directly applicable).",
+      "Reviews, meta\u2011analyses, systematic reviews, protocols, editorials, conference abstracts, study proposals, modelling studies without primary data, and out\u2011of\u2011date articles.",
+      "Studies not addressing the salt\u2013BP/CVD relationship.",
+      "Publications outside the date range 1971\u201101\u201101 to 2022\u201112\u201131.",
+      "Cochrane and other systematic reviews/meta\u2011analyses (e.g., Corpus ID 004, 041, 121, 145, 168, 190) \u2013 not primary studies.",
+      "Umbrella reviews, narrative reviews, or guideline articles (e.g., Corpus ID 009, 025, 040, 088, 106, 137, 160).",
+      "Protocols, proposals, or feasibility/pilot studies without definitive exposure\u2011outcome data (e.g., Corpus ID 014, 026, 061).",
+      "Commentaries, editorials, or conference abstracts",
+      "Primary studies that did not examine salt intake as the exposure or did not report blood pressure/cardiovascular outcomes.",
+      "Modelling or simulation studies (e.g., 194) that are not primary observational/RCT/MR designs.",
+      "Studies that, while investigating salt, did not present primary blood pressure or cardiovascular outcomes (e.g., the serial cross\u2011sectional study on salt\u2011strategy impacts [181] reported only salt intake and knowledge, not BP or CVD events)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After applying all inclusion and exclusion criteria, no primary-study article from the fixed candidate pool met the eligibility requirements.",
+      "All date-eligible records were either reviews, protocols, commentaries, or primary studies on topics unrelated to salt intake and blood pressure/cardiovascular outcomes.",
+      "Consequently, the absence of eligible primary studies is not unexpected; the LLM-based evidence triangulation will be evaluated on the separate set of 101 primary studies identified from the CDSR forest plots.",
+      "This screening confirms that the candidate pool does not need to contribute further primary evidence to the salt\u2013BP/CVD case study."
+    ]
+  }
+}

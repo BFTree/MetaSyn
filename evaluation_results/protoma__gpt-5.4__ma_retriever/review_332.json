@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29616,
+    "output_tokens": 1179,
+    "total_tokens": 30795
+  },
+  "metrics": {
+    "retrieval_recall": 0.4146341463414634,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.04878048780487805,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.08888888888888888,
+    "screening_accuracy": 0.8,
+    "conditional_retention": 0.11764705882352941,
+    "post_retrieval_loss": 0.36585365853658536,
+    "inclusion_consistency": 0.5906,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6062,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, plus meta-analysis elements such as search strategy, eligibility criteria, screening counts, and synthesis methods, but it lacks full references/PRISMA flow presentation and has some organizational redundancies and reporting inconsistencies."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies of human participants with laboratory-confirmed or clinically confirmed mpox (monkeypox) infection that report case counts or proportions by sex/gender, with data allowing identification of women, including cis women and/or trans women.",
+      "Observational epidemiologic study designs reporting primary data on mpox cases, such as surveillance reports, cross-sectional studies, cohort studies, case series, or outbreak investigations.",
+      "Studies conducted in any geographic setting or time period, provided they allow comparison or classification by period (pre-2022 vs 2022 onwards) and/or region (endemic vs nonendemic countries), either directly or through reported study context.",
+      "Studies reporting the outcome of interest as the proportion, number, or distribution of women among confirmed mpox cases, or providing sufficient sex/gender-disaggregated data to calculate this outcome."
+    ],
+    "exclusion_criteria": [
+      "Studies that do not include confirmed mpox cases, or that combine suspected/probable and confirmed cases without separate extractable data for confirmed cases.",
+      "Studies that do not report sex/gender-specific results, do not identify women as a subgroup, or pool women with other groups in a way that prevents extraction of the proportion of women among cases.",
+      "Non-primary research or non-eligible publication types, including reviews, editorials, commentaries, opinion pieces, protocols, and modeling studies without original case data.",
+      "Preclinical, animal, laboratory-only, or virologic studies without human case-level or population-level epidemiologic data relevant to the proportion of women among mpox cases."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 4 studies, with 2 contributing to the pooled comparison, the odds of women being represented among confirmed mpox cases did not differ clearly across the compared time periods and regions under the random-effects model (OR 1.253, 95% CI 0.962\u20131.632; I\u00b2=8.6%), although the fixed-effect estimate suggested a modest increase (OR 1.224, 95% CI 1.055\u20131.420).",
+      "Clinically, this pattern indicates that women\u2014including cis and trans women\u2014constitute a meaningful and persistent subgroup of mpox cases rather than an exceptional population confined to specific outbreaks or settings.",
+      "Accordingly, surveillance, testing, risk communication, and clinical assessment should remain explicitly gender-inclusive and should not rely on assumptions that mpox primarily affects men.",
+      "The main caveat is that the pooled estimate is based on few studies, with limited precision and likely inconsistent reporting of women, especially trans women, across datasets.",
+      "Overall, the pooled findings suggest a possible modest increase in the proportion of women among confirmed mpox cases in the index comparison, but the evidence is not definitive under the random-effects model."
+    ]
+  }
+}

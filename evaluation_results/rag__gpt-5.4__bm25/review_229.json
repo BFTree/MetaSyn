@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16420,
+    "output_tokens": 1389,
+    "total_tokens": 17809
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.4339,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5866,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening criteria, inclusion/exclusion decisions, evidence synthesis, limitations, conclusion, and included studies, but it lacks several formal systematic review sections such as an abstract, full introduction, detailed search strategy, quality assessment, PRISMA flow, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "hypertensive patients with CKD and resistant/refractory/uncontrolled hypertension",
+      "endovascular catheter-based radiofrequency renal denervation",
+      "baseline/pre-intervention values",
+      "office/ambulatory BP, renal function, procedural complications",
+      "original prospective level I/II studies",
+      "English, published after 2010-01-01 and up to 2022-11-15"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, case reports/series if not prospective level I/II, non-English, secondary hypertension other than CKD, major excluded comorbid populations, non-catheter or non-radiofrequency approaches, and studies outside date range."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "evidence is limited but supportive that catheter-based radiofrequency RDN in CKD patients with resistant hypertension can lower blood pressure and may preserve renal function over about 12 months, with no clear major safety concerns reported in the included abstracts.",
+      "The renal signal is promising but uncertain, because evidence is based on small uncontrolled cohorts.",
+      "radiofrequency catheter-based RDN may reduce office and ambulatory blood pressure in patients with stage 3-4 CKD and resistant hypertension without obvious short-term deterioration in renal function",
+      "There is also a possible signal that RDN may slow eGFR decline."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31931,
+    "output_tokens": 988,
+    "total_tokens": 32919
+  },
+  "metrics": {
+    "retrieval_recall": 0.25274725274725274,
+    "retrieval_precision": 0.40350877192982454,
+    "inclusion_recall": 0.07692307692307693,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.14285714285714288,
+    "screening_accuracy": 0.7192982456140351,
+    "conditional_retention": 0.30434782608695654,
+    "post_retrieval_loss": 0.17582417582417584,
+    "inclusion_consistency": 0.7211,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4927,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-like screening/findings sections, Limitations, Conclusion, included-study list, and References, and it includes meta-analysis-style elements such as search queries, eligibility criteria, screening decisions, and narrative synthesis, but it lacks a formal quality/risk-of-bias assessment and detailed data extraction or quantitative synthesis methods needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Postmortem brain samples",
+      "Measurement of neuroinflammatory markers",
+      "Comparison with matched psychiatrically and neurologically healthy controls"
+    ],
+    "exclusion_criteria": [
+      "Untargeted-only approaches such as microarray and shotgun proteomics unless a targeted confirmation was used",
+      "Virus/infection-focused studies",
+      "Reviews",
+      "Non-English papers",
+      "Conference abstracts",
+      "Studies outside the search end date of 2016-03-20"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The corpus supports a mixed but non-null inflammatory signal in schizophrenia brain tissue.",
+      "The strongest eligible evidence does **not** support uniform pan-brain inflammation across all schizophrenia cases.",
+      "Overall, the postmortem literature up to the search end date supports **heterogeneous, regionally patterned, and subgroup-concentrated neuroinflammation** in schizophrenia rather than a universal inflammatory phenotype.",
+      "The eligible local MetaSyn corpus does **not** support the claim that schizophrenia is characterized by uniform, diagnosis-wide cerebral inflammation across all postmortem cases.",
+      "It does support a more specific and, in my view, much stronger conclusion: schizophrenia includes a **reproducible inflammatory brain subtype**, centered particularly in prefrontal cortex, with elevated cytokine-related transcripts, IFITM/SERPINA3-associated immune signaling, activated microglia-like cells, and in some cases astrocytic reactivity.",
+      "My concrete judgment is that the postmortem evidence up to March 2016 is sufficient to reject the \u201cno brain inflammatory signal\u201d position, but insufficient to justify \u201cschizophrenia is broadly neuroinflammatory\u201d as a uniform disease-level statement.",
+      "The best-supported model is **heterogeneous neuroinflammation with a substantial high-inflammatory subgroup**, probably around 40% of cases in the key DLPFC transcript studies, with meaningful links to cortical inhibitory dysfunction."
+    ]
+  }
+}

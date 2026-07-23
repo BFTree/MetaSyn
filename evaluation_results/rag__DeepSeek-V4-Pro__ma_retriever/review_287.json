@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26260,
+    "output_tokens": 518,
+    "total_tokens": 26778
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.2222222222222222,
+    "inclusion_f1": 0.30769230769230765,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.4703,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5368,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear research question, methods, results, synthesis, and included-article list, but it lacks a formal abstract, introduction, discussion/conclusion, full references, quality assessment, detailed search strategy, screening flow, data extraction methods, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "any clinical trial/study",
+      "comparative design",
+      "prospective or retrospective",
+      "published in the last 13\u202fyears",
+      "explicitly reporting gingival phenotype (thin/thick)",
+      "addressing implant survival, MBL, peri\u2011implantitis, or related clinical parameters",
+      "Reviews were eligible only if they systematically addressed the topic with \u22651\u2011year follow\u2011up and MBL assessment."
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews",
+      "commentaries",
+      "case reports",
+      "in vitro/animal studies",
+      "studies not focusing on gingival phenotype"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "All included studies consistently demonstrated that a thin soft\u2011tissue phenotype was associated with greater MBL.",
+      "Across the identified evidence, a thin gingival phenotype (whether defined by mucosal thickness, keratinised tissue width, or soft\u2011tissue height) is consistently associated with greater marginal bone loss and a higher prevalence of peri\u2011implantitis.",
+      "The relationship with implant survival is less frequently reported, but where data exist, thin phenotypes show a trend toward higher failure or disease.",
+      "However, the heterogeneity in phenotype definitions and the small number of studies directly comparing thick versus thin phenotypes for survival rates limit the strength of the conclusions.",
+      "Well\u2011controlled long\u2011term comparative studies are still needed."
+    ]
+  }
+}

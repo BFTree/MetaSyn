@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9667,
+    "output_tokens": 1104,
+    "total_tokens": 10771
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.8084,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4681,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a research question, selection criteria, study characteristics, synthesis of findings, limitations, conclusion, and included studies, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods, quality assessment, PRISMA-style screening details, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published in English",
+      "involved undergraduate dental students at any year of study",
+      "directly compared TBL with any other teaching pedagogy",
+      "reported at least one outcome related to student satisfaction or academic performance"
+    ],
+    "exclusion_criteria": [
+      "Articles published after the search end date (2 May 2023)",
+      "non\u2011primary studies",
+      "those involving postgraduate, non\u2011dental, or pre\u2011dental populations"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Preliminary evidence from three undergraduate dental education studies suggests that TBL is associated with improved student satisfaction and higher academic achievement when compared with traditional lecture\u2011based teaching.",
+      "When compared with another active pedagogy (flipped classroom), TBL produces equivalent examination results.",
+      "However, the small number of studies, their methodological constraints, and the narrow geographical spread preclude firm conclusions.",
+      "Further rigorous, multi\u2011institutional comparative research is needed to determine TBL\u2019s place in undergraduate dental curricula."
+    ]
+  }
+}

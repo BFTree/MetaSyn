@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17368,
+    "output_tokens": 1032,
+    "total_tokens": 18400
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7635,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4775,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic screening summary, evidence synthesis, conclusion, and included studies list, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, References, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies that compare weight loss in obese patients with type 2 diabetes mellitus (T2DM) versus obese patients without T2DM following a very low calorie diet (VLCD; <800 kcal/day) or low-energy liquid-formula diet intervention.",
+      "controlled trials involving adult obese participants",
+      "utilizing a VLCD intervention",
+      "explicitly comparing weight change outcomes between patients with T2DM and non-diabetic controls"
+    ],
+    "exclusion_criteria": [
+      "Publication Type: Many candidates were systematic reviews, meta-analyses, narrative reviews, guidelines, protocols, or case reports, which do not meet the criteria for primary intervention trials.",
+      "Date: Numerous candidates were published after the search end date of 2015-12-31.",
+      "Population/Comparison: Most intervention trials either focused exclusively on patients with T2DM (without a non-T2DM control group) or focused on obese populations without stratifying or comparing results by T2DM status.",
+      "Intervention: Several trials utilized hypocaloric diets, macronutrient variations (e.g., low-carb vs low-fat), or bariatric surgery rather than a VLCD or low-energy liquid-formula total diet replacement."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence from the two included trials suggests that obese patients with type 2 diabetes mellitus achieve weight loss outcomes on a very-low-calorie diet (VLCD) that are comparable in magnitude to those achieved by obese patients without diabetes.",
+      "The study found \"near-identical weight change\" between the groups",
+      "Very-low-calorie diets are effective for substantial weight loss in obese patients with type 2 diabetes mellitus, resulting in overall weight reduction quantities similar to those observed in non-diabetic obese counterparts.",
+      "However, diabetic patients may experience a less favorable shift in body composition (less fat loss per unit of weight loss) compared to non-diabetic controls."
+    ]
+  }
+}

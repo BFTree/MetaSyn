@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 79,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18819,
+    "output_tokens": 931,
+    "total_tokens": 19750
+  },
+  "metrics": {
+    "retrieval_recall": 0.5222222222222223,
+    "retrieval_precision": 0.235,
+    "inclusion_recall": 0.05555555555555555,
+    "inclusion_precision": 0.45454545454545453,
+    "inclusion_f1": 0.099009900990099,
+    "screening_accuracy": 0.76,
+    "conditional_retention": 0.10638297872340426,
+    "post_retrieval_loss": 0.4666666666666667,
+    "inclusion_consistency": 0.4703,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.235,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear objective, screening/selection criteria, organized key findings, and an included-study list, but it lacks standard systematic review sections such as Abstract, Introduction, detailed Methods, Discussion, Conclusion, References, search strategy, data extraction procedures, quality assessment, and formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies from systematic reviews on WASH interventions for diarrhoeal disease and acute respiratory infections in LMICs",
+      "published in English or Spanish",
+      "Only studies whose abstracts explicitly provided data on women's engagement in the intervention or evaluated sex-disaggregated or women-specific impacts were included."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, protocols, editorials, commentaries, and studies not reporting on the specified gender-related outcomes were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Several included studies explicitly designed their interventions to engage women as primary beneficiaries or delivery agents:",
+      "Studies evaluated impacts on women primarily through behavior change metrics and sex-disaggregated health outcomes:",
+      "The integration of WASH with antenatal services in Malawi resulted in sustained maternal water treatment and improved handwashing technique among women (Candidate 030).",
+      "Intensive perinatal handwashing promotion in Bangladesh significantly increased maternal handwashing frequency (Candidate 054).",
+      "None of the included abstracts explicitly reported on the time burdens imposed on women by the WASH interventions or whether such burdens were compensated.",
+      "No included abstracts explicitly classified interventions using the WHO Gender Responsiveness Assessment Scale (ranging from gender unequal to gender transformative).",
+      "However, formal classification according to the WHO scale is absent from the abstracts, limiting the ability to definitively categorize them beyond \"gender aware.\""
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 135,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26733,
+    "output_tokens": 1303,
+    "total_tokens": 28036
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.05714285714285714,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.9714285714285714,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6794,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5819,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as a review question, exact search queries, eligibility criteria, screening decisions, synthesis rationale, limitations, conclusion, and sources, but it lacks a formal abstract and quality/risk-of-bias assessment needed for full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trial in mCRC",
+      "anti-EGFR antibody used alone or added to standard therapy",
+      "comparator was the same standard therapy without the anti-EGFR antibody",
+      "tumors assessed for BRAF mutation status",
+      "BRAF subgroup analyzed within a RAS wild-type population",
+      "follow-up data reported for OS or PFS",
+      "sufficient quantitative treatment-effect data for anti-EGFR benefit according to both BRAF and RAS mutation status"
+    ],
+    "exclusion_criteria": [
+      "did not provide enough quantitative treatment-effect information stratified by both BRAF and RAS status",
+      "were outside the date limit of 2014-07-31",
+      "were not randomized trials",
+      "did not match the anti-EGFR vs no-anti-EGFR comparison framework",
+      "were only review/meta-analysis records rather than primary trial reports"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No retrieved study met all prespecified inclusion criteria for final inclusion.",
+      "Accordingly, the answer to the review question, based strictly on the retrieved local corpus evidence, is that **the available evidence was insufficient for a valid meta-analysis and insufficient to establish BRAF V600E as a predictive biomarker of anti-EGFR benefit in RAS wild-type mCRC**."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27216,
+    "output_tokens": 1220,
+    "total_tokens": 28436
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.32558139534883723,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.8604651162790697,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.6165,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4841,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete, clear structure with abstract, introduction, methods, results/findings, synthesis, limitations, conclusion, included-study list, references, and strong meta-analysis elements such as search queries, eligibility criteria, screening decisions, and synthesis approach, but it lacks a formal quality/risk-of-bias assessment needed for an excellent PRISMA-level score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Hospitalized adult patients with sepsis or at risk for sepsis",
+      "Automated sepsis alerting integrated into the EHR",
+      "Comparator: usual care without automated alerting message",
+      "Outcomes included mortality and/or ICU/hospital LOS",
+      "Comparative study designs"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, case reports, non-sepsis interventions",
+      "Pediatric studies (<16 years)",
+      "Non-comparative studies",
+      "Studies outside publication window ending 2021-12-31",
+      "Studies where intervention was not truly automated sepsis alerting versus usual care"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The adult hospital evidence from the local MetaSyn corpus through 2021 does **not** support the expectation that automated sepsis alerts, by themselves, reliably improve mortality or length of stay.",
+      "Randomized trials in ICU and ward settings were negative, and ED alerts based on simple criteria generally improved process measures more than hard outcomes.",
+      "The more encouraging studies were not pure alert studies; they were **multicomponent sepsis response programs** in which automated recognition triggered standardized downstream action.",
+      "Hospitals should not assume that implementing an automated sepsis alert will improve mortality or LOS. The evidence indicates that benefit depends less on the alert\u2019s existence and more on its precision, its integration into workflow, and the strength of the response system that follows it."
+    ]
+  }
+}

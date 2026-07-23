@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7402,
+    "output_tokens": 3107,
+    "total_tokens": 10509
+  },
+  "metrics": {
+    "retrieval_recall": 0.9642857142857143,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.23529411764705882,
+    "screening_accuracy": 0.875,
+    "conditional_retention": 0.14814814814814814,
+    "post_retrieval_loss": 0.8214285714285714,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.666,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a clear aim, screening summary, narrative results, outcome-focused synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract/introduction, detailed search strategy, explicit inclusion/exclusion criteria, data extraction methods, quality assessment, and full PRISMA-style reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "Not a primary study: reviews, systematic reviews, protocols, editorials",
+      "Wrong comparison: ultrabrief ECT studied without a brief-pulse/conventional ECT comparator",
+      "Wrong intervention context: concurrent somatic co-intervention (e.g., ketamine), nonstandard daily ECT schedule, experimental nonconventional stimulus parameters, or nonhuman study",
+      "Insufficient fit to target outcomes/question: seizure-threshold-only papers, cognitive-only studies without useful depression efficacy outcomes, or studies not clearly in depressed adults meeting the operationalized-diagnosis/validated-scale framework from the abstract"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied abstracts, the **eligible comparative primary-study evidence consistently suggests that ultrabrief pulse ECT can be antidepressant-effective, but brief-pulse ECT often shows either higher remission or faster remission, especially in right unilateral and bitemporal comparisons**.",
+      "Evidence for **response rates** is more mixed, with some studies finding similar response despite lower/slower remission for ultrabrief ECT.",
+      "From abstracts alone, there is **little to no usable direct comparative evidence on relapse rates or switching rates**.",
+      "**Interpretation:** remission may be somewhat less robust with ultrabrief ECT, especially without compensatory dosing strategies.",
+      "This implies ultrabrief ECT may still achieve meaningful acute symptom improvement even if full remission is less frequent or slower in some protocols.",
+      "Where reported, **brief pulse often appears faster**:",
+      "From the included abstracts, **usable direct ultrabrief-vs-brief comparative relapse data were not available**.",
+      "From the included abstracts, **usable direct comparative switching-rate data were not available**.",
+      "**Ultrabrief pulse ECT is antidepressant-active in depressed adults**",
+      "But compared with brief-pulse/conventional ECT, **ultrabrief ECT may produce lower remission and/or slower remission**, especially in some right unilateral and bilateral protocols",
+      "**Response rates may be broadly similar** in some high-dose right unilateral comparisons",
+      "**Direct evidence on relapse and switching is sparse or absent at abstract level**"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 265,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12415,
+    "output_tokens": 860,
+    "total_tokens": 13275
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.8095238095238095,
+    "inclusion_precision": 0.7083333333333334,
+    "inclusion_f1": 0.7555555555555556,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.9444444444444444,
+    "post_retrieval_loss": 0.047619047619047616,
+    "inclusion_consistency": 0.4654,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.388,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, screening criteria, synthesis narrative, and included studies list, but it lacks major required sections such as abstract, introduction, detailed methods/search strategy, quality assessment, formal results, discussion/conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human subjects (healthy or psychiatric patients)",
+      "administration of a listed psychoplastogen",
+      "comparison with baseline or placebo/control",
+      "measurement of peripheral BDNF in serum or plasma"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, editorials, conference abstracts, animal studies, and studies that did not report BDNF outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Findings are mixed: some report no significant change in serum or plasma BDNF at 24\u202fh or 7\u202fdays (e.g., Candidates 001, 025, 196), whereas others observe increased BDNF at 2\u202fh and 24\u202fh post\u2011infusion in healthy volunteers (007) or after repeated infusions in depressed patients (006).",
+      "Across all psychoplastogens, there is substantial heterogeneity in direction, timing, and magnitude of BDNF changes.",
+      "Positive signals appear more often with ketamine (especially repeated administration) and with low\u2011dose LSD, while many studies of classical psychedelics at full doses fail to detect a BDNF rise.",
+      "Overall, the available primary data do not yet support a simple, uniform biomarker role for peripheral BDNF as a proxy of rapid neuroplasticity induced by psychoplastogens."
+    ]
+  }
+}

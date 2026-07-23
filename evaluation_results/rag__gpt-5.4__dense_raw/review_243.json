@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20739,
+    "output_tokens": 1201,
+    "total_tokens": 21940
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.7136,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5613,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes eligibility criteria, screening decisions, evidence synthesis, limitations, conclusions, and a list of included studies, but it lacks a conventional abstract and introduction, detailed search and data-extraction methods, quality assessment, quantitative synthesis procedures, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human studies in psychiatric illness",
+      "administering one or more doses of MDMA together with psychotherapy",
+      "with original data in a peer-reviewed journal",
+      "and using a control condition for the comparison of MDMA-assisted psychotherapy safety/side effects"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "commentaries",
+      "pooled analyses without primary randomization data",
+      "secondary analyses that did not primarily provide trial-level safety comparisons of MDMA vs control for the target question",
+      "conference-like/protocol material",
+      "animal studies",
+      "healthy-volunteer/non-psychiatric studies",
+      "and open-label/uncontrolled studies",
+      "Reviews/commentaries/systematic reviews and non-original articles were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included abstracts, the safety signal is consistently favorable at the abstract level.",
+      "Several studies explicitly report no drug-related serious adverse events or no serious treatment-emergent adverse events.",
+      "The larger phase 3 PTSD trials report that MDMA-assisted therapy was generally well tolerated, with no deaths and no serious TEAEs in one confirmatory trial, and no signal for abuse potential, suicidality, or QT prolongation in the earlier phase 3 study.",
+      "From the supplied abstracts, MDMA-assisted psychotherapy appears to have a broadly acceptable short-term safety profile versus placebo/control in controlled psychiatric trials, especially in PTSD.",
+      "Serious drug-related adverse events are uncommon in the included abstracts, and larger phase 3 PTSD studies report good tolerability without major emergent safety concerns such as serious TEAEs, suicidality, or QT prolongation.",
+      "So the qualitative direction is consistent, but a quantitative adverse-event synthesis would require full texts or supplementary materials.",
+      "Using only the supplied candidate pool and title/abstract screening, the eligible randomized primary-trial evidence suggests that MDMA-assisted psychotherapy has a generally favorable short-term safety profile compared with control conditions across studied psychiatric indications, with the clearest support in PTSD.",
+      "Serious adverse events appear rare in the included abstracts, and tolerability is repeatedly described as acceptable.",
+      "The evidence for detailed side-effect timing and frequency is incomplete at abstract level, so conclusions about exact adverse-event rates across session, 7-day post-session, and full-treatment windows remain limited."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16401,
+    "output_tokens": 1596,
+    "total_tokens": 17997
+  },
+  "metrics": {
+    "retrieval_recall": 0.43902439024390244,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.12195121951219512,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.17857142857142858,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.2777777777777778,
+    "post_retrieval_loss": 0.3170731707317073,
+    "inclusion_consistency": 0.5817,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6237,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear narrative flow with screening outcomes, synthesis, limitations, included studies, and conclusions, but lacks formal abstract, introduction, methods, detailed search strategy, eligibility criteria, data extraction and quality assessment, quantitative synthesis, discussion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Published till January 04, 2022",
+      "primary studies with confirmed/probable human mpox cases and explicit sex distribution including women",
+      "Included primary studies were those that, from title/abstract alone, appear to report confirmed/probable mpox cases with sex distribution that includes women or allows the female proportion to be derived",
+      "global surveillance datasets",
+      "endemic-country surveillance/case series with both males and females",
+      "outbreak cohorts with explicit female counts or percentages"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, case reports, male-only cohorts, and studies that don\u2019t let us identify women among confirmed/probable mpox cases",
+      "reviews, protocols, guidance/editorials, modeling-only studies, vaccine/immunology/lab-only papers without usable patient sex distribution, case reports, and studies restricted to male cases",
+      "all cases were male",
+      "only MSM/male cohorts were enrolled",
+      "sex distribution was absent or unusable",
+      "study was a case report or focused only on a special subgroup not representing general mpox cases unless still clearly a cohort of confirmed cases with usable female counts",
+      "male-only cohorts such as Zhejiang, Changsha, Chengdu, many 2022 Europe/China outbreak series, and MSM-only vaccine/risk studies",
+      "reviews, protocols, editorials, case reports, and special-population papers without general sex distribution or without usable female counts"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The candidate pool supports a clear pattern: women constituted a minority of reported mpox cases in the 2022 multinational clade IIb outbreak in nonendemic settings, while a much larger share of cases were women in endemic African settings and in newer clade I outbreaks.",
+      "There is also heterogeneity within \u201c2022 onwards.\u201d",
+      "Nonendemic countries during the clade IIb outbreak show very low female proportions, whereas endemic or newly affected African countries during clade I/Ib outbreaks show female proportions around one-third to one-half.",
+      "That geographic and clade-linked heterogeneity is important and directly answers the review question better than a single pooled statement would.",
+      "Overall, the evidence in this candidate pool supports two robust conclusions: women were a small minority of mpox cases in the 2022 nonendemic clade IIb outbreak, but they represented a much larger proportion of cases in endemic African settings and later clade I/Ib outbreaks.",
+      "The strongest contrast is geographic: nonendemic 2022 outbreak studies are typically around 1-7% women, while endemic/new African outbreak studies commonly range from about 29% to 59% women."
+    ]
+  }
+}

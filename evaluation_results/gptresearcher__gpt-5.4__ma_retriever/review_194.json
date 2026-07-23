@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18456,
+    "output_tokens": 891,
+    "total_tokens": 19347
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.08333333333333333,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9666666666666667,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.6734,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4397,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes search strategy, screening criteria, results, interpretation, limitations, conclusion, included studies, and references, but it lacks a formal abstract and does not provide full PRISMA-level details such as a documented data extraction process, risk-of-bias/quality assessment, or explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies on **color fundus photography**",
+      "AI / deep learning methods",
+      "Reported **diagnostic accuracy** (e.g., sensitivity, specificity, AUROC/AUC)",
+      "Had a clearly described **reference standard** and dataset details",
+      "Appeared to be peer-reviewed journal articles",
+      "Sufficient information for performance extraction"
+    ],
+    "exclusion_criteria": [
+      "Reviews, systematic reviews, meta-analyses",
+      "Studies after the search end date (2022-05-05)",
+      "Studies without relevant fundus-photo PM detection performance",
+      "Studies where the provided corpus summary did not support the inclusion criteria"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local corpus supports the conclusion that **AI-based detection of pathological myopia from color fundus images performs very well in both internal and external validation settings**.",
+      "The evidence is strongest for **screening-level identification** of pathological myopia, with AUCs frequently approaching **0.99**.",
+      "However, lesion-specific performance is not uniform, and **CNV remains a major weak point**.",
+      "The field is promising and likely clinically useful for triage, but broader deployment should wait for further standardization, prospective validation, and better lesion-level reliability.",
+      "Across the fundus-photo literature, deep learning systems consistently achieved very strong discrimination for pathological myopia / myopic maculopathy.",
+      "This is notable because it shows strong performance not just in internal testing but also across hospitals.",
+      "This supports transportability beyond a single site.",
+      "AI was not only accurate relative to reference standards, but in some studies it performed comparably to or better than ophthalmologists.",
+      "Screening-level performance is strong, but lesion-level performance varies substantially.",
+      "Thus, the best current use case is **screening / triage**, not definitive subtype diagnosis."
+    ]
+  }
+}

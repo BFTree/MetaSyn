@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13049,
+    "output_tokens": 1326,
+    "total_tokens": 14375
+  },
+  "metrics": {
+    "retrieval_recall": 0.5604395604395604,
+    "retrieval_precision": 0.255,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.7647058823529411,
+    "post_retrieval_loss": 0.13186813186813187,
+    "inclusion_consistency": 0.5709,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5352,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening results, eligibility criteria, narrative synthesis, and a list of included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, data extraction process, quantitative synthesis/meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "only articles published in or before 2016 are eligible",
+      "employed postmortem brain samples from individuals with schizophrenia,",
+      "measured one or more neuroinflammatory markers (microglia, astrocytes, cytokines, complement, chemokines, adhesion molecules, arachidonic cascade markers, substance P, SERPINA3, IFITM, S100B, calprotectin, peripheral benzodiazepine receptors as a gliosis marker),",
+      "compared results with a psychiatrically and neurologically healthy control group,",
+      "were not reviews, conference abstracts, non\u2011English papers, or untargeted \u2011omics studies lacking targeted confirmation."
+    ],
+    "exclusion_criteria": [
+      "all candidate articles with a publication year of 2017 or later were excluded, as they fall outside the temporal window of the review.",
+      "reviews, conference abstracts, non\u2011English papers, or untargeted \u2011omics studies lacking targeted confirmation"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, some investigations found no overall diagnostic difference or even reduced microglial quinolinic acid content.",
+      "Results for GFAP (glial fibrillary acidic protein) and S100B are mixed.",
+      "Many studies show no overall astrogliosis in schizophrenia, while others describe layer-specific or region-specific reductions (e.g., dorsolateral prefrontal cortex, subgenual cingulate, corpus callosum).",
+      "A recurring theme is that neuroinflammatory changes are not uniformly present across all patients.",
+      "Overall, the postmortem literature supports the presence of cerebral inflammation in a substantial proportion of individuals with schizophrenia, characterized by microglial activation, astrocyte reactivity, and elevated cytokine/chemokine signalling.",
+      "The extent and nature of these changes vary by brain region, illness state, and patient subgroup."
+    ]
+  }
+}

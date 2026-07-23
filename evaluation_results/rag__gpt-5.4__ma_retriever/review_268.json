@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19207,
+    "output_tokens": 1230,
+    "total_tokens": 20437
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.7741935483870968,
+    "inclusion_f1": 0.8135593220338982,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.6174,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6644,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility criteria, screening summary, study characteristics, narrative synthesis, limitations, included studies, and a bottom line, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, risk-of-bias/quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double-blind randomized placebo-controlled trials,",
+      "At least 12 weeks in duration,",
+      "Use an enrichment/randomized-withdrawal design in which adults with MDD were first stabilized on the same antidepressant in an open-label phase and then randomized to continue that antidepressant or switch to placebo."
+    ],
+    "exclusion_criteria": [
+      "children/adolescents or explicitly older-only populations,",
+      "dual-diagnosis/special comorbidity populations,",
+      "continuation studies randomizing patients from the acute phase rather than stabilized maintenance-phase patients,",
+      "non-primary studies such as reviews, meta-analyses, protocols, editorials, post hoc analyses without primary trial reporting, and conference-style/preliminary reports."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible pool, the direction of effect is highly consistent: continuing the antidepressant after stabilization was almost always better than switching to placebo for preventing relapse or recurrence.",
+      "Observed placebo relapse/recurrence rates were commonly substantial, often around one-quarter to one-half over roughly 6 to 12 months, while active-treatment rates were lower, often roughly half or less of placebo in the abstract-level reporting.",
+      "Acceptability and tolerability, at least from abstract-level data, were generally described as acceptable or similar between groups.",
+      "Eligible abstract-level evidence from the fixed pool supports maintenance antidepressant treatment over placebo in adults with stabilized MDD, with broadly consistent relapse-prevention benefit across many antidepressants.",
+      "The evidence base is substantial but heavily enriched by randomized-withdrawal designs, so the estimated magnitude of benefit should be interpreted with that design feature in mind."
+    ]
+  }
+}

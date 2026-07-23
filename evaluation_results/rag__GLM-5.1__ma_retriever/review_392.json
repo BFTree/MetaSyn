@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13925,
+    "output_tokens": 818,
+    "total_tokens": 14743
+  },
+  "metrics": {
+    "retrieval_recall": 0.14285714285714285,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.5744,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4477,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes an objective, eligibility criteria, screening/exclusion summary, and conclusion, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods, results, discussion, references, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies (observational, Mendelian randomization [MR], and randomized controlled trials [RCTs]) investigating the relationship between salt intake and blood pressure (BP) or cardiovascular diseases/deaths (CVD).",
+      "The search window was restricted to studies published between 1971 and 2022, and MR studies were required to explicitly contain the phrase \u201cMendelian randomization\u201d in their title or abstract.",
+      "Only primary studies providing direct empirical evidence (statistical significance found) on the specified exposure-outcome pair for general or hypertensive populations were eligible"
+    ],
+    "exclusion_criteria": [
+      "reviews, modelling studies, protocols, and surveys were excluded.",
+      "Publication Date Violations",
+      "Exposure Mismatch",
+      "Outcome Mismatch",
+      "Study Design Exclusions",
+      "Modelling Studies",
+      "Reviews and Meta-Analyses",
+      "Surveys/Knowledge Assessments",
+      "Mendelian Randomization Specific Criteria"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The fixed candidate pool did not contain any eligible primary studies meeting all the predefined criteria for the LLM evidence triangulation case study.",
+      "The pool was heavily skewed towards AI/LLM methodology papers published after 2022, and the clinical/epidemiological studies addressing salt intake and BP/CVD were either out of date, focused on alternative exposures/outcomes, or utilized non-eligible designs (modelling, reviews, surveys).",
+      "Consequently, no evidence synthesis of primary study triangulation could be performed from this specific set of records."
+    ]
+  }
+}

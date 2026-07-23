@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13649,
+    "output_tokens": 933,
+    "total_tokens": 14582
+  },
+  "metrics": {
+    "retrieval_recall": 0.3,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.7227,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4877,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, included study characteristics, evidence synthesis, limitations, and conclusion, but it lacks several required formal sections such as an abstract, introduction, discussion, references, detailed search strategy, PRISMA-style flow, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: adults (\u226518 years) with severe obesity (BMI \u2265 35 kg/m\u00b2).",
+      "Intervention: online, group-based behavior change interventions for weight management.",
+      "Comparator: any or none (waitlist, standard care, individual interventions, etc.).",
+      "Outcomes: weight loss, weight-related behavior change, and user perceptions of acceptability/usability.",
+      "Study type: primary evaluations (RCTs, non-randomized trials, pilot/feasibility studies with outcomes)."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, development-only papers, and studies without evaluation were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review found extremely limited evidence on online, group-based behavior change interventions specifically for adults with severe obesity.",
+      "The single eligible pilot trial suggests that a group-based telehealth education program is feasible and acceptable, with no significant advantage over individual education for weight loss.",
+      "High-quality randomized controlled trials with larger samples, clear BMI \u001b 35 kg/m\u00002 inclusion criteria, and robust online group components are urgently needed to inform practice.",
+      "The included pilot trial provides preliminary evidence that an online, group-based education intervention for adults with severe obesity and insulin-dependent type 2 diabetes is feasible and acceptable.",
+      "Both the group and individual formats supported weight loss and improved psychological outcomes, but the group format was not superior to individual education for weight loss."
+    ]
+  }
+}

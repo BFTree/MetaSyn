@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32659,
+    "output_tokens": 961,
+    "total_tokens": 33620
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.0967741935483871,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.9354838709677419,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4623,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5112,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes core systematic review/meta-analysis elements such as a clear review question, methods, search queries, eligibility criteria, screening results, included/excluded studies, synthesis feasibility, limitations, conclusion, and references, but it lacks a formal abstract and does not include a completed quality/risk-of-bias assessment needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective primary study",
+      "Adult cancer population (>14 years)",
+      "Indwelling CVC defined as implantable port or external catheter",
+      "Catheter insertion site defined in the study",
+      "Some or all patients received heparin or warfarin prophylaxis at a clearly specified dose",
+      "Comparator of no prophylaxis or standard care without anticoagulation",
+      "Outcomes relevant to VTE and/or bleeding",
+      "English-language publication between 1980 and 2005"
+    ],
+    "exclusion_criteria": [
+      "Not prospective",
+      "No comparison group without prophylaxis",
+      "Not restricted to adult cancer patients with eligible CVCs",
+      "Intervention not minidose warfarin or low-dose LMWH prophylaxis",
+      "Published outside 1980\u20132005",
+      "Non-English",
+      "Not a primary study",
+      "Did not report relevant thrombotic or bleeding outcomes"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "That included study found no significant reduction in catheter thrombosis, venous thrombosis, or catheter survival outcomes with minidose warfarin.",
+      "No eligible prospective low-dose LMWH study was identified in the local corpus.",
+      "The corpus-restricted evidence therefore does not demonstrate clear benefit of routine primary thromboprophylaxis with minidose warfarin in this setting, and it provides insufficient evidence to determine the role of low-dose LMWH."
+    ]
+  }
+}

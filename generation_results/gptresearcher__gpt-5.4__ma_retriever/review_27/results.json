@@ -1,0 +1,93 @@
+{
+  "review_id": 27,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    4605,
+    4608,
+    4610,
+    4616,
+    70339,
+    70332,
+    70330,
+    4615,
+    4609
+  ],
+  "retrieved_article_ids": [
+    70339,
+    4610,
+    70180,
+    70325,
+    70332,
+    4605,
+    4616,
+    4609,
+    4615,
+    70330,
+    70283,
+    4608,
+    4613,
+    40422,
+    8402,
+    70263,
+    70265,
+    70182,
+    4614,
+    70271,
+    70317,
+    70237,
+    4611,
+    70713,
+    4612,
+    70287,
+    4607,
+    70270,
+    70301,
+    70307,
+    108644,
+    108728,
+    19659,
+    18886,
+    70214,
+    70248
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 17,
+    "input_tokens": 207636,
+    "output_tokens": 12507,
+    "total_tokens": 220143,
+    "by_stage": {
+      "conduct_research": {
+        "calls": 16,
+        "input_tokens": 177107,
+        "output_tokens": 6613,
+        "total_tokens": 183720
+      },
+      "write_report": {
+        "calls": 1,
+        "input_tokens": 30529,
+        "output_tokens": 5894,
+        "total_tokens": 36423
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 36,
+    "retrieved_unique": 36,
+    "included_count": 9,
+    "included_unique": 9,
+    "search_calls": 13,
+    "unique_search_queries": 7,
+    "retrieved_instances": 260,
+    "duplicate_exposures": 224,
+    "fetch_calls": 0,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 0,
+    "source_review_ids_removed_count": 1,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

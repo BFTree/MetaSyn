@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21131,
+    "output_tokens": 1010,
+    "total_tokens": 22141
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8727272727272727,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.5905,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6036,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized into screening criteria, evidence synthesis by cancer type, and an included-study list, but it lacks several standard review sections such as a formal abstract, introduction, discussion/conclusion, detailed search strategy, data extraction, and quality assessment, so it is good but not fully complete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational studies (cohort, case-control, nested case-control, or case-cohort)",
+      "assessing the association between bisphosphonate use (at least one prescription) and the incidence of cancer (overall or specific types) compared to non-users",
+      "reporting effect estimates with 95% CIs"
+    ],
+    "exclusion_criteria": [
+      "Studies published after the search end date (2019-12-07)",
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "in vitro/animal studies",
+      "cross-sectional studies",
+      "comments/letters",
+      "case reports",
+      "studies lacking sufficient data or examining outcomes other than cancer incidence (e.g., mortality, survival, metastases, osteonecrosis, fractures, adverse events)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Studies reporting on overall cancer risk present conflicting results.",
+      "Evidence regarding breast cancer risk suggests a potential protective effect or no association.",
+      "The association with CRC is widely studied but remains heterogeneous.",
+      "Data consistently points toward a protective effect for endometrial cancer.",
+      "Results for upper gastrointestinal cancers are mixed and often stratified by cancer subtype and bisphosphonate type.",
+      "Several studies evaluated duration, suggesting that longer use (\u22651-3 years) might confer protective effects for CRC (Candidate 013, Candidate 025) and endometrial cancer (Candidate 023), though this was not consistently observed (Candidate 002, Candidate 004)."
+    ]
+  }
+}

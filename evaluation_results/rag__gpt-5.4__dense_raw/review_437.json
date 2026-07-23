@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11187,
+    "output_tokens": 1003,
+    "total_tokens": 12190
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5553,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5614,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, eligibility decisions, evidence synthesis, study notes, and a bottom-line conclusion, but it lacks several standard systematic review sections such as Abstract, Introduction, detailed Methods, quality assessment, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "clinicians diagnosing skin lesions / skin cancer",
+      "deep learning-based AI assistance",
+      "the same clinicians/tasks without AI assistance",
+      "diagnosis from skin lesion images or in-person skin lesion assessment"
+    ],
+    "exclusion_criteria": [
+      "studies that only compare clinicians vs AI, non-deep-learning methods, pathology-slide-only tasks, reviews/editorials/case reports, and studies outside the target review scope",
+      "reviews, narrative reviews, protocols, editorials, or perspectives",
+      "not skin cancer",
+      "AI-vs-clinician comparisons only, with no clinician with-AI vs without-AI comparison",
+      "stand-alone model development/validation without clinician assistance",
+      "outside the search window or otherwise not aligned with the target review"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included abstracts, the direction of effect is **consistently favorable to AI assistance**, with several recurring themes:",
+      "All four included abstracts report improved clinician performance with AI support, whether in real-world or reader-study settings.",
+      "Benefit appears greatest for less-experienced clinicians",
+      "Experts may benefit less",
+      "AI can increase differential-diagnosis breadth",
+      "AI can also mislead clinicians when wrong",
+      "Based on title/abstract screening alone, the available primary-study evidence supports the conclusion that **deep learning-based AI assistance probably improves clinician accuracy in skin cancer diagnosis compared with unaided diagnosis**, especially among **less-experienced clinicians**.",
+      "However, the evidence base is **small**, and the abstracts do not consistently provide the sensitivity/specificity data needed for a robust quantitative synthesis from abstract alone.",
+      "Collectively, they suggest that **deep learning-based AI assistance improves clinician skin-cancer diagnostic accuracy versus unaided clinicians**, with the **largest gains in less-experienced clinicians**, but with an important caveat that **incorrect AI can mislead users**."
+    ]
+  }
+}

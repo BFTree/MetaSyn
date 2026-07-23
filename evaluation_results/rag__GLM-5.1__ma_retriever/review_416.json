@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9242,
+    "output_tokens": 1385,
+    "total_tokens": 10627
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.22222222222222224,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.5449,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4402,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, screening summary, eligibility rationale, evidence synthesis, conclusions, and included studies, but it lacks formal Abstract, Introduction, detailed Methods, quality assessment, data extraction procedures, and full References needed for higher PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "preconception or antenatal lifestyle interventions (exercise, diet, physical activity) in pregnant women with obesity",
+      "prevent or reduce offspring cardiac remodelling and improve related cardiovascular health parameters compared to standard care",
+      "primary research studies published between 2023-01-01 and 2023-08-31"
+    ],
+    "exclusion_criteria": [
+      "Articles published outside the 2023-01-01 to 2023-08-31 window were excluded (e.g., landmark UPBEAT and LIFEstyle follow-up studies from 2018, 2021, and 2022).",
+      "Reviews, meta-analyses, scientific statements, protocols, and opinion papers were excluded.",
+      "Studies focusing solely on maternal outcomes, adiposity, or gestational weight gain without assessing offspring cardiac structure/function or related cardiovascular parameters were excluded.",
+      "Studies not specifically involving women with overweight/obesity or their offspring were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Within the 2023 publication window, there is limited primary evidence regarding the impact of maternal lifestyle interventions on offspring cardiac remodelling.",
+      "Preconception interventions may have a lasting positive impact on offspring cardiac structure and function (specifically ejection fraction and septal thickness/shape) at school age, potentially reversing or preventing the concentric remodelling associated with maternal obesity.",
+      "Antenatal exercise interventions did not demonstrate a significant overall effect on newborn cardiac function, though subgroup findings hint at potential benefits for fractional shortening in obese/overweight cohorts; adherence and sample size appear to be significant barriers to efficacy in this context."
+    ]
+  }
+}

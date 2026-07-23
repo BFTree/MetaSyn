@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 332,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13353,
+    "output_tokens": 1551,
+    "total_tokens": 14904
+  },
+  "metrics": {
+    "retrieval_recall": 0.5853658536585366,
+    "retrieval_precision": 0.12,
+    "inclusion_recall": 0.04878048780487805,
+    "inclusion_precision": 0.125,
+    "inclusion_f1": 0.07017543859649124,
+    "screening_accuracy": 0.83,
+    "conditional_retention": 0.08333333333333333,
+    "post_retrieval_loss": 0.5365853658536586,
+    "inclusion_consistency": 0.7357,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6656,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening summary, inclusion/exclusion criteria, synthesis, and caveats, but it lacks the standard full review structure (formal abstract, introduction, methods, results, discussion, conclusion, and references) and does not present a detailed PRISMA-style search or quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies of confirmed mpox cases",
+      "Human studies",
+      "English",
+      "Reported sex distribution allowing estimation of women among cases"
+    ],
+    "exclusion_criteria": [
+      "Reviews/systematic reviews/narrative reviews/editorials/protocols",
+      "Case reports",
+      "Qualitative studies",
+      "Studies restricted to men or effectively male-only case series",
+      "Studies of suspected cases only, or with no usable sex distribution for confirmed cases",
+      "Studies centered on other outcomes without usable female proportion data"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The overall pattern from the included studies is consistent: women made up a very small minority of confirmed cases in most 2022-onward nonendemic outbreaks, but substantially higher proportions in endemic settings and in recent clade I/Ib outbreaks in central/eastern Africa.",
+      "The 2022-onward period then splits into two distinct epidemiologic patterns: very low female proportion in nonendemic clade IIb outbreaks, versus moderate to high female proportion in endemic/clade I-Ib African outbreaks.",
+      "So the review\u2019s two subgroup dimensions matter jointly; \u201c2022 onwards\u201d is heterogeneous and should not be interpreted without geography and outbreak context."
+    ]
+  }
+}

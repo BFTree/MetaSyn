@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12763,
+    "output_tokens": 1333,
+    "total_tokens": 14096
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7061,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4263,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening results, exclusion reasons, and an evidence synthesis statement, but it lacks several standard systematic review sections such as Abstract, Introduction, full Methods, Discussion, Conclusion, References, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human, original research",
+      "General adult population",
+      "Dietary salt or sodium intake assessed as the exposure",
+      "A health-related or relevant surrogate outcome",
+      "Acceptable sodium assessment, preferably 24-hour urine, food record, or 24-hour dietary recall",
+      "No disqualifying co-exposure or co-intervention",
+      "For cohort studies, the required duration and participant/event thresholds",
+      "Publication within the stated search period, 2019-09-30 through 2020-12-31"
+    ],
+    "exclusion_criteria": [
+      "Exclusion of cross-sectional studies from detailed appraisal",
+      "Exclusion of physiological or biomarker surrogate outcomes classified as Category VI",
+      "Exclusion of studies based on spot urine, short urine collections, FFQs, or sodium-to-potassium ratio alone where applicable"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Final included studies: 0.",
+      "No candidate met all stated criteria based on the supplied abstract information.",
+      "Because no study satisfied all inclusion criteria, there is no eligible primary-study evidence from this candidate pool on which to base a quantitative or qualitative synthesis of dietary salt/sodium intake and the specified outcomes.",
+      "Accordingly, the available pool does not support conclusions about the association between dietary sodium and blood pressure, cardiovascular disease, physical performance, renal outcomes, CKD, osteoporosis, or all-cause mortality under the stated eligibility criteria.",
+      "None were included.",
+      "No candidate article met the complete eligibility criteria."
+    ]
+  }
+}

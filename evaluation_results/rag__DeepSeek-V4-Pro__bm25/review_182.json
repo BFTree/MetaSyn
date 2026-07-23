@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15836,
+    "output_tokens": 871,
+    "total_tokens": 16707
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.45,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5625000000000001,
+    "screening_accuracy": 0.93,
+    "conditional_retention": 0.45,
+    "post_retrieval_loss": 0.55,
+    "inclusion_consistency": 0.8001,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4823,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, screening criteria, included study characteristics, synthesis of findings, conclusion, and a reference-like study list, but it lacks a formal abstract, detailed methods/search strategy, data extraction procedures, quantitative meta-analysis methods, and a structured quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised trials in humans (parallel or split-mouth) assessing interceptive extraction of primary canines on eruption of displaced permanent canines, including labially or centrally displaced canines.",
+      "Studies comparing additional extraction of the primary first molar with extraction of the canine alone were also eligible."
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, meta-analyses, non-randomised designs, case reports, editorials, and studies not reporting eruption outcomes were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The body of evidence consistently indicates that interceptive extraction of the primary canine increases the likelihood of spontaneous eruption and normalisation of position of palatally displaced permanent canines compared to no intervention.",
+      "Nevertheless, the consistency of the findings supports the use of primary canine extraction as an effective interceptive strategy.",
+      "There is moderate\u2011quality evidence from multiple randomised trials that extraction of the primary canine in children aged 10\u201313 years with palatally displaced canines improves the eruption rate and positional normalisation compared to no treatment."
+    ]
+  }
+}

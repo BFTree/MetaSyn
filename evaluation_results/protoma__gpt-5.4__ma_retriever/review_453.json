@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30921,
+    "output_tokens": 1026,
+    "total_tokens": 31947
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.18518518518518517,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.7777777777777777,
+    "screening_accuracy": 0.9259259259259259,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.6664,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6056,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review/meta-analysis structure with abstract, background, methods, search strategy, eligibility criteria, screening results, statistical synthesis, risk-of-bias section, discussion, conclusion, and included studies, but it falls short of excellent due to duplicate/awkward headings, lack of full reference details, and some inconsistencies in focus and reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational or interventional comparative studies with original human data (e.g., cohort, case-control, nested case-control, or randomized studies) evaluating statin exposure versus no statin exposure.",
+      "Studies including adults with chronic viral hepatitis, specifically chronic hepatitis B and/or chronic hepatitis C, with the hepatitis population reported separately or extractable.",
+      "Studies assessing statin use as the exposure of interest, including any statin class or subtype (e.g., lipophilic or hydrophilic statins), with a clearly defined non-statin user comparator group.",
+      "Studies reporting at least one prespecified outcome: incident hepatocellular carcinoma, all-cause mortality, cirrhosis, or cirrhosis decompensation."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, editorials, letters, conference abstracts without sufficient data, case reports/series, study protocols, animal studies, and in vitro studies.",
+      "Studies not focused on chronic hepatitis B or chronic hepatitis C populations, or mixed liver disease populations where HBV/HCV-specific data cannot be separated.",
+      "Studies without a clear comparison between statin-exposed and non-statin-exposed groups, or where statin exposure is combined with other interventions and the independent effect of statins cannot be determined.",
+      "Studies not reporting any of the outcomes of interest, duplicate/overlapping cohorts without unique data, or pediatric-only populations."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated that statin exposure was associated with a significantly lower risk of hepatocellular carcinoma (HCC) among individuals with chronic viral hepatitis compared with non-users.",
+      "Taken together, these findings support an association between statin use and reduced HCC risk in chronic hepatitis B/C populations, while acknowledging that the evidence remains observational and therefore cannot establish causality.",
+      "In sum, this review provides reasonably consistent evidence of an inverse association between statin exposure and HCC risk in chronic viral hepatitis, while underscoring that the causal magnitude and the broader liver-related benefits remain to be defined more rigorously.",
+      "These findings support considering statins as a potentially beneficial adjunct in this population rather than avoiding them because of liver disease alone."
+    ]
+  }
+}

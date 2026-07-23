@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6163,
+    "output_tokens": 1171,
+    "total_tokens": 7334
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.6469,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5658,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes the review question, eligibility criteria, screening outcome, included studies, evidence synthesis, and conclusion, but it lacks several formal systematic review sections and PRISMA-style elements such as an abstract, detailed search strategy, data extraction methods, quality assessment, references, and explicit meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies that evaluated clinical and/or economic outcomes after pharmacogenetics\u2011guided antipsychotic treatment against a treatment\u2011as\u2011usual comparator",
+      "populations undergoing antipsychotic therapy (including psychotic disorders)",
+      "no date, language, or age restrictions"
+    ],
+    "exclusion_criteria": [
+      "protocols, reviews, commentaries, letters, editorials, and studies where antipsychotics were not the primary prescribed medication",
+      "non\u2011comparative design (single\u2011arm, pre\u2011post, no control)",
+      "focus on antidepressants or other drug classes",
+      "pharmacogenetic association studies without a guided\u2011treatment comparison",
+      "modelling studies without empirical patient data",
+      "reviews",
+      "protocols",
+      "irrelevance to antipsychotic pharmacogenetic testing"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence is inconsistent but suggests that pharmacogenetic testing may improve safety (reduced side effects) and possibly symptom outcomes, particularly in individuals with extreme CYP metaboliser status or when using multigenetic panels.",
+      "Economic benefit may be concentrated in extreme metabolisers.",
+      "The largest rigorous trial (ID 8176) did not demonstrate a persistence benefit, highlighting that routine CYP testing does not uniformly improve all clinical endpoints.",
+      "The single multigenetic trial (ID 8174) was positive on symptomatic outcomes, but replication in broader populations is needed.",
+      "They indicate that pharmacogenetic\u2011guided antipsychotic prescribing can reduce side effects and, in some contexts, improve symptom response and reduce costs, but effects are not consistent across all settings and outcomes.",
+      "Further well\u2011powered trials are required, especially those examining multigenetic testing and long\u2011term functional and economic endpoints."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13847,
+    "output_tokens": 893,
+    "total_tokens": 14740
+  },
+  "metrics": {
+    "retrieval_recall": 0.7,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.7079,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4819,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes most core review sections plus eligibility criteria and screening results, but it lacks a formal abstract, detailed methods/search strategy, data extraction and quality assessment procedures, meta-analysis synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults (\u226518 years) with severe obesity (BMI \u2265 35 kg/m\u00b2).",
+      "Online, group-based interventions targeting obesity\u2011related behaviours (diet, physical activity).",
+      "Any comparator or no comparator (single\u2011arm studies were eligible for user\u2011perception outcomes).",
+      "Weight loss, weight\u2011related behaviour changes, and/or user perceptions of acceptability/usability.",
+      "Primary studies only; reviews, protocols, editorials, and conference abstracts were excluded."
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials, and conference abstracts were excluded.",
+      "not a primary study (reviews, meta\u2011analyses, protocols), population not severe obesity (BMI \u2265 35 not met or not specified), intervention not online group\u2011based, or not targeting weight\u2011related behaviours."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both studies demonstrate that online group\u2011based interventions can produce clinically significant weight loss in adults with severe obesity.",
+      "The two included RCTs suggest that such interventions can achieve weight loss comparable to other active delivery formats (in\u2011person or phone groups) and represent a potentially cost\u2011effective alternative.",
+      "Further research is needed with larger, more diverse samples, direct comparisons with usual care or waitlist controls, and systematic collection of user experience data to fully inform practice."
+    ]
+  }
+}

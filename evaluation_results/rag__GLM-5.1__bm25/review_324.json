@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14371,
+    "output_tokens": 960,
+    "total_tokens": 15331
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.8000000000000002,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8888888888888888,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.5271,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6211,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with an objective, screening summary, synthesized results by outcome type, conclusion, and included studies list, but it lacks several core systematic review/meta-analysis sections and PRISMA elements such as a formal abstract, introduction, detailed methods/search strategy, data extraction process, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies",
+      "individuals undergoing antipsychotic treatment",
+      "clinical outcomes (e.g., treatment response, adverse drug reactions, symptom severity) or economic outcomes (e.g., healthcare costs, resource utilization) compared to treatment as usual (TAU) without genetic testing"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, commentaries, editorials, or letters",
+      "antipsychotics were not the primary prescribed medication",
+      "they did not evaluate clinical/economic outcomes of a PGx-guided intervention compared to TAU"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "PGx-guided antipsychotic prescribing may improve clinical outcomes\u2014particularly side effect profiles and symptom response in specific subgroups (e.g., extreme metabolizers, poor responders)\u2014though routine single-gene testing for persistence in broad schizophrenia populations showed no benefit in one large trial.",
+      "Multigenetic and multi-omics approaches show promising clinical efficacy.",
+      "Economic analyses consistently indicate that PGx testing can be cost-effective or cost-saving, especially when targeting extreme metabolizers, clozapine initiation, or treatment-resistant populations."
+    ]
+  }
+}

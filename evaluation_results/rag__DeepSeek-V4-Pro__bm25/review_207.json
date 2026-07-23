@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11525,
+    "output_tokens": 1637,
+    "total_tokens": 13162
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.47058823529411764,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": 0.4743,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4312,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a research question, screening summary, study characteristics, findings, limitations, conclusion, and included-study list, but it lacks formal Abstract, Introduction, Methods, Discussion, References, detailed search strategy, data extraction process, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "posterior pole structures (macula, choroid, and optic disc)",
+      "menstrual cycle phases and the post\u2011menopausal period",
+      "healthy adult non\u2011pregnant women not using hormonal contraception or replacement therapy",
+      "healthy adult women with natural menstrual cycles or defined post\u2011menopausal status",
+      "used optical coherence tomography (OCT) or confocal scanning laser ophthalmoscopy to quantify posterior pole structures"
+    ],
+    "exclusion_criteria": [
+      "did not measure posterior pole structural outcomes (macular morphology, choroidal thickness, or optic disc characteristics) using clinical imaging modalities",
+      "studied pregnant or breastfeeding women",
+      "involved hormonal contraceptive or replacement therapy users",
+      "focused on systemic or ocular disease populations",
+      "investigated functional/haemodynamic endpoints",
+      "were reviews, protocols, editorials, or conference abstracts"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Current evidence suggests that menstrual cycle phase and menopausal status can affect posterior pole structural parameters, particularly choroidal thickness.",
+      "Researchers and clinicians should record cycle phase or menopausal status when acquiring and interpreting OCT\u2011derived metrics in women.",
+      "Larger, standardized, longitudinal studies that simultaneously evaluate all posterior pole structures with hormonal verification are needed.",
+      "Five studies (Candidates 001, 003, 005, 006, 026) consistently reported that subfoveal choroidal thickness decreases significantly in the mid\u2011luteal phase compared with the early follicular or ovulatory phase.",
+      "Two studies that included healthy controls found no statistically significant topographic change in the optic nerve head across the menstrual cycle in women without migraine or diabetes (Candidates 002, 008).",
+      "Candidate 017 found that post\u2011menopausal women had significantly thinner choroid and, before age adjustment, thinner inner macular sectors."
+    ]
+  }
+}

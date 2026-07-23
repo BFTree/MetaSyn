@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 30950,
+    "output_tokens": 883,
+    "total_tokens": 31833
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.16666666666666666,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.9047619047619048,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.5651,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4134,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results-style findings, Limitations, Conclusion, included-study list, References, search source, screening criteria, eligibility decisions, and a PRISMA-style summary, but it lacks a formal quality/risk-of-bias assessment and detailed quantitative synthesis methods needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adolescents/young adults aged 10\u201324 years",
+      "randomized controlled trial",
+      "primarily digital behavioral sleep intervention",
+      "active or passive control",
+      "validated sleep outcomes; mental health outcomes allowed as secondary"
+    ],
+    "exclusion_criteria": [
+      "pilot RCTs",
+      "quasi-experimental studies",
+      "physical-health comorbidity populations",
+      "non-primary digital interventions",
+      "implementation-only studies",
+      "protocols",
+      "reviews",
+      "studies lacking sufficient design relevance for inclusion"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Overall, digital CBT-I appears effective for improving adolescent insomnia outcomes, with mental health benefits that are present but less consistent and less durable than sleep effects.",
+      "My judgment is that digital CBT-I is already credible as a first-line scalable option for adolescent insomnia, but the broader claim that digital sleep interventions reliably improve depression remains premature because the mood signal is smaller, more context-dependent, and often short-term.",
+      "The local MetaSyn corpus supports a clear conclusion: **digital CBT-I is effective for improving insomnia and related sleep outcomes in adolescents and young adults, and it likely produces secondary mental health benefits primarily through improving insomnia itself**.",
+      "These studies show that digital delivery can achieve clinically relevant sleep gains, sometimes comparable to face-to-face formats on core insomnia outcomes.",
+      "However, the evidence for depression improvement is more conditional than the evidence for sleep improvement.",
+      "What is established is sleep benefit; what is promising is mood benefit downstream of sleep change, possibly strengthened when rumination is also reduced."
+    ]
+  }
+}

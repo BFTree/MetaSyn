@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12488,
+    "output_tokens": 1326,
+    "total_tokens": 13814
+  },
+  "metrics": {
+    "retrieval_recall": 0.39705882352941174,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.20588235294117646,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.2916666666666667,
+    "screening_accuracy": 0.895,
+    "conditional_retention": 0.5185185185185185,
+    "post_retrieval_loss": 0.19117647058823528,
+    "inclusion_consistency": 0.5856,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4589,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with distinct screening, synthesis, exclusion, and included-study sections, but it lacks full systematic-review structure such as abstract, introduction, detailed search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English full papers",
+      "primary studies",
+      "exposure to low-level RF fields **above 6 GHz**",
+      "exposure at or below the stated ICNIRP occupational limits (generally SAR `<=0.4 W/kg`, or for relevant local/in vitro power density up to about `100-200 W/m2` depending on frequency)",
+      "eligible designs including in vitro, in vivo, human experimental, and epidemiological radar studies above 6 GHz",
+      "non-therapeutic outcomes unless a specific bio-effect was reported"
+    ],
+    "exclusion_criteria": [
+      "below 6 GHz",
+      "reviews/systematic reviews/editorials/protocol-like papers",
+      "dosimetry or exposure-assessment papers without biological outcomes",
+      "therapeutic-focused studies",
+      "above the exposure limits stated for this review",
+      "published after the review search end date (`2019-12-31`)",
+      "not clearly primary studies of relevant biological/health effects",
+      "frequency below 6 GHz, e.g. 900 MHz, 1.9 GHz, 2.45 GHz;",
+      "publication after 2019;",
+      "review article rather than primary study;",
+      "exposure exceeding the review\u2019s limit thresholds;",
+      "therapeutic study without the relevant non-therapeutic bio-effect focus;",
+      "dosimetry/methods only, without biological outcomes."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only these candidates, the state of evidence is **mixed and inconclusive**.",
+      "The strongest pattern in the candidate set is that **many low-level millimeter-wave cell studies in the 40-60 GHz range do not detect adverse effects**, especially for genotoxicity and canonical stress-response markers.",
+      "However, this is offset by a smaller group of studies reporting adverse biological changes in other systems, particularly reproductive models, chromatin/membrane endpoints, and one radar-exposed worker study.",
+      "The pool does **not support a clean conclusion that low-level RF above 6 GHz consistently causes adverse biological or health effects**, but it also does **not justify dismissing possible effects across all endpoints**, especially reproductive and some cellular structural/genetic endpoints.",
+      "Based only on the supplied candidate pool and abstract-level screening, the eligible evidence base is mixed.",
+      "Most low-level 40-60 GHz cell studies are negative for genotoxic/stress endpoints, while a smaller subset reports adverse effects in reproductive, chromatin/membrane, motility, or occupational radar contexts.",
+      "The evidence here is not sufficient to conclude a consistent harmful effect across biological systems, but it also does not exclude biologically relevant effects for some endpoints."
+    ]
+  }
+}

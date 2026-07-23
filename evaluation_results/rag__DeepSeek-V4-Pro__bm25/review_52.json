@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14875,
+    "output_tokens": 956,
+    "total_tokens": 15831
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.2109,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Introduction, Methods, Results, Discussion, Conclusion, and included studies, but it lacks an abstract, full references, detailed search strategy, data extraction procedures, quality assessment, and PRISMA-style screening details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population (male patients with HFS)",
+      "Exposure (HFS potentially triggered by penile trauma)",
+      "Outcomes (aetiopathogenesis, clinical features, diagnosis, treatment)",
+      "Only primary studies (case reports, case series) reporting original data on HFS were eligible"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials, and non\u2011HFS articles were excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Treatment is empirical and multimodal; PDE5\u2011Is alone may be insufficient, but combination therapies (shockwave, physical therapy, biopsychosocial care) show promise.",
+      "The variability in management highlights the urgent need for prospective studies, standardized diagnostic criteria, and controlled trials to evaluate therapeutic efficacy.",
+      "HFS is a debilitating but poorly understood syndrome.",
+      "Current knowledge is derived from anecdotal reports that consistently point to a traumatic trigger and a characteristic symptom profile.",
+      "Multimodal, biopsychosocial management approaches appear beneficial, but high\u2011quality research is essential to establish evidence\u2011based guidelines."
+    ]
+  }
+}

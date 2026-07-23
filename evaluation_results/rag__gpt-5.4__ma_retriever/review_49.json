@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9730,
+    "output_tokens": 1822,
+    "total_tokens": 11552
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3636363636363636,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.7777777777777778,
+    "inclusion_consistency": 0.6698,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5493,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, synthesis, conclusion, and included-study sections, but it lacks most standard systematic review sections such as abstract, introduction, full methods, formal results, discussion, references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "male adults, clinically diagnosed, control group present, ED outcome explicit.",
+      "PTSD with male adults, PTSD vs control veterans, erectile dysfunction prevalence and severity reported using IIEF.",
+      "specifically reports erectile dysfunction prevalence/severity in adult men with a documented clinical diagnosis and uses an eligible erectile-function measure as required by the review."
+    ],
+    "exclusion_criteria": [
+      "assess broader sexual dysfunction rather than erectile dysfunction specifically",
+      "include subclinical PTSD/anxiety",
+      "lack a clear psychiatrist-made diagnosis from the abstract",
+      "are reviews/protocols/case reports",
+      "include women or mixed samples without male-specific ED data",
+      "outside the review end date of 2019-11-28 where relevant."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across the included studies, the direction of effect is consistent: clinically diagnosed anxiety disorders in men, particularly PTSD and panic disorder, are associated with more erectile dysfunction than non-anxiety controls.",
+      "However, the evidence base is limited by disorder coverage, heterogeneity in outcome ascertainment, and incomplete severity reporting.",
+      "From the supplied candidate pool, evidence supports that adult men with clinically diagnosed PTSD and panic disorder have a higher burden of erectile dysfunction than controls, with the clearest severity evidence in PTSD.",
+      "The evidence is not sufficient from this pool to define prevalence/severity across all targeted anxiety disorders, especially OCD and social anxiety disorder."
+    ]
+  }
+}

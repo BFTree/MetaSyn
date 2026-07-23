@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 16102,
+    "output_tokens": 965,
+    "total_tokens": 17067
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.44680851063829785,
+    "inclusion_precision": 0.9130434782608695,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.91,
+    "conditional_retention": 0.5675675675675675,
+    "post_retrieval_loss": 0.3404255319148936,
+    "inclusion_consistency": 0.7711,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4103,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear Methods, Results, synthesis subsections, Conclusion, and included study list with eligibility criteria, but it lacks a formal abstract, introduction, discussion, detailed search strategy, screening process, data extraction approach, quality assessment, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English language publications reporting on single-arm phase I or phase II clinical trials with adult RRMM patients receiving an experimental compound as monotherapy or combined with dexamethasone only, with an intention-to-treat population of at least 10 RRMM patients."
+    ],
+    "exclusion_criteria": [
+      "studies involving drugs combined with agents other than dexamethasone (e.g., bortezomib, lenalidomide, pomalidomide)",
+      "subgroup-specific analyses (e.g., renal failure)",
+      "allogeneic stem cell therapies",
+      "reviews",
+      "protocols",
+      "retrospective/real-world studies",
+      "publications outside the 2010\u20132020 timeframe"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Early-phase trials of experimental single agents or dexamethasone combinations in RRMM over the last decade show highly variable efficacy.",
+      "Novel proteasome inhibitors (Oprozomib, Ixazomib) and the anti-CD38 antibody Isatuximab demonstrated the most promising single-agent activity (ORR ~15\u201340%).",
+      "Most other targeted therapies, including kinase and HSP90 inhibitors, exhibited minimal objective response rates, though they often provided disease stabilization.",
+      "Hematologic and gastrointestinal toxicities were common but generally manageable; the favorable neuropathy profile of novel PIs is a distinct advantage."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9429,
+    "output_tokens": 1523,
+    "total_tokens": 10952
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.15,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2608695652173913,
+    "screening_accuracy": 0.795,
+    "conditional_retention": 0.18,
+    "post_retrieval_loss": 0.6833333333333333,
+    "inclusion_consistency": 0.5512,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6868,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core review components are present in an organized narrative format, including review question, screening criteria, results by biomarker, limitations, conclusions, and included studies, but it lacks a formal abstract, full introduction, detailed search strategy, quality assessment, data extraction methods, quantitative synthesis/meta-analysis methods, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "TSCC / oral tongue SCC / mobile tongue SCC",
+      "2010-01-01 to 2017-06-30",
+      "primary human studies, English",
+      "biomarker expression with clinical significance"
+    ],
+    "exclusion_criteria": [
+      "non-tongue or mixed oral/head-and-neck sites when tongue-only sampling was unclear",
+      "base-of-tongue-only studies",
+      "animal-only studies",
+      "microRNA-focused studies",
+      "reviews/meta-analyses",
+      "case reports",
+      "out-of-window papers"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Tissue biomarkers showed stronger and more reproducible evidence than liquid biomarkers in this candidate pool.",
+      "SOX2 and vimentin emerged as the most consistently clinically relevant tissue biomarkers for TSCC prognosis.",
+      "E-cadherin also appears relevant, particularly for metastatic behavior.",
+      "Salivary IL-6 and IL-8 are promising for noninvasive detection/prognosis, but the eligible tongue-specific evidence here was too limited for cross-study validation.",
+      "HIF-1\u03b1, MALAT-1, and TP53 had supportive but not yet repeated eligible evidence in this pool.",
+      "The supplied pool did not provide eligible in-window support for prolactin or clear NOTCH1-specific validation."
+    ]
+  }
+}

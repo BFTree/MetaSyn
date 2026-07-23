@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27089,
+    "output_tokens": 1006,
+    "total_tokens": 28095
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.10465116279069768,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.9418604651162791,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6451,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most required systematic review sections plus meta-analysis elements such as search strategy, eligibility criteria, screening results, synthesis approach, and risk-of-bias assessment, but it lacks a full references section and has some structural inconsistencies and duplicated headings that prevent an excellent PRISMA-level rating."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original quantitative studies (for example, cohort, case-control, cross-sectional, or controlled comparative studies) that report empirical data and include a comparison with children of different-sex (heterosexual) parents or provide analyzable data on children with LGBTQ parents.",
+      "Studies including children or adolescents raised by at least one gender or sexual minority (LGBTQ) parent, with the child population clearly identifiable in the sample.",
+      "Studies in which the exposure/intervention of interest is having gender and/or sexual minority (LGBTQ) parents, compared with having different-sex (heterosexual) parents.",
+      "Studies reporting child mental health outcomes or mental health problems, such as depression, anxiety, emotional or behavioral problems, psychological well-being, or related validated mental health measures."
+    ],
+    "exclusion_criteria": [
+      "Studies that do not include children or adolescents of LGBTQ parents as the population of interest, or do not distinguish their results from other family structures.",
+      "Studies without a relevant comparator group of children with different-sex (heterosexual) parents, and without sufficient data to evaluate mental health outcomes in children with LGBTQ parents.",
+      "Studies that do not report child mental health outcomes, or report only non-mental-health outcomes such as academic, physical health, or general social outcomes without a mental health component.",
+      "Non-empirical or ineligible publication types, including reviews, editorials, commentaries, case reports, conference abstracts, dissertations, and other grey literature."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Qualitative appraisal of the available studies suggests no consistent evidence of poorer mental health among children with LGBTQ parents and, in some cases, indicates broadly similar outcomes to those of children with heterosexual parents.",
+      "Nevertheless, this impression should be interpreted cautiously.",
+      "Overall, the current evidence remains too limited to support firm conclusions, and better-reported comparative studies are needed.",
+      "For practice and policy, the cautious conclusion is that current evidence does not demonstrate poorer mental health outcomes among children with LGBTQ parents, but the evidence is too incompletely reported to support strong quantitative claims in either direction.",
+      "At most, our findings align with a cautious interpretation that there is no clear evidence of systematically poorer child mental health in LGBTQ-parent families, but they do not allow a firm estimate of association."
+    ]
+  }
+}

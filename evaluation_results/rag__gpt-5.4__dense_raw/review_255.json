@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11618,
+    "output_tokens": 1346,
+    "total_tokens": 12964
+  },
+  "metrics": {
+    "retrieval_recall": 0.9642857142857143,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.88,
+    "conditional_retention": 0.18518518518518517,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.5212,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.591,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening, synthesis, limitations, exclusions, and included studies, but it lacks standard systematic review sections such as abstract, introduction, formal methods, detailed search strategy, inclusion/exclusion criteria, quality assessment, full results, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary comparative studies",
+      "adult depressed patients",
+      "receiving ECT",
+      "compare **ultrabrief pulse ECT (<0.5 ms)** with **brief-pulse/conventional ECT (0.5\u20131.5 ms)**",
+      "report depression outcomes using validated scales"
+    ],
+    "exclusion_criteria": [
+      "reviews, editorials, protocols, or other non-primary studies",
+      "not direct ultrabrief-vs-brief/conventional comparisons",
+      "focused on cognitive or technical outcomes without the target clinical outcomes",
+      "involved nonstandard ECT schedules (eg, daily ECT)",
+      "involved experimental stimulus parameters outside the review scope",
+      "involved concurrent somatic interventions",
+      "case reports/small case series",
+      "outside the date window or wrong population",
+      "daily ECT schedule, explicitly excluded",
+      "experimental low-amplitude/current parameter work, excluded by protocol",
+      "concurrent ketamine during ECT, excluded",
+      "not direct ultrabrief-vs-brief acute comparative studies for the target question",
+      "potentially relevant, but the abstract does not clearly confirm the depressed adult population and core eligibility details sufficiently for confident inclusion from title/abstract alone"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the eligible comparative studies, the evidence is **mixed but generally does not show a clear efficacy advantage for ultrabrief pulse ECT over brief-pulse ECT** for depression.",
+      "Overall, based on abstracts alone, **response may be broadly comparable**, particularly for **right unilateral** treatment when ultrabrief is given at sufficiently high suprathreshold dosing.",
+      "So, while ultrabrief may preserve some antidepressant efficacy, **brief pulse may have an advantage for achieving remission**, especially in some settings.",
+      "Several included abstracts suggest **ultrabrief ECT may require more treatments**:",
+      "The abstracts suggest that **right unilateral ultrabrief ECT** performs better than **bilateral ultrabrief ECT**.",
+      "Therefore, **the supplied title/abstract evidence does not allow a meaningful comparative synthesis of relapse rates**.",
+      "This suggests possible real-world concerns about **insufficient efficacy or efficiency** with ultrabrief protocols in some patients.",
+      "Based on the supplied title/abstract evidence, **ultrabrief pulse ECT\u2014especially right unilateral ultrabrief ECT\u2014can be effective for depression, but brief-pulse ECT may more often produce higher remission and/or faster improvement**.",
+      "Evidence for **relapse** is insufficient from the supplied abstracts, while limited real-world evidence suggests **switching from ultrabrief to brief-pulse ECT occurs more often than the reverse**."
+    ]
+  }
+}

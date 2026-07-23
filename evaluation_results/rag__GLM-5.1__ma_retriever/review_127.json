@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21179,
+    "output_tokens": 1216,
+    "total_tokens": 22395
+  },
+  "metrics": {
+    "retrieval_recall": 0.851063829787234,
+    "retrieval_precision": 0.2,
+    "inclusion_recall": 0.574468085106383,
+    "inclusion_precision": 0.9310344827586207,
+    "inclusion_f1": 0.7105263157894737,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.675,
+    "post_retrieval_loss": 0.2765957446808511,
+    "inclusion_consistency": 0.713,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4983,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with introduction/scope, eligibility summary, structured results by drug class, comparative discussion, conclusion, and included-study references, but it lacks an abstract, detailed search strategy, formal methods/data extraction process, quality assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "early-phase (Phase I and II) single-arm clinical trials investigating experimental drugs as monotherapy or in combination with dexamethasone in adult patients with relapsed/refractory multiple myeloma (RRMM)",
+      "publications from January 1, 2010, to July 1, 2020"
+    ],
+    "exclusion_criteria": [
+      "Studies combining the experimental compound with other active agents (besides dexamethasone)",
+      "randomized trials",
+      "reviews",
+      "studies with fewer than ten RRMM patients in the intention-to-treat (ITT) population",
+      "investigating drug combinations other than experimental agent + dexamethasone (e.g., combinations with lenalidomide, pomalidomide, bortezomib, or cyclophosphamide)",
+      "being Phase III randomized trials or non-clinical-trial publications (reviews, real-world analyses, protocols)",
+      "focusing on newly diagnosed or smoldering myeloma",
+      "publication dates outside the 2010\u20132020 window"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Early-phase single-arm trials of experimental drugs in RRMM over the past decade highlight a clear efficacy gradient based on drug class.",
+      "Proteasome inhibitors and anti-CD38 monoclonal antibodies provide the highest single-agent/or + dex response rates, while targeted kinase inhibitors, HSP90 inhibitors, and older cytotoxic analogs largely failed to achieve meaningful ORRs as monotherapies.",
+      "The addition of dexamethasone consistently improved response rates where permitted (e.g., plitidepsin, siltuximab, pomalidomide).",
+      "Toxicity profiles remain class-specific, requiring tailored management strategies, particularly for novel non-cytotoxic agents."
+    ]
+  }
+}

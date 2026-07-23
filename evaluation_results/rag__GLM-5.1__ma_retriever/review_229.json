@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 229,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11364,
+    "output_tokens": 887,
+    "total_tokens": 12251
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.9333333333333333,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7547,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized by outcome domains and includes a conclusion and list of included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, References, and key systematic review elements such as detailed search strategy, screening process, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eight prospective original research articles published between 2012 and 2022 met the strict inclusion criteria, encompassing cohorts with moderate-to-severe CKD (eGFR < 60 mL/min/1.73 m\u00b2) and ESKD on dialysis."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Radiofrequency-based renal denervation appears to be an effective intervention for sustained reduction of office and ambulatory blood pressure in hypertensive patients with moderate-to-severe CKD and ESKD, without precipitating a decline in renal function.",
+      "The antihypertensive efficacy is maintained up to 48 months, with some evidence suggesting a halting of eGFR decline and reduction in albuminuria.",
+      "However, the evidence base relies heavily on small observational and pilot studies, and one pilot study reported an anomalous increase in ambulatory SBP.",
+      "Anatomical feasibility may be limited in some ESKD patients due to atrophic renal arteries.",
+      "Larger, randomized sham-controlled trials specific to this high-risk population are needed to confirm these findings."
+    ]
+  }
+}

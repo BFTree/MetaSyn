@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4344,
+    "output_tokens": 801,
+    "total_tokens": 5145
+  },
+  "metrics": {
+    "retrieval_recall": 0.07142857142857142,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.5757,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4705,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes methods, screening results, and a conclusion with eligibility criteria, but it lacks major required sections such as an abstract, introduction, discussion, references, detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies had to be primary empirical investigations (observational cohort, case\u2011control, Mendelian randomization, or randomized controlled trial) that examined the relationship between salt intake (or a salt\u2011reduction intervention) and at least one of the following outcomes: blood pressure, cardiovascular disease, or cardiovascular mortality.",
+      "For Mendelian randomization studies, the phrase \u201cMendelian randomization\u201d was required in the title or abstract.",
+      "The search window was 1971\u201101\u201101 to 2022\u201112\u201131; articles published outside this interval were ineligible."
+    ],
+    "exclusion_criteria": [
+      "Secondary analyses, modelling studies, protocols, reviews, editorials, conference abstracts, animal studies, and studies that did not isolate salt as the exposure were excluded.",
+      "The search window was 1971\u201101\u201101 to 2022\u201112\u201131; articles published outside this interval were ineligible."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No primary study meeting all inclusion criteria (salt\u2011specific exposure, BP/CVD outcome, empirical design, and publication within 1971\u20112022) was identified.",
+      "No articles from the supplied candidate pool were eligible for inclusion.",
+      "The pool therefore yielded zero primary\u2011study records for the evidence\u2011synthesis exercise on salt intake and blood pressure/cardiovascular outcomes.",
+      "None."
+    ]
+  }
+}

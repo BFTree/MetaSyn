@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16769,
+    "output_tokens": 1201,
+    "total_tokens": 17970
+  },
+  "metrics": {
+    "retrieval_recall": 0.39215686274509803,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.85,
+    "post_retrieval_loss": 0.058823529411764705,
+    "inclusion_consistency": 0.5577,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.402,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, domain-based synthesis, conclusions, and included studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion sections and omits key PRISMA-style details such as a full search strategy, data extraction procedures, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "longitudinal primary studies investigating whether biological biomarkers\u2014derived from leading theories including neuroimaging, gastrointestinal factors, immunology, neurotrophic factors, neurotransmitters, hormones, and oxidative stress\u2014can prospectively predict the onset, relapse, or recurrence of major depressive disorder (MDD) in at-risk individuals"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "cross-sectional",
+      "focused on treatment response rather than disorder onset/recurrence",
+      "included mixed diagnoses with less than 75% MDD",
+      "were published after the search end date (mid-2019)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence confirms that biological biomarkers from leading etiological theories can prospectively predict MDD onset and recurrence.",
+      "HPA axis dysregulation\u2014manifested as altered basal cortisol, CAR, DEX/CRH test responses, or TSST reactivity\u2014is the most robustly supported predictor, though its expression varies by population and clinical state (e.g., blunted basal cortisol vs. hyperreactivity to challenge).",
+      "Structural neuroimaging markers, particularly volumes of the anterior cingulate, amygdala, and insula, offer complementary predictive utility for illness trajectory.",
+      "Inflammatory and oxidative stress markers (HSP70, 3-nitrotyrosine, TBARS) are predictive of onset during high-risk windows such as the menopause transition, while GI distress to serotonergic challenge identifies childhood vulnerability.",
+      "Null findings, such as the lack of association between trait cortisol and recurrence (027), underscore that not all biological alterations constitute prospective vulnerability factors; some may instead represent state-independent scars of past episodes.",
+      "Overall, multi-modal biomarker assessment holds significant promise for identifying individuals at highest risk for MDD onset or relapse."
+    ]
+  }
+}

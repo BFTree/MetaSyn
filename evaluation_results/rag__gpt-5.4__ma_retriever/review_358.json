@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15552,
+    "output_tokens": 1097,
+    "total_tokens": 16649
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.7999999999999999,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.529,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4469,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening outcome, evidence synthesis, limitations, and included/excluded studies, but it lacks a full formal systematic review structure with abstract, introduction, detailed methods/search strategy, quality assessment, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original data",
+      "in vivo or ex vivo brain measurement",
+      "racemic ketamine",
+      "include a baseline/control condition",
+      "report dopamine levels in brain tissue or extracellular fluid"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-original articles",
+      "in vitro-only work",
+      "studies focused only on metabolites/turnover without dopamine levels",
+      "anaesthetic-dose-only rodent studies",
+      "studies without usable title/abstract evidence of dopamine level measurement"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included rodent studies, the direction of effect is broadly toward increased dopamine levels after acute subanaesthetic ketamine, but with important heterogeneity by brain region and dosing schedule.",
+      "Medial prefrontal cortex findings are the most consistent.",
+      "Repeated ketamine exposure altered baseline dopamine and the response to acute challenge in prefrontal cortex.",
+      "Effects appear strongest and clearest in prefrontal cortex.",
+      "Within this fixed candidate pool, title/abstract evidence supports that subanaesthetic racemic ketamine can acutely increase brain dopamine, especially extracellular dopamine in rodent prefrontal cortex.",
+      "Repeated exposure appears to reshape this effect, elevating basal dopamine while blunting the acute dopaminergic surge.",
+      "The evidence base available here is limited to a small number of rodent studies and does not establish comparable in vivo dopamine-level effects in humans or non-human primates."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9601,
+    "output_tokens": 1048,
+    "total_tokens": 10649
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3615,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.639,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening summary, synthesis of findings, conclusion, and included studies, but it lacks major required systematic review sections such as a full abstract, introduction, detailed methods, search strategy, eligibility criteria, data extraction, quality assessment, and formal references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies published between November 1, 2004, and November 30, 2014"
+    ],
+    "exclusion_criteria": [
+      "falling outside the specified publication date range (e.g., candidates published in 2015 or later)",
+      "being review articles",
+      "involving experimental animal models",
+      "not evaluating/presenting quantitative TPD values in OAG patients compared to healthy controls"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both included studies provide quantitative evidence that TPD is significantly elevated in patients with OAG compared to healthy control subjects.",
+      "Both studies reported significant associations between higher TPD and structural or functional damage consistent with glaucomatous optic neuropathy.",
+      "The eligible evidence indicates that patients with OAG have a significantly elevated translaminar pressure difference compared to healthy individuals.",
+      "Furthermore, higher TPD values are associated with greater structural optic disc damage (reduced neuroretinal rim area) and more severe visual field loss, supporting the hypothesis that the pressure gradient across the lamina cribrosa plays a significant role in the pathogenesis of glaucomatous optic neuropathy."
+    ]
+  }
+}

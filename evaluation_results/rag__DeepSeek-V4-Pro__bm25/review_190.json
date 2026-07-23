@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20501,
+    "output_tokens": 939,
+    "total_tokens": 21440
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6896551724137931,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.5116,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7273,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with background, methods, screening results, study characteristics, findings, limitations, conclusions, and an included-study list, but it lacks a detailed search strategy, data-extraction and quality-assessment procedures, formal synthesis methods, a distinct discussion section, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary empirical studies",
+      "involved dental professionals, students, or patients in dental settings;",
+      "explicitly reported on sexual misconduct (prevalence, experiences, or interventions);",
+      "were published in English (or had an English abstract) between 2010 and October\u202f2024"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews, protocols, editorials, conference abstracts, and studies mixing dental with other health professions without separate dental outcomes were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Sexual misconduct in dental education and practice is common.",
+      "Underreporting was consistently highlighted.",
+      "None of the included studies evaluated a specific intervention programme for sexual misconduct in dental settings.",
+      "Thus, evidence on the effectiveness of policies or training in preventing or reducing sexual misconduct in dentistry remains absent from this pool.",
+      "Sexual misconduct remains a pervasive problem in dental education and practice, affecting a substantial proportion of students, hygienists, and surgeons.",
+      "Underreporting is common, and institutional responses are often perceived as insufficient.",
+      "The lack of rigorous intervention studies underscores the urgent need for development and evaluation of comprehensive sexual misconduct prevention and management programmes tailored to dental settings."
+    ]
+  }
+}

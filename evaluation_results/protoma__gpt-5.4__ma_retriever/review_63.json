@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28250,
+    "output_tokens": 1201,
+    "total_tokens": 29451
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.11267605633802817,
+    "inclusion_recall": 0.7,
+    "inclusion_precision": 0.35,
+    "inclusion_f1": 0.4666666666666667,
+    "screening_accuracy": 0.8028169014084507,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.4702,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4521,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally well-organized systematic review structure with abstract, background, methods, eligibility criteria, search strategy, screening results, synthesis methods, risk-of-bias assessment, discussion, conclusion, and included studies, but it falls short of excellent due to duplicated headings, some inconsistencies in outcomes, limited data extraction detail, and absence of a formal references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling patients with morbid obesity undergoing laparoscopic vertical sleeve gastrectomy (LVSG).",
+      "Studies evaluating LVSG with a within-subject pre-operative versus post-operative comparison.",
+      "Studies reporting at least one relevant outcome related to esophageal function or weight change, including lower esophageal sphincter pressure (LESP), lower esophageal sphincter length (LESL), DeMeester Score (DMS), or BMI change.",
+      "Original quantitative studies with sufficient pre- and post-operative data to assess change after LVSG."
+    ],
+    "exclusion_criteria": [
+      "Studies of patients not undergoing LVSG or including mixed bariatric procedures without separate LVSG-specific results.",
+      "Studies without a pre-operative comparator or without post-operative assessment of the outcomes of interest.",
+      "Studies that do not report any of the specified outcomes (LESP, LESL, DMS, or BMI change).",
+      "Reviews, case reports, conference abstracts, editorials, animal studies, and duplicate publications."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 20 studies, laparoscopic vertical sleeve gastrectomy (LVSG) in patients with morbid obesity was associated with a significant reduction in lower esophageal sphincter pressure compared with pre-operative status, with a pooled random-effects mean difference of -8.67 mmHg (95% CI -13.71 to -3.63; p=0.0007).",
+      "Clinically, this suggests that although LVSG is effective for weight loss, it may weaken the antireflux barrier and thereby increase susceptibility to postoperative gastroesophageal reflux, particularly in patients with pre-existing reflux risk.",
+      "On that basis, LVSG should be used with caution in patients in whom preservation of esophageal sphincter function is a priority, and preoperative reflux evaluation should factor into procedure selection.",
+      "The main caveat is the very high between-study heterogeneity (I\u00b2=97%), which indicates substantial variability in the magnitude of effect and warrants cautious interpretation of the pooled estimate."
+    ]
+  }
+}

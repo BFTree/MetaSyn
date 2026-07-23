@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 224,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22856,
+    "output_tokens": 931,
+    "total_tokens": 23787
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.7200000000000001,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.6299,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3754,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized as an evidence synthesis with inclusion/exclusion criteria, results by modality, a conclusion, and a list of included studies, but it lacks major required systematic review sections such as abstract, introduction, formal methods, search strategy, screening flow, data extraction, quality assessment, and detailed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) assessing the effectiveness of biofeedback interventions on blood pressure reduction in adult patients with hypertension (SBP \u2265 140 and/or DBP \u2265 90 mmHg) compared to control conditions (standard care, no intervention, or sham)"
+    ],
+    "exclusion_criteria": [
+      "Systematic reviews",
+      "editorials",
+      "conference abstracts",
+      "non-English articles",
+      "non-RCTs",
+      "studies with populations not meeting the hypertension threshold",
+      "interventions not involving biofeedback"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence suggests that biofeedback interventions can reduce blood pressure in patients with hypertension compared to no-treatment or placebo controls, particularly when utilizing direct BP feedback, thermal feedback, or GSR feedback.",
+      "However, the efficacy appears modality-dependent and often influenced by placebo effects, as demonstrated by the lack of specific effects in one direct BP biofeedback trial (Candidate 012) and the null results for device-guided slow breathing (Candidates 018 and 024).",
+      "Furthermore, when biofeedback is added to other effective relaxation techniques like meditation, the incremental benefit may be limited.",
+      "The findings support the potential of biofeedback as a non-pharmacological adjunct but highlight the need for consideration of specific modalities and control conditions."
+    ]
+  }
+}

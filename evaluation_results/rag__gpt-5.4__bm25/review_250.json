@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15935,
+    "output_tokens": 1385,
+    "total_tokens": 17320
+  },
+  "metrics": {
+    "retrieval_recall": 0.23809523809523808,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.21428571428571427,
+    "inclusion_precision": 0.6923076923076923,
+    "inclusion_f1": 0.32727272727272727,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.023809523809523808,
+    "inclusion_consistency": 0.59,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6205,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with screening, synthesis, limitations, included studies, exclusions, and a conclusion-like bottom line, but it lacks a formal abstract, introduction, detailed methods, search strategy, screening flow, data extraction, quality assessment, statistical synthesis, discussion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled primary studies",
+      "adults with major depressive disorder / unipolar depression",
+      "treatment-resistant depression or clearly resistant/refractory depression",
+      "interventions relevant to the review target"
+    ],
+    "exclusion_criteria": [
+      "excluded bipolar depression, psychotic depression, reviews, protocols, observational studies, case reports, and studies clearly allowing only one failed antidepressant trial",
+      "**Review-level articles, protocols, editorials, economic analyses, or mechanistic papers** rather than primary RCTs",
+      "**Bipolar or mixed depression populations**",
+      "**Observational, retrospective, case series, or naturalistic designs**",
+      "**Population not clearly TRD by title/abstract**, especially studies explicitly requiring only **one** failed antidepressant trial",
+      "**Non-depression populations** or other disorders",
+      "did not clearly meet the **\u22652 antidepressant failures** threshold",
+      "involved **ketamine as ECT anesthesia** rather than ketamine as the antidepressant intervention of interest",
+      "were not randomized primary trials",
+      "Studies explicitly requiring only **one** failed antidepressant trial",
+      "**Bipolar/mixed depression** studies",
+      "**Observational/retrospective/nonrandomized** studies",
+      "**Protocols/reviews**"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Active neuromodulation often outperformed sham in resistant/refractory depression, though effect sizes and consistency varied.",
+      "ECT generally outperformed rTMS/tDCS in direct head-to-head trials, but with known tradeoffs in tolerability/cognitive adverse effects.",
+      "Bilateral or accelerated stimulation strategies were explored repeatedly, but superiority over simpler unilateral/standard approaches was not consistent.",
+      "TBS-based approaches showed promise in some sham-controlled studies, including newer accelerated or prolonged protocols.",
+      "Using only the supplied pool and title/abstract screening, the eligible evidence is mainly a neuromodulation-focused TRD RCT set.",
+      "It supports the broader network-meta-analytic conclusion that several stimulation-based interventions show antidepressant activity in resistant depression, with ECT often strongest in direct comparisons, while rTMS/TBS variants and related stimulation protocols provide less invasive alternatives with mixed but generally favorable efficacy signals."
+    ]
+  }
+}

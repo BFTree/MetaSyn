@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29376,
+    "output_tokens": 1137,
+    "total_tokens": 30513
+  },
+  "metrics": {
+    "retrieval_recall": 0.55,
+    "retrieval_precision": 0.6875,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.2816901408450704,
+    "screening_accuracy": 0.5,
+    "conditional_retention": 0.30303030303030304,
+    "post_retrieval_loss": 0.38333333333333336,
+    "inclusion_consistency": 0.7651,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.791,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included studies, and References, plus search queries, eligibility criteria, and screening decisions, but it lacks full PRISMA-style rigor such as a detailed data extraction process, formal quality/risk-of-bias assessment, and explicit quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "TSCC/oral tongue SCC patient studies.",
+      "Biomarker expression or mutation studies with reported clinical significance.",
+      "Tongue-specific sampling or oral cavity studies where samples were taken from the tongue.",
+      "For tissue IHC prognostic work, preference for multivariate analysis.",
+      "English full text available where indicated by corpus metadata."
+    ],
+    "exclusion_criteria": [
+      "Mixed oral cavity/head and neck subsites without tongue-specific conclusions.",
+      "Unclear clinical implications.",
+      "Base-of-tongue-only studies.",
+      "Animal-only studies.",
+      "MicroRNA-only biomarker studies.",
+      "Case reports, letters, reviews."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence from the local MetaSyn corpus supports a differentiated conclusion rather than a broad endorsement of all candidate biomarkers.",
+      "For **early diagnosis**, the most clinically relevant noninvasive evidence comes from **salivary biomarkers**, especially **IL-6**, **IL-8**, and the broader inflammatory cytokine panel, with **salivary ADA** providing additional support for saliva as a practical detection medium.",
+      "For **prognosis prediction**, **SOX2** is the strongest repeatedly validated tissue marker, particularly for risk stratification in **early-stage or pN0 OTSCC**, while **vimentin** is the strongest EMT-linked adverse prognostic marker and **E-cadherin loss** is a consistent marker of aggressive biology and metastatic risk.",
+      "My concrete judgment is that the most clinically credible biomarker framework in this corpus is **saliva for detection, and SOX2 plus EMT-related tissue markers for prognosis**.",
+      "By contrast, **prolactin, MALAT1, and NOTCH1** lack sufficient TSCC-specific validation here, and **TP53** is useful only when mutation-based rather than IHC-based.",
+      "Therefore, any meta-analytic model that weights all seed biomarkers equally would be methodologically unsound on this evidence base."
+    ]
+  }
+}

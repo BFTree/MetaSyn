@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17282,
+    "output_tokens": 902,
+    "total_tokens": 18184
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.4218,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4123,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 1.0,
+    "structure_quality_reason": "The report lacks nearly all required systematic review sections and meta-analysis structure, providing only a brief inclusion outcome and rationale without abstract, introduction, methods, results, discussion, conclusion, references, search strategy, screening process, quality assessment, or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "compare TNBC vs non-TNBC breast tissue with Illumina 16S V4/V3-V4 data and accessible homogeneous primary cohort data"
+    ],
+    "exclusion_criteria": [
+      "non-microbiome breast cancer studies",
+      "reviews/meta-analyses/protocols",
+      "microbiome papers that do not compare TNBC vs non-TNBC breast tissue with Illumina 16S V4/V3-V4 data and accessible homogeneous primary cohort data"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Included primary studies: none.",
+      "Reason: none of the candidate articles match the review question and inclusion criteria.",
+      "The relevant TNBC candidates are either non-microbiome breast cancer studies, reviews/meta-analyses/protocols, or microbiome papers that do not compare TNBC vs non-TNBC breast tissue with Illumina 16S V4/V3-V4 data and accessible homogeneous primary cohort data."
+    ]
+  }
+}

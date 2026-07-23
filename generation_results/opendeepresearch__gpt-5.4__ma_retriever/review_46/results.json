@@ -1,0 +1,101 @@
+{
+  "review_id": 46,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    8529,
+    8528
+  ],
+  "retrieved_article_ids": [
+    8525,
+    111199,
+    111195,
+    8523,
+    8529,
+    8528,
+    54560,
+    8524,
+    111269,
+    108985,
+    111261,
+    10815,
+    111264,
+    111263,
+    8527,
+    11953,
+    10969,
+    111275,
+    111241,
+    111273,
+    111196,
+    111276,
+    111262,
+    111270,
+    8526,
+    111252,
+    111191,
+    111271,
+    11613,
+    138976,
+    10966,
+    35646,
+    82655
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 14,
+    "input_tokens": 250302,
+    "output_tokens": 11113,
+    "total_tokens": 261415,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 44959,
+        "output_tokens": 3000,
+        "total_tokens": 47959
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 3716,
+        "output_tokens": 4503,
+        "total_tokens": 8219
+      },
+      "researcher": {
+        "calls": 8,
+        "input_tokens": 192422,
+        "output_tokens": 1705,
+        "total_tokens": 194127
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 8115,
+        "output_tokens": 1266,
+        "total_tokens": 9381
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1090,
+        "output_tokens": 639,
+        "total_tokens": 1729
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 33,
+    "retrieved_unique": 33,
+    "included_count": 2,
+    "included_unique": 2,
+    "search_calls": 4,
+    "unique_search_queries": 4,
+    "retrieved_instances": 80,
+    "duplicate_exposures": 47,
+    "fetch_calls": 4,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 4,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

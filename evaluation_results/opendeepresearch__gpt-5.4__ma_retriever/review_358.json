@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27398,
+    "output_tokens": 1126,
+    "total_tokens": 28524
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.86,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.516,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4393,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes clear review question, search strategy, eligibility criteria, screening table, synthesis approach, limitations, conclusion, and sources, but it lacks a formal abstract and full PRISMA-style elements such as a detailed screening flow, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original primary data.",
+      "English language.",
+      "Racemic ketamine administered at sub-anaesthetic doses.",
+      "Dopamine levels measured in the brain.",
+      "Drug-free baseline or control condition present.",
+      "Sufficient dispersion data reported (**s.d. or s.e.m.**).",
+      "In vivo or in-brain/tissue study in rodents, non-human primates, or humans."
+    ],
+    "exclusion_criteria": [
+      "Anaesthetic-dose ketamine exposure meeting the exclusion threshold.",
+      "No baseline/control condition.",
+      "Non-English publication.",
+      "Not original data.",
+      "No reported **s.d. or s.e.m.**",
+      "In vitro study.",
+      "No dopamine levels reported, even if other dopaminergic outcomes were reported."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "After applying the full eligibility criteria, no study could be included with confidence in the final review dataset.",
+      "No study met all eligibility criteria for inclusion based on the local MetaSyn corpus records available for screening.",
+      "Accordingly, this review cannot establish from the local MetaSyn PubMed corpus records alone whether acute or chronic sub-anaesthetic racemic ketamine increases, decreases, or does not change brain dopamine levels across rodents, non-human primates, or humans.",
+      "The evidence available from the local corpus does not support a formal conclusion about whether acute or chronic sub-anaesthetic racemic ketamine alters brain dopamine levels across species under the review\u2019s full inclusion standards."
+    ]
+  }
+}

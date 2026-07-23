@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 268,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16415,
+    "output_tokens": 1122,
+    "total_tokens": 17537
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.105,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.8076923076923077,
+    "inclusion_f1": 0.7777777777777779,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7045,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5188,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear basic organization with Background, Methods, screening Results, included studies, and evidence summary, but it lacks a formal abstract, discussion/conclusion, references, detailed search strategy, quality assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies are double\u2011blind, randomized, placebo\u2011controlled trials (DBRPCTs) with an enrichment design: patients are stabilized on the antidepressant of interest in an open\u2011label phase and then randomly assigned to continue the same antidepressant or switch to placebo.",
+      "The minimum treatment duration is 12 weeks."
+    ],
+    "exclusion_criteria": [
+      "Trials focusing exclusively on children/adolescents or older individuals, those including patients with dual diagnoses, and continuation studies in which acutely ill patients are randomized are excluded.",
+      "Records that were protocols, reviews, meta\u2011analyses, editorials, conference abstracts, non\u2011placebo\u2011controlled, non\u2011maintenance, or that otherwise violated the inclusion/exclusion criteria were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Twenty-four primary publications fulfilled all inclusion criteria.",
+      "These 24 trials provide direct evidence on the efficacy of continuing a previously effective antidepressant versus placebo for relapse/recurrence prevention in adult MDD.",
+      "The 26 identified publications report 24 distinct placebo-controlled relapse-prevention trials (two pairs report different phases or analyses of the same core study).",
+      "All trials used an enrichment design, had double-blind periods of at least 12 weeks, and reported relapse/recurrence as a primary or key secondary outcome.",
+      "These studies form the evidence base for the planned network meta-analysis comparing the long-term efficacy, acceptability, and safety of antidepressants for maintaining remission in major depressive disorder."
+    ]
+  }
+}

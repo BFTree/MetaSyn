@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35395,
+    "output_tokens": 850,
+    "total_tokens": 36245
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.14925373134328357,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.18181818181818182,
+    "screening_accuracy": 0.8656716417910447,
+    "conditional_retention": 0.1,
+    "post_retrieval_loss": 0.9,
+    "inclusion_consistency": 0.6201,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5998,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes the major systematic review sections plus meta-analysis elements such as search strategy, eligibility criteria, screening flow, synthesis approach, and risk-of-bias assessment, but it lacks a formal references section and has some duplicated headings and limited PRISMA-style reporting detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies including paediatric patients with Turner syndrome aged 18 years or younger, or studies reporting extractable data specifically for this subgroup.",
+      "Studies that assess blood pressure using 24-hour ambulatory blood pressure monitoring (ABPM) and/or compare ABPM with other blood pressure measurement methods such as clinic/office, home, or casual measurements.",
+      "Observational studies or interventional studies that report data on the prevalence, frequency, or identification of hypertension in the eligible Turner syndrome population.",
+      "Original full-text studies published in peer-reviewed sources with sufficient data to determine the blood pressure measurement method and hypertension outcome."
+    ],
+    "exclusion_criteria": [
+      "Studies enrolling only adults older than 18 years, mixed populations without separate data for paediatric Turner syndrome patients, or participants without Turner syndrome.",
+      "Studies that do not evaluate ABPM or do not include a relevant blood pressure measurement method comparison.",
+      "Studies that do not report hypertension prevalence or do not provide extractable outcome data related to hypertension detection in the target population.",
+      "Reviews, editorials, letters without original data, conference abstracts only, case reports, and duplicate publications of the same dataset."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified 1 study examining blood pressure measurement methods, including 24-hour ambulatory blood pressure monitoring, for assessing the prevalence of hypertension in paediatric patients with Turner syndrome.",
+      "However, quantitative synthesis was not possible because the single included study did not provide sufficiently extractable numerical data to support meta-analysis or a structured comparison between measurement approaches.",
+      "The limited qualitative evidence suggests that ambulatory monitoring may detect blood pressure abnormalities that could be missed by other measurement methods, but this finding remains tentative given the very small evidence base and incomplete reporting.",
+      "Overall, the current evidence is too limited to draw firm conclusions about the comparative value of ambulatory versus other blood pressure measurement methods for estimating hypertension prevalence in children and adolescents with Turner syndrome."
+    ]
+  }
+}

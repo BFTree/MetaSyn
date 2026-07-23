@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10571,
+    "output_tokens": 1090,
+    "total_tokens": 11661
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.4917,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.709,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, excluded candidates, eligible studies, outcome-based synthesis, and included articles, but it lacks standard sections such as Abstract, Introduction, formal Methods, Discussion, full Conclusion, References, and PRISMA-style elements like detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original research articles",
+      "published between 2009 and June 2021 in English",
+      "Level I or II prospective comparative studies",
+      "assessing RDN + PVI vs. PVI alone in patients with essential hypertension and AF"
+    ],
+    "exclusion_criteria": [
+      "Studies involving secondary hypertension, Type I diabetes, late-stage kidney disease (mean eGFR < 45 mL/min/1.73 m\u00b2), congestive heart failure, or LVEF < 35% were excluded.",
+      "Systematic reviews, meta-analyses, protocols, and case reports were excluded as non-primary sources."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence supports that RDN added to PVI reduces AF recurrence in hypertensive patients with AF compared to PVI alone.",
+      "While ERADICATE-AF demonstrated a clear BP-lowering benefit of adjunctive RDN, the study involving CKD patients with controlled baseline hypertension did not observe a significant inter-group difference in BP outcomes.",
+      "Limited evidence suggests a potential renal benefit in patients with moderate CKD, but data is insufficient from the broader hypertensive population without CKD.",
+      "The addition of RDN to PVI appears safe, with no significant increase in complication rates compared to PVI alone."
+    ]
+  }
+}

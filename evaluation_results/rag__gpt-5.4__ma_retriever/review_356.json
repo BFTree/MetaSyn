@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16033,
+    "output_tokens": 980,
+    "total_tokens": 17013
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.42105263157894735,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6217,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2823,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review question, eligibility criteria, screening results, included/excluded studies, synthesis, outcome-specific findings, conclusion, and study list, but it lacks a conventional abstract/introduction/methods/results/discussion structure, detailed search strategy, data-extraction procedures, formal quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials",
+      "specifically double-blind studies",
+      "single-blind/open RCTs could also contribute"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "editorials",
+      "case reports",
+      "retrospective/non-randomized studies",
+      "biomarker studies",
+      "non-bipolar populations",
+      "conference-like fragments without usable trial details",
+      "studies where bipolar-specific randomized evidence was not clear from title/abstract"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied candidate pool, the randomized double-blind evidence does not establish LTCC antagonists as effective treatments for bipolar disorder.",
+      "The evidence base is dominated by small verapamil mania trials with inconsistent results: some suggest antimanic efficacy comparable to lithium, but a placebo-controlled trial found no advantage over placebo.",
+      "Evidence for bipolar depression, relapse prevention, and non-verapamil LTCC antagonists is insufficient or not randomized/eligible based on title and abstract.",
+      "The randomized double-blind evidence is narrow, old, and mostly confined to verapamil in acute mania.",
+      "Across included trials, results are mixed:",
+      "However, the best placebo-controlled parallel-group evidence in Candidate 017 found no benefit of verapamil over placebo in acute mania.",
+      "No reliable conclusion can be drawn.",
+      "Overall certainty from titles/abstracts is low."
+    ]
+  }
+}

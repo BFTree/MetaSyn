@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31296,
+    "output_tokens": 1256,
+    "total_tokens": 32552
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07526881720430108,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.956989247311828,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.6116,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5018,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized and includes the major systematic review/meta-analysis sections and key elements such as detailed search strategy, eligibility criteria, screening results, statistical synthesis, heterogeneity assessment, and risk of bias, but it lacks a references section and has some duplicated headings and incomplete reporting of data extraction methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomised controlled trials including pregnant women with obesity and their offspring, with offspring assessed from birth/early infancy (<2 months) through early childhood (up to 3-7 years).",
+      "Studies evaluating preconception or antenatal lifestyle interventions aimed at maternal obesity management, including diet, exercise, physical activity, or multicomponent lifestyle programmes.",
+      "Studies with a comparator of standard care, usual care, or no intervention within the trial.",
+      "Studies reporting at least one offspring cardiovascular outcome relevant to cardiac remodelling or related parameters, including cardiac structure (e.g., interventricular septal wall thickness), cardiac systolic or diastolic function, blood pressure, resting heart rate, or arterial thickening/stiffness."
+    ],
+    "exclusion_criteria": [
+      "Non-randomised studies, observational studies, reviews, protocols, conference abstracts without full results, animal studies, or other publications without original trial data.",
+      "Studies not restricted to pregnant women with obesity, or studies in which offspring outcomes are not reported for the eligible offspring age range.",
+      "Interventions delivered only after birth or interventions not based on lifestyle modification during the preconception or antenatal period.",
+      "Studies not including an eligible control group (standard/usual care or no intervention) or not reporting relevant offspring cardiovascular/cardiac remodelling outcomes."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The pooled analysis demonstrated no clear overall effect of preconception or antenatal lifestyle interventions on the primary offspring cardiovascular outcome when results from the three randomised controlled trials were synthesised using a random-effects model.",
+      "Accordingly, the overall result should be interpreted as inconclusive rather than definitively negative.",
+      "Taken together, the evidence suggests a possible favourable effect of maternal lifestyle intervention on offspring cardiovascular structure or function, but the pooled findings are not robust because of marked heterogeneity and imprecision.",
+      "Overall, the current pooled evidence does not support a definitive conclusion, and any apparent benefit should be interpreted cautiously.",
+      "The main clinical message is therefore one of possible but unproven benefit.",
+      "Current evidence does not justify recommending antenatal lifestyle interventions specifically as an evidence-based strategy to improve offspring cardiac remodelling or early cardiovascular parameters.",
+      "Taken together, these findings do not support recommending such interventions solely to improve offspring cardiac structure or function, though they may still be justified for broader maternal and pregnancy benefits.",
+      "The main caveat is the very high between-study heterogeneity (I\u00b2=93.6%), which substantially limits confidence in the pooled estimate."
+    ]
+  }
+}

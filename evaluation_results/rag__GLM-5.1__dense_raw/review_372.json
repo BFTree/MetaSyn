@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20167,
+    "output_tokens": 1486,
+    "total_tokens": 21653
+  },
+  "metrics": {
+    "retrieval_recall": 0.8636363636363636,
+    "retrieval_precision": 0.095,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.6285714285714286,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.5789473684210527,
+    "post_retrieval_loss": 0.36363636363636365,
+    "inclusion_consistency": 0.3637,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4248,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a scope, screening summary, evidence synthesis, conclusions, and included study list, but it lacks several standard review sections and PRISMA-style elements such as a formal abstract, detailed methods/search strategy, data extraction procedures, quality assessment, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer-reviewed empirical observational studies conducted in the ASEAN region (Southeast Asia) on adult or total populations",
+      "assessing infectious disease risk (prevalence or incidence) as a function of occupational or residential exposure to agricultural land-use (e.g., farming, rubber/plantations, livestock) versus unexposed comparators",
+      "The search cutoff date was April 30, 2017."
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on non-communicable diseases, plant/invertebrate diseases, night-soil fertilizer exposure, child-only risk factors, or reviews/theoretical papers were excluded.",
+      "published after the 2017 search end date",
+      "assessing non-communicable diseases or environmental contamination without human disease prevalence",
+      "focusing on child-only populations",
+      "assessing night-soil/wastewater fertilizer exposure",
+      "being conducted outside the ASEAN region",
+      "lacking an unexposed comparator"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The evidence consistently indicates that occupational and residential exposure to agricultural land-use is associated with an elevated risk of various infectious diseases, though one study reported a null association.",
+      "The synthesized evidence demonstrates a clear and consistent trend: occupational and residential exposure to agricultural land-use in Southeast Asia\u2014including rubber plantations, slash-and-burn forest farming, crop farming, and livestock rearing\u2014is associated with an increased risk of infectious diseases such as malaria, helminthiases, leptospirosis, rickettsial diseases, and zoonotic bacterial infections like *S. suis*.",
+      "Unexposed populations (urban residents, non-farmers, fishermen, or those not living near animal farms) generally face a lower risk.",
+      "The findings support the biologically plausible links between agricultural environments and vector, water-borne, or zoonotic transmission pathways."
+    ]
+  }
+}

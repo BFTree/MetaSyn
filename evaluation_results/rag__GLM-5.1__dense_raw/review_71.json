@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16323,
+    "output_tokens": 977,
+    "total_tokens": 17300
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.55,
+    "inclusion_f1": 0.7096774193548387,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6997,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.632,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes a synthesis, conclusion, and list of included studies, but it lacks most formal systematic review sections such as abstract, introduction, detailed methods, search strategy, screening process, data extraction, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "quantitative PFAS exposure assessment",
+      "objective obesity measures in the 1\u201312 year age range"
+    ],
+    "exclusion_criteria": [
+      "studies focusing solely on birth weight",
+      "animal/simulated data",
+      "reviews",
+      "out-of-date articles (published after February 26, 2022)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence suggests that the association between early-life PFAS exposure and pediatric obesity is highly heterogeneous.",
+      "Prenatal PFOA exposure emerges as the most consistent obesogenic factor, associated with higher BMI and central adiposity in mid-childhood (ages 5-12).",
+      "Conversely, prenatal PFOS and concurrent/postnatal exposures to various PFAS (including PFOS and PFHxS) are more frequently associated with lower BMI or null effects.",
+      "The observed heterogeneity underscores the importance of chemical-specific mechanisms, windows of susceptibility (prenatal vs. postnatal), and child sex in determining PFAS-related growth trajectories."
+    ]
+  }
+}

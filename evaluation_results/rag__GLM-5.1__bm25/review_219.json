@@ -1,0 +1,47 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11962,
+    "output_tokens": 1217,
+    "total_tokens": 13179
+  },
+  "metrics": {
+    "retrieval_recall": 0.39705882352941174,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.17647058823529413,
+    "inclusion_precision": 0.631578947368421,
+    "inclusion_f1": 0.27586206896551724,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.22058823529411764,
+    "inclusion_consistency": 0.6401,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with a review context, thematic findings, conclusion, and included studies list, but it lacks formal Abstract, Introduction, Methods, Discussion, complete References, detailed search strategy, screening process, data extraction, quality assessment, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "frequency > 6 GHz, exposure below specified limits, English full paper, experimental/epidemiological design, publication before 2020"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence from the included studies is heterogeneous.",
+      "While most in vitro studies at low power densities (well below ICNIRP limits) do not demonstrate adverse genotoxic, proliferative, or gene expression effects in human cells, some reports of chromatin condensation exist.",
+      "In vivo animal studies at very low SARs (10 and 50 GHz) suggest potential male reproductive toxicity, and one occupational epidemiological study on radar exposure (> 6 GHz) reported genotoxic and oxidative stress markers in humans.",
+      "Studies at higher local power densities (up to 200 W/m\u00b2) for in vitro exposure generally found no adverse effects, with any observed changes often being attributable to thermal mechanisms."
+    ]
+  }
+}

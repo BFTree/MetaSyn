@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 130,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7830,
+    "output_tokens": 1150,
+    "total_tokens": 8980
+  },
+  "metrics": {
+    "retrieval_recall": 0.8823529411764706,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.7058823529411765,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.8000000000000002,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.8105,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7455,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes objective, methods, screening results, synthesis, conclusions, and included studies, but it lacks a formal abstract, introduction, discussion, full references, detailed search strategy, data extraction methods, quantitative meta-analysis methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies were required to report on breast cancers (invasive or ductal carcinoma in situ) detected in consecutive or randomly selected women with dense breasts who underwent mammography and supplemental ultrasound, at least when mammography was negative."
+    ],
+    "exclusion_criteria": [
+      "Studies of symptomatic women",
+      "those reporting only interval cancers",
+      "those with non\u2011comparable mammography and ultrasound populations",
+      "those not reporting dense\u2011breast results separately",
+      "pre\u20112000 publications",
+      "Reviews, meta\u2011analyses, protocols, editorials, and conference abstracts were not considered eligible primary studies."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence consistently shows that supplementing mammography with ultrasound in women with dense breasts detects additional cancers\u2014typically 2\u20134 per 1000 screens\u2014that would otherwise be missed.",
+      "However, this benefit is accompanied by a marked increase in recall rates and false\u2011positive biopsies.",
+      "The trade\u2011off between improved cancer detection and increased diagnostic work\u2011up should be considered when implementing supplemental ultrasound screening in this population.",
+      "In women with dense breasts, adding ultrasound to mammography increases the cancer detection rate, with most studies reporting an additional 2\u20134 cancers per 1000 women screened.",
+      "The intervention also substantially raises recall rates for diagnostic assessment, with a low positive predictive value for the additional recalls.",
+      "The balance of benefits and harms must be weighed in clinical and policy decisions."
+    ]
+  }
+}

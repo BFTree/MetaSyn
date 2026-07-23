@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18145,
+    "output_tokens": 1113,
+    "total_tokens": 19258
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.21,
+    "inclusion_recall": 0.39285714285714285,
+    "inclusion_precision": 0.88,
+    "inclusion_f1": 0.5432098765432098,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.5238095238095238,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.6372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4067,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes review context, eligibility criteria, synthesized findings, gaps, and included studies, but it lacks standard systematic review sections such as a formal abstract, detailed methods, search strategy, screening process, data extraction approach, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "human participants",
+      "psychophysical measurement of retinal sensitivity thresholds using a full-field stimulus",
+      "sufficient methodological detail"
+    ],
+    "exclusion_criteria": [
+      "Articles published after September 30, 2022",
+      "reviews",
+      "studies mentioning FST without methodological or reporting detail"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Analysis of the included primary studies reveals substantial heterogeneity in FST testing methodologies and reporting practices, spanning devices, stimulus parameters, adaptation protocols, and outcome units.",
+      "This omission hampers the ability to compare technical specifications and dynamic ranges across centers.",
+      "A prominent gap is the near-universal absence of reported dark adaptation durations in the abstracts; standardized guidance should mandate reporting the exact duration of pre-adaptation and background luminance.",
+      "The units used to report FST thresholds are highly inconsistent, creating a substantial barrier to cross-study comparison:",
+      "The most critical gap is the lack of standardized methodological reporting.",
+      "Essential details\u2014such as the specific device, stimulus wavelengths, dark adaptation duration, pupil dilation status, and threshold reference definitions\u2014are frequently omitted.",
+      "Future guidelines should mandate the reporting of dark adaptation protocols, psychophysical algorithm parameters, and pupil status (dilated vs. undilated) to ensure reproducibility.",
+      "While FST is feasible in pediatric cohorts, standardized protocols addressing test-retest reliability and age-related cognitive factors are needed to ensure data validity in children."
+    ]
+  }
+}

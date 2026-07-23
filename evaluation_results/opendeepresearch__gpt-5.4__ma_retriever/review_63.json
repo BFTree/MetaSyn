@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28478,
+    "output_tokens": 920,
+    "total_tokens": 29398
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.26666666666666666,
+    "inclusion_recall": 0.1,
+    "inclusion_precision": 0.25,
+    "inclusion_f1": 0.14285714285714288,
+    "screening_accuracy": 0.6666666666666666,
+    "conditional_retention": 0.125,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.7675,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.9142,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a clear PRISMA-like flow with review question, search strategy, eligibility criteria, screening decisions, study characteristics, outcome synthesis, and meta-analysis feasibility, but it lacks a formal abstract and full references section and is somewhat narrative rather than fully exhaustive."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Full peer-reviewed journal cohort studies",
+      "Adults with morbid obesity undergoing LVSG/LSG",
+      "Published from 1999-01-01 through 2023-11-30",
+      "Pre- and post-operative esophageal physiological testing",
+      "Outcomes relevant to LESP, LESL, DMS, and/or BMI",
+      "No sample-size restriction",
+      "No language restriction"
+    ],
+    "exclusion_criteria": [
+      "Non-human studies",
+      "Duplicates",
+      "Abstract-only conference articles",
+      "Opinion pieces",
+      "Editorial letters",
+      "Case studies",
+      "Reviews",
+      "Meta-analyses"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Weight loss after LVSG was robust and consistent across studies.",
+      "BMI reduction is the most reproducible finding in this evidence base.",
+      "The evidence does **not** support a single uniform effect of LVSG on LESP.",
+      "Some studies suggest LVSG weakens the LES, while another found the opposite.",
+      "LESL findings are sparse and heterogeneous.",
+      "Overall, the evidence leans toward potential adverse structural-functional changes in some patients, but certainty is low.",
+      "The only directly extractable DMS evidence indicates worsening acid reflux after LVSG.",
+      "A formal quantitative meta-analysis was **not feasible** based on the available local-corpus evidence extracted in this review."
+    ]
+  }
+}

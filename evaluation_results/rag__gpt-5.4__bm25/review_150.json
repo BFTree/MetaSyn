@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6854,
+    "output_tokens": 1520,
+    "total_tokens": 8374
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.6428571428571429,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.6428571428571429,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.7016,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4147,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized and includes screening criteria, reasons for exclusion, qualitative synthesis, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, PRISMA flow, quality assessment, quantitative synthesis methods, discussion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: women",
+      "Outcome: breast cancer risk",
+      "Exposure of interest: vitamin **B6/PLP**, vitamin **B12**, or **methionine**",
+      "Design requirement: primary study with a reported relative risk/odds ratio framework"
+    ],
+    "exclusion_criteria": [
+      "non-breast-cancer outcomes",
+      "prognosis/survival only",
+      "reviews/meta-analyses",
+      "gene-polymorphism papers without direct nutrient-risk estimates",
+      "duplicate reports from the same study population when a larger report was available"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the screened candidate pool, the most convincing abstract-level pattern is that **higher circulating vitamin B6/PLP may be associated with lower breast cancer risk, particularly in postmenopausal women**.",
+      "In contrast, **dietary vitamin B6, vitamin B12, and methionine show mixed and inconsistent associations** with breast cancer risk across studies.",
+      "Evidence for **vitamin B12** is especially inconsistent, and **methionine** does not show a clear uniform association.",
+      "Taken together, the abstracts support a more credible inverse pattern for **circulating B6 status** than for **dietary B6 intake**.",
+      "So, based on abstracts alone, there is **no stable direction of effect** for vitamin B12.",
+      "Overall, the methionine signal appears weaker and less consistent than the PLP signal."
+    ]
+  }
+}

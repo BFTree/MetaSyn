@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9726,
+    "output_tokens": 1012,
+    "total_tokens": 10738
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.75,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6489,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5105,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, screening process, findings, included studies, notes, and conclusion, but it lacks a formal abstract, introduction, detailed methods, discussion, references, quality assessment, data extraction procedures, and explicit synthesis methods expected of a well-structured systematic review/meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs)",
+      "conducted in LMICs",
+      "involving home visits by CHWs trained to identify serious illness in young infants",
+      "reporting either the accuracy of illness identification (sensitivity/specificity) or care seeking from health facilities"
+    ],
+    "exclusion_criteria": [
+      "Protocols",
+      "reviews",
+      "observational studies",
+      "non-RCT designs",
+      "studies in high-income countries",
+      "The specific studies \u201cAwasthi 2008\u201d, \u201cBang 2005\u201d, and \u201cEscobar 2001\u201d were excluded a priori based on the given criteria."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No included study reported sensitivity or specificity of CHW identification of serious illness in newborns or young infants.",
+      "Four cluster-randomised RCTs provided data on care-seeking outcomes.",
+      "All were conducted in LMICs (Ghana, India, South Africa) and involved home visits by trained CHWs.",
+      "No study provided data on the diagnostic accuracy of CHW assessments.",
+      "The eligible candidate pool contained four RCTs that evaluated the effect of CHW home visits on care seeking for sick newborns in LMICs.",
+      "No study reported the sensitivity or specificity of CHW identification of serious illness.",
+      "The meta-analysis will therefore be restricted to the care-seeking outcome, synthesising evidence from the four identified trials."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10330,
+    "output_tokens": 1087,
+    "total_tokens": 11417
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.38461538461538464,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5555555555555556,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.4166666666666667,
+    "post_retrieval_loss": 0.5384615384615384,
+    "inclusion_consistency": 0.5127,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5151,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, synthesis, exclusion reasons, and included-study notes, but it lacks standard systematic review sections such as a formal abstract, introduction, methods/results/discussion framework, references, and PRISMA-style detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults only",
+      "randomized controlled trial",
+      "exercise training as the main intervention",
+      "duration at least 4 weeks",
+      "non-exercise control condition",
+      "reports at least one target outcome: plasma renin activity/renin, angiotensin II, aldosterone, epinephrine, norepinephrine, 24-hour urinary sodium or potassium excretion, systolic/diastolic blood pressure, or heart rate"
+    ],
+    "exclusion_criteria": [
+      "excludes acute-only studies, reviews, non-randomized designs, animal studies, pregnancy-only populations, and crossover studies",
+      "reviews, meta-analyses, guidelines, or narrative articles",
+      "acute exercise or acute physiology studies",
+      "crossover trials",
+      "animal studies",
+      "not randomized controlled exercise-training trials",
+      "lacking a non-exercise control",
+      "not reporting review-target outcomes",
+      "mixed lifestyle interventions where the effect of exercise was not isolated as the main intervention"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these studies, exercise training usually lowered blood pressure and, when measured, tended to reduce RAAS or sympathetic markers such as renin, angiotensin II, aldosterone, and norepinephrine.",
+      "The direction of effect is fairly consistent, but the evidence base is narrow and heterogeneous.",
+      "On the basis of abstracts alone, the evidence supports that exercise training can reduce blood pressure in adults with hypertension-related conditions and may downregulate parts of the RAAS/sympathetic axis, but the pool is too heterogeneous and sparse to support a precise pooled estimate here.",
+      "The abstract-level evidence suggests exercise training generally lowers blood pressure and may reduce renin-angiotensin or sympathetic activation in adults with hypertension-related conditions, but the evidence base is heterogeneous and limited for full quantitative synthesis of each RAAS component."
+    ]
+  }
+}

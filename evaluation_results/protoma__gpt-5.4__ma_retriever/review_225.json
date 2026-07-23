@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29931,
+    "output_tokens": 916,
+    "total_tokens": 30847
+  },
+  "metrics": {
+    "retrieval_recall": 0.9375,
+    "retrieval_precision": 0.28846153846153844,
+    "inclusion_recall": 0.375,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.7884615384615384,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.5625,
+    "inclusion_consistency": 0.5949,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6615,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly well-organized systematic review structure with abstract, background, methods, search strategy, eligibility criteria, screening results, synthesis approach, risk of bias, discussion, and conclusion, but it falls short of excellent due to duplicated headings, some internal inconsistencies about quantitative synthesis, absence of a formal references section, and minor non-report text embedded in the Results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling adults (>=18 years) with low-renin hypertension or a clearly defined low-renin hypertensive subgroup.",
+      "Randomized controlled trials, non-randomized interventional studies, or prospective observational comparative studies evaluating mineralocorticoid receptor antagonist therapy (e.g., spironolactone, eplerenone).",
+      "Studies comparing MRA therapy with placebo or other antihypertensive treatments such as ACE inhibitors, angiotensin receptor blockers, or diuretics.",
+      "Studies reporting at least one relevant outcome: change in systolic blood pressure, change in diastolic blood pressure, and/or safety/tolerability outcomes including adverse events, discontinuation, hyperkalemia, or renal effects."
+    ],
+    "exclusion_criteria": [
+      "Studies in children/adolescents, pregnant populations, or populations not specifically identified as having low-renin hypertension.",
+      "Case reports, case series, reviews, editorials, conference abstracts without sufficient data, and non-comparative or purely cross-sectional studies.",
+      "Studies in which the intervention is not an MRA, or where the comparator is absent or not a relevant antihypertensive/placebo comparison.",
+      "Studies not reporting blood pressure reduction outcomes or safety/tolerability data relevant to MRA treatment."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently extractable outcome data in a consistent form, precluding meta-analysis of systolic or diastolic blood pressure reduction and safety outcomes.",
+      "The qualitative evidence suggests that MRAs may reduce blood pressure in this population, and some studies indicated acceptable tolerability, but these findings were not consistently reported across studies or comparators.",
+      "Overall, the current evidence remains limited and insufficient to support firm conclusions about the comparative effectiveness or safety of MRAs for low-renin hypertension.",
+      "As a result, the available evidence suggests potential benefit, but the magnitude and precision of that benefit remain uncertain."
+    ]
+  }
+}

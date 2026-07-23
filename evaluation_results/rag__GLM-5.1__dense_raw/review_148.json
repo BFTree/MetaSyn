@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18066,
+    "output_tokens": 1338,
+    "total_tokens": 19404
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.42857142857142855,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.6242,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4235,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with Objective, Methods, Results, and included studies, but it lacks several required sections such as Abstract, Introduction, Discussion, Conclusion, formal References, quality assessment, detailed search strategy, data extraction process, and clear synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Inclusion required case\u2013control or cohort study designs published as full-text manuscripts, with alcoholic beverage intake as the exposure and RCC (or kidney adenocarcinoma) as the outcome, reporting relative risk (RR) or odds ratio (OR) estimates with 95% confidence intervals (CIs)."
+    ],
+    "exclusion_criteria": [
+      "The search end date was 2011-08-31; therefore, articles published after this date were excluded.",
+      "Meta-analyses, reviews, protocols, editorials, conference abstracts, and studies not reporting the required quantitative data for alcohol on RCC in the abstract were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence consistently indicates an inverse association between alcohol consumption and RCC risk.",
+      "A pooled analysis of 12 prospective studies (Candidate 003) reported that alcohol consumption \u226515 g/day was associated with a decreased risk of RCC compared to nondrinking (pooled multivariable RR 0.72, 95% CI 0.60\u20130.86), with a significant inverse trend.",
+      "Similarly, a large UK prospective cohort of women (Candidate 011) found a reduced risk for \u22652 drinks/day versus <1 drink/day (RR 0.76, 95% CI 0.61\u20130.96).",
+      "Case-control studies corroborated these findings: a Canadian study (Candidate 008) observed an inverse association for the highest intake group versus non-drinkers in both sexes (OR 0.7, 95% CI 0.5\u20130.9); a Swedish study (Candidate 004) reported a significant decrease in risk for total ethanol intake >620 g/month (OR 0.6, 95% CI 0.4\u20130.9); and an Italian study (Candidate 010) found a significant inverse trend with increasing consumption, noting a decreased risk even at >8 drinks/day (OR 0.70, 95% CI 0.50\u20130.97).",
+      "Findings regarding sex-specific associations were somewhat inconsistent across studies.",
+      "The evidence on beverage type is mixed."
+    ]
+  }
+}

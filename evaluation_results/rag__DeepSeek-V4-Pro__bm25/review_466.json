@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6858,
+    "output_tokens": 1303,
+    "total_tokens": 8161
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.7177,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4361,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Introduction, Methods, Results, Discussion, Included Studies, and Conclusion, and it includes eligibility criteria and narrative synthesis, but it lacks an abstract, formal references, detailed search strategy, screening flow, data extraction methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: hospitalized adults (age \u226516 years) with sepsis or at risk for sepsis.",
+      "Intervention: automated alerting system integrated into electronic health records for sepsis detection (rule\u2011based or machine learning).",
+      "Comparison: usual care without automated sepsis alerts.",
+      "Outcomes: hospital mortality and/or length of stay (hospital or ICU)."
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "animal studies",
+      "non\u2011sepsis interventions",
+      "pediatric populations",
+      "case reports",
+      "studies not comparing an automated alert to usual care",
+      "articles published after 2021 were excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence from the eight eligible studies indicates that automated rule\u2011based sepsis alerting systems can improve process measures and occasionally reduce LOS, but their effect on mortality remains inconsistent and generally non\u2011significant in controlled designs.",
+      "Within the constraints of the supplied candidate pool, automated rule\u2011based sepsis alerts show limited and inconsistent impact on mortality, with some evidence for reduced length of stay.",
+      "Alert fatigue due to poor specificity is a probable barrier.",
+      "Comparative studies of machine\u2011learning alerting systems were absent prior to 2022."
+    ]
+  }
+}

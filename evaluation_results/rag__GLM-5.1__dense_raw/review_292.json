@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18407,
+    "output_tokens": 1069,
+    "total_tokens": 19476
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.05555555555555555,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.10526315789473684,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.07142857142857142,
+    "post_retrieval_loss": 0.7222222222222222,
+    "inclusion_consistency": 0.6096,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5118,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic screening summary, evidence synthesis, and conclusion-like statement, but it lacks most standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion, references, inclusion/exclusion criteria details, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "systematic reviews with meta-analysis (SR+MA) of epidemiological studies",
+      "published between January 2021 and July 2024",
+      "that specifically studied the **bidirectional** association between periodontitis and noncommunicable diseases (NCDs)"
+    ],
+    "exclusion_criteria": [
+      "**Unidirectional focus:** Numerous SR+MAs investigated only one direction of the association (e.g., periodontitis as a risk factor for cancer, stroke, or metabolic syndrome, or NCDs like diabetes/SLE as risk factors for periodontitis).",
+      "While relevant to the broader topic, these did not meet the specific criterion of having *studied the bidirectional association* within the same review.",
+      "**Publication year:** Several relevant reviews (e.g., on colorectal cancer, lung cancer, or IBD) were published in 2025 or earlier than 2021.",
+      "**Study design:** Candidates included narrative reviews, protocols, Mendelian randomization studies (which are genetic causal inference studies, not epidemiological SR+MAs of observational data), clinical trials, and cross-sectional studies, all of which were excluded.",
+      "**Outcome/Population:** Some reviews focused on interventions (periodontal therapy) rather than epidemiological risk associations, or studied oral health broadly rather than periodontitis specifically."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one candidate explicitly evaluated the bidirectional epidemiological association between periodontitis and an NCD using a systematic review and meta-analysis approach within the specified timeframe.",
+      "The meta-analysis of four longitudinal studies (over 10 million participants) found that periodontitis was **not** associated with an overall increased risk of IBD (pooled RR: 1.04; 95% CI: 0.99\u20131.09).",
+      "However, subtype analysis revealed a significant association between periodontitis and the occurrence of **ulcerative colitis** (pooled RR: 1.12; 95% CI: 1.04\u20131.21), but not Crohn's disease (pooled RR: 0.98; 95% CI: 0.92\u20131.04).",
+      "The meta-analysis of two longitudinal studies (over 33,000 participants) demonstrated that patients with IBD had a significantly higher risk of developing periodontitis over time (pooled HR: 1.37; 95% CI: 1.26\u20131.49).",
+      "The evidence supports a **partial bidirectional association**: IBD serves as a risk factor for the development of periodontitis, while periodontitis specifically increases the risk of ulcerative colitis (but not Crohn's disease or IBD overall).",
+      "The certainty of the evidence for the direction of IBD leading to periodontitis is limited by the small number of studies, whereas the evidence for periodontitis leading to UC is robust and confirmed by TSA."
+    ]
+  }
+}

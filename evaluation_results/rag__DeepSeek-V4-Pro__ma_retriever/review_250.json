@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10315,
+    "output_tokens": 1415,
+    "total_tokens": 11730
+  },
+  "metrics": {
+    "retrieval_recall": 0.5476190476190477,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.13043478260869565,
+    "screening_accuracy": 0.895,
+    "conditional_retention": 0.13043478260869565,
+    "post_retrieval_loss": 0.47619047619047616,
+    "inclusion_consistency": 0.6246,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5842,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, screening criteria, screening process, included studies, and synthesis comments, but it lacks a formal abstract, introduction, detailed methods, quantitative synthesis approach, quality assessment, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials (RCTs)",
+      "adults (\u226518 years) with major depressive disorder (MDD) who had failed \u22652 antidepressant trials",
+      "employed a placebo/sham comparator",
+      "reported response rates",
+      "Minimal arm size was 10 participants."
+    ],
+    "exclusion_criteria": [
+      "Studies including bipolar or psychotic depression were excluded.",
+      "Not an RCT (e.g., reviews, meta\u2011analyses, protocols, case series, retrospective/naturalistic studies, editorial/commentary).",
+      "Population did not meet TRD definition (many studies used \u201ctreatment\u2011resistant depression\u201d without specifying \u22652 failed antidepressant trials, or required only one failed trial).",
+      "Wrong comparator (active\u2011controlled without placebo/sham, or no comparison group).",
+      "Wrong outcome/design (e.g., maintenance studies, relapse\u2011prevention after response, mechanistic imaging studies, secondary analyses).",
+      "Included excluded populations (bipolar depression, psychotic depression)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only four candidate articles explicitly met all criteria: they were randomized, placebo/sham\u2011controlled, enrolled adults with MDD who had failed at least two antidepressant trials, and had response rate as a key outcome.",
+      "All four included studies evaluated pharmacological adjunctive or monotherapy strategies: three examined intranasal esketamine (various designs, all placebo\u2011controlled), and one examined the anti\u2011inflammatory agent minocycline.",
+      "No neuromodulatory RCTs (e.g., rTMS, TBS, ECT, MST) in the candidate pool explicitly required \u22652 prior antidepressant failures while also using a sham control and reporting response rates.",
+      "The eligible studies provide direct evidence for esketamine (adjunctive and monotherapy) and minocycline in the defined TRD population, but the pool lacks eligible comparisons for many interventions of interest (e.g., ECT, rTMS, TBS, ketamine infusion, aripiprazole augmentation).",
+      "This gap underscores the need for rigorously designed sham\u2011controlled trials that clearly specify a \u22652\u2011antidepressant\u2011failure criterion when enrolling TRD participants."
+    ]
+  }
+}

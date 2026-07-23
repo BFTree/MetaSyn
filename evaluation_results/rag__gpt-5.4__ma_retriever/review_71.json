@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22162,
+    "output_tokens": 930,
+    "total_tokens": 23092
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.4782608695652174,
+    "inclusion_f1": 0.6470588235294118,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6989,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, evidence synthesis, limitations, conclusions, and an included-study list, but it lacks several standard systematic review sections such as an abstract, formal introduction, detailed methods/search strategy, quality assessment, meta-analysis synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "children up to 12 years",
+      "prenatal and/or postnatal PFAS exposure measured quantitatively",
+      "objectively measured childhood obesity-related outcomes, especially BMI, BMI z-score, waist circumference, overweight/obesity, or closely related anthropometric adiposity measures",
+      "weight-related outcome measured during 1\u201312 years of age",
+      "primary human studies reporting an association estimate"
+    ],
+    "exclusion_criteria": [
+      "reviews, editorials, animal/simulation studies, birth-only outcomes, and studies without a PFAS-obesity association"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across them, the evidence is heterogeneous by PFAS compound, exposure window, child age, and sex.",
+      "Prenatal PFAS exposure shows the most evidence for association with later adiposity, but findings are mixed:",
+      "PFOA most often shows positive associations with later childhood adiposity or faster BMI gain, especially by mid-childhood.",
+      "PFOS more often shows null or inverse associations with BMI in infancy/early childhood, though some studies suggest later reversal or central adiposity associations.",
+      "Postnatal/concurrent childhood PFAS exposure is less consistently linked to higher adiposity; several cross-sectional child-serum studies report inverse associations with BMI/BMI z-score.",
+      "Overall, the evidence supports substantial heterogeneity by PFAS compound and exposure timing, which matches the review question."
+    ]
+  }
+}

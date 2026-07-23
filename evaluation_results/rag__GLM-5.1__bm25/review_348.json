@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14819,
+    "output_tokens": 1323,
+    "total_tokens": 16142
+  },
+  "metrics": {
+    "retrieval_recall": 0.27450980392156865,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.2549019607843137,
+    "inclusion_precision": 0.8666666666666667,
+    "inclusion_f1": 0.3939393939393939,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9285714285714286,
+    "post_retrieval_loss": 0.0196078431372549,
+    "inclusion_consistency": 0.6147,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4326,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening, narrative evidence synthesis, and included studies, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, and PRISMA-style details like search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "longitudinal design",
+      "prospective assessment of biological biomarkers before MDD onset/relapse/recurrence",
+      "clinical diagnosis of MDD"
+    ],
+    "exclusion_criteria": [
+      "bipolar or other non-MDD mood disorders",
+      "late-life depression",
+      "medical comorbidity",
+      "reviews/protocols",
+      "publication after the search end date of June 2019",
+      "Studies published after 2019 were excluded as out-of-date.",
+      "Cross-sectional studies",
+      "reviews",
+      "protocols",
+      "randomized controlled trials focusing on treatment efficacy rather than biomarker prediction"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible studies demonstrate that several biological biomarkers across distinct theoretical domains prospectively predict MDD onset or recurrence, although findings within domains\u2014particularly the HPA-axis\u2014are occasionally nuanced or divergent.",
+      "Findings regarding recurrence are heterogeneous.",
+      "However, another longitudinal study in remitted recurrent MDD patients found that cortisol concentrations did not significantly predict recurrence (Candidate 053), suggesting that HPA-axis trait markers may not always translate to prospective recurrence risk without moderating factors.",
+      "Neuroimaging markers, particularly volumetric and connectivity measures, show robust prospective links to MDD onset and recurrence.",
+      "Plasma norepinephrine assessed during an index episode prospectively predicts the time to first recurrence; notably, higher norepinephrine was associated with a longer time to recurrence (better outcome) in nonpsychotic MDD (Candidate 019)."
+    ]
+  }
+}

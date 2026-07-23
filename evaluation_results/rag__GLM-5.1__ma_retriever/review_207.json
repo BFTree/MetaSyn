@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 207,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13374,
+    "output_tokens": 906,
+    "total_tokens": 14280
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.6250000000000001,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.7756,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4705,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is thematically organized and mentions eligibility criteria plus included studies, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, and key PRISMA/meta-analysis elements such as detailed search strategy, screening flow, quality assessment, data extraction, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies involving systemic or ocular diseases were partially included if they contained a distinct segment analyzing healthy women across menstrual or menopausal stages"
+    ],
+    "exclusion_criteria": [
+      "they involved pregnancy, hormonal contraception, or hormone replacement therapy",
+      "focused on purely haemodynamic or functional vascular outcomes (e.g., OCTA perfusion density)",
+      "primarily investigated sex differences rather than within-women hormonal stages",
+      "fell outside the search end date (2024-02-18)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence regarding the impact of menstrual cycle phases on the posterior pole in healthy women primarily centers on choroidal thickness and morphology.",
+      "Three prospective studies consistently demonstrated that the choroid undergoes significant structural thinning during the mid-luteal phase compared to the early follicular and ovulatory phases.",
+      "In contrast to the consistent choroidal findings, the optic nerve head does not appear to undergo significant topographic changes across the menstrual cycle in healthy women.",
+      "Comparing reproductive-age women to postmenopausal women reveals significant structural differences, particularly in choroidal thickness.",
+      "Regarding the optic nerve head and associated layers, the findings are less definitive."
+    ]
+  }
+}

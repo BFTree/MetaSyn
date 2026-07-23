@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15434,
+    "output_tokens": 1429,
+    "total_tokens": 16863
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.332,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6359,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with screening summary, eligibility decisions, evidence synthesis, limitations, included studies, and bottom line, but it lacks full PRISMA-style rigor elements such as a detailed search strategy, explicit data extraction and quality assessment methods, and a conventional abstract/introduction/methods/results/discussion structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies in humans",
+      "within **2004-11-01 to 2014-11-30**",
+      "involving **open-angle glaucoma patients and healthy controls**",
+      "evaluating **quantitative translaminar pressure difference (TPD/TLPD/TPG = IOP - ICP/CSF pressure)**",
+      "Studies also needed to be relevant to the outcomes of interest: group differences in TPD and/or associations with structural glaucomatous optic disc change.",
+      "enrolled open-angle glaucoma patients and nonglaucomatous/healthy comparison subjects, or included structural glaucomatous outcomes in OAG-related groups;",
+      "measured or calculated TPD/TPG quantitatively;",
+      "fell within the review date range."
+    ],
+    "exclusion_criteria": [
+      "outside the date window",
+      "were reviews/editorials/letters",
+      "were animal or experimental-model studies",
+      "did not include healthy controls",
+      "did not report quantitative TPD in open-angle glaucoma patients",
+      "did not directly evaluate TPD",
+      "Candidate 006 and later TPD studies: outside the date range.",
+      "Candidate 008: 2015, outside date range.",
+      "Candidate 014: mechanism/review-style article, not a primary eligible study.",
+      "Animal studies such as Candidates 009 and 020: excluded.",
+      "Reviews/commentaries such as Candidates 012 and 021: excluded.",
+      "Studies not centered on TPD in OAG or lacking healthy controls/quantitative TPD: excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The small evidence base available in the specified period is consistent in direction: TPD appears higher in open-angle glaucoma than in healthy subjects, and higher TPD is associated with worse glaucomatous damage.",
+      "This study also reported that visual field loss correlated positively with TPD, supporting the idea that a larger pressure difference is linked to greater disease severity.",
+      "Across the eligible abstracts, the evidence suggests:",
+      "open-angle glaucoma patients have higher translaminar pressure difference than healthy subjects;",
+      "higher TPD is associated with more advanced structural and functional glaucomatous damage, especially smaller neuroretinal rim area and worse visual field loss.",
+      "Based on the supplied candidate pool and abstract-only screening, the eligible evidence supports the review hypothesis that TPD is elevated in open-angle glaucoma compared with healthy subjects and that higher TPD is associated with structural glaucomatous optic nerve damage."
+    ]
+  }
+}

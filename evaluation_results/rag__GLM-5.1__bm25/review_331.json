@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23426,
+    "output_tokens": 821,
+    "total_tokens": 24247
+  },
+  "metrics": {
+    "retrieval_recall": 0.7352941176470589,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.5882352941176471,
+    "inclusion_precision": 0.8695652173913043,
+    "inclusion_f1": 0.7017543859649124,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.14705882352941177,
+    "inclusion_consistency": 0.4718,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5317,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a screening summary, eligibility criteria, intervention-based evidence synthesis, and included-study list, but it lacks several required systematic review sections such as abstract, introduction, full methods, discussion, conclusion, formal references, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (parallel or crossover)",
+      "involving adult patients (\u226518 years) with PSPS-T2 (Failed Back Surgery Syndrome or Failed Neck Surgery Syndrome)",
+      "evaluated the specified interventions",
+      "reported pain intensity outcomes"
+    ],
+    "exclusion_criteria": [
+      "Studies involving PSPS Type 1 (no prior surgery)",
+      "mixed populations without distinct PSPS-T2 subgroup analysis",
+      "animal models",
+      "case reports",
+      "observational studies",
+      "systematic reviews",
+      "protocols",
+      "cost-analyses",
+      "technical/feasibility reports without clinical pain outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Two landmark parallel-group RCTs demonstrate that SCS, when added to medical management, provides superior pain relief compared to medical management alone.",
+      "SCS was found to be significantly more successful than reoperation based on pain relief and patient satisfaction (9 of 19 vs. 3 of 26 patients successful), and patients randomized to reoperation were significantly more likely to cross over to SCS.",
+      "Evidence on SCS versus placebo is mixed.",
+      "Several RCTs compared different SCS programming strategies, generally finding comparable pain relief:",
+      "For FBSS patients with inadequate back pain relief from SCS alone, adding peripheral stimulation shows significant benefit.",
+      "Two RCTs (Candidates 072 and 077, the latter being a 2-year follow-up of the former) consistently demonstrated the superiority of percutaneous adhesiolysis over caudal epidural steroid injections for post-surgery syndrome.",
+      "Both groups showed significant pain and disability improvement at 6 months; however, only the drug administration group sustained significant ODI improvement at 12 months.",
+      "Both significantly reduced pain (NRS-11), but TFESI provided significantly better disability reduction (mODI) at 3 weeks."
+    ]
+  }
+}

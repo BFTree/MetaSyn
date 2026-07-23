@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 163,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12065,
+    "output_tokens": 1225,
+    "total_tokens": 13290
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.9285714285714286,
+    "inclusion_precision": 0.896551724137931,
+    "inclusion_f1": 0.912280701754386,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5897,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3892,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a screening overview, evidence synthesis, and list of included studies, but it lacks most standard sections such as abstract, introduction, detailed methods, results, discussion, conclusion, formal references, quality assessment, and clear data extraction or meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "observational study design (cohort, case-control, nested case-control, case cohort)",
+      "exposure to bisphosphonates",
+      "comparison to non-users",
+      "outcome of cancer incidence with effect estimates",
+      "English language",
+      "search end date of 2019-12-07"
+    ],
+    "exclusion_criteria": [
+      "Studies published after 2019 were excluded.",
+      "Reviews, meta-analyses, protocols, in vitro/animal studies, and studies reporting on cancer mortality or other outcomes (e.g., osteonecrosis, survival) without incidence data were also excluded.",
+      "Duplicate reporting of the same study outcomes was resolved by selecting the more recent or complete data where applicable."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included observational studies present a heterogeneous landscape regarding the association between bisphosphonate use and cancer risk, varying significantly by cancer type, bisphosphonate type/duration, and population.",
+      "Evidence is conflicting.",
+      "Most studies suggest a potential reduced risk.",
+      "The majority of studies indicate a reduced risk or no association.",
+      "The evidence consistently supports a reduced risk.",
+      "Data are sparse and conflicting.",
+      "Evidence suggests a potential increased risk with specific bisphosphonates.",
+      "Findings are notably conflicting."
+    ]
+  }
+}

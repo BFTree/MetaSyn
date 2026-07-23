@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10335,
+    "output_tokens": 2241,
+    "total_tokens": 12576
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.4631,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, synthesis, limitations, and included studies, but it lacks core systematic review sections such as abstract, introduction, full methods, formal results, discussion, conclusion, references, quality assessment, and detailed meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults",
+      "randomized controlled or randomized crossover design",
+      "time-restricted eating/feeding with a 4-12 h eating window",
+      "exercise in both intervention and comparator arms",
+      "comparator with an unrestricted/normal eating window",
+      "intervention duration at least 4 weeks",
+      "healthy adults (allowing overweight/obesity)",
+      "body-composition outcomes of interest reported in the abstract",
+      "publication date within the review window, insofar as this could be determined from the supplied records"
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the abstract-level evidence supports the review\u2019s premise **more for fat loss than for superior muscle/FFM outcomes**.",
+      "The stronger and more consistent signal is for **reduced fat mass or body-fat percentage** with TRE + exercise.",
+      "Results are **mixed**:",
+      "Using only the supplied records, the eligible evidence suggests that in exercising adults, **TRE combined with exercise may improve body composition mainly by reducing fat mass/body-fat percentage while generally preserving fat-free mass**.",
+      "However, the evidence is **short-term, small-scale, and heterogeneous**, and the superiority of TRE over unrestricted eating for **FFM preservation or gain** is not consistently demonstrated."
+    ]
+  }
+}

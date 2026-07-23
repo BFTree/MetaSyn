@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31714,
+    "output_tokens": 1061,
+    "total_tokens": 32775
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09090909090909091,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9696969696969697,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4375,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3136,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, introduction, methods, results/findings, limitations, conclusion, included studies, references, and meta-analysis elements such as search strategy, eligibility criteria, screening decisions, PRISMA-style counts, and synthesis approach, but it lacks a formal quality/risk-of-bias assessment needed for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials",
+      "Preterm infants (<37 weeks\u2019 gestation)",
+      "Oral sucrose, glucose, or dextrose at any concentration/dose",
+      "Comparator: BM/EBM/breastfeeding milk exposure",
+      "Procedure: heel lance or venipuncture",
+      "Outcomes: pain scores, crying duration, heart rate, adverse events",
+      "Search end date: **2024-04-30**"
+    ],
+    "exclusion_criteria": [
+      "Not RCT",
+      "Systematic reviews/meta-analyses",
+      "No BM/EBM comparator",
+      "Mixed term/preterm populations analyzed together without preterm-specific data",
+      "Mean gestational age at/near term as specified in the exclusion list",
+      "Ineligible procedures or multi-arm designs without relevant BM comparison"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In **moderate and late preterm infants** undergoing **heel lance**, **expressed breast milk/breast milk appears to provide analgesia similar to oral sucrose**, with no significant difference in PIPP/PIPP-R scores across the two included RCTs.",
+      "Therefore, for **heel lance in moderate-to-late preterm infants**, using **EBM instead of sucrose is a clinically reasonable and evidence-supported option**.",
+      "However, I do **not** think the evidence justifies a blanket statement that breast milk is equivalent to sucrose or glucose for **all preterm infants** or for **all minor procedures**.",
+      "In short, the evidence supports **EBM as a practical alternative to sucrose for heel lance analgesia in moderate/late preterm infants**, but it does **not** support replacing sweet solutions universally across all preterm procedural pain settings."
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15136,
+    "output_tokens": 1159,
+    "total_tokens": 16295
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.46153846153846156,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6072,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening decisions, eligibility rationale, included studies, and a brief synthesis, but it lacks formal systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, and References, and it provides only partial PRISMA/meta-analysis elements with no detailed search strategy, data extraction process, quality assessment method, or quantitative synthesis approach."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies from **2015-01-01 to 2022-12-31**",
+      "compare **children with gender and/or sexual minority parents** against **children with different-sex parents**",
+      "with a **child mental health outcome**"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "comments",
+      "protocols",
+      "non-English items where English peer-review status was unclear",
+      "studies focused on sexual/gender minority youth rather than children of LGBTQ parents",
+      "studies focused only on parents",
+      "studies without a different-sex parent comparison",
+      "studies outside the date window",
+      "wrong population: focused on LGBTQ youth themselves, not children of LGBTQ parents",
+      "no eligible comparison group with different-sex parents",
+      "no child mental health outcome",
+      "not a primary study (review, protocol, comment, expression of concern)",
+      "outside 2015-2022"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "children with LGBTQ parents do not show worse mental health or behavioral adjustment than children with different-sex parents",
+      "Where differences were examined, findings were generally null or occasionally favorable for children with sexual minority parents on some relational indicators.",
+      "Several studies also emphasize contextual stressors, parenting quality, or minority stress rather than parent sexual/gender identity itself as the main explanatory factors.",
+      "studies from 2015-2022 do not show higher child mental health problems among children with LGBTQ parents compared with children with different-sex parents",
+      "sample size, representativeness, and family-selection issues remain recurring methodological constraints",
+      "Their abstracts do not support the claim that children with LGBTQ parents experience more mental health problems than children with different-sex parents.",
+      "The more defensible synthesis is that available 2015-2022 studies in this pool are largely reassuring, but the literature remains constrained by small and selective samples, with only limited population-representative evidence."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18156,
+    "output_tokens": 1169,
+    "total_tokens": 19325
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.823529411764706,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6221,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3544,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening summary, synthesis of findings, conclusion, and included studies, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, full References, detailed search strategy, data extraction approach, quality assessment, and PRISMA-style screening details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original studies enrolling \u226510 patients with primary stage IV endometrial cancer (EC) who underwent CRS",
+      "published between 1997 and 2022",
+      "reporting survival data (OS/PFS) stratified by the extent of cytoreduction (complete [no residual], optimal [\u22641 cm], or incomplete [>1 cm])"
+    ],
+    "exclusion_criteria": [
+      "Studies mixing stage III and IV patients without separate stage IV reporting",
+      "reviews",
+      "meta-analyses",
+      "guidelines",
+      "case reports",
+      "conference abstracts",
+      "studies on uterine sarcomas/carcinosarcomas",
+      "studies involving HIPEC",
+      "Studies using a \u22652 cm threshold for \"optimal\" cytoreduction"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included primary studies consistently demonstrate a significant survival advantage for patients achieving complete or optimal (\u22641 cm residual) cytoreduction compared to those with incomplete (>1 cm residual) disease in stage IV EC.",
+      "Multiple studies report a dramatic improvement in median OS when optimal or complete cytoreduction is achieved.",
+      "Where data allows comparison, complete cytoreduction (no gross residual) often provides the greatest survival benefit.",
+      "The prognostic significance of residual disease status was confirmed on multivariate analysis in several studies, identifying the extent of cytoreduction as an independent predictor of survival (e.g., Bristow et al., Kanayama et al., Greer et al.).",
+      "One study evaluating optimal debulking in stage IV UPSC (Campion et al.) observed a trend toward longer survival with optimal debulking (15 vs. 8 months) but did not reach statistical significance, likely attributable to a small sample size.",
+      "The evidence strongly supports that complete or optimal cytoreductive surgery (residual disease \u22641 cm or no gross residual) significantly improves overall survival compared to incomplete cytoreduction (residual disease >1 cm) in patients with primary stage IV endometrial cancer.",
+      "The extent of residual disease is a critical independent prognostic factor, with maximal cytoreduction should be the primary surgical goal whenever feasible."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6779,
+    "output_tokens": 1682,
+    "total_tokens": 8461
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8750000000000001,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.5246,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5369,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct sections for the question, screening criteria, included/excluded studies, synthesis, and conclusion, but it lacks a full PRISMA-style structure such as a detailed search strategy, data extraction and quality assessment methods, and formal abstract/introduction/methods/results/references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults",
+      "randomized controlled or randomized crossover design",
+      "healthy populations (overweight/obesity allowed; major chronic disease excluded)",
+      "TRE with a 4\u201312 h feeding window",
+      "combined with exercise",
+      "comparison group/condition with matched exercise and unrestricted eating",
+      "intervention duration at least 4 weeks",
+      "outcomes including body composition, especially fat mass (FM), body fat percentage (BF%), and/or fat-free mass (FFM)",
+      "publication window intended for the review: 2016-10-01 to 2023-02-28"
+    ],
+    "exclusion_criteria": [
+      "major chronic disease excluded",
+      "reviews/meta-analyses, not primary eligible trials.",
+      "protocols, not completed primary-study results.",
+      "intermittent fasting/Ramadan/5:2 designs rather than TRE with daily 4\u201312 h window.",
+      "compares TRE with another diet in physically active people, but an exercise-matched unrestricted-eating control is not clearly established.",
+      "compares ad libitum vs isocaloric TRF, without an unrestricted-eating control.",
+      "TRE + Nordic walking, but the control conditions are not clearly exercise-matched unrestricted-eating controls.",
+      "publication year suggests after the review end date or date cannot be confirmed from abstract-only information.",
+      "potentially relevant, but the abstract does not clearly establish a prespecified exercise-matched intervention/control structure or report the key body-composition outcomes sufficiently for confident inclusion.",
+      "exercise/TRE trial, but abstract emphasizes body mass rather than the required FM/BF%/FFM outcomes."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included randomized trials, TRE combined with exercise was usually associated with:",
+      "reduced fat mass and/or body fat percentage, or at least similar fat loss to control;",
+      "preservation of fat-free mass, with most studies reporting no detrimental effect on FFM relative to exercise-matched controls;",
+      "little evidence of superior FFM gain from TRE itself.",
+      "Using only the supplied candidate pool, the evidence supports a cautious conclusion that TRE combined with exercise can reduce fat mass and body fat while generally preserving fat-free mass, compared with exercise plus unrestricted eating.",
+      "TRE plus exercise appears promising for fat loss without compromising FFM, but evidence for a consistent additional benefit over unrestricted eating with matched exercise is strongest for fat mass reduction, not for lean-mass preservation beyond what exercise already provides.",
+      "Collectively, they suggest that TRE combined with exercise tends to reduce fat mass/body fat while preserving fat-free mass, but the added benefit over unrestricted eating with matched exercise is more consistent for fat loss than for FFM preservation or gain."
+    ]
+  }
+}

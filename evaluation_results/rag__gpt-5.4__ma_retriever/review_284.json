@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 284,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15667,
+    "output_tokens": 1438,
+    "total_tokens": 17105
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 0.5714285714285714,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6296,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2773,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with eligibility notes, narrative synthesis, limitations, conclusions, and included studies, but it lacks core systematic review sections such as Abstract, Introduction, formal Methods/Results/Discussion, full References, detailed search strategy, PRISMA screening details, risk-of-bias assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human studies in adults",
+      "published in English between 2012-02-01 and 2023-02-07",
+      "specifically examine at least one target neuroinflammatory fluid biomarker among `YKL-40`, `sTREM2`, or `GFAP` in CSF or plasma/serum, in relation to AD clinical stage, progression, or long-term cognitive/clinical outcomes"
+    ],
+    "exclusion_criteria": [
+      "wrong date range",
+      "review/editorial/protocol/non-primary design",
+      "non-AD population",
+      "no target biomarker among YKL-40/sTREM2/GFAP",
+      "no relevant AD-stage/prognostic association in the abstract"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "YKL-40 is the best-supported biomarker in this candidate set for association with AD stage, especially when AD is defined biologically.",
+      "Higher CSF YKL-40 has prognostic relevance, including later cognitive decline and progression to AD dementia.",
+      "GFAP, especially plasma GFAP, may rise in preclinical AD and may relate to cognition in pathology-positive or symptomatic individuals, but the abstract-level evidence here is thinner than for YKL-40.",
+      "Within this fixed candidate pool, the review question is supported mainly by studies of `YKL-40`, with consistent evidence that neuroinflammatory activation is present early in AD and that higher YKL-40, especially in CSF, tracks biologic disease stage and predicts worse downstream outcomes.",
+      "`GFAP` shows early preclinical and cognitive-association signals but with less depth in this pool."
+    ]
+  }
+}

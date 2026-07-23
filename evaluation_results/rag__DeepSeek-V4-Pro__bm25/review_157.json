@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15295,
+    "output_tokens": 946,
+    "total_tokens": 16241
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.7513,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8402,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as a research question, eligibility criteria, screening results, included studies, synthesis, limitations, and conclusion, but it lacks a formal abstract, introduction, references, detailed search strategy, data extraction methods, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Asymptomatic women in population\u2011based breast cancer screening programmes",
+      "Direct comparison of DBT (any acquisition mode) with DM",
+      "Reported CDR and/or recall rate stratified by breast density using BI\u2011RADS",
+      "English language; paired or unpaired design eligible"
+    ],
+    "exclusion_criteria": [
+      "Studies using automated density assessment (and, as per standard review methodology, all non\u2011primary articles such as reviews, protocols, editorials, and conference abstracts)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Within the limited eligible evidence (two studies), DBT appears to improve cancer detection particularly in women with dense breasts, while also reducing recall rates across density categories.",
+      "The differential impact by breast density is most clearly observed for CDR, with the relative increase being almost twice as high in dense breasts compared to non\u2011dense breasts.",
+      "However, the strength of this conclusion is tempered by the small number of studies, the absence of full dual\u2011outcome reporting by density, and the temporal gap between the two included investigations.",
+      "More comprehensive, contemporary primary studies that stratify both CDR and recall rate by BI\u2011RADS density in a paired or randomised design are required to robustly answer the review question."
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "review_id": 224,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    3850,
+    3854,
+    3848,
+    3851,
+    3857,
+    3853,
+    90688,
+    90683,
+    3855
+  ],
+  "retrieved_article_ids": [
+    90679,
+    3850,
+    90688,
+    90683,
+    3854,
+    3848,
+    90680,
+    3851,
+    3855,
+    90636,
+    90637,
+    90693,
+    90694,
+    3852,
+    3857,
+    90710,
+    3859,
+    3856,
+    90713,
+    3853,
+    90672,
+    90709,
+    90673,
+    90639,
+    90705,
+    90681,
+    90682
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 13,
+    "input_tokens": 238108,
+    "output_tokens": 12948,
+    "total_tokens": 251056,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 48449,
+        "output_tokens": 3000,
+        "total_tokens": 51449
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 5295,
+        "output_tokens": 5000,
+        "total_tokens": 10295
+      },
+      "researcher": {
+        "calls": 7,
+        "input_tokens": 174107,
+        "output_tokens": 3512,
+        "total_tokens": 177619
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 9039,
+        "output_tokens": 719,
+        "total_tokens": 9758
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1218,
+        "output_tokens": 717,
+        "total_tokens": 1935
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 27,
+    "retrieved_unique": 27,
+    "included_count": 9,
+    "included_unique": 9,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 33,
+    "fetch_calls": 16,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 14,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

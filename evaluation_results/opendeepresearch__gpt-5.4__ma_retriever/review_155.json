@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27878,
+    "output_tokens": 1122,
+    "total_tokens": 29000
+  },
+  "metrics": {
+    "retrieval_recall": 0.5652173913043478,
+    "retrieval_precision": 0.6190476190476191,
+    "inclusion_recall": 0.5217391304347826,
+    "inclusion_precision": 0.9230769230769231,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.9047619047619048,
+    "conditional_retention": 0.9230769230769231,
+    "post_retrieval_loss": 0.043478260869565216,
+    "inclusion_consistency": 0.7838,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3416,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic-review elements such as explicit search queries, eligibility criteria, screening decisions, included/excluded records, extracted evidence tables, and narrative synthesis, but it lacks a formal abstract, explicit risk-of-bias/quality assessment, and fully detailed meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: women with breast cancer",
+      "Study designs: cohort studies, case-control studies, randomized controlled trials, and retrospective analyses of previously published RCTs",
+      "Exposure: statin use, any relevant definition",
+      "Comparator: non-users or equivalent unexposed groups",
+      "Outcomes: breast cancer-specific death/mortality and/or breast cancer recurrence",
+      "Quantitative reporting: 95% confidence intervals or standard errors reported",
+      "Publication type: full-length articles"
+    ],
+    "exclusion_criteria": [
+      "laboratory studies",
+      "case reports",
+      "ecological studies",
+      "conference abstracts",
+      "editorials",
+      "studies not reporting the target outcomes in a directly usable way",
+      "secondary evidence such as systematic reviews/meta-analyses"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the local corpus does not support a simple uniform recurrence benefit across all settings.",
+      "The available mortality evidence trends more consistently toward benefit or improved survival association than the recurrence evidence.",
+      "This is the clearest directly extractable mortality signal from the available evidence summary and suggests a modest benefit."
+    ]
+  }
+}

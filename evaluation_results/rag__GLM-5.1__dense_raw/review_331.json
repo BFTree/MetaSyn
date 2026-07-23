@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22943,
+    "output_tokens": 1208,
+    "total_tokens": 24151
+  },
+  "metrics": {
+    "retrieval_recall": 0.7941176470588235,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.7058823529411765,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.7868852459016393,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8888888888888888,
+    "post_retrieval_loss": 0.08823529411764706,
+    "inclusion_consistency": 0.412,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.512,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear screening summary, evidence synthesis, and included-study list with basic eligibility criteria, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion, conclusion, references, risk-of-bias assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) involving adult patients (\u226518 years) with Persistent Spinal Pain Syndrome Type 2 (PSPS-T2), also known as Failed Back Surgery Syndrome (FBSS) or Post Lumbar Surgery Syndrome, and reported on pain intensity outcomes following neuromodulation, minimally invasive, conservative, or reoperation interventions."
+    ],
+    "exclusion_criteria": [
+      "systematic reviews/meta-analyses, observational studies, case reports, study protocols, non-RCTs, or studies involving populations without prior spine surgery (e.g., PSPS-T1, chronic nonspecific low back pain, diabetic neuropathy, or complex regional pain syndrome without FBSS).",
+      "Studies reporting only on technical parameters, cost-effectiveness without clinical outcomes, or very acute percept testing (e.g., 2-minute stimulation periods) were also excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Evidence consistently demonstrates that SCS provides superior pain relief compared to conventional medical management (CMM) alone (007, 028) and reoperation (008).",
+      "Adding peripheral nerve field stimulation (PNFS) or subcutaneous stimulation (SubQ) to SCS significantly improves refractory back pain compared to SCS alone (004, 037).",
+      "Percutaneous adhesiolysis with targeted delivery is significantly more effective than caudal epidural steroid injections for long-term pain relief in post-surgery syndrome, with benefits sustained at 1 and 2 years (080, 100).",
+      "Mindfulness-based stress reduction (MBSR) results in statistically and clinically significant improvements in pain, quality of life, and functional limitation compared to traditional therapy alone (131).",
+      "SCS was found to be more effective than reoperation for persistent radicular pain after lumbosacral spine surgery, with patients randomized to SCS being significantly less likely to cross over to the alternative treatment (008)."
+    ]
+  }
+}

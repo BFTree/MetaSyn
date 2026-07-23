@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13537,
+    "output_tokens": 1142,
+    "total_tokens": 14679
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.5161290322580645,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.6274509803921569,
+    "screening_accuracy": 0.905,
+    "conditional_retention": 0.5161290322580645,
+    "post_retrieval_loss": 0.4838709677419355,
+    "inclusion_consistency": 0.6678,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.468,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized with screening summary, evidence synthesis, heterogeneity, cautions, and study lists, but it lacks core systematic review sections such as a formal abstract, introduction, detailed methods, results, discussion, conclusion, references, PRISMA flow, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with schizophrenia/schizophrenia-spectrum or schizoaffective/schizophreniform groups",
+      "healthy control comparison",
+      "quantitative assessment of syntax/grammar in comprehension and/or production",
+      "empirical primary study design"
+    ],
+    "exclusion_criteria": [
+      "reviews, meta-analyses, protocols, editorials, or methods papers",
+      "case reports",
+      "not schizophrenia-vs-healthy-control primary syntax studies",
+      "focused on children/adolescents/UHR/relatives without a qualifying adult schizophrenia-control comparison",
+      "focused mainly on semantics, pragmatics, prosody, verbal fluency, acoustics, neuroimaging, biomarkers, or general NLP markers without clear syntactic outcome",
+      "mixed psychosis samples where schizophrenia-specific eligibility was unclear from the abstract"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The pool supports the conclusion that adults with schizophrenia spectrum disorders show impairments in syntactic comprehension and, somewhat less uniformly, syntactic production relative to healthy controls.",
+      "The evidence also suggests heterogeneity across tasks, illness phase, and whether the sample is defined by schizophrenia broadly, schizophrenia spectrum disorder, first-episode psychosis, or formal thought disorder subgrouping.",
+      "Across the eligible-looking studies, the direction of effect is fairly consistent for syntactic comprehension.",
+      "The production side is also impaired, but the pattern looks more heterogeneous.",
+      "However, not every production study shows the same profile.",
+      "These differences make it plausible that a meta-analysis would find both an overall deficit and substantial interindividual/interstudy variability."
+    ]
+  }
+}

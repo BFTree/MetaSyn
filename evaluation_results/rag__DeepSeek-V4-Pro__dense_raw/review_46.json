@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21225,
+    "output_tokens": 1179,
+    "total_tokens": 22404
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6302,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear screening results, study characteristics, methodological synthesis, risk-of-bias discussion, conclusion, and included articles, but it lacks a formal abstract/introduction/methods/results/discussion structure, detailed search strategy, data extraction procedures, and full PRISMA-style quality assessment needed for a 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published between 2015 and 2022",
+      "reported primary, peer-reviewed, English-language research comparing mental health outcomes in children with LGBTQ parents to those with different-sex parents"
+    ],
+    "exclusion_criteria": [
+      "Commentaries, protocols, editorials, conference abstracts, and studies focusing solely on parental outcomes or lacking a different-sex comparison group were excluded.",
+      "publication outside the 2015\u20132022 window",
+      "no comparison group of children with different\u2011sex parents",
+      "population not children of LGBTQ parents (e.g., sexual minority youth themselves, adults with LGBTQ parents, parents only)",
+      "the outcome was not a mental health problem (e.g., attachment, social skills, parenting aspirations)",
+      "the article was a commentary, protocol, or re\u2011analysis focused on measurement issues rather than providing a new empirical comparison"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The four studies consistently report no significant mental health disadvantages for children raised by same-sex or transgender parents compared with children of different-sex parents.",
+      "This aligns with the broader literature and suggests that family processes (parental well-being, parenting quality) may be more important than parental sexual orientation or gender identity per se.",
+      "No significant disadvantages were found for children with same-sex parents on any SDQ subscale.",
+      "Few differences between family types emerged.",
+      "No significant group differences were found in cognitive development, mental health, or gender identity.",
+      "Descriptive analyses indicated positive psycho-emotional development.",
+      "The authors conclude that empirical data are reassuring regarding child development in trans-parent families."
+    ]
+  }
+}

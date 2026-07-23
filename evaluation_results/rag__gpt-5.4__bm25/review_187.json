@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 187,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5141,
+    "output_tokens": 1042,
+    "total_tokens": 6183
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6808,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4989,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, included studies, synthesis, interpretation, and limitations, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, formal Results, Discussion, Conclusion, References, detailed search strategy, data extraction, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "undergraduate dental students",
+      "team-based learning (TBL)",
+      "another teaching pedagogy",
+      "student satisfaction and/or academic performance",
+      "English language"
+    ],
+    "exclusion_criteria": [
+      "exclude postgraduate-only studies",
+      "exclude studies without a TBL comparator",
+      "exclude reviews/protocols/editorials",
+      "exclude **post-2023-05-02** articles",
+      "**not dentistry / not undergraduate dental students**",
+      "**not TBL** interventions",
+      "**reviews, scoping reviews, protocols, or commentary**",
+      "**postgraduate/residency** populations",
+      "**published after the review search end date (2023-05-02)**"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the three included primary studies, the abstract-level evidence is consistently favorable to TBL in undergraduate dental education.",
+      "Versus traditional lectures: two studies reported better student perceptions/satisfaction and better examination performance with TBL.",
+      "Versus flipped classroom: one study reported no noticeable difference in examination effectiveness between TBL and flipped classroom; the abstract also framed both as effective alternatives to traditional lecture.",
+      "Based only on the supplied abstracts, TBL appears to be an effective alternative to traditional didactic lectures in undergraduate dental education, with signals of benefit for both:",
+      "However, the evidence is more mixed when TBL is compared with another active-learning approach:",
+      "against flipped classroom, TBL did not clearly outperform.",
+      "From the fixed candidate pool, the abstract-level evidence suggests that TBL is a promising and likely effective alternative to traditional lecture-based teaching in undergraduate dental education, especially for improving student perceptions and academic performance.",
+      "Compared with another active pedagogy such as flipped classroom, TBL appears similarly effective rather than clearly superior."
+    ]
+  }
+}

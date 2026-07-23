@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 401,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9659,
+    "output_tokens": 893,
+    "total_tokens": 10552
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.7679,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8089,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as a research question, search/screening process, inclusion and exclusion criteria, screening results, and conclusion, but it lacks several standard sections including an abstract, introduction, discussion, references, quality assessment, data extraction details, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Case\u2011control or cohort studies regardless of geographic location.",
+      "Samples originating from a **tissue microbiome** (breast tissue).",
+      "Use of **16S rRNA sequencing** and **Illumina sequencers** covering the **V4 or V3\u2011V4 hypervariable regions**.",
+      "Studies that **specifically included breast cancer molecular subtypes** and compared TNBC versus non\u2011TNBC.",
+      "Data had to be available and homogeneous (publicly accessible data and metadata)."
+    ],
+    "exclusion_criteria": [
+      "Studies not addressing BC subtypes.",
+      "Data unavailability.",
+      "Sequencing technology not Illumina.",
+      "Variable regions not covering V4.",
+      "Antibiotic administration within three months before sampling.",
+      "No publicly accessible data or metadata."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate simultaneously met all inclusion criteria: breast tissue origin, Illumina\u2011based 16S rRNA sequencing of V4 or V3\u2011V4 regions, explicit comparison of TNBC versus non\u2011TNBC microbiomes, and availability of homogeneous, publicly accessible data.",
+      "After rigorous screening, **no primary\u2011study article fulfilled the complete set of inclusion criteria**.",
+      "The candidate pool did not contain any study that directly addressed the specific research question with the required methodological and reporting standards.",
+      "A dedicated primary study comparing the breast tissue microbiome of TNBC patients to that of non\u2011TNBC patients using Illumina\u2011based 16S rRNA V4/V3\u2011V4 sequencing and publicly available data was not identified.",
+      "Consequently, a meta\u2011analysis cannot be performed on this set of studies."
+    ]
+  }
+}

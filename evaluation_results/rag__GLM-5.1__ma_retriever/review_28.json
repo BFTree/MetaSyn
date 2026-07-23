@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18791,
+    "output_tokens": 1172,
+    "total_tokens": 19963
+  },
+  "metrics": {
+    "retrieval_recall": 0.8214285714285714,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.865,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8214285714285714,
+    "inclusion_consistency": 0.5162,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5255,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report includes a review target, screening summary, eligibility criteria, synthesized findings, and included studies, but lacks a formal abstract, introduction, detailed search strategy, data extraction and quality-assessment methods, distinct results/discussion/conclusion sections, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults living with excess weight (BMI \u001527.5 kg/m\u0010) or their care providers",
+      "synchronous, remote health interventions for weight management",
+      "reporting explicit barriers and facilitators to engaging with synchronous, remote, interactive weight management interventions"
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were reviews, protocols, conference papers, or opinion pieces",
+      "if the population BMI was <27.5 kg/m\u0010 (or not specified/implied to include <27.5)",
+      "if the intervention was solely autonomous (asynchronous) or face-to-face",
+      "or if outcomes did not specifically report on barriers and facilitators to engagement in a remote weight management intervention",
+      "evaluating only clinical efficacy (e.g., weight loss, HbA1c) without qualitative or mixed-methods assessment of engagement barriers/facilitators",
+      "utilizing asynchronous delivery methods (e.g., apps, text-messaging, emails) without a clear synchronous component"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Four primary studies met all inclusion criteria, reporting explicit barriers and facilitators to engaging with synchronous, remote, interactive weight management interventions.",
+      "Nutrition psychoeducation and structured guidance helped participants understand the weight management process and make informed decisions (Candidate 144).",
+      "For providers, specific training and resources facilitated the capability to deliver remote weight management interventions effectively (Candidate 099).",
+      "Feelings of \"overwhelm\" and challenges with meal preparation hindered psychological capability to plan and execute dietary changes, reflecting deficits in behavioral regulation and decision processes (Candidate 144).",
+      "Synchronous social support and accountability were prominent facilitators.",
+      "Participants valued the \"human support\" and accountability provided via tele-counselling and live group sessions (Candidate 022, Candidate 144).",
+      "Lack of regular check-ins or social reinforcement was a barrier to sustained engagement (Candidate 091).",
+      "Encouragement and motivation received during synchronous calls acted as positive reinforcement (Candidate 022)."
+    ]
+  }
+}

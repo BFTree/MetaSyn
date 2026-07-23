@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16487,
+    "output_tokens": 1163,
+    "total_tokens": 17650
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.5319,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.663,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized into logical sections and includes key meta-analysis elements such as screening criteria, inclusion/exclusion decisions, study selection, and synthesis, but it lacks full PRISMA-style completeness and a formal methods/search strategy."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language, peer-reviewed primary study",
+      "Human participants with a psychiatric condition",
+      "MDMA administered with psychotherapy as treatment",
+      "Comparator/control condition required by the review target",
+      "The source review notes that, operationally, only Phase 2 and 3 studies were included"
+    ],
+    "exclusion_criteria": [
+      "Exclude reviews, pooled analyses, protocols, commentaries, conference abstracts, book chapters, animal studies",
+      "Exclude studies without psychotherapy",
+      "I excluded uncontrolled/open-label studies even if they used MDMA with psychotherapy, because the review target is explicitly comparative versus placebo/control conditions.",
+      "I excluded secondary analyses of previously published trials when they were not primary adverse-event trial reports.",
+      "I excluded pooled analyses, reviews, protocols, primers, editorials, and non-MDMA studies.",
+      "open-label/uncontrolled, secondary/follow-up only, healthy-subject acute MDMA studies, animal/preclinical work, or non-MDMA interventions"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across these abstracts, the safety signal is broadly consistent: **MDMA-assisted psychotherapy was generally described as well tolerated, with no drug-related serious adverse events reported in the included trials that explicitly mentioned them in the abstract**.",
+      "Safety reporting in the abstracts is favorable overall.",
+      "Included randomized comparative studies generally describe MDMA-assisted psychotherapy as **well tolerated**.",
+      "**Drug-related serious adverse events were not reported in the abstracts** of the phase 2 PTSD trials and the life-threatening illness/social anxiety pilots.",
+      "In phase 3 PTSD evidence, **serious TEAEs/deaths were not reported**, though some **severe TEAEs** occurred.",
+      "So the evidence base appears supportive of short-term safety in monitored clinical settings, but the abstract record alone is too thin for a robust quantitative harms synthesis.",
+      "Using only the supplied candidate pool and only title/abstract information, the eligible evidence indicates that **MDMA-assisted psychotherapy, compared with placebo/control-assisted psychotherapy, was generally reported as safe and well tolerated across included psychiatric trials**, with **no clear abstract-level signal of drug-related serious adverse events**, no deaths reported in the phase 3 PTSD abstract, and no reported signal for suicidality, abuse potential, or QT prolongation in the phase 3 severe-PTSD abstract.",
+      "Some **severe treatment-emergent adverse events** occurred in one phase 3 trial, but the abstracts do not provide enough detail to synthesize them properly."
+    ]
+  }
+}

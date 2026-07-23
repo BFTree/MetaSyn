@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11120,
+    "output_tokens": 1057,
+    "total_tokens": 12177
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.3181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4827586206896552,
+    "screening_accuracy": 0.925,
+    "conditional_retention": 0.3181818181818182,
+    "post_retrieval_loss": 0.6818181818181818,
+    "inclusion_consistency": 0.2964,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3645,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, Evidence synthesis, and a list of included studies, but it lacks a formal abstract, full introduction/discussion/conclusion structure, detailed search strategy, data extraction procedures, quality assessment, and PRISMA-style screening details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "occupational or residential exposure to agricultural land-use is associated with increased infectious disease risk in Southeast Asia",
+      "adults (and total populations where children were also sampled)",
+      "required a comparator group unexposed to agricultural land\u2011use",
+      "considered any human infectious disease with a biologically plausible link to land\u2011use change",
+      "literature up to 30 April 2017",
+      "only peer\u2011reviewed empirical observational studies were eligible"
+    ],
+    "exclusion_criteria": [
+      "did not compare agricultural\u2011exposed individuals to an unexposed group",
+      "were not conducted in Southeast Asia",
+      "were reviews or commentaries",
+      "focused on non\u2011communicable diseases",
+      "fell outside the search date"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "After screening, **seven primary studies** met all eligibility criteria.",
+      "The included studies consistently indicate that agricultural land\u2011use, particularly work on rubber plantations, forest farming, and pig\u2011rearing areas, is associated with an increased risk of several infectious diseases.",
+      "The elevated risks are often linked to specific occupational behaviours (e.g., staying overnight in farm huts, forest work) and environmental proximity to livestock.",
+      "However, the evidence base is limited to a small number of observational studies, and the diseases covered (malaria, scrub typhus, toxoplasmosis, and *S. suis* infection) represent only a subset of the pathogens potentially influenced by agricultural land\u2011use change in Southeast Asia.",
+      "No studies on oil palm, non\u2011poultry livestock other than pigs, or arable crops were identified, and all included studies were published before 2017, highlighting a need for updated primary research across the ASEAN region."
+    ]
+  }
+}

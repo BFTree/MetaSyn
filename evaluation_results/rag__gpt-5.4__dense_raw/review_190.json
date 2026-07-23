@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14210,
+    "output_tokens": 1301,
+    "total_tokens": 15511
+  },
+  "metrics": {
+    "retrieval_recall": 0.9444444444444444,
+    "retrieval_precision": 0.085,
+    "inclusion_recall": 0.6111111111111112,
+    "inclusion_precision": 0.9166666666666666,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4433,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6601,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, synthesis sections, limitations, conclusions, and included/excluded studies, but it lacks a formal Abstract, Introduction, Methods, Results, Discussion, References structure and does not include full PRISMA-style elements such as a detailed search strategy, data extraction process, risk-of-bias/quality assessment, or quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "dental-specific population",
+      "empirical data",
+      "sexual harassment/misconduct or inappropriate sexual behavior as a focal outcome",
+      "within 2010-2024",
+      "not a review/editorial/protocol"
+    ],
+    "exclusion_criteria": [
+      "studies on general mistreatment, bullying, incivility, discrimination, or workplace violence where sexual misconduct was not a clear focal dental-specific outcome in the abstract",
+      "media analyses or disciplinary summaries without empirical participant/case data on sexual misconduct experiences in dental settings",
+      "non-dental or mixed-healthcare studies without dental-specific outcomes",
+      "2025+ publications",
+      "pre-2010 publications"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The available evidence is limited but clearly shows that sexual misconduct is a documented problem in multiple dental contexts: dental hygiene practice, dental schools, specialty training, and patient-provider interactions.",
+      "Across included studies, the evidence most consistently addresses prevalence, perpetrators, impacts on victims, under-preparedness to respond, and the need for training/policy responses.",
+      "There is much less direct evidence on rigorously evaluated interventions.",
+      "The best-supported conclusion from the candidate pool is that sexual misconduct in dentistry is real, recurrent, and insufficiently addressed, especially in dental hygiene practice, dental education, and oral/maxillofacial surgery.",
+      "Patients, faculty, senior students, and colleagues can all be perpetrators depending on the setting.",
+      "Victims report uncertainty about how to respond, limited confidence in reporting, and meaningful emotional and professional impacts.",
+      "However, the literature remains methodologically uneven and provides little direct evidence about which interventions effectively prevent or manage sexual misconduct in dental settings."
+    ]
+  }
+}

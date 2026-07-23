@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11385,
+    "output_tokens": 1327,
+    "total_tokens": 12712
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7429,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4778,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background/Aim, Methods, screening Results, included study descriptions, synthesis, Discussion, Conclusion, and included references, but it lacks a formal abstract, detailed search strategy, data extraction procedures, and quality/risk-of-bias assessment needed for full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised or non\u2011randomised controlled trials with a primary purpose of weight management",
+      "adult participants (\u226518\u202fyears)",
+      "quantitative weight\u2011change reporting",
+      "a direct comparison of weight change in patients with and without T2DM",
+      "very low calorie diets (<800\u202fkcal/day) or low\u2011energy liquid\u2011formula total diet replacements (>800\u202fkcal/day)"
+    ],
+    "exclusion_criteria": [
+      "Studies published after 2015\u201112\u201131 were excluded",
+      "reviews, protocols, commentaries, conference abstracts",
+      "any study that did not contain a direct comparison of weight loss between obese individuals with T2DM and obese individuals without T2DM on the same very\u2011low\u2011calorie or low\u2011energy liquid\u2011formula diet",
+      "Publication year after 2015 (the majority of candidates);",
+      "Study design not a primary trial (systematic reviews, meta\u2011analyses, protocols, narrative reviews);",
+      "Absence of a comparison group without T2DM (studies only in T2DM or only in non\u2011diabetic populations);",
+      "Intervention not a very\u2011low\u2011calorie or low\u2011energy liquid\u2011formula total diet replacement (e.g., low\u2011carbohydrate diets, Mediterranean diet, intermittent fasting without total diet replacement);",
+      "No quantitative weight\u2011loss comparison between T2DM and non\u2011T2DM groups."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Both found similar absolute weight reductions in the two groups over 6\u201312 months.",
+      "No eligible studies of low\u2011energy liquid\u2011formula diets (>800 kcal/day) were identified.",
+      "The evidence base is insufficient to draw robust conclusions about differential weight\u2011loss responses, and further primary research is needed.",
+      "The evidence base is extremely limited: only two small studies, both using VLCDs, met the inclusion criteria.",
+      "The two included studies suggest that obese individuals with T2DM achieve weight losses of a similar magnitude to those without T2DM when following a VLCD total diet replacement.",
+      "However, the 2012 study indicates that the composition of the lost weight may be less favourable in diabetes (less fat loss per kilogram lost)."
+    ]
+  }
+}

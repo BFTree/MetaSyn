@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 4147,
+    "output_tokens": 1112,
+    "total_tokens": 5259
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6209,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2994,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key review elements such as a research question, methods, screening results, eligibility criteria, included studies, and synthesis, but it lacks several standard sections including abstract, introduction, discussion, conclusion, references, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies published between 2015-01-01 and 2015-12-31",
+      "in peer-reviewed journals",
+      "that investigated time perception (prospective timing, retrospective timing, perception of short and long intervals) in patients with Alzheimer\u2019s disease diagnosed according to NINCDS-ADRDA criteria"
+    ],
+    "exclusion_criteria": [
+      "Studies that defined dementia by general cognitive functioning alone were excluded.",
+      "Publication year outside the 2015 window (the vast majority of candidates were published prior to 2015 or after 2015).",
+      "Irrelevant topic (e.g., neuroimaging biomarkers, genetics, other neurological conditions, non\u2011AD populations, methodological or review papers).",
+      "Absence of time perception measures or AD diagnosis according to NINCDS-ADRDA."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None of the candidates met the combined eligibility criteria.",
+      "Thus, no study in the candidate pool satisfied the population, outcome, and date requirements simultaneously.",
+      "No primary-study articles met the inclusion criteria.",
+      "The final list of included studies is empty.",
+      "Because no eligible studies were identified, it was not possible to perform a quantitative or qualitative evidence synthesis regarding time perception distortions in AD or their relationship to episodic memory impairment.",
+      "The search for the specified 2015 period yielded no relevant primary research within the provided candidate pool.",
+      "This finding may reflect the narrow temporal window, the specific diagnostic requirements, or the limited coverage of the pool.",
+      "Future reviews should consider expanding the date range and including additional databases to capture evidence on this topic."
+    ]
+  }
+}

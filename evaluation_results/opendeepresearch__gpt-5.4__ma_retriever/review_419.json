@@ -1,0 +1,74 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29015,
+    "output_tokens": 948,
+    "total_tokens": 29963
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.027777777777777776,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.9722222222222222,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.3955,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5333,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most systematic review/meta-analysis structural elements, including eligibility criteria, exact search strategies, screening decisions, PRISMA-style selection summary, findings, limitations, conclusion, and sources, but it lacks a formal abstract/introduction format and does not include a quality or risk-of-bias assessment section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18 years or older",
+      "Overweight or obesity (BMI \u226525 or BMI \u226530)",
+      "Comorbid depressive symptoms",
+      "Internet-, online-, web-, or mobile-based interventions",
+      "Delivered via web browser or smartphone app",
+      "Clinical psychological interventions directly targeting depressive symptoms",
+      "Eligible approaches included CBT, psychodynamic psychotherapy, behavior therapy/behavior modification, systemic therapy, third-wave CBT, humanistic therapies, integrative therapies, or other psychologically oriented interventions",
+      "Control conditions in RCTs, including:",
+      "treatment as usual",
+      "waiting list",
+      "no intervention",
+      "low-level support",
+      "psychosocial support",
+      "attention placebo",
+      "psychological placebo",
+      "Primary: depressive symptom severity",
+      "Secondary: weight reduction, where reported"
+    ],
+    "exclusion_criteria": [
+      "targeted only quality of life or general well-being without directly targeting depressive symptoms",
+      "addressed mental health only indirectly through weight change",
+      "involved highly specific populations such as pregnant women, post-bariatric surgery patients, or people with a specific somatic disease",
+      "were not clinical psychological interventions",
+      "were not RCTs",
+      "were not written in English or German"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No eligible completed RCT results were identified in the specified local corpus window.",
+      "Therefore, there is **no direct trial evidence in this retrieval set** to estimate the effect of IMI on depressive symptom severity for adults with overweight/obesity and comorbid depressive symptoms.",
+      "No eligible completed RCT results were identified, so there is also **no includable evidence** from this corpus window on weight reduction in the target population.",
+      "Within the local MetaSyn PubMed corpus and the specified date restrictions, the evidence base appears to be **very sparse** for this tightly defined question.",
+      "A meta-analysis requires at least one eligible completed study with usable outcome data, and normally more than one to permit pooled effect estimation.",
+      "That requirement was not met here.",
+      "Therefore, the available local corpus evidence in this time window is **insufficient to determine effectiveness**, and **no meta-analysis could be performed**.",
+      "The most defensible conclusion is that, within the specified corpus and timeframe, there is currently **an evidence gap rather than evidence of benefit or no benefit**."
+    ]
+  }
+}

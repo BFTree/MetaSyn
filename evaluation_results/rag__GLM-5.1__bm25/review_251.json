@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5166,
+    "output_tokens": 1089,
+    "total_tokens": 6255
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.5673,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8392,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review target, eligibility criteria, screening results, evidence synthesis, conclusion, and included article list, but it lacks a formal abstract, introduction, detailed search strategy, quality assessment, full discussion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective design.",
+      "Study population consists of adult (>14 years) cancer patients receiving a CVC (implantable port or external catheter).",
+      "Site of catheter insertion defined.",
+      "Some or all patients received heparin or warfarin thromboprophylaxis at a clearly specified dose.",
+      "Comparison to no prophylaxis or standard care without anticoagulation.",
+      "Outcome includes VTE incidence and/or bleeding complications.",
+      "Published in English between 1980 and 2005."
+    ],
+    "exclusion_criteria": [
+      "Papers not published in English between 1980 and 2005.",
+      "Systematic reviews, other reviews, protocols, editorials, conference abstracts, or out-of-date articles."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one eligible primary study was identified, limiting the ability to draw broad conclusions.",
+      "The study found **no significant difference** in the incidence of catheter-related thrombosis or venous thrombosis between the warfarin group and the control group.",
+      "Consequently, the study does not support the routine use of minidose warfarin for the prevention of central vein catheter thrombosis in this patient population.",
+      "No eligible primary studies evaluating low-dose LMWH compared to no prophylaxis in adult cancer patients with CVCs within the 1980\u20132005 date range were identified in the candidate pool.",
+      "Based on the restricted candidate pool, there is insufficient evidence from prospective comparative studies to suggest that minidose warfarin reduces VTE incidence in cancer patients with CVCs compared to no prophylaxis.",
+      "The single eligible study found no benefit.",
+      "No eligible studies were found for low-dose LMWH prophylaxis in this context during the specified search period.",
+      "Bleeding risk could not be evaluated due to the absence of reported data in the included study's abstract."
+    ]
+  }
+}

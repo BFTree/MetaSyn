@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8427,
+    "output_tokens": 1071,
+    "total_tokens": 9498
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8333333333333334,
+    "inclusion_consistency": 0.4443,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3952,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized around a review target and screening results with explicit eligibility criteria, but it lacks most standard systematic review sections such as abstract, introduction, full methods, results synthesis, discussion, conclusion, references, search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective design",
+      "adult (>14 years) cancer patients receiving a CVC",
+      "defined site of catheter insertion",
+      "primary thromboprophylaxis with a clearly specified dose of heparin or warfarin",
+      "English language",
+      "publication between 1980 and 2005"
+    ],
+    "exclusion_criteria": [
+      "publication year criterion (must be 1980\u20132005)",
+      "did not explicitly state a prospective design",
+      "did not define the specific site of catheter insertion",
+      "lacked a \"no prophylaxis\" comparison group",
+      "the abstract did not define the specific site of catheter insertion",
+      "the anticoagulant intervention described was treatment of existing thrombosis (secondary prophylaxis), not primary thromboprophylaxis",
+      "it was a surveillance study determining the incidence of thrombosis without evaluating a prophylactic intervention",
+      "it was an observational study of complications without a prophylaxis intervention",
+      "the specific insertion site was not defined"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "None were included.",
+      "No other candidates in the pool addressed the specific population, intervention, and comparison within the specified timeframe and design constraints."
+    ]
+  }
+}

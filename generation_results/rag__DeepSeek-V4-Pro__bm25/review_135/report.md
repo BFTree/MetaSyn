@@ -1,0 +1,24 @@
+**Evidence Synthesis Report: Predictive Value of BRAF V600E Mutation Status for Anti-EGFR Monoclonal Antibody Benefit in RAS Wild-Type Metastatic Colorectal Cancer**
+
+**Background**  
+This meta-analysis investigates whether BRAF V600E mutation status is predictive of treatment benefit from anti‑EGFR monoclonal antibody therapy in patients with RAS wild‑type (WT) metastatic colorectal cancer (mCRC), compared with those without BRAF mutations. The review required randomized controlled trials (RCTs) that compared an anti‑EGFR antibody (cetuximab or panitumumab), alone or with standard therapy, against the same standard therapy in patients with mCRC, assessed BRAF mutation status within the RAS WT subgroup, and reported overall survival (OS) or progression‑free survival (PFS) outcomes stratified by BRAF status.
+
+**Screening Process**  
+A fixed pool of 200 candidate articles (titles and abstracts) was screened against the prespecified inclusion and exclusion criteria. The majority of candidates were excluded because they were not RCTs in mCRC, did not evaluate an anti‑EGFR monoclonal antibody, lacked a comparator arm without anti‑EGFR therapy, or did not report survival outcomes by BRAF mutation status within the RAS WT subset. Key reasons for exclusion of potentially relevant studies are summarized below:
+
+- **Non‑RCT designs or reviews:** Retrospective analyses, single‑arm studies, case reports, systematic reviews, and pooled analyses of multiple trials (Candidates 001, 002, 003, 004, 006, 010, 013, 014, 015, etc.).
+- **Wrong patient population:** Trials in non‑small‑cell lung cancer, breast cancer, melanoma, biliary tract cancer, etc., or early‑stage colorectal cancer (Candidates 028, 040, 077, 082, 083, 093, 133, 136, etc.).
+- **Inappropriate intervention/comparator:** Studies evaluating anti‑EGFR antibodies in both arms (e.g., maintenance comparisons, cetuximab vs. bevacizumab) or anti‑EGFR tyrosine kinase inhibitors rather than monoclonal antibodies (Candidates 002, 022, 034, 044, 124, 170).
+- **Insufficient BRAF‑specific treatment effect data:** Several RCTs that compared anti‑EGFR antibody plus chemotherapy versus chemotherapy alone and assessed BRAF mutations did not provide quantitative data on the anti‑EGFR treatment effect according to BRAF status within the RAS WT subgroup. Examples include the PRIME (Candidate 007), PICCOLO (Candidate 041), second‑line panitumumab study (Candidate 016), NORDIC‑VII (Candidate 017), and CAIRO2 (Candidate 011) trials, where the abstract either omitted BRAF‑stratified outcomes or only mentioned prognostic significance without formal interaction tests.
+- **Potentially relevant but incomplete:** One candidate (008) from a randomized phase III study of panitumumab reported response rates by BRAF status but did not present OS/PFS hazard ratios for the BRAF‑mutant subgroup; it was therefore judged to provide insufficient quantitative data on the predictive effect.
+
+**Final Included Primary‑Study Article**  
+Only one candidate fully satisfied all eligibility criteria based on the supplied title and abstract. This study is an RCT that directly compared an anti‑EGFR antibody with standard therapy, assessed BRAF mutation status within the KRAS WT population, and reported overall survival results specifically by BRAF mutational status, including an interaction test.
+
+- **Candidate 019**  
+  **Title:** PIK3CA, BRAF, and PTEN status and benefit from cetuximab in the treatment of advanced colorectal cancer--results from NCIC CTG/AGITG CO.17.  
+  **Corpus ID:** 361  
+  **Reason for inclusion:** This is an analysis of the randomized phase III CO.17 trial (cetuximab vs. best supportive care) in pretreated mCRC. BRAF mutation status was determined, and the abstract explicitly reports that “in the K‑ras wild‑type subgroup, the overall survival adjusted HR according to BRAF mutation status was 1.39 (interaction P = 0.69)”, providing quantitative data on the treatment effect by BRAF status. The study meets all inclusion criteria: RCT, anti‑EGFR monoclonal antibody (cetuximab) compared with no anti‑EGFR therapy, assessment of BRAF mutations in the KRAS WT subgroup, and OS/PFS outcomes.
+
+**Conclusion**  
+From the supplied candidate pool, only the CO.17 biomarker analysis (Candidate 019) qualifies as a primary study that directly addresses the predictive value of BRAF V600E mutation status for anti‑EGFR antibody therapy in RAS wild‑type mCRC. All other candidates were excluded because they did not meet one or more of the strict inclusion criteria. This single study provides limited evidence, and its interaction test did not reach statistical significance, highlighting the need for additional primary RCTs with adequate BRAF‑mutant representation to robustly assess the predictive role of BRAF mutation status.

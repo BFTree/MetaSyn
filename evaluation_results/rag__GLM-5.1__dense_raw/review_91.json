@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8510,
+    "output_tokens": 1013,
+    "total_tokens": 9523
+  },
+  "metrics": {
+    "retrieval_recall": 0.6666666666666666,
+    "retrieval_precision": 0.13,
+    "inclusion_recall": 0.5897435897435898,
+    "inclusion_precision": 0.8518518518518519,
+    "inclusion_f1": 0.6969696969696971,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8846153846153846,
+    "post_retrieval_loss": 0.07692307692307693,
+    "inclusion_consistency": 0.7893,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5652,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, thematic synthesis of utility/privacy methods, gaps, and an included-studies list, but it lacks several formal systematic review sections and PRISMA-style details such as a full methods section, search strategy, data extraction process, quality assessment, and explicit synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies evaluating synthetic data outputs within the 2018\u20132024 window"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "non-English works",
+      "unstructured data applications"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "There is **no consensus** on a standardized evaluation framework for synthetic health data.",
+      "Privacy considerations are **not given equal importance** to utility in the assessment of synthetic medical data:",
+      "This suggests utility is often the primary, and sometimes only, driver of validation.",
+      "The field lacks a universally adopted evaluation pipeline, leading to incomparable results across studies.",
+      "Privacy assessments are often limited to specific attack scenarios (like membership inference) and do not comprehensively cover all disclosure risks (identity, attribute, inference).",
+      "While fairness is recognized as important (005), it is not yet a standard component of utility/privacy evaluation frameworks.",
+      "Although differential privacy is used, empirical evaluation of the utility/privacy trade-off under varying DP budgets is limited (055)."
+    ]
+  }
+}

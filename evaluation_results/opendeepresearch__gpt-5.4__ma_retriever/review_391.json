@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23074,
+    "output_tokens": 2080,
+    "total_tokens": 25154
+  },
+  "metrics": {
+    "retrieval_recall": 0.7857142857142857,
+    "retrieval_precision": 0.22916666666666666,
+    "inclusion_recall": 0.07142857142857142,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.13333333333333333,
+    "screening_accuracy": 0.7916666666666666,
+    "conditional_retention": 0.09090909090909091,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.6389,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4281,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as a clear review question, eligibility criteria, search queries, screening outcomes, and included study characteristics, but it lacks a conventional abstract, explicit discussion/conclusion sections, references section in the provided text, and a formal quality/risk-of-bias assessment needed for excellent PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective clinical ATI studies",
+      "Adults/people with HIV",
+      "Placebo recipients or no active intervention participants whose ATI outcomes could be evaluated",
+      "Frequent planned plasma viral load monitoring:",
+      "at least 5 planned pVL measurements within the first 84 days after ATI",
+      "no more than 18 days between measurements within the first 42 days"
+    ],
+    "exclusion_criteria": [
+      "Non-English studies",
+      "Abstracts, letters, reviews, commentary, opinion articles, case reports",
+      "Coinfection studies",
+      "Animal or in-vitro studies",
+      "Mother-to-child transmission studies",
+      "Infant, child, or adolescent populations"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the available local-corpus screening notes, one study was clearly eligible and included:",
+      "Several records appeared potentially relevant but could not be securely included on the basis of the preserved research notes alone.",
+      "These records should be regarded as screened candidates with unresolved final eligibility in the preserved notes, not as confirmed inclusions."
+    ]
+  }
+}

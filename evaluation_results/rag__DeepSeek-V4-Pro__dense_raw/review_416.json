@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15302,
+    "output_tokens": 897,
+    "total_tokens": 16199
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.7692307692307692,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.7019,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3754,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, eligibility criteria, screening results, study summaries, and narrative synthesis, but it lacks formal Abstract, Introduction, Discussion, Conclusion, full References, detailed search strategy, data extraction methods, quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "follow\u2011up reports of randomised controlled trials (RCTs) of a preconception or antenatal lifestyle intervention in women with overweight/obesity",
+      "assessing offspring cardiac structure, systolic and diastolic function, heart rate, heart rate variability, arterial stiffness/thickness, or blood pressure"
+    ],
+    "exclusion_criteria": [
+      "Protocols",
+      "reviews",
+      "animal studies",
+      "non\u2011English publications",
+      "studies focusing on fetal or maternal outcomes alone"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, the available data suggest that both preconception and antenatal lifestyle interventions in women with obesity may partially mitigate adverse offspring cardiac remodelling (concentric changes, septal hypertrophy) and may improve some functional indices (ejection fraction, tissue Doppler velocities, resting heart rate).",
+      "Evidence for improvements in blood pressure or arterial stiffness is inconsistent, with most studies showing null results.",
+      "The positive findings are concentrated in the LIFEstyle and UPBEAT cohorts, while the LiPO trial and the smaller preconception follow\u2011up reported no significant cardiovascular benefits.",
+      "The heterogeneity in intervention timing (preconception vs. antenatal), offspring age at assessment (2.8\u20137.1 years), and outcome measures limits direct comparisons, and all studies acknowledge threats from attrition and low statistical power."
+    ]
+  }
+}

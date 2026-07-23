@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 436,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9520,
+    "output_tokens": 1050,
+    "total_tokens": 10570
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.16666666666666666,
+    "inclusion_consistency": 0.5922,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7442,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, methods, screening results, included studies, and synthesis/discussion, but it lacks several standard sections such as a formal abstract, introduction, conclusion, references, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs evaluating electronic health interventions such as CDS, CPOE, BCMA, etc., reporting quantitative medication error outcomes in healthcare settings, compared to usual care, published in English, full-text, peer-reviewed"
+    ],
+    "exclusion_criteria": [
+      "they were not RCTs (e.g., systematic reviews, observational studies, qualitative studies, protocols, editorials, non-randomized evaluations)",
+      "Many RCTs addressed other clinical outcomes (e.g., lab test ordering, antibiotic timing, blood pressure control, guideline adherence) rather than medication errors, and were therefore excluded"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The two included RCTs provide limited and contrasting evidence on the effectiveness of electronic health interventions for reducing medication errors.",
+      "The single RCT of a barcode-assisted dispensing system showed no reduction in dispensing errors compared to manual processes.",
+      "The second RCT demonstrated that a highly restrictive CPOE alert can dramatically reduce a specific prescribing error (co-prescription of interacting drugs).",
+      "However, the intervention caused treatment delays in some patients, a serious unintended consequence.",
+      "Overall, the evidence from these two RCTs is insufficient to draw firm conclusions about the superiority of electronic health interventions over usual care in reducing medication errors.",
+      "Neither study showed a clear net benefit without important drawbacks.",
+      "The heterogeneity of interventions (BCMA dispensing vs. CPOE prescribing alert) and outcomes (dispensing errors vs. prescribing errors prevented) precludes meaningful quantitative synthesis."
+    ]
+  }
+}

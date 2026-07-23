@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31303,
+    "output_tokens": 1165,
+    "total_tokens": 32468
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.0375,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9875,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.5408,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4753,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening flow, and synthesis methods, but it falls short of excellent because references are not fully provided, data extraction methods are only minimally described, and there are minor organizational issues such as duplicated headings."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling preterm infants born at less than 37 weeks of gestation who undergo painful needle procedures, specifically heel lancing and/or venipuncture.",
+      "Randomized or quasi-randomized clinical trials comparing oral sucrose (24%) or glucose solutions (30%, 10%, or 25%) with breast milk or expressed breast milk as the analgesic intervention.",
+      "Studies reporting at least one prespecified pain-related outcome, including PIPP or PIPP-R score, crying duration, heart rate change, or adverse events.",
+      "Human studies with sufficient data to identify the intervention and comparator groups and extract relevant outcome results."
+    ],
+    "exclusion_criteria": [
+      "Studies including term infants, mixed neonatal populations without separate data for preterm infants, or infants not undergoing heel lancing or venipuncture procedures.",
+      "Studies that do not compare sucrose or glucose administration directly against breast milk or expressed breast milk, or that evaluate other analgesic interventions without an eligible comparator.",
+      "Observational studies, case reports, reviews, conference abstracts without usable data, animal studies, or other non-clinical-trial designs.",
+      "Studies not reporting any relevant pain or safety outcomes, or not providing extractable data for the outcomes of interest."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The pooled analysis demonstrated no meaningful difference between sucrose/glucose and breast milk/expressed breast milk for pain-related outcomes in preterm infants undergoing heel lancing or venipuncture.",
+      "Overall, the best-supported conclusion is that sucrose or glucose does not outperform breast milk/expressed breast milk in this small pooled dataset, but the evidence remains limited and imprecise.",
+      "In this systematic review, the available comparative evidence did not show a meaningful difference between oral sucrose or glucose and breast milk or expressed breast milk for procedural pain relief in preterm infants undergoing heel lance or venipuncture.",
+      "From a clinical standpoint, the current evidence does not support a clear preference for sucrose or glucose over breast milk or expressed breast milk for pain reduction during heel lance or venipuncture in preterm infants.",
+      "In this meta-analysis of 2 studies in preterm infants undergoing heel lance or venipuncture, sucrose or glucose was not associated with lower pain scores than breast milk/expressed breast milk, with a pooled effect estimate of BETA 0.028 (95% CI -0.450 to 0.507; p=0.91)."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9811,
+    "output_tokens": 1179,
+    "total_tokens": 10990
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.03,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5673,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4335,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, evidence synthesis, a conclusion, and included studies, but it lacks key formal sections such as Abstract, Introduction, Methods, Results, Discussion, full References, detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies assessing the diagnostic accuracy of AI-based methods for detecting pathological myopia (PM) using colour fundus images",
+      "validation sets meeting the size criterion (at least 10% of the training set)"
+    ],
+    "exclusion_criteria": [
+      "utilized imaging modalities other than colour fundus photography (e.g., OCT)",
+      "targeted conditions other than PM (e.g., glaucoma, DR)",
+      "were published after the search end date (2022-05-05)",
+      "were reviews or conference abstracts",
+      "lacked sufficient data in the abstract to report on algorithm performance via sensitivity, specificity, or AUROC for the PM diagnosis (specifically failing the exclusion criterion regarding the inability to form a 2\u00d72 contingency table for meta-analysis from the provided data)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Three primary studies met all eligibility criteria.",
+      "These studies consistently demonstrate that deep learning algorithms achieve high diagnostic accuracy for pathological myopia on colour fundus images, often performing comparably or superiorly to expert ophthalmologists.",
+      "The diagnostic accuracy of the AI models was consistently high across the studies.",
+      "The studies frequently benchmarked AI performance against human experts.",
+      "All included studies employed validation sets meeting the size criterion (at least 10% of the training set).",
+      "The evidence suggests that deep learning algorithms can detect pathological myopia from colour fundus images with high sensitivity and specificity, often exceeding or matching the diagnostic capabilities of ophthalmologists.",
+      "These AI tools hold significant potential for large-scale screening and clinical decision support in identifying PM.",
+      "However, variability in reporting metrics (e.g., accuracy vs. sensitivity/specificity for the main outcome) may pose challenges for quantitative meta-analysis pooling."
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14904,
+    "output_tokens": 1046,
+    "total_tokens": 15950
+  },
+  "metrics": {
+    "retrieval_recall": 0.8214285714285714,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.03571428571428571,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.0689655172413793,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.043478260869565216,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.3808,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4085,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes review aim, eligibility criteria, screening approach, narrative synthesis, interpretation, limitations, and included studies, but it lacks a formal abstract, full introduction/methods/results/discussion/conclusion structure, detailed search strategy, quality assessment, data extraction methods, PRISMA flow, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults aged \u0018 with BMI \u001827.5 kg/m\u00002 / obesity / excess weight",
+      "synchronous, interactive, remote weight-management intervention",
+      "reported barriers and/or facilitators to engagement with that intervention",
+      "qualitative, quantitative, or mixed-methods primary studies",
+      "English-language only",
+      "search end date 2023-10-31"
+    ],
+    "exclusion_criteria": [
+      "exclude reviews, protocols, conference-style/non-primary items, and studies only reporting predictors without specific barriers/facilitators",
+      "Published after the search end date (2024-2026)",
+      "Review/protocol/development paper, not an eligible primary study",
+      "Intervention was asynchronous/self-directed/web/app/text only",
+      "Study focused on effectiveness, adherence rates, or predictors of uptake rather than explicit barriers/facilitators to engagement",
+      "Intervention was not clearly a remote synchronous weight-management intervention"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Only one candidate clearly met the review criteria at title/abstract level.",
+      "Because there is only one included abstract, conclusions are necessarily limited and should be treated as preliminary.",
+      "The study reports that participants viewed the telehealth support positively and identified several features that facilitated engagement:",
+      "These are all framed in the abstract as beneficial aspects of the intervention experience.",
+      "The abstract does not explicitly report barriers.",
+      "It emphasizes positive perceptions and acceptability.",
+      "On title/abstract evidence, the candidate pool provides very sparse direct evidence on barriers/facilitators to engagement in synchronous remote weight-management interventions before 2023-10-31."
+    ]
+  }
+}

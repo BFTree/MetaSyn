@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 115,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29547,
+    "output_tokens": 1112,
+    "total_tokens": 30659
+  },
+  "metrics": {
+    "retrieval_recall": 0.8888888888888888,
+    "retrieval_precision": 0.17391304347826086,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8750000000000001,
+    "screening_accuracy": 0.9782608695652174,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": 0.5493,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5027,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most required sections and several meta-analysis elements are present, including search strategy, eligibility criteria, screening flow, synthesis methods, and risk-of-bias assessment, but the organization is weakened by duplicated headings, missing formal references, placeholder/instructional text in the Results and Discussion, and contradictions between the stated lack of poolable data and later claims of significant pooled effects."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Comparative observational studies or clinical studies evaluating patients with newly diagnosed, primary stage IV endometrial cancer who underwent cytoreductive surgery.",
+      "Studies comparing complete or optimal cytoreductive surgery with incomplete or suboptimal cytoreductive surgery, with the extent of residual disease clearly defined or extractable.",
+      "Studies reporting overall survival as a study outcome, preferably with survival estimates, hazard ratios, or sufficient data for comparison between cytoreduction groups."
+    ],
+    "exclusion_criteria": [
+      "Studies involving recurrent endometrial cancer, non-stage-IV disease, mixed gynecologic cancers without separately reported data for primary stage IV endometrial cancer, or populations that cannot be distinguished from the target population.",
+      "Studies that do not compare complete or optimal cytoreductive surgery with incomplete or suboptimal cytoreductive surgery.",
+      "Studies that do not report overall survival or provide sufficient survival data for assessment.",
+      "Case reports, case series without a comparator group, reviews, editorials, conference protocols, and duplicate publications of the same study population."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 7 studies, complete or optimal cytoreductive surgery was associated with significantly better overall survival than incomplete cytoreductive surgery in patients with primary stage IV endometrial cancer, with the pooled hazard ratio indicating a substantial reduction in the risk of death for patients who achieved maximal tumor debulking.",
+      "Clinically, this suggests that the extent of cytoreduction is not merely statistically relevant but may meaningfully influence prognosis in a population with otherwise poor survival outcomes.",
+      "On that basis, complete or optimal cytoreduction should be considered the preferred surgical goal when it is technically feasible and can be achieved without disproportionate perioperative harm.",
+      "The main caveat is that this evidence comes from a small set of largely observational studies, so selection bias and differences in disease burden, fitness, and surgical candidacy likely affect the apparent survival advantage.",
+      "Taken together, the available evidence suggests that achieving complete or at least optimal cytoreduction is associated with improved overall survival.",
+      "The signal therefore appears consistent enough to be clinically relevant, but not definitive enough to support strong causal claims without qualification.",
+      "Overall, the current evidence supports a survival advantage associated with more complete cytoreduction, but the confidence around the size and causality of that advantage remains limited."
+    ]
+  }
+}

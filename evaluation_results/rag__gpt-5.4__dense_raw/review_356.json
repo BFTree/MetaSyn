@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11631,
+    "output_tokens": 1078,
+    "total_tokens": 12709
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.22727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.37037037037037035,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.2777777777777778,
+    "post_retrieval_loss": 0.5909090909090909,
+    "inclusion_consistency": 0.609,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4174,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, narrative synthesis, limitations, exclusions, conclusions, and included studies, but it lacks several standard systematic review sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: bipolar disorder",
+      "Intervention: LTCC antagonists (verapamil, diltiazem, nimodipine, nifedipine, methoxyverapamil/D600, isradipine)",
+      "Comparator: placebo or standard active pharmacologic treatment",
+      "Design for efficacy/acceptability: double-blind RCTs only",
+      "Design for adverse effects: single-blind/open RCTs could also contribute"
+    ],
+    "exclusion_criteria": [
+      "uncontrolled/open nonrandomized studies were not eligible for the main efficacy synthesis",
+      "Open or retrospective studies of nimodipine, verapamil, diltiazem, or isradipine",
+      "Nonrandomized maintenance reports or case series",
+      "Records that were likely reviews/editorials rather than primary trials",
+      "Records with insufficient abstract detail to confirm eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The candidate pool contains a **small, old, and heterogeneous evidence base**, dominated by **verapamil** studies in **acute mania**.",
+      "The acute-mania evidence is inconsistent.",
+      "Taken together, the direction of evidence is **not convincing for a reliable antimanic effect**.",
+      "The signal is at best **uncertain**, with likely small-sample instability.",
+      "So, for relapse prevention, the candidate pool provides **insufficient evidence** to support LTCC antagonists.",
+      "Using only the supplied candidate pool, the evidence for **LTCC antagonists in bipolar disorder is sparse and weak**.",
+      "This candidate pool does **not** support a confident conclusion that LTCC antagonists are effective treatments for acute bipolar episodes or for relapse prevention."
+    ]
+  }
+}

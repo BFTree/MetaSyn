@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18148,
+    "output_tokens": 1157,
+    "total_tokens": 19305
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.7727272727272727,
+    "inclusion_precision": 0.85,
+    "inclusion_f1": 0.8095238095238095,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.7727272727272727,
+    "post_retrieval_loss": 0.22727272727272727,
+    "inclusion_consistency": 0.5762,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3955,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Objective, Methods, included studies, evidence synthesis, and Conclusion sections, and it includes meta-analysis elements such as screening criteria, inclusion/exclusion criteria, and synthesis by outcome, but it lacks a formal abstract/introduction/discussion/references structure, detailed database search strategy, PRISMA flow details, and quality or risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomized controlled trials (RCTs) were eligible.",
+      "RCT design",
+      "melatoninergic agent (melatonin, ramelteon, tasimelteon, agomelatine) versus placebo or control",
+      "healthy participants or patients with psychiatric disorders (bipolar, schizophrenia, major depressive disorder, etc.) aged 18\u201365 years",
+      "report of sleep\u2011wake cycle parameters (sleep onset latency, total sleep time, wake after sleep onset) and/or circadian rhythm measures (dim\u2011light melatonin onset, phase shifts, sleep timing)"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "protocols",
+      "animal/cell models",
+      "involved excluded populations (e.g., dementia, neurological disorders, blindness, Parkinson\u2019s disease)",
+      "did not report eligible outcomes"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The body of RCT evidence from 1980 to 2020 confirms that melatonin supplements and melatonin receptor agonists (ramelteon, tasimelteon, agomelatine) effectively modulate sleep\u2011wake cycles and circadian rhythms in healthy individuals and in patients with psychiatric disorders.",
+      "Exogenous melatonin and its agonists reduce sleep onset latency, increase total sleep time, and\u2014when timed appropriately (typically in the early biological evening)\u2014induce phase advances of the circadian clock.",
+      "These findings support the use of melatoninergic agents as chronobiotic interventions in circadian rhythm sleep\u2011wake disorders and as adjuncts in psychiatric conditions characterized by circadian dysregulation."
+    ]
+  }
+}

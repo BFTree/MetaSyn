@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11533,
+    "output_tokens": 1473,
+    "total_tokens": 13006
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.21428571428571427,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.21428571428571427,
+    "post_retrieval_loss": 0.7857142857142857,
+    "inclusion_consistency": 0.762,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4837,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening results, study characteristics, synthesis, limitations, and included articles, but it lacks several standard systematic review sections such as abstract, introduction, formal methods, discussion/conclusion, references, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "These studies are prospective clinical ATI investigations in adults that either included a placebo arm or involved no active intervention, and they reported on the time to HIV viral rebound and/or post-treatment control (PTC) following analytical treatment interruption (ATI).",
+      "The included studies explicitly described frequent plasma viral load (pVL) monitoring consistent with the required minimum of five planned measurements within the first 84 days post-ATI and a maximum of 18 days between measurements within the first 42 days."
+    ],
+    "exclusion_criteria": [
+      "many ATI studies that were excluded because the abstract did not provide sufficient detail on the pVL monitoring schedule to confirm compliance with the strict frequent-monitoring requirement."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "These data indicate that even with exceptionally low pre\u2011ATI reservoirs, viral rebound occurs rapidly in most chronically treated individuals.",
+      "This suggests that early ART, in a predominantly female African cohort, may be associated with more heterogeneous rebound kinetics and occasional prolonged control.",
+      "Overall, PTC appears rare in chronic infection (0\u201310%) and may be somewhat higher in early\u2011treated populations (up to 18%), though sample sizes are small and confidence intervals are wide.",
+      "This pattern supports the hypothesis that early ART initiation is associated with more favorable viral rebound dynamics and a higher likelihood of post\u2011treatment control."
+    ]
+  }
+}

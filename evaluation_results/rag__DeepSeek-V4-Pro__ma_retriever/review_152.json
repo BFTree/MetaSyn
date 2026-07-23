@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15966,
+    "output_tokens": 1213,
+    "total_tokens": 17179
+  },
+  "metrics": {
+    "retrieval_recall": 0.9666666666666667,
+    "retrieval_precision": 0.29,
+    "inclusion_recall": 0.15,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.2571428571428572,
+    "screening_accuracy": 0.75,
+    "conditional_retention": 0.15517241379310345,
+    "post_retrieval_loss": 0.8166666666666667,
+    "inclusion_consistency": 0.7173,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5588,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key meta-analysis elements such as screening criteria and evidence synthesis, but it lacks a full PRISMA-style structure with explicit abstract, introduction, methods details, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "investigated associations between TSCC and the specified biomarkers",
+      "reported clinical significance (diagnostic or prognostic)",
+      "used samples exclusively from the tongue (not mixed oral cavity or head\u2011and\u2011neck cohorts)",
+      "for immunohistochemical (IHC) studies, included multivariate analysis",
+      "were published in English between 2010\u201101\u201101 and 2017\u201106\u201130"
+    ],
+    "exclusion_criteria": [
+      "animal\u2011only",
+      "case reports",
+      "letters",
+      "reviews",
+      "microRNA\u2011focused studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Thus, salivary IL\u20118 appears to have both diagnostic and prognostic potential in TSCC.",
+      "The consistency across independent cohorts supports SOX2 as a robust prognostic tissue marker.",
+      "The breadth of evidence from multiple independent cohorts establishes low E\u2011cadherin as a consistent indicator of aggressive tumour behaviour and poor prognosis.",
+      "These concordant findings across independent cohorts support vimentin as a reliable prognostic tissue biomarker.",
+      "Salivary IL\u20118 (two studies) and tissue SOX2, E\u2011cadherin, and vimentin (multiple independent studies) demonstrate consistent clinical relevance for prognosis or diagnosis in TSCC.",
+      "IL\u20116, HIF\u20111\u03b1, MALAT1, TP53, NOTCH1, and prolactin lack validation in at least two independent studies within the eligible literature."
+    ]
+  }
+}

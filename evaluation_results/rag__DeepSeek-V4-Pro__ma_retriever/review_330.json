@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 330,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19936,
+    "output_tokens": 986,
+    "total_tokens": 20922
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.9032258064516129,
+    "inclusion_precision": 0.7368421052631579,
+    "inclusion_f1": 0.8115942028985507,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.9032258064516129,
+    "post_retrieval_loss": 0.0967741935483871,
+    "inclusion_consistency": 0.6372,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4451,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into clear overview, evidence description, included studies, and implications sections, but it lacks standard systematic review structure such as abstract, introduction, explicit methods, results, discussion, conclusion, references, detailed search strategy, inclusion/exclusion criteria, screening flow, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary empirical studies that quantify syntactic deficits in adults with schizophrenia compared with healthy controls",
+      "provide quantitative syntactic measures that can be pooled and that will help characterise between-study variability"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "meta-analyses",
+      "case reports",
+      "protocol/editorial pieces",
+      "studies on non-schizophrenia populations (e.g., clinical high-risk, aphasia, autism)",
+      "investigations that did not provide quantitative syntactic-level behavioural measures"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "After title/abstract screening, **41 unique primary\u2011study articles met all inclusion criteria**; the remaining candidates were excluded mainly because they were reviews, meta\u2011analyses, case reports, protocol/editorial pieces, studies on non\u2011schizophrenia populations (e.g., clinical high\u2011risk, aphasia, autism), or investigations that did not provide quantitative syntactic\u2011level behavioural measures.",
+      "These tasks consistently reveal that individuals with schizophrenia make more errors or show longer reaction times when syntactic complexity increases, with disproportionate difficulty on non\u2011canonical structures and sentences requiring deep\u2011structure analysis.",
+      "Across these studies, a profile of **simplified syntax** emerges: patients tend to produce shorter, less hierarchically embedded sentences, exhibit reduced clausal density, over\u2011rely on matrix clauses, and show fewer complex sentence types.",
+      "Importantly, several investigations demonstrate a relationship between syntactic impoverishment and formal thought disorder severity (e.g., Candidates\u202f008,\u202f010,\u202f019,\u202f021).",
+      "A small number of included studies reported null or marginal differences in formal grammatical complexity while uncovering deficits in other linguistic domains (e.g., Candidate\u202f021 found that nominal reference, not syntactic complexity, distinguished groups).",
+      "Across both comprehension and production domains, there is consistent evidence for syntactic impairment in schizophrenia that is not fully attributable to general cognitive decline.",
+      "The diversity of tasks and linguistic levels will allow subgroup analyses (e.g., comprehension vs. production, complexity hierarchy, illness stage) while the inclusion of null\u2011finding studies will help estimate the true inter\u2011individual variability."
+    ]
+  }
+}

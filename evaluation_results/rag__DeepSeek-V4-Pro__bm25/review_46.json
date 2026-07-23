@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 15831,
+    "output_tokens": 1037,
+    "total_tokens": 16868
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.4444444444444444,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.1111111111111111,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.684,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background/question, methods, screening results, included studies, findings, methodological considerations, and conclusion, but it lacks a formal abstract, references, detailed search strategy, data extraction process, quality assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "peer-reviewed journal articles in English",
+      "published between 1 January 2015 and 31 December 2022",
+      "reported a mental health outcome in children with LGBTQ parents compared to children with different-sex parents"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing solely on parental outcomes",
+      "lacking a different-sex parent comparison group",
+      "not reporting child mental health",
+      "publication year outside the 2015\u20132022 window",
+      "irrelevant population (e.g., LGBTQ youth themselves, parents of gender\u2011variant children, immigrant or minority groups without LGBTQ parents)",
+      "no child mental health outcome",
+      "absence of a different\u2011sex parent comparison group"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available evidence from 2015\u20132022 does not consistently show that children with LGBTQ parents have more mental health problems than children with different\u2011sex parents.",
+      "However, the small number of studies and their methodological heterogeneity prevent firm conclusions.",
+      "Overall, the evidence is mixed: two studies (003, 030, 092) found no significant differences in child mental health, while one (080) reported elevated adult depression among those raised by same\u2011sex parents, with childhood factors playing a role.",
+      "Future research should employ larger, prospective designs with careful attention to potential confounders (e.g., family stability, stigma, parenting quality) and continue to compare children of sexual and gender minority parents to appropriate different\u2011sex parent controls."
+    ]
+  }
+}

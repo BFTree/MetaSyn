@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 357,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20150,
+    "output_tokens": 1121,
+    "total_tokens": 21271
+  },
+  "metrics": {
+    "retrieval_recall": 0.42857142857142855,
+    "retrieval_precision": 0.195,
+    "inclusion_recall": 0.3956043956043956,
+    "inclusion_precision": 0.9473684210526315,
+    "inclusion_f1": 0.5581395348837208,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.9230769230769231,
+    "post_retrieval_loss": 0.03296703296703297,
+    "inclusion_consistency": 0.5864,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3681,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with a summary, thematic results sections, conclusion, and included-study list, and it states basic eligibility criteria, but it lacks formal Abstract/Introduction/Methods/Discussion sections and key PRISMA-style elements such as detailed search strategy, screening process, data extraction, quality assessment, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "postmortem brain samples",
+      "measurement of neuroinflammatory markers",
+      "comparison with psychiatrically and neurologically healthy controls",
+      "publication before the search end date of March 20, 2016",
+      "use of targeted approaches or untargeted approaches confirmed by targeted methods"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "peripheral/in vivo studies",
+      "animal models",
+      "non-English papers",
+      "retracted articles"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The postmortem evidence indicates that neuroinflammatory markers are altered in schizophrenia, but these alterations are highly heterogeneous.",
+      "While classic reactive astrogliosis (increased GFAP) is largely absent, specific reductions in astrocyte markers and GFAP expression suggest astrocytic dysfunction rather than proliferation.",
+      "Microglial alterations appear region-specific and subgroup-dependent, with some evidence of increased activation in frontal and temporal regions and in paranoid subtypes, but no global microgliosis.",
+      "The most consistent molecular evidence of neuroinflammation lies in the upregulation of specific inflammatory transcripts and cytokines (such as SERPINA3, IFITM, and IL-6), which often define a \"high inflammation\" subgroup of patients.",
+      "These findings suggest that neuroinflammation in schizophrenia is not a uniform neuropathological feature but may reflect distinct immune endophenotypes or disease stages."
+    ]
+  }
+}

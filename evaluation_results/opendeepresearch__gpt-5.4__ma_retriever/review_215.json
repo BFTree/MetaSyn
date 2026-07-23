@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23971,
+    "output_tokens": 1235,
+    "total_tokens": 25206
+  },
+  "metrics": {
+    "retrieval_recall": 0.4358974358974359,
+    "retrieval_precision": 0.5151515151515151,
+    "inclusion_recall": 0.05128205128205128,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.09523809523809523,
+    "screening_accuracy": 0.5151515151515151,
+    "conditional_retention": 0.11764705882352941,
+    "post_retrieval_loss": 0.38461538461538464,
+    "inclusion_consistency": 0.7235,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5506,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear eligibility criteria, search queries, screening decisions, included/excluded studies, synthesis considerations, and limitations, but it lacks a formal abstract, full references section, explicit quality/risk-of-bias assessment, and a complete conclusion needed for excellent PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Examined birth weight in relation to PFOS biomarkers.",
+      "Reported a quantitative association estimate for PFOS and birth weight, such as a beta/regression coefficient or a category comparison.",
+      "Reported a 95% CI, standard error, p-value, or similar variance information permitting uncertainty estimation.",
+      "Used an eligible maternal or neonatal biomarker matrix."
+    ],
+    "exclusion_criteria": [
+      "Duplicates or overlapping cohorts were to be excluded where identifiable from the local corpus record.",
+      "A Padula/ECHO-overlap publication was to be excluded from the primary analysis if retrieved; however, no such record was clearly retrieved under the searches used.",
+      "Studies lacking the quantitative data needed for meta-analysis were excluded if the needed information could not be verified from the local corpus record.",
+      "Studies reporting only z-scores, BMI, or other non-gram outcomes were excluded from the primary birth-weight-in-grams set.",
+      "Studies with only vague narrative references to birth weight, without PFOS-specific effect estimates, were excluded.",
+      "Risk-of-bias exclusions were only applied where critical deficiencies were evident from the local corpus record; this was rarely assessable from abstracts alone."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Across the three included studies, the direction of effect was consistently toward **lower birth weight with higher PFOS exposure**:",
+      "This pattern supports an overall interpretation that **higher prenatal PFOS biomarker concentrations are associated with reduced birth weight**, although the magnitude and statistical certainty varied by study.",
+      "Sex-specific evidence was explicitly available in `70016`, where the inverse association appeared among **female infants** but not males.",
+      "Direct comparison across studies is limited because the exposure contrast was not uniform:"
+    ]
+  }
+}

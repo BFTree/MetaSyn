@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21346,
+    "output_tokens": 1321,
+    "total_tokens": 22667
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.6923076923076923,
+    "inclusion_f1": 0.7199999999999999,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5388,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2918,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening rationale, eligibility considerations, synthesis of functional and oncologic outcomes, limitations, conclusions, and included/excluded studies, but it lacks a formal abstract, introduction, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "studies had to involve adult men with penile cancer treated by glansectomy with or without neoglans reconstruction, and they had to report functional outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies with only oncologic/technical outcomes and no functional data were excluded per the review\u2019s explicit exclusion criterion.",
+      "not a primary study (`systematic review`, `review`, `comment`, `protocol`)",
+      "wrong population (children, trauma, circumcision injury, hypospadias, transgender phalloplasty, urethral cancer, benign disease, mixed lesions not clearly penile cancer-only glansectomy subgroup)",
+      "wrong intervention focus (partial penectomy, glans resurfacing only, mixed organ-sparing cohorts without glansectomy-specific functional data)",
+      "no functional outcomes despite relevant surgery",
+      "publication date outside the review end date (`2025` or later)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across included studies, the evidence suggests that glansectomy with reconstruction, usually using split-thickness skin graft (STSG/SSG), is associated with generally favorable preservation of urinary and sexual function in appropriately selected men with glans-confined/localized penile cancer.",
+      "Reported functional domains include standing voiding, erectile function/sexual activity, preserved sensation, cosmesis, and patient satisfaction.",
+      "Complications relevant to function included graft loss and meatal stenosis, usually occurring in a minority of patients.",
+      "Oncologic outcomes were also generally acceptable, with low local recurrence in most series and high disease-specific survival where reported.",
+      "Using only the supplied candidate pool, the available pre-2024 primary evidence supports glansectomy, usually with split-thickness skin graft neoglans reconstruction, as a penile-sparing option for localized penile cancer confined to the glans with generally favorable urinary, sexual, sensory, and cosmetic outcomes in selected patients, alongside acceptable oncologic control.",
+      "The evidence is limited by retrospective design, heterogeneity, and incomplete functional reporting, so the certainty of conclusions is modest."
+    ]
+  }
+}

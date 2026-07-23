@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 203,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33532,
+    "output_tokens": 1010,
+    "total_tokens": 34542
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05660377358490566,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 0.2222222222222222,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.8490566037735849,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.3546,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5464,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening counts, statistical synthesis, and risk-of-bias assessment, but it falls short of excellent due to duplicated headings, some flow/formatting issues, limited data extraction detail, and absence of a formal References section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies with an observational or interventional design that report empirical data.",
+      "Studies including patients diagnosed with open-angle glaucoma and/or healthy control subjects without glaucoma.",
+      "Studies that assess translaminar pressure difference or its components needed for calculation (IOP and ICP), with TPD defined as IOP minus ICP.",
+      "Studies reporting outcomes on translaminar pressure difference levels and/or structural glaucomatous changes of the optic disc."
+    ],
+    "exclusion_criteria": [
+      "Reviews, meta-analyses, editorials, letters, conference abstracts without full data, case reports, and animal or in vitro studies.",
+      "Studies of glaucoma types other than open-angle glaucoma only, or studies without a healthy control or clearly defined non-glaucoma comparison group when relevant to the analysis.",
+      "Studies that do not measure or permit calculation of translaminar pressure difference and do not report optic disc structural outcomes related to glaucomatous change.",
+      "Studies focused primarily on unrelated ophthalmic or neurologic conditions without separate data for open-angle glaucoma and healthy controls."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 9 studies, patients with open-angle glaucoma had a higher translaminar pressure difference than healthy controls, but the random-effects estimate was small and not statistically robust (SMD 0.232, 95% CI -0.687 to 1.151; p=0.6208).",
+      "Clinically, this means current evidence does not support TPD as a reliable standalone marker of glaucomatous structural optic disc change or as a discriminating measure between glaucoma and non-glaucoma populations.",
+      "Although the fixed-effects model suggested a small positive association (SMD 0.124, 95% CI 0.080 to 0.168), that result is outweighed by extreme between-study heterogeneity (I2=97.6%; tau2=1.8769), indicating substantial inconsistency across studies.",
+      "TPD may still be considered as part of a broader physiologic assessment in glaucoma, but it should be interpreted cautiously and not used in isolation for clinical decision-making given the marked heterogeneity and imprecision of the pooled effect."
+    ]
+  }
+}

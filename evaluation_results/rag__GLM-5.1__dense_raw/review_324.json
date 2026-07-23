@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16131,
+    "output_tokens": 899,
+    "total_tokens": 17030
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.9,
+    "inclusion_precision": 0.8181818181818182,
+    "inclusion_f1": 0.8571428571428572,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.9,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.6753,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6451,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear review question, eligibility criteria, methods, screening results, evidence synthesis, conclusion, and included study list, but it lacks a formal abstract, full references, detailed search strategy, data extraction process, quality/risk-of-bias assessment, and PRISMA-level reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "evaluated clinical and/or economic outcomes after pharmacogenetics-guided treatment in a sample of individuals taking antipsychotics as the primary prescribed medication, compared to treatment as usual",
+      "No limits were applied on age, diagnosis, country, or date."
+    ],
+    "exclusion_criteria": [
+      "antipsychotics were not the primary prescribed medication",
+      "they were protocols, reviews, commentaries, letters, or editorials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Pharmacogenetic-guided antipsychotic prescribing shows promise for improving clinical outcomes, particularly in reducing adverse drug reactions in metabolizer-defined subgroups and improving symptom response when multigenetic panels are utilized.",
+      "However, routine single-gene testing for CYP2D6/2C19 may not broadly improve persistence or symptoms in general schizophrenia populations.",
+      "The economic evidence is more robust, consistently indicating that PGx testing is cost-effective or cost-saving, especially for clozapine initiation strategies (using HLA markers to target monitoring) and for managing extreme CYP metabolizers where testing reduces psychiatric healthcare costs.",
+      "The evidence regarding the impact of pharmacogenetic (PGx) testing on clinical outcomes in antipsychotic treatment is mixed, varying by the scope of the genetic panel and the specific patient population.",
+      "The evidence consistently supports the economic benefit or cost-effectiveness of pharmacogenetic-guided antipsychotic treatment, particularly for high-risk interventions and specific subgroups."
+    ]
+  }
+}

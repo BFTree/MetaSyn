@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11888,
+    "output_tokens": 1385,
+    "total_tokens": 13273
+  },
+  "metrics": {
+    "retrieval_recall": 0.46875,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.40625,
+    "inclusion_precision": 0.6842105263157895,
+    "inclusion_f1": 0.5098039215686275,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.8666666666666667,
+    "post_retrieval_loss": 0.0625,
+    "inclusion_consistency": 0.6262,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5844,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review target, screening summary, thematic synthesis of findings, conclusion, and included articles, but it lacks a formal abstract, detailed methods/search strategy, data extraction and synthesis methods, quality assessment, and PRISMA-style reporting elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "measured standardized intelligence or cognitive aptitudes in childhood, adolescence, or early adulthood (<21 years) in general population samples",
+      "examined the association with later-life clinical health outcomes (physical illnesses, mental illnesses, or clinical diagnoses linked to physical parameters/biomarkers)"
+    ],
+    "exclusion_criteria": [
+      "estimated IQ from later-life sociodemographic data",
+      "focused solely on clinical cohorts without healthy controls",
+      "reported only mortality without health outcomes",
+      "were reviews/protocols/editorials",
+      "measured IQ at ages \u226521 (e.g., Candidate 134 assessed IQ up to age 35; Candidate 053 assessed IQ up to age 23)",
+      "the exposure was not early-life IQ (e.g., childhood adversity, environmental exposures, genetics)",
+      "the outcome was not a clinical health condition (e.g., cognitive decline, health behaviors, mortality only)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The synthesized evidence strongly supports the hypothesis that lower intelligence measured before age 21 is a risk factor for a wide array of later-life mental and physical health disorders, particularly schizophrenia, mood disorders, cardiovascular disease, and dementia.",
+      "The associations with physical health outcomes are often partly mediated or confounded by adult socioeconomic position, educational attainment, and modifiable cardiovascular risk factors, suggesting that the impact of early-life cognitive deficits on physical health is substantially realized through life-course socioeconomic and behavioral pathways.",
+      "The positive association with Parkinson's disease highlights that the direction of the IQ-health relationship may not be uniformly inverse across all neurodegenerative conditions."
+    ]
+  }
+}

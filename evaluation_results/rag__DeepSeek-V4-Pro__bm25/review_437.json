@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12779,
+    "output_tokens": 926,
+    "total_tokens": 13705
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.8048,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6965,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening overview, inclusion criteria, exclusions, conclusion, and a reference-like included article listing, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, results, discussion, full references, quality assessment, data extraction procedures, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies that directly compared the diagnostic performance of clinicians with and without AI support, reported sensitivity and specificity, used deep learning, and involved skin cancer diagnosis from images or in\u2011person evaluation were eligible."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, studies that only compared AI algorithms with clinicians (without an AI\u2011assisted clinician arm), and those focused on non\u2011skin conditions were excluded.",
+      "Not a primary study (reviews, meta\u2011analyses, protocols).",
+      "No direct comparison of clinicians with versus without AI assistance (e.g., studies that only evaluated standalone AI performance or compared AI with clinicians without a combined arm).",
+      "Did not measure sensitivity/specificity (e.g., reported only overall accuracy or other metrics).",
+      "Focused on non\u2011skin cancer conditions (e.g., internal cancers, fractures, dental pathology).",
+      "Used non\u2011deep learning techniques or did not involve image\u2011based/in\u2011person skin lesion diagnosis."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the fixed candidate pool, only one study met the stringent eligibility criteria for the systematic review.",
+      "That study provides direct evidence on how deep learning assistance influences clinicians\u2019 diagnostic sensitivity and specificity for skin cancer.",
+      "Given the very narrow yield, the review would be limited to this single investigation; any meta\u2011analysis would not be feasible.",
+      "Future updates should consider broader searches and inclusion of studies whose full texts report required accuracy metrics even if the abstract does not."
+    ]
+  }
+}

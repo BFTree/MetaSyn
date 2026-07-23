@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28866,
+    "output_tokens": 1282,
+    "total_tokens": 30148
+  },
+  "metrics": {
+    "retrieval_recall": 0.6363636363636364,
+    "retrieval_precision": 0.17073170731707318,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.23529411764705885,
+    "screening_accuracy": 0.7804878048780488,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.7852,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6969,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Introduction, Methods, Results-style screening and study characteristics, synthesis, limitations, conclusion, included studies, and references, and it includes meta-analysis review elements such as search queries, eligibility criteria, screening decisions, and synthesis logic, but it falls short of excellent PRISMA-style structure because risk-of-bias/quality assessment, data extraction procedures, and formal quantitative synthesis methods are not fully detailed."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Quantitatively assessed PFAS exposure during pregnancy/in utero or early childhood.",
+      "Used objectively measured child weight/adiposity outcomes.",
+      "Reported weight-related outcomes during ages 1 to 12 years.",
+      "Reported an association measure between PFAS and obesity-related outcomes."
+    ],
+    "exclusion_criteria": [
+      "Did not quantitatively assess PFAS.",
+      "Only assessed birth outcomes with no follow-up into ages 1 to 12.",
+      "Were animal, simulation, commentary, or review studies.",
+      "Assessed outcomes beyond the age window without usable data within the age-eligible range."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base is heterogeneous but not random.",
+      "Across eligible cohort studies, prenatal PFAS exposure, especially PFOA and in some cases PFHxS or PFNA, is more often associated with lower size or adiposity at birth or infancy followed by faster BMI gain or greater adiposity later in childhood.",
+      "By contrast, childhood/postnatal PFAS exposure shows less consistent and often inverse associations with BMI or fat accrual.",
+      "The local MetaSyn corpus supports a specific conclusion, not a vague one.",
+      "The most defensible interpretation is that **prenatal PFAS exposure, particularly PFOA and in some analyses PFHxS or PFNA, is associated with altered growth trajectories that can culminate in greater adiposity by later childhood, whereas childhood/postnatal PFAS exposure shows weaker and often inverse associations with BMI** ([69990](metasyn://corpus/69990); [90083](metasyn://corpus/90083); [4586](metasyn://corpus/4586); [69985](metasyn://corpus/69985)).",
+      "I do **not** think the evidence supports the simplistic claim that \u201cPFAS universally causes childhood obesity.\u201d",
+      "The corpus instead supports a stronger and more nuanced opinion: **PFAS-obesity associations are chemical-specific, timing-specific, and developmentally dynamic.",
+      "Prenatal exposure is the more credible risk window, and PFOA is the chemical with the most convincing evidence of a later-childhood adiposity signal despite early-life inverse associations.**"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10763,
+    "output_tokens": 965,
+    "total_tokens": 11728
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.3333333333333333,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6605,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5087,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening outcomes, eligibility rationale, exclusions, evidence synthesis, and conclusion, but it lacks formal Abstract, Introduction, detailed Methods/search strategy, quality assessment, and full References, limiting its PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized or cluster-randomized trials in LMICs",
+      "among newborns/young infants up to 59 days",
+      "where trained community health workers conduct home visits that include identifying serious illness in young infants",
+      "with relevant outcomes on care seeking from facilities and/or successful identification/referral of seriously ill infants"
+    ],
+    "exclusion_criteria": [
+      "not RCTs",
+      "not focused on newborns/young infants up to 59 days",
+      "not home-visit CHW interventions",
+      "not about identification/referral/care seeking for serious neonatal illness",
+      "protocols, reviews, observational studies, or non-LMIC settings",
+      "or did not provide the relevant outcome framework"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The abstract-level evidence from the eligible Newhints trial publications supports the conclusion that **home visits by trained community health workers can improve care seeking for sick newborns in LMIC settings**.",
+      "The intervention improved caregiver action after illness recognition:",
+      "**Care-seeking benefit:** consistent positive effect.",
+      "**Feasibility of danger-sign assessment and referral during home visits:** supported.",
+      "**Equity signal:** one abstract suggests potentially pro-poor gains, with especially strong effects among poorer households.",
+      "Based on title-and-abstract screening of the fixed candidate pool, the available eligible evidence is narrow but directionally consistent: **CHW home visits that include newborn danger-sign assessment and referral appear to increase care seeking from health facilities for sick newborns in LMICs**, at least in the Ghana Newhints trial context.",
+      "The supplied abstracts do **not** provide enough information to synthesize sensitivity and specificity of illness identification."
+    ]
+  }
+}

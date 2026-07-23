@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 288,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5401,
+    "output_tokens": 1735,
+    "total_tokens": 7136
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.9090909090909091,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5293,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5151,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with distinct sections for evidence synthesis, screening decisions, included studies, conclusions, and limitations, and it reflects core meta-analysis elements like screening and synthesis, but it lacks a fully detailed methods structure, search strategy, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with gingivitis or periodontitis",
+      "a healthy whole-diet pattern versus unhealthy/usual diet",
+      "examiner-measured periodontal outcomes",
+      "at least 4 weeks follow-up",
+      "at least 20 participants"
+    ],
+    "exclusion_criteria": [
+      "reviews",
+      "animal/in vitro studies",
+      "non-diet periodontal interventions",
+      "studies of single nutrients/foods/supplements rather than whole dietary patterns",
+      "studies without periodontal outcomes",
+      "studies outside the target condition",
+      "cross-sectional studies without change over time",
+      "studies relying on self-reported periodontal disease",
+      "duplicate-data rule",
+      "vegan diet, explicitly excluded"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included intervention studies, the direction of effect is generally favorable for healthier dietary patterns:",
+      "Overall, the evidence is suggestive rather than definitive.",
+      "The best-aligned randomized evidence supports that healthier diets, especially Mediterranean or anti-inflammatory patterns, may reduce gingival inflammation over 4 to 6 weeks without parallel plaque reductions.",
+      "Evidence for periodontitis outcomes is weaker and less consistent.",
+      "Based on the eligible abstracts in the fixed pool, healthier dietary patterns appear to improve gingival inflammation and may modestly improve some periodontal parameters, especially bleeding-related outcomes and possibly probing depth, compared with usual or less healthy diets.",
+      "The evidence is stronger for gingivitis than for periodontitis, and the periodontitis evidence remains limited and somewhat inconsistent."
+    ]
+  }
+}

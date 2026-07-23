@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18192,
+    "output_tokens": 1037,
+    "total_tokens": 19229
+  },
+  "metrics": {
+    "retrieval_recall": 0.9696969696969697,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.9393939393939394,
+    "inclusion_precision": 0.775,
+    "inclusion_f1": 0.8493150684931509,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.96875,
+    "post_retrieval_loss": 0.030303030303030304,
+    "inclusion_consistency": 0.5814,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6041,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear objective, methods, screening results, included studies, and evidence summary sections, and it provides inclusion/exclusion criteria and a defined study set, but it lacks full PRISMA-style elements such as a detailed search strategy, screening flow diagram, data extraction procedures, formal quality or risk-of-bias assessment, and actual meta-analytic synthesis results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double-blind, randomized controlled trials (RCTs) employing a discontinuation (randomized withdrawal) design;",
+      "Conducted in adults or youth with MDD diagnosed using standard operationalized criteria (Feighner, RDC, DSM-III/III\u2011R/IV/5, ICD\u201110) who had achieved remission or at least a satisfactory response during acute\u2011phase antidepressant treatment;",
+      "Comparing continuation of the same antidepressant medication with placebo;",
+      "Reporting at least one of the following outcomes: relapse rate, treatment failure, all\u2011cause dropout, or tolerability."
+    ],
+    "exclusion_criteria": [
+      "Studies that focused on bipolar disorder, treatment\u2011resistant depression (without an initial stable remission on monotherapy), depression secondary to physical illness, perinatal depression, or that used non\u2011pharmacological interventions without a placebo arm were excluded.",
+      "Meta\u2011analyses, reviews, protocols, conference abstracts, case studies, and secondary/supplementary analyses of already published primary trials were also excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, **40 unique primary RCTs** met all inclusion criteria.",
+      "The identified pool of 40 primary studies provides a robust foundation for a meta\u2011analysis on maintenance antidepressant treatment versus placebo in MDD.",
+      "Relapse/recurrence (usually defined by a depression rating scale threshold and/or clinical judgment) is the most common primary outcome, with time\u2011to\u2011event analyses frequently reported.",
+      "Overall, the included studies are directly applicable to a quantitative synthesis of relapse prevention efficacy and tolerability."
+    ]
+  }
+}

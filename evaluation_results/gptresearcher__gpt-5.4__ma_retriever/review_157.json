@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28380,
+    "output_tokens": 945,
+    "total_tokens": 29325
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.12307692307692308,
+    "inclusion_recall": 0.125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2222222222222222,
+    "screening_accuracy": 0.8923076923076924,
+    "conditional_retention": 0.125,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.7852,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5461,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, introduction, methods, eligibility criteria, search query, screening table, results, limitations, conclusion, and references, but it lacks a detailed reproducible search strategy, formal data-extraction procedures, risk-of-bias assessment, and a fully specified quantitative synthesis or PRISMA flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Asymptomatic women in population-based breast cancer screening programs",
+      "DBT compared with DM",
+      "Cancer detection and/or recall reported by BI-RADS breast density",
+      "English language",
+      "Paired or unpaired comparative design",
+      "Publication date within January 1, 2009 to November 23, 2020"
+    ],
+    "exclusion_criteria": [
+      "Automated density assessment",
+      "Non-population or diagnostic populations",
+      "Surveillance rather than screening cohorts",
+      "Reviews/meta-analyses for the included-study set",
+      "Records outside the date limit"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible local-corpus evidence supports the conclusion that DBT improves cancer detection over DM in population breast screening and that this advantage is larger in women with dense breasts than in women with non-dense breasts.",
+      "The best directly eligible primary study, the Verona screening program, showed a substantially stronger cancer-detection gain in high-density than low-density breasts.",
+      "In contrast, recall-rate effects are more heterogeneous.",
+      "DBT does not uniformly reduce recalls in dense breasts; rather, it may preserve similar recall while improving recall PPV, or reduce recall more strongly in non-dense groups.",
+      "For dense breasts, DBT has a stronger and clinically meaningful detection advantage that likely reflects reduced tissue-overlap masking.",
+      "Therefore, if a screening program must prioritize where DBT adds the most value over DM, dense-breast populations are the strongest target.",
+      "At the same time, claims that DBT clearly reduces interval cancers or produces uniformly better downstream outcomes across all density strata remain premature on the basis of the eligible primary evidence available here."
+    ]
+  }
+}

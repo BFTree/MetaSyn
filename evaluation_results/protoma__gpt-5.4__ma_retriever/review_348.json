@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34088,
+    "output_tokens": 1228,
+    "total_tokens": 35316
+  },
+  "metrics": {
+    "retrieval_recall": 0.23529411764705882,
+    "retrieval_precision": 0.12121212121212122,
+    "inclusion_recall": 0.19607843137254902,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.3225806451612903,
+    "screening_accuracy": 0.9696969696969697,
+    "conditional_retention": 0.8333333333333334,
+    "post_retrieval_loss": 0.0392156862745098,
+    "inclusion_consistency": 0.6188,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6618,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections and several meta-analysis elements are present, but the report lacks references and a completed quantitative Results section, contains duplicated headings and internal contradictions, and does not fully demonstrate PRISMA-level rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Human observational or interventional studies with baseline biomarker data, including cohort, case-control, or longitudinal designs, that evaluate biological biomarkers as exposures or predictors.",
+      "Participants at elevated risk for major depressive disorder (with or without prior MDD history), including individuals free of MDD at baseline or remitted individuals at risk of relapse/recurrence.",
+      "Studies reporting MDD onset, relapse, or recurrence as an outcome diagnosed by clinical interview or equivalent diagnostic assessment, with time-to-event or follow-up data when available.",
+      "Biomarkers of interest include neuroimaging measures (e.g., brain volumes), gastrointestinal factors, immunology markers, neurotrophic factors, neurotransmitters, hormones (especially cortisol), or oxidative stress markers."
+    ],
+    "exclusion_criteria": [
+      "Studies without a clinically assessed MDD outcome (e.g., only self-reported depressive symptoms, screening scales, or non-diagnostic outcomes).",
+      "Non-human, in vitro, case report, case series, review, editorial, or protocol studies.",
+      "Studies in populations not at risk for MDD or not relevant to onset/relapse/recurrence prediction (e.g., established MDD only without prospective outcome follow-up).",
+      "Studies that do not report a biological biomarker exposure or do not provide extractable data on MDD onset/relapse/recurrence timing or status."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across **11 studies**, the overall picture was one of **promising but inconclusive prognostic evidence**.",
+      "The most recurrent signal came from the **hypothalamic-pituitary-adrenal (HPA) axis**, particularly cortisol-related measures, with several studies suggesting that altered cortisol reactivity or regulation may precede depressive relapse or recurrence.",
+      "However, the **magnitude of association could not be estimated with confidence across the literature**, because many studies did not report extractable event counts, effect estimates, or precision measures.",
+      "Clinically, this means that while some biomarkers may help identify vulnerability, **none can yet be considered sufficiently validated for routine prediction of MDD onset or relapse on their own**.",
+      "In this meta-analysis of 11 studies, elevated biological biomarkers\u2014including neuroimaging, immune, neuroendocrine, gastrointestinal, neurotransmitter, neurotrophic, and oxidative stress measures\u2014were associated with a higher likelihood of subsequent MDD onset, relapse, or recurrence compared with lower biomarker levels or no MDD, supporting their potential prognostic value.",
+      "However, the evidence does not support using any single biomarker as a stand-alone screening tool at this stage.",
+      "The main caveat is substantial heterogeneity across biomarker types, populations, and outcome definitions, which limits precision and immediate applicability."
+    ]
+  }
+}

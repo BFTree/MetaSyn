@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15761,
+    "output_tokens": 973,
+    "total_tokens": 16734
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.4090909090909091,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5806451612903226,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.4090909090909091,
+    "post_retrieval_loss": 0.5909090909090909,
+    "inclusion_consistency": 0.6517,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3928,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear objective, screening criteria, included study description, results, discussion, conclusion, and study list, but it lacks a formal abstract, detailed database search strategy, data extraction procedures, quantitative synthesis methods, and quality/risk-of-bias assessment needed for full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "compared an automated sepsis alerting system (integrated into the electronic health record) with usual care without such alerts",
+      "enrolled hospitalized adult patients with sepsis or at risk for sepsis",
+      "reported hospital mortality, ICU LOS, or hospital LOS",
+      "were primary studies published by 31 December 2021"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "editorials",
+      "protocols",
+      "purely predictive modeling studies without a comparator",
+      "pediatric studies",
+      "reports not describing an automated alerting intervention"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The overall evidence from the included studies is mixed, and no single setting or rule\u2011based approach consistently demonstrated a clear benefit.",
+      "Overall, the higher\u2011quality randomized evidence does not support a mortality benefit for rule\u2011based alerts, while the observational studies show inconsistent effects.",
+      "Where LOS improvements were seen, they were often accompanied by concurrent process\u2011of\u2011care changes (e.g., faster antibiotic administration, increased lactate testing), making it difficult to attribute the effect solely to the alert.",
+      "The available evidence up to 2021 indicates that rule\u2011based automated sepsis alerts, when examined in rigorous randomized designs, do not improve mortality or consistently reduce LOS.",
+      "In hospitalized patients with sepsis, rule\u2011based automated alerting systems integrated into the electronic health record have not been shown to improve mortality or length of stay when evaluated in randomized trials.",
+      "Higher\u2011quality, prospective studies are needed to determine whether next\u2011generation prediction algorithms can yield clinically meaningful benefits."
+    ]
+  }
+}

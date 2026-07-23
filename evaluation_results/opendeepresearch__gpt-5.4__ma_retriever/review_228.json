@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26931,
+    "output_tokens": 839,
+    "total_tokens": 27770
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.23809523809523808,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.8095238095238095,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.4635,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4948,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and complete, with clear methods, screening, results, discussion, conclusion, and references, plus explicit search and eligibility criteria, but it lacks full PRISMA rigor such as a detailed quality assessment and a genuine pooled meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original research articles",
+      "English language",
+      "Published after January 1, 2009 and up to June 1, 2021",
+      "Level I or Level II prospective comparative studies",
+      "Studies evaluating RDN added to PVI versus PVI alone in patients with AF and **essential hypertension**"
+    ],
+    "exclusion_criteria": [
+      "Secondary hypertension",
+      "Type 1 diabetes mellitus",
+      "Late-stage kidney disease/failure, defined by mean eGFR <45 mL/min/1.73 m\u00b2",
+      "Congestive heart failure",
+      "LVEF <35%",
+      "Non-English studies",
+      "Non-comparative studies, reviews, meta-analyses, and trial design papers"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "That trial supports the conclusion that **RDN plus PVI improves AF recurrence outcomes and lowers systolic blood pressure compared with PVI alone**, without a clear major safety penalty in the available corpus record.",
+      "However, a formal meta-analysis was **not possible** because only one study was eligible.",
+      "Evidence for **diastolic blood pressure, eGFR, and complication rates** remains insufficient for strong conclusions in the target population.",
+      "**Adjunctive RDN appears promising and potentially beneficial for AF recurrence and blood pressure control in hypertensive patients undergoing PVI, but the current eligible corpus evidence is insufficiently broad to establish definitive effectiveness or safety.**"
+    ]
+  }
+}

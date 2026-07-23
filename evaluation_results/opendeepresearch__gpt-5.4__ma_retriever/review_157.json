@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31671,
+    "output_tokens": 775,
+    "total_tokens": 32446
+  },
+  "metrics": {
+    "retrieval_recall": 0.75,
+    "retrieval_precision": 0.20689655172413793,
+    "inclusion_recall": 0.125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2222222222222222,
+    "screening_accuracy": 0.8275862068965517,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.7406,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5247,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, search queries, screening decisions, study characteristics, synthesis, meta-analysis feasibility, limitations, and conclusion, but it lacks a conventional abstract/introduction structure, formal references section, and PRISMA-level quality or risk-of-bias assessment needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary studies",
+      "Asymptomatic women attending **population-based breast cancer screening programmes**",
+      "Comparison of **DBT-based screening** versus **DM-based screening**",
+      "Reported **cancer detection and/or recall** results **stratified by breast density**",
+      "Density classified using **BI-RADS** (any edition)",
+      "Paired and unpaired comparative designs both eligible"
+    ],
+    "exclusion_criteria": [
+      "Used **automated density assessment**",
+      "Did not report density-stratified results",
+      "Were not primary screening studies",
+      "Fell outside the date window",
+      "Could not be verified as meeting the core criteria from the retrieved local corpus record"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "DBT-based screening appears to lower recall across several breast density categories in population screening",
+      "There is insufficient eligible local-corpus evidence to determine whether DBT has a distinctly different effect in women with dense versus non-dense breasts for recall or cancer detection",
+      "Meta-analysis is not possible"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 38390,
+    "output_tokens": 1060,
+    "total_tokens": 39450
+  },
+  "metrics": {
+    "retrieval_recall": 0.7727272727272727,
+    "retrieval_precision": 0.19101123595505617,
+    "inclusion_recall": 0.045454545454545456,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.08,
+    "screening_accuracy": 0.797752808988764,
+    "conditional_retention": 0.058823529411764705,
+    "post_retrieval_loss": 0.7272727272727273,
+    "inclusion_consistency": 0.5076,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5827,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally logical systematic review structure with abstract, background, review question, methods, detailed search strategy, eligibility criteria, screening flow, planned synthesis methods, results, risk of bias, discussion, conclusion, and included studies, but it falls short of excellent due to duplicated headings, an incomplete/contaminated Main Findings section, no formal references section, and some inconsistencies in reporting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies of people living or working in Southeast Asia, limited to ASEAN countries including Vietnam, Cambodia, Laos PDR, Thailand, Myanmar, Malaysia, Indonesia, Singapore, Philippines, Timor-Leste, and Brunei.",
+      "Studies assessing occupational or residential exposure to agricultural land-use, including oil palm, rubber, non-poultry livestock farming, crops, or pasture.",
+      "Studies including a comparison group unexposed to agricultural land-use, such as people not living or working in agricultural areas, or otherwise evaluating differential exposure to agricultural land-use.",
+      "Observational or interventional studies reporting infectious disease outcomes as infection prevalence or comparable measures for pathogens such as hookworm, malaria, scrub typhus, spotted fever group diseases, or other infectious agents."
+    ],
+    "exclusion_criteria": [
+      "Studies conducted outside the specified Southeast Asian ASEAN countries or not reporting data separately for populations in those countries.",
+      "Studies without relevant agricultural land-use exposure, including exposures unrelated to residential or occupational contact with agricultural areas.",
+      "Studies not reporting infectious disease risk or infection prevalence outcomes, or focusing only on non-infectious health outcomes.",
+      "Reviews, editorials, conference abstracts without sufficient data, case reports, animal studies, and laboratory-only or in vitro studies."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 3 studies, occupational or residential exposure to agricultural land use in Southeast Asia was associated with higher odds of infectious disease compared with no such exposure (OR 1.47, 95% CI 1.23 to 1.75).",
+      "This suggests a clinically meaningful increase in risk rather than a trivial statistical difference, particularly because the outcome includes infections with substantial morbidity such as malaria, scrub typhus, and hookworm, and because exposure may affect large rural and peri-agricultural populations across the region.",
+      "On balance, this supports targeting surveillance, prevention, and exposure-mitigation measures toward people living or working in agricultural settings, especially where crop, plantation, or livestock activities are concentrated.",
+      "The main caveat is that the estimate is based on only 3 studies and combines heterogeneous agricultural exposures and infectious outcomes, so the pooled effect should be interpreted as a broad regional signal rather than a precise risk estimate for any single land-use type or pathogen."
+    ]
+  }
+}

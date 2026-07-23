@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12899,
+    "output_tokens": 1073,
+    "total_tokens": 13972
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6335,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7848,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes review target, screening criteria, exclusion rationale, and findings, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, References, quality assessment, and detailed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult males (age \u2265 18) with a documented diagnosis of anxiety disorders\u2014including post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), social phobia/social anxiety disorder, and panic disorder\u2014made by at least one qualified psychiatrist",
+      "the prevalence of ED and the severity of ED symptoms specifically measured by the International Index of Erectile Function-5 (IIEF-5) scores",
+      "ED severity must be measured using the International Index of Erectile Function-5 (IIEF-5)",
+      "The inclusion criteria required the anxiety diagnosis to be made by \"at least one qualified psychiatrist.\""
+    ],
+    "exclusion_criteria": [
+      "anxiety measured but not clinically diagnosed by a qualified psychiatrist",
+      "no diagnosis of anxiety disorders and no measure of erectile function",
+      "erectile function measured using a tool not included in this review",
+      "publication after the search end date"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Several candidates investigated sexual dysfunction in populations with the target anxiety disorders (e.g., PTSD, panic disorder, social phobia), but none satisfied all of the strict eligibility criteria:",
+      "Given the strict intersection of the required outcome measurement tool (IIEF-5), the specific diagnosing clinician (qualified psychiatrist), and the target population, no candidate in the supplied pool met all eligibility parameters.",
+      "None were included."
+    ]
+  }
+}

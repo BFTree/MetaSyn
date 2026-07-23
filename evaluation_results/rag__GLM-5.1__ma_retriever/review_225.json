@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18444,
+    "output_tokens": 1418,
+    "total_tokens": 19862
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.94,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.6296,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4597,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present with clear Methods, Results, Conclusion, eligibility criteria, and included studies, but it lacks a formal abstract/introduction/discussion/references structure and omits key PRISMA-style elements such as a detailed search strategy, screening flow, data extraction process, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs)",
+      "enrolling adults with low-renin hypertension",
+      "comparing MRA therapy (spironolactone or eplerenone) against placebo or active antihypertensive drugs",
+      "reporting blood pressure reduction or safety/tolerability outcomes"
+    ],
+    "exclusion_criteria": [
+      "Studies involving participants with known secondary causes of hypertension such as primary aldosteronism (PA)",
+      "non-English records",
+      "conference abstracts",
+      "reviews",
+      "protocols",
+      "studies published after the search end date (2022-12-19)",
+      "Studies enrolling mixed or unselected hypertensive populations (e.g., essential or resistant hypertension) without specifically selecting for low-renin status were also excluded for failing the population criterion."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence indicates that MRAs are effective antihypertensive agents in adults with low-renin hypertension, often demonstrating comparable or superior efficacy to standard diuretics or renin-angiotensin system blockers.",
+      "Eplerenone demonstrated significantly greater reductions in both systolic blood pressure (SBP: -15.8 vs. -10.1 mm Hg, P = .017) and diastolic blood pressure (DBP: -9.3 vs. -6.7 mm Hg, P = .05) after 8 weeks.",
+      "Adverse event rates were similar between groups.",
+      "Spironolactone resulted in significant reductions in SBP (-4.6 mm Hg, P=0.006) and a non-significant trend in DBP (-1.8 mm Hg, P=0.07) compared to baseline/placebo.",
+      "No patients experienced hyperkalemia, and spironolactone was well tolerated.",
+      "In adults with low-renin hypertension, MRA therapy effectively lowers blood pressure.",
+      "Eplerenone demonstrates superior BP reduction compared to the ARB losartan, and spironolactone shows similar efficacy to thiazide diuretics while offering more potent natriuresis.",
+      "MRAs appear generally well-tolerated in this population, with a low incidence of hyperkalemia in the studied low-renin cohorts, though the risk of orthostatic symptoms with high-dose spironolactone and the metabolic effects of comparator thiazides should be considered.",
+      "The evidence supports the use of MRAs as a targeted therapeutic strategy for LRH."
+    ]
+  }
+}

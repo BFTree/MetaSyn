@@ -1,0 +1,69 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31925,
+    "output_tokens": 1421,
+    "total_tokens": 33346
+  },
+  "metrics": {
+    "retrieval_recall": 0.23529411764705882,
+    "retrieval_precision": 0.21428571428571427,
+    "inclusion_recall": 0.0784313725490196,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.14545454545454545,
+    "screening_accuracy": 0.8571428571428571,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.1568627450980392,
+    "inclusion_consistency": 0.4325,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6838,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, eligibility criteria, search queries, screening rationale, included/excluded studies, qualitative synthesis, limitations, conclusions, and sources, but it lacks a formal abstract and full PRISMA-level details such as a flow diagram and systematic quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Longitudinal design",
+      "Biomarker measured prospectively, before MDD onset or before relapse/recurrence",
+      "Biomarker clearly derived from a **leading biological model**, including the seed domains:",
+      "neuroimaging",
+      "gastrointestinal factors",
+      "immunology/inflammation",
+      "neurotrophic factors",
+      "neurotransmitters",
+      "hormones/endocrine markers, especially cortisol",
+      "oxidative stress",
+      "MDD diagnosis established clinically, including structured interview, clinician diagnosis, or acceptable clinician-diagnosis proxy"
+    ],
+    "exclusion_criteria": [
+      "bipolar disorder or other non-MDD mood disorders",
+      "late-life depression",
+      "MDD secondary to medical disorders",
+      "mixed diagnoses with **<75% MDD**",
+      "outcome was **symptom change** rather than clinically diagnosed MDD onset/relapse/recurrence",
+      "relapse was defined by **rating-scale thresholds alone** without clear MDD diagnostic ascertainment",
+      "biomarker domain was not clearly within the named leading biological models",
+      "study addressed prognosis/course in already depressed samples rather than **future onset or recurrence**",
+      "mixed or unclear diagnostic composition"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Prospectively measured endocrine biomarkers\u2014especially cortisol-related HPA-axis measures and TRH/TSH-related HPT-axis measures\u2014show some ability to predict relapse or recurrence of MDD in people with prior depressive episodes who are in remission.",
+      "The strongest local-corpus evidence came from salivary morning cortisol in remitted recurrent depression, where lower cortisol predicted earlier recurrence.",
+      "Additional abstract-only studies suggest that DEX/CRH neuroendocrine response and TRH test response may also carry prognostic value for relapse/recurrence.",
+      "There was no clearly eligible and robust local-corpus evidence for other major biomarker domains named in the brief\u2014such as inflammation, gastrointestinal factors, neurotrophic factors, neurotransmitters, oxidative stress, or structural neuroimaging\u2014meeting all strict criteria by the search cutoff.",
+      "A quantitative meta-analysis was not supportable from the retrieved local-corpus record set because the retained studies were too few and too heterogeneous, and effect-size reporting was insufficient in the abstract-only records.",
+      "Overall, the local corpus supports a limited, relapse-focused neuroendocrine prognostic literature, but not a broad biomarker evidence base across the full range of leading biological models of depression."
+    ]
+  }
+}

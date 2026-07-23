@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 219,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21014,
+    "output_tokens": 1604,
+    "total_tokens": 22618
+  },
+  "metrics": {
+    "retrieval_recall": 0.17647058823529413,
+    "retrieval_precision": 0.14634146341463414,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.8536585365853658,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.53,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4709,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes key systematic review elements such as eligibility criteria, search strategy, retrieval results, screening decisions, synthesis feasibility, limitations, conclusion, and sources, but it lacks a formal abstract and does not include a quality/risk-of-bias assessment section, preventing a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "In vitro experimental studies",
+      "In vivo animal studies",
+      "Human experimental studies",
+      "Radar epidemiology studies only if:",
+      "the stated radar frequency was above 6 GHz, and",
+      "the exposure was consistent with occupational exposure below ICNIRP guidelines",
+      "Only studies published up to 2019-12-31, with full papers available in English, were eligible."
+    ],
+    "exclusion_criteria": [
+      "Reviews, comments, editorials",
+      "Case reports and case series",
+      "Therapeutic studies unless they also reported relevant bio-effects",
+      "Studies with exposures above the specified limits",
+      "Radar studies below 6 GHz",
+      "Studies published after 2019-12-31",
+      "Records without enough full-paper information in English to confirm eligibility"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "no study could be confidently included in the final review.",
+      "A quantitative meta-analysis was not feasible.",
+      "there is no includable body of evidence from which to conclude that low-level RF-EMF exposure above 6 GHz causes adverse biological or health effects."
+    ]
+  }
+}

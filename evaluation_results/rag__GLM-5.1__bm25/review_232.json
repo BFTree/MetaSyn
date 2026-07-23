@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 232,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9652,
+    "output_tokens": 1711,
+    "total_tokens": 11363
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.005,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5362,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4698,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes an objective, screening summary, evidence synthesis, key findings, conclusion, and a minimal reference, but it lacks several formal systematic review sections and PRISMA-style details such as a full search strategy, explicit inclusion/exclusion criteria, data extraction methods, quality assessment, and detailed synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "dietary salt/sodium intake levels (comparison: lower sodium intake or recommended levels < 5 g/day salt or 2 g/day sodium)",
+      "health outcomes (blood pressure, cardiovascular disease, physical performance, renal outcomes, chronic kidney disease, osteoporosis, and all-cause mortality)",
+      "general adult population",
+      "specified search window (Sept 30, 2019 \u2013 Dec 31, 2020)",
+      "24-h urine collection, food records, or 24-h diet recalls"
+    ],
+    "exclusion_criteria": [
+      "published outside the specified search window (Sept 30, 2019 \u2013 Dec 31, 2020), with years ranging from 1948 to 2026.",
+      "animal/in-vitro studies, reviews (systematic, narrative, umbrella), commentaries, guidelines, consensus documents, protocols, modelling studies, or cross-sectional studies (which are excluded from detailed critical appraisal).",
+      "exposures other than dietary salt (e.g., specific drugs like SGLT2 inhibitors, dietary patterns like Mediterranean/DASH, or other nutrients like protein, fiber, or iodine)",
+      "complex multifactorial interventions where salt was not the only exposure variable (e.g., mHealth interventions combined with education).",
+      "Studies estimating sodium intake via spot urine, food frequency questionnaires (FFQs), or self-administered questionnaires without explicit mention of 24-h urine collection, food records, or 24-h diet recalls were excluded.",
+      "Studies focusing on physiological/biomarker surrogates (e.g., insulin sensitivity, gene expression, microvascular function) or acute short-term effects (duration < 4 weeks) were excluded.",
+      "Studies restricted to children, pregnant women, or specific animal models were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only one study met all the stringent inclusion criteria within the specified timeframe.",
+      "A 1 SD increase in sodium intake (0.73 g/d) was associated with a reduction in SPPB score (0.13 points reduction; 95% CI: -0.26 to -0.01), indicating worse physical performance.",
+      "A 1 SD increase in potassium intake (0.70 g/d) was associated with an improvement in SPPB score (0.19 points increment; 95% CI: 0.05\u20130.34).",
+      "A 1 SD increase in the sodium-to-potassium ratio (0.30) was associated with significantly worse physical performance (-0.58 points; 95% CI: -0.95 to -0.21).",
+      "The eligible evidence within the 2019\u20132020 window is extremely limited, consisting of a single longitudinal cohort study.",
+      "This study suggests that higher dietary sodium intake and a higher sodium-to-potassium ratio are prospectively associated with declining physical performance in older adults, while higher potassium intake is associated with improved performance.",
+      "The findings support the hypothesis that excessive sodium intake, particularly when coupled with low potassium intake, may detrimentally affect physical functional outcomes in the general adult population.",
+      "However, due to the paucity of eligible studies for this specific timeframe, no robust conclusions can be drawn regarding the association of sodium intake with cardiovascular disease, renal outcomes, or mortality based on this candidate pool."
+    ]
+  }
+}

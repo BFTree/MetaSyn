@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10948,
+    "output_tokens": 1444,
+    "total_tokens": 12392
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5333333333333333,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.663,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.693,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into evidence synthesis, included/excluded studies, findings, limitations, and included articles, but it lacks a formal abstract, introduction, methods, discussion, conclusion, references, detailed search strategy, quality assessment, and full PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary studies in Turner syndrome that included children/adolescents aged 18 years or younger and reported a prevalence of hypertension, or enough data to calculate it."
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, conference-like non-primary material, studies focused only on blood pressure comparison with controls without prevalence data, and studies where the abstract did not support extracting pediatric hypertension prevalence.",
+      "reviews/systematic reviews, non-TS studies, adult-focused studies without extractable pediatric subgroup data, and papers centered on aortic disease or metabolic risk without usable hypertension prevalence."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across them, the reported prevalence of hypertension or elevated screening blood pressure in pediatric Turner syndrome varies widely, roughly from 20.6% to 42%, with one ABPM-focused study reporting 22% ambulatory hypertension and substantial additional nocturnal hypertension.",
+      "The clearest methodological signal in this pool is that ABPM identifies more abnormalities than conventional clinic measurements.",
+      "This directly supports the review question\u2019s comparison component: ABPM appears to detect masked or otherwise unrecognized hypertension more effectively than office-based approaches in pediatric Turner syndrome.",
+      "Pediatric Turner syndrome appears associated with a substantial burden of hypertension/elevated blood pressure, but the exact prevalence is unstable because:",
+      "For the specific comparison of ABPM versus other methods, only one clearly eligible abstract directly addresses this, but it is highly relevant: ABPM found more hypertension than manual clinic readings and identified nocturnal hypertension that office methods would miss.",
+      "Based on the supplied abstracts alone, that is the strongest evidence supporting ABPM as the more sensitive assessment method in this population."
+    ]
+  }
+}

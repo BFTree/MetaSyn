@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15387,
+    "output_tokens": 1158,
+    "total_tokens": 16545
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5862,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.555,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening results, eligibility criteria, exclusions, evidence synthesis, interpretation, and limitations, but it lacks core systematic review sections such as Abstract, Introduction, full Methods, Discussion/Conclusion, and References, with only limited PRISMA-style detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary studies only",
+      "antipsychotics as the primary prescribed medication",
+      "evaluation of clinical and/or economic outcomes after pharmacogenetics-guided treatment versus usual care"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, editorials/letters",
+      "non-antipsychotic pharmacogenetic studies",
+      "mechanistic association studies without a prescribing intervention",
+      "studies of genetic diagnosis rather than pharmacogenetics-guided antipsychotic prescribing",
+      "Mixed antidepressant/antipsychotic sample without antipsychotics as the primary prescribed medication",
+      "Pharmacogenetic association only, not guided prescribing",
+      "Non-pharmacogenetic genetic diagnosis or prediction studies"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence base is small and heterogeneous.",
+      "From the supplied abstracts, the evidence does **not** support a clear overall clinical benefit of routine pharmacogenetic testing for all individuals receiving antipsychotics, especially in schizophrenia.",
+      "The strongest direct randomized evidence found no improvement in treatment persistence.",
+      "There is some signal that pharmacogenetic guidance may improve tolerability or reduce costs in selected patients, particularly CYP extreme metabolizers, but this appears subgroup-specific rather than universal.",
+      "Economic outcomes: more promising than clinical outcomes, but still based on a small evidence base."
+    ]
+  }
+}

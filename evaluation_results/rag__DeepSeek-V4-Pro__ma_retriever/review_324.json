@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17567,
+    "output_tokens": 1516,
+    "total_tokens": 19083
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.4,
+    "post_retrieval_loss": 0.6,
+    "inclusion_consistency": 0.7217,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7949,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Background, Methods, Results, Synthesis, Limitations, Conclusion, and included studies, but it lacks a formal abstract, full references, detailed search strategy, data extraction procedures, risk-of-bias/quality assessment, and quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies were included if they (1) included individuals undergoing antipsychotic treatment, (2) compared a PGx-guided prescribing strategy with TAU (no genetic testing), and (3) reported at least one clinical or economic outcome."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, editorials, letters, purely pharmacokinetic/genetic association studies without a treatment\u2011guidance comparison, and studies where antipsychotics were not the primary medication were excluded.",
+      "non\u2011comparative designs (e.g., single\u2011arm PGx implementation, case series), modelling studies without original patient data, pharmacogenetic association studies, reviews, protocols, or lack of antipsychotic\u2011specific PGx intervention."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The four studies provide mixed evidence on the value of PGx\u2011guided antipsychotic prescribing.",
+      "Taken together, the evidence suggests that the clinical utility of PGx testing in antipsychotic treatment may depend on the comprehensiveness of the gene panel (multigene vs. CYP\u2011only), the patient population (e.g., extreme metabolisers), and the outcome measured (symptom reduction vs. treatment persistence).",
+      "Routine CYP2D6/CYP2C19 testing alone does not appear to improve treatment continuation or global symptom outcomes in unselected patients with schizophrenia, but multigene panels may offer a benefit in acute symptom management.",
+      "Safety and economic gains appear most pronounced in individuals with genetically predicted extreme metabolic phenotypes.",
+      "Current primary evidence on PGx\u2011guided antipsychotic prescribing is limited and conflicting.",
+      "While some data indicate potential clinical and economic benefits\u2014particularly in extreme metabolisers or when using broader gene panels\u2014routine implementation is not uniformly supported.",
+      "Further well\u2011powered, pragmatic randomised trials with standardised PGx panels and clinically meaningful endpoints are needed."
+    ]
+  }
+}

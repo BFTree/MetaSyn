@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27764,
+    "output_tokens": 962,
+    "total_tokens": 28726
+  },
+  "metrics": {
+    "retrieval_recall": 0.4444444444444444,
+    "retrieval_precision": 0.07692307692307693,
+    "inclusion_recall": 0.2222222222222222,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.30769230769230765,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.8445,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6385,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized, with clear Abstract, Introduction, Methods, Results, Discussion/Conclusion, and References sections plus explicit search, eligibility, screening, and synthesis descriptions, but it lacks full PRISMA-level rigor such as a formal quality assessment and fully verified inclusion evidence."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Vertex-based whole-brain cortical thickness estimation in MDD.",
+      "MDD versus HC comparison.",
+      "Adult sample, excluding participants under 18 or over 65.",
+      "Medication-free patients, either medication-naive or drug-free for at least 7 days before MRI.",
+      "Reported effect coordinates for significant clusters in MNI or Talairach space."
+    ],
+    "exclusion_criteria": [
+      "Reviews, theory papers, case reports.",
+      "ROI-only studies.",
+      "Studies limited to peri- or postmenopausal women.",
+      "Studies outside date window after July 14, 2018.",
+      "Studies without sufficient evidence that coordinates were reported."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "medication-free MDD, especially early and first-episode illness, is associated with cortical thickness abnormalities on MRI.",
+      "However, these abnormalities are not directionally uniform.",
+      "Some cohorts show thicker orbitofrontal, frontal, and parietal cortex near illness onset, while others show thinner frontal, temporal, parietal, insular, and medial prefrontal regions.",
+      "Orbitofrontal cortex is a repeated locus, but with opposite directions across studies.",
+      "Associations with symptom severity are inconsistent and usually weak.",
+      "Developmental stage, childhood maltreatment, subtype, smoking, and illness phase are plausible effect modifiers.",
+      "The evidence is stronger for heterogeneous, stage-sensitive cortical remodeling than for one uniform deficit pattern.",
+      "Methodologically, a strict coordinate-based meta-analysis should include only studies with verified coordinate reporting; on the currently visible local-corpus evidence, that verification is insufficient to confidently finalize inclusion."
+    ]
+  }
+}

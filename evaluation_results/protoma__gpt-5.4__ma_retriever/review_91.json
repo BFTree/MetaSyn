@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 37030,
+    "output_tokens": 1087,
+    "total_tokens": 38117
+  },
+  "metrics": {
+    "retrieval_recall": 0.6153846153846154,
+    "retrieval_precision": 0.3380281690140845,
+    "inclusion_recall": 0.20512820512820512,
+    "inclusion_precision": 0.42105263157894735,
+    "inclusion_f1": 0.2758620689655173,
+    "screening_accuracy": 0.6197183098591549,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.41025641025641024,
+    "inclusion_consistency": 0.6504,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5141,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a largely complete and logical systematic review structure with Abstract, Background/Introduction, Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, study selection details, search strategy, eligibility criteria, and planned synthesis methods, but it falls short of excellent due to no formal references section, duplicated headings, inconsistent meta-analysis reporting, and an unfinished placeholder-style Main Findings section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original peer-reviewed studies that evaluate synthetic health-related or medical data or methods for generating such data.",
+      "Studies that explicitly assess privacy, utility, or both, using one or more evaluation metrics or approaches.",
+      "Studies that compare different evaluation approaches or report on the balance between privacy protection and data utility.",
+      "Studies focused on methods, frameworks, or metrics for evaluating synthetic medical data in any healthcare setting."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, commentaries, protocols, conference abstracts, letters, and other non-original publications.",
+      "Studies not involving synthetic health-related or medical data, such as purely real-world clinical datasets without synthetic data evaluation.",
+      "Studies that discuss generation methods only without any privacy or utility evaluation.",
+      "Studies focused exclusively on non-medical synthetic data or outcomes unrelated to evaluation methods, privacy, or utility."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 19 studies evaluating synthetic health-related and medical data, concordance across evaluation methods was limited, with an overall concordance coefficient of 19%, indicating weak agreement between privacy-focused and utility-focused assessments.",
+      "Clinically, this means that a synthetic dataset judged useful for downstream analysis or model performance may still have inadequately characterized privacy risk, so utility alone is not a reliable proxy for safe deployment in healthcare settings.",
+      "Taken together, the evidence supports a qualified recommendation that synthetic medical data should be evaluated with a minimum dual framework that explicitly reports both utility and privacy metrics, rather than relying on either domain in isolation.",
+      "The main caveat is that the underlying studies used heterogeneous metrics, definitions, and reporting standards, so the low concordance likely reflects both real imbalance in evaluation practice and inconsistency in how privacy protection is measured.",
+      "The main contribution of this review is therefore not to establish that one evaluation framework has emerged as dominant, but to show that no clear consensus has yet been achieved and that privacy assessment remains less mature than utility assessment.",
+      "In practice, studies tended to demonstrate utility more consistently than privacy, and concordance across evaluation approaches was incomplete rather than uniform."
+    ]
+  }
+}

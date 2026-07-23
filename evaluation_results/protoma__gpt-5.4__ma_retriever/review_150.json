@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 150,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34329,
+    "output_tokens": 1143,
+    "total_tokens": 35472
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.2765957446808511,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.8275862068965518,
+    "screening_accuracy": 0.9148936170212766,
+    "conditional_retention": 0.9230769230769231,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.7156,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3866,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally logical systematic review structure with abstract, background, methods, search strategy, eligibility criteria, screening results, synthesis methods, results, risk of bias, discussion, and conclusion, but duplicated headings, drafting artifacts, and the lack of a formal references section prevent an excellent PRISMA-level organization score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies with original data, including prospective or retrospective cohort studies, case-control studies, or nested case-control studies, that evaluate breast cancer incidence/risk in women.",
+      "Studies conducted in pre-menopausal and/or post-menopausal women that report serum pyridoxal 5'-phosphate (PLP), dietary vitamin B6 intake, serum vitamin B12 levels, dietary vitamin B12 intake, or dietary methionine intake as the exposure of interest.",
+      "Studies that compare higher categories of exposure with the lowest category of serum PLP, dietary vitamin B6 intake, serum vitamin B12, dietary vitamin B12 intake, or dietary methionine intake, or provide effect estimates across exposure categories.",
+      "Studies reporting breast cancer risk/incidence as an outcome with relative risk estimates or equivalent effect measures (e.g., odds ratio or hazard ratio) and corresponding confidence intervals or sufficient data to derive them."
+    ],
+    "exclusion_criteria": [
+      "Studies not limited to women, or studies that do not separately report results for women or for pre-menopausal/post-menopausal subgroups when mixed populations are included.",
+      "Studies that do not assess serum PLP, dietary vitamin B6, serum vitamin B12, dietary vitamin B12, or dietary methionine intake as the main exposure, or that focus only on supplements, treatment interventions, biomarkers unrelated to these exposures, or non-dietary/non-serum measures.",
+      "Studies that report breast cancer mortality, prognosis, recurrence, or survival without reporting incident breast cancer risk.",
+      "Reviews, meta-analyses, editorials, conference abstracts without sufficient data, case reports, ecological studies, cross-sectional studies, and animal or in vitro studies."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 15 studies, higher exposure to one-carbon metabolism nutrients, specifically vitamin B6, vitamin B12, and methionine, was associated with a lower breast cancer risk than the lowest exposure categories, with a pooled random-effects OR of 0.818 (95% CI 0.705-0.949; p=0.008).",
+      "Clinically, this corresponds to about an 18% relative reduction in risk, which is potentially meaningful at the population level, particularly for women across premenopausal and postmenopausal groups, but it is not large enough on its own to support these nutrients as a stand-alone preventive strategy.",
+      "These findings support a qualified recommendation to maintain adequate vitamin B6 and B12 status and dietary methionine intake as part of an overall balanced dietary pattern rather than using isolated nutrient exposure as a primary breast cancer prevention approach.",
+      "The main caveat is the substantial between-study heterogeneity (I2=82.6%), which limits confidence in a uniform effect across populations, exposure measures, and study designs."
+    ]
+  }
+}

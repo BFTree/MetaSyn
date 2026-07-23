@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 28,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 37792,
+    "output_tokens": 976,
+    "total_tokens": 38768
+  },
+  "metrics": {
+    "retrieval_recall": 0.25,
+    "retrieval_precision": 0.09210526315789473,
+    "inclusion_recall": 0.10714285714285714,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.18181818181818182,
+    "screening_accuracy": 0.9210526315789473,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4929,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5699,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly logical systematic-review structure with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, search strategy, eligibility criteria, screening flow, and synthesis approach, but it lacks a formal References section and has some organizational flaws such as duplicated headings and drafting artifact text."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving adults aged 18 years or older with BMI \u226527.5 kg/m\u00b2, or populations explicitly described as living with excess weight, overweight, or obesity and broadly consistent with this threshold.",
+      "Studies evaluating synchronous, real-time remote health interventions for weight management, such as telephone, video, or live online coaching/counselling delivered at a distance.",
+      "Primary qualitative, quantitative, or mixed-methods studies that report barriers, facilitators, or other determinants of engagement with the remote intervention.",
+      "Studies reporting engagement-related outcomes or data that can be mapped to capability, opportunity, and/or motivation domains (e.g., uptake, attendance, adherence, participation, retention, acceptability-related engagement factors)."
+    ],
+    "exclusion_criteria": [
+      "Studies including children/adolescents, pregnant populations, or participants not primarily living with excess weight/obesity, or where adult/BMI-eligible data cannot be separated.",
+      "Studies of asynchronous-only or non-remote interventions, or interventions not focused on weight management (e.g., app-only self-guided programs without real-time contact, in-person-only programs, surgical interventions).",
+      "Studies that do not examine engagement barriers/facilitators or do not provide engagement-related outcomes/data relevant to remote weight management intervention use.",
+      "Non-primary research and insufficient-report publications, such as reviews, protocols, editorials, letters, conference abstracts without full data, or studies with unclear eligibility that cannot be determined from the report."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "However, quantitative synthesis was not possible because the included studies did not report sufficiently extractable or comparable data on barriers and facilitators to engagement.",
+      "The available qualitative evidence suggests that engagement may be shaped by factors across capability, opportunity, and motivation domains, with features such as real-time support, accountability, and intervention accessibility appearing to facilitate engagement, while competing demands, practical constraints, and variable readiness to engage may act as barriers.",
+      "Nonetheless, these findings should be interpreted cautiously.",
+      "The evidence base remains limited, and the lack of extractable quantitative data means firm conclusions cannot be drawn about the relative importance or consistency of specific barriers and facilitators across studies."
+    ]
+  }
+}

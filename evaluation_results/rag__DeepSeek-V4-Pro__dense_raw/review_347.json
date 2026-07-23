@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 24847,
+    "output_tokens": 1045,
+    "total_tokens": 25892
+  },
+  "metrics": {
+    "retrieval_recall": 0.96,
+    "retrieval_precision": 0.12,
+    "inclusion_recall": 0.96,
+    "inclusion_precision": 0.8275862068965517,
+    "inclusion_f1": 0.888888888888889,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.4583,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7346,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections are present and logically organized, but the report lacks an abstract, detailed search strategy, data extraction and quality-assessment methods, quantitative meta-analytic synthesis, complete references, and contains an inconsistency between the claimed 37 included studies and the 29 listed."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The review focuses on primary studies that directly measure intracellular free calcium levels (basal or stimulated), calcium flux/mobilisation, or calcium\u2011mediated electrophysiological signals in any cell type (including iPSC\u2011derived cells) from individuals with bipolar disorder.",
+      "those were screened but only included if they met the primary\u2011study requirements."
+    ],
+    "exclusion_criteria": [
+      "Studies of blood or other body fluids, calcium\u2011binding proteins, Ca\u00b2\u207a\u2011ATPase, TRPC7, and animal models were excluded.",
+      "Reviews, protocols, editorials, and conference abstracts were also excluded.",
+      "All other candidates were excluded because they were reviews, protocols, animal studies, measured only serum calcium, did not assess intracellular calcium, or investigated calcium\u2011binding proteins/channels without measuring intracellular calcium dynamics.",
+      "candidate 021 (Lack of association between XBP1 genotype and calcium signaling in the platelets of healthy subjects) was excluded because it did not include bipolar disorder patients."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included studies provide robust and replicated evidence that intracellular calcium signalling is dysregulated in bipolar disorder.",
+      "Basal and stimulated [Ca\u00b2\u207a]\u1d62 are elevated in platelets and lymphocytes of bipolar patients during acute mood episodes.",
+      "The abnormality is relatively specific to bipolar disorder, differentiating it from unipolar depression and schizophrenia.",
+      "Mood stabilisers (lithium, carbamazepine, valproate) attenuate the elevated [Ca\u00b2\u207a]\u1d62, suggesting that normalisation of calcium homeostasis may be a therapeutic mechanism.",
+      "Neuronal models (olfactory neurons, iPSC\u2011derived neurons) confirm intrinsic calcium\u2011handling defects, with evidence of hyperexcitability and altered calcium\u2011dependent plasticity.",
+      "Mechanistic insights point to involvement of store\u2011operated calcium channels, PKC/calmodulin pathways, endoplasmic reticulum, and mitochondria.",
+      "Nevertheless, the overall body of evidence strongly supports intracellular calcium dysregulation as a core pathophysiological feature of bipolar disorder."
+    ]
+  }
+}

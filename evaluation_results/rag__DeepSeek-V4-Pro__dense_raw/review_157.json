@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 157,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13347,
+    "output_tokens": 996,
+    "total_tokens": 14343
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2222222222222222,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.125,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.8109,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6494,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a research question, methods, results, and discussion, with some review-specific elements such as eligibility criteria and screening summary, but it lacks an abstract, introduction, formal conclusion, references, detailed search strategy, data extraction process, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "asymptomatic women attending population-based breast cancer screening",
+      "direct comparison of DBT (with or without synthetic 2D) versus DM",
+      "reporting of cancer detection rate and/or recall rate stratified by breast density using the BI-RADS classification",
+      "English language",
+      "paired or unpaired design"
+    ],
+    "exclusion_criteria": [
+      "Studies using automated density assessment",
+      "systematic reviews",
+      "meta-analyses",
+      "protocols",
+      "conference abstracts",
+      "studies without breast\u2011density\u2011stratified outcomes",
+      "studies using automated density assessment",
+      "studies published after the search end date (2020\u201111\u201123)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, only one primary study met all inclusion criteria.",
+      "The addition of DBT significantly reduced recall rates for all density groups: scattered fibroglandular, heterogeneously dense, and extremely dense breasts (all P\u202f<\u202f0.05).",
+      "The overall cancer detection rate was 5.7 per 1000 with DBT plus DM versus 5.2 per 1000 with DM alone (P\u202f=\u202f0.70), but cancer detection rates were not reported separately by breast density.",
+      "Thus, the study provides evidence that DBT reduces recall rates across all density categories, but does not allow an assessment of differential cancer detection by density.",
+      "The single eligible study indicates that DBT significantly lowers recall rates irrespective of breast density, with the greatest absolute reductions in dense breasts.",
+      "However, the absence of density\u2011stratified cancer detection rates in this study means that the question of whether DBT yields a greater incremental cancer detection benefit in dense versus non\u2011dense breasts cannot be answered from the available evidence within the candidate pool.",
+      "Future primary studies that report both cancer detection and recall rates by BI-RADS density are needed to fully address the review question."
+    ]
+  }
+}

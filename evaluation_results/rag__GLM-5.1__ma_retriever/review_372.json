@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 372,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23126,
+    "output_tokens": 1060,
+    "total_tokens": 24186
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.45454545454545453,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6060606060606061,
+    "screening_accuracy": 0.935,
+    "conditional_retention": 0.45454545454545453,
+    "post_retrieval_loss": 0.5454545454545454,
+    "inclusion_consistency": 0.3594,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4937,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with review target, screening summary, evidence synthesis, conclusion, and included studies, but it lacks formal Abstract/Introduction/Methods/Results/Discussion sections and omits key PRISMA-style details such as detailed search strategy, data extraction methods, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "empirical observational studies published before April 30, 2017, assessing changes in infection prevalence or incidence as a function of agricultural land-use or land-use change",
+      "occupational or residential exposure to agricultural land-use",
+      "increased infectious disease risk in humans in Southeast Asia (ASEAN region)",
+      "comparing exposed populations to those unexposed to agricultural land-use"
+    ],
+    "exclusion_criteria": [
+      "publication after the 2017-04-30 search end date",
+      "geographic location outside the ASEAN region",
+      "studies focusing on non-communicable diseases, animal/plant diseases, or poultry farming",
+      "review or theoretical articles",
+      "studies lacking an unexposed comparator group (those not living or working in agricultural areas)",
+      "studies assessing the impact of human faeces (night soil) as fertiliser"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The eligible studies collectively indicate that occupational or residential exposure to agricultural land-use in Southeast Asia is associated with an elevated risk of several infectious diseases, though the magnitude and significance vary by pathogen and specific agricultural activity.",
+      "The synthesized evidence supports the hypothesis that occupational and residential exposure to agricultural land-use (including crop cultivation, rubber tapping, and livestock farming) increases the risk of several infectious diseases\u2014particularly malaria, scrub typhus, leptospirosis, and helminthiases\u2014in Southeast Asian populations compared to unexposed populations.",
+      "The association appears strongest for vector-borne and zoonotic diseases where the agricultural environment directly facilitates pathogen transmission through vectors, animal reservoirs, or specific land-use practices (e.g., water management in rice farming)."
+    ]
+  }
+}

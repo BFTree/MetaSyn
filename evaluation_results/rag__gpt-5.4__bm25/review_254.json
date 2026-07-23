@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14406,
+    "output_tokens": 775,
+    "total_tokens": 15181
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.6606,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2782,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, limitations, and a structured conclusion, but it lacks a full systematic review layout (explicit abstract/introduction/methods/results/discussion/references) and does not provide meta-analysis elements like a detailed search strategy, data extraction, or synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "medication-free adults with major depressive disorder (MDD)",
+      "compared with healthy controls",
+      "using vertex-based whole-brain cortical thickness MRI analyses",
+      "studies expected to have reported significant cluster coordinates in MNI or Talairach space"
+    ],
+    "exclusion_criteria": [
+      "ROI-only rather than whole-brain vertex-based cortical thickness",
+      "Age outside the adult-only criterion",
+      "Medication status not clearly medication-free/drug-free for all included MDD participants",
+      "Structural MRI studies not centered on cortical thickness whole-brain vertex-based methods",
+      "No explicit evidence in the abstract that coordinate data were provided in MNI/Talairach space"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate can be confirmed as fully eligible on the basis of the supplied title and abstract alone.",
+      "Because the review requires satisfaction of **all** criteria, especially the coordinate-reporting requirement, these cannot be included with confidence from abstract-only screening.",
+      "Although no study can be formally included from the abstracts alone, the near-eligible literature trends in a fairly consistent direction:",
+      "Findings are **heterogeneous in direction**: both thinning and thickening are reported across studies and regions.",
+      "That pattern is broadly compatible with the target meta-analysis question, but it cannot be synthesized as included evidence under the stated eligibility rules.",
+      "None were included.",
+      "Using only the supplied titles and abstracts and applying the criteria strictly, **no article from the fixed candidate pool is confirmably eligible** for inclusion in this review."
+    ]
+  }
+}

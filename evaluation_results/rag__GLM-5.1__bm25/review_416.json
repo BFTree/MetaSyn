@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13828,
+    "output_tokens": 933,
+    "total_tokens": 14761
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.6431,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6229,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening/selection, findings synthesis, conclusion, and included studies, but it lacks several core systematic review sections such as abstract, introduction, detailed methods, discussion, references, quality assessment, and formal synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies assessing offspring cardiac structure, function, or related cardiovascular parameters (blood pressure, heart rate, arterial stiffness) following a randomized lifestyle intervention in women with overweight/obesity were considered."
+    ],
+    "exclusion_criteria": [
+      "Studies were excluded if they were protocols, reviews, or animal studies; focused on maternal outcomes, fetal cardiovascular remodelling, or offspring adiposity without cardiac parameters; involved nutritional supplements or drugs; or targeted solely normal-weight populations."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The limited evidence available within the 2023 publication window suggests that both preconception and antenatal lifestyle interventions in women with obesity/overweight can positively modify offspring cardiovascular health.",
+      "The preconception intervention was associated with improved systolic function and reduced septal thickening in childhood (7 years), while the antenatal exercise intervention was associated with enhanced systolic function and lower resting heart rate in early infancy (1 month) for the overweight/obese subgroup.",
+      "Neither study reported significant effects on arterial stiffness.",
+      "These findings support the hypothesis that maternal lifestyle interventions can prevent or reduce adverse offspring cardiac remodelling, though the current evidence base within this specific timeframe is small."
+    ]
+  }
+}

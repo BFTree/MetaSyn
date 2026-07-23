@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 427,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29138,
+    "output_tokens": 1086,
+    "total_tokens": 30224
+  },
+  "metrics": {
+    "retrieval_recall": 0.5454545454545454,
+    "retrieval_precision": 0.14634146341463414,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.42857142857142855,
+    "screening_accuracy": 0.926829268292683,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.2727272727272727,
+    "inclusion_consistency": 0.597,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5144,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes important review elements such as search queries, screening criteria, eligibility decisions, and included-study summaries, but it lacks a conventional abstract, introduction, full methods/results/discussion/conclusion structure, references, quality assessment, and detailed synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: adolescents or young people aged 10\u201324 years, from general or clinical populations",
+      "Design: randomized controlled trial",
+      "Intervention: behavioral sleep intervention delivered primarily through digital/electronic/mobile means",
+      "Comparator: randomized control condition, passive or active",
+      "Outcomes: validated questionnaire-based sleep outcomes such as insomnia severity, sleep quality, sleep hygiene, sleep knowledge, beliefs about sleep, or sleep arousal"
+    ],
+    "exclusion_criteria": [
+      "eHealth/mHealth was not the primary intervention component",
+      "intervention relied on human-based telephone coaching",
+      "intervention was delivered through social networking platforms such as Twitter or Facebook",
+      "sample involved co-existing physical health conditions making sleep-treatment effects difficult to isolate",
+      "quasi-experimental design",
+      "pilot RCT",
+      "for meta-analysis only: missing required numerical parameters such as mean, SD, or sample size"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The small included evidence base supports a **generally favorable direction of effect** for digital behavioral sleep interventions in adolescents and young people, especially for insomnia-related symptoms and sleep behavior.",
+      "Because methods and results were retrievable from the local corpus, this record provides the clearest support that a smartphone-delivered sleep intervention can improve insomnia-related outcomes in youth, with downstream mental-health relevance as well [1].",
+      "The two included text-message studies suggest that low-intensity mobile interventions may improve sleep-related behaviors or sleep outcomes among college-age participants:",
+      "These studies are important because they show that the digital component need not be a full app or multi-module CBT-I platform to meet review eligibility.",
+      "SMS-based delivery can still qualify if it is the main intervention vehicle and the content is behaviorally sleep-focused."
+    ]
+  }
+}

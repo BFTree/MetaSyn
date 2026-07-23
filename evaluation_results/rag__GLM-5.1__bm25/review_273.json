@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11929,
+    "output_tokens": 943,
+    "total_tokens": 12872
+  },
+  "metrics": {
+    "retrieval_recall": 0.48484848484848486,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.3939393939393939,
+    "inclusion_precision": 0.6842105263157895,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.8125,
+    "post_retrieval_loss": 0.09090909090909091,
+    "inclusion_consistency": 0.3997,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5349,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an overview, synthesized findings, conclusion, and included study list, but it lacks a full systematic review structure with explicit abstract, introduction, detailed methods, search strategy, data extraction, quality assessment, and formal synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "double-blind, randomized, placebo-controlled discontinuation trials evaluating the efficacy of continuing antidepressant medication versus switching to placebo for the prevention of relapse, recurrence, and treatment failure in patients with Major Depressive Disorder (MDD) who achieved remission"
+    ],
+    "exclusion_criteria": [
+      "Studies involving bipolar disorder, treatment-resistant depression, or non-standard diagnostic criteria were excluded",
+      "reviews, meta-analyses, and publications after the search end date of October 10, 2018"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Continuing antidepressant medication after achieving remission is a well-established, efficacious strategy to prevent relapse and recurrence in MDD.",
+      "This benefit is consistent across different antidepressant classes, effective in both youths and older adults, and maintained across various dosing schedules and treatment durations extending up to two years."
+    ]
+  }
+}

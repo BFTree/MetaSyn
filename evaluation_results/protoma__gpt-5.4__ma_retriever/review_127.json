@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 36128,
+    "output_tokens": 1335,
+    "total_tokens": 37463
+  },
+  "metrics": {
+    "retrieval_recall": 0.48936170212765956,
+    "retrieval_precision": 0.2948717948717949,
+    "inclusion_recall": 0.425531914893617,
+    "inclusion_precision": 0.8695652173913043,
+    "inclusion_f1": 0.5714285714285714,
+    "screening_accuracy": 0.9230769230769231,
+    "conditional_retention": 0.8695652173913043,
+    "post_retrieval_loss": 0.06382978723404255,
+    "inclusion_consistency": 0.6412,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.664,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening flow, and synthesis methods, but it falls short of excellent due to duplicated headings, some internal inconsistencies, informal artifact text, and lack of a full references section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Prospective phase I or phase II clinical trials evaluating experimental compounds for patients with relapsed/refractory multiple myeloma (RRMM).",
+      "Studies including adult RRMM patients treated with an investigational agent either as monotherapy or in combination with dexamethasone.",
+      "Studies reporting efficacy and safety outcomes, including overall response rate (ORR) and/or toxicity/adverse events.",
+      "Original clinical study reports that allow classification by drug class and/or year of publication for comparative synthesis."
+    ],
+    "exclusion_criteria": [
+      "Studies in newly diagnosed multiple myeloma, smoldering myeloma, maintenance therapy, or mixed hematologic populations without separate RRMM data.",
+      "Trials in which the experimental compound is combined with agents other than dexamethasone, or studies primarily evaluating non-drug interventions such as transplant, radiotherapy, or supportive care only.",
+      "Phase III trials, retrospective studies, case reports, reviews, meta-analyses, editorials, letters, and conference abstracts without sufficient outcome data.",
+      "Studies not reporting ORR and/or toxicity outcomes, or not providing extractable results for the investigational regimen in RRMM patients."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The pooled analysis demonstrated a statistically significant overall effect across the 6 included phase I/II studies, although the strength of this effect varied substantially between trials.",
+      "The direction of effect was consistently favorable overall, and the magnitude of the pooled random-effects estimate suggests a potentially clinically meaningful signal.",
+      "Taken together, these findings support an overall positive treatment signal, but also suggest that the apparent magnitude of benefit is sensitive to assumptions about between-study variability.",
+      "Accordingly, while the pooled findings support activity of experimental approaches in RRMM, they should be interpreted with appropriate caution given the substantial between-study heterogeneity.",
+      "Across the six studies that could be quantitatively pooled for the primary effect estimate, the random-effects meta-analysis showed a statistically significant association favoring experimental approaches, with a pooled OR of 4.43 (95% CI 1.17\u201316.85; p=0.0289).",
+      "In this meta-analysis of 23 phase I/II studies in relapsed/refractory multiple myeloma, experimental compounds used alone or with dexamethasone were associated with higher odds of overall response in more recent publications and/or selected drug classes, with a pooled random-effects OR of 4.43 (95% CI 1.17\u201316.85; p=0.029); the fixed-effect estimate was smaller but remained significant (OR 1.48, 95% CI 1.10\u20132.00).",
+      "Clinically, this suggests that newer investigational strategies can produce meaningful antimyeloma activity in heavily pretreated patients, supporting their consideration when standard options are exhausted, provided toxicity is acceptable and closely monitored.",
+      "However, this conclusion should be interpreted cautiously because between-study heterogeneity was extreme (I\u00b2=90.9%), and the evidence base consisted largely of early-phase, non-comparative trials with likely differences in patient selection, regimen composition, and adverse-event reporting."
+    ]
+  }
+}

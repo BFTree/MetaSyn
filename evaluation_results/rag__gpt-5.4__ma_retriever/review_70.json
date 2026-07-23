@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12731,
+    "output_tokens": 940,
+    "total_tokens": 13671
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.4742,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3825,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, evidence synthesis, limitations, and included/excluded studies, but it lacks core review sections like a formal abstract, methods, discussion/conclusion structure, references, and a detailed search/synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with morbid obesity undergoing bariatric surgery",
+      "probiotic/synbiotic intervention",
+      "randomized or controlled clinical trial",
+      "comparator of placebo/standard care/no probiotic",
+      "outcomes relevant to this review target",
+      "within the source review time window ending 2023-03-14"
+    ],
+    "exclusion_criteria": [
+      "excluding reviews, protocols, non-bariatric populations, wrong comparators, and clearly confounded co-interventions"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence base is heterogeneous by surgery type, probiotic formulation, follow-up length, and outcomes measured.",
+      "There is **some trial-level evidence of AST improvement**, but not consistently across studies.",
+      "Probiotics/synbiotics **may improve triglycerides**, but evidence remains based on small, heterogeneous trials.",
+      "There may be **short-term weight-loss benefit in some settings**, but the effect is **not consistent**.",
+      "Probiotics **may improve B12 status in some trials**, but findings are **inconsistent**.",
+      "Evidence for effects on **energy, protein, carbohydrate, or fiber intake is sparse and inconclusive**.",
+      "From the supplied candidate pool, the eligible primary-study evidence suggests that **probiotic supplementation after bariatric surgery may offer modest benefits for some outcomes**, especially **triglycerides**, **vitamin B12 in some studies**, and possibly **short-term weight loss**.",
+      "Overall, the evidence appears **suggestive rather than definitive**, with **small, heterogeneous trials** and mixed results."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 155,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16648,
+    "output_tokens": 1196,
+    "total_tokens": 17844
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6086956521739131,
+    "inclusion_precision": 0.9333333333333333,
+    "inclusion_f1": 0.7368421052631579,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.6086956521739131,
+    "post_retrieval_loss": 0.391304347826087,
+    "inclusion_consistency": 0.7465,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3159,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear organized flow with screening rationale, evidence synthesis, limitations, interpretation, and an included study list, but it lacks formal Abstract, Introduction, Methods, Discussion, Conclusion, full References, detailed search strategy, data extraction methods, quality assessment, and meta-analysis synthesis procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "women with breast cancer",
+      "cohort / retrospective cohort / prospective cohort / nested case-control / post hoc trial analysis",
+      "statin exposure assessed",
+      "outcome included breast cancer-specific death and/or recurrence",
+      "comparative association estimate with CI reported or clearly implied in abstract",
+      "full-length primary article"
+    ],
+    "exclusion_criteria": [
+      "the item was a systematic review/meta-analysis, review, protocol/trial description without outcomes, conference-like secondary analysis framing without clear eligible outcomes, non-breast-cancer population, laboratory/window studies without BCD/BCR outcomes, or breast-cancer studies reporting only all-cause mortality/DFS/PFS without clear breast cancer-specific death or recurrence.",
+      "candidates 001, 002, 003, 027, 031, 036, 039 are reviews/meta-analyses",
+      "candidate 024 is a trial protocol",
+      "candidate 029 is a biomarker/window study, not BCD/BCR",
+      "candidates 005, 030, 042, 052 mainly report all-cause mortality, not eligible review outcomes",
+      "candidate 032 is metastatic treatment duration/OS, not BCD/BCR",
+      "candidate 066 is cardiotoxicity prevention, not BCD/BCR",
+      "candidate 033 reports DFS rather than explicit recurrence or BCD in the abstract; borderline, but I did not include it because the outcome wording does not clearly match the review endpoints",
+      "candidate 040 mixes lab work with an inflammatory breast cancer clinical cohort and reports local recurrence-free survival rather than a clearly extractable BCR estimate in a conventional statin user vs non-user breast cancer cohort abstract; I left it out conservatively"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across studies, the direction of association is more often favorable than null for statin users, but results are not uniform.",
+      "From the supplied candidate pool, the eligible primary-study evidence is consistent with a possible association between statin use and lower breast cancer-specific mortality, and a somewhat less consistent but still frequently favorable association with lower recurrence.",
+      "The apparent benefit is not uniform across studies and may be stronger for lipophilic statins and in ER-positive disease.",
+      "Time-related bias is a major interpretive issue and likely explains part of the favorable signal in some studies.",
+      "The included evidence is entirely observational and mostly population-based cohort research, with some single-institution retrospective cohorts and one post hoc randomized-trial analysis."
+    ]
+  }
+}

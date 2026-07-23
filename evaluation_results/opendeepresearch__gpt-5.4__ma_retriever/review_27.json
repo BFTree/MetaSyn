@@ -1,0 +1,83 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33963,
+    "output_tokens": 1281,
+    "total_tokens": 35244
+  },
+  "metrics": {
+    "retrieval_recall": 0.7647058823529411,
+    "retrieval_precision": 0.52,
+    "inclusion_recall": 0.5294117647058824,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6923076923076924,
+    "screening_accuracy": 0.84,
+    "conditional_retention": 0.6923076923076923,
+    "post_retrieval_loss": 0.23529411764705882,
+    "inclusion_consistency": 0.4119,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3602,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic-review elements such as eligibility criteria, exact search queries, retrieval results, screening decisions, study characteristics, and qualitative synthesis, but it lacks a formal abstract, explicit quality/risk-of-bias assessment, and fully developed PRISMA-style reporting needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults with obesity, explicitly targeting BMI \u001b35.",
+      "Studies in morbidly obese, severely obese, or bariatric surgery populations were considered eligible when the retrieved record explicitly supported this population.",
+      "OSA",
+      "OSA-related indicators, including:",
+      "apnea-hypopnea index (AHI)",
+      "nocturnal hypoxemia",
+      "chronic intermittent hypoxia (CIH)",
+      "oxygen desaturation index (ODI)",
+      "OSA severity strata",
+      "No OSA vs OSA",
+      "Different OSA severity groups",
+      "Higher vs lower hypoxemia burden",
+      "Pre-BMS vs post-BMS follow-up",
+      "If comparator structure was not explicit, the actual comparison used in the record was retained as reported",
+      "NAFLD presence or severity",
+      "NASH / steatohepatitis",
+      "Liver biopsy findings",
+      "NAFLD activity score (NAS), where available",
+      "Steatosis, fibrosis, inflammation",
+      "Liver enzymes such as ALT and AST",
+      "For BMS studies, OSA outcomes over time as well",
+      "Randomized controlled trials",
+      "Prospective cohort studies",
+      "Retrospective cohort studies",
+      "Cross-sectional studies",
+      "Case-control studies"
+    ],
+    "exclusion_criteria": [
+      "Descriptive studies",
+      "Case series",
+      "Case reports",
+      "Reviews",
+      "Studies outside the date window",
+      "Studies not clearly in the target severe-obesity population for the main review question"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across the included local-corpus evidence, OSA and especially its hypoxic burden appear to be associated with worse liver disease in adults with severe obesity.",
+      "The direction of association was generally consistent: more severe OSA or more severe nocturnal hypoxia was linked with higher likelihood or greater severity of NAFLD/NASH and related liver injury.",
+      "The most consistent signal is not simply the label of OSA itself, but the intensity of sleep-disordered breathing and nocturnal hypoxemia, including:",
+      "The severe-obesity evidence base in the local corpus supports the following:",
+      "OSA is associated with NAFLD severity in adults with severe obesity.",
+      "The association appears stronger for **NASH, steatohepatitis, and liver injury markers** than for simple steatosis alone.",
+      "The most plausible predictive indicators are those capturing **hypoxic burden**, not merely OSA presence.",
+      "This pattern is biologically coherent with intermittent hypoxia-driven oxidative stress, inflammation, and insulin resistance, although mechanistic claims remain observational within this evidence"
+    ]
+  }
+}

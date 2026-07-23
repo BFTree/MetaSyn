@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 301,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9393,
+    "output_tokens": 778,
+    "total_tokens": 10171
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6797,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3692,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with a topic, brief methods, findings, conclusion, and included studies, but it lacks major required sections such as abstract, introduction, discussion, full references, detailed search strategy, data extraction, synthesis methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs",
+      "population \u2264 59 days from LMICs",
+      "intervention of CHW home visits trained to identify illness",
+      "outcomes of illness identification or care seeking"
+    ],
+    "exclusion_criteria": [
+      "specific study exclusions",
+      "reviews",
+      "protocols",
+      "editorials",
+      "articles published after the search end date of 2014-10-21"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All three trials demonstrated a statistically significant increase in care seeking from health facilities for sick newborns or young infants in the intervention groups compared to control groups receiving standard care.",
+      "Evidence from three cluster-randomized controlled trials conducted within the eligible timeframe indicates that home visits by trained CHWs in LMICs significantly increase care seeking from health facilities for sick newborns and young infants compared to standard care.",
+      "Data on the diagnostic accuracy (sensitivity/specificity) of CHWs in identifying serious illness was not available in the abstracts of the included primary trials."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13956,
+    "output_tokens": 777,
+    "total_tokens": 14733
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.6876,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3007,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening summary and brief evidence synthesis, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, and PRISMA-style details like full search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary-study articles published between 2015-01-01 and 2015-12-31",
+      "time perception distortions in patients with Alzheimer\u2019s disease diagnosed according to reliable AD criteria such as NINCDS-ADRDA"
+    ],
+    "exclusion_criteria": [
+      "outside 2015",
+      "reviews or concern non-AD populations or unrelated outcomes",
+      "the abstract does not establish that the study is about **time perception distortion** in AD patients versus healthy controls"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Because no candidate met all criteria, there is **no includable 2015 primary-study evidence** in this fixed pool for the review question.",
+      "A cautious implication is that, within this pool and date restriction, there is an **evidence gap rather than a negative finding**.",
+      "In other words, the absence of included studies here should not be interpreted as evidence that time perception is unaffected in AD; it only means no eligible 2015 primary studies were available in the supplied set.",
+      "Because no articles were included, the proposed mechanistic link between altered time perception and episodic memory impairment in AD also cannot be synthesized from eligible evidence in this review window.",
+      "None were included.",
+      "None. No candidate satisfied the full criteria, chiefly because no relevant AD time-perception primary study in the supplied pool was published in 2015."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14987,
+    "output_tokens": 1127,
+    "total_tokens": 16114
+  },
+  "metrics": {
+    "retrieval_recall": 0.9642857142857143,
+    "retrieval_precision": 0.135,
+    "inclusion_recall": 0.21428571428571427,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.3243243243243243,
+    "screening_accuracy": 0.88,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.5038,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6786,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, explicit screening/inclusion criteria, study-by-study results, and a final included-studies list, but it lacks fully formalized PRISMA-style sections such as a detailed search strategy, data synthesis methods, discussion, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only primary\u2011study reports that directly compared ultrabrief pulse ECT (pulse width <\u202f0.5\u202fms) with brief\u2011pulse ECT (0.5\u20131.5\u202fms) in adults with a validated diagnosis of a major depressive episode and that reported at least one of the target outcomes (remission, response, relapse, or switching) were retained."
+    ],
+    "exclusion_criteria": [
+      "were systematic reviews, meta\u2011analyses, editorials, commentaries, or protocols;",
+      "involved non\u2011standard schedules (e.g., daily ECT), experimental parameters (e.g., amplitudes outside 800\u2013900\u202fmA), or concurrent somatic interventions (e.g., ketamine);",
+      "were case reports/series with \u2264\u202f10 participants;",
+      "included only non\u2011depression populations (e.g., schizophrenia, mania) or lacked a comparison group of brief\u2011pulse ECT."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "There is a consistent signal that, while ultrabrief pulse unilateral ECT may offer cognitive benefits, its acute antidepressant efficacy and remission rates may be somewhat lower than those of brief\u2011pulse ECT, sometimes requiring more treatments or leading to higher rates of switching to brief\u2011pulse modalities.",
+      "Across these studies, no data on long\u2011term relapse rates (i.e., beyond the immediate post\u2011ECT period) were reported in a way that allowed a direct ultrabrief\u2011vs\u2011brief comparison; the vast majority of studies focused on acute outcomes.",
+      "Switching rates from ultrabrief to brief pulse were explicitly noted in two studies (Candidate\u202f007 and Candidate\u202f017), highlighting that a minority of patients required conversion to a brief\u2011pulse or bilateral treatment to achieve adequate response."
+    ]
+  }
+}

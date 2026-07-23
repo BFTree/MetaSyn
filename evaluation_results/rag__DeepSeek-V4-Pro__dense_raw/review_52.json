@@ -1,0 +1,46 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19427,
+    "output_tokens": 697,
+    "total_tokens": 20124
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most core sections are present and the narrative flow is clear, but there is no abstract, formal methods section, detailed search strategy, inclusion/exclusion criteria, data extraction process, quality assessment, or full references, so PRISMA-style organization is incomplete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The current scientific literature on hard\u2011flaccid syndrome is extremely sparse, consisting solely of case reports and small case series.",
+      "The available evidence suggests that HFS is triggered by penile trauma, leading to a distinctive symptom complex of semi\u2011rigid flaccid penis, erectile dysfunction, perineal pain, urinary and ejaculatory disturbances, and significant psychological distress.",
+      "Diagnosis remains clinical, and treatment is empirical.",
+      "Multimodal approaches combining pelvic floor physical therapy, pharmacotherapy (PDE5\u2011I), shockwave therapy, and biopsychosocial support appear beneficial, but high\u2011quality research is urgently needed to establish diagnostic criteria, elucidate pathophysiology, and evaluate treatment efficacy.",
+      "Overall, the prognosis appears variable, and multimodal, individualised treatment seems more promising than single\u2011modality pharmacotherapy."
+    ]
+  }
+}

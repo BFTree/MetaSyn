@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28083,
+    "output_tokens": 836,
+    "total_tokens": 28919
+  },
+  "metrics": {
+    "retrieval_recall": 0.45454545454545453,
+    "retrieval_precision": 0.14705882352941177,
+    "inclusion_recall": 0.2727272727272727,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.39999999999999997,
+    "screening_accuracy": 0.9117647058823529,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.18181818181818182,
+    "inclusion_consistency": 0.733,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5022,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic review elements such as a clear review question, exact search queries, eligibility criteria, screening process, included/excluded studies, narrative synthesis, and reasons meta-analysis was not feasible, but it lacks a conventional abstract, formal introduction/discussion/conclusion structure, references section, and full PRISMA-style quality assessment details."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language",
+      "Dated from January 2020 to 2023-05-25 inclusive",
+      "Involving glaucoma patients",
+      "Evaluating AI, machine learning, or deep learning for glaucoma diagnosis and/or glaucoma progression prediction/detection"
+    ],
+    "exclusion_criteria": [
+      "Review articles",
+      "Letters to the editor",
+      "Published protocols",
+      "Conference abstracts or conference proceedings papers",
+      "Non-human studies"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "No included study was found to directly report DECIDE-AI adherence scores, AI-Specific Score, Generic-Item Score, or an overall DECIDE-AI Score.",
+      "As a result, a quantitative meta-analysis of DECIDE-AI scores was not feasible from the locally retrievable evidence.",
+      "A narrative synthesis was therefore the only defensible approach.",
+      "The locally retrievable literature from 2020 to 2023-05-25 suggests that glaucoma AI research in this window was dominated by **technical performance studies** rather than **DECIDE-AI-style early clinical evaluation studies**.",
+      "Because no included study directly reported DECIDE-AI adherence and because the accessible corpus evidence was limited, a definitive numerical statement about average adherence cannot be made."
+    ]
+  }
+}

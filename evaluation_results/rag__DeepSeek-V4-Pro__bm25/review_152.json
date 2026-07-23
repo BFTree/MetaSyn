@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 152,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15362,
+    "output_tokens": 1080,
+    "total_tokens": 16442
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.15,
+    "inclusion_precision": 0.9,
+    "inclusion_f1": 0.2571428571428572,
+    "screening_accuracy": 0.79,
+    "conditional_retention": 0.18,
+    "post_retrieval_loss": 0.6833333333333333,
+    "inclusion_consistency": 0.5578,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5354,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a research question, screening criteria, included studies, biomarker findings, synthesis, and article list, but it lacks a formal abstract, introduction, detailed search strategy, data extraction and quality assessment methods, quantitative synthesis, separate discussion/conclusion sections, and conventional references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "directly investigated TSCC (oral tongue, not base of tongue)",
+      "measured at least one of the target biomarkers",
+      "reported clinical significance (diagnostic/prognostic)",
+      "for immunohistochemistry\u2011based studies, incorporated multivariate analysis",
+      "Publication dates were limited to 1 January 2010\u201330 June 2017."
+    ],
+    "exclusion_criteria": [
+      "MicroRNA studies",
+      "reviews",
+      "non\u2011human studies",
+      "articles on non\u2011tongue or mixed head\u2011neck sites"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Among the candidate pool, E\u2011cadherin, vimentin, and SOX2 demonstrate the most robust cross\u2011validation, with multiple independent tissue studies consistently showing independent prognostic value in TSCC.",
+      "IL\u20118 shows preliminary salivary reproducibility, but further focused validation is needed.",
+      "HIF\u20111\u03b1, MALAT1, and IL\u20116 are promising yet remain supported by single investigations to date.",
+      "The absence of eligible studies for prolactin, TP53, and NOTCH1 highlights gaps in the literature within the search timeframe."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22970,
+    "output_tokens": 1209,
+    "total_tokens": 24179
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.875,
+    "inclusion_consistency": 0.4513,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5725,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening outcomes and exclusions, but it lacks most standard systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, and References, and only partially includes meta-analysis elements."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "stunting in children under 5",
+      "must use **16S rRNA**",
+      "on **Illumina sequencers**",
+      "covering **V4 or V3-V4**",
+      "gut microbiome composition and stunting in under-5 children in LMICs"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, umbrella reviews, and systematic reviews are not eligible as primary studies.",
+      "**antibiotics within 3 months**"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied candidate pool and screening titles/abstracts against the full eligibility criteria, I found no eligible primary-study articles for this review.",
+      "Because no candidate met the full set of criteria within the stated search window, there is no includable evidence base from this pool for synthesis on gut microbiome composition and stunting in under-5 children in LMICs.",
+      "No candidate in the supplied pool satisfied the review question, study type, microbiome-method criteria, exclusion rules, and the stated search period simultaneously."
+    ]
+  }
+}

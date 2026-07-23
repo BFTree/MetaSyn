@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13968,
+    "output_tokens": 1396,
+    "total_tokens": 15364
+  },
+  "metrics": {
+    "retrieval_recall": 0.3,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.30769230769230765,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.1,
+    "inclusion_consistency": 0.662,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4443,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is well organized with clear screening, inclusion/exclusion, synthesis, and limitations sections, but it lacks a full systematic review structure such as a detailed search strategy, formal methods, quality assessment, references, and conventional abstract/introduction/results/discussion formatting."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults, and specifically severe obesity if stated or strongly supported",
+      "online/group-based intervention aimed at changing diet and/or physical activity behaviors for weight management",
+      "primary study evaluating an intervention",
+      "weight/behavior outcomes and/or acceptability/usability",
+      "not beyond review end date of 2024-05-31"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, development-only papers, non-evaluative papers, non-adult populations, clearly non-group interventions, and studies outside the severe-obesity target when abstracts did not support relevance",
+      "not group-based",
+      "not clearly online",
+      "not adults with severe obesity",
+      "protocol/development/review only",
+      "wrong population (pregnancy, diabetes-specific, surgery-specific, adolescents, older adults only without severe-obesity focus, etc.)",
+      "publication after the review end date",
+      "Review/protocol/development/non-evaluative only",
+      "Clearly not group-based online behavior-change interventions",
+      "Wrong population",
+      "After review end date or future publication",
+      "Severe obesity not supported and intervention not clearly matching enough to justify inclusion from abstract alone."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "From the supplied pool, the evidence directly relevant to **online, group-based behavior change interventions for adults with severe obesity** is **sparse and methodologically mixed**.",
+      "The strongest included study indicates that online group delivery can produce **clinically meaningful weight loss around 6 months**, but the pool does **not provide a robust set of trials tightly matching severe obesity, online group format, and usual-care/waitlist comparison**.",
+      "The most defensible conclusion is that **online group-based behavioral delivery appears feasible and capable of producing modest-to-clinically meaningful weight loss in adults with obesity**, but the candidate pool offers **limited direct evidence specific to severe obesity (BMI \u226535) and limited evidence on comparative effectiveness versus standard care**.",
+      "The included/borderline-included studies suggest that **remote and online behavioral interventions with a group or social component can support clinically meaningful short-term weight loss in adults with obesity**, and they appear broadly **feasible and acceptable**.",
+      "However, the evidence that directly answers your exact question is sparse."
+    ]
+  }
+}

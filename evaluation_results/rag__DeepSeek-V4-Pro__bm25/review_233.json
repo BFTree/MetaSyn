@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10217,
+    "output_tokens": 940,
+    "total_tokens": 11157
+  },
+  "metrics": {
+    "retrieval_recall": 0.6153846153846154,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.6153846153846154,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.761904761904762,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.551,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6939,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening summary, included studies, synthesis, and limitations, but it lacks several standard sections such as Abstract, formal Introduction, detailed Methods, Conclusion, References, quality assessment, data extraction procedures, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults (>18\u202fyears)",
+      "Exercise training (aerobic, resistance, combined) lasting \u2265\u202f4\u202fweeks",
+      "Non\u2011exercise control condition",
+      "Plasma renin activity, angiotensin\u2011II, aldosterone, epinephrine, norepinephrine, 24\u2011hour urinary sodium/potassium, systolic/diastolic blood pressure, heart rate",
+      "Randomised controlled trials (RCTs)"
+    ],
+    "exclusion_criteria": [
+      "crossover studies excluded if washout <\u202f2\u202fweeks",
+      "acute exercise, pharmacotherapy, animal, and non\u2011exercise studies excluded",
+      "protocols, reviews, editorials, and conference abstracts not eligible"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "All studies showed reductions in blood pressure and, where measured, decreases in plasma norepinephrine, renin activity, angiotensin\u2011II, or aldosterone after exercise training compared to control.",
+      "The directions of change are consistent with a down\u2011regulation of neurohormonal activation, suggesting that exercise training beneficially modulates the RAAS and sympathetic nervous system across different clinical contexts.",
+      "Nevertheless, the eight included RCTs provide a suitable pool for meta\u2011analysing the effect of exercise training on the RAAS and blood\u2011pressure outcomes in adults with cardiovascular risk conditions."
+    ]
+  }
+}

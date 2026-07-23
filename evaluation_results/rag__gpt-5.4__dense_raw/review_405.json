@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 405,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7847,
+    "output_tokens": 1532,
+    "total_tokens": 9379
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 1.0,
+    "inclusion_consistency": 0.5386,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3271,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes eligibility criteria, screening outcome, and a brief evidence synthesis, but it lacks most standard systematic review sections such as abstract, introduction, full methods, detailed search strategy, quality assessment, discussion/conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: patients with Alzheimer\u2019s disease",
+      "Diagnosis: implemented using reliable AD criteria such as NINCDS-ADRDA",
+      "Outcome: time perception distortions or related timing tasks",
+      "Comparison: healthy controls or normative standards",
+      "Publication window: 2015-01-01 to 2015-12-31",
+      "Study type: peer-reviewed primary studies only"
+    ],
+    "exclusion_criteria": [
+      "Outside the review date window (2015 only)",
+      "Wrong topic/outcome",
+      "Not an eligible primary study or insufficient AD-diagnostic detail for this review question"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No studies met all eligibility criteria.",
+      "Because no eligible primary-study articles were identified from the fixed candidate pool, this review subset provides no includable 2015 evidence on how time perception is distorted in patients with Alzheimer\u2019s disease relative to healthy controls.",
+      "The candidate pool suggests that the relevant empirical literature on AD and time estimation was concentrated in earlier publications, especially 1993, 2000, and 2009, rather than in the 2015 search window specified for this review.",
+      "Therefore, the absence of included studies appears to reflect a date-restriction gap, not necessarily a total absence of research on the topic overall."
+    ]
+  }
+}

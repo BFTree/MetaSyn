@@ -1,0 +1,98 @@
+{
+  "review_id": 187,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "included_article_ids": [
+    6397,
+    6395
+  ],
+  "retrieved_article_ids": [
+    6397,
+    104133,
+    6395,
+    104145,
+    92743,
+    104125,
+    6396,
+    92587,
+    92733,
+    103943,
+    106026,
+    106024,
+    110723,
+    104453,
+    135143,
+    92863,
+    91978,
+    111871,
+    110346,
+    51571,
+    103219,
+    104248,
+    138098,
+    92328,
+    92325,
+    92531,
+    92497,
+    92530,
+    92896,
+    92706
+  ],
+  "unmatched_included_article_ids": [],
+  "unmatched_included_entries": [],
+  "token_usage": {
+    "calls": 16,
+    "input_tokens": 298230,
+    "output_tokens": 13592,
+    "total_tokens": 311822,
+    "by_stage": {
+      "compress_research": {
+        "calls": 1,
+        "input_tokens": 43488,
+        "output_tokens": 3000,
+        "total_tokens": 46488
+      },
+      "final_report_generation": {
+        "calls": 1,
+        "input_tokens": 4747,
+        "output_tokens": 4198,
+        "total_tokens": 8945
+      },
+      "researcher": {
+        "calls": 10,
+        "input_tokens": 240581,
+        "output_tokens": 5019,
+        "total_tokens": 245600
+      },
+      "supervisor": {
+        "calls": 3,
+        "input_tokens": 8290,
+        "output_tokens": 880,
+        "total_tokens": 9170
+      },
+      "write_research_brief": {
+        "calls": 1,
+        "input_tokens": 1124,
+        "output_tokens": 495,
+        "total_tokens": 1619
+      }
+    }
+  },
+  "behavior_counts": {
+    "retrieved_count": 30,
+    "retrieved_unique": 30,
+    "included_count": 2,
+    "included_unique": 2,
+    "search_calls": 3,
+    "unique_search_queries": 3,
+    "retrieved_instances": 60,
+    "duplicate_exposures": 30,
+    "fetch_calls": 9,
+    "rejected_fetch_calls": 0,
+    "fetched_unique": 5,
+    "source_review_ids_removed_count": 0,
+    "after_cutoff_ids_removed_count": 0,
+    "cutoff_year_count": 0
+  }
+}

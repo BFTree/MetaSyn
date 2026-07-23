@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21593,
+    "output_tokens": 872,
+    "total_tokens": 22465
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.4603,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3576,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes key evidence-synthesis elements such as screening criteria, exclusions, and a synthesis of included evidence, but it lacks a full systematic review structure with formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, detailed search strategy, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective design",
+      "adult cancer patients with CVCs",
+      "defined insertion site",
+      "specified dose of warfarin or heparin prophylaxis",
+      "comparison to no prophylaxis"
+    ],
+    "exclusion_criteria": [
+      "non-English",
+      "outside 1980\u20132005 window",
+      "reviews/guidelines",
+      "conference abstracts",
+      "case reports",
+      "wrong population"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Only one primary study met all the specified inclusion criteria.",
+      "The study found **no significant difference** in the incidence of catheter-related thrombosis or venous thrombosis between the warfarin and control groups, nor any significant variation in catheter survival.",
+      "Consequently, the authors concluded that the routine use of minidose warfarin does not provide a prophylactic benefit in this specific cancer population.",
+      "A significant gap identified in this screening is the **absence of eligible prospective primary studies evaluating low-dose LMWH** against no prophylaxis for CVC-related thrombosis in adult cancer patients within the 1980\u20132005 timeframe.",
+      "Thus, the evidence base within this window is extremely sparse, restricted to a single minidose warfarin trial showing no efficacy, leaving the comparative effectiveness of LMWH unaddressed by the candidate pool."
+    ]
+  }
+}

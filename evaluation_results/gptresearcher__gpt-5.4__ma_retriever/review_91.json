@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 91,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 33572,
+    "output_tokens": 899,
+    "total_tokens": 34471
+  },
+  "metrics": {
+    "retrieval_recall": 0.4358974358974359,
+    "retrieval_precision": 0.5,
+    "inclusion_recall": 0.20512820512820512,
+    "inclusion_precision": 0.7272727272727273,
+    "inclusion_f1": 0.32,
+    "screening_accuracy": 0.6470588235294118,
+    "conditional_retention": 0.47058823529411764,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.7794,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.8874,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included studies, and References, and it includes meta-review elements such as search queries, eligibility criteria, screening decisions, and qualitative synthesis, but it lacks a formal quality/risk-of-bias assessment and has minor organizational/count inconsistencies that keep it below full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Publications describing research that uses synthetic data generation methods and evaluates their outputs.",
+      "Health-related or medical synthetic data.",
+      "Published between 2018-01-01 and 2024-07-31."
+    ],
+    "exclusion_criteria": [
+      "Surveys, systematic reviews, and scoping reviews.",
+      "Non-English documents.",
+      "Publications with no evaluation of generated output.",
+      "Unstructured data only (e.g., images, free text).",
+      "Poster abstracts."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The synthetic health data literature up to July 31, 2024 does **not** show consensus on a standardized method for evaluating privacy and utility.",
+      "It does show a growing consensus on the **dimensions** that matter: fidelity or resemblance, utility, and privacy.",
+      "Utility evaluation is currently more mature, more detailed, and more consistently reported than privacy evaluation.",
+      "Privacy is rarely ignored outright, but it is often assessed with fewer metrics, less transparent reporting, and weaker standardization.",
+      "The strongest privacy evidence also shows that synthetic data are not uniformly safe: partially synthetic data can be highly vulnerable to membership inference, while fully synthetic data generally appear safer but still require explicit testing.",
+      "My concrete assessment is that the field is in a transitional state.",
+      "It has moved beyond naive similarity checks and now recognizes the need for multidimensional evaluation.",
+      "But it has not yet operationalized that recognition into a stable, standardized benchmark or a privacy evaluation culture equal in rigor to utility testing.",
+      "Without that, claims of privacy-preserving usefulness remain too model-specific and too weakly comparable across studies."
+    ]
+  }
+}

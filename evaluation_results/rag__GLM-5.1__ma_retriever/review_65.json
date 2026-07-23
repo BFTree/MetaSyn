@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5028,
+    "output_tokens": 1141,
+    "total_tokens": 6169
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7999999999999999,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.6449,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5441,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening, thematic synthesis, conclusion, and included studies, but it lacks major required sections such as an abstract, introduction, full methods, detailed search strategy, inclusion/exclusion criteria, quality assessment, formal discussion, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "investigating NC in adult women with PCOS relative to controls or metabolic outcomes"
+    ],
+    "exclusion_criteria": [
+      "absence of neck circumference (NC) measurement or analysis as an exposure/intervention (most excluded candidates focused on other adiposity indices like BMI, waist circumference, or specific biochemical markers)",
+      "incompatible populations (e.g., general population cohorts, male subjects, adolescents, or non-PCOS specific clinical groups)",
+      "incompatible study designs (e.g., systematic reviews, meta-analyses, position statements, or narrative reviews)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included evidence indicates that NC is significantly larger in PCOS women with abdominal obesity compared to controls and is a robust, independent anthropometric marker for predicting MetS and IR in women with PCOS.",
+      "Proposed cutoff values for identifying metabolic risk range from 32.75 cm to 34.3 cm depending on the population and outcome.",
+      "NC correlates strongly with visceral fat deposition and improves with dietary interventions that ameliorate insulin resistance."
+    ]
+  }
+}

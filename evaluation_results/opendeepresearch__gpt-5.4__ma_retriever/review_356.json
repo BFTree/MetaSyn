@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28143,
+    "output_tokens": 2026,
+    "total_tokens": 30169
+  },
+  "metrics": {
+    "retrieval_recall": 0.7272727272727273,
+    "retrieval_precision": 0.35555555555555557,
+    "inclusion_recall": 0.09090909090909091,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.16666666666666669,
+    "screening_accuracy": 0.6888888888888889,
+    "conditional_retention": 0.125,
+    "post_retrieval_loss": 0.6363636363636364,
+    "inclusion_consistency": 0.5474,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5688,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most systematic-review/meta-analysis elements such as review question, methods, exact search strategy, eligibility criteria, screening decisions, included/excluded studies, evidence characteristics, synthesis by clinical question, and meta-analysis feasibility, but it lacks some full PRISMA-style components such as a formal abstract/introduction/discussion/conclusion structure, detailed risk-of-bias or quality assessment, and complete reference presentation in the provided text."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Population:** bipolar disorder, any subtype, any age/sex/ethnicity/setting",
+      "**Interventions:** verapamil, diltiazem, nimodipine, nifedipine, methoxyverapamil, isradipine",
+      "**Comparators:** placebo or active pharmacological treatment",
+      "**Primary efficacy/acceptability designs:** randomized controlled trials restricted to **double-blind** studies",
+      "**Adverse effects evidence:** randomized single-blind/open-label trials could also be considered; relevant non-randomized evidence summarized if found",
+      "**Crossover trials:** first-period data only",
+      "**Add-on trials:** eligible only if background treatment was balanced and maintained across arms",
+      "**Date boundary:** records available up to 2016-02-15"
+    ],
+    "exclusion_criteria": [
+      "**Exclusions:** cluster-randomized trials; studies with serious concomitant medical illness"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Overall, the local corpus supports the conclusion that **there is no reliable evidence of clinically meaningful efficacy of LTCC antagonists for bipolar disorder**, and the evidence base is too small and too methodologically limited to support routine use.",
+      "Formal meta-analysis of efficacy is either not appropriate or would be extremely limited because the number of confirmed eligible studies is very small and reporting is incomplete.",
+      "The best-confirmed evidence in the local corpus does **not support efficacy of verapamil for acute mania**.",
+      "The abstract explicitly concluded that verapamil showed **no benefit over placebo** in treating acute mania [2].",
+      "Therefore, **there is no confirmed included evidence supporting LTCC antagonists for acute bipolar depression** in the local corpus material available here.",
+      "Accordingly, **there is no secure evidence base in the accessible local corpus to conclude that LTCC antagonists prevent relapse in bipolar disorder**.",
+      "No clear tolerability advantage of LTCC antagonists over placebo or standard active treatment was established from the accessible corpus evidence.",
+      "Equally, no strong signal of major benefit-risk justification emerged to offset the weak efficacy findings."
+    ]
+  }
+}

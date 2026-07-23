@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8952,
+    "output_tokens": 1110,
+    "total_tokens": 10062
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.2857142857142857,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4444444444444445,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.2857142857142857,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.4459,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4832,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes review target, screening/selection criteria, evidence synthesis, conclusion, and included studies, but it lacks formal Abstract, Introduction, Methods, Discussion, full References, detailed search strategy, data extraction procedures, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs of lifestyle interventions in women with overweight/obesity",
+      "Offspring outcomes related to cardiac structure/function, heart rate, arterial stiffness, or blood pressure",
+      "Postnatal offspring (excluding fetal remodelling)",
+      "Human quantitative original research",
+      "Published in English in a peer-reviewed journal",
+      "Publication date between 2023-01-01 and 2023-08-31 (as specified by the search date window)"
+    ],
+    "exclusion_criteria": [
+      "published prior to the 2023 search start date (publication years 2018\u20132022)",
+      "reviews/meta-analyses (e.g., 008, 073)",
+      "study protocols (e.g., 010, 014)",
+      "studies focused solely on adiposity or maternal health (e.g., 062, 170)",
+      "studies not restricted to overweight/obese populations for the RCT allocation (e.g., general population RCTs)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The eligible evidence from 2023 suggests that lifestyle interventions in women with obesity\u2014whether initiated preconception or antenatally\u2014may confer specific benefits on offspring cardiovascular health, particularly regarding cardiac function (ejection fraction, fractional shortening) and structure (septal thickening, sphericity), as well as resting heart rate.",
+      "However, the evidence is limited by small sample sizes, high attrition rates, and primarily null findings in main analyses for broader cardiac and arterial stiffness outcomes.",
+      "Larger, more adherent trials are needed to confirm these preliminary observations."
+    ]
+  }
+}

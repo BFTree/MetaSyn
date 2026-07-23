@@ -1,0 +1,72 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32991,
+    "output_tokens": 1239,
+    "total_tokens": 34230
+  },
+  "metrics": {
+    "retrieval_recall": 0.7142857142857143,
+    "retrieval_precision": 0.25,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.7142857142857143,
+    "inclusion_f1": 0.4761904761904762,
+    "screening_accuracy": 0.825,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.6799,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6938,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear review question, eligibility criteria, search strategy, screening decisions, study characteristics, qualitative synthesis, and meta-analysis feasibility discussion, but it lacks a formal abstract, complete conclusion, references section, and explicit quality/risk-of-bias assessment needed for excellent PRISMA-style structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "General adult populations in observational studies of renal cell cancer or equivalent kidney cancer incidence endpoints.",
+      "Total alcohol intake",
+      "Beverage-specific intake:",
+      "Beer",
+      "Wine",
+      "Liquor/spirits",
+      "Lowest or bottom category of intake, including non-drinkers or minimal drinkers, depending on study definition.",
+      "Renal cell cancer incidence/risk, including studies describing renal cell cancer, renal cell carcinoma, renal adenocarcinoma, kidney cancer, or kidney adenocarcinoma, provided the endpoint reflects incidence/risk rather than mortality.",
+      "Case\u2013control studies",
+      "Cohort studies",
+      "Primary studies had to report relative risk estimates or comparable risk estimates with 95% confidence intervals for alcohol exposure categories or per-unit increase.",
+      "studies were to be included only if the primary study itself reported RR estimates with 95% CIs.",
+      "combined independent studies,",
+      "publications focused on alcohol as the primary exposure,",
+      "or those with larger numbers of cases / longer follow-up."
+    ],
+    "exclusion_criteria": [
+      "Mortality-only kidney cancer endpoints",
+      "Duplicative/overlapping populations when a more informative later or pooled publication was available",
+      "Studies lacking reported RR/OR with 95% CI under the stated review criterion",
+      "no confirmed local corpus evidence that the study itself reported RR/OR estimates with 95% CIs as required",
+      "kidney cancer mortality is not equivalent to incidence/risk and reflects both incidence and survival"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included local corpus evidence, the association between alcohol intake and renal cell cancer risk was **predominantly inverse**, meaning higher alcohol intake was generally associated with **lower RCC risk** relative to nondrinking or lower intake.",
+      "No included study in the available corpus findings showed a clear positive association between alcohol intake and RCC risk.",
+      "The evidence most consistently supports an inverse association between **moderate alcohol consumption** and RCC risk.",
+      "Overall, the corpus evidence indicates that alcohol intake is **not associated with increased RCC risk** and is more often associated with **lower risk**, especially at moderate or higher consumption categories.",
+      "The local corpus does **not support a strong beverage-specific difference**.",
+      "The largest and methodologically strongest prospective evidence found **no significant heterogeneity by sex**.",
+      "Taken together, the convergence of cohort and case\u2013control evidence strengthens confidence that the inverse association is not solely an artifact of one study design.",
+      "The local corpus supports a **dose-related inverse association**, at least across the intake ranges studied.",
+      "A **structured qualitative synthesis** is justified and well supported by the local corpus retrieval."
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23824,
+    "output_tokens": 995,
+    "total_tokens": 24819
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.786,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4403,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear research question, objective, methods/screening criteria, screening results, included study descriptions, synthesis, limitations, conclusion, and included article list, but it lacks a formal abstract/introduction/references section and does not include full PRISMA-style rigor such as detailed search strategy, data extraction process, or quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Non-randomised or randomised controlled trial with a primary purpose of weight management.",
+      "Adult participants (\u226518 years).",
+      "Weight change reported quantitatively.",
+      "A direct comparison of weight change in patients with and without T2DM made.",
+      "Intervention: very low calorie diet (<800 kcal/day) or low-energy liquid-formula diet (>800 kcal/day) using total diet replacement.",
+      "Comparison: obese patients without T2DM receiving the same formula diet."
+    ],
+    "exclusion_criteria": [
+      "use of anti-obesity medications",
+      "insulin use",
+      "reviews",
+      "meta-analyses",
+      "protocols",
+      "animal studies",
+      "studies lacking a non-T2DM comparison group",
+      "studies not using a formula-based very-low- or low-energy diet",
+      "studies that did not report a direct between-group weight change comparison"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence suggests that VLCDs produce substantial and comparable total weight loss in both groups, although the proportion of fat lost may be attenuated in T2DM.",
+      "No eligible study using a low-energy liquid formula diet (>800 kcal/day) was identified.",
+      "The overall evidence base is limited, highlighting a need for well-designed randomised trials that explicitly compare formula-based diet interventions in diabetic and non-diabetic obese populations.",
+      "The two identified studies provide consistent evidence that obese adults with T2DM can achieve similar total weight loss to their non-diabetic counterparts when following a VLCD for up to 24 weeks or 1 year.",
+      "Candidate 005 additionally demonstrates that marked weight loss on a VLCD can lead to discontinuation of diabetes medications, underscoring the clinical benefits beyond weight alone."
+    ]
+  }
+}

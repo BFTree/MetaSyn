@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 233,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14623,
+    "output_tokens": 1319,
+    "total_tokens": 15942
+  },
+  "metrics": {
+    "retrieval_recall": 0.7692307692307693,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.5384615384615384,
+    "inclusion_precision": 0.875,
+    "inclusion_f1": 0.6666666666666667,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.7,
+    "post_retrieval_loss": 0.23076923076923078,
+    "inclusion_consistency": 0.5458,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4999,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with explicit screening criteria, inclusion/exclusion logic, included studies, and limitations, but it lacks a full systematic review structure (formal abstract, introduction, methods, results, discussion/conclusion, and references) and does not provide detailed PRISMA-style synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults only",
+      "randomized controlled trial",
+      "exercise training as the main intervention",
+      "duration at least 4 weeks",
+      "non-exercise control condition",
+      "reports at least one review-relevant physiologic outcome beyond simple exercise performance, especially RAAS-related, catecholamine, or urinary electrolyte outcomes"
+    ],
+    "exclusion_criteria": [
+      "animal studies",
+      "acute exercise studies",
+      "crossover studies",
+      "reviews, editorials, protocols",
+      "studies without a non-exercise control",
+      "studies with exercise but no relevant RAAS/neurohormonal/electrolyte outcome in the abstract",
+      "studies where the intervention was not primarily exercise training alone"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included abstracts, the pattern is generally favorable for exercise:",
+      "The included evidence supports that **exercise training, especially aerobic/endurance modalities, tends to reduce neurohumoral activation and blood pressure in hypertensive and heart-failure populations**, with some evidence for favorable changes in:",
+      "The evidence appears more consistent for **blood pressure reduction** and for **reduced sympathetic/neurohormonal activity** than for any single RAAS component across all populations."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28581,
+    "output_tokens": 1003,
+    "total_tokens": 29584
+  },
+  "metrics": {
+    "retrieval_recall": 0.9285714285714286,
+    "retrieval_precision": 0.29545454545454547,
+    "inclusion_recall": 0.35714285714285715,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.45454545454545453,
+    "screening_accuracy": 0.75,
+    "conditional_retention": 0.38461538461538464,
+    "post_retrieval_loss": 0.5714285714285714,
+    "inclusion_consistency": 0.7347,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6156,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes key meta-analysis elements such as search strategy, eligibility criteria, screening counts, and synthesis methods, but it falls short of excellent PRISMA-style rigor because references are incomplete, the data extraction process is not clearly described, the search scope/window is limited or unclear, and quality assessment details are somewhat generic."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational studies with a case-control or cohort design conducted in the general adult population.",
+      "Studies evaluating alcoholic beverage intake as the exposure, including total alcohol, beer, wine, or liquor consumption, with a lowest/bottom intake category (non-drinkers or minimal drinkers) as the reference/comparator.",
+      "Studies reporting renal cell cancer risk or incidence as the outcome.",
+      "Studies providing relative risk estimates (e.g., RR, OR, or HR) with 95% confidence intervals, or sufficient data to calculate them, for alcohol intake categories."
+    ],
+    "exclusion_criteria": [
+      "Studies not using a case-control or cohort design, such as reviews, editorials, case reports, ecological studies, or experimental trials.",
+      "Studies conducted in non-general or non-adult populations, or not specifically examining renal cell cancer.",
+      "Studies not assessing alcohol intake separately (e.g., only total dietary patterns or mixed exposures) or not distinguishing total alcohol, beer, wine, or liquor consumption.",
+      "Studies not reporting effect estimates for renal cell cancer risk, lacking a usable low-intake reference group, or duplicate publications of the same study population."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 8 observational studies, higher alcoholic beverage intake was associated with a lower risk of renal cell cancer compared with the lowest alcohol intake category, with a pooled random-effects OR of 0.686 (95% CI 0.633-0.745).",
+      "This corresponds to roughly a 31% lower relative risk, and the consistency between random- and fixed-effects estimates, together with low heterogeneity (I2=5.0%), suggests the association was stable across studies.",
+      "Clinically, this points to a potentially meaningful inverse association at the population level, but it should not be interpreted as evidence to recommend alcohol consumption for renal cancer prevention, given the well-established harms of alcohol for other cancers and overall health.",
+      "A cautious interpretation is warranted because all included data were from case-control and cohort studies, so residual confounding, exposure misclassification, and differences in drinking patterns or beverage type may partly explain the observed effect."
+    ]
+  }
+}

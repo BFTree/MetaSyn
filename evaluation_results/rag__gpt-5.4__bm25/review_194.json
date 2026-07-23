@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 194,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11372,
+    "output_tokens": 1164,
+    "total_tokens": 12536
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5155,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3737,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear sections for aim, screening summary, included studies, synthesis, and conclusion, and it includes key meta-analysis-style elements such as inclusion logic and evidence synthesis, though it lacks a full PRISMA-level structure, detailed search strategy, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary diagnostic-accuracy studies",
+      "AI/machine learning for detecting pathological myopia (PM) from colour fundus photographs",
+      "using a clinical/expert reference standard",
+      "reporting metrics such as sensitivity, specificity, and/or AUC"
+    ],
+    "exclusion_criteria": [
+      "not about pathological myopia,",
+      "not based on colour fundus images,",
+      "reviews/meta-analyses/protocols,",
+      "focused on OCT or other imaging rather than colour fundus photography,",
+      "or published after the source review\u2019s search end and therefore out of scope."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included abstracts consistently suggest that **AI, particularly deep learning applied to colour fundus photographs, can detect pathological myopia or its defining myopic maculopathy features with high accuracy**.",
+      "Reported AUCs were very high where stated:",
+      "Sensitivity/specificity were also strong where explicitly reported:",
+      "From the abstracts alone, these studies support the idea that AI systems could function as:",
+      "From the fixed candidate pool, the abstract-level evidence supports that **deep learning systems using colour fundus photographs can detect pathological myopia with high discriminative performance**, often approaching expert-level grading and, in at least one study, validating externally.",
+      "The evidence base identified here is small but consistent in direction."
+    ]
+  }
+}

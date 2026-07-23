@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6479,
+    "output_tokens": 877,
+    "total_tokens": 7356
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7999999999999999,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": 0.5559,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.2832,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "Most major sections are present and the report is logically organized, but it lacks a formal abstract/introduction, detailed search strategy, PRISMA screening flow, quality assessment, data extraction process, and clear quantitative meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "enrolled adult women with PCOS (any diagnostic criteria)",
+      "measured neck circumference",
+      "reported at least one metabolic outcome (metabolic syndrome, insulin resistance, anthropometric measures, blood pressure, lipids, or glucose metabolism parameters)",
+      "Controls could be non\u2011PCOS women, women with PCOS of a different adiposity status, or no control group."
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, conference abstracts, and studies not reporting neck circumference or metabolic outcomes were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Seven primary studies met all inclusion criteria.",
+      "They consistently reported that neck circumference is larger in women with PCOS than in non\u2011PCOS controls, is positively associated with metabolic syndrome and insulin resistance, and can serve as a simple anthropometric predictor of metabolic risk.",
+      "Consistently, PCOS women had significantly higher neck circumference values.",
+      "Across the studies, neck circumference was proposed as a simple, practical, and reliable anthropometric measure that can be used in clinical settings to screen for obesity, insulin resistance, and metabolic syndrome in PCOS.",
+      "The evidence from the included studies consistently indicates that neck circumference is a useful anthropometric marker of upper\u2011body adiposity in women with PCOS.",
+      "It is larger in PCOS than in non\u2011PCOS women, is independently associated with metabolic syndrome and insulin resistance, and can be used to identify women at higher metabolic risk.",
+      "These findings support the inclusion of neck circumference in routine clinical assessment of women with PCOS."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 246,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17340,
+    "output_tokens": 1110,
+    "total_tokens": 18450
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.7727272727272727,
+    "inclusion_precision": 0.9444444444444444,
+    "inclusion_f1": 0.85,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.7727272727272727,
+    "post_retrieval_loss": 0.22727272727272727,
+    "inclusion_consistency": 0.5262,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4381,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, eligibility criteria, screening approach, synthesized findings, limitations, conclusions, and included studies, but it lacks a full abstract, detailed search strategy, data-extraction and quality-assessment methods, formal statistical synthesis, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language RCTs",
+      "1980-01-01 to 2020-05-31",
+      "adults roughly 18-65",
+      "healthy participants or participants with psychiatric disorders",
+      "melatonin/melatonin receptor agonists",
+      "sleep-wake or circadian rhythm outcomes."
+    ],
+    "exclusion_criteria": [
+      "reviews/protocols/editorials",
+      "animal/cell studies",
+      "non-eligible medical or neurologic populations",
+      "non-RCTs",
+      "out-of-range dates",
+      "studies lacking placebo/control-relevant comparison or relevant sleep/circadian outcomes."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Melatonin and melatonin receptor agonists can improve sleep initiation in healthy adults and some psychiatric populations.",
+      "Phase-shifting effects are supported, especially under controlled circadian-shift paradigms and with appropriately timed early evening dosing.",
+      "Tasimelteon and ramelteon show chronobiotic effects, not only hypnotic effects.",
+      "Timing is a key moderator of efficacy.",
+      "Dose-response is not linear: some lower-to-moderate doses produced clearer phase-shifting than higher doses in at least one ramelteon study.",
+      "Evidence in psychiatric populations exists but is much less extensive than in healthy volunteers."
+    ]
+  }
+}

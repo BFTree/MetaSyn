@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 148,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18894,
+    "output_tokens": 1359,
+    "total_tokens": 20253
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.6153846153846153,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.702,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5366,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into screening, synthesis, subgroup summaries, limitations, exclusions, and included studies, but it lacks core systematic review sections such as Abstract, Introduction, formal Methods, Results, Discussion, Conclusion, and References, and it does not provide full PRISMA-style methods such as detailed search strategy, data extraction, quality assessment, or quantitative meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "case-control or cohort primary studies",
+      "full-text original research",
+      "exposure including total alcohol or specific alcoholic beverages",
+      "renal cell/kidney cancer incidence risk as the endpoint",
+      "relative risk estimates with 95% CIs reported",
+      "publication window compatible with the source review search end (`2011-08-31`)"
+    ],
+    "exclusion_criteria": [
+      "excluding mortality-only kidney cancer studies, reviews/meta-analyses, commentaries, and clearly non-eligible designs"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the eligible studies, the signal is fairly consistent: **alcohol intake is generally associated with a lower risk of renal cell cancer / renal cell carcinoma**, with several studies suggesting a dose-response pattern and some reporting similar inverse associations across beer, wine, and liquor.",
+      "The prospective evidence is important because it reduces recall bias relative to case-control studies, and it also points in the same direction as most case-control studies.",
+      "The largest prospective analysis, a pooled analysis of 12 cohorts, reported a lower risk among drinkers versus nondrinkers and found no clear difference by sex or beverage type.",
+      "Most included studies reported inverse associations for higher intake versus none/low intake.",
+      "Evidence on sex differences is mixed.",
+      "Based on the eligible candidate pool, the evidence available up to the source review end date supports an **inverse association between alcoholic beverage intake and renal cell cancer risk**.",
+      "This pattern appears across both case-control and prospective evidence and is seen for total alcohol as well as specific beverages in several studies.",
+      "Evidence for effect modification by sex is inconsistent: some studies suggest stronger associations in women, while the largest pooled prospective study does not.",
+      "Beverage-specific differences are not clearly established from abstracts alone."
+    ]
+  }
+}

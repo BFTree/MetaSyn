@@ -1,0 +1,63 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25140,
+    "output_tokens": 1339,
+    "total_tokens": 26479
+  },
+  "metrics": {
+    "retrieval_recall": 0.3333333333333333,
+    "retrieval_precision": 0.09375,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.19999999999999998,
+    "screening_accuracy": 0.9375,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.6572,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6842,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong systematic review elements such as eligibility criteria, search strategy, screening decisions, included study characteristics, synthesis, limitations, conclusion, and sources, but it lacks a formal abstract and quality/risk-of-bias assessment needed for full PRISMA-style rigor."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adults aged 18\u201365 with MDD",
+      "Medication-free at the time of MRI",
+      "medication-naive, or",
+      "previously treated but drug-free for at least 7 days before scanning",
+      "Healthy controls",
+      "MRI-measured cortical thickness",
+      "Primary human study",
+      "Whole-brain cortical thickness analysis",
+      "Vertex-based analytic method",
+      "MDD vs healthy control comparison",
+      "Significant-cluster effect coordinates reported in MNI or Talairach space",
+      "Published on or before 2018-07-14"
+    ],
+    "exclusion_criteria": [
+      "Reviews, theoretical papers, case reports",
+      "ROI-only studies",
+      "Studies including participants younger than 18 or older than 65",
+      "Studies focused on peri- or postmenopausal female participants"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "That study found a **mixed pattern of cortical thickening and thinning**, with increased thickness in parietal, posterior cingulate, temporal, and occipital regions, and decreased thickness in frontal/opercular, precentral, and right middle temporal regions.",
+      "The included evidence did **not** provide confirmed demographic or clinical correlates of these abnormalities.",
+      "The overall evidence base available under these strict criteria is therefore **very limited**, and a formal meta-analysis is **not supported** on the basis of the screened local corpus records alone.",
+      "Because only one study met all inclusion criteria, no stable cross-study spatial convergence can be claimed from the screened evidence alone."
+    ]
+  }
+}

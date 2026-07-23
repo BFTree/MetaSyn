@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12385,
+    "output_tokens": 1182,
+    "total_tokens": 13567
+  },
+  "metrics": {
+    "retrieval_recall": 0.7419354838709677,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.6129032258064516,
+    "inclusion_precision": 0.9047619047619048,
+    "inclusion_f1": 0.7307692307692307,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.8260869565217391,
+    "post_retrieval_loss": 0.12903225806451613,
+    "inclusion_consistency": 0.6998,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5551,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has clear screening criteria, evidence synthesis, exclusions, and a study list, but it lacks the required abstract, introduction, formal methods, results with quantitative meta-analysis, discussion, conclusion structure, references, and PRISMA-specific details such as search sources, screening flow, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "older adults aged **60+**, generally healthy/non-disease-specific",
+      "technology-assisted rehabilitation, including **VR/exergaming, serious gaming, wearables, telerehabilitation**",
+      "conventional exercise, usual care, no treatment, or unrelated control",
+      "**balance, functional mobility, or gait** outcomes",
+      "**randomized** trial",
+      "search ended **2023-06-10**"
+    ],
+    "exclusion_criteria": [
+      "disease-specific populations (eg, Parkinson\u2019s, stroke, dementia/MCI, OA, osteoporosis, etc.), robotic/exoskeleton interventions, reviews/protocols/nonrandomized studies",
+      "clearly post\u2013June 2023 and later papers were not treated as eligible for the target review",
+      "**Reviews, meta-analyses, protocols, umbrella/scoping reviews**",
+      "**Nonrandomized**, quasi-experimental, single-arm, feasibility-only without proper randomized comparison",
+      "Studies in **stroke, Parkinson\u2019s disease, dementia/MCI, osteoarthritis, osteoporosis, cancer, MS**, etc.",
+      "Trials including participants **younger than 60** or populations not clearly limited to 60+",
+      "Some **2023** studies that otherwise looked eligible but whose exact timing relative to the **2023-06-10** search end could not be confirmed from the supplied title/abstract alone"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the supplied abstracts, the pre\u2013June 2023 eligible evidence suggests that **technology-assisted rehabilitation in generally healthy older adults most consistently improves balance**, with more mixed but often favorable effects on **functional mobility** and selected **gait** outcomes.",
+      "The strongest and most frequent evidence comes from **exergaming/VR**, especially Wii/Wii Fit and other balance-oriented interactive systems.",
+      "Evidence for **wearables** and **telecommunication-based delivery** is present but much thinner in this candidate set.",
+      "**Balance outcomes** were the most consistently improved.",
+      "**Functional mobility** outcomes such as **TUG** often improved, but less uniformly than balance.",
+      "**Gait outcomes** improved in some studies, especially in dance/gait-oriented or sensor-feedback interventions, but not all."
+    ]
+  }
+}

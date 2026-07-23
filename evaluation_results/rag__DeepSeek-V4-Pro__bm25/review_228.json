@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16812,
+    "output_tokens": 1100,
+    "total_tokens": 17912
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.6,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5228,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4123,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, eligibility criteria, screening summary, study characteristics, findings, synthesis, and included studies, but it lacks a formal abstract, detailed methods/search strategy, data extraction process, risk-of-bias/quality assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original research",
+      "Level\u202fI or II prospective comparative study",
+      "hypertensive patients with AF undergoing PVI",
+      "assessment of RDN added to PVI versus PVI alone"
+    ],
+    "exclusion_criteria": [
+      "secondary hypertension",
+      "type\u202f1 diabetes",
+      "mean eGFR\u202f<\u202f45\u202fmL/min/1.73\u202fm\u00b2",
+      "congestive heart failure",
+      "LVEF\u202f<\u202f35%",
+      "non\u2011English publication"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The available prospective comparative evidence consistently suggests that adding RDN to PVI reduces AF recurrence in hypertensive patients, particularly in those with paroxysmal AF and uncontrolled hypertension.",
+      "The largest and most definitive trial (ERADICATE-AF, **015**) showed a robust 15\u202f% absolute increase in freedom from AF at 12\u202fmonths.",
+      "Blood pressure outcomes are more heterogeneous: ERADICATE-AF showed a clear systolic BP benefit, whereas other studies did not detect significant differences.",
+      "Renal function data are limited, but no study indicated harm, and one suggested improvement.",
+      "Complication rates were uniformly low, confirming the safety of the combined procedure.",
+      "Nevertheless, the overall direction of effect favours the addition of RDN."
+    ]
+  }
+}

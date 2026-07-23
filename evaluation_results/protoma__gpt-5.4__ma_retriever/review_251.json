@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 31339,
+    "output_tokens": 1116,
+    "total_tokens": 32455
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.09090909090909091,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.9272727272727272,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.5166,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4125,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and mostly clear systematic-review structure with abstract, background/introduction, methods, search strategy, eligibility criteria, screening flow, synthesis plan, results, risk-of-bias assessment, discussion, and conclusion, but it lacks a references section and has some organizational issues such as duplicated headings and limited PRISMA-style detail."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies enrolling cancer patients with indwelling central venous catheters (including adults or children with any malignancy).",
+      "Randomized controlled trials or prospective comparative studies evaluating primary thromboprophylaxis with minidose warfarin or low-dose low molecular weight heparin (LMWH).",
+      "Studies including a comparator group receiving no thromboprophylaxis, placebo, or standard care without anticoagulation.",
+      "Studies reporting at least one relevant outcome: venous thromboembolism incidence (including symptomatic or asymptomatic CVC-related thrombosis) and/or bleeding complications."
+    ],
+    "exclusion_criteria": [
+      "Studies in non-cancer populations or in patients without indwelling central venous catheters.",
+      "Studies evaluating therapeutic-dose anticoagulation, treatment of established thrombosis, or prophylaxis with agents other than minidose warfarin or low-dose LMWH.",
+      "Non-comparative studies, retrospective case series, case reports, reviews, editorials, letters, conference abstracts without sufficient data, or duplicate publications.",
+      "Studies not reporting VTE-related outcomes or bleeding/safety outcomes relevant to thromboprophylaxis."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The retained reports did not provide enough compatible numeric data for pooled meta-analysis.",
+      "As a result, a quantitative synthesis of the effect of primary thromboprophylaxis on catheter-related venous thromboembolism or bleeding outcomes was not possible.",
+      "However, without extractable comparative statistics, the direction and magnitude of any treatment effect could not be quantified reliably within this review.",
+      "The absence of a meta-analysis should not be interpreted as evidence of no effect; rather, it reflects insufficient and incompletely reported data.",
+      "As a result, the available evidence does not permit a reliable estimate of whether prophylactic anticoagulation reduces symptomatic or asymptomatic CVC-related venous thromboembolism, nor whether it increases bleeding complications in this population.",
+      "For practice, the current evidence does not support firm conclusions either for or against routine primary thromboprophylaxis with minidose warfarin or low-dose LMWH in cancer patients with indwelling CVCs.",
+      "Overall, the current evidence base is too limited and inadequately reported to support firm conclusions or guide practice with confidence."
+    ]
+  }
+}

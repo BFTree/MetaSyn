@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 453,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 15485,
+    "output_tokens": 1014,
+    "total_tokens": 16499
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.6948,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6574,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with Objective, Methods, Results by outcome, Conclusion, and included studies, but it lacks a formal Abstract, Introduction, Discussion, full references, detailed search strategy, data extraction process, quality assessment, and explicit meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Individuals with chronic viral hepatitis (CHB or CHC).",
+      "Statin use vs. non-statin use.",
+      "Incidence of HCC, all-cause mortality, cirrhosis, or cirrhosis decompensation.",
+      "Cohort studies or RCTs.",
+      "1996-01-01 to 2024-07-31."
+    ],
+    "exclusion_criteria": [
+      "Studies of cohorts with co-morbid HIV infection were excluded.",
+      "Reviews",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "non-English articles",
+      "studies without relevant outcomes",
+      "studies on populations other than chronic viral hepatitis (e.g., MASLD, post-transplant, general cirrhosis without viral specification)."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The evidence consistently supports an association between statin use and reduced risk of adverse liver-related outcomes and mortality in patients with chronic viral hepatitis.",
+      "Five studies reported on HCC incidence.",
+      "All found a significant reduction in risk associated with statin use.",
+      "Four studies reported on mortality.",
+      "Four studies reported on the risk of developing cirrhosis or fibrosis progression.",
+      "Three studies reported on decompensation events.",
+      "The synthesized evidence indicates that statin exposure is associated with a reduced incidence of HCC, all-cause mortality, cirrhosis, and cirrhosis decompensation in individuals with chronic viral hepatitis compared to non-statin users.",
+      "The benefits appear dose-dependent, and lipophilic statins may offer greater protection against HCC than hydrophilic statins."
+    ]
+  }
+}

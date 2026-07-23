@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32218,
+    "output_tokens": 1050,
+    "total_tokens": 33268
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04938271604938271,
+    "inclusion_recall": 0.75,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.9876543209876543,
+    "conditional_retention": 0.75,
+    "post_retrieval_loss": 0.25,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.1447,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.7,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report has a complete and generally clear systematic review structure with Abstract, Background, Review Question, Methods, Results, Risk of Bias, Discussion, Conclusion, search strategy, eligibility criteria, screening flow, and synthesis approach, but it falls short of excellent due to duplicated headings, minor organizational artifacts, no full References section, and some inconsistent wording around pooled effects despite no meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original clinical studies or case-based reports/series describing male patients diagnosed with or explicitly presenting hard-flaccid syndrome (HFS).",
+      "Studies reporting HFS clinical features, aetiopathogenesis, diagnostic work-up/criteria, or management/treatment outcomes, including pharmacologic, physical, surgical, or biopsychosocial interventions.",
+      "Human studies involving adolescent or adult males with symptoms consistent with HFS, such as semi-rigid flaccid penis with associated erectile, urinary, ejaculatory, perineal, or psychological symptoms.",
+      "Any comparative or non-comparative empirical study design with extractable patient-level or study-level data relevant to HFS presentation or treatment effectiveness."
+    ],
+    "exclusion_criteria": [
+      "Studies not specifically focused on hard-flaccid syndrome or that combine HFS with other sexual, urologic, pelvic pain, or penile disorders without separate HFS data.",
+      "Non-original reports such as narrative reviews, editorials, commentaries, conference abstracts without sufficient data, and basic science or animal studies.",
+      "Studies in populations other than male human patients with HFS, or reports where HFS diagnosis/symptom profile cannot be determined from the article.",
+      "Studies that do not report any relevant outcomes on HFS aetiology, symptoms, diagnosis, or treatment response/safety."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This systematic review identified 3 studies describing male patients with hard-flaccid syndrome (HFS).",
+      "However, quantitative synthesis was not possible because the included reports did not provide sufficiently extractable or comparable numerical data on symptoms, diagnostic findings, or treatment outcomes.",
+      "The available qualitative evidence suggests that HFS is a multifactorial condition, often discussed in relation to penile trauma and subsequent neurovascular, inflammatory, pelvic floor, and psychological mechanisms, and commonly presents with perineal pain, urinary symptoms, erectile dysfunction, and ejaculatory disturbance.",
+      "Reported treatments, including PDE5 inhibitors, anxiolytics, low-intensity shockwave therapy, pelvic floor physical therapy, spinal surgery, and biopsychosocial approaches, were described inconsistently and with limited outcome detail.",
+      "Overall, the current evidence base remains very limited and insufficient to support firm conclusions regarding aetiopathogenesis, diagnostic criteria, or treatment effectiveness in HFS."
+    ]
+  }
+}

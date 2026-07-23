@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13531,
+    "output_tokens": 942,
+    "total_tokens": 14473
+  },
+  "metrics": {
+    "retrieval_recall": 0.6111111111111112,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 0.1111111111111111,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.1904761904761905,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.18181818181818182,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.8527,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.695,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes Background/Objectives, Methods with screening criteria, Evidence Synthesis, Conclusion, and included references, but it lacks a formal Abstract, full Introduction/Discussion sections, detailed search strategy, data extraction methods, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "systematic reviews with meta-analyses published between January 2021 and July 2024 that specifically studied the bidirectional association between periodontitis and NCDs in human populations of an epidemiological nature"
+    ],
+    "exclusion_criteria": [
+      "Reviews that were narrative, protocol-only, one-directional, out-of-date, or not meta-analyses were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Current evidence from recent systematic reviews with meta-analyses confirms a bidirectional association between periodontitis and certain immune-mediated noncommunicable diseases.",
+      "IBD (particularly ulcerative colitis) increases the risk of periodontitis, while periodontitis increases the risk of UC.",
+      "Both Sj\u00f6gren's syndrome and systemic lupus erythematosus are associated with a higher prevalence and severity of periodontitis, and conversely, periodontitis is associated with an increased likelihood of SS and greater disease activity in SLE.",
+      "These findings underscore the interconnected inflammatory pathways between oral and systemic health, highlighting the importance of integrated medical-dental care strategies."
+    ]
+  }
+}

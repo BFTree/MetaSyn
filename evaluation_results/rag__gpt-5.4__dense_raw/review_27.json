@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7170,
+    "output_tokens": 1858,
+    "total_tokens": 9028
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.8235294117647058,
+    "inclusion_precision": 0.8235294117647058,
+    "inclusion_f1": 0.8235294117647058,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.11764705882352941,
+    "inclusion_consistency": 0.3683,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4812,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is coherent and well organized with clear screening, synthesis, limitations, and study lists, but it lacks several standard systematic review sections and full PRISMA-style methods details such as a formal search strategy, eligibility criteria table, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human studies in adults with obesity, focusing on whether OSA-related indicators predict NAFLD presence/severity and/or whether bariatric/metabolic surgery improves both OSA and NAFLD over time."
+    ],
+    "exclusion_criteria": [
+      "reviews, non-primary articles, animal/mechanistic-only studies, pediatric studies, populations outside the obesity target, studies not centered on NAFLD outcomes, and studies published after the review search end date (`2022-10-08`) when clearly out of range.",
+      "published after the stated search end date.",
+      "obesity threshold of `BMI \u2265 35` is not established in the abstract, so they do not cleanly match the review population.",
+      "Reviews, mechanistic animal studies, pediatric studies, and non-primary articles were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The association is strongest for biopsy-based steatohepatitis, fibrosis, NAFLD activity score, or biochemical liver injury in several studies, though not all studies agree.",
+      "Evidence on bariatric metabolic surgery is much thinner in this pool: one directly relevant retrospective bariatric follow-up study suggests postoperative improvement in both OSA-related and NAFLD-related measures and correlation between their improvements.",
+      "This inconsistency suggests that OSA may relate more reliably to liver injury markers and hypoxia-linked progression than to all histologic NAFLD endpoints in every obese cohort.",
+      "Intermittent hypoxia appears to be the most consistent signal."
+    ]
+  }
+}

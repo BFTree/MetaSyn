@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 292,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32895,
+    "output_tokens": 1035,
+    "total_tokens": 33930
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.15789473684210525,
+    "inclusion_recall": 0.2777777777777778,
+    "inclusion_precision": 0.8333333333333334,
+    "inclusion_f1": 0.4166666666666667,
+    "screening_accuracy": 0.9122807017543859,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.5578,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4879,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, included studies, and References, and it includes meta-analysis elements such as search queries, eligibility criteria, screening decisions, and synthesis, but it lacks full PRISMA-level rigor such as a detailed reproducible search strategy, formal data extraction procedures, and complete quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Systematic review with meta-analysis.",
+      "Human studies.",
+      "Published between 2021-01-01 and 2024-07-31.",
+      "Epidemiological focus on bidirectional association between periodontitis and NCDs.",
+      "Relevant outcomes expressed as OR, RR, or HR, or clearly summarizing pooled epidemiologic associations."
+    ],
+    "exclusion_criteria": [
+      "Narrative reviews.",
+      "Protocols.",
+      "Primary studies.",
+      "Records outside date range.",
+      "Reviews lacking meta-analysis.",
+      "Critically low-quality reviews when inferable from the provided evidence.",
+      "Interventional-only reviews if they did not address the epidemiologic association question."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus supports a clear overall conclusion: periodontitis is consistently associated with several important noncommunicable diseases, especially malignancies and cerebrovascular disease, and metabolic disorders such as obesity and metabolic syndrome also appear linked to worse periodontal status.",
+      "The best eligible evidence in the target date window comes from cancer and metabolic reviews rather than from cardiovascular hard-outcome reviews.",
+      "The data are strong enough to treat periodontitis as a systemic health signal that deserves medical attention, but not strong enough to claim that periodontal treatment has been proven to prevent major NCD events such as diabetes onset, stroke, or cardiovascular events.",
+      "My concrete judgment is that periodontitis should be considered a **clinically important marker and probable contributor to systemic disease burden**, especially in cancer and metabolic disease pathways, but the current evidence still falls short of proving an independent, uniformly causal, and treatment-reversible relationship across NCD categories.",
+      "For practice and future synthesis, the most defensible position is neither skepticism nor overclaiming: periodontitis belongs in integrated NCD risk assessment, but causal claims should remain calibrated to the observational nature of the evidence."
+    ]
+  }
+}

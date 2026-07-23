@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 27,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 35967,
+    "output_tokens": 1135,
+    "total_tokens": 37102
+  },
+  "metrics": {
+    "retrieval_recall": 0.9411764705882353,
+    "retrieval_precision": 0.19753086419753085,
+    "inclusion_recall": 0.6470588235294118,
+    "inclusion_precision": 0.8461538461538461,
+    "inclusion_f1": 0.7333333333333334,
+    "screening_accuracy": 0.9135802469135802,
+    "conditional_retention": 0.6875,
+    "post_retrieval_loss": 0.29411764705882354,
+    "inclusion_consistency": 0.4622,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5019,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included studies, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening counts, and synthesis methods, but it falls short of excellent PRISMA-style rigor due to incomplete reference details, duplicated headings, limited data extraction detail, and some reporting gaps."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original human studies of adults with obesity (BMI >= 35 kg/m2), including candidates for or patients undergoing pre-bariatric/metabolic surgery evaluation.",
+      "Studies that assess obstructive sleep apnea (OSA) or OSA-related indicators, such as diagnosed OSA, apnea-hypopnea index (AHI), intermittent hypoxia, or comparisons across OSA severity groups or versus participants without OSA.",
+      "Studies reporting at least one NAFLD-related liver outcome, including NAFLD presence, severity, or resolution measured by liver biopsy, NAFLD activity score (NAS), steatosis, fibrosis, inflammation, or serum liver markers such as ALT or AST.",
+      "Observational or interventional study designs that examine the association between OSA and NAFLD outcomes in the target population."
+    ],
+    "exclusion_criteria": [
+      "Studies limited to children/adolescents, non-obese populations, or mixed populations where data for adults with BMI >= 35 kg/m2 cannot be separated.",
+      "Studies that do not evaluate OSA exposure or OSA-related metrics, or do not report any NAFLD-related liver outcome.",
+      "Reviews, editorials, letters, conference abstracts without sufficient data, case reports, and animal or in vitro studies.",
+      "Studies focused exclusively on post-bariatric surgery outcomes without relevant pre-surgery OSA and NAFLD assessment, or studies where OSA/NAFLD status cannot be determined."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 13 studies in adults with severe obesity (BMI >= 35), obstructive sleep apnea was associated with substantially higher odds of non-alcoholic fatty liver disease, with pooled data from 3 studies showing an OR of 3.15 (95% CI 1.52-6.57; p=0.002) versus patients without OSA or with lower OSA burden.",
+      "This suggests that OSA, and likely its related intermittent hypoxia, is not just statistically linked to NAFLD but may identify a clinically important high-risk phenotype with greater liver involvement before bariatric metabolic surgery.",
+      "Clinically, patients with severe obesity and OSA should be considered for more deliberate liver risk assessment and closer perioperative evaluation, particularly when OSA is moderate to severe.",
+      "The main caveat is that the pooled estimate comes from only 3 studies, and the broader 13-study evidence base includes variation in OSA severity definitions and liver outcome measures, which limits causal inference and precision."
+    ]
+  }
+}

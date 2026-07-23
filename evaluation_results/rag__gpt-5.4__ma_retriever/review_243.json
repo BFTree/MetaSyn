@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 243,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7171,
+    "output_tokens": 1291,
+    "total_tokens": 8462
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.7058823529411764,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.8342,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6882,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, eligibility decisions, a brief synthesis, limitations, and a conclusion, but it lacks major systematic review sections such as an abstract, introduction, full methods, detailed search strategy, data extraction, quality assessment, formal results, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language, peer-reviewed **original human studies** administering **MDMA with psychotherapy** to treat a **psychiatric condition**",
+      "controlled primary studies comparing MDMA-assisted psychotherapy with placebo/control conditions."
+    ],
+    "exclusion_criteria": [
+      "no psychotherapy",
+      "non-original articles",
+      "reviews/meta-analyses",
+      "protocols",
+      "conference abstracts",
+      "book chapters",
+      "animal studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Across the included studies, the abstract-level evidence is broadly consistent:",
+      "No drug-related serious adverse events were reported in multiple phase 2 studies.",
+      "MDMA-assisted psychotherapy was repeatedly described as well tolerated.",
+      "The larger phase 3 PTSD studies also describe treatment as safe/well tolerated, with no deaths reported in the abstract summaries.",
+      "Where quantified, severe adverse events were uncommon and not clearly suggestive of a major excess of serious toxicity in the MDMA group based on abstract data alone.",
+      "These abstracts suggest that while adverse events occur, the major safety concern in terms of serious drug-related harm was not prominent in these controlled PTSD trials.",
+      "Based on the eligible primary-study abstracts in the supplied pool, MDMA-assisted psychotherapy appears generally well tolerated across controlled psychiatric treatment trials, especially in PTSD, with no consistent abstract-level signal of drug-related serious adverse events.",
+      "The strongest safety information comes from the phase 3 PTSD trials, which describe MDMA-assisted therapy as safe/well tolerated, though adverse events do occur and at least one phase 3 abstract reports somewhat more severe treatment-emergent adverse events numerically in the MDMA arm than placebo, without reporting deaths or serious TEAEs.",
+      "A cautious interpretation is warranted because:"
+    ]
+  }
+}

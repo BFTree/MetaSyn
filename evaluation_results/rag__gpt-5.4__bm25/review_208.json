@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19968,
+    "output_tokens": 1338,
+    "total_tokens": 21306
+  },
+  "metrics": {
+    "retrieval_recall": 0.8035714285714286,
+    "retrieval_precision": 0.225,
+    "inclusion_recall": 0.44642857142857145,
+    "inclusion_precision": 0.7575757575757576,
+    "inclusion_f1": 0.5617977528089888,
+    "screening_accuracy": 0.87,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.35714285714285715,
+    "inclusion_consistency": 0.611,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5862,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "Well-organized with clear sections for review question, screening approach, evidence base, synthesis, included studies, and exclusions, and it includes meta-analysis-style elements like eligibility criteria and synthesis themes, though it lacks a formal abstract, methods/results/discussion/reference structure."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "describe FST methods in enough detail to inform methodological variability",
+      "use FST in severe retinal disease populations in a way that exposes reporting practices or specific testing parameters",
+      "Human retinal disease studies",
+      "FST or equivalent whole-field scotopic threshold psychophysics",
+      "Sufficient abstract-level methodological detail or clear FST-method relevance"
+    ],
+    "exclusion_criteria": [
+      "reviews, protocols, non-human studies, and studies where FST was only mentioned without enough methodological relevance.",
+      "Reviews, scoping reviews, protocols, editorials",
+      "Animal studies",
+      "Studies centered on other tests with FST only incidental",
+      "Articles after the review end date if outside scope relevance for the requested synthesis end date, though the main exclusion basis remained study type/eligibility",
+      "Studies not clearly about full-field psychophysical threshold measurement methodology/reporting",
+      "not an FST study and wrong disease domain.",
+      "non-primary/review/protocol despite topical relevance",
+      "FST was not the relevant psychophysical full-field threshold method or was too incidental",
+      "Argus/prosthesis studies where FST was ancillary rather than the methodological focus",
+      "pupillometry-only papers without enough FST detail",
+      "non-IRD or unrelated disease areas"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The candidate pool supports the conclusion that FST methodology in severe retinal disease is **heterogeneous and incompletely standardized**.",
+      "The wider body of natural history and interventional studies shows how FST is being used in practice, but also highlights inconsistent reporting of essential parameters.",
+      "So the main gap is not whether FST is useful; it is that studies often use FST as an endpoint without fully reporting the methodological settings needed for inter-study comparison or future consensus guidance.",
+      "This candidate pool shows that FST is widely used in severe retinal disease and especially valuable in advanced IRD and pediatric cohorts, but the literature appears methodologically fragmented at the abstract level.",
+      "The most important standardization gaps are stimulus specification, luminance units, adaptation conditions, pupil status, device/platform reporting, and repeatability reporting."
+    ]
+  }
+}

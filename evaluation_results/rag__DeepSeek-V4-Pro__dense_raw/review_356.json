@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 356,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6521,
+    "output_tokens": 1269,
+    "total_tokens": 7790
+  },
+  "metrics": {
+    "retrieval_recall": 0.8181818181818182,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.36363636363636365,
+    "inclusion_precision": 0.8,
+    "inclusion_f1": 0.5000000000000001,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.4444444444444444,
+    "post_retrieval_loss": 0.45454545454545453,
+    "inclusion_consistency": 0.6885,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.252,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, search/screening details, included studies, evidence synthesis by outcome, and limitations, and it includes key meta-analysis elements like eligibility criteria and study selection, but it lacks a formal abstract/introduction/methods-results-discussion format and references, so it is not fully PRISMA-complete."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomised controlled trials (RCTs) of any LTCC antagonist versus placebo or active treatment",
+      "double\u2011blind design required for efficacy/acceptability",
+      "single\u2011blind/open RCTs or non\u2011randomised studies were eligible only for adverse\u2011effect data",
+      "The population was patients with any subtype of bipolar disorder."
+    ],
+    "exclusion_criteria": [
+      "unipolar depression (not bipolar)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Findings for acute mania are mixed: early positive placebo\u2011controlled results are not consistently replicated, and comparisons with lithium show no clear superiority.",
+      "The single maintenance trial suggests possible benefit, but it is underpowered.",
+      "No data are available for other LTCC antagonists (diltiazem, nimodipine, nifedipine, isradipine) from controlled trials meeting the inclusion criteria.",
+      "The overall quality of evidence is low, and the results must be interpreted with caution due to small sample sizes, methodological heterogeneity, and a lack of long\u2011term, large\u2011scale trials.",
+      "Further rigorous RCTs are needed to clarify the role of LTCC antagonists, particularly newer agents with better central nervous system penetration, in the treatment and prophylaxis of bipolar disorder."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29404,
+    "output_tokens": 926,
+    "total_tokens": 30330
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.20833333333333334,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.8333333333333334,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.4916,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5023,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, screening results, study characteristics, findings, limitations, conclusion, included-study list, and references, and it includes meta-analysis-relevant elements such as search strategy, eligibility criteria, screening decisions, and synthesis narrative, but lacks full PRISMA-style rigor such as a formal risk-of-bias/quality assessment, detailed data extraction methods, and quantitative synthesis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Original research articles",
+      "English language, published after January 1, 2009",
+      "Level I or II prospective comparative studies",
+      "Evaluated RDN effects on AF in patients with essential hypertension undergoing PVI"
+    ],
+    "exclusion_criteria": [
+      "Secondary hypertension",
+      "Type I diabetes mellitus",
+      "Late-stage kidney disease/failure, defined as mean eGFR <45 mL/min/1.73 m2",
+      "Congestive heart failure",
+      "LVEF <35%",
+      "Non-English studies"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The clearest signal is a reduction in AF recurrence with adjunctive RDN, supported by the largest randomized trial, ERADICATE-AF, and by several contemporaneous meta-analyses that summarize the same underlying trial base.",
+      "The evidence base is directionally favorable, but narrower and more methodologically fragile than the pooled summary statistics alone suggest.",
+      "The most clinically important outcome is AF recurrence.",
+      "On this endpoint, the evidence is favorable.",
+      "My assessment is that the recurrence benefit is probably real.",
+      "Blood pressure reduction is plausible as both a mediator and a parallel therapeutic gain, but the evidence is less uniform than the AF recurrence signal.",
+      "For the target hypertensive AF population, **eGFR benefit is not convincingly established**.",
+      "Safety appears acceptable and broadly comparable between groups.",
+      "The local MetaSyn corpus supports a clear, evidence-based position: **adding renal denervation to pulmonary vein isolation probably improves 12-month rhythm outcomes in hypertensive patients with atrial fibrillation, and it does so without a convincing increase in procedural complications**.",
+      "Review-level evidence retrieved from the same corpus repeatedly reinforces this direction of effect.",
+      "My concrete judgment is that adjunctive RDN should be regarded as a **promising, evidence-supported but not yet universally settled adjunct** for hypertensive AF patients undergoing PVI, strongest for paroxysmal AF with uncontrolled or poorly controlled hypertension.",
+      "If I were weighing the evidence for a meta-analysis conclusion, I would conclude that the recurrence benefit is credible, the safety profile is acceptable, and the certainty is moderate at best because the clean primary evidence base remains smaller than the pooled literature implies."
+    ]
+  }
+}

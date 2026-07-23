@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22795,
+    "output_tokens": 815,
+    "total_tokens": 23610
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.7491,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3717,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, evidence synthesis, included studies, and bottom-line sections, but it lacks a formal abstract, introduction, methods, results, discussion, conclusion, references, and detailed meta-analysis procedures such as search strategy, data extraction, quality assessment, and quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult, medication-free MDD patients compared with healthy controls",
+      "whole-brain cortical thickness measured using a vertex-based method",
+      "effect coordinates of significant clusters in MNI or Talairach space available"
+    ],
+    "exclusion_criteria": [
+      "age outside range or unclear non-adult focus",
+      "ROI/parcellation rather than whole-brain vertex-based cortical-thickness comparison",
+      "mixed or medicated samples / not clearly medication-free",
+      "non-primary-study or wrong study type",
+      "non-cortical-thickness structural methods only (eg VBM/volume)"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across those near-eligible studies, findings were heterogeneous: some reported cortical thinning, especially in orbitofrontal or prefrontal regions (for example candidates 001 and 009), whereas others reported regional cortical thickening, particularly in orbitofrontal, frontal, parietal, insular, or cingulate areas (for example candidates 002, 004, 005, 023, 031, 144).",
+      "The near-eligible abstracts also suggest several possible sources of between-study variation:",
+      "However, that narrative cannot be treated as the formal included evidence base for this review, because the coordinate-reporting inclusion criterion cannot be verified from the abstracts provided.",
+      "None were included.",
+      "Using only the fixed candidate pool and only the supplied title/abstract information, there are **no confirmably eligible primary studies** for inclusion in the final evidence set.",
+      "The pool still indicates a mixed pre-2018 literature in medication-free MDD, with inconsistent direction of cortical-thickness differences and likely moderation by illness stage and clinical features, but that remains contextual rather than formally includable evidence under your rules."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 392,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8493,
+    "output_tokens": 682,
+    "total_tokens": 9175
+  },
+  "metrics": {
+    "retrieval_recall": 0.14285714285714285,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4609,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4462,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized around screening results and eligibility rationale, but it lacks most standard systematic review sections such as Abstract, Introduction, full Methods, Results, Discussion, Conclusion, References, detailed search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "use of **large language models**;",
+      "extraction/synthesis of **causal evidence**;",
+      "across **diverse study designs**, specifically including **observational studies, Mendelian randomization, and randomized controlled trials**;",
+      "focused on **salt intake** and **blood pressure/cardiovascular outcomes** as the case study."
+    ],
+    "exclusion_criteria": [
+      "**Salt / sodium and cardiovascular outcome studies without LLM evidence-triangulation methods**",
+      "**LLM / evidence-synthesis methodology studies without the salt triangulation case study**",
+      "**Reviews, protocols, guidance, editorials, or other non-eligible article types**",
+      "Several candidates are explicitly reviews, protocols, commentaries, or guidance papers and are excluded under your instruction not to treat source reviews, other reviews, protocols, editorials, or conference-like non-primary pieces as eligible."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied 200-candidate pool and screening titles/abstracts against the stated review target, I found **no eligible primary-study article**.",
+      "Because no candidate met the full criteria, no evidence synthesis of included primary studies can be performed from this pool without inventing or importing articles beyond the provided list, which I did not do.",
+      "This means the fixed pool is insufficient to answer the review question as posed.",
+      "**None were included.**"
+    ]
+  }
+}

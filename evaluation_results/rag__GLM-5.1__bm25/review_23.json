@@ -1,0 +1,48 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14190,
+    "output_tokens": 830,
+    "total_tokens": 15020
+  },
+  "metrics": {
+    "retrieval_recall": 0.7777777777777778,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.7777777777777778,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7444,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear evidence synthesis and lists included studies with some eligibility criteria, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, formal Results, Discussion, Conclusion, full References, search strategy, screening process, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) or randomized crossover studies investigating time-restricted eating (TRE) combined with exercise versus an exercise-matched control with an unrestricted eating window in healthy adults",
+      "Studies had to report body composition outcomes (fat mass [FM], body fat percentage [BF%], or fat-free mass [FFM]), be at least 4 weeks in duration, and be published between October 2016 and February 2023."
+    ],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The findings regarding fat loss were mixed, potentially influenced by whether energy intake was intentionally matched or ad libitum.",
+      "Across all included studies, TRE combined with exercise consistently preserved or allowed for increases in FFM (or lean mass) similarly to the exercise-matched unrestricted eating controls.",
+      "The synthesized evidence suggests that TRE (16:8 protocol) combined with aerobic, resistance, or concurrent exercise does not compromise FFM compared to exercise with an unrestricted diet.",
+      "While some studies suggest TRE can enhance reductions in FM and BF%\u2014particularly when it leads to a spontaneous energy deficit\u2014other studies, especially those controlling for energy intake (isocaloric or hypocaloric conditions), show no additive fat loss benefit over exercise alone."
+    ]
+  }
+}

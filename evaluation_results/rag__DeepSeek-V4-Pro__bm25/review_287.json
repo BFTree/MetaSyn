@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 287,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 8633,
+    "output_tokens": 1300,
+    "total_tokens": 9933
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 0.25,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.4,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.25,
+    "post_retrieval_loss": 0.75,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4259,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized into labeled sections and follows a logical flow from objective to screening results, evidence summary, interpretation, and conclusion, but it lacks a full systematic-review structure such as a formal abstract, methods, results/discussion separation, references, and detailed meta-analysis elements like search strategy, data extraction, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "duplicates",
+      "reviews",
+      "protocols",
+      "editorials",
+      "conference abstracts",
+      "non-clinical studies",
+      "studies not reporting gingival phenotype",
+      "those published outside the eligible window (i.e., before 2010 or after the search end date of 30 September 2023)"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The presence of a thin periodontal biotype represented a risk factor for additional bone loss.",
+      "Thus, in this population of periodontitis\u2011susceptible patients, a thin gingival phenotype was associated with greater marginal bone loss around implants, while regular supportive therapy and good plaque control mitigated bone loss.",
+      "The single eligible study directly addresses the research question by demonstrating that thin periodontal biotype is a risk factor for increased marginal bone loss.",
+      "Therefore, while the available evidence suggests a detrimental effect of a thin phenotype on peri\u2011implant bone stability, the overall body of evidence is extremely limited.",
+      "It indicates that a thin periodontal biotype is associated with greater marginal bone loss around dental implants in patients with a history of periodontitis.",
+      "The evidence is insufficient to assess the influence of gingival phenotype on implant survival or peri\u2011implantitis incidence."
+    ]
+  }
+}

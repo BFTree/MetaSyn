@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 254,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18469,
+    "output_tokens": 983,
+    "total_tokens": 19452
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.5555555555555556,
+    "inclusion_consistency": 0.7123,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.327,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening overview, exclusion rationale, and brief synthesis of excluded studies, but it lacks standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, and detailed PRISMA-style elements like search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "medication-free patients with major depressive disorder (MDD) compared to healthy controls (HCs)",
+      "investigating cortical thickness alterations measured by MRI using a vertex-based whole-brain method that reports effect coordinates in MNI or Talairach space",
+      "investigating medication-free/naive MDD patients versus HCs",
+      "examining adults",
+      "utilizing surface-based/vertex-based methods (e.g., FreeSurfer) to measure cortical thickness",
+      "the requirement to report effect coordinates",
+      "the availability of these stereotactic coordinates for coordinate-based meta-analytic synthesis"
+    ],
+    "exclusion_criteria": [
+      "reviewing ROI-based analyses (e.g., Candidate 001 focused on \"mean cortical thickness of the paralimbic cortex\")",
+      "focusing on adolescent populations (e.g., Candidates 003, 024, 059)",
+      "not verifying the medication-free status of the sample"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Although no candidates met all inclusion criteria for the final meta-analysis (specifically the requirement to report effect coordinates), several primary studies in the pool investigated cortical thickness in medication-free or medication-naive MDD patients versus HCs using vertex-based or surface-based morphometry (SBM).",
+      "Multiple studies reported regional cortical thickening in medication-free MDD.",
+      "Candidate 030 (`Corpus ID: 98306`) identified significant thinning in the left lateral orbitofrontal cortex in drug-naive, first-episode MDD patients, which inversely correlated with serum cortisol levels.",
+      "Candidate 055 (`Corpus ID: 93951`) found no significant overall cortical thickness differences among first-episode drug-naive MDD patients and HCs, though a melancholic depression subgroup showed larger thickness in the left postcentral gyrus and right precuneus compared to HCs.",
+      "None of the candidates were eligible for inclusion based on the complete screening criteria."
+    ]
+  }
+}

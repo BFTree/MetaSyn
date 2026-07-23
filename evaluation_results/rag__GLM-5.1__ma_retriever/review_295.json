@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18296,
+    "output_tokens": 931,
+    "total_tokens": 19227
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7332,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4532,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear screening summary, synthesis of findings, conclusion, and included studies list, but it lacks standard systematic review sections such as abstract, introduction, detailed methods, formal results, discussion, references, explicit search strategy, data extraction procedures, risk-of-bias or quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized controlled trials (RCTs) comparing oral sucrose or glucose to breast milk/expressed breast milk (BM/EBM) for pain control in **preterm infants** (gestational age < 37 weeks) undergoing heel lancing or venipuncture."
+    ],
+    "exclusion_criteria": [
+      "Numerous candidates were systematic reviews, meta-analyses, observational studies, quality improvement projects, or study protocols, which are excluded by the design criteria.",
+      "Several RCTs investigated term newborns (e.g., Candidates 003, 008, 009, 014, 016, 022) or populations where term and preterm data were combined or likely mixed without separate analysis (e.g., Candidate 007), thus failing the strict preterm population requirement.",
+      "Many studies compared sweet solutions to placebo, water, positioning, or skin-to-skin care rather than to BM/EBM (e.g., Candidate 001 compared sucrose/glucose to sterile water; Candidate 009 compared glucose spray to placebo).",
+      "Others evaluated combination interventions (e.g., glucose plus holding) or lacked a BM/EBM arm as specified in the exclusion list.",
+      "Studies focusing on RSV immunization, orogastric tube insertion, retinopathy screening, or surfactant administration were excluded as they did not involve heel lancing or venipuncture."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based on the eligible evidence from the candidate pool, sucrose (24%) is **not more effective** than breast milk or expressed breast milk for pain control in preterm infants undergoing heel lancing.",
+      "Both included RCTs found no significant difference in pain scores (PIPP/PIPP-R) between sucrose and breast milk, with one study explicitly establishing the non-inferiority of expressed breast milk compared to sucrose.",
+      "No eligible RCTs comparing **glucose** specifically to breast milk in a strictly preterm population were identified in the provided pool (a 1997 study comparing glucose to breast milk was excluded due to ambiguous population terminology likely including term infants)."
+    ]
+  }
+}

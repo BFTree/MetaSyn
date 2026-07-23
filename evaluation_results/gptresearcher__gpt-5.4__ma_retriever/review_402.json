@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 402,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26397,
+    "output_tokens": 1039,
+    "total_tokens": 27436
+  },
+  "metrics": {
+    "retrieval_recall": 0.875,
+    "retrieval_precision": 0.13725490196078433,
+    "inclusion_recall": 0.375,
+    "inclusion_precision": 0.6,
+    "inclusion_f1": 0.4615384615384615,
+    "screening_accuracy": 0.8823529411764706,
+    "conditional_retention": 0.42857142857142855,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.6322,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5884,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Screening/Study Selection, Results, Meta-analysis Feasibility, Limitations, Conclusion, and References, and it includes search queries, eligibility criteria, screening decisions, and synthesis rationale, but it lacks a formal risk-of-bias/quality assessment and full PRISMA-style details needed for an excellent score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "RCTs or observational studies.",
+      "Gut/tissue-derived microbiome samples.",
+      "Case-control or cohort studies.",
+      "Children under 5 years.",
+      "LMIC settings.",
+      "16S rRNA sequencing using Illumina platforms covering V4 or V3\u2013V4 regions.",
+      "Comparison involving stunted and non-stunted children."
+    ],
+    "exclusion_criteria": [
+      "No publicly accessible data/metadata.",
+      "Antibiotic administration within 3 months before sample collection.",
+      "Studies not directly addressing stunting status comparison, unless used as contextual evidence.",
+      "Studies where required sequencing/platform eligibility could not be confidently verified from the available local-corpus information."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a clear, evidence-based conclusion: **childhood stunting in LMICs is associated more consistently with specific microbiome dysbiosis than with generalized diversity loss**.",
+      "The most reproducible signature is **lower *Prevotella* and other potentially beneficial taxa, alongside enrichment of inflammatory or pathogen-linked organisms**.",
+      "The evidence also shows meaningful integration across research branches: dietary insufficiency and lower fiber intake align with lower *Prevotella*; dysbiosis aligns with predicted inflammatory pathways; and pathogen burden aligns with lower IGF-1 and worse subsequent linear growth.",
+      "Instead, the evidence better fits a **microbiome\u2013pathogen\u2013EED\u2013growth axis**, in which low-fiber diets, enteropathogen exposure, mucosal dysfunction, and inflammatory microbiota reinforce one another.",
+      "For future trials, the most rational targets are **combined interventions**: pathogen reduction/WASH-EED strategies plus nutrition designed to support **fiber-responsive taxa such as *Prevotella*** and beneficial commensals, rather than probiotics or food supplementation alone."
+    ]
+  }
+}

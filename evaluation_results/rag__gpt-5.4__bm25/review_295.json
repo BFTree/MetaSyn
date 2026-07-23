@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 295,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10153,
+    "output_tokens": 1592,
+    "total_tokens": 11745
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.4325,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3369,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized with screening criteria, included studies, exclusions, synthesis, and conclusion, but it lacks several core systematic review sections such as abstract, introduction, full methods, discussion, references, detailed search strategy, data extraction, quality assessment, and formal meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "**Design:** randomized controlled trial",
+      "**Population:** **preterm infants** (<37 weeks\u2019 gestation)",
+      "**Intervention:** oral **sucrose/glucose/dextrose**",
+      "**Comparator:** **breast milk or expressed breast milk**",
+      "**Procedure:** **heel lancing or venipuncture**",
+      "**Outcomes:** pain/crying/physiologic outcomes"
+    ],
+    "exclusion_criteria": [
+      "**Exclude:** reviews, non-RCTs, term or mixed populations without separate preterm analysis, or trials without BM/EBM comparator"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "authors conclude breast milk was not inferior to 24% sucrose for analgesia during heel lance.",
+      "mean PIPP scores were similar (6.1 vs 5.5), with no significant difference.",
+      "Both suggest that breast milk/expressed breast milk provides analgesia comparable to oral sucrose for heel lance in preterm infants, with no clear pain-score advantage for sucrose."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 358,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5941,
+    "output_tokens": 2501,
+    "total_tokens": 8442
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.5714285714285714,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.7272727272727273,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 0.5714285714285714,
+    "post_retrieval_loss": 0.42857142857142855,
+    "inclusion_consistency": 0.8596,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6612,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is organized into clear screening and synthesis subsections, but it lacks major required systematic review sections such as a formal abstract, introduction, detailed methods, PRISMA search strategy, quality assessment, quantitative synthesis/meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original in vivo or brain-tissue studies in rodents, non-human primates, or humans that used racemic ketamine and reported dopamine levels in brain under ketamine versus baseline/control, with ketamine doses meeting the review\u2019s limits."
+    ],
+    "exclusion_criteria": [
+      "studies at anaesthetic rodent doses, studies reporting only dopamine metabolites/turnover or other dopaminergic markers rather than dopamine levels, reviews/protocols, in vitro work, and studies where the abstract does not support eligibility.",
+      "were reviews, meta-analyses, protocols, or non-primary reports,",
+      "studied outcomes other than dopamine levels,",
+      "used S-ketamine/esketamine or other non-racemic formulations,",
+      "focused on imaging/connectivity/behavior without dopamine measurement,",
+      "or reported dopamine metabolites/turnover/receptor or transporter outcomes rather than dopamine levels themselves."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "A small subset of candidates appears eligible from title/abstract screening.",
+      "Across the included studies, the signal is fairly consistent that **sub-anaesthetic racemic ketamine can increase brain dopamine in some regions**, especially the **medial prefrontal cortex** and in some cases **striatum/motor cortex** or broader region-specific brain tissue assays.",
+      "**Acute single-dose exposure** in rodents often increased extracellular dopamine, especially in **medial prefrontal cortex**.",
+      "**Repeated ketamine exposure** may alter the baseline state and blunt the acute dopamine-release response while sometimes raising basal dopamine.",
+      "Effects appear **region-specific**, not a global dopamine elevation across all brain regions.",
+      "Some studies also suggest interaction with psychostimulants, with higher striatal or cortical dopamine under combined exposure.",
+      "From the eligible abstracts, the evidence supports the view that **sub-anaesthetic racemic ketamine can acutely elevate dopamine signaling in rodent brain**, most clearly in the **prefrontal cortex**.",
+      "There is also limited evidence for **region-specific increases in tissue dopamine** after acute or chronic treatment and for **interaction effects** with amphetamine that track with increased striatal and cortical dopamine.",
+      "Repeated exposure may produce adaptation: one study reported **higher basal dopamine but attenuated acute ketamine-induced dopamine release** after repeated dosing.",
+      "The included evidence is therefore predominantly **rodent** and mainly **acute/preclinical**."
+    ]
+  }
+}

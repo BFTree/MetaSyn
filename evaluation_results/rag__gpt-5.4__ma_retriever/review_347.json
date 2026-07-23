@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 347,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 10773,
+    "output_tokens": 1326,
+    "total_tokens": 12099
+  },
+  "metrics": {
+    "retrieval_recall": 0.88,
+    "retrieval_precision": 0.11,
+    "inclusion_recall": 0.6,
+    "inclusion_precision": 0.9375,
+    "inclusion_f1": 0.7317073170731707,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.6818181818181818,
+    "post_retrieval_loss": 0.28,
+    "inclusion_consistency": 0.5342,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6381,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is reasonably organized and includes eligibility criteria, a narrative evidence summary, included studies, and exclusions, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, detailed search strategy, screening flow, quality assessment, and meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "include primary studies in bipolar disorder that measure intracellular Ca2+ concentration or calcium signaling/flux/mobilization in cells, including baseline or stimulated responses."
+    ],
+    "exclusion_criteria": [
+      "Exclude reviews, treatment trials without eligible calcium measurements, studies of blood/body-fluid analytes rather than intracellular signaling, studies focused only on calcium-related molecules/channels/proteins without intracellular Ca2+ outcomes, and animal models.",
+      "Reviews/systematic reviews/editorials: 008, 023, 030, 031, 033, 041, 049, 071, 080, 081, 132, 139, 184, 188, 200.",
+      "Not primary bipolar-vs-control calcium-signaling evidence or focused on treatment/mechanism in non-bipolar samples only: 017, 019, 025, 027.",
+      "Calcium-channel/protein/molecular studies without eligible intracellular Ca2+ outcome as the main measured exposure-outcome comparison for the review question: 095 and others of that type.",
+      "Animal studies: 107, 129, 192.",
+      "Clearly ineligible non-calcium biomarker studies: many others."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Across these abstracts, the most consistent signal is elevated basal intracellular Ca2+ and/or enhanced stimulated Ca2+ responses in bipolar disorder, especially in platelets and in some lymphocyte/lymphoblastoid preparations.",
+      "Some abstracts suggest state dependence, with abnormalities more evident in acute mania or bipolar depression and less evident in euthymia, but that pattern is not uniform because at least one remission study found no difference and some later cellular models suggest trait-like abnormalities.",
+      "Later work in transformed lymphoblastoid cells, B lymphoblasts, olfactory neurons, fibroblasts, and iPSC-derived neurons extends the phenotype beyond platelets, generally toward altered intracellular calcium handling or calcium-linked hyperexcitability in bipolar disorder.",
+      "However, the abstracts alone do not provide enough uniform detail for quantitative synthesis by cell type, mood state, or stimulus.",
+      "A concise evidence judgment from this candidate pool is: the available primary-study abstracts support altered intracellular calcium homeostasis in bipolar disorder, most consistently as elevated basal platelet/lymphocyte intracellular Ca2+ and enhanced agonist-evoked responses.",
+      "Evidence for mood-state differences is suggestive but mixed.",
+      "Evidence for specificity relative to unipolar depression and schizophrenia is present in some studies, especially serotonin-stimulated platelet work, but is not completely uniform across all abstracts."
+    ]
+  }
+}

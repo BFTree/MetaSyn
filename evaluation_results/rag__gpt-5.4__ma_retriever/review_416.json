@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5275,
+    "output_tokens": 1258,
+    "total_tokens": 6533
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.14285714285714285,
+    "post_retrieval_loss": 0.8571428571428571,
+    "inclusion_consistency": 0.5069,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5375,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key review elements such as the review question, screening approach, eligibility considerations, included study, findings, limitations, conclusion, and exclusions, but it lacks a formal abstract, introduction, detailed methods/search strategy, PRISMA-style flow, quality assessment, synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "maternal population with **overweight/obesity**",
+      "**randomized** preconception or antenatal lifestyle intervention",
+      "**offspring** follow-up with relevant cardiovascular outcomes",
+      "original human quantitative study",
+      "and the stated **search window (2023-01-01 to 2023-08-31)**."
+    ],
+    "exclusion_criteria": [
+      "older pre-2023 reports of offspring cardiovascular follow-up after maternal obesity lifestyle RCTs",
+      "protocols, reviews, commentaries",
+      "mixed-BMI pregnancy exercise trials not clearly restricted to women with overweight/obesity",
+      "studies focused on maternal or fetal outcomes rather than offspring follow-up cardiovascular outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Only **one** candidate met the full criteria **and** fell within the stated search period.",
+      "This pattern suggests a possible beneficial effect of **preconception lifestyle intervention** on some markers of offspring cardiac structure/function, but not across all measured cardiovascular endpoints.",
+      "Based on the one eligible 2023 study, there is **limited but suggestive evidence** that a **preconception lifestyle intervention in women with obesity** may improve some aspects of offspring cardiac phenotype by school age.",
+      "The evidence base in this search window is very narrow:",
+      "evidence is insufficient for strong conclusions about prevention of offspring cardiac remodelling in general",
+      "Within the supplied candidate pool and the stated **2023-01-01 to 2023-08-31** search window, the evidence is **very limited**.",
+      "One eligible follow-up study suggests that a **preconception lifestyle intervention** in women with obesity **may modestly improve offspring cardiac structure/function**, particularly septal shape/thickening and ejection fraction, by around age 7 years.",
+      "However, the evidence is too sparse and fragile to support a firm conclusion that such interventions reliably prevent or reduce offspring cardiac remodelling or improve broader cardiovascular health parameters."
+    ]
+  }
+}

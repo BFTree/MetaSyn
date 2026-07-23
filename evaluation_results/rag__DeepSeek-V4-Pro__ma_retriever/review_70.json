@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13459,
+    "output_tokens": 1202,
+    "total_tokens": 14661
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.477,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7095,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.8,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with background/objective, screening process, study characteristics, outcome-based synthesis, discussion, conclusion, and included studies, but it lacks a formal abstract, detailed search strategy, data extraction methods, quality/risk-of-bias assessment, quantitative meta-analysis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only randomized controlled trials (RCTs) or controlled clinical trials (CCTs) were eligible.",
+      "adults (BMI \u226540 kg/m\u00b2 or \u226535 kg/m\u00b2 with obesity-related comorbidities) receiving any type of bariatric surgery",
+      "probiotics (or synbiotics) at any dose/duration",
+      "RCT/CCT design",
+      "placebo, digestive enzymes, usual care, or no intervention"
+    ],
+    "exclusion_criteria": [
+      "non\u2011bariatric gastrointestinal procedures",
+      "comparing probiotics with interventions other than controls",
+      "lacking a primary study design (e.g., reviews, protocols, editorials, meta\u2011analyses, animal studies, studies without bariatric surgery or probiotics)",
+      "insufficient information"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The available evidence suggests that probiotics may confer small improvements in triglycerides, AST, vitamin B12, and early weight loss, with an acceptable safety profile.",
+      "However, the heterogeneity of interventions and outcomes, as well as the lack of dietary intake data, preclude strong recommendations.",
+      "Larger, well\u2011standardized trials with longer follow\u2011up are warranted to confirm these potential benefits.",
+      "Most studies report modest benefits in triglycerides, AST, and vitamin B12, while effects on weight loss are inconsistent and sometimes transient.",
+      "The evidence base remains limited by small sample sizes and short follow\u2011up in many trials, and the overall certainty is moderate to low."
+    ]
+  }
+}

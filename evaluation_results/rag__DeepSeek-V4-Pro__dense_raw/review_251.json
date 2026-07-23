@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12295,
+    "output_tokens": 896,
+    "total_tokens": 13191
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.16666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.2857142857142857,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6319,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.9102,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key systematic review elements such as the research question, eligibility criteria, screening outcome, included study details, and evidence synthesis, but it lacks several full standard sections such as Abstract, Introduction, detailed Methods, quality assessment, comprehensive Results/Discussion, Conclusion, and References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective design",
+      "adult cancer patients with a CVC (implantable port or external catheter) and a defined insertion site",
+      "some or all patients received heparin or warfarin thromboprophylaxis at a clearly specified dose"
+    ],
+    "exclusion_criteria": [
+      "not published in English between 1980 and 2005"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "\u201cThere was no significant difference in the incidence of catheter thrombosis or venous thrombosis and no significant variation in catheter survival between the study and control groups.\u201d",
+      "minidose warfarin did not reduce the risk of catheter\u2011related thrombosis compared with no prophylaxis.",
+      "The overall evidence base is therefore very limited; a single, small trial with negative efficacy results and absent bleeding data prevents any firm conclusions about the effectiveness or harm of minidose warfarin (or LMWH) for thromboprophylaxis in cancer patients with indwelling central venous catheters."
+    ]
+  }
+}

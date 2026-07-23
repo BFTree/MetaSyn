@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11709,
+    "output_tokens": 1104,
+    "total_tokens": 12813
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.09,
+    "inclusion_recall": 0.5555555555555556,
+    "inclusion_precision": 0.9090909090909091,
+    "inclusion_f1": 0.6896551724137931,
+    "screening_accuracy": 0.955,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4444444444444444,
+    "inclusion_consistency": 0.6823,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7827,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with an objective, screening outcome, evidence summary, limitations, conclusions, and included studies, but it lacks a formal abstract, introduction, detailed methods, quality assessment, data extraction process, and explicit synthesis/meta-analysis methodology."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "All included works report original empirical data on sexual misconduct in dental environments (clinical practice, dental schools, or training contexts) and were published between January\u202f2010 and October\u202f2024."
+    ],
+    "exclusion_criteria": [
+      "articles published before 2010, without empirical data, or mixing dental professionals indistinguishably with other health occupations were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Sexual misconduct is a pervasive, under-addressed problem across dental clinical practice, education, and specialty training.",
+      "Dental hygienists, female students, and women in surgical specialties report particularly high rates of harassment and assault.",
+      "The evidence points to a pressing need for rigorous policy implementation, mandatory education, and system-level interventions, though studies evaluating the effectiveness of such measures are absent from this candidate set.",
+      "No studies in the candidate set directly evaluated the effectiveness of a specific intervention; all recommendations are based on cross-sectional prevalence data.",
+      "The candidate pool did not contain intervention studies, leaving a gap in evidence about what works to reduce sexual misconduct in dentistry."
+    ]
+  }
+}

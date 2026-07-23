@@ -1,0 +1,49 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 5243,
+    "output_tokens": 801,
+    "total_tokens": 6044
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.02,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 1.0,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.0,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized as a narrative evidence summary with included articles listed, but it lacks most formal systematic review sections and PRISMA-style elements such as Abstract, Introduction, Methods, search strategy, screening criteria, data extraction, quality assessment, synthesis methods, Discussion/Conclusion, and full References."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Based on the included primary studies\u2014comprising case reports and a small case series\u2014the scientific literature on HFS is sparse and primarily descriptive, drawing initial validation from patient internet forums before emerging in clinical reporting.",
+      "Current evidence points to an initial traumatic event as the primary trigger for HFS.",
+      "HFS remains without universally recognized diagnostic criteria from professional urological organizations, which has historically led to it being overlooked or misdiagnosed by clinicians.",
+      "There are no standardized treatment guidelines for HFS.",
+      "The included evidence describes mixed outcomes with various interventions:",
+      "Initial clinical observations indicate that daily or on-demand PDE5 inhibitors used alone were not effective in alleviating the syndrome's core symptoms.",
+      "One case report demonstrated significant success using a combination of low-intensity shockwave therapy (LiSWT), PDE5 inhibitors, and physical therapy.",
+      "All studies unanimously highlight the urgent need for more rigorous, evidence-based research to validate diagnostic criteria, elucidate pathophysiological mechanisms, and test the efficacy of these emerging therapeutic options."
+    ]
+  }
+}

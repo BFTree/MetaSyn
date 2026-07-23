@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18789,
+    "output_tokens": 1196,
+    "total_tokens": 19985
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.8787878787878788,
+    "inclusion_precision": 0.6444444444444445,
+    "inclusion_f1": 0.7435897435897436,
+    "screening_accuracy": 0.9,
+    "conditional_retention": 0.8787878787878788,
+    "post_retrieval_loss": 0.12121212121212122,
+    "inclusion_consistency": 0.5009,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.1547,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is thematically organized and includes an overview of findings plus a list of included studies, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, detailed search strategy, explicit inclusion/exclusion criteria, screening flow, quality assessment, and synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized, double-blind, placebo-controlled discontinuation trials in patients with Major Depressive Disorder (MDD) who achieved remission and were randomized to either continue their antidepressant or switch to placebo",
+      "\"enriched\" discontinuation designs without such washouts"
+    ],
+    "exclusion_criteria": [
+      "designs interposing a drug-free washout period prior to randomization (prophylactic design)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The eligible studies consistently demonstrate that continuing antidepressant medication after achieving remission significantly reduces the risk of relapse and recurrence compared to switching to placebo (discontinuation).",
+      "This protective effect is robust across different antidepressant classes, dosing schedules, treatment durations, and patient age groups.",
+      "The evidence spans a wide variety of pharmacological classes, all showing efficacy in relapse prevention:",
+      "The standard practice in these discontinuation trials is to maintain the dose used to achieve remission.",
+      "It found that vortioxetine 5 mg, 10 mg, and 20 mg were all effective compared to placebo, suggesting some flexibility in maintenance dosing without loss of efficacy.",
+      "The PREVENT study (Candidates 021, 037, 038) demonstrated that venlafaxine ER significantly prevented recurrence over both 1-year and 2-year maintenance phases, with recurrence rates decreasing dramatically in the second year for those on active treatment.",
+      "Studies specifically targeting older populations (\u001565 years) confirmed that citalopram (Candidate 094) and escitalopram (Candidate 103) are effective and well-tolerated for relapse prevention in the elderly, with relapse rates significantly lower than placebo.",
+      "Fluoxetine (Candidates 179, 186) was shown to significantly delay and reduce relapse in pediatric populations compared to placebo.",
+      "Maintenance therapy with venlafaxine ER not only prevented clinical recurrence but also maintained psychosocial functioning better than placebo (Candidate 075)."
+    ]
+  }
+}

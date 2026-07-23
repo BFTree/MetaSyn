@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 23,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18500,
+    "output_tokens": 1025,
+    "total_tokens": 19525
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.045,
+    "inclusion_recall": 0.7777777777777778,
+    "inclusion_precision": 0.7777777777777778,
+    "inclusion_f1": 0.7777777777777778,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.7777777777777778,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": 0.0,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5712,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear target, screening summary, synthesized findings, conclusion, and included study list, but it lacks several full systematic-review sections and PRISMA-style details such as a formal abstract, introduction, methods, references, database search strategy, data extraction procedures, quality/risk-of-bias assessment, and explicit meta-analytic synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [],
+    "exclusion_criteria": [
+      "published outside the search date window (2016-10-01 to 2023-02-28)",
+      "systematic reviews, meta-analyses, protocols, case reports, or qualitative studies",
+      "not randomized controlled trials or randomized crossover studies",
+      "interventions other than TRE (e.g., alternate-day fasting, Ramadan fasting, or intermittent energy restriction without a defined daily 4\u201312h feeding window)",
+      "lacking an exercise-matched control group with an unrestricted eating window",
+      "short-term (<4 weeks)",
+      "not reporting the required body composition outcomes (FM, BF%, FFM) in the abstract"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Most studies reported favorable reductions in FM or BF% for the TRE + exercise groups compared to the unrestricted eating + exercise controls.",
+      "A consistent finding across the eligible studies was the preservation or maintenance of FFM (or lean mass) when TRE was combined with exercise, particularly resistance training.",
+      "The synthesized evidence suggests that combining TRE (4\u201312h feeding windows) with exercise is an effective strategy for reducing FM and BF% compared to exercising with an unrestricted eating window, while simultaneously preserving FFM.",
+      "The benefits on FM are most pronounced in overweight/obese populations or when the control group does not spontaneously restrict calories.",
+      "In trained athletes or when controls are calorie-matched, FM reductions are often similar between groups, but TRE consistently does not compromise FFM retention compared to unrestricted eating when paired with resistance or concurrent training."
+    ]
+  }
+}

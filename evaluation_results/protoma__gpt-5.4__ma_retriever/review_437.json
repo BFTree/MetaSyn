@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 437,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 29714,
+    "output_tokens": 882,
+    "total_tokens": 30596
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.11320754716981132,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.9622641509433962,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7041,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6237,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most required systematic review/meta-analysis sections and key PRISMA-style elements such as search strategy, eligibility criteria, screening flow, synthesis methods, study characteristics, and risk-of-bias assessment, but it falls short of excellent because the main findings contain placeholders, statistical results are incomplete, headings are duplicated, and references are not fully provided."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies evaluating clinicians (dermatologists or non-dermatologist medical professionals) diagnosing human skin lesions for skin cancer detection or classification.",
+      "Studies comparing clinician diagnostic performance with deep learning-based AI assistance versus the same or comparable clinicians performing the diagnostic task without AI assistance.",
+      "Studies reporting diagnostic accuracy outcomes for skin cancer diagnosis, including sensitivity and/or specificity, or sufficient data to derive these measures.",
+      "Original empirical studies with comparative diagnostic study designs (for example, reader studies, diagnostic accuracy studies, randomized or non-randomized comparative studies)."
+    ],
+    "exclusion_criteria": [
+      "Studies that assess standalone AI performance only, without a clinician-with-AI versus clinician-without-AI comparison.",
+      "Studies not focused on skin cancer diagnosis from skin lesion assessment in humans, including non-human, preclinical, or non-cutaneous cancer studies.",
+      "Studies evaluating non-deep-learning decision support tools only, or AI used for purposes other than diagnostic assistance (for example triage, prognosis, treatment selection, or workflow only).",
+      "Reviews, editorials, letters, case reports, conference abstracts without full data, study protocols, and duplicate publications."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 4 studies, deep learning\u2013based AI assistance was associated with better clinician diagnostic accuracy for skin cancer than unaided assessment, indicating a favorable mean difference overall.",
+      "Clinically, this suggests AI may help clinicians identify malignant lesions more accurately and could support earlier detection while potentially reducing missed cancers, particularly in settings where dermatology expertise is limited.",
+      "On this basis, AI should be considered as an adjunct to clinician judgment rather than a replacement for independent clinical assessment.",
+      "However, this conclusion should be interpreted cautiously because the evidence comes from only four studies, and differences in clinician expertise, AI systems, case mix, and study settings limit certainty about how consistently these gains would translate to routine practice."
+    ]
+  }
+}

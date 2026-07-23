@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 447,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14292,
+    "output_tokens": 958,
+    "total_tokens": 15250
+  },
+  "metrics": {
+    "retrieval_recall": 0.8571428571428571,
+    "retrieval_precision": 0.06,
+    "inclusion_recall": 0.14285714285714285,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.16666666666666666,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.541,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5168,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes methods, screening results, evidence synthesis, discussion/gaps, eligibility criteria, and included studies, but it lacks a formal abstract, introduction, conclusion, full references, detailed search strategy, data extraction process, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be peer-reviewed primary empirical research",
+      "focus on breast, lung, or prostate cancer",
+      "employ a federated learning framework for machine-learning model training",
+      "incorporate a comparative evaluation against a centralised (single-centre or aggregated) baseline, either directly or through referenced literature",
+      "report quantitative, clinically relevant oncology outcomes (detection, diagnosis, prognosis, or treatment response)"
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, non-oncology studies, non-FL studies, and articles outside the cancer-type scope were excluded.",
+      "wrong publication year (after 2023)",
+      "absence of a federated learning component",
+      "lack of a centralised comparator",
+      "irrelevance to breast/lung/prostate cancer",
+      "non-empirical article type (systematic reviews, surveys, protocols)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Both demonstrate that FL can improve model generalisation over purely local training while maintaining data privacy.",
+      "Federated training significantly enhanced cross-site generalisation: lesion segmentation intersection\u2011over\u2011union doubled, and per\u2011lesion classification accuracy improved by 9.5\u201314.8 percentage points compared with models trained solely on single\u2011site data.",
+      "Intra\u2011site performance remained essentially unchanged, indicating that FL effectively broadens model robustness without sacrificing local accuracy.",
+      "Local models demonstrated predictive ability, but collaborative FL training further improved performance, bringing it on par with the best current approaches that rely on labour\u2011intensive expert annotations.",
+      "Across both studies, FL consistently improved model generalisation to unseen sites.",
+      "Neither study identified privacy breaches or performance penalties that would hinder clinical adoption.",
+      "The evidence base remains sparse.",
+      "Key limitations include the absence of prospective clinical validation, small numbers of collaborating sites, and narrow clinical tasks (segmentation/classification of MRI and prediction of a single chemotherapy response endpoint)."
+    ]
+  }
+}

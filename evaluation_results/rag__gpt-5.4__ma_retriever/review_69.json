@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 69,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11013,
+    "output_tokens": 1171,
+    "total_tokens": 12184
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.28571428571428575,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.6923,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4947,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is logically organized and includes screening criteria, evidence synthesis, findings, limitations, and a conclusion, but it lacks formal abstract, introduction, detailed search strategy, eligibility and data-extraction methods, quality assessment, statistical synthesis methods, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with obesity including substantial severe-obesity representation or clear eligibility compatible with severe obesity",
+      "online/remotely delivered group-based behavior-change intervention",
+      "weight management focus through diet and/or physical activity behavior change",
+      "reports evaluation outcomes on weight/behavior and, where available, acceptability/usability"
+    ],
+    "exclusion_criteria": [
+      "review, meta-analysis, protocol, development paper, survey, qualitative-only, implementation-only, or secondary analysis",
+      "not a primary evaluation study",
+      "not online/group-based",
+      "no obesity behavior-change intervention for weight management",
+      "postoperative bariatric populations or disease-specific populations outside the target focus",
+      "clearly wrong population (eg, overweight broadly, prediabetes, diabetes-only, postpartum, MS)",
+      "not adults with severe obesity or no reasonable basis from the abstract to treat the sample as a severe-obesity-relevant population"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "No candidate clearly states an exclusively BMI >=35 sample while also fully matching every other criterion.",
+      "The included studies are therefore **best-match inclusions at abstract stage**, and this uncertainty should be carried into the review as an important limitation.",
+      "The small evidence base suggests that **online group-based behavioral obesity interventions can produce modest clinically relevant weight loss over short-to-medium follow-up**, but the comparative advantage versus other remote formats or in-person care is inconsistent.",
+      "**Weight loss occurred in all intervention formats**, generally around 5% to 7% over 3 to 6 months in the stronger-performing arms.",
+      "Evidence supports **modest short-term weight reduction** with online group-based treatment.",
+      "Comparative effects are mixed: online group approaches may be better than no group add-on within digital treatment, similar to some other remote group modalities, but potentially worse than stronger in-person support for maintenance.",
+      "Remote group interventions were generally described as **feasible/acceptable**.",
+      "Using only this candidate pool and only title/abstract information, the evidence for **online, group-based behavior-change interventions in adults with severe obesity** is **limited and indirect**.",
+      "The best-matching studies suggest these interventions are feasible and can support modest weight loss and engagement, with the group component likely helpful.",
+      "A cautious review conclusion would be that **online group-based obesity interventions show promise, but severe-obesity-specific effectiveness and user-experience evidence remains sparse in this pool**."
+    ]
+  }
+}

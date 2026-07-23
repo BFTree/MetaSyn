@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 348,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12696,
+    "output_tokens": 1385,
+    "total_tokens": 14081
+  },
+  "metrics": {
+    "retrieval_recall": 0.39215686274509803,
+    "retrieval_precision": 0.1,
+    "inclusion_recall": 0.3137254901960784,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47761194029850745,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.0784313725490196,
+    "inclusion_consistency": 0.5712,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6413,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening criteria, synthesis, limitations, and included studies, but it lacks a full systematic-review structure with formal abstract/introduction/methods/results/discussion/conclusion/references, detailed search strategy, data extraction procedures, quality assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "longitudinal design",
+      "biomarker measured before MDD onset/relapse/recurrence",
+      "outcome is MDD onset/relapse/recurrence (preferably clinically diagnosed)",
+      "biomarker derived from leading biological models"
+    ],
+    "exclusion_criteria": [
+      "excluded reviews/protocols/non-primary articles",
+      "excluded mixed mood-disorder studies where MDD-specific eligibility was not clear",
+      "excluded studies beyond the review\u2019s search end date (2019.6.31)",
+      "excluded studies focused only on depressive symptoms rather than MDD diagnosis/course"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Most developed for HPA-axis biomarkers, especially cortisol-related measures.",
+      "Suggestive but heterogeneous: biomarkers often predict later onset/recurrence, but direction of effect differs by population, illness stage, and biomarker specification.",
+      "Neuroimaging evidence exists, mainly for structural markers in limbic/insula/amygdala regions, but is limited in quantity.",
+      "Immune, oxidative, neurotrophic, and neurotransmitter evidence is much thinner in this pool.",
+      "Stress-system dysregulation may precede both first onset and recurrence of MDD.",
+      "No single biomarker emerges as consistently predictive across all contexts.",
+      "The evidence appears domain-concentrated, with cortisol/HPA-axis dominating; other biological models are underrepresented."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 49,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 28523,
+    "output_tokens": 1146,
+    "total_tokens": 29669
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.1111111111111111,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.9259259259259259,
+    "conditional_retention": 0.3333333333333333,
+    "post_retrieval_loss": 0.6666666666666666,
+    "inclusion_consistency": 0.6644,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6702,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report includes most required sections and key meta-analysis elements such as search strategy, eligibility criteria, screening process, statistical synthesis approach, and risk-of-bias assessment, but organization is weakened by duplicated headings, an incomplete placeholder Results subsection, internal inconsistencies about whether meta-analysis was performed, and lack of a full References section."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational comparative studies (for example cross-sectional, case-control, or cohort designs) that report original human data.",
+      "Studies including adult male participants with a diagnosed anxiety disorder, specifically PTSD, OCD, social phobia/social anxiety disorder, or panic disorder, based on standardized diagnostic criteria or clinician diagnosis.",
+      "Studies that compare men with anxiety disorders to a general population sample or non-anxiety disorder control group, or otherwise provide prevalence estimates of erectile dysfunction in the anxiety-disorder group that allow prevalence comparison.",
+      "Studies reporting erectile dysfunction prevalence and/or erectile dysfunction severity using validated measures, including International Index of Erectile Function-5 (IIEF-5) scores or equivalent erectile function outcomes."
+    ],
+    "exclusion_criteria": [
+      "Studies not involving adult males, or studies in mixed-sex samples where male-specific erectile dysfunction data cannot be separated.",
+      "Studies of participants without a diagnosed anxiety disorder, or studies focused on other psychiatric conditions without separate data for PTSD, OCD, social anxiety disorder, or panic disorder.",
+      "Interventional studies, case reports, case series, reviews, editorials, conference abstracts, dissertations, or other publications without original comparative prevalence data.",
+      "Studies that do not report erectile dysfunction prevalence or severity outcomes, or that do not include a relevant comparison group or separable data for the anxiety-disorder population of interest."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "In this meta-analysis of 3 studies, adult men with anxiety disorders had a significantly higher prevalence of erectile dysfunction than men without anxiety disorders (RR 2.17, 95% CI 1.41 to 3.34).",
+      "Clinically, this suggests that erectile dysfunction is not a marginal comorbidity in PTSD, OCD, social anxiety disorder, and panic disorder, but a common and meaningful problem that can affect quality of life, relationships, and treatment engagement.",
+      "In practice, clinicians should routinely ask about sexual function when assessing and managing men with anxiety disorders, particularly when symptoms are persistent or treatment response is incomplete.",
+      "However, this conclusion should be interpreted cautiously because it is based on only 3 studies, likely with heterogeneity across anxiety diagnoses and methods of measuring erectile dysfunction, which limits precision and disorder-specific inference.",
+      "Across the three included studies, the available evidence suggests that adult men with anxiety disorders experience a higher prevalence of erectile dysfunction (ED) and, where symptom severity was assessed, poorer erectile function as reflected by lower IIEF-5 scores than men without anxiety disorders.",
+      "Although the direction of effect was reasonably consistent, the evidence base was small and did not permit highly precise conclusions about the magnitude of excess risk across diagnostic categories.",
+      "Overall, our review supports a meaningful association between anxiety disorders and ED in adult men, but the current evidence remains too limited to define its magnitude with precision across all anxiety diagnoses."
+    ]
+  }
+}

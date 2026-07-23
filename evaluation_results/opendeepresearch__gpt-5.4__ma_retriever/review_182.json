@@ -1,0 +1,61 @@
+{
+  "status": "succeeded",
+  "review_id": 182,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32279,
+    "output_tokens": 983,
+    "total_tokens": 33262
+  },
+  "metrics": {
+    "retrieval_recall": 0.6,
+    "retrieval_precision": 0.5217391304347826,
+    "inclusion_recall": 0.3,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.4444444444444444,
+    "screening_accuracy": 0.6956521739130435,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.3,
+    "inclusion_consistency": 0.8287,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6751,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes strong meta-analysis structure elements such as a review question, detailed search strategy, eligibility criteria, screening decisions, study characteristics, narrative synthesis, and meta-analysis feasibility assessment, but it lacks clearly labeled standard sections such as Abstract, Introduction, Conclusion, and a visible full References list, preventing a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized trials in human patients",
+      "Parallel-group and within-person randomization designs",
+      "Trials assessing interceptive extraction of primary canines on eruption of displaced permanent maxillary canines",
+      "primary canine extraction vs no interceptive treatment/delayed treatment, or",
+      "primary canine extraction alone vs primary canine plus primary first molar extraction",
+      "Studies of palatally displaced maxillary canines; studies enrolling labial/central displacement were also eligible if otherwise relevant"
+    ],
+    "exclusion_criteria": [
+      "Non-randomized studies",
+      "Retrospective cohorts without control groups",
+      "Case reports",
+      "Editorials",
+      "Systematic reviews",
+      "Meta-analyses"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn PubMed corpus contains randomized evidence suggesting that **interceptive extraction of the primary canine can improve the likelihood of eruption and/or improve eruptive position of displaced maxillary permanent canines**, particularly for palatally displaced canines in mixed dentition.",
+      "Overall, the corpus-supported conclusion is that **interceptive extraction of the primary canine probably increases successful eruption and/or improves eruptive position compared with no interceptive treatment in selected children with displaced maxillary canines**, but the certainty of that conclusion is limited by incomplete reporting and likely duplication across publications.",
+      "The study directly supports a beneficial effect of extraction on eruption.",
+      "This difference is clinically meaningful and directionally favors extraction.",
+      "Even so, the overall direction across the trial family appears to favor interceptive extraction over simple observation/no treatment [2][6][7].",
+      "A robust meta-analysis was **not feasible** from the eligible local corpus evidence as retrieved."
+    ]
+  }
+}

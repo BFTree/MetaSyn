@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 190,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18779,
+    "output_tokens": 2010,
+    "total_tokens": 20789
+  },
+  "metrics": {
+    "retrieval_recall": 0.8888888888888888,
+    "retrieval_precision": 0.4444444444444444,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.5555555555555556,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8888888888888888,
+    "inclusion_consistency": 0.5285,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5166,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with a clear review question, detailed search strategy, screening criteria, included/excluded records, evidence profile, and structured synthesis of findings, but it lacks some full PRISMA-style elements such as a formal abstract, explicit quality/risk-of-bias assessment, and clearly shown conclusion/references sections."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible populations included dental practitioners, dental office staff, dental technicians, dental nurses, dental students, dental educators, and dental patients.",
+      "Eligible phenomena included sexual misconduct, sexual harassment, abuse, coercion, unwelcome comments or gestures, and unwanted physical contact in dental workplaces, educational environments, and patient-care contexts.",
+      "Comparator groups were included when available but were not required.",
+      "reported empirical data specific to dentistry or dental settings;",
+      "involved sexual misconduct or clearly separable sexual harassment/sexual abuse outcomes;",
+      "were published within the review date range;",
+      "were primary empirical studies or empirical case analyses."
+    ],
+    "exclusion_criteria": [
+      "were outside the date range;",
+      "were not specific to dentistry;",
+      "reported broad mistreatment, violence, bullying, or discrimination without clearly extractable sexual misconduct data;",
+      "were non-empirical or framework/commentary-only."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The local corpus shows that sexual misconduct in dental settings is documented across both educational and practice environments, with prevalence estimates varying widely by population, perpetrator type, timeframe, and outcome definition.",
+      "These studies suggest that sexual misconduct toward hygienists is common, especially when a broad definition including unwanted sexual comments, attention, and behaviors is used.",
+      "These studies indicate that sexual misconduct is present in dental education internationally and can originate from patients, faculty, or peers.",
+      "Even so, the result signals a substantial burden in this dental specialty."
+    ]
+  }
+}

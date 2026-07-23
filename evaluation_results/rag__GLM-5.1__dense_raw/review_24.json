@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 24,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17302,
+    "output_tokens": 953,
+    "total_tokens": 18255
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.015,
+    "inclusion_recall": 0.6666666666666666,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.8,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.6666666666666666,
+    "post_retrieval_loss": 0.3333333333333333,
+    "inclusion_consistency": 0.7001,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4798,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a screening summary, results synthesis, discussion, and included study list, but it lacks core systematic review sections such as Abstract, Introduction, full Methods, Conclusion, and References, and provides only limited PRISMA-style detail without explicit search strategy, inclusion/exclusion criteria, data extraction, quality assessment, or formal synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published within the qualifying timeframe",
+      "clinical trials involving adult obese participants",
+      "utilized a very low calorie diet (VLCD) intervention",
+      "quantitatively compared weight change between obese patients with T2DM and obese patients without T2DM"
+    ],
+    "exclusion_criteria": [
+      "articles published after this date",
+      "failing to meet the core comparison requirement",
+      "they either lacked a non-diabetic control group",
+      "did not quantitatively compare weight change between patients with and without type 2 diabetes mellitus (T2DM)",
+      "were single-arm studies",
+      "case reports",
+      "focused on alternative interventions (e.g., portion control plates, macronutrient variations without a T2DM vs. non-T2DM comparison)"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The scarce evidence available from the candidate pool suggests that obese patients with T2DM achieve weight loss outcomes comparable to those of obese patients without T2DM when undergoing VLCD interventions.",
+      "Candidate 002 provided the most direct evidence, demonstrating no significant difference in either final weight loss or the estimated weekly rate of loss over a 24-week period.",
+      "Candidate 005 corroborated this trend over a 1-year follow-up, showing only a 1 kg/m\u00b2 difference in BMI reduction between diabetic and non-diabetic VLCD groups."
+    ]
+  }
+}

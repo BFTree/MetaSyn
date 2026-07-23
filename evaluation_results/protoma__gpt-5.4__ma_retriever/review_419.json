@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 22957,
+    "output_tokens": 1076,
+    "total_tokens": 24033
+  },
+  "metrics": {
+    "retrieval_recall": 0.5,
+    "retrieval_precision": 0.0136986301369863,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 1.0,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.6075,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6634,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background, Methods, Results, Risk of Bias, Discussion, Conclusion, and detailed meta-analysis elements such as search strategy, eligibility criteria, screening flow, and synthesis plan, but it lacks a References section and the Main Findings section contains placeholder text rather than completed results."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Randomized controlled trials comparing an internet- or mobile-based intervention delivered via web browser or smartphone app with standard care, waitlist, or no-intervention control.",
+      "Adults (>=18 years) with overweight or obesity (BMI >=25 kg/m^2) who also have comorbid depressive symptoms, identified by clinical diagnosis, validated symptom scale, or eligibility criteria indicating elevated depression symptoms.",
+      "Interventions primarily aim to improve mental health or depressive symptoms and are delivered mainly through a digital IMI platform rather than face-to-face treatment alone.",
+      "Studies report at least one relevant outcome: depressive symptom severity and/or weight-related outcomes such as body weight, BMI, or weight reduction."
+    ],
+    "exclusion_criteria": [
+      "Non-randomized studies, uncontrolled studies, protocols, qualitative studies, reviews, case reports, or trials without an eligible control condition.",
+      "Studies in children or adolescents, or populations not specifically including adults with overweight/obesity and co-occurring depressive symptoms.",
+      "Interventions not primarily delivered via web or smartphone app, or multicomponent programs where the independent effect of the IMI cannot be determined.",
+      "Studies that do not report depressive symptom outcomes or weight-related outcomes, or where the intervention is not aimed at improving mental health."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this meta-analysis of 1 randomized controlled trial, internet- and mobile-based interventions (IMIs) for adults with overweight or obesity and comorbid depressive symptoms provided only very limited evidence of benefit compared with standard care or no intervention.",
+      "Because the evidence comes from a single study, any observed mean difference should be interpreted cautiously and cannot be taken as a robust estimate of effect for either depressive symptom severity or weight reduction.",
+      "Clinically, this means IMIs may be a reasonable adjunct for patients who prefer scalable, low-burden support, but they should not yet replace established face-to-face or multidisciplinary approaches when meaningful improvement in mood and weight is the goal.",
+      "A qualified recommendation is therefore to consider IMIs as an optional supportive strategy, with the main caveat that confidence in effectiveness is constrained by the single-study evidence base.",
+      "As a result, the evidence base was too limited to support a quantitative synthesis or firm conclusions about effectiveness on either depressive symptom severity or weight reduction.",
+      "In practical terms, the current literature does not yet allow clinicians or policymakers to determine whether IMIs designed to improve mental health in this specific population produce meaningful benefits for depression, weight, or both outcomes simultaneously."
+    ]
+  }
+}

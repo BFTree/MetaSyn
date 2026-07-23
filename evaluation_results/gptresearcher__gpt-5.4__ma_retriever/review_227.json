@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 27591,
+    "output_tokens": 1428,
+    "total_tokens": 29019
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.225,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.33333333333333337,
+    "screening_accuracy": 0.825,
+    "conditional_retention": 0.2222222222222222,
+    "post_retrieval_loss": 0.7,
+    "inclusion_consistency": 0.5251,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5663,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, Results/Findings, Limitations, Conclusion, study list, and References, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening decisions, and synthesis rationale, but it lacks full PRISMA-level rigor such as a formal risk-of-bias/quality assessment, detailed data extraction procedures, and a complete reproducible screening flow."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "be primary studies;",
+      "include paediatric TS patients aged 18 years or younger;",
+      "report prevalence of hypertension or provide data allowing prevalence calculation;",
+      "be in English;",
+      "if mixed-age, permit independent evaluation of data for those aged 18 years or younger."
+    ],
+    "exclusion_criteria": [
+      "reviews, case reports, conference abstracts, and unpublished manuscripts;",
+      "studies only comparing mean BP with controls without prevalence data;",
+      "studies without extractable paediatric hypertension prevalence."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus supports a firm conclusion: hypertension and abnormal BP phenotypes are common in paediatric Turner syndrome, and routine clinic/manual BP measurement appears inadequate to detect the full burden of disease.",
+      "The strongest direct evidence comes from two included studies.",
+      "One found that 42% of girls with TS had elevated screening BP but only 8% reported a prior hypertension diagnosis, demonstrating a major awareness gap ([90927](metasyn://corpus/90927)).",
+      "The other showed that 22% had ambulatory hypertension, 52% had nocturnal hypertension, and manual BP identified only 1 of 5 ambulatory hypertensive patients, establishing ABPM as substantially more sensitive than clinic/manual measurement in this population ([3889](metasyn://corpus/3889)).",
+      "ABPM should be regarded as the preferred methodology when the clinical question is true hypertension prevalence or detection of clinically relevant masked and nocturnal BP abnormalities.",
+      "The evidence is not yet broad enough for a high-confidence pooled meta-analytic prevalence estimate, but it is strong enough to justify closer surveillance and to prioritize ABPM-based evaluation in paediatric TS, especially in patients with obesity, repaired coarctation, or other cardiovascular risk markers."
+    ]
+  }
+}

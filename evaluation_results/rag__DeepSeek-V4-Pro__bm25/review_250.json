@@ -1,0 +1,59 @@
+{
+  "status": "succeeded",
+  "review_id": 250,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9573,
+    "output_tokens": 1255,
+    "total_tokens": 10828
+  },
+  "metrics": {
+    "retrieval_recall": 0.23809523809523808,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.23809523809523808,
+    "inclusion_consistency": 0.7072,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6739,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes key evidence-synthesis elements such as objective, screening criteria, eligibility results, included study summary, and implications, but it lacks several standard sections such as a formal abstract, introduction, detailed methods/search strategy, quality assessment, full synthesis methods, conclusion, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Study design: randomized controlled trial (not review, protocol, case report, observational study, or secondary analysis).",
+      "Population: adults (\u226518 years) with major depressive disorder who had failed at least two antidepressant treatments.",
+      "Intervention: one of the 25 pre\u2011specified antidepressant treatments (e.g., ketamine, aripiprazole, minocycline, ECT, rTMS, TBS, lithium, quetiapine, etc.).",
+      "Comparator: placebo, sham, or another eligible active treatment."
+    ],
+    "exclusion_criteria": [
+      "Exclusion: studies that enrolled patients with bipolar or psychotic depression.",
+      "The study was not a primary RCT (systematic reviews, meta\u2011analyses, trial protocols, case reports, or observational analyses).",
+      "The population did not clearly meet the TRD definition; many studies required failure of only one antidepressant, failed to specify the number of prior treatment failures, or included patients with bipolar depression.",
+      "The intervention or comparator was outside the scope (e.g., treatment for other conditions, no sham/placebo control, or maintenance rather than acute treatment)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Of the 200 candidates, only **one primary RCT** fully satisfied all inclusion criteria.",
+      "Over 12 months, quetiapine augmentation led to a significantly greater reduction in depressive symptoms than lithium (area\u2011under\u2011the\u2011curve difference \u221268.36, 95% CI \u2212129.95 to \u22126.76; p=0.0296).",
+      "Time to discontinuation did not differ significantly.",
+      "Quetiapine was also more cost\u2011effective.",
+      "Both treatments were generally well tolerated; only one serious adverse event was deemed possibly related to the study drug (lithium).",
+      "With only one eligible primary study, a formal network meta\u2011analysis cannot be conducted.",
+      "The scarcity of RCTs that explicitly enrolled adults who had not responded to at least two antidepressant trials \u2013 particularly sham\u2011controlled trials of neuromodulation (rTMS, TBS, ECT) or newer pharmacological agents (ketamine, minocycline, aripiprazole) \u2013 highlights a major evidence gap.",
+      "Future primary research should adopt the consensus definition of TRD (\u22652 adequate failed trials) and include placebo/sham controls to enable robust comparative effectiveness syntheses."
+    ]
+  }
+}

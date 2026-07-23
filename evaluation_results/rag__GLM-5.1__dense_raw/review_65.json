@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18683,
+    "output_tokens": 1100,
+    "total_tokens": 19783
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.875,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.9333333333333333,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.875,
+    "post_retrieval_loss": 0.125,
+    "inclusion_consistency": 0.6002,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3985,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, synthesized results, conclusion, and included-study list, but it lacks a formal abstract, introduction, discussion, complete references, detailed search strategy, data extraction process, quality assessment, and robust PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "The population was restricted to adult women (\u226518 years or referred to as adults) with PCOS.",
+      "The exposure was NC measurement, and outcomes had to include NC values, MetS prevalence, IR indices (e.g., HOMA-IR, fasting insulin), or related metabolic risk factors."
+    ],
+    "exclusion_criteria": [
+      "Studies published after the search end date (October 28, 2024), reviews, protocols, and studies lacking NC measurements or a PCOS-specific population were excluded."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The synthesized evidence confirms that NC is significantly associated with MetS and IR in women with PCOS, serving as a practical, independent predictor of metabolic abnormalities.",
+      "Cutoff values ranging from 33 cm to 34.3 cm were proposed for identifying MetS and IR, respectively, though these may vary by ethnicity and BMI.",
+      "While data explicitly comparing NC values between PCOS and non-PCOS controls are sparse, the evidence indicates that PCOS women with concurrent abdominal obesity have significantly larger NC than their non-PCOS or non-obese PCOS counterparts.",
+      "NC represents a valuable, simple anthropometric tool for metabolic risk stratification in women with PCOS."
+    ]
+  }
+}

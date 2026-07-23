@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 273,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16337,
+    "output_tokens": 890,
+    "total_tokens": 17227
+  },
+  "metrics": {
+    "retrieval_recall": 0.6060606060606061,
+    "retrieval_precision": 0.2898550724637681,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 0.5,
+    "inclusion_f1": 0.26666666666666666,
+    "screening_accuracy": 0.7101449275362319,
+    "conditional_retention": 0.3,
+    "post_retrieval_loss": 0.42424242424242425,
+    "inclusion_consistency": 0.678,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6456,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes most major systematic review elements, including overview, search strategy, eligibility criteria, screening discussion, included studies, findings, limitations, conclusion, and references, but it lacks full PRISMA-level rigor such as detailed screening counts/flow diagram, explicit data extraction procedures, formal risk-of-bias or quality assessment, and a clearly specified quantitative synthesis method."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Double-blind randomized controlled trials",
+      "Discontinuation or randomized-withdrawal design",
+      "Participants diagnosed with MDD using operationalized criteria (DSM/ICD/Feighner/RDC)",
+      "Maintenance continuation of the same antidepressant vs placebo"
+    ],
+    "exclusion_criteria": [
+      "Bipolar disorder, personality disorder, substance use disorder",
+      "Refractory/chronic specialty samples not aligned with the target question",
+      "Seasonal, perinatal, and other non-MDD depression types"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn corpus provides consistent evidence that continuing antidepressant treatment after remission reduces relapse/recurrence in MDD.",
+      "The effect is seen across SSRIs, SNRIs, and vortioxetine, with especially strong support in older adults and in patients with high-risk features such as residual symptoms and anxiety comorbidity.",
+      "The evidence base is methodologically strongest for randomized withdrawal designs but should be interpreted with awareness of discontinuation artifacts and enrichment bias.",
+      "Across the corpus, continuing antidepressants after remission consistently lowered relapse or recurrence relative to placebo ([Kato et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC9812779/); [Corpus ID: 41283](https://metasyn://corpus/41283)).",
+      "This supports a class-wide maintenance effect rather than a single-drug anomaly.",
+      "Older-adult trials are especially persuasive because they address a population at high relapse risk:",
+      "This implies maintenance decisions should not be based only on episode count; symptom completeness and anxiety comorbidity matter.",
+      "Evidence favors continuing the effective acute-phase dose through maintenance."
+    ]
+  }
+}

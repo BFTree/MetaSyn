@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 51,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 32333,
+    "output_tokens": 1038,
+    "total_tokens": 33371
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.4,
+    "inclusion_recall": 0.08333333333333333,
+    "inclusion_precision": 0.2,
+    "inclusion_f1": 0.11764705882352941,
+    "screening_accuracy": 0.5,
+    "conditional_retention": 0.08333333333333333,
+    "post_retrieval_loss": 0.9166666666666666,
+    "inclusion_consistency": 0.4079,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6753,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with abstract, eligibility criteria, search and retrieval details, screening, outcome-specific results, limitations, conclusion, included studies, contextual studies, and references, but it lacks full PRISMA-level rigor such as a documented database search strategy, screening flow diagram, formal risk-of-bias assessment, and reproducible quantitative synthesis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Adult men with penile cancer",
+      "Glansectomy with or without neoglans reconstruction, particularly split-thickness skin grafting",
+      "Preoperative baseline, standard functional benchmarks, glansectomy without reconstruction, or other treatment for glans-confined penile cancer",
+      "Erectile function, sexual activity, orgasm and ejaculation, urinary function, standing voiding, glans sensation, and sexual satisfaction",
+      "Meatal stenosis, graft loss, cosmetic satisfaction, local recurrence, disease-specific survival, and quality of life",
+      "Prospective or retrospective observational studies, randomized studies, and non-randomized comparative studies"
+    ],
+    "exclusion_criteria": [
+      "Studies failing the PICO criteria or reporting no functional data"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The local MetaSyn evidence supports glansectomy as an effective organ-preserving operation for carefully selected men with localized penile cancer confined to the glans.",
+      "The strongest consistent functional signal is preservation of penile length, standing voiding, erectile capacity, and the possibility of penetrative intercourse.",
+      "Cosmetic satisfaction is also generally high.",
+      "However, the evidence does not justify claiming that postoperative sexual function is unchanged.",
+      "Reduced glans sensitivity, reduced sexual satisfaction, and declines in questionnaire-based sexual-function scores are documented.",
+      "Reconstruction with STSG appears to provide good cosmetic results and acceptable urinary and sexual function, but the available comparative evidence does not establish a significant functional advantage over glansectomy alone.",
+      "My assessment is that glansectomy with or without reconstruction is supported as a reasonable standard organ-preserving option in appropriately selected patients, particularly when performed in experienced centers with close surveillance.",
+      "The evidence is strong enough to support offering the procedure, but not strong enough to promise normal long-term sexual sensation, unchanged sexual satisfaction, or proven 5- to 10-year functional equivalence."
+    ]
+  }
+}

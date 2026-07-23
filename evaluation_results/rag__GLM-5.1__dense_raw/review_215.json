@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 215,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16813,
+    "output_tokens": 876,
+    "total_tokens": 17689
+  },
+  "metrics": {
+    "retrieval_recall": 0.9230769230769231,
+    "retrieval_precision": 0.18,
+    "inclusion_recall": 0.07692307692307693,
+    "inclusion_precision": 0.75,
+    "inclusion_f1": 0.13953488372093026,
+    "screening_accuracy": 0.83,
+    "conditional_retention": 0.08333333333333333,
+    "post_retrieval_loss": 0.8461538461538461,
+    "inclusion_consistency": 0.5742,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3941,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a brief screening summary, evidence synthesis, and list of included studies, but it lacks a formal abstract, introduction, methods, results, discussion, conclusion, references, detailed search strategy, data extraction process, quality assessment, and clear PRISMA-style organization."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published between 2013 and 2024",
+      "examined birth weight (in grams) in relation to PFOS biomarker concentrations",
+      "reported regression coefficients (betas) with corresponding variance estimates (95% CIs)",
+      "utilized acceptable biomarker sources (maternal blood or cord blood)"
+    ],
+    "exclusion_criteria": [
+      "Studies reporting outcomes as z-scores, BMI, or other metrics",
+      "those lacking quantitative beta values or CIs for PFOS",
+      "those outside the date range"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The four included studies consistently report inverse associations between PFOS exposure and birth weight, although effect sizes and statistical significance vary across study designs and populations.",
+      "The evidence suggests that higher PFOS concentrations are associated with birth weight deficits, with significant findings observed in both continuous and sex-stratified quartile analyses."
+    ]
+  }
+}

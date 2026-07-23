@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 228,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12558,
+    "output_tokens": 794,
+    "total_tokens": 13352
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.2,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.25,
+    "screening_accuracy": 0.97,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.8,
+    "inclusion_consistency": 0.5447,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5345,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Objective, Methods, Included Studies, Synthesis, Limitations, Conclusion, and study references, and it includes screening criteria and synthesis elements, but it lacks a formal abstract/introduction, detailed search strategy, PRISMA flow, data extraction procedures, and quality/risk-of-bias assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "original research articles published after 1 January 2009 in English",
+      "Level I or II prospective comparative studies",
+      "assessment of RDN plus PVI versus PVI alone in patients with essential hypertension and AF"
+    ],
+    "exclusion_criteria": [
+      "Studies focusing on secondary hypertension",
+      "type 1 diabetes",
+      "end-stage kidney disease (mean eGFR <45 mL/min/1.73 m\u00b2)",
+      "congestive heart failure",
+      "left ventricular ejection fraction <35%"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The largest trial demonstrated significant improvements in AF freedom and blood pressure control.",
+      "Smaller trials showed directional benefits or reductions in arrhythmia burden and antiarrhythmic drug use, without safety concerns.",
+      "No data on eGFR were available.",
+      "These findings suggest that adding RDN to PVI may be a safe and effective strategy for selected hypertensive patients with AF, though further large\u2011scale, standardised trials are warranted.",
+      "Despite these caveats, the available higher\u2011quality evidence consistently points toward a beneficial effect of adjunctive RDN on AF\u2011related outcomes and BP reduction in hypertensive patients."
+    ]
+  }
+}

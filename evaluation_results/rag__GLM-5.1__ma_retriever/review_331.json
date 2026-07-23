@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 331,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19085,
+    "output_tokens": 1177,
+    "total_tokens": 20262
+  },
+  "metrics": {
+    "retrieval_recall": 0.9705882352941176,
+    "retrieval_precision": 0.165,
+    "inclusion_recall": 0.7941176470588235,
+    "inclusion_precision": 0.8709677419354839,
+    "inclusion_f1": 0.8307692307692308,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.8181818181818182,
+    "post_retrieval_loss": 0.17647058823529413,
+    "inclusion_consistency": 0.7987,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6691,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is organized around the review target, screening criteria, synthesis of findings, and included studies, but it lacks a formal abstract, introduction, detailed search strategy, data extraction and quality assessment methods, explicit discussion and conclusion sections, and complete references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults \u226518 with PSPS-T2/FBSS",
+      "specified interventions",
+      "pain outcome",
+      "RCT design",
+      "English/Dutch/French language"
+    ],
+    "exclusion_criteria": [
+      "children",
+      "animal studies",
+      "acute pain",
+      "lack of prior surgery",
+      "non-RCT designs",
+      "reviews/protocols/case reports",
+      "Studies involving PSPS Type 1 (non-surgical) or nonspecific chronic low back pain without documented prior surgery were excluded.",
+      "Sub-analyses, cost-analyses, follow-up reports of open-label phases, and short-term physiological parameter tests (rather than clinical pain relief trials) were also excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "SCS combined with CMM/OMM significantly reduces leg and back pain compared to CMM/OMM alone in both parallel (PROCESS, PROMISE) and crossover designs.",
+      "SCS demonstrates greater success in pain relief and patient satisfaction compared to reoperation for persistent radicular pain, with fewer crossovers to the alternative treatment.",
+      "Evidence is mixed.",
+      "One rigorous sham-controlled crossover trial found no significant difference between burst SCS and placebo for pain or disability.",
+      "Another crossover trial found pain reductions were comparable across all stimulation modes including sham, indicating a strong placebo effect.",
+      "Conversely, a small crossover trial found high-density (HD) subthreshold SCS superior to sham.",
+      "Percutaneous adhesiolysis with targeted drug delivery demonstrates significantly superior long-term pain relief and functional improvement compared to caudal ESI alone.",
+      "Pregabalin is superior to gabapentin for neuropathic pain reduction in FBSS.",
+      "However, extended-release gabapentin shows no significant difference compared to placebo.",
+      "Mindfulness-based stress reduction (MBSR) combined with traditional therapy provides significant short-term improvements in pain acceptance, functional limitation, and pain levels compared to traditional therapy alone."
+    ]
+  }
+}

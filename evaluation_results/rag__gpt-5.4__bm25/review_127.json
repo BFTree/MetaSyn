@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13663,
+    "output_tokens": 1395,
+    "total_tokens": 15058
+  },
+  "metrics": {
+    "retrieval_recall": 0.7872340425531915,
+    "retrieval_precision": 0.185,
+    "inclusion_recall": 0.2127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3508771929824561,
+    "screening_accuracy": 0.865,
+    "conditional_retention": 0.2702702702702703,
+    "post_retrieval_loss": 0.574468085106383,
+    "inclusion_consistency": 0.6767,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.564,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes screening criteria, results, exclusions, included studies, narrative synthesis, and a bottom-line conclusion, but it lacks several formal systematic review sections and PRISMA-style elements such as an abstract, introduction, detailed search strategy, data extraction methods, quality assessment, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary reports",
+      "adult RRMM populations",
+      "phase I or phase II single-arm trials",
+      "experimental drug given as monotherapy or with dexamethasone only",
+      "intention-to-treat population of at least 10 RRMM patients"
+    ],
+    "exclusion_criteria": [
+      "exclusion of studies combining the experimental drug with any agent other than dexamethasone",
+      "exclusion of subgroup-only studies, country-approval studies, supportive care, new-route studies, allogeneic transplant, bone-directed therapy, reviews, protocols, and non-primary articles.",
+      "combination with non-dexamethasone agents such as bortezomib, carfilzomib, lenalidomide, pomalidomide, daratumumab, thalidomide, cyclophosphamide, or others",
+      "randomized or phase III design rather than single-arm phase I/II",
+      "newly diagnosed MM, smoldering MM, or non-MM populations",
+      "review, protocol, pooled analysis, regulatory review, indirect comparison, or real-world study rather than eligible primary trial",
+      "subgroup-only or route-of-administration studies",
+      "publication outside the 2010-01-01 to 2020-07-01 window"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included studies show substantial heterogeneity in activity and toxicity.",
+      "The abstracts suggest that toxicity burden was often significant but variably manageable; several agents showed limited efficacy despite acceptable feasibility.",
+      "Within the fixed pool, the strongest activity among eligible early-phase single-arm studies appears concentrated in:",
+      "By contrast, several mechanistically novel single agents from the decade had **low ORR and predominantly disease stabilization**, despite manageable or at least characterizable toxicity.",
+      "From title/abstract alone, this supports the broad conclusion that during 2010-2020, only a subset of early-phase experimental approaches translated into clearly meaningful response rates in RRMM under the very restrictive monotherapy or dexamethasone-only framework.",
+      "Eligible evidence was limited but present.",
+      "The included early-phase RRMM studies suggest that under the strict monotherapy or dexamethasone-only framework, activity ranged from minimal to moderate for many investigational agents, with more convincing response rates seen in some carfilzomib-based studies, pomalidomide-dexamethasone studies, and isatuximab monotherapy.",
+      "Hematologic toxicity was the dominant adverse-event pattern across the evidence base."
+    ]
+  }
+}

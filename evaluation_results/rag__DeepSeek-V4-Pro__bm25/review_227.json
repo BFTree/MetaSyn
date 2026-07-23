@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 227,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 7368,
+    "output_tokens": 1038,
+    "total_tokens": 8406
+  },
+  "metrics": {
+    "retrieval_recall": 0.8,
+    "retrieval_precision": 0.04,
+    "inclusion_recall": 0.4,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5714285714285715,
+    "screening_accuracy": 0.98,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5362,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5037,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well-organized and includes key systematic review elements such as research question, search/screening criteria, included studies, synthesis, limitations, conclusion, and references, but it lacks a formal abstract, detailed search strategy, data extraction process, and quality assessment, preventing a higher PRISMA-level score."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "English-language primary studies reporting or allowing calculation of hypertension prevalence in TS patients \u226418 years",
+      "including baseline data only",
+      "published up to the search end date of 31 May 2021"
+    ],
+    "exclusion_criteria": [
+      "Case reports, reviews, editorials, conference abstracts, and studies where paediatric data could not be separated from adult data were excluded.",
+      "Records published after 2021\u201105\u201131 were not considered."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In paediatric Turner syndrome, hypertension appears common, with prevalence estimates ranging from 20% to over 50% depending on the method of evaluation.",
+      "ABPM, used in only one eligible study, identified a strikingly high nocturnal hypertension rate and outperformed office BP in detecting hypertension.",
+      "The available data, while sparse, strongly support the recommendation to use 24\u2011h ABPM for accurate hypertension screening in this high\u2011risk population.",
+      "Further primary research using standardised ABPM protocols and explicit paediatric definitions is urgently needed to ascertain the true prevalence and to guide surveillance strategies."
+    ]
+  }
+}

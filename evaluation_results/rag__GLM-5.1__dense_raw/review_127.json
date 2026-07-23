@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 127,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 19116,
+    "output_tokens": 1140,
+    "total_tokens": 20256
+  },
+  "metrics": {
+    "retrieval_recall": 0.48936170212765956,
+    "retrieval_precision": 0.115,
+    "inclusion_recall": 0.40425531914893614,
+    "inclusion_precision": 0.95,
+    "inclusion_f1": 0.5671641791044776,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.8260869565217391,
+    "post_retrieval_loss": 0.0851063829787234,
+    "inclusion_consistency": 0.6145,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4372,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized into screening, synthesis, outcomes, and included studies, but it lacks standard systematic review sections such as Abstract, Introduction, Methods, Discussion, Conclusion, and full References, and it omits key PRISMA-style elements including a detailed search strategy, data extraction procedures, quality assessment, and explicit synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "single-arm phase I and II clinical trials",
+      "evaluating experimental compounds as monotherapy or combined solely with dexamethasone",
+      "in adult patients with relapsed/refractory multiple myeloma (RRMM)",
+      "published between January 1, 2010, and July 1, 2020",
+      "reporting overall response rate (ORR) and toxicity",
+      "on an intention-to-treat (ITT) population of at least 10 RRMM patients"
+    ],
+    "exclusion_criteria": [
+      "systematic reviews/meta-analyses",
+      "randomized controlled trials (phase III or IV)",
+      "real-world/retrospective studies",
+      "protocols",
+      "editorials",
+      "the population was newly diagnosed or smoldering myeloma, AL amyloidosis, or non-myeloma",
+      "the experimental drug was combined with any agent other than dexamethasone (e.g., lenalidomide, pomalidomide, carfilzomib)",
+      "the study focused on a specific physiologic subgroup (e.g., renal impairment safety studies) rather than a general RRMM disease state",
+      "the publication date fell outside the search window"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The synthesized evidence reveals a wide spectrum of efficacy and toxicity for experimental agents in RRMM during the past decade.",
+      "Proteasome inhibitors (specifically carfilzomib in combination with dexamethasone) and anti-CD38 monoclonal antibodies consistently achieved the highest ORRs (23%\u201377%), though infusion-related reactions were a hallmark of the antibodies.",
+      "Immunomodulatory derivatives like pomalidomide provided dependable ORRs of ~21\u201332% but with expected hematologic toxicity.",
+      "Novel targeted agents showed variable success; selinexor-dexamethasone stood out with a 26% ORR in a highly refractory population, whereas others (kinase inhibitors, reovirus, imexon) struggled to achieve partial responses as monotherapies, suggesting their future development would likely require synergistic combinations."
+    ]
+  }
+}

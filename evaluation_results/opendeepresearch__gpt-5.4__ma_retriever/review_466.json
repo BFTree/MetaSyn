@@ -1,0 +1,64 @@
+{
+  "status": "succeeded",
+  "review_id": 466,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 36681,
+    "output_tokens": 1025,
+    "total_tokens": 37706
+  },
+  "metrics": {
+    "retrieval_recall": 0.5909090909090909,
+    "retrieval_precision": 0.3333333333333333,
+    "inclusion_recall": 0.18181818181818182,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.3076923076923077,
+    "screening_accuracy": 0.7692307692307693,
+    "conditional_retention": 0.3076923076923077,
+    "post_retrieval_loss": 0.4090909090909091,
+    "inclusion_consistency": 0.6349,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4661,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized and includes detailed methods, exact search queries, eligibility criteria, screening summary, study characteristics, qualitative synthesis, limitations, conclusions, and sources, but it lacks a formal abstract/introduction and does not include a full PRISMA-style flow diagram or detailed study quality/risk-of-bias assessment sufficient for a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Population: hospitalized adults with sepsis or at risk for sepsis; pediatric populations excluded",
+      "Intervention: automated sepsis alerting system integrated into the EHR",
+      "Algorithm type: rule-based and machine-learning-based methods both eligible",
+      "Comparator: usual care or standard practice without automated alert messages",
+      "Outcomes: mortality and/or length of stay, including hospital mortality, ICU LOS, and hospital LOS"
+    ],
+    "exclusion_criteria": [
+      "reviews or commentaries",
+      "animal studies",
+      "case reports",
+      "pediatric studies",
+      "prediction-model development studies without comparative alert implementation",
+      "non-sepsis-target studies",
+      "non-relevant interventions such as antimicrobial susceptibility testing",
+      "studies focused on irrelevant targets such as delirium or acute kidney injury",
+      "noncomparative implementations without a usable usual-care/preimplementation comparator"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the local MetaSyn PubMed corpus through 2021-12-31, the evidence does **not** show a consistent improvement in **mortality** from automated EHR-integrated sepsis alerting systems compared with usual care in hospitalized adults with sepsis or at risk for sepsis.",
+      "The evidence for **length of stay** is mixed:",
+      "The eligible comparative evidence was overwhelmingly based on **rule-based** alert systems.",
+      "No firm conclusion can be drawn about whether **machine-learning-based alerts** perform better than rule-based systems, because clearly eligible comparative ML intervention studies were not confirmed in the retrieved corpus.",
+      "By setting, the most favorable signal appeared in the **emergency department**, while inpatient ward/non-ICU results were largely neutral.",
+      "ICU-specific comparative evidence remained insufficient in the explicitly included set.",
+      "Overall, the local-corpus evidence supports a cautious conclusion: **automated sepsis alerts may improve process measures and may shorten LOS in some contexts, but they have not been shown consistently to improve mortality or length of stay across hospital settings.**"
+    ]
+  }
+}

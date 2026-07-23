@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 419,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18734,
+    "output_tokens": 1035,
+    "total_tokens": 19769
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.01,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.995,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": 0.5187,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5152,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening criteria, results, evidence synthesis, interpretation, and conclusion, but it lacks several formal systematic review sections such as an abstract, introduction, detailed methods/search strategy, quality assessment, and references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with overweight/obesity and comorbid depressive symptoms",
+      "internet-/web-/mobile-based psychological intervention directly targeting depressive symptoms",
+      "randomized controlled trial",
+      "control condition such as TAU, waitlist, no intervention, low-level support, placebo-like control",
+      "depressive symptom severity; weight/BMI reduction"
+    ],
+    "exclusion_criteria": [
+      "not directly targeting depression",
+      "nonpsychological interventions",
+      "highly specific populations (eg, pregnancy, bariatric surgery, specific somatic disease)",
+      "protocols/reviews/non-primary studies",
+      "studies outside the review\u2019s search end date when relevant"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "At title/abstract level, this single RCT suggests that a self-guided digital intervention integrating weight management and mental health support may improve both depressive symptoms and weight in adults with overweight/obesity and depressive symptoms.",
+      "The evidence base is therefore very limited.",
+      "the evidence is insufficient for firm conclusions.",
+      "The available evidence is promising but sparse."
+    ]
+  }
+}

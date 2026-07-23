@@ -1,0 +1,70 @@
+{
+  "status": "succeeded",
+  "review_id": 63,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13477,
+    "output_tokens": 1309,
+    "total_tokens": 14786
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.05,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.6153846153846154,
+    "inclusion_f1": 0.6956521739130435,
+    "screening_accuracy": 0.965,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.6357,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5181,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized with eligibility criteria, screening outcomes, qualitative results by outcome, interpretation, limitations, exclusions, and included studies, but it lacks a formal abstract, full introduction/methods/discussion/conclusion structure, detailed search strategy, PRISMA flow, risk-of-bias assessment, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adult patients with morbid obesity undergoing laparoscopic vertical sleeve gastrectomy, with pre- versus post-operative objective esophageal physiology data.",
+      "The key outcomes are LES pressure, LES length, DeMeester score, and BMI change.",
+      "Eligible designs are primary cohort studies in peer-reviewed journals from 1999-01-01 to 2023-11-30.",
+      "adults with obesity/morbid obesity undergoing sleeve gastrectomy/LVSG/LSG,",
+      "pre- and post-operative objective esophageal testing with manometry and/or pH study,",
+      "a cohort-type primary study design,",
+      "publication within the specified date range."
+    ],
+    "exclusion_criteria": [
+      "Exclusions include reviews, meta-analyses, editorials, protocols, case reports, conference/abstract-only items, non-human studies, and studies outside the date window.",
+      "I excluded studies that were reviews, comparisons not isolating usable sleeve pre/post data, non-human work, case reports, comments, protocols, or published after 2023-11-30.",
+      "systematic reviews/meta-analyses: Candidates 024, 026, 035, 062, etc.",
+      "reviews/editorials/guidelines/comments/protocols: Candidates 014, 023, 034, 037, 038, 041, 044, 046, 054, 060, 092, etc.",
+      "non-human studies: Candidate 147, Candidate 174.",
+      "post-2023 studies: Candidates 008, 009, 014, 016, 017, 020, 024 onward where applicable.",
+      "studies without usable pre/post LVSG esophageal physiology data for the target question."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "BMI decreases substantially after sleeve gastrectomy in all studies reporting weight outcomes.",
+      "Objective reflux burden often worsens after sleeve gastrectomy, especially by DeMeester score or pH-based GERD measures.",
+      "LES physiology changes are inconsistent across studies:",
+      "Overall, the balance of included abstracts favors a postoperative reduction in LESP, but not uniformly.",
+      "The pre/post LES length outcome appears heterogeneous and likely technique-sensitive.",
+      "Overall, the included abstracts support worsening postoperative reflux physiology after sleeve gastrectomy, with increased DeMeester score in most studies that reported it.",
+      "This is the most consistent finding.",
+      "So the expected bariatric effect on weight is clearly present in the eligible literature.",
+      "Across the eligible candidate abstracts, LVSG/LSG reliably reduces BMI, but its effect on esophageal physiology is less favorable and more variable.",
+      "Objective reflux outcomes tend to worsen postoperatively, often reflected in higher DeMeester scores and notable de novo GERD rates.",
+      "LES pressure and LES length do not show a uniform response; however, more studies report pressure reduction and/or shortening than improvement.",
+      "The key implication for the review question is that sleeve gastrectomy appears associated with effective weight loss but with a recurring signal of worsened reflux physiology.",
+      "The mechanistic manometric changes are heterogeneous, which weakens confidence in a single pooled directional conclusion for LESP or LESL from abstract-only data."
+    ]
+  }
+}

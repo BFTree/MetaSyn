@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 17525,
+    "output_tokens": 1448,
+    "total_tokens": 18973
+  },
+  "metrics": {
+    "retrieval_recall": 0.6595744680851063,
+    "retrieval_precision": 0.155,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.85,
+    "conditional_retention": 0.03225806451612903,
+    "post_retrieval_loss": 0.6382978723404256,
+    "inclusion_consistency": 0.6082,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5514,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a basic screening summary, brief evidence synthesis, and an included-study citation, but it lacks standard systematic review sections such as abstract, introduction, full methods, results, discussion, conclusion, references, detailed search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Only studies published between January 1, 2017, and June 13, 2022, were considered.",
+      "A protocol amendment specified that only studies where the PCOS diagnosis met the **Rotterdam criteria** were eligible.",
+      "preterm birth, birthweight, fetal growth restriction, low birth weight, small for gestational age, macrosomia, large for gestational age"
+    ],
+    "exclusion_criteria": [
+      "Numerous candidates (e.g., Candidates 001\u2013005, 007, 008, 012\u2013014, 016, 017, 020\u2013022, 024, 030, 033, etc.) were excluded for being published outside this window (either before 2017 or after 2022).",
+      "Systematic reviews, meta-analyses, narrative reviews, scoping reviews, protocols, and editorials were excluded (e.g., Candidates 002, 003, 007, 008, 022, 028, 034, 043, 078, 087, 098, 111, 117, 132, 134, 148, 150, 156, 164, 165, 173, 176, 181, 186, 189, 192).",
+      "Many studies were excluded for utilizing ICD codes (e.g., Candidates 012, 017, 018, 020, 021, 028, 032), NIH criteria (e.g., Candidates 019, 099), or for failing to specify that the Rotterdam criteria were used for diagnosis (e.g., Candidates 015, 025, 038, 055, 072, 126, 135, 139, 153).",
+      "Studies not reporting the specified birth outcomes (preterm birth, birthweight, fetal growth restriction, low birth weight, small for gestational age, macrosomia, large for gestational age) in offspring of women with PCOS versus non-PCOS controls were excluded.",
+      "This included studies focusing solely on maternal complications (e.g., GDM, preeclampsia without birth outcomes), long-term offspring metabolic/neurodevelopmental outcomes, miscarriage, or animal models (e.g., Candidates 042, 046, 051, 060, 061, 066, 088, 149, 171)."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Based on the screening of the supplied candidate pool against the inclusion and exclusion criteria, only one primary study met all the requirements for this evidence synthesis.",
+      "The findings indicate that the overall incidence of adverse pregnancy outcomes\u2014including **preterm birth**\u2014was significantly higher in women with PCOS phenotype A (hyperandrogenism, oligo-anovulation, polycystic ovaries) and phenotype D (oligo-anovulation, polycystic ovaries without hyperandrogenism) compared to the control group.",
+      "The risk of hypertensive disorders of pregnancy (HDP) was also elevated in phenotypes A and C.",
+      "These differences persisted after adjustment for potential confounders (P = 0.025).",
+      "This study provides evidence that maternal PCOS, particularly specific phenotypes defined by the Rotterdam criteria, is associated with an increased risk of adverse birth outcomes such as preterm birth in pregnancies conceived via ART, even after adjusting for confounding factors."
+    ]
+  }
+}

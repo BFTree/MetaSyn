@@ -1,0 +1,53 @@
+{
+  "status": "succeeded",
+  "review_id": 255,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 16149,
+    "output_tokens": 1031,
+    "total_tokens": 17180
+  },
+  "metrics": {
+    "retrieval_recall": 0.8928571428571429,
+    "retrieval_precision": 0.125,
+    "inclusion_recall": 0.17857142857142858,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.2777777777777778,
+    "screening_accuracy": 0.885,
+    "conditional_retention": 0.2,
+    "post_retrieval_loss": 0.7142857142857143,
+    "inclusion_consistency": 0.6161,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6018,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes Objective, Methods, Results, limitations, Conclusions, and included studies, but it lacks a formal Introduction, detailed search strategy, data extraction process, quality/risk-of-bias assessment, and quantitative meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "enrolled adults (\u001a18 years) with a major depressive episode (unipolar or bipolar) diagnosed by operationalized criteria",
+      "employed a validated depression rating scale",
+      "directly compared an ultrabrief pulse ECT arm (pulse width <0.5 ms) with a brief-pulse ECT arm (0.5\u00131.5 ms)",
+      "reported at least one of the specified outcomes (remission, response, relapse, or switching to another form of ECT)"
+    ],
+    "exclusion_criteria": [
+      "Reviews, protocols, editorials, conference abstracts, case reports/series with \u001410 participants, nonhuman studies, and studies using non\u0011standard ECT schedules (e.g., daily ECT), experimental amplitudes, or concurrent somatic interventions were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "In this systematic synthesis of the candidate pool, ultrabrief pulse RUL ECT appears to be an effective acute treatment for depression, with remission and response rates that are often comparable to brief\u2011pulse RUL ECT when sufficiently suprathreshold doses are used.",
+      "However, some evidence suggests that brief\u2011pulse ECT may yield higher remission rates and faster response, and patients are more likely to be switched from ultrabrief to brief\u2011pulse ECT than vice versa.",
+      "Ultrabrief bilateral ECT is substantially less efficacious and should be avoided.",
+      "No data on relapse rates were available from the included studies.",
+      "These findings underscore the need for individualized ECT prescription that balances efficacy, speed, and cognitive tolerability."
+    ]
+  }
+}

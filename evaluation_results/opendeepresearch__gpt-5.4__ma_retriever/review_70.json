@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 70,
+  "system": "opendeepresearch",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 5,
+    "input_tokens": 27714,
+    "output_tokens": 1287,
+    "total_tokens": 29001
+  },
+  "metrics": {
+    "retrieval_recall": 0.9,
+    "retrieval_precision": 0.42857142857142855,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.8095238095238095,
+    "conditional_retention": 0.5555555555555556,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.498,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5668,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes the main review sections, detailed search queries, eligibility and screening criteria, study characteristics, and qualitative synthesis, but it lacks a references section, formal data-extraction procedures, risk-of-bias or quality assessment, a PRISMA flow/accounting of exclusions, and a completed quantitative meta-analysis."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Eligible studies were limited to randomized controlled trials and controlled clinical trials in bariatric surgery populations.",
+      "adults with morbid obesity undergoing bariatric surgery",
+      "probiotics or synbiotics",
+      "placebo, digestive enzymes, standard/usual care, or no intervention",
+      "RCT or controlled clinical trial",
+      "patients should not have used antibiotics prior to study initiation."
+    ],
+    "exclusion_criteria": [
+      "Other gastrointestinal procedures were excluded.",
+      "non-bariatric GI procedures; non-eligible active comparators; non-primary studies such as reviews/protocols"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The overall evidence suggests that **probiotic supplementation may improve some short-term postoperative outcomes**, particularly:",
+      "However, the evidence is **inconsistent** for lipid outcomes, **not supportive** for liver-related benefit, and **absent or insufficient** for dietary intake and safety outcomes.",
+      "The strength of inference is limited because all included evidence was **abstract-only**, the trials were heterogeneous, and numerical data were inadequate for a reliable pooled meta-analysis.",
+      "At present, the corpus supports a cautious conclusion: **probiotics or synbiotics may offer selective short-term benefits after bariatric surgery, but current evidence is insufficient to establish a clear overall clinical advantage across the prioritized outcomes.**"
+    ]
+  }
+}

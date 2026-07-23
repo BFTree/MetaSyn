@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 458,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 37344,
+    "output_tokens": 1062,
+    "total_tokens": 38406
+  },
+  "metrics": {
+    "retrieval_recall": 0.5483870967741935,
+    "retrieval_precision": 0.25757575757575757,
+    "inclusion_recall": 0.3548387096774194,
+    "inclusion_precision": 0.6470588235294118,
+    "inclusion_f1": 0.4583333333333333,
+    "screening_accuracy": 0.8181818181818182,
+    "conditional_retention": 0.6470588235294118,
+    "post_retrieval_loss": 0.1935483870967742,
+    "inclusion_consistency": 0.7231,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5613,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, detailed search strategy, eligibility criteria, screening counts, and synthesis methods, but it falls short of excellent because the organization has duplicated headings and it lacks a formal references section/full citation list and more polished PRISMA-style presentation."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Studies involving older adults with a mean age or eligibility criterion of 60 years and over, in community, clinical, or residential settings.",
+      "Studies evaluating technology-assisted rehabilitation interventions, including exergaming with balance platforms, exergaming with motion capture technologies, serious gaming, wearable-based interventions, or telerehabilitation.",
+      "Studies that include a comparator group receiving conventional exercise, usual care, or no treatment.",
+      "Randomized controlled trials or other controlled intervention studies reporting at least one balance or functional mobility outcome, such as clinical functional scales, functional mobility tests, or gait speed."
+    ],
+    "exclusion_criteria": [
+      "Studies in which participants are primarily younger than 60 years or where results for adults aged 60 years and over cannot be separated.",
+      "Studies not focused on technology-assisted rehabilitation for balance or mobility, or interventions consisting only of non-technology-based exercise, education, or assessment without a rehabilitative intervention.",
+      "Studies without an eligible comparator group, such as single-arm studies, case reports, protocols, reviews, conference abstracts, dissertations, or qualitative studies.",
+      "Studies that do not report relevant balance or functional mobility outcomes, including studies limited to adherence, satisfaction, cognition, or other non-mobility outcomes."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Overall, while the pooled findings **trend in favor of technology-assisted rehabilitation**, the evidence from the random-effects analysis remains **inconclusive**, and the substantial heterogeneity limits confidence in the size and consistency of any true effect.",
+      "In this meta-analysis of 17 studies in adults aged 60 years and older, technology-assisted rehabilitation was not associated with a clear improvement in balance and functional mobility compared with conventional exercise or no treatment when the random-effects model was applied (pooled MD 4.95, 95% CI -6.10 to 16.00; p=0.38).",
+      "Although the fixed-effects model suggested benefit, the substantial between-study heterogeneity (I\u00b2=86.1%) means the more conservative random-effects estimate is the more credible summary.",
+      "Clinically, this pattern suggests that technology-assisted approaches may help some older adults, but the average effect is too uncertain and inconsistent to support a general claim of meaningful superiority over standard care.",
+      "A qualified recommendation is to consider these interventions as an adjunct or alternative when they improve access, engagement, or adherence, rather than as a routine replacement for conventional rehabilitation.",
+      "The main caveat is the marked heterogeneity across interventions and study designs, which limits confidence in a single pooled effect."
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 225,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20907,
+    "output_tokens": 988,
+    "total_tokens": 21895
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.08,
+    "inclusion_recall": 0.3125,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.47619047619047616,
+    "screening_accuracy": 0.945,
+    "conditional_retention": 0.3125,
+    "post_retrieval_loss": 0.6875,
+    "inclusion_consistency": 0.6159,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.523,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes a review question, screening criteria, included/excluded study rationale, synthesis, limitations, conclusion, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, quantitative synthesis methods, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "adults with LRH",
+      "randomized controlled trial",
+      "MRA intervention",
+      "comparator placebo or active antihypertensive treatment",
+      "outcomes including blood pressure change and/or safety",
+      "LRH population explicitly described",
+      "randomized/double-blind/crossover or parallel RCT design stated",
+      "MRA compared with placebo and/or active antihypertensive therapy",
+      "BP and/or adverse effects reported"
+    ],
+    "exclusion_criteria": [
+      "excluding known secondary hypertension such as primary aldosteronism, non-English records, conference abstracts, reviews/protocols, and studies not matching the PICO",
+      "not an RCT or randomization not evident from abstract",
+      "not exclusively LRH population",
+      "primary aldosteronism/secondary hypertension population",
+      "review, letter, protocol, pooled analysis, or other non-primary-study design",
+      "non-English record",
+      "insufficient abstract information to confirm eligibility"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "Based on the supplied titles/abstracts, MRA therapy appears effective for lowering blood pressure in adults with low-renin hypertension.",
+      "The strongest evidence for comparative benefit is that eplerenone outperformed losartan in an LRH-specific randomized trial.",
+      "However, MRAs were not consistently superior to thiazide/thiazide-like diuretics, which often produced similar BP reductions in LRH.",
+      "Safety appeared acceptable overall, but high-dose spironolactone showed more adverse effects than some diuretic comparators, whereas eplerenone had tolerability similar to losartan.",
+      "MRAs are effective antihypertensives in LRH.",
+      "The most convincing comparative advantage is over losartan/ARB therapy.",
+      "Safety is acceptable overall, but dose and agent matter."
+    ]
+  }
+}

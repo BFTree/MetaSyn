@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 391,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12068,
+    "output_tokens": 1793,
+    "total_tokens": 13861
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 0.7142857142857143,
+    "inclusion_precision": 0.625,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 0.7142857142857143,
+    "post_retrieval_loss": 0.2857142857142857,
+    "inclusion_consistency": 0.6808,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4343,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is clearly organized and includes background, eligibility criteria, screening results, evidence synthesis, conclusion, and included studies, but it lacks a formal abstract, full methods section, detailed search strategy, data extraction and quantitative synthesis methods, quality assessment, discussion, and proper references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "people with HIV who received no active intervention (placebo or observation only)",
+      "prospective clinical ATI trials with frequent plasma viral load (pVL) monitoring (\u22655 planned measurements within the first 84\u202fdays post\u2011ATI, with \u226418\u202fdays between measurements in the first 42\u202fdays)"
+    ],
+    "exclusion_criteria": [
+      "Non\u2011English publications",
+      "conference abstracts",
+      "reviews",
+      "commentaries",
+      "case reports",
+      "animal/in\u2011vitro work",
+      "studies restricted to children/adolescents or co\u2011infections",
+      "Articles that were not primary prospective ATI studies",
+      "lacked a placebo or no\u2011intervention arm",
+      "did not report on adult participants",
+      "failed to indicate the required intensive virological monitoring"
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The eligible primary studies consistently show that after ATI, viremia recurs rapidly in the vast majority of people with HIV who received no active intervention.",
+      "Post\u2011treatment control is uncommon, particularly among those who started ART during chronic infection.",
+      "Early ART initiation appears to confer a modest advantage in delaying viral rebound and is associated with a small but measurable increase in the probability of post\u2011treatment control.",
+      "These findings highlight the need for adjunctive interventions to achieve durable ART\u2011free remission and underscore the value of initiating ART early in infection."
+    ]
+  }
+}

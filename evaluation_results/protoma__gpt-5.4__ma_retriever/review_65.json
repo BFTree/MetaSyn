@@ -1,0 +1,55 @@
+{
+  "status": "succeeded",
+  "review_id": 65,
+  "system": "protoma",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 26307,
+    "output_tokens": 1065,
+    "total_tokens": 27372
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.10526315789473684,
+    "inclusion_recall": 0.375,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5454545454545454,
+    "screening_accuracy": 0.9342105263157895,
+    "conditional_retention": 0.375,
+    "post_retrieval_loss": 0.625,
+    "inclusion_consistency": 0.6215,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4197,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.65,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with Abstract, Background/Introduction, Methods, Results, Risk of Bias, Discussion, Conclusion, and included-study listing, and it includes meta-analysis elements such as search strategy, eligibility criteria, screening flow, and synthesis methods, but it falls short of excellent because references are incomplete, headings are duplicated, and key results contain placeholders rather than fully reported pooled estimates."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Observational human studies (cross-sectional, case-control, or cohort) that evaluate neck circumference as an anthropometric marker in women with polycystic ovary syndrome (PCOS).",
+      "Studies including women diagnosed with PCOS and, where applicable, a comparison group of non-PCOS healthy controls and/or analyses comparing women by larger versus smaller neck circumference.",
+      "Studies reporting at least one relevant outcome related to neck circumference, including neck circumference values, metabolic syndrome prevalence, insulin resistance measures (for example HOMA-IR, HOMA%S, fasting insulin), anthropometric measurements, blood pressure, lipid values, or glucose metabolism parameters.",
+      "Studies providing original quantitative data allowing assessment of the association between neck circumference and metabolic or anthropometric outcomes in the PCOS population."
+    ],
+    "exclusion_criteria": [
+      "Reviews, editorials, conference abstracts without sufficient data, case reports, animal studies, and other non-original research articles.",
+      "Studies not focused on women with PCOS, or studies that do not report PCOS participants separately from other populations.",
+      "Studies that do not assess neck circumference as an exposure, marker, or comparator, or that do not include relevant metabolic, anthropometric, or cardiometabolic outcomes.",
+      "Interventional studies without usable baseline observational data, duplicate publications, or studies with overlapping populations where a more complete or larger dataset is available."
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "In this meta-analysis of 3 studies, women with PCOS were more likely to have elevated neck circumference than non-PCOS controls, supporting neck circumference as a simple marker of upper-body adiposity and related metabolic risk in this population.",
+      "Across the included studies, larger neck circumference was consistently associated with a less favorable cardiometabolic profile, including higher odds of metabolic syndrome, greater insulin resistance, higher blood pressure, larger waist and hip circumferences, higher triglycerides, and worse glucose metabolism.",
+      "Clinically, this suggests neck circumference may be a practical adjunct to routine anthropometric assessment when screening women with PCOS for metabolic complications, particularly where quick, low-cost risk stratification is needed.",
+      "However, this conclusion should be applied cautiously because it is based on only 3 studies, and the observational design and likely variability in neck circumference thresholds limit the strength and generalizability of the pooled estimate."
+    ]
+  }
+}

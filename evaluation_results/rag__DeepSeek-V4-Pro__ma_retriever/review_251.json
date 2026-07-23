@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 251,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 11972,
+    "output_tokens": 831,
+    "total_tokens": 12803
+  },
+  "metrics": {
+    "retrieval_recall": 0.8333333333333334,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.0,
+    "inclusion_precision": 0.0,
+    "inclusion_f1": 0.0,
+    "screening_accuracy": 0.975,
+    "conditional_retention": 0.0,
+    "post_retrieval_loss": 0.8333333333333334,
+    "inclusion_consistency": 0.6683,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4273,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.0,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report is clearly organized and includes some screening criteria and exclusion rationale, but it lacks most standard systematic review sections such as Abstract, Introduction, detailed Methods, Results, Discussion, Conclusion, References, search strategy, data extraction, quality assessment, and synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "prospective studies in adult cancer patients with a central venous catheter (CVC) whose insertion site was defined, comparing minidose warfarin or low-dose LMWH to no prophylaxis, and reporting VTE incidence and bleeding outcomes"
+    ],
+    "exclusion_criteria": [
+      "Most candidates were retrospective, reviews, guidelines, case reports, or meta-analyses, not prospective primary studies.",
+      "Many studies involved non-cancer patients, surgical patients without CVC, or paediatric populations.",
+      "Numerous articles examined anticoagulants other than minidose warfarin or low-dose LMWH (e.g., DOACs, defibrotide, aspirin) or were not thromboprophylaxis studies.",
+      "Several prospective studies lacked a \u201cno prophylaxis\u201d control group or were single-arm analyses.",
+      "Some otherwise relevant studies were published after 2005 (e.g., candidate 003, 2006) or were not in English (e.g., candidate 007, 078)."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "no primary\u2011study article met all eligibility requirements",
+      "Because no candidate fulfilled all criteria, the synthesis of evidence from the supplied pool yields no primary\u2011study data to answer the research question.",
+      "None of the candidate articles were eligible for inclusion."
+    ]
+  }
+}

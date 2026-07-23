@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 305,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 13655,
+    "output_tokens": 2053,
+    "total_tokens": 15708
+  },
+  "metrics": {
+    "retrieval_recall": 0.6808510638297872,
+    "retrieval_precision": 0.16,
+    "inclusion_recall": 0.02127659574468085,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.04166666666666667,
+    "screening_accuracy": 0.845,
+    "conditional_retention": 0.03125,
+    "post_retrieval_loss": 0.6595744680851063,
+    "inclusion_consistency": 0.5336,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6518,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.3,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a clear review target, screening/exclusion summary, and brief evidence synthesis, but it lacks a conventional abstract, introduction, detailed methods, results, discussion, conclusion, references, data extraction details, quality assessment, and formal meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "2017-01-01 to 2022-06-13",
+      "Offspring of women with and without polycystic ovary syndrome (PCOS)",
+      "Maternal polycystic ovary syndrome (PCOS) diagnosis",
+      "Offspring of women without polycystic ovary syndrome",
+      "Birth outcomes including preterm birth, fetal growth restriction, low birth weight, mean birthweight, small for gestational age, admission to neonatal intensive care units, and perinatal mortality",
+      "only studies where the PCOS diagnosis explicitly met the Rotterdam criteria were included."
+    ],
+    "exclusion_criteria": [
+      "Studies published before 2017 or after June 2022 were excluded.",
+      "Systematic reviews, meta-analyses, scoping reviews, narrative reviews, and protocols were excluded.",
+      "Animal studies were also excluded.",
+      "Studies that did not report on the specified birth outcomes (preterm birth, birthweight, SGA, LBW, FGR, NICU admission, perinatal mortality) were excluded.",
+      "Studies that did not compare offspring of women with PCOS to offspring of women without PCOS were excluded.",
+      "Studies using ICD codes (e.g., Candidates 007, 048, 056, 062, 063, 124), NIH criteria (Candidate 029), or those that did not specify the diagnostic criteria (e.g., Candidates 035, 042, 059) were excluded."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "Only one primary study met all the stringent eligibility criteria, resulting in a very limited evidence base for this specific review question within the specified timeframe and diagnostic constraints.",
+      "Using propensity score matching to balance confounding factors between PCOS and non-PCOS groups, the study found that the overall incidence of adverse pregnancy outcomes\u2014including the specified outcome of preterm birth\u2014was significantly higher in specific PCOS phenotypes compared to the non-PCOS control group.",
+      "Phenotype A (hyperandrogenic, anovulatory, polycystic ovarian morphology) and Phenotype D (non-hyperandrogenic, anovulatory, polycystic ovarian morphology) demonstrated significantly higher rates of adverse outcomes (44% and 46.4%, respectively) versus the control group (28.7%, P=0.027).",
+      "These differences persisted after adjustment for potential confounders (P=0.025), supporting the hypothesis that maternal PCOS\u2014particularly specific phenotypes\u2014acts as an independent risk factor for adverse birth outcomes such as preterm birth in the context of assisted reproductive technology.",
+      "The study did not explicitly report separate adjusted odds ratios for other specific birth outcomes like low birth weight or small for gestational age in the abstract, but preterm birth was confirmed as a component of the significantly increased composite adverse outcome."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "succeeded",
+  "review_id": 206,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9763,
+    "output_tokens": 1031,
+    "total_tokens": 10794
+  },
+  "metrics": {
+    "retrieval_recall": 0.45454545454545453,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.45454545454545453,
+    "inclusion_precision": 0.3125,
+    "inclusion_f1": 0.3703703703703703,
+    "screening_accuracy": 0.95,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.739,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.9312,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes a review question, screening criteria, study characteristics, evidence synthesis, and included studies, but it lacks a formal abstract, introduction, detailed methods/search strategy, quality assessment, conclusion, and full references."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "published in English between January 2020 and 25 May 2023 (the search end date)",
+      "included glaucoma patients",
+      "employed artificial intelligence, machine learning, or deep learning to diagnose or predict glaucoma progression"
+    ],
+    "exclusion_criteria": [
+      "Reviews, letters, editorials, protocols, conference abstracts, and non\u2011human studies were excluded."
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The included studies collectively demonstrate that AI systems can achieve high diagnostic accuracy for glaucoma, often comparable to or exceeding that of human experts.",
+      "However, the reporting of key methodological details\u2014such as participant selection, reference standard definition, handling of ungradable images, and external validation\u2014varies considerably across abstracts.",
+      "This variability highlights the need for a standardised reporting framework like DECIDE\u2011AI to ensure transparency, reproducibility, and clinical applicability.",
+      "The full\u2011text assessment will quantify adherence to each DECIDE\u2011AI item, enabling a formal evaluation of the completeness and quality of reporting in this rapidly evolving field."
+    ]
+  }
+}

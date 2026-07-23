@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "review_id": 167,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 20222,
+    "output_tokens": 1216,
+    "total_tokens": 21438
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.8235294117647058,
+    "inclusion_f1": 0.9032258064516129,
+    "screening_accuracy": 0.985,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.5741,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.3505,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has a results-style evidence synthesis and included-study list, but it lacks a formal abstract, introduction, full methods section, detailed search strategy, screening process, data extraction methods, quality assessment, discussion, conclusion, and true references, so the organization has major PRISMA-structure gaps despite some eligibility and synthesis content."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "decision analytic models, randomized trials, and observational studies that compare annual, biennial, or triennial mammography screening intervals in average-risk women within the specified age groups (45-49, 50-69, 70-74), reporting on outcomes such as breast cancer mortality, QALYs, tumor stage, interval cancers, overdiagnosis, false positives, and radiation effects"
+    ],
+    "exclusion_criteria": [
+      "Articles published after the search end date (April 30, 2020)",
+      "those focusing on high-risk populations, screening modalities other than interval comparisons, reviews, or guidelines"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Decision analytic models consistently demonstrate that while annual screening yields the greatest absolute breast cancer mortality reduction and number of deaths averted across all age groups starting from 40 or 45, the incremental benefit over biennial screening is relatively small for average-risk populations.",
+      "Biennial screening strategies are consistently identified as the most efficient or cost-effective for average-risk women aged 50-74, providing the best balance of QALYs gained per cost incurred (Candidates 002, 015).",
+      "Shorter screening intervals consistently result in more harms.",
+      "Annual screening yields substantially higher cumulative false-positive recall and biopsy rates compared to biennial or triennial intervals across all ages (Candidates 005, 008, 013, 033)."
+    ]
+  }
+}

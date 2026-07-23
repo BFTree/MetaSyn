@@ -1,0 +1,58 @@
+{
+  "status": "succeeded",
+  "review_id": 208,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 18925,
+    "output_tokens": 1284,
+    "total_tokens": 20209
+  },
+  "metrics": {
+    "retrieval_recall": 0.8035714285714286,
+    "retrieval_precision": 0.225,
+    "inclusion_recall": 0.7321428571428571,
+    "inclusion_precision": 0.4939759036144578,
+    "inclusion_f1": 0.5899280575539567,
+    "screening_accuracy": 0.77,
+    "conditional_retention": 0.9111111111111111,
+    "post_retrieval_loss": 0.07142857142857142,
+    "inclusion_consistency": 0.7106,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6146,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.5,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is well organized with clear Background, Methods, Results, thematic synthesis, Conclusion, explicit inclusion/exclusion criteria, screening process, and an included-studies list, but it lacks a full PRISMA-style search strategy, separate abstract/discussion sections, formal references, data extraction details, and quality assessment."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "involved human participants with severe retinal disease",
+      "used a full\u2011field stimulus to measure retinal sensitivity thresholds (e.g., FST, whole\u2011field scotopic threshold test, SST\u20111)",
+      "sufficiently described the testing methodology"
+    ],
+    "exclusion_criteria": [
+      "Reviews",
+      "protocols",
+      "editorials",
+      "animal\u2011only studies",
+      "tests that did not employ a full\u2011field stimulus"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "This scoping review of 85 primary studies confirms that FST is widely used in severe retinal disease research, but the methodology is highly heterogeneous.",
+      "Key parameters such as stimulus colour, luminance units, adaptation protocols, and the psychophysical algorithm are inconsistently reported, and there is no consensus on a standard procedure.",
+      "The identified gaps highlight the urgent need for harmonised guidelines for FST measurement and reporting.",
+      "Such guidelines would improve the comparability of results across studies, strengthen the evidence base for clinical trials, and ultimately facilitate the regulatory acceptance of FST as a reliable outcome measure.",
+      "After screening, 85 primary\u2011study articles met the inclusion criteria.",
+      "Most abstracts do not provide sufficient information to replicate the FST protocol.",
+      "This limits the ability to compare results across studies or to pool data in meta\u2011analyses."
+    ]
+  }
+}

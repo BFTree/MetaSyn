@@ -1,0 +1,60 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 34306,
+    "output_tokens": 908,
+    "total_tokens": 35214
+  },
+  "metrics": {
+    "retrieval_recall": 0.4888888888888889,
+    "retrieval_precision": 0.41509433962264153,
+    "inclusion_recall": 0.17777777777777778,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.2962962962962963,
+    "screening_accuracy": 0.7169811320754716,
+    "conditional_retention": 0.36363636363636365,
+    "post_retrieval_loss": 0.3111111111111111,
+    "inclusion_consistency": 0.6599,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.7047,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well organized with Abstract, Introduction, Methods, screening/retrieval results, findings, limitations, conclusion, included studies, and references, and it includes meta-analysis-relevant elements such as search queries, eligibility criteria, screening logic, and narrative synthesis, but it lacks full PRISMA-style rigor such as a detailed reproducible database search strategy across sources, formal quality/risk-of-bias assessment, data extraction procedures, and quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Cross-sectional or longitudinal peer-reviewed human studies.",
+      "Patients with schizophrenia spectrum disorder, BD, or MDD.",
+      "At least one baseline standardized neuropsychological measure and one blood immune marker.",
+      "At least one within-patient association analysis between neuropsychological performance and immune marker(s)."
+    ],
+    "exclusion_criteria": [
+      "Case reports/series",
+      "Reviews/meta-analyses/opinion pieces",
+      "Abstracts/conference proceedings/preprints",
+      "Studies using only cognitive items from symptom scales rather than standardized neuropsychological testing",
+      "Studies lacking within-patient association analyses",
+      "Studies published after the search end date of 2021-11-08"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The local MetaSyn corpus supports a definite association between blood-based immune abnormalities and cognitive dysfunction, but the signal is **not evenly transdiagnostic**.",
+      "My considered view is that the evidence is strongest and most biologically coherent in schizophrenia, where elevated IL-6, TNF-alpha, IL-12p70, quinolinic acid, and inflammatory kynurenine-pathway activation repeatedly track poorer cognition, particularly attention, working memory, verbal fluency, processing speed, executive function, and overall neurocognitive performance.",
+      "The most persuasive model is not a generic inflammation effect, but an **inflammatory schizophrenia subgroup** characterized by kynurenine-pathway activation and frontocortical involvement.",
+      "Bipolar disorder shows suggestive but inconsistent associations, especially for IL-6, TNF-related markers, and CRP.",
+      "MDD, within this retrieval-constrained evidence base, lacks comparably strong eligible evidence.",
+      "Therefore, a meta-analysis built from these studies should avoid claiming a single shared biomarker architecture for cognition across psychotic and mood disorders.",
+      "A more defensible conclusion is that partially shared peripheral immune dysregulation exists across diagnoses, but its relationship to cognitive dysfunction is presently most reliable in schizophrenia and likely moderated by illness state, subgroup biology, and kynurenine-pathway involvement."
+    ]
+  }
+}

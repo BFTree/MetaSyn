@@ -1,0 +1,52 @@
+{
+  "status": "succeeded",
+  "review_id": 339,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 23761,
+    "output_tokens": 637,
+    "total_tokens": 24398
+  },
+  "metrics": {
+    "retrieval_recall": 0.46875,
+    "retrieval_precision": 0.075,
+    "inclusion_recall": 0.4375,
+    "inclusion_precision": 0.6666666666666666,
+    "inclusion_f1": 0.5283018867924528,
+    "screening_accuracy": 0.96,
+    "conditional_retention": 0.9333333333333333,
+    "post_retrieval_loss": 0.03125,
+    "inclusion_consistency": 0.6916,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5995,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has an objective, screening criteria/process, and included-study list, but it lacks standard systematic review sections such as abstract, introduction, methods, results synthesis, discussion, conclusion, references, quality assessment, search strategy details, data extraction, and meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "report a standardized intelligence test score obtained in childhood, adolescence, or early adulthood (<21 years)",
+      "assess the association with a later clinical health outcome (physical or mental disorder, including conditions linked to physical parameters or biomarkers)"
+    ],
+    "exclusion_criteria": [
+      "not be restricted to clinical patient cohorts without healthy controls (case-control studies were allowed)",
+      "not estimate intelligence from later-life sociodemographic information",
+      "not report only mortality without health outcomes",
+      "not be a duplicate publication, review, protocol, editorial, or conference abstract"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Applying these criteria, 20 primary studies were deemed eligible.",
+      "All included studies assessed IQ in early life (before age 21) and reported associations with later physical illnesses (e.g., coronary heart disease, stroke, atherosclerosis, diabetes, Parkinson\u2019s disease) or mental disorders (e.g., schizophrenia, depression, anxiety, dementia, alcohol-related hospital admissions, suicide attempt, psychiatric hospitalization).",
+      "None of the excluded studies provided the required exposure and clinical health outcome combination."
+    ]
+  }
+}

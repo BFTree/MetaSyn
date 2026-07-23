@@ -1,0 +1,62 @@
+{
+  "status": "succeeded",
+  "review_id": 52,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 21946,
+    "output_tokens": 1074,
+    "total_tokens": 23020
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.07407407407407407,
+    "inclusion_recall": 0.5,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.6666666666666666,
+    "screening_accuracy": 0.9629629629629629,
+    "conditional_retention": 0.5,
+    "post_retrieval_loss": 0.5,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.5032,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is complete and well-organized with Abstract, Introduction, Methods, Results-style screening and findings, Limitations, Conclusion, and References, and it includes systematic review elements such as search strategy, eligibility criteria, screening decisions, and synthesis approach, but it lacks formal quality/risk-of-bias assessment and has some inconsistency around inclusion of the 2025 study, preventing a score of 5."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Male patients with HFS.",
+      "Hard-flaccid syndrome.",
+      "Aetiopathogenesis, symptoms, diagnostics, and treatment effectiveness.",
+      "2018-01-01 to 2025-04-13.",
+      "direct focus on HFS in male patients",
+      "relevance to clinical presentation, diagnosis, pathogenesis, or treatment",
+      "publication date within range",
+      "primary-study relevance",
+      "case series and case reports were eligible."
+    ],
+    "exclusion_criteria": [
+      "Did not meet PICO criteria.",
+      "Studies on other pelvic floor or sexual disorders were excluded unless directly about HFS.",
+      "Published after search end date (2025-04-13)",
+      "Excluded for insufficient retrievable content and uncertain date position within range",
+      "Not a primary study"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Treatment evidence is extremely limited.",
+      "PDE5 inhibitors alone may be inadequate, whereas pelvic floor-focused rehabilitation and broader biopsychosocial management appear more plausible and better matched to the syndrome\u2019s multidimensional presentation.",
+      "My considered opinion is that future HFS research should prioritize **diagnostic criteria, prospective registries, standardized symptom measures, and multimodal treatment studies**, because the field is not yet mature enough to justify strong claims for any single therapy.",
+      "Management evidence was weak and limited to uncontrolled case-level observations.",
+      "PDE5 inhibitors alone appeared insufficient in the earliest series, while later case reports suggested possible benefit from biopsychosocial rehabilitation and from multimodal therapy combining PDE5 inhibitor, physical therapy, and low-intensity shock wave therapy (LiSWT)."
+    ]
+  }
+}

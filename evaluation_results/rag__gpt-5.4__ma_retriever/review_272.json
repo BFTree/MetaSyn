@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 272,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 12750,
+    "output_tokens": 1288,
+    "total_tokens": 14038
+  },
+  "metrics": {
+    "retrieval_recall": 0.9111111111111111,
+    "retrieval_precision": 0.205,
+    "inclusion_recall": 0.5111111111111111,
+    "inclusion_precision": 0.8518518518518519,
+    "inclusion_f1": 0.6388888888888888,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 0.5609756097560976,
+    "post_retrieval_loss": 0.4,
+    "inclusion_consistency": 0.5677,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.5411,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 2.0,
+    "structure_quality_reason": "The report has some organized screening criteria, exclusion rationale, narrative findings, limitations, and an included-study list, but it lacks formal Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, detailed search strategy, quality assessment, and true meta-analysis synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "primary human study",
+      "eligible patient population (schizophrenia-spectrum, bipolar disorder, or major depressive disorder)",
+      "blood-based immune marker exposure",
+      "standardized cognitive outcome measured in patients",
+      "an association analysis between immune marker(s) and cognition within the patient sample"
+    ],
+    "exclusion_criteria": [
+      "reviews/meta-analyses",
+      "protocols",
+      "non-primary papers",
+      "studies centered on treatment effects rather than baseline marker-cognition associations",
+      "papers without a clear cognition-immunomarker association in patients",
+      "non-blood or mainly CNS/postmortem studies",
+      "papers published after the review end date of 2021-11-08",
+      "Excluded as too new relative to review end date: 2024-2026 papers.",
+      "Excluded reviews/meta-analyses: e.g. Candidates 011, 024, 033, 049, 051, 057, 069, 077, 079, 107, 114, 117, 149, 152, 158, 171, 183.",
+      "Excluded intervention-focused studies where the main eligible baseline association was not the study target or not clearly reported as baseline within-patient association: e.g. 043, 052, 074, 093, 138, 187.",
+      "Excluded because no clear cognition-immunomarker association in patient sample from abstract: e.g. 025, 028, 032, 046, 047, 048, 065, 111, 112, 135.",
+      "Excluded because not clearly blood-based immune marker exposure per review scope or not primary eligible design/outcome focus: e.g. postmortem microglia-only papers 042, 073, 086, 119, 122, 169, 180, 182."
+    ],
+    "conclusion_direction": "Negative",
+    "key_insights": [
+      "The signal is directionally fairly consistent for pro-inflammatory markers such as IL-6, TNF-alpha, CRP, MCP1/CCL2, and some chemokines: higher inflammatory burden was usually associated with poorer global cognition or poorer performance in attention, processing speed, executive function, memory, or psychomotor speed.",
+      "Kynurenine findings were more heterogeneous, but several studies linked higher quinolinic acid, altered KYN/TRP-related indices, or lower protective metabolites to worse cognition, especially in schizophrenia and in some female or subtype-specific MDD analyses.",
+      "A minority of studies reported positive associations for certain markers, which likely reflects domain differences, illness stage, treatment status, sex effects, and small samples.",
+      "Still, the abstract-level picture supports a modest but recurring association between peripheral immune dysregulation and worse cognition across psychotic and mood disorders, strongest for inflammatory cytokines/CRP and somewhat less consistent for kynurenine metabolites.",
+      "Overall, the abstract-level evidence supports inclusion of a meaningful set of primary studies, mostly cross-sectional, showing that higher blood-based inflammatory activity is often associated with worse cognition in schizophrenia-spectrum disorders, bipolar disorder, and MDD.",
+      "The strongest recurring markers are IL-6, CRP, TNF-alpha-related measures, and selected kynurenine metabolites."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "succeeded",
+  "review_id": 46,
+  "system": "rag",
+  "model": "GLM-5.1",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 9032,
+    "output_tokens": 1116,
+    "total_tokens": 10148
+  },
+  "metrics": {
+    "retrieval_recall": 0.5555555555555556,
+    "retrieval_precision": 0.025,
+    "inclusion_recall": 0.3333333333333333,
+    "inclusion_precision": 1.0,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.6,
+    "post_retrieval_loss": 0.2222222222222222,
+    "inclusion_consistency": null,
+    "inclusion_consistency_skipped": true,
+    "exclusion_consistency": 0.6188,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report is logically organized and includes an objective, screening/selection summary, synthesis of findings, methodological rigor evaluation, and included studies, but it lacks several formal systematic-review sections and PRISMA-style details such as an abstract, full introduction, detailed search strategy, data extraction methods, quality assessment framework, and explicit synthesis/meta-analysis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "assessing child mental health or behavioral adjustment in families with same-sex or transgender parents relative to different-sex parent families",
+      "published between 2015 and 2022"
+    ],
+    "exclusion_criteria": [
+      "focused on the mental health of LGBTQ youth themselves (rather than the offspring of LGBTQ parents)",
+      "evaluated parental outcomes without child mental health data",
+      "lacked a comparison group of children with different-sex parents",
+      "were published outside the 2015\u20132022 window",
+      "were reviews, protocols, or editorials"
+    ],
+    "conclusion_direction": "Positive",
+    "key_insights": [
+      "The included evidence consistently indicates that children raised by LGBTQ parents do not experience more mental health or behavioral problems than children raised by different-sex parents:",
+      "It found no significant disadvantages for children with same-sex parents across multiple domains of behavioral and emotional outcomes (emotional, conduct, hyperactivity, peer, and pro-social problems) compared to children with different-sex parents.",
+      "It reported few differences in adolescent adjustment between family types.",
+      "While adjustment problems increased over time for all family types, these variations were linked to parenting quality and parental mental health rather than the sexual orientation of the parents.",
+      "It found no significant differences between the groups in mental health, cognitive development, or gender identity, concluding that the first empirical data on child development in the context of trans-parenthood are reassuring.",
+      "Overall, the current evidence base from 2015 to 2022 does not support the hypothesis that children with LGBTQ parents suffer worse mental health outcomes; rather, child well-being appears more closely tied to family processes (e.g., parenting quality, parent-child relationships) than to parental sexual orientation or gender identity."
+    ]
+  }
+}

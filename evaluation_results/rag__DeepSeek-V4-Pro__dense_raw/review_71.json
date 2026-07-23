@@ -1,0 +1,57 @@
+{
+  "status": "succeeded",
+  "review_id": 71,
+  "system": "rag",
+  "model": "DeepSeek-V4-Pro",
+  "retriever": "dense_raw",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 14835,
+    "output_tokens": 1236,
+    "total_tokens": 16071
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.055,
+    "inclusion_recall": 1.0,
+    "inclusion_precision": 0.3333333333333333,
+    "inclusion_f1": 0.5,
+    "screening_accuracy": 0.89,
+    "conditional_retention": 1.0,
+    "post_retrieval_loss": 0.0,
+    "inclusion_consistency": 0.7999,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6124,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.4,
+    "insights_consistency_skipped": false,
+    "structure_quality": 3.0,
+    "structure_quality_reason": "The report has a clear objective, methods, results, synthesized findings, overall assessment, and included-study list, but it lacks formal Abstract, Introduction, Discussion/Conclusion, full References, detailed search strategy, data extraction procedures, quality assessment, and explicit quantitative synthesis methods."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "quantitative PFAS exposure assessment during in\u2011utero or early childhood",
+      "objective weight\u2011related measurements",
+      "outcomes assessed at 1\u201312 years",
+      "reported measure of association between PFAS and an obesity metric"
+    ],
+    "exclusion_criteria": [
+      "Studies that only assessed birth outcomes",
+      "were not primary research (reviews, meta\u2011analyses, protocols, commentaries)",
+      "did not examine obesity"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The body of evidence indicates that prenatal exposure to certain PFAS (particularly PFOA) may be associated with increased adiposity in childhood, while postnatal exposure may show inverse associations, potentially due to reverse causation or growth dilution.",
+      "The literature is heterogeneous, with differences by chemical, exposure timing, sex, and outcome definition.",
+      "A consistent signal emerges for positive associations between prenatal perfluorooctanoic acid (PFOA) and later childhood adiposity.",
+      "Results are more heterogeneous.",
+      "Studies that measured concurrent or childhood PFAS generally report inverse associations with BMI or adiposity.",
+      "The evidence consistently shows that associations differ by PFAS compound and by child sex.",
+      "The included studies collectively support the need for continued investigation of PFAS mixtures and longitudinal growth patterns."
+    ]
+  }
+}

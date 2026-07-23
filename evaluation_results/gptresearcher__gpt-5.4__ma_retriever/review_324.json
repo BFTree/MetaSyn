@@ -1,0 +1,54 @@
+{
+  "status": "succeeded",
+  "review_id": 324,
+  "system": "gptresearcher",
+  "model": "gpt-5.4",
+  "retriever": "ma_retriever",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 25303,
+    "output_tokens": 736,
+    "total_tokens": 26039
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.16129032258064516,
+    "inclusion_recall": 0.8,
+    "inclusion_precision": 0.8888888888888888,
+    "inclusion_f1": 0.8421052631578948,
+    "screening_accuracy": 0.9516129032258065,
+    "conditional_retention": 0.8,
+    "post_retrieval_loss": 0.2,
+    "inclusion_consistency": 0.593,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.6088,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 1,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.2,
+    "insights_consistency_skipped": false,
+    "structure_quality": 5.0,
+    "structure_quality_reason": "The report has a comprehensive and clearly organized systematic-review structure with abstract, introduction, methods, results, synthesis, limitations, conclusion, included-study list, and references, plus PRISMA-style elements including explicit search queries, eligibility criteria, screening decisions, study selection rationale, and synthesis approach, though it notes formal meta-analysis was not feasible."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "Primary studies evaluating clinical and/or economic outcomes after pharmacogenetics-guided treatment",
+      "Sample included individuals taking antipsychotics as the primary prescribed medication",
+      "Any age, diagnosis, setting, country, date, or language"
+    ],
+    "exclusion_criteria": [
+      "Antipsychotics not the primary prescribed medication",
+      "Protocols, reviews, commentaries, letters, or editorials"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "The evidence in the local MetaSyn corpus does not support routine universal pharmacogenetic testing for all antipsychotic-treated patients if the goal is to improve broad clinical outcomes such as treatment persistence.",
+      "The negative randomized trial on CYP2D6/CYP2C19-guided prescribing is the most reliable direct evidence and should carry the most weight.",
+      "However, it would be incorrect to conclude that pharmacogenetic testing is clinically useless in antipsychotic care.",
+      "My judgment, based on the included studies, is that **pharmacogenetic testing has selective rather than universal value**.",
+      "So the right implementation stance is not \u201ctest everyone\u201d and not \u201cdo nothing.\u201d",
+      "It is **use testing selectively where prior probability of benefit is high and the therapeutic decision is mechanistically linked to the tested genotype**."
+    ]
+  }
+}

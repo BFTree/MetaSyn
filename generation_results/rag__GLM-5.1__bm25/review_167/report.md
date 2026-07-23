@@ -1,0 +1,43 @@
+Based on the systematic review criteria, 17 primary studies were identified as eligible for inclusion. These consist of decision analytic models, randomized trials, and observational studies that compare annual, biennial, or triennial mammography screening intervals in average-risk women within the specified age groups (45-49, 50-69, 70-74), reporting on outcomes such as breast cancer mortality, QALYs, tumor stage, interval cancers, overdiagnosis, false positives, and radiation effects. Articles published after the search end date (April 30, 2020) and those focusing on high-risk populations, screening modalities other than interval comparisons, reviews, or guidelines were excluded.
+
+### Evidence Synthesis
+
+**Breast Cancer Mortality and Deaths Averted**
+Decision analytic models consistently demonstrate that while annual screening yields the greatest absolute breast cancer mortality reduction and number of deaths averted across all age groups starting from 40 or 45, the incremental benefit over biennial screening is relatively small for average-risk populations. For women aged 50-74, biennial screening is estimated to avoid a median of 7 deaths per 1000 women, whereas annual screening from 40-74 avoids only about 3 additional deaths but requires significantly more mammograms (Candidate 002). Similarly, CISNET models show a 39.6% mortality reduction for annual screening ages 40-84, versus 23.2% for biennial ages 50-74 (Candidate 033). For average-risk women aged 50-74, triennial screening provides similar deaths averted as biennial screening in those with low breast density (Candidate 001). An RCT in the UK found no statistically significant difference in predicted breast cancer deaths between annual and 3-yearly (triennial) screening for women aged 50-62 (Candidate 090). In women aged 40-49, an observational study in Finland also found no significant difference in incidence-based breast cancer mortality between annual and triennial invitation groups (Candidate 016). 
+
+**Quality-Adjusted Life Years (QALYs) and Cost-Effectiveness**
+Biennial screening strategies are consistently identified as the most efficient or cost-effective for average-risk women aged 50-74, providing the best balance of QALYs gained per cost incurred (Candidates 002, 015). Triennial screening for average-risk women with low breast density, and annual screening for highest-risk subgroups, cost less than $100,000 per QALY gained (Candidate 001). Annual screening for average-risk women is generally deemed inefficient or substantially more costly per QALY gained due to the high number of additional mammograms and subsequent harms required for small incremental benefits (Candidates 002, 015). Modeling suggests that extending screening to older ages (up to 79 or 80) under biennial protocols remains cost-effective depending on comorbidity status (Candidates 015, 123).
+
+**Cancer Stage at Detection and Prognostic Characteristics**
+In women aged 40-49 (inclusive of the 45-49 subgroup), observational data suggests biennial screening may increase the risk of late-stage disease or less favorable prognostic characteristics compared to annual screening, particularly for premenopausal women or those with extremely dense breasts (Candidates 008, 021, 025). However, other cohort analyses found only a small, non-statistically significant increase in late-stage cancers for biennial vs. annual screening in this age group (Candidate 013), and no elevated risk of adverse tumor characteristics for triennial vs. biennial screening (Candidate 005). For women aged 50-69 or 50-74, biennial screening does not increase the risk of advanced-stage or large tumors compared to annual screening, even for those with dense breasts or using hormone therapy (Candidates 005, 008, 021, 025). A policy change from annual to biennial screening in women 50-79 was associated with an increased rate of node-positive cancers but no change in overall breast cancer mortality rates (Candidate 023). For women aged 70-74 and older, regular (annual) screening is associated with the elimination of age-related disparities in stage at diagnosis, yielding tumor sizes and stages comparable to younger women (Candidate 148).
+
+**Interval Cancers**
+Annual screening is associated with lower per-round interval cancer rates compared to biennial screening (e.g., 0.07% vs 0.15% in one retrospective analysis) (Candidate 029). Simulation models indicate that a high screening frequency (annual) results in more lifetime gained due to early detection and fewer interval cancers, especially at younger ages (Candidate 123).
+
+**Overdiagnosis and False-Positive Results**
+Shorter screening intervals consistently result in more harms. Annual screening yields substantially higher cumulative false-positive recall and biopsy rates compared to biennial or triennial intervals across all ages (Candidates 005, 008, 013, 033). For example, the 10-year cumulative probability of a false-positive recall is roughly 61% with annual vs. 42% with biennial screening starting at age 40 or 50 (Candidate 013). Overdiagnosis also increases with shorter intervals and higher breast density; annual screening from 40-74 results in more overdiagnosed cases than biennial from 50-74 (Candidates 002, 011). Modeling studies emphasize that the harms of annual screening are often nearly 2-fold higher than biennial screening for average-risk women (Candidate 001). 
+
+**Radiation-Related Effects**
+Modeling estimates for radiation-induced breast cancer suggest that while the risk is small relative to the mortality benefit of screening, it scales with the number of lifetime screens and is higher for annual regimens starting at age 40 (an estimated 86 radiation-induced cancers and 11 deaths per 100,000 women for annual 40-55 then biennial 55-74) (Candidate 058). Lifetime gained from early detection must be weighed against lifetime lost due to radiation-induced tumors, with higher screening frequencies resulting in more lifetime gained at younger ages, but slightly marginal gains at older ages offset by radiation risks (Candidate 123).
+
+---
+
+### Included Primary-Study Articles
+
+- **Candidate 001**: Tailoring Breast Cancer Screening Intervals by Breast Density and Risk for Women Aged 50 Years or Older: Collaborative Modeling of Screening Outcomes. `Corpus ID: 66152`
+- **Candidate 002**: Collaborative Modeling of the Benefits and Harms Associated With Different U.S. Breast Cancer Screening Strategies. `Corpus ID: 729`
+- **Candidate 005**: Mammographic screening interval in relation to tumor characteristics and false-positive risk by race/ethnicity and age. `Corpus ID: 738`
+- **Candidate 008**: Outcomes of screening mammography by frequency, breast density, and postmenopausal hormone therapy. `Corpus ID: 66153`
+- **Candidate 011**: Estimating breast cancer mortality reduction and overdiagnosis due to screening for different strategies in the United Kingdom. `Corpus ID: 730`
+- **Candidate 013**: Cumulative probability of false-positive recall or biopsy recommendation after 10 years of screening mammography: a cohort study. `Corpus ID: 735`
+- **Candidate 015**: Cost-effectiveness of mammography from a publicly funded health care system perspective. `Corpus ID: 733`
+- **Candidate 016**: Effects of annual vs triennial mammography interval on breast cancer incidence and mortality in ages 40-49 in Finland. `Corpus ID: 739`
+- **Candidate 021**: Biennial versus annual mammography and the risk of late-stage breast cancer. `Corpus ID: 740`
+- **Candidate 023**: Impact of changing from annual to biennial mammographic screening on breast cancer outcomes in women aged 50-79 in British Columbia. `Corpus ID: 734`
+- **Candidate 025**: Breast Tumor Prognostic Characteristics and Biennial vs Annual Mammography, Age, and Menopausal Status. `Corpus ID: 737`
+- **Candidate 029**: Outcome analysis for women undergoing annual versus biennial screening mammography: a review of 24,211 examinations. `Corpus ID: 736`
+- **Candidate 033**: Comparison of recommendations for screening mammography using CISNET models. `Corpus ID: 780`
+- **Candidate 058**: Risk of radiation-induced breast cancer from mammographic screening. `Corpus ID: 732`
+- **Candidate 090**: The frequency of breast cancer screening: results from the UKCCCR Randomised Trial. United Kingdom Co-ordinating Committee on Cancer Research. `Corpus ID: 66002`
+- **Candidate 123**: Assessment of lifetime gained as a result of mammographic breast cancer screening using a computer model. `Corpus ID: 783`
+- **Candidate 148**: Regular mammography use is associated with elimination of age-related disparities in size and stage of breast cancer at diagnosis. `Corpus ID: 787`

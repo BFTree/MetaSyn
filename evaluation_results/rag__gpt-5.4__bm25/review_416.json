@@ -1,0 +1,66 @@
+{
+  "status": "succeeded",
+  "review_id": 416,
+  "system": "rag",
+  "model": "gpt-5.4",
+  "retriever": "bm25",
+  "evaluator_model": "gpt-5.5",
+  "evaluator_token_usage": {
+    "calls": 4,
+    "input_tokens": 6426,
+    "output_tokens": 1588,
+    "total_tokens": 8014
+  },
+  "metrics": {
+    "retrieval_recall": 1.0,
+    "retrieval_precision": 0.035,
+    "inclusion_recall": 0.8571428571428571,
+    "inclusion_precision": 0.8571428571428571,
+    "inclusion_f1": 0.8571428571428571,
+    "screening_accuracy": 0.99,
+    "conditional_retention": 0.8571428571428571,
+    "post_retrieval_loss": 0.14285714285714285,
+    "inclusion_consistency": 0.4692,
+    "inclusion_consistency_skipped": false,
+    "exclusion_consistency": 0.4413,
+    "exclusion_consistency_skipped": false,
+    "conclusion_direction_accuracy": 0,
+    "conclusion_direction_skipped": false,
+    "insights_consistency": 0.6,
+    "insights_consistency_skipped": false,
+    "structure_quality": 4.0,
+    "structure_quality_reason": "The report is clearly organized with a review question, screening approach, results, caveats, and conclusion, and it includes meta-analysis-specific elements like eligibility criteria and synthesis of findings; however, it lacks a full PRISMA-style structure with explicit methods such as detailed search strategy, quality assessment, and formal data synthesis procedures."
+  },
+  "extracted_data": {
+    "inclusion_criteria": [
+      "randomized lifestyle intervention in women with overweight/obesity",
+      "offspring follow-up with relevant cardiovascular outcomes:",
+      "cardiac structure/function",
+      "heart rate / HRV",
+      "blood pressure",
+      "arterial stiffness/thickness",
+      "original human quantitative research"
+    ],
+    "exclusion_criteria": [
+      "not reviews/protocols/editorials/animal studies",
+      "reviews, protocols, theses, or non-primary articles",
+      "animal studies",
+      "maternal-only or fetal-only outcome studies",
+      "offspring studies without eligible cardiovascular outcomes",
+      "interventions not specifically in pregnant/preconception women with overweight/obesity",
+      "non-randomized offspring analyses not evaluating the parent lifestyle trial effect",
+      "protocols only",
+      "reviews/systematic reviews/scoping reviews",
+      "fetal-only cardiovascular outcomes",
+      "studies without eligible offspring cardiovascular outcomes"
+    ],
+    "conclusion_direction": "Mixed",
+    "key_insights": [
+      "Using only the supplied candidate pool, the evidence is **suggestive but not definitive**.",
+      "antenatal or preconception lifestyle interventions may improve **offspring cardiac structure/function**, especially **septal thickness**, **left ventricular mass/remodelling**, and some functional indices.",
+      "the evidence comes from **small, attrition-prone follow-up studies**.",
+      "evidence is **sparse and mostly null or inconclusive** in the abstracts provided.",
+      "So the current fixed-pool evidence supports a **promising hypothesis** that maternal lifestyle intervention can beneficially influence offspring cardiac remodelling, but it does **not yet establish robust, generalizable prevention of offspring cardiovascular dysfunction**."
+    ]
+  }
+}
