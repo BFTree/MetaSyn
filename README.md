@@ -28,6 +28,7 @@
 
 </div>
 
+
 ## What Is a Meta-Analysis?
 
 A meta-analysis statistically combines results from independent studies that
@@ -305,25 +306,13 @@ was trained for one epoch with Multiple Negatives Ranking Loss.
 ## Using other agents
 
 `AgentCorpusTools` provides the task-scoped search and fetch interface used by
-the agent experiments. It excludes source-review records from every search and
-allows an article to be fetched only after that task has returned it:
-
-```python
-from metasyn.agent_tools import AgentCorpusTools, build_agent_prompt
-
-tools = AgentCorpusTools(retriever, review, k=20, max_distinct_articles=200)
-search_results = tools.search("focused protocol query")
-article = tools.fetch(search_results[0]["corpus_id"])
-prompt = build_agent_prompt(review)
-```
-
-This interface can be connected to GPT-Researcher, Open Deep Research, or
-another agent without copying those third-party projects into this repository.
-The experiments used GPT-Researcher 0.14.7 and Open Deep Research 0.0.16.
-Evaluate the explicit final article list with the same result schema.
-
-See [BASELINES.md](BASELINES.md) and `configs/final_experiments.json` for the
-exact BM25, raw-BGE, ProtoMA, GPT-Researcher, and OpenDR settings.
+the agent experiments. [Baseline Settings](BASELINES.md#gpt-researcher-and-open-deep-research)
+documents the GPT-Researcher and OpenDR integration boundary, framework
+versions, retrieval tools, main hyperparameters, and representative call flow.
+The environment-specific batch launcher is not included; the documented
+interface is sufficient to connect either upstream workflow to the local tools.
+The machine-readable settings for all baselines are in
+`configs/final_experiments.json`.
 
 ## Released baseline outputs
 
@@ -350,7 +339,7 @@ content. See the dataset card for field-level details.
 
 ```bibtex
 @misc{metasyn2026,
-  title         = {Benchmarking {LLM} Agents on Meta-Analysis Articles from {Nature} Portfolio},
+  title         = {{MetaSyn}: A Benchmark for {LLM} Agents on Meta-Analysis Articles from {Nature} Portfolio},
   author        = {Anzhe Xie and Weihang Su and Yujia Zhou and Yiqun Liu and Min Zhang and Qingyao Ai},
   year          = {2026},
   eprint        = {2606.17041},
